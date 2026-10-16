@@ -1,0 +1,14 @@
+package: runway
+# Client half of the generation. The models come from config.yaml; keep the
+# shared options below in step with it.
+generate:
+  client: true
+output: client.gen.go
+output-options:
+  resolve-type-name-collisions: true
+  type-mapping:
+    number:
+      default:
+        type: float64
+compatibility:
+  always-prefix-enum-values: true

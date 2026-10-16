@@ -1,0 +1,8 @@
+{
+  "name": "go-runway",
+  "description": "Unofficial Go client for the Runway API: typed methods for image, video and audio generation, task polling, voices, avatars, workflows and organization usage.",
+  "author": { "name": "psyb0t", "url": "https://github.com/psyb0t" },
+  "homepage": "https://github.com/psyb0t/go-runway",
+  "license": "MIT",
+  "keywords": ["runway", "runwayml", "video-generation", "image-generation", "go-library", "api-client"]
+}
