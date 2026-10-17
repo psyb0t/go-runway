@@ -56,6 +56,8 @@ func main() {
 
 The same code is in `example_test.go`, run against a local test server, so `make test` checks that it works.
 
+The full API is in the [Go reference](https://pkg.go.dev/github.com/psyb0t/go-runway); from inside your module, `go doc github.com/psyb0t/go-runway` prints the same.
+
 The spec has no operation IDs, so method names come from the method and path: `PostV1TextToImage`, `GetV1TasksId`, `DeleteV1TasksId` and so on. Most request and response bodies are a `oneOf` over several shapes (one per model, or one per task status). Those become union types: build a request with the `From...` methods and read a response with the `As...` methods.
 
 Send a union request body through the `...WithBodyWithResponse` method, marshaled with `json.Marshal`. The typed `...WithResponse(ctx, body)` methods take a `...JSONRequestBody`, a separate named type that does not carry the union's `MarshalJSON`, so a union body goes out as `{}`. `TestPostTextToImageUnionBody` in `client_test.go` shows the working form.

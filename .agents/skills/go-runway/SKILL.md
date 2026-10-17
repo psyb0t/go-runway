@@ -1,6 +1,7 @@
 ---
 name: go-runway
-description: Unofficial Go client for the Runway API (`github.com/psyb0t/go-runway`, package `runway`), generated with oapi-codegen from Runway's OpenAPI document. Typed methods on `runway.ClientWithResponses` cover all 49 paths of `https://api.dev.runwayml.com`, among them text, image and video to video, text to image, upscaling, text to speech, sound effects, voice dubbing, voices, avatars, realtime sessions, recipes, workflows, documents, uploads, task polling and cancelling, and organization credit balance and usage. Requests authenticate with a Bearer API key plus the `X-Runway-Version: 2024-11-06` header, both set in one request editor. Use when Go code needs to call Runway's generation API, poll a Runway task, or already imports go-runway.
+description: Unofficial Go client for the Runway API, generated with oapi-codegen from Runway's OpenAPI document. Package runway (github.com/psyb0t/go-runway) has typed methods on runway.ClientWithResponses for all 49 paths of https://api.dev.runwayml.com, among them text, image and video to video, text to image, upscaling, text to speech, sound effects, voice dubbing, voices, avatars, realtime sessions, recipes, workflows, documents, uploads, task polling and cancelling, and organization credit balance and usage. Requests authenticate with a Bearer API key plus the X-Runway-Version header set to 2024-11-06, both set in one request editor. Use when Go code needs to call Runway's generation API, poll a Runway task, or already imports go-runway.
+license: MIT
 homepage: https://github.com/psyb0t/go-runway
 user-invocable: true
 metadata:
@@ -9,8 +10,6 @@ metadata:
     requires:
       bins:
         - go
-      env:
-        - RUNWAYML_API_SECRET
 permissions:
   filesystem: "Guides edits to the Go source of the current project. The library reads and writes no files."
   shell: "The Go toolchain (`go get`, `go build`, `go test`) to add and compile the dependency."
@@ -40,6 +39,20 @@ For install details, method naming, union types and the full operation list, see
 - The code is not Go. Runway ships official Python and Node SDKs.
 - You only need a single curl call in a shell script.
 - You need a high level helper that waits for a task. This client is generated and stops at one HTTP call per method; polling is your loop.
+
+## Finding endpoints and types
+
+The examples below cover a few calls. Every operation in the spec has a generated method, and the spec's descriptions are on them as Go doc comments. Look names and fields up instead of guessing. After `go get github.com/psyb0t/go-runway`, from inside your module:
+
+```bash
+go doc github.com/psyb0t/go-runway ClientWithResponsesInterface  # every endpoint method
+go doc github.com/psyb0t/go-runway PostV1TextToImageJSONBody1    # one method, params type or model
+go doc -all github.com/psyb0t/go-runway                          # the whole package
+```
+
+The same documentation is at https://pkg.go.dev/github.com/psyb0t/go-runway.
+
+The spec has no operation IDs, so method names come from the HTTP method and path: `GET /v1/tasks/{id}` is `GetV1TasksIdWithResponse`. A method takes the context, then the path parameters in order, then a `*<Name>Params` struct when the operation has query parameters (for example `GetV1AvatarsParams`), then the request body when it has one. The `JSON200` field (or `JSON201` and so on, per declared status) holds the decoded body; it is nil for any other status. Models are in `types.gen.go` and the client in `client.gen.go`, both in package `runway`, so `go doc` shows both. Send union request bodies through `...WithBodyWithResponse`, as in the second example below.
 
 ## Usage
 
