@@ -78,6 +78,8 @@ make generate
 - `scripts/fix-spec.sh` writes `api/openapi.fixed.json`. Every schema in the spec is inline, so its `oneOf` discriminators have no `$ref` targets to map and oapi-codegen rejects them. The script drops the discriminators, which leaves plain union types. It also drops the `X-Runway-Version` header parameter from each operation (see Auth).
 - oapi-codegen runs twice: `config.yaml` writes the models to `types.gen.go` and `config.client.yaml` writes the client to `client.gen.go`, so neither file is one 100k line blob. Both map `number` to `float64`, because the spec gives most numbers no format and oapi-codegen would otherwise use `float32`.
 
+`.github/workflows/regen.yml` does the same every day in CI. When the new spec changes the client, it runs `make lint`, `make test` and `make sec`. If a check fails, Claude edits the code and the checks run again, up to three times, and a review step reads the result. A passing change is committed with a CHANGELOG entry and tagged as the next release: a patch version for fixes and additions, a minor version for breaking changes.
+
 ## Agent integrations
 
 The [skill](.agents/skills/go-runway) teaches a coding agent how to use go-runway when it writes Go. It works in any agent that reads `.agents/skills/`, and installs natively in the clients below.

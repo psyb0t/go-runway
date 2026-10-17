@@ -43,6 +43,7 @@ make sec       # gitleaks, govulncheck, semgrep
 - The typed `...WithResponse(ctx, body)` methods take a `...JSONRequestBody`, a named type that drops the union's `MarshalJSON`. For a union body they send `{}`. Callers must use `...WithBodyWithResponse` with marshaled JSON.
 - Variant numbering (`...Body0`, `...Body1`) follows spec order. A spec update that reorders variants changes which number means which model.
 - `make generate` always downloads the current spec, so the CI pipeline skips the drift check. Regenerate locally and commit the result.
+- `.github/workflows/regen.yml` regenerates the client every day and releases the result. When the checks fail, Claude edits the repository to fix them, but a fix may not touch the paths listed under `fix_protected_paths` in that workflow: the workflows, the Makefile, `AGENTS.md`, `.agents/rules/`, the lint, security and spec download scripts and their configs. A problem that needs a change there fails the run and needs a manual fix.
 
 ## Rules
 
