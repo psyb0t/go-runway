@@ -6168,6 +6168,24 @@ func (e PostV1ImageToVideoJSONBody22Model) Valid() bool {
 	}
 }
 
+// Defines values for PostV1ImageToVideoJSONBody22OutputFormat.
+const (
+	PostV1ImageToVideoJSONBody22OutputFormatMov PostV1ImageToVideoJSONBody22OutputFormat = "mov"
+	PostV1ImageToVideoJSONBody22OutputFormatMp4 PostV1ImageToVideoJSONBody22OutputFormat = "mp4"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody22OutputFormat enum.
+func (e PostV1ImageToVideoJSONBody22OutputFormat) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody22OutputFormatMov:
+		return true
+	case PostV1ImageToVideoJSONBody22OutputFormatMp4:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1ImageToVideoJSONBody22PromptImage1Position.
 const (
 	PostV1ImageToVideoJSONBody22PromptImage1PositionFirst PostV1ImageToVideoJSONBody22PromptImage1Position = "first"
@@ -7116,6 +7134,7 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyModelsEnhanceFrameRate              PostV1OrganizationUsage200JSONResponseBodyModels = "enhance_frame_rate"
 	PostV1OrganizationUsage200JSONResponseBodyModelsGemini25Flash                 PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_2.5_flash"
 	PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage31Flash            PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_image3.1_flash"
+	PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage31FlashLite        PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_image3.1_flash_lite"
 	PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage3Pro               PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_image3_pro"
 	PostV1OrganizationUsage200JSONResponseBodyModelsGeminiOmniFlash               PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_omni_flash"
 	PostV1OrganizationUsage200JSONResponseBodyModelsGeminiOmniFlash11             PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_omni_flash_1.1"
@@ -7162,6 +7181,7 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedance25                    PostV1OrganizationUsage200JSONResponseBodyModels = "seedance2_5"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedance2Fast                 PostV1OrganizationUsage200JSONResponseBodyModels = "seedance2_fast"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedance2Mini                 PostV1OrganizationUsage200JSONResponseBodyModels = "seedance2_mini"
+	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Flash                PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5_flash"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Lite                 PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5_lite"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Pro                  PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5_pro"
 	PostV1OrganizationUsage200JSONResponseBodyModelsVeo3                          PostV1OrganizationUsage200JSONResponseBodyModels = "veo3"
@@ -7206,6 +7226,8 @@ func (e PostV1OrganizationUsage200JSONResponseBodyModels) Valid() bool {
 	case PostV1OrganizationUsage200JSONResponseBodyModelsGemini25Flash:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage31Flash:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage31FlashLite:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage3Pro:
 		return true
@@ -7299,6 +7321,8 @@ func (e PostV1OrganizationUsage200JSONResponseBodyModels) Valid() bool {
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedance2Mini:
 		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Flash:
+		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Lite:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Pro:
@@ -7338,6 +7362,7 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelEnhanceFrameRate              PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "enhance_frame_rate"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGemini25Flash                 PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_2.5_flash"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiImage31Flash            PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_image3.1_flash"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiImage31FlashLite        PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_image3.1_flash_lite"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiImage3Pro               PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_image3_pro"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiOmniFlash               PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_omni_flash"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiOmniFlash11             PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_omni_flash_1.1"
@@ -7384,6 +7409,7 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance25                    PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedance2_5"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance2Fast                 PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedance2_fast"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance2Mini                 PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedance2_mini"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Flash                PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5_flash"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Lite                 PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5_lite"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Pro                  PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5_pro"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelVeo3                          PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "veo3"
@@ -7428,6 +7454,8 @@ func (e PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel) Valid
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGemini25Flash:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiImage31Flash:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiImage31FlashLite:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiImage3Pro:
 		return true
@@ -7521,6 +7549,8 @@ func (e PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel) Valid
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance2Mini:
 		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Flash:
+		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Lite:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Pro:
@@ -7551,6 +7581,12 @@ const (
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdConnectionAuthorizationStarted           GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdConnectionAuthorizationStarted"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdConnectionConnected                      GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdConnectionConnected"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdConnectionDisconnected                   GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdConnectionDisconnected"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeApprovalRevoked                  GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCreativeApprovalRevoked"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeArchived                         GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCreativeArchived"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeReviewCancelled                  GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCreativeReviewCancelled"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeReviewDecided                    GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCreativeReviewDecided"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeReviewSubmitted                  GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCreativeReviewSubmitted"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeUnarchived                       GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCreativeUnarchived"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdWorkspaceOnboardingUpdated               GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdWorkspaceOnboardingUpdated"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentConnectorAssetExported                GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AgentConnectorAssetExported"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentConnectorConnected                    GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AgentConnectorConnected"
@@ -7595,6 +7631,7 @@ const (
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionMeteredBillingConfigUpdated                GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "MeteredBillingConfigUpdated"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionMeteredBillingRefillTriggered              GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "MeteredBillingRefillTriggered"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionMeteredBillingRetryTriggered               GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "MeteredBillingRetryTriggered"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionOnboardingBonusGranted                     GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "OnboardingBonusGranted"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionOrganizationAgentSandboxUpdated            GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "OrganizationAgentSandboxUpdated"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionOrganizationApiAccountMemberInvited        GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "OrganizationApiAccountMemberInvited"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionOrganizationApiAccountMemberRemoved        GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "OrganizationApiAccountMemberRemoved"
@@ -7629,6 +7666,7 @@ const (
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionUserGroupMemberRemoved                     GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "UserGroupMemberRemoved"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionUserGroupRestored                          GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "UserGroupRestored"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionUserGroupUpdated                           GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "UserGroupUpdated"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionUserGroupVisibilityUpdated                 GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "UserGroupVisibilityUpdated"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionUserLogin                                  GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "UserLogin"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionUserRegistered                             GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "UserRegistered"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionVideoProjectShared                         GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "VideoProjectShared"
@@ -7659,6 +7697,18 @@ func (e GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction) Valid() b
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdConnectionConnected:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdConnectionDisconnected:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeApprovalRevoked:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeArchived:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeReviewCancelled:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeReviewDecided:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeReviewSubmitted:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeUnarchived:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdWorkspaceOnboardingUpdated:
 		return true
@@ -7748,6 +7798,8 @@ func (e GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction) Valid() b
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionMeteredBillingRetryTriggered:
 		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionOnboardingBonusGranted:
+		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionOrganizationAgentSandboxUpdated:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionOrganizationApiAccountMemberInvited:
@@ -7816,6 +7868,8 @@ func (e GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction) Valid() b
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionUserGroupUpdated:
 		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionUserGroupVisibilityUpdated:
+		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionUserLogin:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionUserRegistered:
@@ -7854,6 +7908,12 @@ const (
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdConnectionAuthorizationStarted           GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdConnectionAuthorizationStarted"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdConnectionConnected                      GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdConnectionConnected"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdConnectionDisconnected                   GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdConnectionDisconnected"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeApprovalRevoked                  GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCreativeApprovalRevoked"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeArchived                         GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCreativeArchived"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeReviewCancelled                  GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCreativeReviewCancelled"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeReviewDecided                    GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCreativeReviewDecided"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeReviewSubmitted                  GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCreativeReviewSubmitted"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeUnarchived                       GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCreativeUnarchived"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdWorkspaceOnboardingUpdated               GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdWorkspaceOnboardingUpdated"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentConnectorAssetExported                GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AgentConnectorAssetExported"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentConnectorConnected                    GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AgentConnectorConnected"
@@ -7898,6 +7958,7 @@ const (
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionMeteredBillingConfigUpdated                GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "MeteredBillingConfigUpdated"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionMeteredBillingRefillTriggered              GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "MeteredBillingRefillTriggered"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionMeteredBillingRetryTriggered               GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "MeteredBillingRetryTriggered"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionOnboardingBonusGranted                     GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "OnboardingBonusGranted"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionOrganizationAgentSandboxUpdated            GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "OrganizationAgentSandboxUpdated"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionOrganizationApiAccountMemberInvited        GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "OrganizationApiAccountMemberInvited"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionOrganizationApiAccountMemberRemoved        GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "OrganizationApiAccountMemberRemoved"
@@ -7932,6 +7993,7 @@ const (
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionUserGroupMemberRemoved                     GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "UserGroupMemberRemoved"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionUserGroupRestored                          GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "UserGroupRestored"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionUserGroupUpdated                           GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "UserGroupUpdated"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionUserGroupVisibilityUpdated                 GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "UserGroupVisibilityUpdated"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionUserLogin                                  GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "UserLogin"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionUserRegistered                             GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "UserRegistered"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionVideoProjectShared                         GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "VideoProjectShared"
@@ -7962,6 +8024,18 @@ func (e GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction) Valid(
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdConnectionConnected:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdConnectionDisconnected:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeApprovalRevoked:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeArchived:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeReviewCancelled:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeReviewDecided:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeReviewSubmitted:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCreativeUnarchived:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdWorkspaceOnboardingUpdated:
 		return true
@@ -8051,6 +8125,8 @@ func (e GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction) Valid(
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionMeteredBillingRetryTriggered:
 		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionOnboardingBonusGranted:
+		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionOrganizationAgentSandboxUpdated:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionOrganizationApiAccountMemberInvited:
@@ -8118,6 +8194,8 @@ func (e GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction) Valid(
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionUserGroupRestored:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionUserGroupUpdated:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionUserGroupVisibilityUpdated:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionUserLogin:
 		return true
@@ -14204,13 +14282,13 @@ func (e PostV1TextToImageJSONBody7Ratio) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody8Model.
 const (
-	PostV1TextToImageJSONBody8ModelGeminiImage3Pro PostV1TextToImageJSONBody8Model = "gemini_image3_pro"
+	PostV1TextToImageJSONBody8ModelGeminiImage31FlashLite PostV1TextToImageJSONBody8Model = "gemini_image3.1_flash_lite"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody8Model enum.
 func (e PostV1TextToImageJSONBody8Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody8ModelGeminiImage3Pro:
+	case PostV1TextToImageJSONBody8ModelGeminiImage31FlashLite:
 		return true
 	default:
 		return false
@@ -14238,35 +14316,15 @@ func (e PostV1TextToImageJSONBody8OutputCount) Valid() bool {
 // Defines values for PostV1TextToImageJSONBody8Ratio.
 const (
 	PostV1TextToImageJSONBody8RatioN10241024 PostV1TextToImageJSONBody8Ratio = "1024:1024"
-	PostV1TextToImageJSONBody8RatioN1152896  PostV1TextToImageJSONBody8Ratio = "1152:896"
-	PostV1TextToImageJSONBody8RatioN1184864  PostV1TextToImageJSONBody8Ratio = "1184:864"
-	PostV1TextToImageJSONBody8RatioN1248832  PostV1TextToImageJSONBody8Ratio = "1248:832"
-	PostV1TextToImageJSONBody8RatioN1344768  PostV1TextToImageJSONBody8Ratio = "1344:768"
-	PostV1TextToImageJSONBody8RatioN15362752 PostV1TextToImageJSONBody8Ratio = "1536:2752"
-	PostV1TextToImageJSONBody8RatioN1536672  PostV1TextToImageJSONBody8Ratio = "1536:672"
-	PostV1TextToImageJSONBody8RatioN16962528 PostV1TextToImageJSONBody8Ratio = "1696:2528"
-	PostV1TextToImageJSONBody8RatioN17922400 PostV1TextToImageJSONBody8Ratio = "1792:2400"
-	PostV1TextToImageJSONBody8RatioN18562304 PostV1TextToImageJSONBody8Ratio = "1856:2304"
-	PostV1TextToImageJSONBody8RatioN20482048 PostV1TextToImageJSONBody8Ratio = "2048:2048"
-	PostV1TextToImageJSONBody8RatioN23041856 PostV1TextToImageJSONBody8Ratio = "2304:1856"
-	PostV1TextToImageJSONBody8RatioN24001792 PostV1TextToImageJSONBody8Ratio = "2400:1792"
-	PostV1TextToImageJSONBody8RatioN25281696 PostV1TextToImageJSONBody8Ratio = "2528:1696"
-	PostV1TextToImageJSONBody8RatioN27521536 PostV1TextToImageJSONBody8Ratio = "2752:1536"
-	PostV1TextToImageJSONBody8RatioN30725504 PostV1TextToImageJSONBody8Ratio = "3072:5504"
-	PostV1TextToImageJSONBody8RatioN31681344 PostV1TextToImageJSONBody8Ratio = "3168:1344"
-	PostV1TextToImageJSONBody8RatioN33925056 PostV1TextToImageJSONBody8Ratio = "3392:5056"
-	PostV1TextToImageJSONBody8RatioN35844800 PostV1TextToImageJSONBody8Ratio = "3584:4800"
-	PostV1TextToImageJSONBody8RatioN37124608 PostV1TextToImageJSONBody8Ratio = "3712:4608"
-	PostV1TextToImageJSONBody8RatioN40964096 PostV1TextToImageJSONBody8Ratio = "4096:4096"
-	PostV1TextToImageJSONBody8RatioN46083712 PostV1TextToImageJSONBody8Ratio = "4608:3712"
-	PostV1TextToImageJSONBody8RatioN48003584 PostV1TextToImageJSONBody8Ratio = "4800:3584"
-	PostV1TextToImageJSONBody8RatioN50563392 PostV1TextToImageJSONBody8Ratio = "5056:3392"
-	PostV1TextToImageJSONBody8RatioN55043072 PostV1TextToImageJSONBody8Ratio = "5504:3072"
-	PostV1TextToImageJSONBody8RatioN63362688 PostV1TextToImageJSONBody8Ratio = "6336:2688"
-	PostV1TextToImageJSONBody8RatioN7681344  PostV1TextToImageJSONBody8Ratio = "768:1344"
-	PostV1TextToImageJSONBody8RatioN8321248  PostV1TextToImageJSONBody8Ratio = "832:1248"
-	PostV1TextToImageJSONBody8RatioN8641184  PostV1TextToImageJSONBody8Ratio = "864:1184"
-	PostV1TextToImageJSONBody8RatioN8961152  PostV1TextToImageJSONBody8Ratio = "896:1152"
+	PostV1TextToImageJSONBody8RatioN1152928  PostV1TextToImageJSONBody8Ratio = "1152:928"
+	PostV1TextToImageJSONBody8RatioN1200896  PostV1TextToImageJSONBody8Ratio = "1200:896"
+	PostV1TextToImageJSONBody8RatioN1264848  PostV1TextToImageJSONBody8Ratio = "1264:848"
+	PostV1TextToImageJSONBody8RatioN1376768  PostV1TextToImageJSONBody8Ratio = "1376:768"
+	PostV1TextToImageJSONBody8RatioN1584672  PostV1TextToImageJSONBody8Ratio = "1584:672"
+	PostV1TextToImageJSONBody8RatioN7681376  PostV1TextToImageJSONBody8Ratio = "768:1376"
+	PostV1TextToImageJSONBody8RatioN8481264  PostV1TextToImageJSONBody8Ratio = "848:1264"
+	PostV1TextToImageJSONBody8RatioN8961200  PostV1TextToImageJSONBody8Ratio = "896:1200"
+	PostV1TextToImageJSONBody8RatioN9281152  PostV1TextToImageJSONBody8Ratio = "928:1152"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody8Ratio enum.
@@ -14274,63 +14332,23 @@ func (e PostV1TextToImageJSONBody8Ratio) Valid() bool {
 	switch e {
 	case PostV1TextToImageJSONBody8RatioN10241024:
 		return true
-	case PostV1TextToImageJSONBody8RatioN1152896:
+	case PostV1TextToImageJSONBody8RatioN1152928:
 		return true
-	case PostV1TextToImageJSONBody8RatioN1184864:
+	case PostV1TextToImageJSONBody8RatioN1200896:
 		return true
-	case PostV1TextToImageJSONBody8RatioN1248832:
+	case PostV1TextToImageJSONBody8RatioN1264848:
 		return true
-	case PostV1TextToImageJSONBody8RatioN1344768:
+	case PostV1TextToImageJSONBody8RatioN1376768:
 		return true
-	case PostV1TextToImageJSONBody8RatioN15362752:
+	case PostV1TextToImageJSONBody8RatioN1584672:
 		return true
-	case PostV1TextToImageJSONBody8RatioN1536672:
+	case PostV1TextToImageJSONBody8RatioN7681376:
 		return true
-	case PostV1TextToImageJSONBody8RatioN16962528:
+	case PostV1TextToImageJSONBody8RatioN8481264:
 		return true
-	case PostV1TextToImageJSONBody8RatioN17922400:
+	case PostV1TextToImageJSONBody8RatioN8961200:
 		return true
-	case PostV1TextToImageJSONBody8RatioN18562304:
-		return true
-	case PostV1TextToImageJSONBody8RatioN20482048:
-		return true
-	case PostV1TextToImageJSONBody8RatioN23041856:
-		return true
-	case PostV1TextToImageJSONBody8RatioN24001792:
-		return true
-	case PostV1TextToImageJSONBody8RatioN25281696:
-		return true
-	case PostV1TextToImageJSONBody8RatioN27521536:
-		return true
-	case PostV1TextToImageJSONBody8RatioN30725504:
-		return true
-	case PostV1TextToImageJSONBody8RatioN31681344:
-		return true
-	case PostV1TextToImageJSONBody8RatioN33925056:
-		return true
-	case PostV1TextToImageJSONBody8RatioN35844800:
-		return true
-	case PostV1TextToImageJSONBody8RatioN37124608:
-		return true
-	case PostV1TextToImageJSONBody8RatioN40964096:
-		return true
-	case PostV1TextToImageJSONBody8RatioN46083712:
-		return true
-	case PostV1TextToImageJSONBody8RatioN48003584:
-		return true
-	case PostV1TextToImageJSONBody8RatioN50563392:
-		return true
-	case PostV1TextToImageJSONBody8RatioN55043072:
-		return true
-	case PostV1TextToImageJSONBody8RatioN63362688:
-		return true
-	case PostV1TextToImageJSONBody8RatioN7681344:
-		return true
-	case PostV1TextToImageJSONBody8RatioN8321248:
-		return true
-	case PostV1TextToImageJSONBody8RatioN8641184:
-		return true
-	case PostV1TextToImageJSONBody8RatioN8961152:
+	case PostV1TextToImageJSONBody8RatioN9281152:
 		return true
 	default:
 		return false
@@ -14355,60 +14373,33 @@ func (e PostV1TextToImageJSONBody8ReferenceImagesSubject) Valid() bool {
 	}
 }
 
-// Defines values for PostV1TextToImageJSONBody9Background.
-const (
-	PostV1TextToImageJSONBody9BackgroundAuto   PostV1TextToImageJSONBody9Background = "auto"
-	PostV1TextToImageJSONBody9BackgroundOpaque PostV1TextToImageJSONBody9Background = "opaque"
-)
-
-// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody9Background enum.
-func (e PostV1TextToImageJSONBody9Background) Valid() bool {
-	switch e {
-	case PostV1TextToImageJSONBody9BackgroundAuto:
-		return true
-	case PostV1TextToImageJSONBody9BackgroundOpaque:
-		return true
-	default:
-		return false
-	}
-}
-
 // Defines values for PostV1TextToImageJSONBody9Model.
 const (
-	PostV1TextToImageJSONBody9ModelGptImage25Flare PostV1TextToImageJSONBody9Model = "gpt_image_2_5_flare"
+	PostV1TextToImageJSONBody9ModelGeminiImage3Pro PostV1TextToImageJSONBody9Model = "gemini_image3_pro"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody9Model enum.
 func (e PostV1TextToImageJSONBody9Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody9ModelGptImage25Flare:
+	case PostV1TextToImageJSONBody9ModelGeminiImage3Pro:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToImageJSONBody9Quality.
+// Defines values for PostV1TextToImageJSONBody9OutputCount.
 const (
-	PostV1TextToImageJSONBody9QualityHigh   PostV1TextToImageJSONBody9Quality = "high"
-	PostV1TextToImageJSONBody9QualityLow    PostV1TextToImageJSONBody9Quality = "low"
-	PostV1TextToImageJSONBody9QualityMax    PostV1TextToImageJSONBody9Quality = "max"
-	PostV1TextToImageJSONBody9QualityMedium PostV1TextToImageJSONBody9Quality = "medium"
-	PostV1TextToImageJSONBody9QualityXhigh  PostV1TextToImageJSONBody9Quality = "xhigh"
+	PostV1TextToImageJSONBody9OutputCountN1 PostV1TextToImageJSONBody9OutputCount = 1
+	PostV1TextToImageJSONBody9OutputCountN4 PostV1TextToImageJSONBody9OutputCount = 4
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody9Quality enum.
-func (e PostV1TextToImageJSONBody9Quality) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody9OutputCount enum.
+func (e PostV1TextToImageJSONBody9OutputCount) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody9QualityHigh:
+	case PostV1TextToImageJSONBody9OutputCountN1:
 		return true
-	case PostV1TextToImageJSONBody9QualityLow:
-		return true
-	case PostV1TextToImageJSONBody9QualityMax:
-		return true
-	case PostV1TextToImageJSONBody9QualityMedium:
-		return true
-	case PostV1TextToImageJSONBody9QualityXhigh:
+	case PostV1TextToImageJSONBody9OutputCountN4:
 		return true
 	default:
 		return false
@@ -14417,103 +14408,118 @@ func (e PostV1TextToImageJSONBody9Quality) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody9Ratio.
 const (
-	PostV1TextToImageJSONBody9RatioAuto      PostV1TextToImageJSONBody9Ratio = "auto"
-	PostV1TextToImageJSONBody9RatioN10881920 PostV1TextToImageJSONBody9Ratio = "1088:1920"
-	PostV1TextToImageJSONBody9RatioN12801920 PostV1TextToImageJSONBody9Ratio = "1280:1920"
-	PostV1TextToImageJSONBody9RatioN14401920 PostV1TextToImageJSONBody9Ratio = "1440:1920"
-	PostV1TextToImageJSONBody9RatioN14402560 PostV1TextToImageJSONBody9Ratio = "1440:2560"
-	PostV1TextToImageJSONBody9RatioN15361920 PostV1TextToImageJSONBody9Ratio = "1536:1920"
-	PostV1TextToImageJSONBody9RatioN17122560 PostV1TextToImageJSONBody9Ratio = "1712:2560"
-	PostV1TextToImageJSONBody9RatioN19201088 PostV1TextToImageJSONBody9Ratio = "1920:1088"
-	PostV1TextToImageJSONBody9RatioN19201280 PostV1TextToImageJSONBody9Ratio = "1920:1280"
-	PostV1TextToImageJSONBody9RatioN19201440 PostV1TextToImageJSONBody9Ratio = "1920:1440"
-	PostV1TextToImageJSONBody9RatioN19201536 PostV1TextToImageJSONBody9Ratio = "1920:1536"
-	PostV1TextToImageJSONBody9RatioN19201920 PostV1TextToImageJSONBody9Ratio = "1920:1920"
-	PostV1TextToImageJSONBody9RatioN19202560 PostV1TextToImageJSONBody9Ratio = "1920:2560"
-	PostV1TextToImageJSONBody9RatioN20482560 PostV1TextToImageJSONBody9Ratio = "2048:2560"
-	PostV1TextToImageJSONBody9RatioN2048880  PostV1TextToImageJSONBody9Ratio = "2048:880"
-	PostV1TextToImageJSONBody9RatioN21603840 PostV1TextToImageJSONBody9Ratio = "2160:3840"
-	PostV1TextToImageJSONBody9RatioN23363504 PostV1TextToImageJSONBody9Ratio = "2336:3504"
-	PostV1TextToImageJSONBody9RatioN24483264 PostV1TextToImageJSONBody9Ratio = "2448:3264"
-	PostV1TextToImageJSONBody9RatioN25601440 PostV1TextToImageJSONBody9Ratio = "2560:1440"
-	PostV1TextToImageJSONBody9RatioN25601712 PostV1TextToImageJSONBody9Ratio = "2560:1712"
-	PostV1TextToImageJSONBody9RatioN25601920 PostV1TextToImageJSONBody9Ratio = "2560:1920"
-	PostV1TextToImageJSONBody9RatioN25602048 PostV1TextToImageJSONBody9Ratio = "2560:2048"
-	PostV1TextToImageJSONBody9RatioN25602560 PostV1TextToImageJSONBody9Ratio = "2560:2560"
-	PostV1TextToImageJSONBody9RatioN25603200 PostV1TextToImageJSONBody9Ratio = "2560:3200"
-	PostV1TextToImageJSONBody9RatioN28802880 PostV1TextToImageJSONBody9Ratio = "2880:2880"
-	PostV1TextToImageJSONBody9RatioN29121248 PostV1TextToImageJSONBody9Ratio = "2912:1248"
-	PostV1TextToImageJSONBody9RatioN32002560 PostV1TextToImageJSONBody9Ratio = "3200:2560"
-	PostV1TextToImageJSONBody9RatioN32642448 PostV1TextToImageJSONBody9Ratio = "3264:2448"
-	PostV1TextToImageJSONBody9RatioN35042336 PostV1TextToImageJSONBody9Ratio = "3504:2336"
-	PostV1TextToImageJSONBody9RatioN38401648 PostV1TextToImageJSONBody9Ratio = "3840:1648"
-	PostV1TextToImageJSONBody9RatioN38402160 PostV1TextToImageJSONBody9Ratio = "3840:2160"
+	PostV1TextToImageJSONBody9RatioN10241024 PostV1TextToImageJSONBody9Ratio = "1024:1024"
+	PostV1TextToImageJSONBody9RatioN1152896  PostV1TextToImageJSONBody9Ratio = "1152:896"
+	PostV1TextToImageJSONBody9RatioN1184864  PostV1TextToImageJSONBody9Ratio = "1184:864"
+	PostV1TextToImageJSONBody9RatioN1248832  PostV1TextToImageJSONBody9Ratio = "1248:832"
+	PostV1TextToImageJSONBody9RatioN1344768  PostV1TextToImageJSONBody9Ratio = "1344:768"
+	PostV1TextToImageJSONBody9RatioN15362752 PostV1TextToImageJSONBody9Ratio = "1536:2752"
+	PostV1TextToImageJSONBody9RatioN1536672  PostV1TextToImageJSONBody9Ratio = "1536:672"
+	PostV1TextToImageJSONBody9RatioN16962528 PostV1TextToImageJSONBody9Ratio = "1696:2528"
+	PostV1TextToImageJSONBody9RatioN17922400 PostV1TextToImageJSONBody9Ratio = "1792:2400"
+	PostV1TextToImageJSONBody9RatioN18562304 PostV1TextToImageJSONBody9Ratio = "1856:2304"
+	PostV1TextToImageJSONBody9RatioN20482048 PostV1TextToImageJSONBody9Ratio = "2048:2048"
+	PostV1TextToImageJSONBody9RatioN23041856 PostV1TextToImageJSONBody9Ratio = "2304:1856"
+	PostV1TextToImageJSONBody9RatioN24001792 PostV1TextToImageJSONBody9Ratio = "2400:1792"
+	PostV1TextToImageJSONBody9RatioN25281696 PostV1TextToImageJSONBody9Ratio = "2528:1696"
+	PostV1TextToImageJSONBody9RatioN27521536 PostV1TextToImageJSONBody9Ratio = "2752:1536"
+	PostV1TextToImageJSONBody9RatioN30725504 PostV1TextToImageJSONBody9Ratio = "3072:5504"
+	PostV1TextToImageJSONBody9RatioN31681344 PostV1TextToImageJSONBody9Ratio = "3168:1344"
+	PostV1TextToImageJSONBody9RatioN33925056 PostV1TextToImageJSONBody9Ratio = "3392:5056"
+	PostV1TextToImageJSONBody9RatioN35844800 PostV1TextToImageJSONBody9Ratio = "3584:4800"
+	PostV1TextToImageJSONBody9RatioN37124608 PostV1TextToImageJSONBody9Ratio = "3712:4608"
+	PostV1TextToImageJSONBody9RatioN40964096 PostV1TextToImageJSONBody9Ratio = "4096:4096"
+	PostV1TextToImageJSONBody9RatioN46083712 PostV1TextToImageJSONBody9Ratio = "4608:3712"
+	PostV1TextToImageJSONBody9RatioN48003584 PostV1TextToImageJSONBody9Ratio = "4800:3584"
+	PostV1TextToImageJSONBody9RatioN50563392 PostV1TextToImageJSONBody9Ratio = "5056:3392"
+	PostV1TextToImageJSONBody9RatioN55043072 PostV1TextToImageJSONBody9Ratio = "5504:3072"
+	PostV1TextToImageJSONBody9RatioN63362688 PostV1TextToImageJSONBody9Ratio = "6336:2688"
+	PostV1TextToImageJSONBody9RatioN7681344  PostV1TextToImageJSONBody9Ratio = "768:1344"
+	PostV1TextToImageJSONBody9RatioN8321248  PostV1TextToImageJSONBody9Ratio = "832:1248"
+	PostV1TextToImageJSONBody9RatioN8641184  PostV1TextToImageJSONBody9Ratio = "864:1184"
+	PostV1TextToImageJSONBody9RatioN8961152  PostV1TextToImageJSONBody9Ratio = "896:1152"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody9Ratio enum.
 func (e PostV1TextToImageJSONBody9Ratio) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody9RatioAuto:
+	case PostV1TextToImageJSONBody9RatioN10241024:
 		return true
-	case PostV1TextToImageJSONBody9RatioN10881920:
+	case PostV1TextToImageJSONBody9RatioN1152896:
 		return true
-	case PostV1TextToImageJSONBody9RatioN12801920:
+	case PostV1TextToImageJSONBody9RatioN1184864:
 		return true
-	case PostV1TextToImageJSONBody9RatioN14401920:
+	case PostV1TextToImageJSONBody9RatioN1248832:
 		return true
-	case PostV1TextToImageJSONBody9RatioN14402560:
+	case PostV1TextToImageJSONBody9RatioN1344768:
 		return true
-	case PostV1TextToImageJSONBody9RatioN15361920:
+	case PostV1TextToImageJSONBody9RatioN15362752:
 		return true
-	case PostV1TextToImageJSONBody9RatioN17122560:
+	case PostV1TextToImageJSONBody9RatioN1536672:
 		return true
-	case PostV1TextToImageJSONBody9RatioN19201088:
+	case PostV1TextToImageJSONBody9RatioN16962528:
 		return true
-	case PostV1TextToImageJSONBody9RatioN19201280:
+	case PostV1TextToImageJSONBody9RatioN17922400:
 		return true
-	case PostV1TextToImageJSONBody9RatioN19201440:
+	case PostV1TextToImageJSONBody9RatioN18562304:
 		return true
-	case PostV1TextToImageJSONBody9RatioN19201536:
+	case PostV1TextToImageJSONBody9RatioN20482048:
 		return true
-	case PostV1TextToImageJSONBody9RatioN19201920:
+	case PostV1TextToImageJSONBody9RatioN23041856:
 		return true
-	case PostV1TextToImageJSONBody9RatioN19202560:
+	case PostV1TextToImageJSONBody9RatioN24001792:
 		return true
-	case PostV1TextToImageJSONBody9RatioN20482560:
+	case PostV1TextToImageJSONBody9RatioN25281696:
 		return true
-	case PostV1TextToImageJSONBody9RatioN2048880:
+	case PostV1TextToImageJSONBody9RatioN27521536:
 		return true
-	case PostV1TextToImageJSONBody9RatioN21603840:
+	case PostV1TextToImageJSONBody9RatioN30725504:
 		return true
-	case PostV1TextToImageJSONBody9RatioN23363504:
+	case PostV1TextToImageJSONBody9RatioN31681344:
 		return true
-	case PostV1TextToImageJSONBody9RatioN24483264:
+	case PostV1TextToImageJSONBody9RatioN33925056:
 		return true
-	case PostV1TextToImageJSONBody9RatioN25601440:
+	case PostV1TextToImageJSONBody9RatioN35844800:
 		return true
-	case PostV1TextToImageJSONBody9RatioN25601712:
+	case PostV1TextToImageJSONBody9RatioN37124608:
 		return true
-	case PostV1TextToImageJSONBody9RatioN25601920:
+	case PostV1TextToImageJSONBody9RatioN40964096:
 		return true
-	case PostV1TextToImageJSONBody9RatioN25602048:
+	case PostV1TextToImageJSONBody9RatioN46083712:
 		return true
-	case PostV1TextToImageJSONBody9RatioN25602560:
+	case PostV1TextToImageJSONBody9RatioN48003584:
 		return true
-	case PostV1TextToImageJSONBody9RatioN25603200:
+	case PostV1TextToImageJSONBody9RatioN50563392:
 		return true
-	case PostV1TextToImageJSONBody9RatioN28802880:
+	case PostV1TextToImageJSONBody9RatioN55043072:
 		return true
-	case PostV1TextToImageJSONBody9RatioN29121248:
+	case PostV1TextToImageJSONBody9RatioN63362688:
 		return true
-	case PostV1TextToImageJSONBody9RatioN32002560:
+	case PostV1TextToImageJSONBody9RatioN7681344:
 		return true
-	case PostV1TextToImageJSONBody9RatioN32642448:
+	case PostV1TextToImageJSONBody9RatioN8321248:
 		return true
-	case PostV1TextToImageJSONBody9RatioN35042336:
+	case PostV1TextToImageJSONBody9RatioN8641184:
 		return true
-	case PostV1TextToImageJSONBody9RatioN38401648:
+	case PostV1TextToImageJSONBody9RatioN8961152:
 		return true
-	case PostV1TextToImageJSONBody9RatioN38402160:
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody9ReferenceImagesSubject.
+const (
+	PostV1TextToImageJSONBody9ReferenceImagesSubjectHuman  PostV1TextToImageJSONBody9ReferenceImagesSubject = "human"
+	PostV1TextToImageJSONBody9ReferenceImagesSubjectObject PostV1TextToImageJSONBody9ReferenceImagesSubject = "object"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody9ReferenceImagesSubject enum.
+func (e PostV1TextToImageJSONBody9ReferenceImagesSubject) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody9ReferenceImagesSubjectHuman:
+		return true
+	case PostV1TextToImageJSONBody9ReferenceImagesSubjectObject:
 		return true
 	default:
 		return false
@@ -14522,9 +14528,8 @@ func (e PostV1TextToImageJSONBody9Ratio) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody10Background.
 const (
-	PostV1TextToImageJSONBody10BackgroundAuto        PostV1TextToImageJSONBody10Background = "auto"
-	PostV1TextToImageJSONBody10BackgroundOpaque      PostV1TextToImageJSONBody10Background = "opaque"
-	PostV1TextToImageJSONBody10BackgroundTransparent PostV1TextToImageJSONBody10Background = "transparent"
+	PostV1TextToImageJSONBody10BackgroundAuto   PostV1TextToImageJSONBody10Background = "auto"
+	PostV1TextToImageJSONBody10BackgroundOpaque PostV1TextToImageJSONBody10Background = "opaque"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody10Background enum.
@@ -14534,8 +14539,6 @@ func (e PostV1TextToImageJSONBody10Background) Valid() bool {
 		return true
 	case PostV1TextToImageJSONBody10BackgroundOpaque:
 		return true
-	case PostV1TextToImageJSONBody10BackgroundTransparent:
-		return true
 	default:
 		return false
 	}
@@ -14543,13 +14546,13 @@ func (e PostV1TextToImageJSONBody10Background) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody10Model.
 const (
-	PostV1TextToImageJSONBody10ModelGptImage25Sunburst PostV1TextToImageJSONBody10Model = "gpt_image_2_5_sunburst"
+	PostV1TextToImageJSONBody10ModelGptImage25Flare PostV1TextToImageJSONBody10Model = "gpt_image_2_5_flare"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody10Model enum.
 func (e PostV1TextToImageJSONBody10Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody10ModelGptImage25Sunburst:
+	case PostV1TextToImageJSONBody10ModelGptImage25Flare:
 		return true
 	default:
 		return false
@@ -14688,33 +14691,63 @@ func (e PostV1TextToImageJSONBody10Ratio) Valid() bool {
 	}
 }
 
-// Defines values for PostV1TextToImageJSONBody11Model.
+// Defines values for PostV1TextToImageJSONBody11Background.
 const (
-	PostV1TextToImageJSONBody11ModelBriaFibo15 PostV1TextToImageJSONBody11Model = "bria_fibo_1_5"
+	PostV1TextToImageJSONBody11BackgroundAuto        PostV1TextToImageJSONBody11Background = "auto"
+	PostV1TextToImageJSONBody11BackgroundOpaque      PostV1TextToImageJSONBody11Background = "opaque"
+	PostV1TextToImageJSONBody11BackgroundTransparent PostV1TextToImageJSONBody11Background = "transparent"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody11Model enum.
-func (e PostV1TextToImageJSONBody11Model) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody11Background enum.
+func (e PostV1TextToImageJSONBody11Background) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody11ModelBriaFibo15:
+	case PostV1TextToImageJSONBody11BackgroundAuto:
+		return true
+	case PostV1TextToImageJSONBody11BackgroundOpaque:
+		return true
+	case PostV1TextToImageJSONBody11BackgroundTransparent:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToImageJSONBody11OutputFormat.
+// Defines values for PostV1TextToImageJSONBody11Model.
 const (
-	PostV1TextToImageJSONBody11OutputFormatJpeg PostV1TextToImageJSONBody11OutputFormat = "jpeg"
-	PostV1TextToImageJSONBody11OutputFormatPng  PostV1TextToImageJSONBody11OutputFormat = "png"
+	PostV1TextToImageJSONBody11ModelGptImage25Sunburst PostV1TextToImageJSONBody11Model = "gpt_image_2_5_sunburst"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody11OutputFormat enum.
-func (e PostV1TextToImageJSONBody11OutputFormat) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody11Model enum.
+func (e PostV1TextToImageJSONBody11Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody11OutputFormatJpeg:
+	case PostV1TextToImageJSONBody11ModelGptImage25Sunburst:
 		return true
-	case PostV1TextToImageJSONBody11OutputFormatPng:
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody11Quality.
+const (
+	PostV1TextToImageJSONBody11QualityHigh   PostV1TextToImageJSONBody11Quality = "high"
+	PostV1TextToImageJSONBody11QualityLow    PostV1TextToImageJSONBody11Quality = "low"
+	PostV1TextToImageJSONBody11QualityMax    PostV1TextToImageJSONBody11Quality = "max"
+	PostV1TextToImageJSONBody11QualityMedium PostV1TextToImageJSONBody11Quality = "medium"
+	PostV1TextToImageJSONBody11QualityXhigh  PostV1TextToImageJSONBody11Quality = "xhigh"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody11Quality enum.
+func (e PostV1TextToImageJSONBody11Quality) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody11QualityHigh:
+		return true
+	case PostV1TextToImageJSONBody11QualityLow:
+		return true
+	case PostV1TextToImageJSONBody11QualityMax:
+		return true
+	case PostV1TextToImageJSONBody11QualityMedium:
+		return true
+	case PostV1TextToImageJSONBody11QualityXhigh:
 		return true
 	default:
 		return false
@@ -14723,64 +14756,103 @@ func (e PostV1TextToImageJSONBody11OutputFormat) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody11Ratio.
 const (
-	PostV1TextToImageJSONBody11RatioN10241024 PostV1TextToImageJSONBody11Ratio = "1024:1024"
-	PostV1TextToImageJSONBody11RatioN1024576  PostV1TextToImageJSONBody11Ratio = "1024:576"
-	PostV1TextToImageJSONBody11RatioN1024768  PostV1TextToImageJSONBody11Ratio = "1024:768"
-	PostV1TextToImageJSONBody11RatioN11522048 PostV1TextToImageJSONBody11Ratio = "1152:2048"
-	PostV1TextToImageJSONBody11RatioN1152768  PostV1TextToImageJSONBody11Ratio = "1152:768"
+	PostV1TextToImageJSONBody11RatioAuto      PostV1TextToImageJSONBody11Ratio = "auto"
+	PostV1TextToImageJSONBody11RatioN10881920 PostV1TextToImageJSONBody11Ratio = "1088:1920"
+	PostV1TextToImageJSONBody11RatioN12801920 PostV1TextToImageJSONBody11Ratio = "1280:1920"
+	PostV1TextToImageJSONBody11RatioN14401920 PostV1TextToImageJSONBody11Ratio = "1440:1920"
+	PostV1TextToImageJSONBody11RatioN14402560 PostV1TextToImageJSONBody11Ratio = "1440:2560"
 	PostV1TextToImageJSONBody11RatioN15361920 PostV1TextToImageJSONBody11Ratio = "1536:1920"
-	PostV1TextToImageJSONBody11RatioN15362048 PostV1TextToImageJSONBody11Ratio = "1536:2048"
-	PostV1TextToImageJSONBody11RatioN15362304 PostV1TextToImageJSONBody11Ratio = "1536:2304"
+	PostV1TextToImageJSONBody11RatioN17122560 PostV1TextToImageJSONBody11Ratio = "1712:2560"
+	PostV1TextToImageJSONBody11RatioN19201088 PostV1TextToImageJSONBody11Ratio = "1920:1088"
+	PostV1TextToImageJSONBody11RatioN19201280 PostV1TextToImageJSONBody11Ratio = "1920:1280"
+	PostV1TextToImageJSONBody11RatioN19201440 PostV1TextToImageJSONBody11Ratio = "1920:1440"
 	PostV1TextToImageJSONBody11RatioN19201536 PostV1TextToImageJSONBody11Ratio = "1920:1536"
-	PostV1TextToImageJSONBody11RatioN20481152 PostV1TextToImageJSONBody11Ratio = "2048:1152"
-	PostV1TextToImageJSONBody11RatioN20481536 PostV1TextToImageJSONBody11Ratio = "2048:1536"
-	PostV1TextToImageJSONBody11RatioN20482048 PostV1TextToImageJSONBody11Ratio = "2048:2048"
-	PostV1TextToImageJSONBody11RatioN23041536 PostV1TextToImageJSONBody11Ratio = "2304:1536"
-	PostV1TextToImageJSONBody11RatioN5761024  PostV1TextToImageJSONBody11Ratio = "576:1024"
-	PostV1TextToImageJSONBody11RatioN7681024  PostV1TextToImageJSONBody11Ratio = "768:1024"
-	PostV1TextToImageJSONBody11RatioN7681152  PostV1TextToImageJSONBody11Ratio = "768:1152"
-	PostV1TextToImageJSONBody11RatioN768960   PostV1TextToImageJSONBody11Ratio = "768:960"
-	PostV1TextToImageJSONBody11RatioN960768   PostV1TextToImageJSONBody11Ratio = "960:768"
+	PostV1TextToImageJSONBody11RatioN19201920 PostV1TextToImageJSONBody11Ratio = "1920:1920"
+	PostV1TextToImageJSONBody11RatioN19202560 PostV1TextToImageJSONBody11Ratio = "1920:2560"
+	PostV1TextToImageJSONBody11RatioN20482560 PostV1TextToImageJSONBody11Ratio = "2048:2560"
+	PostV1TextToImageJSONBody11RatioN2048880  PostV1TextToImageJSONBody11Ratio = "2048:880"
+	PostV1TextToImageJSONBody11RatioN21603840 PostV1TextToImageJSONBody11Ratio = "2160:3840"
+	PostV1TextToImageJSONBody11RatioN23363504 PostV1TextToImageJSONBody11Ratio = "2336:3504"
+	PostV1TextToImageJSONBody11RatioN24483264 PostV1TextToImageJSONBody11Ratio = "2448:3264"
+	PostV1TextToImageJSONBody11RatioN25601440 PostV1TextToImageJSONBody11Ratio = "2560:1440"
+	PostV1TextToImageJSONBody11RatioN25601712 PostV1TextToImageJSONBody11Ratio = "2560:1712"
+	PostV1TextToImageJSONBody11RatioN25601920 PostV1TextToImageJSONBody11Ratio = "2560:1920"
+	PostV1TextToImageJSONBody11RatioN25602048 PostV1TextToImageJSONBody11Ratio = "2560:2048"
+	PostV1TextToImageJSONBody11RatioN25602560 PostV1TextToImageJSONBody11Ratio = "2560:2560"
+	PostV1TextToImageJSONBody11RatioN25603200 PostV1TextToImageJSONBody11Ratio = "2560:3200"
+	PostV1TextToImageJSONBody11RatioN28802880 PostV1TextToImageJSONBody11Ratio = "2880:2880"
+	PostV1TextToImageJSONBody11RatioN29121248 PostV1TextToImageJSONBody11Ratio = "2912:1248"
+	PostV1TextToImageJSONBody11RatioN32002560 PostV1TextToImageJSONBody11Ratio = "3200:2560"
+	PostV1TextToImageJSONBody11RatioN32642448 PostV1TextToImageJSONBody11Ratio = "3264:2448"
+	PostV1TextToImageJSONBody11RatioN35042336 PostV1TextToImageJSONBody11Ratio = "3504:2336"
+	PostV1TextToImageJSONBody11RatioN38401648 PostV1TextToImageJSONBody11Ratio = "3840:1648"
+	PostV1TextToImageJSONBody11RatioN38402160 PostV1TextToImageJSONBody11Ratio = "3840:2160"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody11Ratio enum.
 func (e PostV1TextToImageJSONBody11Ratio) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody11RatioN10241024:
+	case PostV1TextToImageJSONBody11RatioAuto:
 		return true
-	case PostV1TextToImageJSONBody11RatioN1024576:
+	case PostV1TextToImageJSONBody11RatioN10881920:
 		return true
-	case PostV1TextToImageJSONBody11RatioN1024768:
+	case PostV1TextToImageJSONBody11RatioN12801920:
 		return true
-	case PostV1TextToImageJSONBody11RatioN11522048:
+	case PostV1TextToImageJSONBody11RatioN14401920:
 		return true
-	case PostV1TextToImageJSONBody11RatioN1152768:
+	case PostV1TextToImageJSONBody11RatioN14402560:
 		return true
 	case PostV1TextToImageJSONBody11RatioN15361920:
 		return true
-	case PostV1TextToImageJSONBody11RatioN15362048:
+	case PostV1TextToImageJSONBody11RatioN17122560:
 		return true
-	case PostV1TextToImageJSONBody11RatioN15362304:
+	case PostV1TextToImageJSONBody11RatioN19201088:
+		return true
+	case PostV1TextToImageJSONBody11RatioN19201280:
+		return true
+	case PostV1TextToImageJSONBody11RatioN19201440:
 		return true
 	case PostV1TextToImageJSONBody11RatioN19201536:
 		return true
-	case PostV1TextToImageJSONBody11RatioN20481152:
+	case PostV1TextToImageJSONBody11RatioN19201920:
 		return true
-	case PostV1TextToImageJSONBody11RatioN20481536:
+	case PostV1TextToImageJSONBody11RatioN19202560:
 		return true
-	case PostV1TextToImageJSONBody11RatioN20482048:
+	case PostV1TextToImageJSONBody11RatioN20482560:
 		return true
-	case PostV1TextToImageJSONBody11RatioN23041536:
+	case PostV1TextToImageJSONBody11RatioN2048880:
 		return true
-	case PostV1TextToImageJSONBody11RatioN5761024:
+	case PostV1TextToImageJSONBody11RatioN21603840:
 		return true
-	case PostV1TextToImageJSONBody11RatioN7681024:
+	case PostV1TextToImageJSONBody11RatioN23363504:
 		return true
-	case PostV1TextToImageJSONBody11RatioN7681152:
+	case PostV1TextToImageJSONBody11RatioN24483264:
 		return true
-	case PostV1TextToImageJSONBody11RatioN768960:
+	case PostV1TextToImageJSONBody11RatioN25601440:
 		return true
-	case PostV1TextToImageJSONBody11RatioN960768:
+	case PostV1TextToImageJSONBody11RatioN25601712:
+		return true
+	case PostV1TextToImageJSONBody11RatioN25601920:
+		return true
+	case PostV1TextToImageJSONBody11RatioN25602048:
+		return true
+	case PostV1TextToImageJSONBody11RatioN25602560:
+		return true
+	case PostV1TextToImageJSONBody11RatioN25603200:
+		return true
+	case PostV1TextToImageJSONBody11RatioN28802880:
+		return true
+	case PostV1TextToImageJSONBody11RatioN29121248:
+		return true
+	case PostV1TextToImageJSONBody11RatioN32002560:
+		return true
+	case PostV1TextToImageJSONBody11RatioN32642448:
+		return true
+	case PostV1TextToImageJSONBody11RatioN35042336:
+		return true
+	case PostV1TextToImageJSONBody11RatioN38401648:
+		return true
+	case PostV1TextToImageJSONBody11RatioN38402160:
 		return true
 	default:
 		return false
@@ -14789,13 +14861,13 @@ func (e PostV1TextToImageJSONBody11Ratio) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody12Model.
 const (
-	PostV1TextToImageJSONBody12ModelBriaFiboEdit15 PostV1TextToImageJSONBody12Model = "bria_fibo_edit_1_5"
+	PostV1TextToImageJSONBody12ModelBriaFibo15 PostV1TextToImageJSONBody12Model = "bria_fibo_1_5"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody12Model enum.
 func (e PostV1TextToImageJSONBody12Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody12ModelBriaFiboEdit15:
+	case PostV1TextToImageJSONBody12ModelBriaFibo15:
 		return true
 	default:
 		return false
@@ -14822,11 +14894,19 @@ func (e PostV1TextToImageJSONBody12OutputFormat) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody12Ratio.
 const (
-	PostV1TextToImageJSONBody12RatioAuto      PostV1TextToImageJSONBody12Ratio = "auto"
 	PostV1TextToImageJSONBody12RatioN10241024 PostV1TextToImageJSONBody12Ratio = "1024:1024"
 	PostV1TextToImageJSONBody12RatioN1024576  PostV1TextToImageJSONBody12Ratio = "1024:576"
 	PostV1TextToImageJSONBody12RatioN1024768  PostV1TextToImageJSONBody12Ratio = "1024:768"
+	PostV1TextToImageJSONBody12RatioN11522048 PostV1TextToImageJSONBody12Ratio = "1152:2048"
 	PostV1TextToImageJSONBody12RatioN1152768  PostV1TextToImageJSONBody12Ratio = "1152:768"
+	PostV1TextToImageJSONBody12RatioN15361920 PostV1TextToImageJSONBody12Ratio = "1536:1920"
+	PostV1TextToImageJSONBody12RatioN15362048 PostV1TextToImageJSONBody12Ratio = "1536:2048"
+	PostV1TextToImageJSONBody12RatioN15362304 PostV1TextToImageJSONBody12Ratio = "1536:2304"
+	PostV1TextToImageJSONBody12RatioN19201536 PostV1TextToImageJSONBody12Ratio = "1920:1536"
+	PostV1TextToImageJSONBody12RatioN20481152 PostV1TextToImageJSONBody12Ratio = "2048:1152"
+	PostV1TextToImageJSONBody12RatioN20481536 PostV1TextToImageJSONBody12Ratio = "2048:1536"
+	PostV1TextToImageJSONBody12RatioN20482048 PostV1TextToImageJSONBody12Ratio = "2048:2048"
+	PostV1TextToImageJSONBody12RatioN23041536 PostV1TextToImageJSONBody12Ratio = "2304:1536"
 	PostV1TextToImageJSONBody12RatioN5761024  PostV1TextToImageJSONBody12Ratio = "576:1024"
 	PostV1TextToImageJSONBody12RatioN7681024  PostV1TextToImageJSONBody12Ratio = "768:1024"
 	PostV1TextToImageJSONBody12RatioN7681152  PostV1TextToImageJSONBody12Ratio = "768:1152"
@@ -14837,15 +14917,31 @@ const (
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody12Ratio enum.
 func (e PostV1TextToImageJSONBody12Ratio) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody12RatioAuto:
-		return true
 	case PostV1TextToImageJSONBody12RatioN10241024:
 		return true
 	case PostV1TextToImageJSONBody12RatioN1024576:
 		return true
 	case PostV1TextToImageJSONBody12RatioN1024768:
 		return true
+	case PostV1TextToImageJSONBody12RatioN11522048:
+		return true
 	case PostV1TextToImageJSONBody12RatioN1152768:
+		return true
+	case PostV1TextToImageJSONBody12RatioN15361920:
+		return true
+	case PostV1TextToImageJSONBody12RatioN15362048:
+		return true
+	case PostV1TextToImageJSONBody12RatioN15362304:
+		return true
+	case PostV1TextToImageJSONBody12RatioN19201536:
+		return true
+	case PostV1TextToImageJSONBody12RatioN20481152:
+		return true
+	case PostV1TextToImageJSONBody12RatioN20481536:
+		return true
+	case PostV1TextToImageJSONBody12RatioN20482048:
+		return true
+	case PostV1TextToImageJSONBody12RatioN23041536:
 		return true
 	case PostV1TextToImageJSONBody12RatioN5761024:
 		return true
@@ -14864,34 +14960,31 @@ func (e PostV1TextToImageJSONBody12Ratio) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody13Model.
 const (
-	PostV1TextToImageJSONBody13ModelIdeogram40 PostV1TextToImageJSONBody13Model = "ideogram_4_0"
+	PostV1TextToImageJSONBody13ModelBriaFiboEdit15 PostV1TextToImageJSONBody13Model = "bria_fibo_edit_1_5"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody13Model enum.
 func (e PostV1TextToImageJSONBody13Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody13ModelIdeogram40:
+	case PostV1TextToImageJSONBody13ModelBriaFiboEdit15:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToImageJSONBody13Quality.
+// Defines values for PostV1TextToImageJSONBody13OutputFormat.
 const (
-	PostV1TextToImageJSONBody13QualityHigh   PostV1TextToImageJSONBody13Quality = "high"
-	PostV1TextToImageJSONBody13QualityLow    PostV1TextToImageJSONBody13Quality = "low"
-	PostV1TextToImageJSONBody13QualityMedium PostV1TextToImageJSONBody13Quality = "medium"
+	PostV1TextToImageJSONBody13OutputFormatJpeg PostV1TextToImageJSONBody13OutputFormat = "jpeg"
+	PostV1TextToImageJSONBody13OutputFormatPng  PostV1TextToImageJSONBody13OutputFormat = "png"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody13Quality enum.
-func (e PostV1TextToImageJSONBody13Quality) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody13OutputFormat enum.
+func (e PostV1TextToImageJSONBody13OutputFormat) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody13QualityHigh:
+	case PostV1TextToImageJSONBody13OutputFormatJpeg:
 		return true
-	case PostV1TextToImageJSONBody13QualityLow:
-		return true
-	case PostV1TextToImageJSONBody13QualityMedium:
+	case PostV1TextToImageJSONBody13OutputFormatPng:
 		return true
 	default:
 		return false
@@ -14900,37 +14993,40 @@ func (e PostV1TextToImageJSONBody13Quality) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody13Ratio.
 const (
-	PostV1TextToImageJSONBody13RatioN12803072 PostV1TextToImageJSONBody13Ratio = "1280:3072"
-	PostV1TextToImageJSONBody13RatioN14402560 PostV1TextToImageJSONBody13Ratio = "1440:2560"
-	PostV1TextToImageJSONBody13RatioN16642496 PostV1TextToImageJSONBody13Ratio = "1664:2496"
-	PostV1TextToImageJSONBody13RatioN17282304 PostV1TextToImageJSONBody13Ratio = "1728:2304"
-	PostV1TextToImageJSONBody13RatioN20482048 PostV1TextToImageJSONBody13Ratio = "2048:2048"
-	PostV1TextToImageJSONBody13RatioN23041728 PostV1TextToImageJSONBody13Ratio = "2304:1728"
-	PostV1TextToImageJSONBody13RatioN24961664 PostV1TextToImageJSONBody13Ratio = "2496:1664"
-	PostV1TextToImageJSONBody13RatioN25601440 PostV1TextToImageJSONBody13Ratio = "2560:1440"
-	PostV1TextToImageJSONBody13RatioN30721280 PostV1TextToImageJSONBody13Ratio = "3072:1280"
+	PostV1TextToImageJSONBody13RatioAuto      PostV1TextToImageJSONBody13Ratio = "auto"
+	PostV1TextToImageJSONBody13RatioN10241024 PostV1TextToImageJSONBody13Ratio = "1024:1024"
+	PostV1TextToImageJSONBody13RatioN1024576  PostV1TextToImageJSONBody13Ratio = "1024:576"
+	PostV1TextToImageJSONBody13RatioN1024768  PostV1TextToImageJSONBody13Ratio = "1024:768"
+	PostV1TextToImageJSONBody13RatioN1152768  PostV1TextToImageJSONBody13Ratio = "1152:768"
+	PostV1TextToImageJSONBody13RatioN5761024  PostV1TextToImageJSONBody13Ratio = "576:1024"
+	PostV1TextToImageJSONBody13RatioN7681024  PostV1TextToImageJSONBody13Ratio = "768:1024"
+	PostV1TextToImageJSONBody13RatioN7681152  PostV1TextToImageJSONBody13Ratio = "768:1152"
+	PostV1TextToImageJSONBody13RatioN768960   PostV1TextToImageJSONBody13Ratio = "768:960"
+	PostV1TextToImageJSONBody13RatioN960768   PostV1TextToImageJSONBody13Ratio = "960:768"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody13Ratio enum.
 func (e PostV1TextToImageJSONBody13Ratio) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody13RatioN12803072:
+	case PostV1TextToImageJSONBody13RatioAuto:
 		return true
-	case PostV1TextToImageJSONBody13RatioN14402560:
+	case PostV1TextToImageJSONBody13RatioN10241024:
 		return true
-	case PostV1TextToImageJSONBody13RatioN16642496:
+	case PostV1TextToImageJSONBody13RatioN1024576:
 		return true
-	case PostV1TextToImageJSONBody13RatioN17282304:
+	case PostV1TextToImageJSONBody13RatioN1024768:
 		return true
-	case PostV1TextToImageJSONBody13RatioN20482048:
+	case PostV1TextToImageJSONBody13RatioN1152768:
 		return true
-	case PostV1TextToImageJSONBody13RatioN23041728:
+	case PostV1TextToImageJSONBody13RatioN5761024:
 		return true
-	case PostV1TextToImageJSONBody13RatioN24961664:
+	case PostV1TextToImageJSONBody13RatioN7681024:
 		return true
-	case PostV1TextToImageJSONBody13RatioN25601440:
+	case PostV1TextToImageJSONBody13RatioN7681152:
 		return true
-	case PostV1TextToImageJSONBody13RatioN30721280:
+	case PostV1TextToImageJSONBody13RatioN768960:
+		return true
+	case PostV1TextToImageJSONBody13RatioN960768:
 		return true
 	default:
 		return false
@@ -14939,13 +15035,13 @@ func (e PostV1TextToImageJSONBody13Ratio) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody14Model.
 const (
-	PostV1TextToImageJSONBody14ModelIdeogram45 PostV1TextToImageJSONBody14Model = "ideogram_4_5"
+	PostV1TextToImageJSONBody14ModelIdeogram40 PostV1TextToImageJSONBody14Model = "ideogram_4_0"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody14Model enum.
 func (e PostV1TextToImageJSONBody14Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody14ModelIdeogram45:
+	case PostV1TextToImageJSONBody14ModelIdeogram40:
 		return true
 	default:
 		return false
@@ -14954,10 +15050,9 @@ func (e PostV1TextToImageJSONBody14Model) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody14Quality.
 const (
-	PostV1TextToImageJSONBody14QualityHigh    PostV1TextToImageJSONBody14Quality = "high"
-	PostV1TextToImageJSONBody14QualityLow     PostV1TextToImageJSONBody14Quality = "low"
-	PostV1TextToImageJSONBody14QualityMedium  PostV1TextToImageJSONBody14Quality = "medium"
-	PostV1TextToImageJSONBody14QualityVeryLow PostV1TextToImageJSONBody14Quality = "very_low"
+	PostV1TextToImageJSONBody14QualityHigh   PostV1TextToImageJSONBody14Quality = "high"
+	PostV1TextToImageJSONBody14QualityLow    PostV1TextToImageJSONBody14Quality = "low"
+	PostV1TextToImageJSONBody14QualityMedium PostV1TextToImageJSONBody14Quality = "medium"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody14Quality enum.
@@ -14969,8 +15064,6 @@ func (e PostV1TextToImageJSONBody14Quality) Valid() bool {
 		return true
 	case PostV1TextToImageJSONBody14QualityMedium:
 		return true
-	case PostV1TextToImageJSONBody14QualityVeryLow:
-		return true
 	default:
 		return false
 	}
@@ -14978,69 +15071,29 @@ func (e PostV1TextToImageJSONBody14Quality) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody14Ratio.
 const (
-	PostV1TextToImageJSONBody14RatioAuto      PostV1TextToImageJSONBody14Ratio = "auto"
-	PostV1TextToImageJSONBody14RatioN10241024 PostV1TextToImageJSONBody14Ratio = "1024:1024"
-	PostV1TextToImageJSONBody14RatioN1024576  PostV1TextToImageJSONBody14Ratio = "1024:576"
-	PostV1TextToImageJSONBody14RatioN1120896  PostV1TextToImageJSONBody14Ratio = "1120:896"
-	PostV1TextToImageJSONBody14RatioN1152864  PostV1TextToImageJSONBody14Ratio = "1152:864"
-	PostV1TextToImageJSONBody14RatioN1248832  PostV1TextToImageJSONBody14Ratio = "1248:832"
-	PostV1TextToImageJSONBody14RatioN1280720  PostV1TextToImageJSONBody14Ratio = "1280:720"
-	PostV1TextToImageJSONBody14RatioN1408704  PostV1TextToImageJSONBody14Ratio = "1408:704"
+	PostV1TextToImageJSONBody14RatioN12803072 PostV1TextToImageJSONBody14Ratio = "1280:3072"
 	PostV1TextToImageJSONBody14RatioN14402560 PostV1TextToImageJSONBody14Ratio = "1440:2560"
-	PostV1TextToImageJSONBody14RatioN14402880 PostV1TextToImageJSONBody14Ratio = "1440:2880"
-	PostV1TextToImageJSONBody14RatioN1440720  PostV1TextToImageJSONBody14Ratio = "1440:720"
 	PostV1TextToImageJSONBody14RatioN16642496 PostV1TextToImageJSONBody14Ratio = "1664:2496"
 	PostV1TextToImageJSONBody14RatioN17282304 PostV1TextToImageJSONBody14Ratio = "1728:2304"
-	PostV1TextToImageJSONBody14RatioN17922240 PostV1TextToImageJSONBody14Ratio = "1792:2240"
 	PostV1TextToImageJSONBody14RatioN20482048 PostV1TextToImageJSONBody14Ratio = "2048:2048"
-	PostV1TextToImageJSONBody14RatioN22401792 PostV1TextToImageJSONBody14Ratio = "2240:1792"
 	PostV1TextToImageJSONBody14RatioN23041728 PostV1TextToImageJSONBody14Ratio = "2304:1728"
 	PostV1TextToImageJSONBody14RatioN24961664 PostV1TextToImageJSONBody14Ratio = "2496:1664"
 	PostV1TextToImageJSONBody14RatioN25601440 PostV1TextToImageJSONBody14Ratio = "2560:1440"
-	PostV1TextToImageJSONBody14RatioN28801440 PostV1TextToImageJSONBody14Ratio = "2880:1440"
-	PostV1TextToImageJSONBody14RatioN5761024  PostV1TextToImageJSONBody14Ratio = "576:1024"
-	PostV1TextToImageJSONBody14RatioN7041408  PostV1TextToImageJSONBody14Ratio = "704:1408"
-	PostV1TextToImageJSONBody14RatioN7201280  PostV1TextToImageJSONBody14Ratio = "720:1280"
-	PostV1TextToImageJSONBody14RatioN7201440  PostV1TextToImageJSONBody14Ratio = "720:1440"
-	PostV1TextToImageJSONBody14RatioN8321248  PostV1TextToImageJSONBody14Ratio = "832:1248"
-	PostV1TextToImageJSONBody14RatioN8641152  PostV1TextToImageJSONBody14Ratio = "864:1152"
-	PostV1TextToImageJSONBody14RatioN8961120  PostV1TextToImageJSONBody14Ratio = "896:1120"
+	PostV1TextToImageJSONBody14RatioN30721280 PostV1TextToImageJSONBody14Ratio = "3072:1280"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody14Ratio enum.
 func (e PostV1TextToImageJSONBody14Ratio) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody14RatioAuto:
-		return true
-	case PostV1TextToImageJSONBody14RatioN10241024:
-		return true
-	case PostV1TextToImageJSONBody14RatioN1024576:
-		return true
-	case PostV1TextToImageJSONBody14RatioN1120896:
-		return true
-	case PostV1TextToImageJSONBody14RatioN1152864:
-		return true
-	case PostV1TextToImageJSONBody14RatioN1248832:
-		return true
-	case PostV1TextToImageJSONBody14RatioN1280720:
-		return true
-	case PostV1TextToImageJSONBody14RatioN1408704:
+	case PostV1TextToImageJSONBody14RatioN12803072:
 		return true
 	case PostV1TextToImageJSONBody14RatioN14402560:
-		return true
-	case PostV1TextToImageJSONBody14RatioN14402880:
-		return true
-	case PostV1TextToImageJSONBody14RatioN1440720:
 		return true
 	case PostV1TextToImageJSONBody14RatioN16642496:
 		return true
 	case PostV1TextToImageJSONBody14RatioN17282304:
 		return true
-	case PostV1TextToImageJSONBody14RatioN17922240:
-		return true
 	case PostV1TextToImageJSONBody14RatioN20482048:
-		return true
-	case PostV1TextToImageJSONBody14RatioN22401792:
 		return true
 	case PostV1TextToImageJSONBody14RatioN23041728:
 		return true
@@ -15048,21 +15101,7 @@ func (e PostV1TextToImageJSONBody14Ratio) Valid() bool {
 		return true
 	case PostV1TextToImageJSONBody14RatioN25601440:
 		return true
-	case PostV1TextToImageJSONBody14RatioN28801440:
-		return true
-	case PostV1TextToImageJSONBody14RatioN5761024:
-		return true
-	case PostV1TextToImageJSONBody14RatioN7041408:
-		return true
-	case PostV1TextToImageJSONBody14RatioN7201280:
-		return true
-	case PostV1TextToImageJSONBody14RatioN7201440:
-		return true
-	case PostV1TextToImageJSONBody14RatioN8321248:
-		return true
-	case PostV1TextToImageJSONBody14RatioN8641152:
-		return true
-	case PostV1TextToImageJSONBody14RatioN8961120:
+	case PostV1TextToImageJSONBody14RatioN30721280:
 		return true
 	default:
 		return false
@@ -15071,13 +15110,37 @@ func (e PostV1TextToImageJSONBody14Ratio) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody15Model.
 const (
-	PostV1TextToImageJSONBody15ModelNanoBanana21 PostV1TextToImageJSONBody15Model = "nano_banana_2.1"
+	PostV1TextToImageJSONBody15ModelIdeogram45 PostV1TextToImageJSONBody15Model = "ideogram_4_5"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody15Model enum.
 func (e PostV1TextToImageJSONBody15Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody15ModelNanoBanana21:
+	case PostV1TextToImageJSONBody15ModelIdeogram45:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody15Quality.
+const (
+	PostV1TextToImageJSONBody15QualityHigh    PostV1TextToImageJSONBody15Quality = "high"
+	PostV1TextToImageJSONBody15QualityLow     PostV1TextToImageJSONBody15Quality = "low"
+	PostV1TextToImageJSONBody15QualityMedium  PostV1TextToImageJSONBody15Quality = "medium"
+	PostV1TextToImageJSONBody15QualityVeryLow PostV1TextToImageJSONBody15Quality = "very_low"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody15Quality enum.
+func (e PostV1TextToImageJSONBody15Quality) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody15QualityHigh:
+		return true
+	case PostV1TextToImageJSONBody15QualityLow:
+		return true
+	case PostV1TextToImageJSONBody15QualityMedium:
+		return true
+	case PostV1TextToImageJSONBody15QualityVeryLow:
 		return true
 	default:
 		return false
@@ -15086,157 +15149,91 @@ func (e PostV1TextToImageJSONBody15Model) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody15Ratio.
 const (
-	PostV1TextToImageJSONBody15RatioN10241024  PostV1TextToImageJSONBody15Ratio = "1024:1024"
-	PostV1TextToImageJSONBody15RatioN10244128  PostV1TextToImageJSONBody15Ratio = "1024:4128"
-	PostV1TextToImageJSONBody15RatioN1152928   PostV1TextToImageJSONBody15Ratio = "1152:928"
-	PostV1TextToImageJSONBody15RatioN117121408 PostV1TextToImageJSONBody15Ratio = "11712:1408"
-	PostV1TextToImageJSONBody15RatioN1200896   PostV1TextToImageJSONBody15Ratio = "1200:896"
-	PostV1TextToImageJSONBody15RatioN1264848   PostV1TextToImageJSONBody15Ratio = "1264:848"
-	PostV1TextToImageJSONBody15RatioN1376768   PostV1TextToImageJSONBody15Ratio = "1376:768"
-	PostV1TextToImageJSONBody15RatioN140811712 PostV1TextToImageJSONBody15Ratio = "1408:11712"
-	PostV1TextToImageJSONBody15RatioN15362752  PostV1TextToImageJSONBody15Ratio = "1536:2752"
-	PostV1TextToImageJSONBody15RatioN1584672   PostV1TextToImageJSONBody15Ratio = "1584:672"
-	PostV1TextToImageJSONBody15RatioN16962528  PostV1TextToImageJSONBody15Ratio = "1696:2528"
-	PostV1TextToImageJSONBody15RatioN17922400  PostV1TextToImageJSONBody15Ratio = "1792:2400"
-	PostV1TextToImageJSONBody15RatioN18562304  PostV1TextToImageJSONBody15Ratio = "1856:2304"
-	PostV1TextToImageJSONBody15RatioN20482048  PostV1TextToImageJSONBody15Ratio = "2048:2048"
-	PostV1TextToImageJSONBody15RatioN20488256  PostV1TextToImageJSONBody15Ratio = "2048:8256"
-	PostV1TextToImageJSONBody15RatioN2064512   PostV1TextToImageJSONBody15Ratio = "2064:512"
-	PostV1TextToImageJSONBody15RatioN23041856  PostV1TextToImageJSONBody15Ratio = "2304:1856"
-	PostV1TextToImageJSONBody15RatioN24001792  PostV1TextToImageJSONBody15Ratio = "2400:1792"
-	PostV1TextToImageJSONBody15RatioN25281696  PostV1TextToImageJSONBody15Ratio = "2528:1696"
-	PostV1TextToImageJSONBody15RatioN27521536  PostV1TextToImageJSONBody15Ratio = "2752:1536"
-	PostV1TextToImageJSONBody15RatioN2928352   PostV1TextToImageJSONBody15Ratio = "2928:352"
-	PostV1TextToImageJSONBody15RatioN30725504  PostV1TextToImageJSONBody15Ratio = "3072:5504"
-	PostV1TextToImageJSONBody15RatioN31681344  PostV1TextToImageJSONBody15Ratio = "3168:1344"
-	PostV1TextToImageJSONBody15RatioN33925056  PostV1TextToImageJSONBody15Ratio = "3392:5056"
-	PostV1TextToImageJSONBody15RatioN3522928   PostV1TextToImageJSONBody15Ratio = "352:2928"
-	PostV1TextToImageJSONBody15RatioN35844800  PostV1TextToImageJSONBody15Ratio = "3584:4800"
-	PostV1TextToImageJSONBody15RatioN37124608  PostV1TextToImageJSONBody15Ratio = "3712:4608"
-	PostV1TextToImageJSONBody15RatioN40964096  PostV1TextToImageJSONBody15Ratio = "4096:4096"
-	PostV1TextToImageJSONBody15RatioN41281024  PostV1TextToImageJSONBody15Ratio = "4128:1024"
-	PostV1TextToImageJSONBody15RatioN46083712  PostV1TextToImageJSONBody15Ratio = "4608:3712"
-	PostV1TextToImageJSONBody15RatioN48003584  PostV1TextToImageJSONBody15Ratio = "4800:3584"
-	PostV1TextToImageJSONBody15RatioN50563392  PostV1TextToImageJSONBody15Ratio = "5056:3392"
-	PostV1TextToImageJSONBody15RatioN5122064   PostV1TextToImageJSONBody15Ratio = "512:2064"
-	PostV1TextToImageJSONBody15RatioN55043072  PostV1TextToImageJSONBody15Ratio = "5504:3072"
-	PostV1TextToImageJSONBody15RatioN5856704   PostV1TextToImageJSONBody15Ratio = "5856:704"
-	PostV1TextToImageJSONBody15RatioN63362688  PostV1TextToImageJSONBody15Ratio = "6336:2688"
-	PostV1TextToImageJSONBody15RatioN7045856   PostV1TextToImageJSONBody15Ratio = "704:5856"
-	PostV1TextToImageJSONBody15RatioN7681376   PostV1TextToImageJSONBody15Ratio = "768:1376"
-	PostV1TextToImageJSONBody15RatioN82562048  PostV1TextToImageJSONBody15Ratio = "8256:2048"
-	PostV1TextToImageJSONBody15RatioN8481264   PostV1TextToImageJSONBody15Ratio = "848:1264"
-	PostV1TextToImageJSONBody15RatioN8961200   PostV1TextToImageJSONBody15Ratio = "896:1200"
-	PostV1TextToImageJSONBody15RatioN9281152   PostV1TextToImageJSONBody15Ratio = "928:1152"
+	PostV1TextToImageJSONBody15RatioAuto      PostV1TextToImageJSONBody15Ratio = "auto"
+	PostV1TextToImageJSONBody15RatioN10241024 PostV1TextToImageJSONBody15Ratio = "1024:1024"
+	PostV1TextToImageJSONBody15RatioN1024576  PostV1TextToImageJSONBody15Ratio = "1024:576"
+	PostV1TextToImageJSONBody15RatioN1120896  PostV1TextToImageJSONBody15Ratio = "1120:896"
+	PostV1TextToImageJSONBody15RatioN1152864  PostV1TextToImageJSONBody15Ratio = "1152:864"
+	PostV1TextToImageJSONBody15RatioN1248832  PostV1TextToImageJSONBody15Ratio = "1248:832"
+	PostV1TextToImageJSONBody15RatioN1280720  PostV1TextToImageJSONBody15Ratio = "1280:720"
+	PostV1TextToImageJSONBody15RatioN1408704  PostV1TextToImageJSONBody15Ratio = "1408:704"
+	PostV1TextToImageJSONBody15RatioN14402560 PostV1TextToImageJSONBody15Ratio = "1440:2560"
+	PostV1TextToImageJSONBody15RatioN14402880 PostV1TextToImageJSONBody15Ratio = "1440:2880"
+	PostV1TextToImageJSONBody15RatioN1440720  PostV1TextToImageJSONBody15Ratio = "1440:720"
+	PostV1TextToImageJSONBody15RatioN16642496 PostV1TextToImageJSONBody15Ratio = "1664:2496"
+	PostV1TextToImageJSONBody15RatioN17282304 PostV1TextToImageJSONBody15Ratio = "1728:2304"
+	PostV1TextToImageJSONBody15RatioN17922240 PostV1TextToImageJSONBody15Ratio = "1792:2240"
+	PostV1TextToImageJSONBody15RatioN20482048 PostV1TextToImageJSONBody15Ratio = "2048:2048"
+	PostV1TextToImageJSONBody15RatioN22401792 PostV1TextToImageJSONBody15Ratio = "2240:1792"
+	PostV1TextToImageJSONBody15RatioN23041728 PostV1TextToImageJSONBody15Ratio = "2304:1728"
+	PostV1TextToImageJSONBody15RatioN24961664 PostV1TextToImageJSONBody15Ratio = "2496:1664"
+	PostV1TextToImageJSONBody15RatioN25601440 PostV1TextToImageJSONBody15Ratio = "2560:1440"
+	PostV1TextToImageJSONBody15RatioN28801440 PostV1TextToImageJSONBody15Ratio = "2880:1440"
+	PostV1TextToImageJSONBody15RatioN5761024  PostV1TextToImageJSONBody15Ratio = "576:1024"
+	PostV1TextToImageJSONBody15RatioN7041408  PostV1TextToImageJSONBody15Ratio = "704:1408"
+	PostV1TextToImageJSONBody15RatioN7201280  PostV1TextToImageJSONBody15Ratio = "720:1280"
+	PostV1TextToImageJSONBody15RatioN7201440  PostV1TextToImageJSONBody15Ratio = "720:1440"
+	PostV1TextToImageJSONBody15RatioN8321248  PostV1TextToImageJSONBody15Ratio = "832:1248"
+	PostV1TextToImageJSONBody15RatioN8641152  PostV1TextToImageJSONBody15Ratio = "864:1152"
+	PostV1TextToImageJSONBody15RatioN8961120  PostV1TextToImageJSONBody15Ratio = "896:1120"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody15Ratio enum.
 func (e PostV1TextToImageJSONBody15Ratio) Valid() bool {
 	switch e {
+	case PostV1TextToImageJSONBody15RatioAuto:
+		return true
 	case PostV1TextToImageJSONBody15RatioN10241024:
 		return true
-	case PostV1TextToImageJSONBody15RatioN10244128:
+	case PostV1TextToImageJSONBody15RatioN1024576:
 		return true
-	case PostV1TextToImageJSONBody15RatioN1152928:
+	case PostV1TextToImageJSONBody15RatioN1120896:
 		return true
-	case PostV1TextToImageJSONBody15RatioN117121408:
+	case PostV1TextToImageJSONBody15RatioN1152864:
 		return true
-	case PostV1TextToImageJSONBody15RatioN1200896:
+	case PostV1TextToImageJSONBody15RatioN1248832:
 		return true
-	case PostV1TextToImageJSONBody15RatioN1264848:
+	case PostV1TextToImageJSONBody15RatioN1280720:
 		return true
-	case PostV1TextToImageJSONBody15RatioN1376768:
+	case PostV1TextToImageJSONBody15RatioN1408704:
 		return true
-	case PostV1TextToImageJSONBody15RatioN140811712:
+	case PostV1TextToImageJSONBody15RatioN14402560:
 		return true
-	case PostV1TextToImageJSONBody15RatioN15362752:
+	case PostV1TextToImageJSONBody15RatioN14402880:
 		return true
-	case PostV1TextToImageJSONBody15RatioN1584672:
+	case PostV1TextToImageJSONBody15RatioN1440720:
 		return true
-	case PostV1TextToImageJSONBody15RatioN16962528:
+	case PostV1TextToImageJSONBody15RatioN16642496:
 		return true
-	case PostV1TextToImageJSONBody15RatioN17922400:
+	case PostV1TextToImageJSONBody15RatioN17282304:
 		return true
-	case PostV1TextToImageJSONBody15RatioN18562304:
+	case PostV1TextToImageJSONBody15RatioN17922240:
 		return true
 	case PostV1TextToImageJSONBody15RatioN20482048:
 		return true
-	case PostV1TextToImageJSONBody15RatioN20488256:
+	case PostV1TextToImageJSONBody15RatioN22401792:
 		return true
-	case PostV1TextToImageJSONBody15RatioN2064512:
+	case PostV1TextToImageJSONBody15RatioN23041728:
 		return true
-	case PostV1TextToImageJSONBody15RatioN23041856:
+	case PostV1TextToImageJSONBody15RatioN24961664:
 		return true
-	case PostV1TextToImageJSONBody15RatioN24001792:
+	case PostV1TextToImageJSONBody15RatioN25601440:
 		return true
-	case PostV1TextToImageJSONBody15RatioN25281696:
+	case PostV1TextToImageJSONBody15RatioN28801440:
 		return true
-	case PostV1TextToImageJSONBody15RatioN27521536:
+	case PostV1TextToImageJSONBody15RatioN5761024:
 		return true
-	case PostV1TextToImageJSONBody15RatioN2928352:
+	case PostV1TextToImageJSONBody15RatioN7041408:
 		return true
-	case PostV1TextToImageJSONBody15RatioN30725504:
+	case PostV1TextToImageJSONBody15RatioN7201280:
 		return true
-	case PostV1TextToImageJSONBody15RatioN31681344:
+	case PostV1TextToImageJSONBody15RatioN7201440:
 		return true
-	case PostV1TextToImageJSONBody15RatioN33925056:
+	case PostV1TextToImageJSONBody15RatioN8321248:
 		return true
-	case PostV1TextToImageJSONBody15RatioN3522928:
+	case PostV1TextToImageJSONBody15RatioN8641152:
 		return true
-	case PostV1TextToImageJSONBody15RatioN35844800:
-		return true
-	case PostV1TextToImageJSONBody15RatioN37124608:
-		return true
-	case PostV1TextToImageJSONBody15RatioN40964096:
-		return true
-	case PostV1TextToImageJSONBody15RatioN41281024:
-		return true
-	case PostV1TextToImageJSONBody15RatioN46083712:
-		return true
-	case PostV1TextToImageJSONBody15RatioN48003584:
-		return true
-	case PostV1TextToImageJSONBody15RatioN50563392:
-		return true
-	case PostV1TextToImageJSONBody15RatioN5122064:
-		return true
-	case PostV1TextToImageJSONBody15RatioN55043072:
-		return true
-	case PostV1TextToImageJSONBody15RatioN5856704:
-		return true
-	case PostV1TextToImageJSONBody15RatioN63362688:
-		return true
-	case PostV1TextToImageJSONBody15RatioN7045856:
-		return true
-	case PostV1TextToImageJSONBody15RatioN7681376:
-		return true
-	case PostV1TextToImageJSONBody15RatioN82562048:
-		return true
-	case PostV1TextToImageJSONBody15RatioN8481264:
-		return true
-	case PostV1TextToImageJSONBody15RatioN8961200:
-		return true
-	case PostV1TextToImageJSONBody15RatioN9281152:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for PostV1TextToImageJSONBody15ThinkingLevel.
-const (
-	PostV1TextToImageJSONBody15ThinkingLevelHigh    PostV1TextToImageJSONBody15ThinkingLevel = "high"
-	PostV1TextToImageJSONBody15ThinkingLevelMedium  PostV1TextToImageJSONBody15ThinkingLevel = "medium"
-	PostV1TextToImageJSONBody15ThinkingLevelMinimal PostV1TextToImageJSONBody15ThinkingLevel = "minimal"
-)
-
-// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody15ThinkingLevel enum.
-func (e PostV1TextToImageJSONBody15ThinkingLevel) Valid() bool {
-	switch e {
-	case PostV1TextToImageJSONBody15ThinkingLevelHigh:
-		return true
-	case PostV1TextToImageJSONBody15ThinkingLevelMedium:
-		return true
-	case PostV1TextToImageJSONBody15ThinkingLevelMinimal:
+	case PostV1TextToImageJSONBody15RatioN8961120:
 		return true
 	default:
 		return false
@@ -15245,13 +15242,31 @@ func (e PostV1TextToImageJSONBody15ThinkingLevel) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody16Model.
 const (
-	PostV1TextToImageJSONBody16ModelGemini25Flash PostV1TextToImageJSONBody16Model = "gemini_2.5_flash"
+	PostV1TextToImageJSONBody16ModelSeedream5Flash PostV1TextToImageJSONBody16Model = "seedream5_flash"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody16Model enum.
 func (e PostV1TextToImageJSONBody16Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody16ModelGemini25Flash:
+	case PostV1TextToImageJSONBody16ModelSeedream5Flash:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody16OutputFormat.
+const (
+	PostV1TextToImageJSONBody16OutputFormatJpeg PostV1TextToImageJSONBody16OutputFormat = "jpeg"
+	PostV1TextToImageJSONBody16OutputFormatPng  PostV1TextToImageJSONBody16OutputFormat = "png"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody16OutputFormat enum.
+func (e PostV1TextToImageJSONBody16OutputFormat) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody16OutputFormatJpeg:
+		return true
+	case PostV1TextToImageJSONBody16OutputFormatPng:
 		return true
 	default:
 		return false
@@ -15260,40 +15275,295 @@ func (e PostV1TextToImageJSONBody16Model) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody16Ratio.
 const (
+	PostV1TextToImageJSONBody16RatioAuto1k    PostV1TextToImageJSONBody16Ratio = "auto_1k"
+	PostV1TextToImageJSONBody16RatioAuto2k    PostV1TextToImageJSONBody16Ratio = "auto_2k"
 	PostV1TextToImageJSONBody16RatioN10241024 PostV1TextToImageJSONBody16Ratio = "1024:1024"
-	PostV1TextToImageJSONBody16RatioN1152896  PostV1TextToImageJSONBody16Ratio = "1152:896"
-	PostV1TextToImageJSONBody16RatioN1184864  PostV1TextToImageJSONBody16Ratio = "1184:864"
+	PostV1TextToImageJSONBody16RatioN1184896  PostV1TextToImageJSONBody16Ratio = "1184:896"
 	PostV1TextToImageJSONBody16RatioN1248832  PostV1TextToImageJSONBody16Ratio = "1248:832"
-	PostV1TextToImageJSONBody16RatioN1344768  PostV1TextToImageJSONBody16Ratio = "1344:768"
-	PostV1TextToImageJSONBody16RatioN1536672  PostV1TextToImageJSONBody16Ratio = "1536:672"
-	PostV1TextToImageJSONBody16RatioN7681344  PostV1TextToImageJSONBody16Ratio = "768:1344"
+	PostV1TextToImageJSONBody16RatioN1376768  PostV1TextToImageJSONBody16Ratio = "1376:768"
+	PostV1TextToImageJSONBody16RatioN1568672  PostV1TextToImageJSONBody16Ratio = "1568:672"
+	PostV1TextToImageJSONBody16RatioN16002848 PostV1TextToImageJSONBody16Ratio = "1600:2848"
+	PostV1TextToImageJSONBody16RatioN16642496 PostV1TextToImageJSONBody16Ratio = "1664:2496"
+	PostV1TextToImageJSONBody16RatioN17282304 PostV1TextToImageJSONBody16Ratio = "1728:2304"
+	PostV1TextToImageJSONBody16RatioN20482048 PostV1TextToImageJSONBody16Ratio = "2048:2048"
+	PostV1TextToImageJSONBody16RatioN23041728 PostV1TextToImageJSONBody16Ratio = "2304:1728"
+	PostV1TextToImageJSONBody16RatioN24961664 PostV1TextToImageJSONBody16Ratio = "2496:1664"
+	PostV1TextToImageJSONBody16RatioN28481600 PostV1TextToImageJSONBody16Ratio = "2848:1600"
+	PostV1TextToImageJSONBody16RatioN31361344 PostV1TextToImageJSONBody16Ratio = "3136:1344"
+	PostV1TextToImageJSONBody16RatioN7681376  PostV1TextToImageJSONBody16Ratio = "768:1376"
 	PostV1TextToImageJSONBody16RatioN8321248  PostV1TextToImageJSONBody16Ratio = "832:1248"
-	PostV1TextToImageJSONBody16RatioN8641184  PostV1TextToImageJSONBody16Ratio = "864:1184"
-	PostV1TextToImageJSONBody16RatioN8961152  PostV1TextToImageJSONBody16Ratio = "896:1152"
+	PostV1TextToImageJSONBody16RatioN8961184  PostV1TextToImageJSONBody16Ratio = "896:1184"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody16Ratio enum.
 func (e PostV1TextToImageJSONBody16Ratio) Valid() bool {
 	switch e {
+	case PostV1TextToImageJSONBody16RatioAuto1k:
+		return true
+	case PostV1TextToImageJSONBody16RatioAuto2k:
+		return true
 	case PostV1TextToImageJSONBody16RatioN10241024:
 		return true
-	case PostV1TextToImageJSONBody16RatioN1152896:
-		return true
-	case PostV1TextToImageJSONBody16RatioN1184864:
+	case PostV1TextToImageJSONBody16RatioN1184896:
 		return true
 	case PostV1TextToImageJSONBody16RatioN1248832:
 		return true
-	case PostV1TextToImageJSONBody16RatioN1344768:
+	case PostV1TextToImageJSONBody16RatioN1376768:
 		return true
-	case PostV1TextToImageJSONBody16RatioN1536672:
+	case PostV1TextToImageJSONBody16RatioN1568672:
 		return true
-	case PostV1TextToImageJSONBody16RatioN7681344:
+	case PostV1TextToImageJSONBody16RatioN16002848:
+		return true
+	case PostV1TextToImageJSONBody16RatioN16642496:
+		return true
+	case PostV1TextToImageJSONBody16RatioN17282304:
+		return true
+	case PostV1TextToImageJSONBody16RatioN20482048:
+		return true
+	case PostV1TextToImageJSONBody16RatioN23041728:
+		return true
+	case PostV1TextToImageJSONBody16RatioN24961664:
+		return true
+	case PostV1TextToImageJSONBody16RatioN28481600:
+		return true
+	case PostV1TextToImageJSONBody16RatioN31361344:
+		return true
+	case PostV1TextToImageJSONBody16RatioN7681376:
 		return true
 	case PostV1TextToImageJSONBody16RatioN8321248:
 		return true
-	case PostV1TextToImageJSONBody16RatioN8641184:
+	case PostV1TextToImageJSONBody16RatioN8961184:
 		return true
-	case PostV1TextToImageJSONBody16RatioN8961152:
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody17Model.
+const (
+	PostV1TextToImageJSONBody17ModelNanoBanana21 PostV1TextToImageJSONBody17Model = "nano_banana_2.1"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody17Model enum.
+func (e PostV1TextToImageJSONBody17Model) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody17ModelNanoBanana21:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody17Ratio.
+const (
+	PostV1TextToImageJSONBody17RatioN10241024  PostV1TextToImageJSONBody17Ratio = "1024:1024"
+	PostV1TextToImageJSONBody17RatioN10244128  PostV1TextToImageJSONBody17Ratio = "1024:4128"
+	PostV1TextToImageJSONBody17RatioN1152928   PostV1TextToImageJSONBody17Ratio = "1152:928"
+	PostV1TextToImageJSONBody17RatioN117121408 PostV1TextToImageJSONBody17Ratio = "11712:1408"
+	PostV1TextToImageJSONBody17RatioN1200896   PostV1TextToImageJSONBody17Ratio = "1200:896"
+	PostV1TextToImageJSONBody17RatioN1264848   PostV1TextToImageJSONBody17Ratio = "1264:848"
+	PostV1TextToImageJSONBody17RatioN1376768   PostV1TextToImageJSONBody17Ratio = "1376:768"
+	PostV1TextToImageJSONBody17RatioN140811712 PostV1TextToImageJSONBody17Ratio = "1408:11712"
+	PostV1TextToImageJSONBody17RatioN15362752  PostV1TextToImageJSONBody17Ratio = "1536:2752"
+	PostV1TextToImageJSONBody17RatioN1584672   PostV1TextToImageJSONBody17Ratio = "1584:672"
+	PostV1TextToImageJSONBody17RatioN16962528  PostV1TextToImageJSONBody17Ratio = "1696:2528"
+	PostV1TextToImageJSONBody17RatioN17922400  PostV1TextToImageJSONBody17Ratio = "1792:2400"
+	PostV1TextToImageJSONBody17RatioN18562304  PostV1TextToImageJSONBody17Ratio = "1856:2304"
+	PostV1TextToImageJSONBody17RatioN20482048  PostV1TextToImageJSONBody17Ratio = "2048:2048"
+	PostV1TextToImageJSONBody17RatioN20488256  PostV1TextToImageJSONBody17Ratio = "2048:8256"
+	PostV1TextToImageJSONBody17RatioN2064512   PostV1TextToImageJSONBody17Ratio = "2064:512"
+	PostV1TextToImageJSONBody17RatioN23041856  PostV1TextToImageJSONBody17Ratio = "2304:1856"
+	PostV1TextToImageJSONBody17RatioN24001792  PostV1TextToImageJSONBody17Ratio = "2400:1792"
+	PostV1TextToImageJSONBody17RatioN25281696  PostV1TextToImageJSONBody17Ratio = "2528:1696"
+	PostV1TextToImageJSONBody17RatioN27521536  PostV1TextToImageJSONBody17Ratio = "2752:1536"
+	PostV1TextToImageJSONBody17RatioN2928352   PostV1TextToImageJSONBody17Ratio = "2928:352"
+	PostV1TextToImageJSONBody17RatioN30725504  PostV1TextToImageJSONBody17Ratio = "3072:5504"
+	PostV1TextToImageJSONBody17RatioN31681344  PostV1TextToImageJSONBody17Ratio = "3168:1344"
+	PostV1TextToImageJSONBody17RatioN33925056  PostV1TextToImageJSONBody17Ratio = "3392:5056"
+	PostV1TextToImageJSONBody17RatioN3522928   PostV1TextToImageJSONBody17Ratio = "352:2928"
+	PostV1TextToImageJSONBody17RatioN35844800  PostV1TextToImageJSONBody17Ratio = "3584:4800"
+	PostV1TextToImageJSONBody17RatioN37124608  PostV1TextToImageJSONBody17Ratio = "3712:4608"
+	PostV1TextToImageJSONBody17RatioN40964096  PostV1TextToImageJSONBody17Ratio = "4096:4096"
+	PostV1TextToImageJSONBody17RatioN41281024  PostV1TextToImageJSONBody17Ratio = "4128:1024"
+	PostV1TextToImageJSONBody17RatioN46083712  PostV1TextToImageJSONBody17Ratio = "4608:3712"
+	PostV1TextToImageJSONBody17RatioN48003584  PostV1TextToImageJSONBody17Ratio = "4800:3584"
+	PostV1TextToImageJSONBody17RatioN50563392  PostV1TextToImageJSONBody17Ratio = "5056:3392"
+	PostV1TextToImageJSONBody17RatioN5122064   PostV1TextToImageJSONBody17Ratio = "512:2064"
+	PostV1TextToImageJSONBody17RatioN55043072  PostV1TextToImageJSONBody17Ratio = "5504:3072"
+	PostV1TextToImageJSONBody17RatioN5856704   PostV1TextToImageJSONBody17Ratio = "5856:704"
+	PostV1TextToImageJSONBody17RatioN63362688  PostV1TextToImageJSONBody17Ratio = "6336:2688"
+	PostV1TextToImageJSONBody17RatioN7045856   PostV1TextToImageJSONBody17Ratio = "704:5856"
+	PostV1TextToImageJSONBody17RatioN7681376   PostV1TextToImageJSONBody17Ratio = "768:1376"
+	PostV1TextToImageJSONBody17RatioN82562048  PostV1TextToImageJSONBody17Ratio = "8256:2048"
+	PostV1TextToImageJSONBody17RatioN8481264   PostV1TextToImageJSONBody17Ratio = "848:1264"
+	PostV1TextToImageJSONBody17RatioN8961200   PostV1TextToImageJSONBody17Ratio = "896:1200"
+	PostV1TextToImageJSONBody17RatioN9281152   PostV1TextToImageJSONBody17Ratio = "928:1152"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody17Ratio enum.
+func (e PostV1TextToImageJSONBody17Ratio) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody17RatioN10241024:
+		return true
+	case PostV1TextToImageJSONBody17RatioN10244128:
+		return true
+	case PostV1TextToImageJSONBody17RatioN1152928:
+		return true
+	case PostV1TextToImageJSONBody17RatioN117121408:
+		return true
+	case PostV1TextToImageJSONBody17RatioN1200896:
+		return true
+	case PostV1TextToImageJSONBody17RatioN1264848:
+		return true
+	case PostV1TextToImageJSONBody17RatioN1376768:
+		return true
+	case PostV1TextToImageJSONBody17RatioN140811712:
+		return true
+	case PostV1TextToImageJSONBody17RatioN15362752:
+		return true
+	case PostV1TextToImageJSONBody17RatioN1584672:
+		return true
+	case PostV1TextToImageJSONBody17RatioN16962528:
+		return true
+	case PostV1TextToImageJSONBody17RatioN17922400:
+		return true
+	case PostV1TextToImageJSONBody17RatioN18562304:
+		return true
+	case PostV1TextToImageJSONBody17RatioN20482048:
+		return true
+	case PostV1TextToImageJSONBody17RatioN20488256:
+		return true
+	case PostV1TextToImageJSONBody17RatioN2064512:
+		return true
+	case PostV1TextToImageJSONBody17RatioN23041856:
+		return true
+	case PostV1TextToImageJSONBody17RatioN24001792:
+		return true
+	case PostV1TextToImageJSONBody17RatioN25281696:
+		return true
+	case PostV1TextToImageJSONBody17RatioN27521536:
+		return true
+	case PostV1TextToImageJSONBody17RatioN2928352:
+		return true
+	case PostV1TextToImageJSONBody17RatioN30725504:
+		return true
+	case PostV1TextToImageJSONBody17RatioN31681344:
+		return true
+	case PostV1TextToImageJSONBody17RatioN33925056:
+		return true
+	case PostV1TextToImageJSONBody17RatioN3522928:
+		return true
+	case PostV1TextToImageJSONBody17RatioN35844800:
+		return true
+	case PostV1TextToImageJSONBody17RatioN37124608:
+		return true
+	case PostV1TextToImageJSONBody17RatioN40964096:
+		return true
+	case PostV1TextToImageJSONBody17RatioN41281024:
+		return true
+	case PostV1TextToImageJSONBody17RatioN46083712:
+		return true
+	case PostV1TextToImageJSONBody17RatioN48003584:
+		return true
+	case PostV1TextToImageJSONBody17RatioN50563392:
+		return true
+	case PostV1TextToImageJSONBody17RatioN5122064:
+		return true
+	case PostV1TextToImageJSONBody17RatioN55043072:
+		return true
+	case PostV1TextToImageJSONBody17RatioN5856704:
+		return true
+	case PostV1TextToImageJSONBody17RatioN63362688:
+		return true
+	case PostV1TextToImageJSONBody17RatioN7045856:
+		return true
+	case PostV1TextToImageJSONBody17RatioN7681376:
+		return true
+	case PostV1TextToImageJSONBody17RatioN82562048:
+		return true
+	case PostV1TextToImageJSONBody17RatioN8481264:
+		return true
+	case PostV1TextToImageJSONBody17RatioN8961200:
+		return true
+	case PostV1TextToImageJSONBody17RatioN9281152:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody17ThinkingLevel.
+const (
+	PostV1TextToImageJSONBody17ThinkingLevelHigh    PostV1TextToImageJSONBody17ThinkingLevel = "high"
+	PostV1TextToImageJSONBody17ThinkingLevelMedium  PostV1TextToImageJSONBody17ThinkingLevel = "medium"
+	PostV1TextToImageJSONBody17ThinkingLevelMinimal PostV1TextToImageJSONBody17ThinkingLevel = "minimal"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody17ThinkingLevel enum.
+func (e PostV1TextToImageJSONBody17ThinkingLevel) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody17ThinkingLevelHigh:
+		return true
+	case PostV1TextToImageJSONBody17ThinkingLevelMedium:
+		return true
+	case PostV1TextToImageJSONBody17ThinkingLevelMinimal:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody18Model.
+const (
+	PostV1TextToImageJSONBody18ModelGemini25Flash PostV1TextToImageJSONBody18Model = "gemini_2.5_flash"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody18Model enum.
+func (e PostV1TextToImageJSONBody18Model) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody18ModelGemini25Flash:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody18Ratio.
+const (
+	PostV1TextToImageJSONBody18RatioN10241024 PostV1TextToImageJSONBody18Ratio = "1024:1024"
+	PostV1TextToImageJSONBody18RatioN1152896  PostV1TextToImageJSONBody18Ratio = "1152:896"
+	PostV1TextToImageJSONBody18RatioN1184864  PostV1TextToImageJSONBody18Ratio = "1184:864"
+	PostV1TextToImageJSONBody18RatioN1248832  PostV1TextToImageJSONBody18Ratio = "1248:832"
+	PostV1TextToImageJSONBody18RatioN1344768  PostV1TextToImageJSONBody18Ratio = "1344:768"
+	PostV1TextToImageJSONBody18RatioN1536672  PostV1TextToImageJSONBody18Ratio = "1536:672"
+	PostV1TextToImageJSONBody18RatioN7681344  PostV1TextToImageJSONBody18Ratio = "768:1344"
+	PostV1TextToImageJSONBody18RatioN8321248  PostV1TextToImageJSONBody18Ratio = "832:1248"
+	PostV1TextToImageJSONBody18RatioN8641184  PostV1TextToImageJSONBody18Ratio = "864:1184"
+	PostV1TextToImageJSONBody18RatioN8961152  PostV1TextToImageJSONBody18Ratio = "896:1152"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody18Ratio enum.
+func (e PostV1TextToImageJSONBody18Ratio) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody18RatioN10241024:
+		return true
+	case PostV1TextToImageJSONBody18RatioN1152896:
+		return true
+	case PostV1TextToImageJSONBody18RatioN1184864:
+		return true
+	case PostV1TextToImageJSONBody18RatioN1248832:
+		return true
+	case PostV1TextToImageJSONBody18RatioN1344768:
+		return true
+	case PostV1TextToImageJSONBody18RatioN1536672:
+		return true
+	case PostV1TextToImageJSONBody18RatioN7681344:
+		return true
+	case PostV1TextToImageJSONBody18RatioN8321248:
+		return true
+	case PostV1TextToImageJSONBody18RatioN8641184:
+		return true
+	case PostV1TextToImageJSONBody18RatioN8961152:
 		return true
 	default:
 		return false
@@ -18333,6 +18603,24 @@ func (e PostV1TextToVideoJSONBody21Model) Valid() bool {
 	}
 }
 
+// Defines values for PostV1TextToVideoJSONBody21OutputFormat.
+const (
+	PostV1TextToVideoJSONBody21OutputFormatMov PostV1TextToVideoJSONBody21OutputFormat = "mov"
+	PostV1TextToVideoJSONBody21OutputFormatMp4 PostV1TextToVideoJSONBody21OutputFormat = "mp4"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody21OutputFormat enum.
+func (e PostV1TextToVideoJSONBody21OutputFormat) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody21OutputFormatMov:
+		return true
+	case PostV1TextToVideoJSONBody21OutputFormatMp4:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1TextToVideoJSONBody21Ratio.
 const (
 	PostV1TextToVideoJSONBody21RatioN10801920 PostV1TextToVideoJSONBody21Ratio = "1080:1920"
@@ -20205,6 +20493,24 @@ const (
 func (e PostV1VideoToVideoJSONBody10Model) Valid() bool {
 	switch e {
 	case PostV1VideoToVideoJSONBody10ModelSeedance25:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody10OutputFormat.
+const (
+	PostV1VideoToVideoJSONBody10OutputFormatMov PostV1VideoToVideoJSONBody10OutputFormat = "mov"
+	PostV1VideoToVideoJSONBody10OutputFormatMp4 PostV1VideoToVideoJSONBody10OutputFormat = "mp4"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody10OutputFormat enum.
+func (e PostV1VideoToVideoJSONBody10OutputFormat) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody10OutputFormatMov:
+		return true
+	case PostV1VideoToVideoJSONBody10OutputFormatMp4:
 		return true
 	default:
 		return false
@@ -25936,7 +26242,7 @@ type PostV1ImageToVideoJSONBody8 struct {
 	PromptImage PostV1ImageToVideoJSONBody_8_PromptImage `json:"promptImage"`
 
 	// PromptText A text prompt describing what should appear in the output video.
-	PromptText *string `json:"promptText,omitempty"`
+	PromptText string `json:"promptText"`
 }
 
 // PostV1ImageToVideoJSONBody8Duration defines parameters for PostV1ImageToVideo.
@@ -27311,6 +27617,9 @@ type PostV1ImageToVideoJSONBody22 struct {
 	Duration *PostV1ImageToVideoJSONBody_22_Duration `json:"duration,omitempty"`
 	Model    PostV1ImageToVideoJSONBody22Model       `json:"model"`
 
+	// OutputFormat Container for the output video. `mov` keeps high colour precision for grading and compositing. Defaults to `mp4`. Draft mode only supports `mp4`.
+	OutputFormat *PostV1ImageToVideoJSONBody22OutputFormat `json:"outputFormat,omitempty"`
+
 	// PromptImage An image or array of images. Use position `first`/`last` for keyframe mode, or omit position for reference images. The two modes cannot be mixed.
 	PromptImage PostV1ImageToVideoJSONBody_22_PromptImage `json:"promptImage"`
 
@@ -27345,6 +27654,9 @@ type PostV1ImageToVideoJSONBody_22_Duration struct {
 
 // PostV1ImageToVideoJSONBody22Model defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideoJSONBody22Model string
+
+// PostV1ImageToVideoJSONBody22OutputFormat defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody22OutputFormat string
 
 // PostV1ImageToVideoJSONBody22PromptImage0 defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideoJSONBody22PromptImage0 struct {
@@ -27783,7 +28095,7 @@ type GetV1OrganizationWebappAuditLogsParams struct {
 	// WorkspaceIds Restrict results to these workspace IDs, as a comma-separated list of up to 50 IDs. Defaults to every workspace you administer in the organization.
 	WorkspaceIds *string `form:"workspaceIds,omitempty" json:"workspaceIds,omitempty"`
 
-	// Actions Restrict results to these audit log actions, as a comma-separated list of up to 50 actions. Allowed values: `UserLogin`, `PasswordChanged`, `EmailChangeRequested`, `EmailChanged`, `UserRegistered`, `UserAccountDeleted`, `WorkspaceCreated`, `WorkspaceDeleted`, `MemberInvited`, `MemberInviteReminderSent`, `MemberRemoved`, `MemberRoleChanged`, `InviteAccepted`, `MemberJoinedViaDomain`, `TeamSettingsUpdated`, `InviteLinkToggled`, `UserGroupCreated`, `UserGroupUpdated`, `UserGroupDeleted`, `UserGroupArchived`, `UserGroupRestored`, `UserGroupMemberAdded`, `UserGroupMemberRemoved`, `UserGroupCreditCapUpdated`, `SSOLogin`, `SSOUserProvisioned`, `SSOConfigCreated`, `SSOUserAutoAddedToTeam`, `SSODomainRegistrationCloned`, `AssetCreated`, `AssetUpdated`, `AssetDeleted`, `AssetDownloaded`, `AssetShared`, `AssetUnshared`, `CommentCreated`, `CommentEdited`, `CommentDeleted`, `CommentAgentCallRun`, `CommentRemovedByModerator`, `CommentRestoredByModerator`, `CommentRemovalReasonChanged`, `PermissionGranted`, `PermissionUpdated`, `PermissionRevoked`, `PermissionAccepted`, `SubscriptionCancelled`, `SubscriptionReactivatedWithOffer`, `SubscriptionPlanSwitched`, `CreditsTransferred`, `SeatsTransferred`, `SessionShared`, `SessionUnshared`, `VideoProjectShared`, `VideoProjectUnshared`, `BrandKitShared`, `BrandKitUnshared`, `AgentCustomSkillCreated`, `AgentCustomSkillDeleted`, `AgentCustomSkillShared`, `AgentCustomSkillUnshared`, `AgentSessionShared`, `AgentSessionUnshared`, `AgentConnectorLinkTokenCreated`, `AgentConnectorConnected`, `AgentConnectorDisconnected`, `AgentConnectorAssetExported`, `AgentConnectorSessionEnabled`, `AgentConnectorSessionDisabled`, `GenerationCreated`, `StudioSessionOpened`, `AccountLinkCreated`, `AccountLinkDeleted`, `AdConnectionAuthorizationStarted`, `AdConnectionConnected`, `AdAccountSelectionUpdated`, `AdAccountSyncRequested`, `AdConnectionDisconnected`, `AdWorkspaceOnboardingUpdated`, `OrganizationSettingsUpdated`, `OrganizationDisabledModelsUpdated`, `OrganizationAgentSandboxUpdated`, `OrganizationApiAccountReleased`, `OrganizationApiAccountMemberInvited`, `OrganizationApiAccountMemberRoleChanged`, `OrganizationApiAccountMemberRemoved`, `WorkspaceCountryLockUpdated`, `WorkspaceTagCreated`, `WorkspaceTagUpdated`, `WorkspaceTagDeleted`, `WorkspaceTagAssigned`, `WorkspaceTagUnassigned`, `MeteredBillingConfigUpdated`, `MeteredBillingRefillTriggered`, `MeteredBillingRetryTriggered`, `EnterpriseSpendCapEnforcementUpdated`, `AwsMarketplaceEnterpriseSubscriptionLinked`.
+	// Actions Restrict results to these audit log actions, as a comma-separated list of up to 50 actions. Allowed values: `UserLogin`, `PasswordChanged`, `EmailChangeRequested`, `EmailChanged`, `UserRegistered`, `UserAccountDeleted`, `WorkspaceCreated`, `WorkspaceDeleted`, `MemberInvited`, `MemberInviteReminderSent`, `MemberRemoved`, `MemberRoleChanged`, `InviteAccepted`, `MemberJoinedViaDomain`, `TeamSettingsUpdated`, `InviteLinkToggled`, `UserGroupCreated`, `UserGroupUpdated`, `UserGroupDeleted`, `UserGroupArchived`, `UserGroupRestored`, `UserGroupMemberAdded`, `UserGroupMemberRemoved`, `UserGroupCreditCapUpdated`, `UserGroupVisibilityUpdated`, `SSOLogin`, `SSOUserProvisioned`, `SSOConfigCreated`, `SSOUserAutoAddedToTeam`, `SSODomainRegistrationCloned`, `AssetCreated`, `AssetUpdated`, `AssetDeleted`, `AssetDownloaded`, `AssetShared`, `AssetUnshared`, `CommentCreated`, `CommentEdited`, `CommentDeleted`, `CommentAgentCallRun`, `CommentRemovedByModerator`, `CommentRestoredByModerator`, `CommentRemovalReasonChanged`, `PermissionGranted`, `PermissionUpdated`, `PermissionRevoked`, `PermissionAccepted`, `SubscriptionCancelled`, `SubscriptionReactivatedWithOffer`, `SubscriptionPlanSwitched`, `CreditsTransferred`, `SeatsTransferred`, `SessionShared`, `SessionUnshared`, `VideoProjectShared`, `VideoProjectUnshared`, `BrandKitShared`, `BrandKitUnshared`, `AgentCustomSkillCreated`, `AgentCustomSkillDeleted`, `AgentCustomSkillShared`, `AgentCustomSkillUnshared`, `AgentSessionShared`, `AgentSessionUnshared`, `AgentConnectorLinkTokenCreated`, `AgentConnectorConnected`, `AgentConnectorDisconnected`, `AgentConnectorAssetExported`, `AgentConnectorSessionEnabled`, `AgentConnectorSessionDisabled`, `GenerationCreated`, `StudioSessionOpened`, `AccountLinkCreated`, `AccountLinkDeleted`, `AdConnectionAuthorizationStarted`, `AdConnectionConnected`, `AdAccountSelectionUpdated`, `AdAccountSyncRequested`, `AdConnectionDisconnected`, `AdWorkspaceOnboardingUpdated`, `AdCreativeReviewSubmitted`, `AdCreativeReviewCancelled`, `AdCreativeReviewDecided`, `AdCreativeApprovalRevoked`, `AdCreativeArchived`, `AdCreativeUnarchived`, `OrganizationSettingsUpdated`, `OrganizationDisabledModelsUpdated`, `OrganizationAgentSandboxUpdated`, `OrganizationApiAccountReleased`, `OrganizationApiAccountMemberInvited`, `OrganizationApiAccountMemberRoleChanged`, `OrganizationApiAccountMemberRemoved`, `WorkspaceCountryLockUpdated`, `WorkspaceTagCreated`, `WorkspaceTagUpdated`, `WorkspaceTagDeleted`, `WorkspaceTagAssigned`, `WorkspaceTagUnassigned`, `MeteredBillingConfigUpdated`, `MeteredBillingRefillTriggered`, `MeteredBillingRetryTriggered`, `EnterpriseSpendCapEnforcementUpdated`, `OnboardingBonusGranted`, `AwsMarketplaceEnterpriseSubscriptionLinked`.
 	Actions *string `form:"actions,omitempty" json:"actions,omitempty"`
 
 	// ActorEmails Restrict results to entries performed by the users with these emails, as a comma-separated list of up to 50 emails.
@@ -29690,7 +30002,7 @@ type PatchV1RoutersIdJSONBody struct {
 	// Name Display name. The slug is immutable and cannot be changed after creation.
 	Name *string `json:"name,omitempty"`
 
-	// Settings Nested merge: omitted settings fields keep their current values. When models is present, omitted models.mode or models.ids are preserved (sending only optimizeFor does not clear the model allowlist or credit ceiling).
+	// Settings Nested merge: omitted settings fields keep their current values. When models is present, omitted models.mode or models.ids are preserved (sending only optimizeFor does not clear the model allowlist or credit ceiling). Set maxCreditsPerGeneration, or one of its modalities, to null to remove those credit caps.
 	Settings *struct {
 		// Fallback Opt-in behavior for what routing should do when the preferred model cannot start immediately.
 		Fallback *struct {
@@ -29698,7 +30010,7 @@ type PatchV1RoutersIdJSONBody struct {
 			OnCapacity *bool `json:"onCapacity,omitempty"`
 		} `json:"fallback,omitempty"`
 
-		// MaxCreditsPerGeneration Optional per-modality credit caps, applied per generated output. Models whose estimated per-output cost exceeds the cap are excluded.
+		// MaxCreditsPerGeneration Per-modality credit caps to change. Set a modality to null to remove its cap, or set maxCreditsPerGeneration to null to remove every cap.
 		MaxCreditsPerGeneration *struct {
 			Audio *int `json:"audio,omitempty"`
 			Image *int `json:"image,omitempty"`
@@ -30743,13 +31055,10 @@ type PostV1TextToImageJSONBody8 struct {
 	// Ratio The resolution of the output image.
 	Ratio PostV1TextToImageJSONBody8Ratio `json:"ratio"`
 
-	// ReferenceImages An array of up to 14 images to be used as references for the generated image output. Up to five of those images can pass `subject: "human"` to maintain character consistency, and up to nine of those images can pass `subject: "object"` with high-fidelity images of objects to include in the output.
+	// ReferenceImages An array of up to 14 images to be used as references for the generated image output. Up to five can pass `subject: "human"` and up to nine can pass `subject: "object"`.
 	ReferenceImages *[]struct {
-		// Subject Whether this is a reference of a human subject (for character consistency) or an object that appears in the output.
 		Subject *PostV1TextToImageJSONBody8ReferenceImagesSubject `json:"subject,omitempty"`
-
-		// Tag A tag to identify the reference image. This is used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores (no hyphens or other punctuation).
-		Tag *string `json:"tag,omitempty"`
+		Tag     *string                                           `json:"tag,omitempty"`
 
 		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
 		Uri PostV1TextToImageJSONBody_8_ReferenceImages_Uri `json:"uri"`
@@ -30784,25 +31093,23 @@ type PostV1TextToImageJSONBody_8_ReferenceImages_Uri struct {
 
 // PostV1TextToImageJSONBody9 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody9 struct {
-	// Background Background treatment. Defaults to `auto`, which lets the model pick.
-	Background *PostV1TextToImageJSONBody9Background `json:"background,omitempty"`
-	Model      PostV1TextToImageJSONBody9Model       `json:"model"`
+	Model PostV1TextToImageJSONBody9Model `json:"model"`
 
-	// OutputCount The number of images to generate (1-10). Increasing this number will affect the number of credits consumed by the generation.
-	OutputCount *int `json:"outputCount,omitempty"`
+	// OutputCount The number of images to generate. Increasing this number will affect the number of credits consumed by the generation. Up to four images can be generated at once.
+	OutputCount *PostV1TextToImageJSONBody9OutputCount `json:"outputCount,omitempty"`
 
-	// PromptText A non-empty string describing the desired image.
+	// PromptText This should describe in detail what should appear in the output.
 	PromptText string `json:"promptText"`
 
-	// Quality Rendering quality. Higher qualities consume more credits. Defaults to `high`.
-	Quality *PostV1TextToImageJSONBody9Quality `json:"quality,omitempty"`
-
-	// Ratio The resolution of the output image, expressed as `<width>:<height>`. Use `auto` to let the model choose.
+	// Ratio The resolution of the output image.
 	Ratio PostV1TextToImageJSONBody9Ratio `json:"ratio"`
 
-	// ReferenceImages An array of up to 16 images to be used as references for the generated image output. No two images may share the same tag. Each reference image adds 1 credit per generated image.
+	// ReferenceImages An array of up to 14 images to be used as references for the generated image output. Up to five of those images can pass `subject: "human"` to maintain character consistency, and up to nine of those images can pass `subject: "object"` with high-fidelity images of objects to include in the output.
 	ReferenceImages *[]struct {
-		// Tag A tag to identify the reference image. This may be used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores (no hyphens or other punctuation).
+		// Subject Whether this is a reference of a human subject (for character consistency) or an object that appears in the output.
+		Subject *PostV1TextToImageJSONBody9ReferenceImagesSubject `json:"subject,omitempty"`
+
+		// Tag A tag to identify the reference image. This is used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores (no hyphens or other punctuation).
 		Tag *string `json:"tag,omitempty"`
 
 		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
@@ -30810,17 +31117,17 @@ type PostV1TextToImageJSONBody9 struct {
 	} `json:"referenceImages,omitempty"`
 }
 
-// PostV1TextToImageJSONBody9Background defines parameters for PostV1TextToImage.
-type PostV1TextToImageJSONBody9Background string
-
 // PostV1TextToImageJSONBody9Model defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody9Model string
 
-// PostV1TextToImageJSONBody9Quality defines parameters for PostV1TextToImage.
-type PostV1TextToImageJSONBody9Quality string
+// PostV1TextToImageJSONBody9OutputCount defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody9OutputCount float64
 
 // PostV1TextToImageJSONBody9Ratio defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody9Ratio string
+
+// PostV1TextToImageJSONBody9ReferenceImagesSubject defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody9ReferenceImagesSubject string
 
 // PostV1TextToImageJSONBody9ReferenceImagesUri0 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody9ReferenceImagesUri0 = string
@@ -30838,7 +31145,7 @@ type PostV1TextToImageJSONBody_9_ReferenceImages_Uri struct {
 
 // PostV1TextToImageJSONBody10 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody10 struct {
-	// Background Background treatment. Defaults to `auto`, which lets the model pick. Use `transparent` to generate a PNG with an alpha-channel background.
+	// Background Background treatment. Defaults to `auto`, which lets the model pick.
 	Background *PostV1TextToImageJSONBody10Background `json:"background,omitempty"`
 	Model      PostV1TextToImageJSONBody10Model       `json:"model"`
 
@@ -30892,32 +31199,40 @@ type PostV1TextToImageJSONBody_10_ReferenceImages_Uri struct {
 
 // PostV1TextToImageJSONBody11 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody11 struct {
-	Model PostV1TextToImageJSONBody11Model `json:"model"`
+	// Background Background treatment. Defaults to `auto`, which lets the model pick. Use `transparent` to generate a PNG with an alpha-channel background.
+	Background *PostV1TextToImageJSONBody11Background `json:"background,omitempty"`
+	Model      PostV1TextToImageJSONBody11Model       `json:"model"`
 
-	// OutputFormat The file format of the output image. Defaults to png.
-	OutputFormat *PostV1TextToImageJSONBody11OutputFormat `json:"outputFormat,omitempty"`
+	// OutputCount The number of images to generate (1-10). Increasing this number will affect the number of credits consumed by the generation.
+	OutputCount *int `json:"outputCount,omitempty"`
 
-	// PromptText A non-empty text prompt describing what should appear in the output image.
+	// PromptText A non-empty string describing the desired image.
 	PromptText string `json:"promptText"`
 
-	// Ratio The resolution of the output image, expressed as `<width>:<height>`. 1MP sizes cost 5 credits per image and 4MP sizes 10.
+	// Quality Rendering quality. Higher qualities consume more credits. Defaults to `high`.
+	Quality *PostV1TextToImageJSONBody11Quality `json:"quality,omitempty"`
+
+	// Ratio The resolution of the output image, expressed as `<width>:<height>`. Use `auto` to let the model choose.
 	Ratio PostV1TextToImageJSONBody11Ratio `json:"ratio"`
 
-	// ReferenceImages Up to 1 image to guide the generation. The prompt describes how the output should build on it.
+	// ReferenceImages An array of up to 16 images to be used as references for the generated image output. No two images may share the same tag. Each reference image adds 1 credit per generated image.
 	ReferenceImages *[]struct {
+		// Tag A tag to identify the reference image. This may be used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores (no hyphens or other punctuation).
+		Tag *string `json:"tag,omitempty"`
+
 		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
 		Uri PostV1TextToImageJSONBody_11_ReferenceImages_Uri `json:"uri"`
 	} `json:"referenceImages,omitempty"`
-
-	// Seed If unspecified, a random number is chosen. Using the same seed with an identical request reproduces the same image.
-	Seed *int `json:"seed,omitempty"`
 }
+
+// PostV1TextToImageJSONBody11Background defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody11Background string
 
 // PostV1TextToImageJSONBody11Model defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody11Model string
 
-// PostV1TextToImageJSONBody11OutputFormat defines parameters for PostV1TextToImage.
-type PostV1TextToImageJSONBody11OutputFormat string
+// PostV1TextToImageJSONBody11Quality defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody11Quality string
 
 // PostV1TextToImageJSONBody11Ratio defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody11Ratio string
@@ -30943,13 +31258,13 @@ type PostV1TextToImageJSONBody12 struct {
 	// OutputFormat The file format of the output image. Defaults to png.
 	OutputFormat *PostV1TextToImageJSONBody12OutputFormat `json:"outputFormat,omitempty"`
 
-	// PromptText An instruction describing how to edit the reference images.
+	// PromptText A non-empty text prompt describing what should appear in the output image.
 	PromptText string `json:"promptText"`
 
-	// Ratio The resolution of the output image, expressed as `<width>:<height>`. Omit it or use `auto` to keep the framing of the first reference image. Choosing a size requires at least 2 reference images; a single image always keeps its own framing.
-	Ratio *PostV1TextToImageJSONBody12Ratio `json:"ratio,omitempty"`
+	// Ratio The resolution of the output image, expressed as `<width>:<height>`. 1MP sizes cost 5 credits per image and 4MP sizes 10.
+	Ratio PostV1TextToImageJSONBody12Ratio `json:"ratio"`
 
-	// ReferenceImages 1 to 4 images to edit. With several, the instruction describes how to combine them.
+	// ReferenceImages Up to 1 image to guide the generation. The prompt describes how the output should build on it.
 	ReferenceImages *[]struct {
 		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
 		Uri PostV1TextToImageJSONBody_12_ReferenceImages_Uri `json:"uri"`
@@ -30986,30 +31301,30 @@ type PostV1TextToImageJSONBody_12_ReferenceImages_Uri struct {
 type PostV1TextToImageJSONBody13 struct {
 	Model PostV1TextToImageJSONBody13Model `json:"model"`
 
-	// OutputCount The number of images to generate. Increasing this number will affect the number of credits consumed by the generation.
-	OutputCount *int `json:"outputCount,omitempty"`
+	// OutputFormat The file format of the output image. Defaults to png.
+	OutputFormat *PostV1TextToImageJSONBody13OutputFormat `json:"outputFormat,omitempty"`
 
-	// PromptText Describe the image to generate, or how to remix the reference image.
+	// PromptText An instruction describing how to edit the reference images.
 	PromptText string `json:"promptText"`
 
-	// Quality How much rendering effort the model spends on each image. `low` costs 4 credits per image, `medium` 7 and `high` 11.
-	Quality *PostV1TextToImageJSONBody13Quality `json:"quality,omitempty"`
-
-	// Ratio The resolution of the output image, expressed as `<width>:<height>`.
+	// Ratio The resolution of the output image, expressed as `<width>:<height>`. Omit it or use `auto` to keep the framing of the first reference image. Choosing a size requires at least 2 reference images; a single image always keeps its own framing.
 	Ratio *PostV1TextToImageJSONBody13Ratio `json:"ratio,omitempty"`
 
-	// ReferenceImages An image to remix. The prompt describes how the output should differ from it.
+	// ReferenceImages 1 to 4 images to edit. With several, the instruction describes how to combine them.
 	ReferenceImages *[]struct {
 		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
 		Uri PostV1TextToImageJSONBody_13_ReferenceImages_Uri `json:"uri"`
 	} `json:"referenceImages,omitempty"`
+
+	// Seed If unspecified, a random number is chosen. Using the same seed with an identical request reproduces the same image.
+	Seed *int `json:"seed,omitempty"`
 }
 
 // PostV1TextToImageJSONBody13Model defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody13Model string
 
-// PostV1TextToImageJSONBody13Quality defines parameters for PostV1TextToImage.
-type PostV1TextToImageJSONBody13Quality string
+// PostV1TextToImageJSONBody13OutputFormat defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody13OutputFormat string
 
 // PostV1TextToImageJSONBody13Ratio defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody13Ratio string
@@ -31030,44 +31345,25 @@ type PostV1TextToImageJSONBody_13_ReferenceImages_Uri struct {
 
 // PostV1TextToImageJSONBody14 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody14 struct {
-	// MaskUri A black-and-white mask the same size as the first reference image. Black areas are edited and white areas are preserved. Supports up to 3 additional reference images.
-	MaskUri *PostV1TextToImageJSONBody_14_MaskUri `json:"maskUri,omitempty"`
-	Model   PostV1TextToImageJSONBody14Model      `json:"model"`
+	Model PostV1TextToImageJSONBody14Model `json:"model"`
 
 	// OutputCount The number of images to generate. Increasing this number will affect the number of credits consumed by the generation.
 	OutputCount *int `json:"outputCount,omitempty"`
 
-	// PreciseEdit When true, edit the first reference image while preserving its composition and dimensions. Requires at least one reference image.
-	PreciseEdit *bool `json:"preciseEdit,omitempty"`
-
-	// PromptText Describe the image to generate, or the changes to make to the reference images.
+	// PromptText Describe the image to generate, or how to remix the reference image.
 	PromptText string `json:"promptText"`
 
-	// Quality How much rendering effort the model spends on each image. Defaults to `medium` (8 credits per image) when generating from reference images and `high` (25 credits) otherwise, including `preciseEdit`. `low` costs 4 credits and `very_low` 1; `very_low` requires reference images and is not available with `preciseEdit`.
+	// Quality How much rendering effort the model spends on each image. `low` costs 4 credits per image, `medium` 7 and `high` 11.
 	Quality *PostV1TextToImageJSONBody14Quality `json:"quality,omitempty"`
 
-	// Ratio The resolution of the output image, expressed as `<width>:<height>`. Omit it or use `auto` to let the model choose. With reference images, widescreen 1K sizes are `1024:576`, `576:1024`, `1408:704`, `704:1408` instead of `1280:720`, `720:1280`, `1440:720`, `720:1440`. Not available with `maskUri` or `preciseEdit`, which keep the size of the first reference image.
+	// Ratio The resolution of the output image, expressed as `<width>:<height>`.
 	Ratio *PostV1TextToImageJSONBody14Ratio `json:"ratio,omitempty"`
 
-	// ReferenceImages Up to 5 images to guide the generation. With `maskUri` or `preciseEdit`, the first image is the one being edited and the rest are references.
+	// ReferenceImages An image to remix. The prompt describes how the output should differ from it.
 	ReferenceImages *[]struct {
 		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
 		Uri PostV1TextToImageJSONBody_14_ReferenceImages_Uri `json:"uri"`
 	} `json:"referenceImages,omitempty"`
-}
-
-// PostV1TextToImageJSONBody14MaskUri0 defines parameters for PostV1TextToImage.
-type PostV1TextToImageJSONBody14MaskUri0 = string
-
-// PostV1TextToImageJSONBody14MaskUri1 defines parameters for PostV1TextToImage.
-type PostV1TextToImageJSONBody14MaskUri1 = string
-
-// PostV1TextToImageJSONBody14MaskUri2 defines parameters for PostV1TextToImage.
-type PostV1TextToImageJSONBody14MaskUri2 = string
-
-// PostV1TextToImageJSONBody_14_MaskUri defines parameters for PostV1TextToImage.
-type PostV1TextToImageJSONBody_14_MaskUri struct {
-	union json.RawMessage
 }
 
 // PostV1TextToImageJSONBody14Model defines parameters for PostV1TextToImage.
@@ -31095,32 +31391,51 @@ type PostV1TextToImageJSONBody_14_ReferenceImages_Uri struct {
 
 // PostV1TextToImageJSONBody15 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody15 struct {
-	Model PostV1TextToImageJSONBody15Model `json:"model"`
+	// MaskUri A black-and-white mask the same size as the first reference image. Black areas are edited and white areas are preserved. Supports up to 3 additional reference images.
+	MaskUri *PostV1TextToImageJSONBody_15_MaskUri `json:"maskUri,omitempty"`
+	Model   PostV1TextToImageJSONBody15Model      `json:"model"`
 
 	// OutputCount The number of images to generate. Increasing this number will affect the number of credits consumed by the generation.
 	OutputCount *int `json:"outputCount,omitempty"`
 
-	// PromptText A description of the image you want to generate.
+	// PreciseEdit When true, edit the first reference image while preserving its composition and dimensions. Requires at least one reference image.
+	PreciseEdit *bool `json:"preciseEdit,omitempty"`
+
+	// PromptText Describe the image to generate, or the changes to make to the reference images.
 	PromptText string `json:"promptText"`
 
-	// Ratio The resolution of the output image.
-	Ratio PostV1TextToImageJSONBody15Ratio `json:"ratio"`
+	// Quality How much rendering effort the model spends on each image. Defaults to `medium` (8 credits per image) when generating from reference images and `high` (25 credits) otherwise, including `preciseEdit`. `low` costs 4 credits and `very_low` 1; `very_low` requires reference images and is not available with `preciseEdit`.
+	Quality *PostV1TextToImageJSONBody15Quality `json:"quality,omitempty"`
 
-	// ReferenceImages Up to 14 images to edit, combine, or use as references for the output.
+	// Ratio The resolution of the output image, expressed as `<width>:<height>`. Omit it or use `auto` to let the model choose. With reference images, widescreen 1K sizes are `1024:576`, `576:1024`, `1408:704`, `704:1408` instead of `1280:720`, `720:1280`, `1440:720`, `720:1440`. Not available with `maskUri` or `preciseEdit`, which keep the size of the first reference image.
+	Ratio *PostV1TextToImageJSONBody15Ratio `json:"ratio,omitempty"`
+
+	// ReferenceImages Up to 5 images to guide the generation. With `maskUri` or `preciseEdit`, the first image is the one being edited and the rest are references.
 	ReferenceImages *[]struct {
-		// Tag A tag to identify the reference image. This is used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores.
-		Tag *string `json:"tag,omitempty"`
-
 		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
 		Uri PostV1TextToImageJSONBody_15_ReferenceImages_Uri `json:"uri"`
 	} `json:"referenceImages,omitempty"`
+}
 
-	// ThinkingLevel How much the model reasons about the prompt before generating. Defaults to medium.
-	ThinkingLevel *PostV1TextToImageJSONBody15ThinkingLevel `json:"thinkingLevel,omitempty"`
+// PostV1TextToImageJSONBody15MaskUri0 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody15MaskUri0 = string
+
+// PostV1TextToImageJSONBody15MaskUri1 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody15MaskUri1 = string
+
+// PostV1TextToImageJSONBody15MaskUri2 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody15MaskUri2 = string
+
+// PostV1TextToImageJSONBody_15_MaskUri defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody_15_MaskUri struct {
+	union json.RawMessage
 }
 
 // PostV1TextToImageJSONBody15Model defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody15Model string
+
+// PostV1TextToImageJSONBody15Quality defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody15Quality string
 
 // PostV1TextToImageJSONBody15Ratio defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody15Ratio string
@@ -31139,24 +31454,24 @@ type PostV1TextToImageJSONBody_15_ReferenceImages_Uri struct {
 	union json.RawMessage
 }
 
-// PostV1TextToImageJSONBody15ThinkingLevel defines parameters for PostV1TextToImage.
-type PostV1TextToImageJSONBody15ThinkingLevel string
-
 // PostV1TextToImageJSONBody16 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody16 struct {
 	Model PostV1TextToImageJSONBody16Model `json:"model"`
 
-	// PromptText This should describe in detail what should appear in the output.
+	// OutputCount The number of images to generate. Increasing this number will affect the number of credits consumed by the generation.
+	OutputCount *int `json:"outputCount,omitempty"`
+
+	// OutputFormat The file format of the output image. Defaults to png.
+	OutputFormat *PostV1TextToImageJSONBody16OutputFormat `json:"outputFormat,omitempty"`
+
+	// PromptText A description of the image you want to generate.
 	PromptText string `json:"promptText"`
 
-	// Ratio The resolution of the output image.
+	// Ratio The resolution of the output image, expressed as `<width>:<height>`. Use `auto_1k` or `auto_2k` to let the model pick the aspect ratio at a fixed resolution tier.
 	Ratio PostV1TextToImageJSONBody16Ratio `json:"ratio"`
 
-	// ReferenceImages An array of up to three images to be used as references for the generated image output.
+	// ReferenceImages Images to edit or combine. Refer to them in the prompt by upload order (Figure 1, Figure 2, and so on).
 	ReferenceImages *[]struct {
-		// Tag A tag to identify the reference image. This is used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores (no hyphens or other punctuation).
-		Tag *string `json:"tag,omitempty"`
-
 		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
 		Uri PostV1TextToImageJSONBody_16_ReferenceImages_Uri `json:"uri"`
 	} `json:"referenceImages,omitempty"`
@@ -31164,6 +31479,9 @@ type PostV1TextToImageJSONBody16 struct {
 
 // PostV1TextToImageJSONBody16Model defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody16Model string
+
+// PostV1TextToImageJSONBody16OutputFormat defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody16OutputFormat string
 
 // PostV1TextToImageJSONBody16Ratio defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody16Ratio string
@@ -31179,6 +31497,95 @@ type PostV1TextToImageJSONBody16ReferenceImagesUri2 = string
 
 // PostV1TextToImageJSONBody_16_ReferenceImages_Uri defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody_16_ReferenceImages_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToImageJSONBody17 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody17 struct {
+	Model PostV1TextToImageJSONBody17Model `json:"model"`
+
+	// OutputCount The number of images to generate. Increasing this number will affect the number of credits consumed by the generation.
+	OutputCount *int `json:"outputCount,omitempty"`
+
+	// PromptText A description of the image you want to generate.
+	PromptText string `json:"promptText"`
+
+	// Ratio The resolution of the output image.
+	Ratio PostV1TextToImageJSONBody17Ratio `json:"ratio"`
+
+	// ReferenceImages Up to 14 images to edit, combine, or use as references for the output.
+	ReferenceImages *[]struct {
+		// Tag A tag to identify the reference image. This is used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores.
+		Tag *string `json:"tag,omitempty"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1TextToImageJSONBody_17_ReferenceImages_Uri `json:"uri"`
+	} `json:"referenceImages,omitempty"`
+
+	// ThinkingLevel How much the model reasons about the prompt before generating. Defaults to medium.
+	ThinkingLevel *PostV1TextToImageJSONBody17ThinkingLevel `json:"thinkingLevel,omitempty"`
+}
+
+// PostV1TextToImageJSONBody17Model defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody17Model string
+
+// PostV1TextToImageJSONBody17Ratio defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody17Ratio string
+
+// PostV1TextToImageJSONBody17ReferenceImagesUri0 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody17ReferenceImagesUri0 = string
+
+// PostV1TextToImageJSONBody17ReferenceImagesUri1 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody17ReferenceImagesUri1 = string
+
+// PostV1TextToImageJSONBody17ReferenceImagesUri2 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody17ReferenceImagesUri2 = string
+
+// PostV1TextToImageJSONBody_17_ReferenceImages_Uri defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody_17_ReferenceImages_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToImageJSONBody17ThinkingLevel defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody17ThinkingLevel string
+
+// PostV1TextToImageJSONBody18 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody18 struct {
+	Model PostV1TextToImageJSONBody18Model `json:"model"`
+
+	// PromptText This should describe in detail what should appear in the output.
+	PromptText string `json:"promptText"`
+
+	// Ratio The resolution of the output image.
+	Ratio PostV1TextToImageJSONBody18Ratio `json:"ratio"`
+
+	// ReferenceImages An array of up to three images to be used as references for the generated image output.
+	ReferenceImages *[]struct {
+		// Tag A tag to identify the reference image. This is used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores (no hyphens or other punctuation).
+		Tag *string `json:"tag,omitempty"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1TextToImageJSONBody_18_ReferenceImages_Uri `json:"uri"`
+	} `json:"referenceImages,omitempty"`
+}
+
+// PostV1TextToImageJSONBody18Model defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody18Model string
+
+// PostV1TextToImageJSONBody18Ratio defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody18Ratio string
+
+// PostV1TextToImageJSONBody18ReferenceImagesUri0 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody18ReferenceImagesUri0 = string
+
+// PostV1TextToImageJSONBody18ReferenceImagesUri1 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody18ReferenceImagesUri1 = string
+
+// PostV1TextToImageJSONBody18ReferenceImagesUri2 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody18ReferenceImagesUri2 = string
+
+// PostV1TextToImageJSONBody_18_ReferenceImages_Uri defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody_18_ReferenceImages_Uri struct {
 	union json.RawMessage
 }
 
@@ -32812,6 +33219,9 @@ type PostV1TextToVideoJSONBody21 struct {
 	Duration *PostV1TextToVideoJSONBody_21_Duration `json:"duration,omitempty"`
 	Model    PostV1TextToVideoJSONBody21Model       `json:"model"`
 
+	// OutputFormat Container for the output video. `mov` keeps high colour precision for grading and compositing. Defaults to `mp4`. Draft mode only supports `mp4`.
+	OutputFormat *PostV1TextToVideoJSONBody21OutputFormat `json:"outputFormat,omitempty"`
+
 	// PromptText An optional text prompt up to 15000 characters describing what should appear in the output.
 	PromptText *string `json:"promptText,omitempty"`
 
@@ -32857,6 +33267,9 @@ type PostV1TextToVideoJSONBody_21_Duration struct {
 
 // PostV1TextToVideoJSONBody21Model defines parameters for PostV1TextToVideo.
 type PostV1TextToVideoJSONBody21Model string
+
+// PostV1TextToVideoJSONBody21OutputFormat defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody21OutputFormat string
 
 // PostV1TextToVideoJSONBody21Ratio defines parameters for PostV1TextToVideo.
 type PostV1TextToVideoJSONBody21Ratio string
@@ -34252,6 +34665,9 @@ type PostV1VideoToVideoJSONBody10 struct {
 	Mode  *PostV1VideoToVideoJSONBody10Mode `json:"mode,omitempty"`
 	Model PostV1VideoToVideoJSONBody10Model `json:"model"`
 
+	// OutputFormat Container for the output video. `mov` keeps high colour precision for grading and compositing. Defaults to `mp4`. Draft mode only supports `mp4`.
+	OutputFormat *PostV1VideoToVideoJSONBody10OutputFormat `json:"outputFormat,omitempty"`
+
 	// PromptText An optional text prompt up to 15000 characters describing what should appear in the output.
 	PromptText *string `json:"promptText,omitempty"`
 
@@ -34303,6 +34719,9 @@ type PostV1VideoToVideoJSONBody10Mode string
 
 // PostV1VideoToVideoJSONBody10Model defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideoJSONBody10Model string
+
+// PostV1VideoToVideoJSONBody10OutputFormat defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody10OutputFormat string
 
 // PostV1VideoToVideoJSONBody10PromptVideo0 defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideoJSONBody10PromptVideo0 = string
@@ -62163,6 +62582,58 @@ func (t *PostV1TextToImageJSONBody) MergePostV1TextToImageJSONBody16(v PostV1Tex
 	return err
 }
 
+// AsPostV1TextToImageJSONBody17 returns the union data inside the PostV1TextToImageJSONBody as a PostV1TextToImageJSONBody17
+func (t PostV1TextToImageJSONBody) AsPostV1TextToImageJSONBody17() (PostV1TextToImageJSONBody17, error) {
+	var body PostV1TextToImageJSONBody17
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody17 overwrites any union data inside the PostV1TextToImageJSONBody as the provided PostV1TextToImageJSONBody17
+func (t *PostV1TextToImageJSONBody) FromPostV1TextToImageJSONBody17(v PostV1TextToImageJSONBody17) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody17 performs a merge with any union data inside the PostV1TextToImageJSONBody, using the provided PostV1TextToImageJSONBody17
+func (t *PostV1TextToImageJSONBody) MergePostV1TextToImageJSONBody17(v PostV1TextToImageJSONBody17) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody18 returns the union data inside the PostV1TextToImageJSONBody as a PostV1TextToImageJSONBody18
+func (t PostV1TextToImageJSONBody) AsPostV1TextToImageJSONBody18() (PostV1TextToImageJSONBody18, error) {
+	var body PostV1TextToImageJSONBody18
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody18 overwrites any union data inside the PostV1TextToImageJSONBody as the provided PostV1TextToImageJSONBody18
+func (t *PostV1TextToImageJSONBody) FromPostV1TextToImageJSONBody18(v PostV1TextToImageJSONBody18) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody18 performs a merge with any union data inside the PostV1TextToImageJSONBody, using the provided PostV1TextToImageJSONBody18
+func (t *PostV1TextToImageJSONBody) MergePostV1TextToImageJSONBody18(v PostV1TextToImageJSONBody18) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1TextToImageJSONBody) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -63467,94 +63938,6 @@ func (t *PostV1TextToImageJSONBody_13_ReferenceImages_Uri) UnmarshalJSON(b []byt
 	return err
 }
 
-// AsPostV1TextToImageJSONBody14MaskUri0 returns the union data inside the PostV1TextToImageJSONBody_14_MaskUri as a PostV1TextToImageJSONBody14MaskUri0
-func (t PostV1TextToImageJSONBody_14_MaskUri) AsPostV1TextToImageJSONBody14MaskUri0() (PostV1TextToImageJSONBody14MaskUri0, error) {
-	var body PostV1TextToImageJSONBody14MaskUri0
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromPostV1TextToImageJSONBody14MaskUri0 overwrites any union data inside the PostV1TextToImageJSONBody_14_MaskUri as the provided PostV1TextToImageJSONBody14MaskUri0
-func (t *PostV1TextToImageJSONBody_14_MaskUri) FromPostV1TextToImageJSONBody14MaskUri0(v PostV1TextToImageJSONBody14MaskUri0) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergePostV1TextToImageJSONBody14MaskUri0 performs a merge with any union data inside the PostV1TextToImageJSONBody_14_MaskUri, using the provided PostV1TextToImageJSONBody14MaskUri0
-func (t *PostV1TextToImageJSONBody_14_MaskUri) MergePostV1TextToImageJSONBody14MaskUri0(v PostV1TextToImageJSONBody14MaskUri0) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsPostV1TextToImageJSONBody14MaskUri1 returns the union data inside the PostV1TextToImageJSONBody_14_MaskUri as a PostV1TextToImageJSONBody14MaskUri1
-func (t PostV1TextToImageJSONBody_14_MaskUri) AsPostV1TextToImageJSONBody14MaskUri1() (PostV1TextToImageJSONBody14MaskUri1, error) {
-	var body PostV1TextToImageJSONBody14MaskUri1
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromPostV1TextToImageJSONBody14MaskUri1 overwrites any union data inside the PostV1TextToImageJSONBody_14_MaskUri as the provided PostV1TextToImageJSONBody14MaskUri1
-func (t *PostV1TextToImageJSONBody_14_MaskUri) FromPostV1TextToImageJSONBody14MaskUri1(v PostV1TextToImageJSONBody14MaskUri1) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergePostV1TextToImageJSONBody14MaskUri1 performs a merge with any union data inside the PostV1TextToImageJSONBody_14_MaskUri, using the provided PostV1TextToImageJSONBody14MaskUri1
-func (t *PostV1TextToImageJSONBody_14_MaskUri) MergePostV1TextToImageJSONBody14MaskUri1(v PostV1TextToImageJSONBody14MaskUri1) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-// AsPostV1TextToImageJSONBody14MaskUri2 returns the union data inside the PostV1TextToImageJSONBody_14_MaskUri as a PostV1TextToImageJSONBody14MaskUri2
-func (t PostV1TextToImageJSONBody_14_MaskUri) AsPostV1TextToImageJSONBody14MaskUri2() (PostV1TextToImageJSONBody14MaskUri2, error) {
-	var body PostV1TextToImageJSONBody14MaskUri2
-	err := json.Unmarshal(t.union, &body)
-	return body, err
-}
-
-// FromPostV1TextToImageJSONBody14MaskUri2 overwrites any union data inside the PostV1TextToImageJSONBody_14_MaskUri as the provided PostV1TextToImageJSONBody14MaskUri2
-func (t *PostV1TextToImageJSONBody_14_MaskUri) FromPostV1TextToImageJSONBody14MaskUri2(v PostV1TextToImageJSONBody14MaskUri2) error {
-	b, err := json.Marshal(v)
-	t.union = b
-	return err
-}
-
-// MergePostV1TextToImageJSONBody14MaskUri2 performs a merge with any union data inside the PostV1TextToImageJSONBody_14_MaskUri, using the provided PostV1TextToImageJSONBody14MaskUri2
-func (t *PostV1TextToImageJSONBody_14_MaskUri) MergePostV1TextToImageJSONBody14MaskUri2(v PostV1TextToImageJSONBody14MaskUri2) error {
-	b, err := json.Marshal(v)
-	if err != nil {
-		return err
-	}
-
-	merged, err := runtime.JSONMerge(t.union, b)
-	t.union = merged
-	return err
-}
-
-func (t PostV1TextToImageJSONBody_14_MaskUri) MarshalJSON() ([]byte, error) {
-	b, err := t.union.MarshalJSON()
-	return b, err
-}
-
-func (t *PostV1TextToImageJSONBody_14_MaskUri) UnmarshalJSON(b []byte) error {
-	err := t.union.UnmarshalJSON(b)
-	return err
-}
-
 // AsPostV1TextToImageJSONBody14ReferenceImagesUri0 returns the union data inside the PostV1TextToImageJSONBody_14_ReferenceImages_Uri as a PostV1TextToImageJSONBody14ReferenceImagesUri0
 func (t PostV1TextToImageJSONBody_14_ReferenceImages_Uri) AsPostV1TextToImageJSONBody14ReferenceImagesUri0() (PostV1TextToImageJSONBody14ReferenceImagesUri0, error) {
 	var body PostV1TextToImageJSONBody14ReferenceImagesUri0
@@ -63639,6 +64022,94 @@ func (t PostV1TextToImageJSONBody_14_ReferenceImages_Uri) MarshalJSON() ([]byte,
 }
 
 func (t *PostV1TextToImageJSONBody_14_ReferenceImages_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToImageJSONBody15MaskUri0 returns the union data inside the PostV1TextToImageJSONBody_15_MaskUri as a PostV1TextToImageJSONBody15MaskUri0
+func (t PostV1TextToImageJSONBody_15_MaskUri) AsPostV1TextToImageJSONBody15MaskUri0() (PostV1TextToImageJSONBody15MaskUri0, error) {
+	var body PostV1TextToImageJSONBody15MaskUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody15MaskUri0 overwrites any union data inside the PostV1TextToImageJSONBody_15_MaskUri as the provided PostV1TextToImageJSONBody15MaskUri0
+func (t *PostV1TextToImageJSONBody_15_MaskUri) FromPostV1TextToImageJSONBody15MaskUri0(v PostV1TextToImageJSONBody15MaskUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody15MaskUri0 performs a merge with any union data inside the PostV1TextToImageJSONBody_15_MaskUri, using the provided PostV1TextToImageJSONBody15MaskUri0
+func (t *PostV1TextToImageJSONBody_15_MaskUri) MergePostV1TextToImageJSONBody15MaskUri0(v PostV1TextToImageJSONBody15MaskUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody15MaskUri1 returns the union data inside the PostV1TextToImageJSONBody_15_MaskUri as a PostV1TextToImageJSONBody15MaskUri1
+func (t PostV1TextToImageJSONBody_15_MaskUri) AsPostV1TextToImageJSONBody15MaskUri1() (PostV1TextToImageJSONBody15MaskUri1, error) {
+	var body PostV1TextToImageJSONBody15MaskUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody15MaskUri1 overwrites any union data inside the PostV1TextToImageJSONBody_15_MaskUri as the provided PostV1TextToImageJSONBody15MaskUri1
+func (t *PostV1TextToImageJSONBody_15_MaskUri) FromPostV1TextToImageJSONBody15MaskUri1(v PostV1TextToImageJSONBody15MaskUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody15MaskUri1 performs a merge with any union data inside the PostV1TextToImageJSONBody_15_MaskUri, using the provided PostV1TextToImageJSONBody15MaskUri1
+func (t *PostV1TextToImageJSONBody_15_MaskUri) MergePostV1TextToImageJSONBody15MaskUri1(v PostV1TextToImageJSONBody15MaskUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody15MaskUri2 returns the union data inside the PostV1TextToImageJSONBody_15_MaskUri as a PostV1TextToImageJSONBody15MaskUri2
+func (t PostV1TextToImageJSONBody_15_MaskUri) AsPostV1TextToImageJSONBody15MaskUri2() (PostV1TextToImageJSONBody15MaskUri2, error) {
+	var body PostV1TextToImageJSONBody15MaskUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody15MaskUri2 overwrites any union data inside the PostV1TextToImageJSONBody_15_MaskUri as the provided PostV1TextToImageJSONBody15MaskUri2
+func (t *PostV1TextToImageJSONBody_15_MaskUri) FromPostV1TextToImageJSONBody15MaskUri2(v PostV1TextToImageJSONBody15MaskUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody15MaskUri2 performs a merge with any union data inside the PostV1TextToImageJSONBody_15_MaskUri, using the provided PostV1TextToImageJSONBody15MaskUri2
+func (t *PostV1TextToImageJSONBody_15_MaskUri) MergePostV1TextToImageJSONBody15MaskUri2(v PostV1TextToImageJSONBody15MaskUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToImageJSONBody_15_MaskUri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToImageJSONBody_15_MaskUri) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -63815,6 +64286,182 @@ func (t PostV1TextToImageJSONBody_16_ReferenceImages_Uri) MarshalJSON() ([]byte,
 }
 
 func (t *PostV1TextToImageJSONBody_16_ReferenceImages_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToImageJSONBody17ReferenceImagesUri0 returns the union data inside the PostV1TextToImageJSONBody_17_ReferenceImages_Uri as a PostV1TextToImageJSONBody17ReferenceImagesUri0
+func (t PostV1TextToImageJSONBody_17_ReferenceImages_Uri) AsPostV1TextToImageJSONBody17ReferenceImagesUri0() (PostV1TextToImageJSONBody17ReferenceImagesUri0, error) {
+	var body PostV1TextToImageJSONBody17ReferenceImagesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody17ReferenceImagesUri0 overwrites any union data inside the PostV1TextToImageJSONBody_17_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody17ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_17_ReferenceImages_Uri) FromPostV1TextToImageJSONBody17ReferenceImagesUri0(v PostV1TextToImageJSONBody17ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody17ReferenceImagesUri0 performs a merge with any union data inside the PostV1TextToImageJSONBody_17_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody17ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_17_ReferenceImages_Uri) MergePostV1TextToImageJSONBody17ReferenceImagesUri0(v PostV1TextToImageJSONBody17ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody17ReferenceImagesUri1 returns the union data inside the PostV1TextToImageJSONBody_17_ReferenceImages_Uri as a PostV1TextToImageJSONBody17ReferenceImagesUri1
+func (t PostV1TextToImageJSONBody_17_ReferenceImages_Uri) AsPostV1TextToImageJSONBody17ReferenceImagesUri1() (PostV1TextToImageJSONBody17ReferenceImagesUri1, error) {
+	var body PostV1TextToImageJSONBody17ReferenceImagesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody17ReferenceImagesUri1 overwrites any union data inside the PostV1TextToImageJSONBody_17_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody17ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_17_ReferenceImages_Uri) FromPostV1TextToImageJSONBody17ReferenceImagesUri1(v PostV1TextToImageJSONBody17ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody17ReferenceImagesUri1 performs a merge with any union data inside the PostV1TextToImageJSONBody_17_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody17ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_17_ReferenceImages_Uri) MergePostV1TextToImageJSONBody17ReferenceImagesUri1(v PostV1TextToImageJSONBody17ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody17ReferenceImagesUri2 returns the union data inside the PostV1TextToImageJSONBody_17_ReferenceImages_Uri as a PostV1TextToImageJSONBody17ReferenceImagesUri2
+func (t PostV1TextToImageJSONBody_17_ReferenceImages_Uri) AsPostV1TextToImageJSONBody17ReferenceImagesUri2() (PostV1TextToImageJSONBody17ReferenceImagesUri2, error) {
+	var body PostV1TextToImageJSONBody17ReferenceImagesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody17ReferenceImagesUri2 overwrites any union data inside the PostV1TextToImageJSONBody_17_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody17ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_17_ReferenceImages_Uri) FromPostV1TextToImageJSONBody17ReferenceImagesUri2(v PostV1TextToImageJSONBody17ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody17ReferenceImagesUri2 performs a merge with any union data inside the PostV1TextToImageJSONBody_17_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody17ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_17_ReferenceImages_Uri) MergePostV1TextToImageJSONBody17ReferenceImagesUri2(v PostV1TextToImageJSONBody17ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToImageJSONBody_17_ReferenceImages_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToImageJSONBody_17_ReferenceImages_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToImageJSONBody18ReferenceImagesUri0 returns the union data inside the PostV1TextToImageJSONBody_18_ReferenceImages_Uri as a PostV1TextToImageJSONBody18ReferenceImagesUri0
+func (t PostV1TextToImageJSONBody_18_ReferenceImages_Uri) AsPostV1TextToImageJSONBody18ReferenceImagesUri0() (PostV1TextToImageJSONBody18ReferenceImagesUri0, error) {
+	var body PostV1TextToImageJSONBody18ReferenceImagesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody18ReferenceImagesUri0 overwrites any union data inside the PostV1TextToImageJSONBody_18_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody18ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_18_ReferenceImages_Uri) FromPostV1TextToImageJSONBody18ReferenceImagesUri0(v PostV1TextToImageJSONBody18ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody18ReferenceImagesUri0 performs a merge with any union data inside the PostV1TextToImageJSONBody_18_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody18ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_18_ReferenceImages_Uri) MergePostV1TextToImageJSONBody18ReferenceImagesUri0(v PostV1TextToImageJSONBody18ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody18ReferenceImagesUri1 returns the union data inside the PostV1TextToImageJSONBody_18_ReferenceImages_Uri as a PostV1TextToImageJSONBody18ReferenceImagesUri1
+func (t PostV1TextToImageJSONBody_18_ReferenceImages_Uri) AsPostV1TextToImageJSONBody18ReferenceImagesUri1() (PostV1TextToImageJSONBody18ReferenceImagesUri1, error) {
+	var body PostV1TextToImageJSONBody18ReferenceImagesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody18ReferenceImagesUri1 overwrites any union data inside the PostV1TextToImageJSONBody_18_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody18ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_18_ReferenceImages_Uri) FromPostV1TextToImageJSONBody18ReferenceImagesUri1(v PostV1TextToImageJSONBody18ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody18ReferenceImagesUri1 performs a merge with any union data inside the PostV1TextToImageJSONBody_18_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody18ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_18_ReferenceImages_Uri) MergePostV1TextToImageJSONBody18ReferenceImagesUri1(v PostV1TextToImageJSONBody18ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody18ReferenceImagesUri2 returns the union data inside the PostV1TextToImageJSONBody_18_ReferenceImages_Uri as a PostV1TextToImageJSONBody18ReferenceImagesUri2
+func (t PostV1TextToImageJSONBody_18_ReferenceImages_Uri) AsPostV1TextToImageJSONBody18ReferenceImagesUri2() (PostV1TextToImageJSONBody18ReferenceImagesUri2, error) {
+	var body PostV1TextToImageJSONBody18ReferenceImagesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody18ReferenceImagesUri2 overwrites any union data inside the PostV1TextToImageJSONBody_18_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody18ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_18_ReferenceImages_Uri) FromPostV1TextToImageJSONBody18ReferenceImagesUri2(v PostV1TextToImageJSONBody18ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody18ReferenceImagesUri2 performs a merge with any union data inside the PostV1TextToImageJSONBody_18_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody18ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_18_ReferenceImages_Uri) MergePostV1TextToImageJSONBody18ReferenceImagesUri2(v PostV1TextToImageJSONBody18ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToImageJSONBody_18_ReferenceImages_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToImageJSONBody_18_ReferenceImages_Uri) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }

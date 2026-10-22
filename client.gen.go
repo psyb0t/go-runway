@@ -101,7 +101,7 @@ type ClientInterface interface {
 
 	// DeleteV1AvatarConversationsId Delete conversation
 	//
-	// Delete a conversation and its associated data.
+	// Permanently delete a conversation, including its transcript and recording.
 	//
 	// Corresponds with DELETE /v1/avatar_conversations/{id} (the `DeleteV1AvatarConversationsId` operationId).
 	DeleteV1AvatarConversationsId(ctx context.Context, id openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error)
@@ -976,7 +976,7 @@ func (c *Client) GetV1AvatarConversations(ctx context.Context, params *GetV1Avat
 
 // DeleteV1AvatarConversationsId Delete conversation
 //
-// Delete a conversation and its associated data.
+// Permanently delete a conversation, including its transcript and recording.
 //
 // Corresponds with DELETE /v1/avatar_conversations/{id} (the `DeleteV1AvatarConversationsId` operationId).
 func (c *Client) DeleteV1AvatarConversationsId(ctx context.Context, id openapi_types.UUID, reqEditors ...RequestEditorFn) (*http.Response, error) {
@@ -5795,7 +5795,7 @@ type ClientWithResponsesInterface interface {
 
 	// DeleteV1AvatarConversationsIdWithResponse Delete conversation
 	//
-	// Delete a conversation and its associated data.
+	// Permanently delete a conversation, including its transcript and recording.
 	//
 	// Returns a wrapper object for the known response body format(s).
 	//
@@ -8468,76 +8468,83 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 
 		// Metadata Action-specific details.
 		Metadata struct {
-			APIAccount               *string                                                                            `json:"API account,omitempty"`
-			APIProjectID             *string                                                                            `json:"API project ID,omitempty"`
-			AWSLicense               *string                                                                            `json:"AWS license,omitempty"`
-			AdAccountID              *string                                                                            `json:"Ad account ID,omitempty"`
-			AdSyncEndDate            *string                                                                            `json:"Ad sync end date,omitempty"`
-			AdSyncRunID              *string                                                                            `json:"Ad sync run ID,omitempty"`
-			AdSyncStartDate          *string                                                                            `json:"Ad sync start date,omitempty"`
-			AdsOnboardingAnswers     *[]string                                                                          `json:"Ads onboarding answers,omitempty"`
-			AdsOnboardingCompleted   *bool                                                                              `json:"Ads onboarding completed,omitempty"`
-			AgentSessionID           *string                                                                            `json:"Agent session ID,omitempty"`
-			AgentTagged              *bool                                                                              `json:"Agent tagged,omitempty"`
-			Amount                   *float64                                                                           `json:"Amount,omitempty"`
-			AmountReceived           *float64                                                                           `json:"Amount received,omitempty"`
-			AppStudioApp             *string                                                                            `json:"App Studio app,omitempty"`
-			AppStudioSession         *string                                                                            `json:"App Studio session,omitempty"`
-			Application              *string                                                                            `json:"Application,omitempty"`
-			AssetName                *string                                                                            `json:"Asset name,omitempty"`
-			BrandKitID               *string                                                                            `json:"Brand kit ID,omitempty"`
-			CommentID                *string                                                                            `json:"Comment ID,omitempty"`
-			CommentTargetID          *string                                                                            `json:"Comment target ID,omitempty"`
-			CommentTargetType        *string                                                                            `json:"Comment target type,omitempty"`
-			CommentText              *string                                                                            `json:"Comment text,omitempty"`
-			DefaultTaskNameTemplate  *string                                                                            `json:"Default task name template,omitempty"`
-			DestinationCategoryID    *string                                                                            `json:"Destination category ID,omitempty"`
-			Direction                *string                                                                            `json:"Direction,omitempty"`
-			EmailDomain              *string                                                                            `json:"Email domain,omitempty"`
-			ErrorCode                *string                                                                            `json:"Error code,omitempty"`
-			GroupName                *string                                                                            `json:"Group name,omitempty"`
-			HardSpendCap             *bool                                                                              `json:"Hard spend cap,omitempty"`
-			InvitedMember            *string                                                                            `json:"Invited member,omitempty"`
-			LoginMethod              *string                                                                            `json:"Login method,omitempty"`
-			MediaIncluded            *bool                                                                              `json:"Media included,omitempty"`
-			MemberEmail              *string                                                                            `json:"Member email,omitempty"`
-			Mentions                 *float64                                                                           `json:"Mentions,omitempty"`
-			Model                    *string                                                                            `json:"Model,omitempty"`
-			NewUser                  *bool                                                                              `json:"New User,omitempty"`
-			NewRole                  *string                                                                            `json:"New role,omitempty"`
-			NewText                  *string                                                                            `json:"New text,omitempty"`
-			NewValue                 *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_NewValue      `json:"New value,omitempty"`
-			Operation                *string                                                                            `json:"Operation,omitempty"`
-			Organization             *string                                                                            `json:"Organization,omitempty"`
-			Outcome                  *string                                                                            `json:"Outcome,omitempty"`
-			Plan                     *string                                                                            `json:"Plan,omitempty"`
-			Platform                 *string                                                                            `json:"Platform,omitempty"`
-			PreviousProjectCreditCap *float64                                                                           `json:"Previous project credit cap,omitempty"`
-			PreviousRole             *string                                                                            `json:"Previous role,omitempty"`
-			PreviousText             *string                                                                            `json:"Previous text,omitempty"`
-			PreviousValue            *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_PreviousValue `json:"Previous value,omitempty"`
-			ProjectCreditCap         *float64                                                                           `json:"Project credit cap,omitempty"`
-			Provider                 *string                                                                            `json:"Provider,omitempty"`
-			Reason                   *string                                                                            `json:"Reason,omitempty"`
-			RemovedMember            *string                                                                            `json:"Removed member,omitempty"`
-			Role                     *string                                                                            `json:"Role,omitempty"`
-			RootAssetID              *string                                                                            `json:"Root asset ID,omitempty"`
-			Selected                 *bool                                                                              `json:"Selected,omitempty"`
-			Setting                  *string                                                                            `json:"Setting,omitempty"`
-			SharedWithProjects       *[]string                                                                          `json:"Shared with projects,omitempty"`
-			SharedWithWorkspace      *bool                                                                              `json:"Shared with workspace,omitempty"`
-			SourceCategoryID         *string                                                                            `json:"Source category ID,omitempty"`
-			SpendCap                 *float64                                                                           `json:"Spend cap,omitempty"`
-			SpendCapChange           *float64                                                                           `json:"Spend cap change,omitempty"`
-			TagColor                 *string                                                                            `json:"Tag color,omitempty"`
-			TagName                  *string                                                                            `json:"Tag name,omitempty"`
-			TargetMember             *string                                                                            `json:"Target member,omitempty"`
-			ViaPublicAPI             *bool                                                                              `json:"Via public API,omitempty"`
-			Workspace                *string                                                                            `json:"Workspace,omitempty"`
-			WorkspaceID              *float64                                                                           `json:"Workspace ID,omitempty"`
-			WorkspaceDescription     *string                                                                            `json:"Workspace description,omitempty"`
-			WorkspaceName            *string                                                                            `json:"Workspace name,omitempty"`
-			WorkspacePicture         *string                                                                            `json:"Workspace picture,omitempty"`
+			APIAccount                    *string                                                                            `json:"API account,omitempty"`
+			APIProjectID                  *string                                                                            `json:"API project ID,omitempty"`
+			AWSLicense                    *string                                                                            `json:"AWS license,omitempty"`
+			AdAccountID                   *string                                                                            `json:"Ad account ID,omitempty"`
+			AdCreativeID                  *string                                                                            `json:"Ad creative ID,omitempty"`
+			AdReviewBatchID               *string                                                                            `json:"Ad review batch ID,omitempty"`
+			AdReviewRequestID             *string                                                                            `json:"Ad review request ID,omitempty"`
+			AdSyncEndDate                 *string                                                                            `json:"Ad sync end date,omitempty"`
+			AdSyncRunID                   *string                                                                            `json:"Ad sync run ID,omitempty"`
+			AdSyncStartDate               *string                                                                            `json:"Ad sync start date,omitempty"`
+			AdsOnboardingAnswers          *[]string                                                                          `json:"Ads onboarding answers,omitempty"`
+			AdsOnboardingCompleted        *bool                                                                              `json:"Ads onboarding completed,omitempty"`
+			AgentSessionID                *string                                                                            `json:"Agent session ID,omitempty"`
+			AgentTagged                   *bool                                                                              `json:"Agent tagged,omitempty"`
+			Amount                        *float64                                                                           `json:"Amount,omitempty"`
+			AmountReceived                *float64                                                                           `json:"Amount received,omitempty"`
+			AppStudioApp                  *string                                                                            `json:"App Studio app,omitempty"`
+			AppStudioSession              *string                                                                            `json:"App Studio session,omitempty"`
+			Application                   *string                                                                            `json:"Application,omitempty"`
+			AssetName                     *string                                                                            `json:"Asset name,omitempty"`
+			BrandKitID                    *string                                                                            `json:"Brand kit ID,omitempty"`
+			CommentID                     *string                                                                            `json:"Comment ID,omitempty"`
+			CommentTargetID               *string                                                                            `json:"Comment target ID,omitempty"`
+			CommentTargetType             *string                                                                            `json:"Comment target type,omitempty"`
+			CommentText                   *string                                                                            `json:"Comment text,omitempty"`
+			DefaultProjectDiscoverability *string                                                                            `json:"Default project discoverability,omitempty"`
+			DefaultTaskNameTemplate       *string                                                                            `json:"Default task name template,omitempty"`
+			DestinationCategoryID         *string                                                                            `json:"Destination category ID,omitempty"`
+			Direction                     *string                                                                            `json:"Direction,omitempty"`
+			EmailDomain                   *string                                                                            `json:"Email domain,omitempty"`
+			ErrorCode                     *string                                                                            `json:"Error code,omitempty"`
+			GroupName                     *string                                                                            `json:"Group name,omitempty"`
+			HardSpendCap                  *bool                                                                              `json:"Hard spend cap,omitempty"`
+			InvitedMember                 *string                                                                            `json:"Invited member,omitempty"`
+			LanguageModelOrProvider       *string                                                                            `json:"Language model or provider,omitempty"`
+			LoginMethod                   *string                                                                            `json:"Login method,omitempty"`
+			MediaIncluded                 *bool                                                                              `json:"Media included,omitempty"`
+			MemberEmail                   *string                                                                            `json:"Member email,omitempty"`
+			Mentions                      *float64                                                                           `json:"Mentions,omitempty"`
+			Model                         *string                                                                            `json:"Model,omitempty"`
+			NewUser                       *bool                                                                              `json:"New User,omitempty"`
+			NewRole                       *string                                                                            `json:"New role,omitempty"`
+			NewText                       *string                                                                            `json:"New text,omitempty"`
+			NewValue                      *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_NewValue      `json:"New value,omitempty"`
+			Operation                     *string                                                                            `json:"Operation,omitempty"`
+			Organization                  *string                                                                            `json:"Organization,omitempty"`
+			Outcome                       *string                                                                            `json:"Outcome,omitempty"`
+			Plan                          *string                                                                            `json:"Plan,omitempty"`
+			Platform                      *string                                                                            `json:"Platform,omitempty"`
+			PreviousProjectCreditCap      *float64                                                                           `json:"Previous project credit cap,omitempty"`
+			PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
+			PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
+			PreviousValue                 *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_PreviousValue `json:"Previous value,omitempty"`
+			ProjectCreditCap              *float64                                                                           `json:"Project credit cap,omitempty"`
+			Provider                      *string                                                                            `json:"Provider,omitempty"`
+			Reason                        *string                                                                            `json:"Reason,omitempty"`
+			RemovedMember                 *string                                                                            `json:"Removed member,omitempty"`
+			ReviewDecision                *string                                                                            `json:"Review decision,omitempty"`
+			Role                          *string                                                                            `json:"Role,omitempty"`
+			RootAssetID                   *string                                                                            `json:"Root asset ID,omitempty"`
+			Selected                      *bool                                                                              `json:"Selected,omitempty"`
+			Setting                       *string                                                                            `json:"Setting,omitempty"`
+			SharedWithProjects            *[]string                                                                          `json:"Shared with projects,omitempty"`
+			SharedWithWorkspace           *bool                                                                              `json:"Shared with workspace,omitempty"`
+			SourceCategoryID              *string                                                                            `json:"Source category ID,omitempty"`
+			SpendCap                      *float64                                                                           `json:"Spend cap,omitempty"`
+			SpendCapChange                *float64                                                                           `json:"Spend cap change,omitempty"`
+			SubmittedVia                  *string                                                                            `json:"Submitted via,omitempty"`
+			TagColor                      *string                                                                            `json:"Tag color,omitempty"`
+			TagName                       *string                                                                            `json:"Tag name,omitempty"`
+			TargetMember                  *string                                                                            `json:"Target member,omitempty"`
+			ViaPublicAPI                  *bool                                                                              `json:"Via public API,omitempty"`
+			Workspace                     *string                                                                            `json:"Workspace,omitempty"`
+			WorkspaceID                   *float64                                                                           `json:"Workspace ID,omitempty"`
+			WorkspaceDescription          *string                                                                            `json:"Workspace description,omitempty"`
+			WorkspaceName                 *string                                                                            `json:"Workspace name,omitempty"`
+			WorkspacePicture              *string                                                                            `json:"Workspace picture,omitempty"`
 		} `json:"metadata"`
 
 		// RequestId Request ID for correlation with other logs.
@@ -8589,76 +8596,83 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 
 	// Metadata Action-specific details.
 	Metadata struct {
-		APIAccount               *string                                                                            `json:"API account,omitempty"`
-		APIProjectID             *string                                                                            `json:"API project ID,omitempty"`
-		AWSLicense               *string                                                                            `json:"AWS license,omitempty"`
-		AdAccountID              *string                                                                            `json:"Ad account ID,omitempty"`
-		AdSyncEndDate            *string                                                                            `json:"Ad sync end date,omitempty"`
-		AdSyncRunID              *string                                                                            `json:"Ad sync run ID,omitempty"`
-		AdSyncStartDate          *string                                                                            `json:"Ad sync start date,omitempty"`
-		AdsOnboardingAnswers     *[]string                                                                          `json:"Ads onboarding answers,omitempty"`
-		AdsOnboardingCompleted   *bool                                                                              `json:"Ads onboarding completed,omitempty"`
-		AgentSessionID           *string                                                                            `json:"Agent session ID,omitempty"`
-		AgentTagged              *bool                                                                              `json:"Agent tagged,omitempty"`
-		Amount                   *float64                                                                           `json:"Amount,omitempty"`
-		AmountReceived           *float64                                                                           `json:"Amount received,omitempty"`
-		AppStudioApp             *string                                                                            `json:"App Studio app,omitempty"`
-		AppStudioSession         *string                                                                            `json:"App Studio session,omitempty"`
-		Application              *string                                                                            `json:"Application,omitempty"`
-		AssetName                *string                                                                            `json:"Asset name,omitempty"`
-		BrandKitID               *string                                                                            `json:"Brand kit ID,omitempty"`
-		CommentID                *string                                                                            `json:"Comment ID,omitempty"`
-		CommentTargetID          *string                                                                            `json:"Comment target ID,omitempty"`
-		CommentTargetType        *string                                                                            `json:"Comment target type,omitempty"`
-		CommentText              *string                                                                            `json:"Comment text,omitempty"`
-		DefaultTaskNameTemplate  *string                                                                            `json:"Default task name template,omitempty"`
-		DestinationCategoryID    *string                                                                            `json:"Destination category ID,omitempty"`
-		Direction                *string                                                                            `json:"Direction,omitempty"`
-		EmailDomain              *string                                                                            `json:"Email domain,omitempty"`
-		ErrorCode                *string                                                                            `json:"Error code,omitempty"`
-		GroupName                *string                                                                            `json:"Group name,omitempty"`
-		HardSpendCap             *bool                                                                              `json:"Hard spend cap,omitempty"`
-		InvitedMember            *string                                                                            `json:"Invited member,omitempty"`
-		LoginMethod              *string                                                                            `json:"Login method,omitempty"`
-		MediaIncluded            *bool                                                                              `json:"Media included,omitempty"`
-		MemberEmail              *string                                                                            `json:"Member email,omitempty"`
-		Mentions                 *float64                                                                           `json:"Mentions,omitempty"`
-		Model                    *string                                                                            `json:"Model,omitempty"`
-		NewUser                  *bool                                                                              `json:"New User,omitempty"`
-		NewRole                  *string                                                                            `json:"New role,omitempty"`
-		NewText                  *string                                                                            `json:"New text,omitempty"`
-		NewValue                 *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_NewValue      `json:"New value,omitempty"`
-		Operation                *string                                                                            `json:"Operation,omitempty"`
-		Organization             *string                                                                            `json:"Organization,omitempty"`
-		Outcome                  *string                                                                            `json:"Outcome,omitempty"`
-		Plan                     *string                                                                            `json:"Plan,omitempty"`
-		Platform                 *string                                                                            `json:"Platform,omitempty"`
-		PreviousProjectCreditCap *float64                                                                           `json:"Previous project credit cap,omitempty"`
-		PreviousRole             *string                                                                            `json:"Previous role,omitempty"`
-		PreviousText             *string                                                                            `json:"Previous text,omitempty"`
-		PreviousValue            *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_PreviousValue `json:"Previous value,omitempty"`
-		ProjectCreditCap         *float64                                                                           `json:"Project credit cap,omitempty"`
-		Provider                 *string                                                                            `json:"Provider,omitempty"`
-		Reason                   *string                                                                            `json:"Reason,omitempty"`
-		RemovedMember            *string                                                                            `json:"Removed member,omitempty"`
-		Role                     *string                                                                            `json:"Role,omitempty"`
-		RootAssetID              *string                                                                            `json:"Root asset ID,omitempty"`
-		Selected                 *bool                                                                              `json:"Selected,omitempty"`
-		Setting                  *string                                                                            `json:"Setting,omitempty"`
-		SharedWithProjects       *[]string                                                                          `json:"Shared with projects,omitempty"`
-		SharedWithWorkspace      *bool                                                                              `json:"Shared with workspace,omitempty"`
-		SourceCategoryID         *string                                                                            `json:"Source category ID,omitempty"`
-		SpendCap                 *float64                                                                           `json:"Spend cap,omitempty"`
-		SpendCapChange           *float64                                                                           `json:"Spend cap change,omitempty"`
-		TagColor                 *string                                                                            `json:"Tag color,omitempty"`
-		TagName                  *string                                                                            `json:"Tag name,omitempty"`
-		TargetMember             *string                                                                            `json:"Target member,omitempty"`
-		ViaPublicAPI             *bool                                                                              `json:"Via public API,omitempty"`
-		Workspace                *string                                                                            `json:"Workspace,omitempty"`
-		WorkspaceID              *float64                                                                           `json:"Workspace ID,omitempty"`
-		WorkspaceDescription     *string                                                                            `json:"Workspace description,omitempty"`
-		WorkspaceName            *string                                                                            `json:"Workspace name,omitempty"`
-		WorkspacePicture         *string                                                                            `json:"Workspace picture,omitempty"`
+		APIAccount                    *string                                                                            `json:"API account,omitempty"`
+		APIProjectID                  *string                                                                            `json:"API project ID,omitempty"`
+		AWSLicense                    *string                                                                            `json:"AWS license,omitempty"`
+		AdAccountID                   *string                                                                            `json:"Ad account ID,omitempty"`
+		AdCreativeID                  *string                                                                            `json:"Ad creative ID,omitempty"`
+		AdReviewBatchID               *string                                                                            `json:"Ad review batch ID,omitempty"`
+		AdReviewRequestID             *string                                                                            `json:"Ad review request ID,omitempty"`
+		AdSyncEndDate                 *string                                                                            `json:"Ad sync end date,omitempty"`
+		AdSyncRunID                   *string                                                                            `json:"Ad sync run ID,omitempty"`
+		AdSyncStartDate               *string                                                                            `json:"Ad sync start date,omitempty"`
+		AdsOnboardingAnswers          *[]string                                                                          `json:"Ads onboarding answers,omitempty"`
+		AdsOnboardingCompleted        *bool                                                                              `json:"Ads onboarding completed,omitempty"`
+		AgentSessionID                *string                                                                            `json:"Agent session ID,omitempty"`
+		AgentTagged                   *bool                                                                              `json:"Agent tagged,omitempty"`
+		Amount                        *float64                                                                           `json:"Amount,omitempty"`
+		AmountReceived                *float64                                                                           `json:"Amount received,omitempty"`
+		AppStudioApp                  *string                                                                            `json:"App Studio app,omitempty"`
+		AppStudioSession              *string                                                                            `json:"App Studio session,omitempty"`
+		Application                   *string                                                                            `json:"Application,omitempty"`
+		AssetName                     *string                                                                            `json:"Asset name,omitempty"`
+		BrandKitID                    *string                                                                            `json:"Brand kit ID,omitempty"`
+		CommentID                     *string                                                                            `json:"Comment ID,omitempty"`
+		CommentTargetID               *string                                                                            `json:"Comment target ID,omitempty"`
+		CommentTargetType             *string                                                                            `json:"Comment target type,omitempty"`
+		CommentText                   *string                                                                            `json:"Comment text,omitempty"`
+		DefaultProjectDiscoverability *string                                                                            `json:"Default project discoverability,omitempty"`
+		DefaultTaskNameTemplate       *string                                                                            `json:"Default task name template,omitempty"`
+		DestinationCategoryID         *string                                                                            `json:"Destination category ID,omitempty"`
+		Direction                     *string                                                                            `json:"Direction,omitempty"`
+		EmailDomain                   *string                                                                            `json:"Email domain,omitempty"`
+		ErrorCode                     *string                                                                            `json:"Error code,omitempty"`
+		GroupName                     *string                                                                            `json:"Group name,omitempty"`
+		HardSpendCap                  *bool                                                                              `json:"Hard spend cap,omitempty"`
+		InvitedMember                 *string                                                                            `json:"Invited member,omitempty"`
+		LanguageModelOrProvider       *string                                                                            `json:"Language model or provider,omitempty"`
+		LoginMethod                   *string                                                                            `json:"Login method,omitempty"`
+		MediaIncluded                 *bool                                                                              `json:"Media included,omitempty"`
+		MemberEmail                   *string                                                                            `json:"Member email,omitempty"`
+		Mentions                      *float64                                                                           `json:"Mentions,omitempty"`
+		Model                         *string                                                                            `json:"Model,omitempty"`
+		NewUser                       *bool                                                                              `json:"New User,omitempty"`
+		NewRole                       *string                                                                            `json:"New role,omitempty"`
+		NewText                       *string                                                                            `json:"New text,omitempty"`
+		NewValue                      *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_NewValue      `json:"New value,omitempty"`
+		Operation                     *string                                                                            `json:"Operation,omitempty"`
+		Organization                  *string                                                                            `json:"Organization,omitempty"`
+		Outcome                       *string                                                                            `json:"Outcome,omitempty"`
+		Plan                          *string                                                                            `json:"Plan,omitempty"`
+		Platform                      *string                                                                            `json:"Platform,omitempty"`
+		PreviousProjectCreditCap      *float64                                                                           `json:"Previous project credit cap,omitempty"`
+		PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
+		PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
+		PreviousValue                 *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_PreviousValue `json:"Previous value,omitempty"`
+		ProjectCreditCap              *float64                                                                           `json:"Project credit cap,omitempty"`
+		Provider                      *string                                                                            `json:"Provider,omitempty"`
+		Reason                        *string                                                                            `json:"Reason,omitempty"`
+		RemovedMember                 *string                                                                            `json:"Removed member,omitempty"`
+		ReviewDecision                *string                                                                            `json:"Review decision,omitempty"`
+		Role                          *string                                                                            `json:"Role,omitempty"`
+		RootAssetID                   *string                                                                            `json:"Root asset ID,omitempty"`
+		Selected                      *bool                                                                              `json:"Selected,omitempty"`
+		Setting                       *string                                                                            `json:"Setting,omitempty"`
+		SharedWithProjects            *[]string                                                                          `json:"Shared with projects,omitempty"`
+		SharedWithWorkspace           *bool                                                                              `json:"Shared with workspace,omitempty"`
+		SourceCategoryID              *string                                                                            `json:"Source category ID,omitempty"`
+		SpendCap                      *float64                                                                           `json:"Spend cap,omitempty"`
+		SpendCapChange                *float64                                                                           `json:"Spend cap change,omitempty"`
+		SubmittedVia                  *string                                                                            `json:"Submitted via,omitempty"`
+		TagColor                      *string                                                                            `json:"Tag color,omitempty"`
+		TagName                       *string                                                                            `json:"Tag name,omitempty"`
+		TargetMember                  *string                                                                            `json:"Target member,omitempty"`
+		ViaPublicAPI                  *bool                                                                              `json:"Via public API,omitempty"`
+		Workspace                     *string                                                                            `json:"Workspace,omitempty"`
+		WorkspaceID                   *float64                                                                           `json:"Workspace ID,omitempty"`
+		WorkspaceDescription          *string                                                                            `json:"Workspace description,omitempty"`
+		WorkspaceName                 *string                                                                            `json:"Workspace name,omitempty"`
+		WorkspacePicture              *string                                                                            `json:"Workspace picture,omitempty"`
 	} `json:"metadata"`
 
 	// RequestId Request ID for correlation with other logs.
@@ -12105,7 +12119,7 @@ func (c *ClientWithResponses) GetV1AvatarConversationsWithResponse(ctx context.C
 
 // DeleteV1AvatarConversationsIdWithResponse Delete conversation
 //
-// Delete a conversation and its associated data.
+// Permanently delete a conversation, including its transcript and recording.
 //
 // Returns a wrapper object for the known response body format(s).
 //
@@ -14687,76 +14701,83 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 
 			// Metadata Action-specific details.
 			Metadata struct {
-				APIAccount               *string                                                                            `json:"API account,omitempty"`
-				APIProjectID             *string                                                                            `json:"API project ID,omitempty"`
-				AWSLicense               *string                                                                            `json:"AWS license,omitempty"`
-				AdAccountID              *string                                                                            `json:"Ad account ID,omitempty"`
-				AdSyncEndDate            *string                                                                            `json:"Ad sync end date,omitempty"`
-				AdSyncRunID              *string                                                                            `json:"Ad sync run ID,omitempty"`
-				AdSyncStartDate          *string                                                                            `json:"Ad sync start date,omitempty"`
-				AdsOnboardingAnswers     *[]string                                                                          `json:"Ads onboarding answers,omitempty"`
-				AdsOnboardingCompleted   *bool                                                                              `json:"Ads onboarding completed,omitempty"`
-				AgentSessionID           *string                                                                            `json:"Agent session ID,omitempty"`
-				AgentTagged              *bool                                                                              `json:"Agent tagged,omitempty"`
-				Amount                   *float64                                                                           `json:"Amount,omitempty"`
-				AmountReceived           *float64                                                                           `json:"Amount received,omitempty"`
-				AppStudioApp             *string                                                                            `json:"App Studio app,omitempty"`
-				AppStudioSession         *string                                                                            `json:"App Studio session,omitempty"`
-				Application              *string                                                                            `json:"Application,omitempty"`
-				AssetName                *string                                                                            `json:"Asset name,omitempty"`
-				BrandKitID               *string                                                                            `json:"Brand kit ID,omitempty"`
-				CommentID                *string                                                                            `json:"Comment ID,omitempty"`
-				CommentTargetID          *string                                                                            `json:"Comment target ID,omitempty"`
-				CommentTargetType        *string                                                                            `json:"Comment target type,omitempty"`
-				CommentText              *string                                                                            `json:"Comment text,omitempty"`
-				DefaultTaskNameTemplate  *string                                                                            `json:"Default task name template,omitempty"`
-				DestinationCategoryID    *string                                                                            `json:"Destination category ID,omitempty"`
-				Direction                *string                                                                            `json:"Direction,omitempty"`
-				EmailDomain              *string                                                                            `json:"Email domain,omitempty"`
-				ErrorCode                *string                                                                            `json:"Error code,omitempty"`
-				GroupName                *string                                                                            `json:"Group name,omitempty"`
-				HardSpendCap             *bool                                                                              `json:"Hard spend cap,omitempty"`
-				InvitedMember            *string                                                                            `json:"Invited member,omitempty"`
-				LoginMethod              *string                                                                            `json:"Login method,omitempty"`
-				MediaIncluded            *bool                                                                              `json:"Media included,omitempty"`
-				MemberEmail              *string                                                                            `json:"Member email,omitempty"`
-				Mentions                 *float64                                                                           `json:"Mentions,omitempty"`
-				Model                    *string                                                                            `json:"Model,omitempty"`
-				NewUser                  *bool                                                                              `json:"New User,omitempty"`
-				NewRole                  *string                                                                            `json:"New role,omitempty"`
-				NewText                  *string                                                                            `json:"New text,omitempty"`
-				NewValue                 *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_NewValue      `json:"New value,omitempty"`
-				Operation                *string                                                                            `json:"Operation,omitempty"`
-				Organization             *string                                                                            `json:"Organization,omitempty"`
-				Outcome                  *string                                                                            `json:"Outcome,omitempty"`
-				Plan                     *string                                                                            `json:"Plan,omitempty"`
-				Platform                 *string                                                                            `json:"Platform,omitempty"`
-				PreviousProjectCreditCap *float64                                                                           `json:"Previous project credit cap,omitempty"`
-				PreviousRole             *string                                                                            `json:"Previous role,omitempty"`
-				PreviousText             *string                                                                            `json:"Previous text,omitempty"`
-				PreviousValue            *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_PreviousValue `json:"Previous value,omitempty"`
-				ProjectCreditCap         *float64                                                                           `json:"Project credit cap,omitempty"`
-				Provider                 *string                                                                            `json:"Provider,omitempty"`
-				Reason                   *string                                                                            `json:"Reason,omitempty"`
-				RemovedMember            *string                                                                            `json:"Removed member,omitempty"`
-				Role                     *string                                                                            `json:"Role,omitempty"`
-				RootAssetID              *string                                                                            `json:"Root asset ID,omitempty"`
-				Selected                 *bool                                                                              `json:"Selected,omitempty"`
-				Setting                  *string                                                                            `json:"Setting,omitempty"`
-				SharedWithProjects       *[]string                                                                          `json:"Shared with projects,omitempty"`
-				SharedWithWorkspace      *bool                                                                              `json:"Shared with workspace,omitempty"`
-				SourceCategoryID         *string                                                                            `json:"Source category ID,omitempty"`
-				SpendCap                 *float64                                                                           `json:"Spend cap,omitempty"`
-				SpendCapChange           *float64                                                                           `json:"Spend cap change,omitempty"`
-				TagColor                 *string                                                                            `json:"Tag color,omitempty"`
-				TagName                  *string                                                                            `json:"Tag name,omitempty"`
-				TargetMember             *string                                                                            `json:"Target member,omitempty"`
-				ViaPublicAPI             *bool                                                                              `json:"Via public API,omitempty"`
-				Workspace                *string                                                                            `json:"Workspace,omitempty"`
-				WorkspaceID              *float64                                                                           `json:"Workspace ID,omitempty"`
-				WorkspaceDescription     *string                                                                            `json:"Workspace description,omitempty"`
-				WorkspaceName            *string                                                                            `json:"Workspace name,omitempty"`
-				WorkspacePicture         *string                                                                            `json:"Workspace picture,omitempty"`
+				APIAccount                    *string                                                                            `json:"API account,omitempty"`
+				APIProjectID                  *string                                                                            `json:"API project ID,omitempty"`
+				AWSLicense                    *string                                                                            `json:"AWS license,omitempty"`
+				AdAccountID                   *string                                                                            `json:"Ad account ID,omitempty"`
+				AdCreativeID                  *string                                                                            `json:"Ad creative ID,omitempty"`
+				AdReviewBatchID               *string                                                                            `json:"Ad review batch ID,omitempty"`
+				AdReviewRequestID             *string                                                                            `json:"Ad review request ID,omitempty"`
+				AdSyncEndDate                 *string                                                                            `json:"Ad sync end date,omitempty"`
+				AdSyncRunID                   *string                                                                            `json:"Ad sync run ID,omitempty"`
+				AdSyncStartDate               *string                                                                            `json:"Ad sync start date,omitempty"`
+				AdsOnboardingAnswers          *[]string                                                                          `json:"Ads onboarding answers,omitempty"`
+				AdsOnboardingCompleted        *bool                                                                              `json:"Ads onboarding completed,omitempty"`
+				AgentSessionID                *string                                                                            `json:"Agent session ID,omitempty"`
+				AgentTagged                   *bool                                                                              `json:"Agent tagged,omitempty"`
+				Amount                        *float64                                                                           `json:"Amount,omitempty"`
+				AmountReceived                *float64                                                                           `json:"Amount received,omitempty"`
+				AppStudioApp                  *string                                                                            `json:"App Studio app,omitempty"`
+				AppStudioSession              *string                                                                            `json:"App Studio session,omitempty"`
+				Application                   *string                                                                            `json:"Application,omitempty"`
+				AssetName                     *string                                                                            `json:"Asset name,omitempty"`
+				BrandKitID                    *string                                                                            `json:"Brand kit ID,omitempty"`
+				CommentID                     *string                                                                            `json:"Comment ID,omitempty"`
+				CommentTargetID               *string                                                                            `json:"Comment target ID,omitempty"`
+				CommentTargetType             *string                                                                            `json:"Comment target type,omitempty"`
+				CommentText                   *string                                                                            `json:"Comment text,omitempty"`
+				DefaultProjectDiscoverability *string                                                                            `json:"Default project discoverability,omitempty"`
+				DefaultTaskNameTemplate       *string                                                                            `json:"Default task name template,omitempty"`
+				DestinationCategoryID         *string                                                                            `json:"Destination category ID,omitempty"`
+				Direction                     *string                                                                            `json:"Direction,omitempty"`
+				EmailDomain                   *string                                                                            `json:"Email domain,omitempty"`
+				ErrorCode                     *string                                                                            `json:"Error code,omitempty"`
+				GroupName                     *string                                                                            `json:"Group name,omitempty"`
+				HardSpendCap                  *bool                                                                              `json:"Hard spend cap,omitempty"`
+				InvitedMember                 *string                                                                            `json:"Invited member,omitempty"`
+				LanguageModelOrProvider       *string                                                                            `json:"Language model or provider,omitempty"`
+				LoginMethod                   *string                                                                            `json:"Login method,omitempty"`
+				MediaIncluded                 *bool                                                                              `json:"Media included,omitempty"`
+				MemberEmail                   *string                                                                            `json:"Member email,omitempty"`
+				Mentions                      *float64                                                                           `json:"Mentions,omitempty"`
+				Model                         *string                                                                            `json:"Model,omitempty"`
+				NewUser                       *bool                                                                              `json:"New User,omitempty"`
+				NewRole                       *string                                                                            `json:"New role,omitempty"`
+				NewText                       *string                                                                            `json:"New text,omitempty"`
+				NewValue                      *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_NewValue      `json:"New value,omitempty"`
+				Operation                     *string                                                                            `json:"Operation,omitempty"`
+				Organization                  *string                                                                            `json:"Organization,omitempty"`
+				Outcome                       *string                                                                            `json:"Outcome,omitempty"`
+				Plan                          *string                                                                            `json:"Plan,omitempty"`
+				Platform                      *string                                                                            `json:"Platform,omitempty"`
+				PreviousProjectCreditCap      *float64                                                                           `json:"Previous project credit cap,omitempty"`
+				PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
+				PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
+				PreviousValue                 *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_PreviousValue `json:"Previous value,omitempty"`
+				ProjectCreditCap              *float64                                                                           `json:"Project credit cap,omitempty"`
+				Provider                      *string                                                                            `json:"Provider,omitempty"`
+				Reason                        *string                                                                            `json:"Reason,omitempty"`
+				RemovedMember                 *string                                                                            `json:"Removed member,omitempty"`
+				ReviewDecision                *string                                                                            `json:"Review decision,omitempty"`
+				Role                          *string                                                                            `json:"Role,omitempty"`
+				RootAssetID                   *string                                                                            `json:"Root asset ID,omitempty"`
+				Selected                      *bool                                                                              `json:"Selected,omitempty"`
+				Setting                       *string                                                                            `json:"Setting,omitempty"`
+				SharedWithProjects            *[]string                                                                          `json:"Shared with projects,omitempty"`
+				SharedWithWorkspace           *bool                                                                              `json:"Shared with workspace,omitempty"`
+				SourceCategoryID              *string                                                                            `json:"Source category ID,omitempty"`
+				SpendCap                      *float64                                                                           `json:"Spend cap,omitempty"`
+				SpendCapChange                *float64                                                                           `json:"Spend cap change,omitempty"`
+				SubmittedVia                  *string                                                                            `json:"Submitted via,omitempty"`
+				TagColor                      *string                                                                            `json:"Tag color,omitempty"`
+				TagName                       *string                                                                            `json:"Tag name,omitempty"`
+				TargetMember                  *string                                                                            `json:"Target member,omitempty"`
+				ViaPublicAPI                  *bool                                                                              `json:"Via public API,omitempty"`
+				Workspace                     *string                                                                            `json:"Workspace,omitempty"`
+				WorkspaceID                   *float64                                                                           `json:"Workspace ID,omitempty"`
+				WorkspaceDescription          *string                                                                            `json:"Workspace description,omitempty"`
+				WorkspaceName                 *string                                                                            `json:"Workspace name,omitempty"`
+				WorkspacePicture              *string                                                                            `json:"Workspace picture,omitempty"`
 			} `json:"metadata"`
 
 			// RequestId Request ID for correlation with other logs.

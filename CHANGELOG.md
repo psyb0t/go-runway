@@ -2,6 +2,18 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.2.0, 2026-10-22
+
+- Regenerated from the current Runway OpenAPI spec. The text-to-image request union gained two variants: `PostV1TextToImageJSONBody17` and `PostV1TextToImageJSONBody18`, with `AsPostV1TextToImageJSONBody17`, `FromPostV1TextToImageJSONBody17`, `MergePostV1TextToImageJSONBody17` and the matching `...18` methods on `PostV1TextToImageJSONBody`.
+- The numbered text-to-image body types shifted. Per-model fields and enums moved between `PostV1TextToImageJSONBody9` to `PostV1TextToImageJSONBody16`, so code that names these types or constants must be updated. For example `PostV1TextToImageJSONBody11` lost `OutputFormat` and `Seed` and gained `Background`, `Quality` and `OutputCount`, and `PostV1TextToImageJSONBody15` lost `ThinkingLevel` and gained `MaskUri`, `PreciseEdit` and `Quality`.
+- Several text-to-image fields changed type: `PostV1TextToImageJSONBody12.Ratio` is now `PostV1TextToImageJSONBody12Ratio` instead of a pointer, and `PostV1TextToImageJSONBody15.Ratio` is now a pointer.
+- Added text-to-image model constants including `PostV1TextToImageJSONBody10ModelGptImage25Flare`, `PostV1TextToImageJSONBody12ModelBriaFibo15`, `PostV1TextToImageJSONBody13ModelBriaFiboEdit15`, `PostV1TextToImageJSONBody14ModelIdeogram40`, `PostV1TextToImageJSONBody15ModelIdeogram45` and `PostV1TextToImageJSONBody16ModelSeedream5Flash`, plus many new aspect ratio constants.
+- Image-to-video: `PostV1ImageToVideoJSONBody8.PromptText` is now a required `string` instead of `*string`. `PostV1ImageToVideoJSONBody22` gained `OutputFormat` with `PostV1ImageToVideoJSONBody22OutputFormatMp4` and `PostV1ImageToVideoJSONBody22OutputFormatMov`.
+- `GetV1OrganizationWebappAuditLogsEventIdResponse.JSON200` and `GetJSON200` return a changed anonymous struct type, so code that depends on its exact shape must change.
+- Added audit log action constants such as `GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCreativeArchived`, `...ActionOnboardingBonusGranted` and `...ActionUserGroupVisibilityUpdated`, with matching `GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction...` constants.
+- Added organization usage model constants `PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage31FlashLite` and `PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Flash`, with matching `ResultsUsedCreditsModel` constants.
+- The dev image now uses Go 1.26.10 and `ca-certificates` 20261020-r0, which fixes the `crypto/x509` vulnerability GO-2026-6809 that `make sec` reported.
+
 ## v0.1.2, 2026-10-17
 
 - Documentation only. The agent skill explains how to look up every endpoint, parameter and model with `go doc` or on pkg.go.dev, and declares its license.
