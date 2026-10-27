@@ -2,6 +2,17 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.3.0, 2026-10-27
+
+- Added the video-to-audio endpoint: `Client.PostV1VideoToAudio`, `Client.PostV1VideoToAudioWithBody`, `ClientWithResponses.PostV1VideoToAudioWithResponse`, `ClientWithResponses.PostV1VideoToAudioWithBodyWithResponse`, `NewPostV1VideoToAudioRequest`, `NewPostV1VideoToAudioRequestWithBody` and `ParsePostV1VideoToAudioResponse`. The four client methods are also added to `ClientInterface` and `ClientWithResponsesInterface`, so custom implementations of those interfaces must add them.
+- Added request union variants with `As`, `From` and `Merge` methods: `PostV1TextToImageJSONBody19`, `PostV1TextToImageJSONBody20`, `PostV1TextToVideoJSONBody23`, `PostV1VideoToVideoJSONBody11`, `PostV1ImageToVideoJSONBody24` (with `PostV1ImageToVideoJSONBody24ModelKling4`) and `PostV1SoundEffectJSONBody2`.
+- Added `PostV1SoundEffectJSONBody1.Format`. `PostV1SoundEffectJSONBody1.Duration` is now `float64` instead of `*float64`, and `PostV1SoundEffectJSONBody1.Loop` and `PostV1SoundEffectJSONBody1ModelElevenTextToSoundV2` are removed.
+- Removed `PostV1TextToImageJSONBody18.ReferenceImages`, `PostV1TextToImageJSONBody18ModelGemini25Flash`, the `PostV1TextToImageJSONBody18RatioN...` constants and the `ReferenceImages` URI types.
+- `PostV1ImageToVideoJSONBody5PromptImage1`, `PostV1ImageToVideoJSONBody18PromptImage1` and `PostV1ImageToVideoJSONBody20PromptImage1` are now `[]interface{}`. The `Position` and `Uri` types and constants for these bodies are removed.
+- The `Routing.ResolvedInput` fields `AspectRatio` and `Resolution` in the `PostV1GenerateImage200JSONResponseBody` types changed from `*string` to `string` in some variants.
+- Added audit log action constants such as `GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdPublishBatchQueued` and usage model constants such as `PostV1OrganizationUsage200JSONResponseBodyModelsKling4`.
+- Changed the `GetJSON200` result struct of `GetV1OrganizationWebappAuditLogsEventIdResponse`, so code that names its fields or type must be checked.
+
 ## v0.2.1, 2026-10-27
 
 - The development image is based on Debian (`golang:1.26.10-trixie`) instead of Alpine. Alpine keeps only the latest build of each package, so the exact pins broke the image build whenever a package was updated. System packages now come from the snapshot.debian.org date the base image was built from, which keeps them fixed for a given base image digest. jq 1.8.2, shellcheck 0.11.0 and shfmt 3.13.1 keep their versions, and Semgrep runs in its own virtual environment.

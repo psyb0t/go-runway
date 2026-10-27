@@ -668,6 +668,8 @@ type ClientInterface interface {
 	//
 	// Tasks that are running, pending, or throttled can be canceled by invoking this method. Invoking this method for other tasks will delete them.
 	//
+	// Refund eligibility is based on the task status observed by the server during cancellation. If that check observes RUNNING, cancellation does not refund credits. Task execution can advance concurrently with cancellation, so neither a refund nor successful cancellation guarantees that generation stops. A prior GET response reporting PENDING or THROTTLED does not guarantee a refund. Deleting a completed task does not refund its charge.
+	//
 	// The output data associated with a deleted task will be deleted from persistent storage in accordance with our data retention policy. Aborted and deleted tasks will not be able to be fetched again in the future.
 	//
 	// Corresponds with DELETE /v1/tasks/{id} (the `DeleteV1TasksId` operationId).
@@ -751,6 +753,24 @@ type ClientInterface interface {
 	//
 	// Corresponds with POST /v1/uploads (the `PostV1Uploads` operationId).
 	PostV1Uploads(ctx context.Context, body PostV1UploadsJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// PostV1VideoToAudioWithBody Generate audio from a video
+	//
+	// Generate synchronized sound effects for a video, optionally guided by a text description. Returns audio, not a video with a replacement soundtrack.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
+	PostV1VideoToAudioWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// PostV1VideoToAudio Generate audio from a video
+	//
+	// Generate synchronized sound effects for a video, optionally guided by a text description. Returns audio, not a video with a replacement soundtrack.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
+	PostV1VideoToAudio(ctx context.Context, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VideoToHdrWithBody Video to HDR
 	//
@@ -2213,6 +2233,8 @@ func (c *Client) PostV1SpeechToSpeech(ctx context.Context, body PostV1SpeechToSp
 //
 // Tasks that are running, pending, or throttled can be canceled by invoking this method. Invoking this method for other tasks will delete them.
 //
+// Refund eligibility is based on the task status observed by the server during cancellation. If that check observes RUNNING, cancellation does not refund credits. Task execution can advance concurrently with cancellation, so neither a refund nor successful cancellation guarantees that generation stops. A prior GET response reporting PENDING or THROTTLED does not guarantee a refund. Deleting a completed task does not refund its charge.
+//
 // The output data associated with a deleted task will be deleted from persistent storage in accordance with our data retention policy. Aborted and deleted tasks will not be able to be fetched again in the future.
 //
 // Corresponds with DELETE /v1/tasks/{id} (the `DeleteV1TasksId` operationId).
@@ -2387,6 +2409,44 @@ func (c *Client) PostV1UploadsWithBody(ctx context.Context, contentType string, 
 // Corresponds with POST /v1/uploads (the `PostV1Uploads` operationId).
 func (c *Client) PostV1Uploads(ctx context.Context, body PostV1UploadsJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewPostV1UploadsRequest(c.Server, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// PostV1VideoToAudioWithBody Generate audio from a video
+//
+// Generate synchronized sound effects for a video, optionally guided by a text description. Returns audio, not a video with a replacement soundtrack.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
+func (c *Client) PostV1VideoToAudioWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VideoToAudioRequestWithBody(c.Server, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// PostV1VideoToAudio Generate audio from a video
+//
+// Generate synchronized sound effects for a video, optionally guided by a text description. Returns audio, not a video with a replacement soundtrack.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
+func (c *Client) PostV1VideoToAudio(ctx context.Context, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VideoToAudioRequest(c.Server, body)
 	if err != nil {
 		return nil, err
 	}
@@ -5141,6 +5201,46 @@ func NewPostV1UploadsRequestWithBody(server string, contentType string, body io.
 	return req, nil
 }
 
+// NewPostV1VideoToAudioRequest calls the generic PostV1VideoToAudio builder with application/json body
+func NewPostV1VideoToAudioRequest(server string, body PostV1VideoToAudioJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewPostV1VideoToAudioRequestWithBody(server, "application/json", bodyReader)
+}
+
+// NewPostV1VideoToAudioRequestWithBody constructs an http.Request for the PostV1VideoToAudio method, with any body, and a specified content type
+func NewPostV1VideoToAudioRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/video_to_audio")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
 // NewPostV1VideoToHdrRequest calls the generic PostV1VideoToHdr builder with application/json body
 func NewPostV1VideoToHdrRequest(server string, body PostV1VideoToHdrJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
@@ -6400,6 +6500,8 @@ type ClientWithResponsesInterface interface {
 	//
 	// Tasks that are running, pending, or throttled can be canceled by invoking this method. Invoking this method for other tasks will delete them.
 	//
+	// Refund eligibility is based on the task status observed by the server during cancellation. If that check observes RUNNING, cancellation does not refund credits. Task execution can advance concurrently with cancellation, so neither a refund nor successful cancellation guarantees that generation stops. A prior GET response reporting PENDING or THROTTLED does not guarantee a refund. Deleting a completed task does not refund its charge.
+	//
 	// The output data associated with a deleted task will be deleted from persistent storage in accordance with our data retention policy. Aborted and deleted tasks will not be able to be fetched again in the future.
 	//
 	// Returns a wrapper object for the known response body format(s).
@@ -6487,6 +6589,24 @@ type ClientWithResponsesInterface interface {
 	//
 	// Corresponds with POST /v1/uploads (the `PostV1Uploads` operationId).
 	PostV1UploadsWithResponse(ctx context.Context, body PostV1UploadsJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1UploadsResponse, error)
+
+	// PostV1VideoToAudioWithBodyWithResponse Generate audio from a video
+	//
+	// Generate synchronized sound effects for a video, optionally guided by a text description. Returns audio, not a video with a replacement soundtrack.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
+	PostV1VideoToAudioWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error)
+
+	// PostV1VideoToAudioWithResponse Generate audio from a video
+	//
+	// Generate synchronized sound effects for a video, optionally guided by a text description. Returns audio, not a video with a replacement soundtrack.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
+	PostV1VideoToAudioWithResponse(ctx context.Context, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error)
 
 	// PostV1VideoToHdrWithBodyWithResponse Video to HDR
 	//
@@ -8473,6 +8593,7 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			AWSLicense                    *string                                                                            `json:"AWS license,omitempty"`
 			AdAccountID                   *string                                                                            `json:"Ad account ID,omitempty"`
 			AdCreativeID                  *string                                                                            `json:"Ad creative ID,omitempty"`
+			AdPublishBatchID              *string                                                                            `json:"Ad publish batch ID,omitempty"`
 			AdReviewBatchID               *string                                                                            `json:"Ad review batch ID,omitempty"`
 			AdReviewRequestID             *string                                                                            `json:"Ad review request ID,omitempty"`
 			AdSyncEndDate                 *string                                                                            `json:"Ad sync end date,omitempty"`
@@ -8493,6 +8614,9 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			CommentTargetID               *string                                                                            `json:"Comment target ID,omitempty"`
 			CommentTargetType             *string                                                                            `json:"Comment target type,omitempty"`
 			CommentText                   *string                                                                            `json:"Comment text,omitempty"`
+			CreativesCancelled            *float64                                                                           `json:"Creatives cancelled,omitempty"`
+			CreativesQueued               *float64                                                                           `json:"Creatives queued,omitempty"`
+			CreativesRetried              *float64                                                                           `json:"Creatives retried,omitempty"`
 			DefaultProjectDiscoverability *string                                                                            `json:"Default project discoverability,omitempty"`
 			DefaultTaskNameTemplate       *string                                                                            `json:"Default task name template,omitempty"`
 			DestinationCategoryID         *string                                                                            `json:"Destination category ID,omitempty"`
@@ -8501,6 +8625,7 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			ErrorCode                     *string                                                                            `json:"Error code,omitempty"`
 			GroupName                     *string                                                                            `json:"Group name,omitempty"`
 			HardSpendCap                  *bool                                                                              `json:"Hard spend cap,omitempty"`
+			IntoANewTestAdSet             *bool                                                                              `json:"Into a new test ad set,omitempty"`
 			InvitedMember                 *string                                                                            `json:"Invited member,omitempty"`
 			LanguageModelOrProvider       *string                                                                            `json:"Language model or provider,omitempty"`
 			LoginMethod                   *string                                                                            `json:"Login method,omitempty"`
@@ -8517,6 +8642,7 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			Outcome                       *string                                                                            `json:"Outcome,omitempty"`
 			Plan                          *string                                                                            `json:"Plan,omitempty"`
 			Platform                      *string                                                                            `json:"Platform,omitempty"`
+			PlatformAdAccountID           *string                                                                            `json:"Platform ad account ID,omitempty"`
 			PreviousProjectCreditCap      *float64                                                                           `json:"Previous project credit cap,omitempty"`
 			PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
 			PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
@@ -8601,6 +8727,7 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		AWSLicense                    *string                                                                            `json:"AWS license,omitempty"`
 		AdAccountID                   *string                                                                            `json:"Ad account ID,omitempty"`
 		AdCreativeID                  *string                                                                            `json:"Ad creative ID,omitempty"`
+		AdPublishBatchID              *string                                                                            `json:"Ad publish batch ID,omitempty"`
 		AdReviewBatchID               *string                                                                            `json:"Ad review batch ID,omitempty"`
 		AdReviewRequestID             *string                                                                            `json:"Ad review request ID,omitempty"`
 		AdSyncEndDate                 *string                                                                            `json:"Ad sync end date,omitempty"`
@@ -8621,6 +8748,9 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		CommentTargetID               *string                                                                            `json:"Comment target ID,omitempty"`
 		CommentTargetType             *string                                                                            `json:"Comment target type,omitempty"`
 		CommentText                   *string                                                                            `json:"Comment text,omitempty"`
+		CreativesCancelled            *float64                                                                           `json:"Creatives cancelled,omitempty"`
+		CreativesQueued               *float64                                                                           `json:"Creatives queued,omitempty"`
+		CreativesRetried              *float64                                                                           `json:"Creatives retried,omitempty"`
 		DefaultProjectDiscoverability *string                                                                            `json:"Default project discoverability,omitempty"`
 		DefaultTaskNameTemplate       *string                                                                            `json:"Default task name template,omitempty"`
 		DestinationCategoryID         *string                                                                            `json:"Destination category ID,omitempty"`
@@ -8629,6 +8759,7 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		ErrorCode                     *string                                                                            `json:"Error code,omitempty"`
 		GroupName                     *string                                                                            `json:"Group name,omitempty"`
 		HardSpendCap                  *bool                                                                              `json:"Hard spend cap,omitempty"`
+		IntoANewTestAdSet             *bool                                                                              `json:"Into a new test ad set,omitempty"`
 		InvitedMember                 *string                                                                            `json:"Invited member,omitempty"`
 		LanguageModelOrProvider       *string                                                                            `json:"Language model or provider,omitempty"`
 		LoginMethod                   *string                                                                            `json:"Login method,omitempty"`
@@ -8645,6 +8776,7 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		Outcome                       *string                                                                            `json:"Outcome,omitempty"`
 		Plan                          *string                                                                            `json:"Plan,omitempty"`
 		Platform                      *string                                                                            `json:"Platform,omitempty"`
+		PlatformAdAccountID           *string                                                                            `json:"Platform ad account ID,omitempty"`
 		PreviousProjectCreditCap      *float64                                                                           `json:"Previous project credit cap,omitempty"`
 		PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
 		PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
@@ -11023,6 +11155,107 @@ func (r PostV1UploadsResponse) ContentType() string {
 	return ""
 }
 
+type PostV1VideoToAudioResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *struct {
+		// EstimatedCost The maximum credits this task may charge. The final amount may be lower after the task completes.
+		EstimatedCost struct {
+			// Credits Estimated cost of the generation in credits.
+			Credits float64 `json:"credits"`
+		} `json:"estimatedCost"`
+
+		// Id The ID of the task that was created. Use this to retrieve the task later.
+		Id openapi_types.UUID `json:"id"`
+	}
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *struct {
+		// DocUrl A link to the public API documentation.
+		DocUrl *string `json:"docUrl,omitempty"`
+
+		// Error A message describing why the request was rejected.
+		Error string `json:"error"`
+
+		// Issues Field-level validation issues when the request failed Zod body/query validation. Omitted for other 400s.
+		Issues *[]PostV1VideoToAudio400JSONResponseBody_Issues_Item `json:"issues,omitempty"`
+
+		// Reason A machine-readable rejection reason when one applies — e.g. DEPRECATED_MODEL when the requested model has reached its sunset date.
+		Reason *PostV1VideoToAudio400JSONResponseBody_Reason `json:"reason,omitempty"`
+	}
+	// JSON429 the response for an HTTP 429 `application/json` response
+	JSON429 *struct {
+		Error string `json:"error"`
+	}
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r PostV1VideoToAudioResponse) GetJSON200() *struct {
+	// EstimatedCost The maximum credits this task may charge. The final amount may be lower after the task completes.
+	EstimatedCost struct {
+		// Credits Estimated cost of the generation in credits.
+		Credits float64 `json:"credits"`
+	} `json:"estimatedCost"`
+
+	// Id The ID of the task that was created. Use this to retrieve the task later.
+	Id openapi_types.UUID `json:"id"`
+} {
+	return r.JSON200
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r PostV1VideoToAudioResponse) GetJSON400() *struct {
+	// DocUrl A link to the public API documentation.
+	DocUrl *string `json:"docUrl,omitempty"`
+
+	// Error A message describing why the request was rejected.
+	Error string `json:"error"`
+
+	// Issues Field-level validation issues when the request failed Zod body/query validation. Omitted for other 400s.
+	Issues *[]PostV1VideoToAudio400JSONResponseBody_Issues_Item `json:"issues,omitempty"`
+
+	// Reason A machine-readable rejection reason when one applies — e.g. DEPRECATED_MODEL when the requested model has reached its sunset date.
+	Reason *PostV1VideoToAudio400JSONResponseBody_Reason `json:"reason,omitempty"`
+} {
+	return r.JSON400
+}
+
+// GetJSON429 returns the response for an HTTP 429 `application/json` response
+func (r PostV1VideoToAudioResponse) GetJSON429() *struct {
+	Error string `json:"error"`
+} {
+	return r.JSON429
+}
+
+// GetBody returns the raw response body bytes
+func (r PostV1VideoToAudioResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r PostV1VideoToAudioResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r PostV1VideoToAudioResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r PostV1VideoToAudioResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
 type PostV1VideoToHdrResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -13126,6 +13359,8 @@ func (c *ClientWithResponses) PostV1SpeechToSpeechWithResponse(ctx context.Conte
 //
 // Tasks that are running, pending, or throttled can be canceled by invoking this method. Invoking this method for other tasks will delete them.
 //
+// Refund eligibility is based on the task status observed by the server during cancellation. If that check observes RUNNING, cancellation does not refund credits. Task execution can advance concurrently with cancellation, so neither a refund nor successful cancellation guarantees that generation stops. A prior GET response reporting PENDING or THROTTLED does not guarantee a refund. Deleting a completed task does not refund its charge.
+//
 // The output data associated with a deleted task will be deleted from persistent storage in accordance with our data retention policy. Aborted and deleted tasks will not be able to be fetched again in the future.
 //
 // Returns a wrapper object for the known response body format(s).
@@ -13272,6 +13507,36 @@ func (c *ClientWithResponses) PostV1UploadsWithResponse(ctx context.Context, bod
 		return nil, err
 	}
 	return ParsePostV1UploadsResponse(rsp)
+}
+
+// PostV1VideoToAudioWithBodyWithResponse Generate audio from a video
+//
+// Generate synchronized sound effects for a video, optionally guided by a text description. Returns audio, not a video with a replacement soundtrack.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
+func (c *ClientWithResponses) PostV1VideoToAudioWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error) {
+	rsp, err := c.PostV1VideoToAudioWithBody(ctx, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParsePostV1VideoToAudioResponse(rsp)
+}
+
+// PostV1VideoToAudioWithResponse Generate audio from a video
+//
+// Generate synchronized sound effects for a video, optionally guided by a text description. Returns audio, not a video with a replacement soundtrack.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
+func (c *ClientWithResponses) PostV1VideoToAudioWithResponse(ctx context.Context, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error) {
+	rsp, err := c.PostV1VideoToAudio(ctx, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParsePostV1VideoToAudioResponse(rsp)
 }
 
 // PostV1VideoToHdrWithBodyWithResponse Video to HDR
@@ -14706,6 +14971,7 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				AWSLicense                    *string                                                                            `json:"AWS license,omitempty"`
 				AdAccountID                   *string                                                                            `json:"Ad account ID,omitempty"`
 				AdCreativeID                  *string                                                                            `json:"Ad creative ID,omitempty"`
+				AdPublishBatchID              *string                                                                            `json:"Ad publish batch ID,omitempty"`
 				AdReviewBatchID               *string                                                                            `json:"Ad review batch ID,omitempty"`
 				AdReviewRequestID             *string                                                                            `json:"Ad review request ID,omitempty"`
 				AdSyncEndDate                 *string                                                                            `json:"Ad sync end date,omitempty"`
@@ -14726,6 +14992,9 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				CommentTargetID               *string                                                                            `json:"Comment target ID,omitempty"`
 				CommentTargetType             *string                                                                            `json:"Comment target type,omitempty"`
 				CommentText                   *string                                                                            `json:"Comment text,omitempty"`
+				CreativesCancelled            *float64                                                                           `json:"Creatives cancelled,omitempty"`
+				CreativesQueued               *float64                                                                           `json:"Creatives queued,omitempty"`
+				CreativesRetried              *float64                                                                           `json:"Creatives retried,omitempty"`
 				DefaultProjectDiscoverability *string                                                                            `json:"Default project discoverability,omitempty"`
 				DefaultTaskNameTemplate       *string                                                                            `json:"Default task name template,omitempty"`
 				DestinationCategoryID         *string                                                                            `json:"Destination category ID,omitempty"`
@@ -14734,6 +15003,7 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				ErrorCode                     *string                                                                            `json:"Error code,omitempty"`
 				GroupName                     *string                                                                            `json:"Group name,omitempty"`
 				HardSpendCap                  *bool                                                                              `json:"Hard spend cap,omitempty"`
+				IntoANewTestAdSet             *bool                                                                              `json:"Into a new test ad set,omitempty"`
 				InvitedMember                 *string                                                                            `json:"Invited member,omitempty"`
 				LanguageModelOrProvider       *string                                                                            `json:"Language model or provider,omitempty"`
 				LoginMethod                   *string                                                                            `json:"Login method,omitempty"`
@@ -14750,6 +15020,7 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				Outcome                       *string                                                                            `json:"Outcome,omitempty"`
 				Plan                          *string                                                                            `json:"Plan,omitempty"`
 				Platform                      *string                                                                            `json:"Platform,omitempty"`
+				PlatformAdAccountID           *string                                                                            `json:"Platform ad account ID,omitempty"`
 				PreviousProjectCreditCap      *float64                                                                           `json:"Previous project credit cap,omitempty"`
 				PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
 				PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
@@ -16158,6 +16429,69 @@ func ParsePostV1UploadsResponse(rsp *http.Response) (*PostV1UploadsResponse, err
 			return nil, err
 		}
 		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 429:
+		var dest struct {
+			Error string `json:"error"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON429 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParsePostV1VideoToAudioResponse parses an HTTP response from a PostV1VideoToAudioWithResponse call
+func ParsePostV1VideoToAudioResponse(rsp *http.Response) (*PostV1VideoToAudioResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &PostV1VideoToAudioResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest struct {
+			// EstimatedCost The maximum credits this task may charge. The final amount may be lower after the task completes.
+			EstimatedCost struct {
+				// Credits Estimated cost of the generation in credits.
+				Credits float64 `json:"credits"`
+			} `json:"estimatedCost"`
+
+			// Id The ID of the task that was created. Use this to retrieve the task later.
+			Id openapi_types.UUID `json:"id"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest struct {
+			// DocUrl A link to the public API documentation.
+			DocUrl *string `json:"docUrl,omitempty"`
+
+			// Error A message describing why the request was rejected.
+			Error string `json:"error"`
+
+			// Issues Field-level validation issues when the request failed Zod body/query validation. Omitted for other 400s.
+			Issues *[]PostV1VideoToAudio400JSONResponseBody_Issues_Item `json:"issues,omitempty"`
+
+			// Reason A machine-readable rejection reason when one applies — e.g. DEPRECATED_MODEL when the requested model has reached its sunset date.
+			Reason *PostV1VideoToAudio400JSONResponseBody_Reason `json:"reason,omitempty"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
 
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 429:
 		var dest struct {
