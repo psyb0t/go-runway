@@ -13,7 +13,7 @@ Data flow: `scripts/fetch-spec.sh` (downloads `https://docs.dev.runwayml.com/ope
 
 ## Stack
 
-- Go 1.26.9, one package at the module root.
+- Go 1.26.10, one package at the module root.
 - oapi-codegen and golangci-lint run through `go tool`, pinned in `go.mod`.
 - Runtime dependency: `github.com/oapi-codegen/runtime`.
 
