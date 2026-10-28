@@ -2,6 +2,13 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.3.1, 2026-10-28
+
+- Updated Semgrep in the development image to 1.182.1 and refreshed its locked dependencies. certifi 2026.10.23 drops the emSign root CAs whose intermediate keys were compromised (GHSA-6q48-6c7w-9gw2).
+- Dependabot no longer opens pull requests for `mcp` or the OpenTelemetry packages in `requirements-semgrep.txt`. Semgrep pins their versions itself, so bumping one of them on its own cannot install.
+- Updated kin-openapi, which the code generator uses, from 0.142.0 to 0.149.0. The newer version fixes several panics on malformed specs reported in GitHub security advisories.
+- The security scan merges its two gitleaks runs into one SARIF run. GitHub code scanning rejects a report with two runs from the same tool, so no scan results had been uploaded.
+
 ## v0.3.0, 2026-10-27
 
 - Added the video-to-audio endpoint: `Client.PostV1VideoToAudio`, `Client.PostV1VideoToAudioWithBody`, `ClientWithResponses.PostV1VideoToAudioWithResponse`, `ClientWithResponses.PostV1VideoToAudioWithBodyWithResponse`, `NewPostV1VideoToAudioRequest`, `NewPostV1VideoToAudioRequestWithBody` and `ParsePostV1VideoToAudioResponse`. The four client methods are also added to `ClientInterface` and `ClientWithResponsesInterface`, so custom implementations of those interfaces must add them.
