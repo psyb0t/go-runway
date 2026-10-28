@@ -1,6 +1,6 @@
 {
   "name": "go-runway",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Unofficial Go client for the Runway API: typed methods for image, video and audio generation, task polling, voices, avatars, workflows and organization usage.",
   "author": { "name": "psyb0t", "url": "https://github.com/psyb0t" },
   "homepage": "https://github.com/psyb0t/go-runway",

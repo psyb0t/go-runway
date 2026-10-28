@@ -5238,6 +5238,24 @@ func (e PostV1ImageToVideoJSONBody12References1Position) Valid() bool {
 	}
 }
 
+// Defines values for PostV1ImageToVideoJSONBody13Bitrate.
+const (
+	PostV1ImageToVideoJSONBody13BitrateHigh     PostV1ImageToVideoJSONBody13Bitrate = "high"
+	PostV1ImageToVideoJSONBody13BitrateStandard PostV1ImageToVideoJSONBody13Bitrate = "standard"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody13Bitrate enum.
+func (e PostV1ImageToVideoJSONBody13Bitrate) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody13BitrateHigh:
+		return true
+	case PostV1ImageToVideoJSONBody13BitrateStandard:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1ImageToVideoJSONBody13Duration1.
 const (
 	PostV1ImageToVideoJSONBody13Duration1Auto PostV1ImageToVideoJSONBody13Duration1 = "auto"
@@ -5385,6 +5403,24 @@ func (e PostV1ImageToVideoJSONBody13ReferenceAudioType) Valid() bool {
 	}
 }
 
+// Defines values for PostV1ImageToVideoJSONBody14Bitrate.
+const (
+	PostV1ImageToVideoJSONBody14BitrateHigh     PostV1ImageToVideoJSONBody14Bitrate = "high"
+	PostV1ImageToVideoJSONBody14BitrateStandard PostV1ImageToVideoJSONBody14Bitrate = "standard"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody14Bitrate enum.
+func (e PostV1ImageToVideoJSONBody14Bitrate) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody14BitrateHigh:
+		return true
+	case PostV1ImageToVideoJSONBody14BitrateStandard:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1ImageToVideoJSONBody14Duration1.
 const (
 	PostV1ImageToVideoJSONBody14Duration1Auto PostV1ImageToVideoJSONBody14Duration1 = "auto"
@@ -5490,6 +5526,24 @@ const (
 func (e PostV1ImageToVideoJSONBody14ReferenceAudioType) Valid() bool {
 	switch e {
 	case PostV1ImageToVideoJSONBody14ReferenceAudioTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody15Bitrate.
+const (
+	PostV1ImageToVideoJSONBody15BitrateHigh     PostV1ImageToVideoJSONBody15Bitrate = "high"
+	PostV1ImageToVideoJSONBody15BitrateStandard PostV1ImageToVideoJSONBody15Bitrate = "standard"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody15Bitrate enum.
+func (e PostV1ImageToVideoJSONBody15Bitrate) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody15BitrateHigh:
+		return true
+	case PostV1ImageToVideoJSONBody15BitrateStandard:
 		return true
 	default:
 		return false
@@ -17946,6 +18000,24 @@ func (e PostV1TextToVideoJSONBody11Ratio) Valid() bool {
 	}
 }
 
+// Defines values for PostV1TextToVideoJSONBody12Bitrate.
+const (
+	PostV1TextToVideoJSONBody12BitrateHigh     PostV1TextToVideoJSONBody12Bitrate = "high"
+	PostV1TextToVideoJSONBody12BitrateStandard PostV1TextToVideoJSONBody12Bitrate = "standard"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody12Bitrate enum.
+func (e PostV1TextToVideoJSONBody12Bitrate) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody12BitrateHigh:
+		return true
+	case PostV1TextToVideoJSONBody12BitrateStandard:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1TextToVideoJSONBody12Duration1.
 const (
 	PostV1TextToVideoJSONBody12Duration1Auto PostV1TextToVideoJSONBody12Duration1 = "auto"
@@ -18090,6 +18162,24 @@ func (e PostV1TextToVideoJSONBody12ReferenceVideosType) Valid() bool {
 	}
 }
 
+// Defines values for PostV1TextToVideoJSONBody13Bitrate.
+const (
+	PostV1TextToVideoJSONBody13BitrateHigh     PostV1TextToVideoJSONBody13Bitrate = "high"
+	PostV1TextToVideoJSONBody13BitrateStandard PostV1TextToVideoJSONBody13Bitrate = "standard"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody13Bitrate enum.
+func (e PostV1TextToVideoJSONBody13Bitrate) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody13BitrateHigh:
+		return true
+	case PostV1TextToVideoJSONBody13BitrateStandard:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1TextToVideoJSONBody13Duration1.
 const (
 	PostV1TextToVideoJSONBody13Duration1Auto PostV1TextToVideoJSONBody13Duration1 = "auto"
@@ -18192,6 +18282,24 @@ const (
 func (e PostV1TextToVideoJSONBody13ReferenceVideosType) Valid() bool {
 	switch e {
 	case PostV1TextToVideoJSONBody13ReferenceVideosTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody14Bitrate.
+const (
+	PostV1TextToVideoJSONBody14BitrateHigh     PostV1TextToVideoJSONBody14Bitrate = "high"
+	PostV1TextToVideoJSONBody14BitrateStandard PostV1TextToVideoJSONBody14Bitrate = "standard"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody14Bitrate enum.
+func (e PostV1TextToVideoJSONBody14Bitrate) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody14BitrateHigh:
+		return true
+	case PostV1TextToVideoJSONBody14BitrateStandard:
 		return true
 	default:
 		return false
@@ -20631,6 +20739,24 @@ func (e PostV1VideoToVideoJSONBody4References1Position) Valid() bool {
 	}
 }
 
+// Defines values for PostV1VideoToVideoJSONBody5Bitrate.
+const (
+	PostV1VideoToVideoJSONBody5BitrateHigh     PostV1VideoToVideoJSONBody5Bitrate = "high"
+	PostV1VideoToVideoJSONBody5BitrateStandard PostV1VideoToVideoJSONBody5Bitrate = "standard"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody5Bitrate enum.
+func (e PostV1VideoToVideoJSONBody5Bitrate) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody5BitrateHigh:
+		return true
+	case PostV1VideoToVideoJSONBody5BitrateStandard:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1VideoToVideoJSONBody5Duration1.
 const (
 	PostV1VideoToVideoJSONBody5Duration1Auto PostV1VideoToVideoJSONBody5Duration1 = "auto"
@@ -20775,6 +20901,24 @@ func (e PostV1VideoToVideoJSONBody5ReferenceVideosType) Valid() bool {
 	}
 }
 
+// Defines values for PostV1VideoToVideoJSONBody6Bitrate.
+const (
+	PostV1VideoToVideoJSONBody6BitrateHigh     PostV1VideoToVideoJSONBody6Bitrate = "high"
+	PostV1VideoToVideoJSONBody6BitrateStandard PostV1VideoToVideoJSONBody6Bitrate = "standard"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody6Bitrate enum.
+func (e PostV1VideoToVideoJSONBody6Bitrate) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody6BitrateHigh:
+		return true
+	case PostV1VideoToVideoJSONBody6BitrateStandard:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1VideoToVideoJSONBody6Duration1.
 const (
 	PostV1VideoToVideoJSONBody6Duration1Auto PostV1VideoToVideoJSONBody6Duration1 = "auto"
@@ -20877,6 +21021,24 @@ const (
 func (e PostV1VideoToVideoJSONBody6ReferenceVideosType) Valid() bool {
 	switch e {
 	case PostV1VideoToVideoJSONBody6ReferenceVideosTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody7Bitrate.
+const (
+	PostV1VideoToVideoJSONBody7BitrateHigh     PostV1VideoToVideoJSONBody7Bitrate = "high"
+	PostV1VideoToVideoJSONBody7BitrateStandard PostV1VideoToVideoJSONBody7Bitrate = "standard"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody7Bitrate enum.
+func (e PostV1VideoToVideoJSONBody7Bitrate) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody7BitrateHigh:
+		return true
+	case PostV1VideoToVideoJSONBody7BitrateStandard:
 		return true
 	default:
 		return false
@@ -27410,6 +27572,9 @@ type PostV1ImageToVideoJSONBody13 struct {
 	// Audio Whether to generate audio for the video.
 	Audio *bool `json:"audio,omitempty"`
 
+	// Bitrate Bitrate of the output video. `high` keeps more detail with fewer compression artifacts, at a larger file size. Defaults to `standard`.
+	Bitrate *PostV1ImageToVideoJSONBody13Bitrate `json:"bitrate,omitempty"`
+
 	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes.
 	Duration *PostV1ImageToVideoJSONBody_13_Duration `json:"duration,omitempty"`
 	Model    PostV1ImageToVideoJSONBody13Model       `json:"model"`
@@ -27434,6 +27599,9 @@ type PostV1ImageToVideoJSONBody13 struct {
 	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
 	Seed *int `json:"seed,omitempty"`
 }
+
+// PostV1ImageToVideoJSONBody13Bitrate defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody13Bitrate string
 
 // PostV1ImageToVideoJSONBody13Duration0 defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideoJSONBody13Duration0 = int
@@ -27519,6 +27687,9 @@ type PostV1ImageToVideoJSONBody14 struct {
 	// Audio Whether to generate audio for the video.
 	Audio *bool `json:"audio,omitempty"`
 
+	// Bitrate Bitrate of the output video. `high` keeps more detail with fewer compression artifacts, at a larger file size. Defaults to `standard`.
+	Bitrate *PostV1ImageToVideoJSONBody14Bitrate `json:"bitrate,omitempty"`
+
 	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes.
 	Duration *PostV1ImageToVideoJSONBody_14_Duration `json:"duration,omitempty"`
 	Model    PostV1ImageToVideoJSONBody14Model       `json:"model"`
@@ -27543,6 +27714,9 @@ type PostV1ImageToVideoJSONBody14 struct {
 	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
 	Seed *int `json:"seed,omitempty"`
 }
+
+// PostV1ImageToVideoJSONBody14Bitrate defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody14Bitrate string
 
 // PostV1ImageToVideoJSONBody14Duration0 defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideoJSONBody14Duration0 = int
@@ -27628,6 +27802,9 @@ type PostV1ImageToVideoJSONBody15 struct {
 	// Audio Whether to generate audio for the video.
 	Audio *bool `json:"audio,omitempty"`
 
+	// Bitrate Bitrate of the output video. `high` keeps more detail with fewer compression artifacts, at a larger file size. Defaults to `standard`.
+	Bitrate *PostV1ImageToVideoJSONBody15Bitrate `json:"bitrate,omitempty"`
+
 	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes.
 	Duration *PostV1ImageToVideoJSONBody_15_Duration `json:"duration,omitempty"`
 	Model    PostV1ImageToVideoJSONBody15Model       `json:"model"`
@@ -27652,6 +27829,9 @@ type PostV1ImageToVideoJSONBody15 struct {
 	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
 	Seed *int `json:"seed,omitempty"`
 }
+
+// PostV1ImageToVideoJSONBody15Bitrate defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody15Bitrate string
 
 // PostV1ImageToVideoJSONBody15Duration0 defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideoJSONBody15Duration0 = int
@@ -33282,6 +33462,9 @@ type PostV1TextToVideoJSONBody12 struct {
 	// Audio Whether to generate audio for the video.
 	Audio *bool `json:"audio,omitempty"`
 
+	// Bitrate Bitrate of the output video. `high` keeps more detail with fewer compression artifacts, at a larger file size. Defaults to `standard`.
+	Bitrate *PostV1TextToVideoJSONBody12Bitrate `json:"bitrate,omitempty"`
+
 	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes.
 	Duration *PostV1TextToVideoJSONBody_12_Duration `json:"duration,omitempty"`
 	Model    PostV1TextToVideoJSONBody12Model       `json:"model"`
@@ -33317,6 +33500,9 @@ type PostV1TextToVideoJSONBody12 struct {
 	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
 	Seed *int `json:"seed,omitempty"`
 }
+
+// PostV1TextToVideoJSONBody12Bitrate defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody12Bitrate string
 
 // PostV1TextToVideoJSONBody12Duration0 defines parameters for PostV1TextToVideo.
 type PostV1TextToVideoJSONBody12Duration0 = int
@@ -33388,6 +33574,9 @@ type PostV1TextToVideoJSONBody13 struct {
 	// Audio Whether to generate audio for the video.
 	Audio *bool `json:"audio,omitempty"`
 
+	// Bitrate Bitrate of the output video. `high` keeps more detail with fewer compression artifacts, at a larger file size. Defaults to `standard`.
+	Bitrate *PostV1TextToVideoJSONBody13Bitrate `json:"bitrate,omitempty"`
+
 	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes.
 	Duration *PostV1TextToVideoJSONBody_13_Duration `json:"duration,omitempty"`
 	Model    PostV1TextToVideoJSONBody13Model       `json:"model"`
@@ -33423,6 +33612,9 @@ type PostV1TextToVideoJSONBody13 struct {
 	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
 	Seed *int `json:"seed,omitempty"`
 }
+
+// PostV1TextToVideoJSONBody13Bitrate defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody13Bitrate string
 
 // PostV1TextToVideoJSONBody13Duration0 defines parameters for PostV1TextToVideo.
 type PostV1TextToVideoJSONBody13Duration0 = int
@@ -33494,6 +33686,9 @@ type PostV1TextToVideoJSONBody14 struct {
 	// Audio Whether to generate audio for the video.
 	Audio *bool `json:"audio,omitempty"`
 
+	// Bitrate Bitrate of the output video. `high` keeps more detail with fewer compression artifacts, at a larger file size. Defaults to `standard`.
+	Bitrate *PostV1TextToVideoJSONBody14Bitrate `json:"bitrate,omitempty"`
+
 	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes.
 	Duration *PostV1TextToVideoJSONBody_14_Duration `json:"duration,omitempty"`
 	Model    PostV1TextToVideoJSONBody14Model       `json:"model"`
@@ -33529,6 +33724,9 @@ type PostV1TextToVideoJSONBody14 struct {
 	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
 	Seed *int `json:"seed,omitempty"`
 }
+
+// PostV1TextToVideoJSONBody14Bitrate defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody14Bitrate string
 
 // PostV1TextToVideoJSONBody14Duration0 defines parameters for PostV1TextToVideo.
 type PostV1TextToVideoJSONBody14Duration0 = int
@@ -35130,6 +35328,9 @@ type PostV1VideoToVideoJSONBody5 struct {
 	// Audio Whether to generate audio for the video.
 	Audio *bool `json:"audio,omitempty"`
 
+	// Bitrate Bitrate of the output video. `high` keeps more detail with fewer compression artifacts, at a larger file size. Defaults to `standard`.
+	Bitrate *PostV1VideoToVideoJSONBody5Bitrate `json:"bitrate,omitempty"`
+
 	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes.
 	Duration *PostV1VideoToVideoJSONBody_5_Duration `json:"duration,omitempty"`
 	Model    PostV1VideoToVideoJSONBody5Model       `json:"model"`
@@ -35168,6 +35369,9 @@ type PostV1VideoToVideoJSONBody5 struct {
 	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
 	Seed *int `json:"seed,omitempty"`
 }
+
+// PostV1VideoToVideoJSONBody5Bitrate defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody5Bitrate string
 
 // PostV1VideoToVideoJSONBody5Duration0 defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideoJSONBody5Duration0 = int
@@ -35253,6 +35457,9 @@ type PostV1VideoToVideoJSONBody6 struct {
 	// Audio Whether to generate audio for the video.
 	Audio *bool `json:"audio,omitempty"`
 
+	// Bitrate Bitrate of the output video. `high` keeps more detail with fewer compression artifacts, at a larger file size. Defaults to `standard`.
+	Bitrate *PostV1VideoToVideoJSONBody6Bitrate `json:"bitrate,omitempty"`
+
 	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes.
 	Duration *PostV1VideoToVideoJSONBody_6_Duration `json:"duration,omitempty"`
 	Model    PostV1VideoToVideoJSONBody6Model       `json:"model"`
@@ -35291,6 +35498,9 @@ type PostV1VideoToVideoJSONBody6 struct {
 	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
 	Seed *int `json:"seed,omitempty"`
 }
+
+// PostV1VideoToVideoJSONBody6Bitrate defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody6Bitrate string
 
 // PostV1VideoToVideoJSONBody6Duration0 defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideoJSONBody6Duration0 = int
@@ -35376,6 +35586,9 @@ type PostV1VideoToVideoJSONBody7 struct {
 	// Audio Whether to generate audio for the video.
 	Audio *bool `json:"audio,omitempty"`
 
+	// Bitrate Bitrate of the output video. `high` keeps more detail with fewer compression artifacts, at a larger file size. Defaults to `standard`.
+	Bitrate *PostV1VideoToVideoJSONBody7Bitrate `json:"bitrate,omitempty"`
+
 	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes.
 	Duration *PostV1VideoToVideoJSONBody_7_Duration `json:"duration,omitempty"`
 	Model    PostV1VideoToVideoJSONBody7Model       `json:"model"`
@@ -35414,6 +35627,9 @@ type PostV1VideoToVideoJSONBody7 struct {
 	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
 	Seed *int `json:"seed,omitempty"`
 }
+
+// PostV1VideoToVideoJSONBody7Bitrate defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody7Bitrate string
 
 // PostV1VideoToVideoJSONBody7Duration0 defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideoJSONBody7Duration0 = int

@@ -2,6 +2,13 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.3.2, 2026-10-28
+
+- Added an optional `Bitrate` field, a pointer to a new string enum type, to the video request bodies. It takes `high` or `standard`, with `Valid` methods on each enum type.
+- Image-to-video: `PostV1ImageToVideoJSONBody13.Bitrate`, `PostV1ImageToVideoJSONBody14.Bitrate` and `PostV1ImageToVideoJSONBody15.Bitrate`, with types `PostV1ImageToVideoJSONBody13Bitrate`, `...14Bitrate` and `...15Bitrate` and constants such as `PostV1ImageToVideoJSONBody13BitrateHigh` and `PostV1ImageToVideoJSONBody13BitrateStandard`.
+- Text-to-video: `PostV1TextToVideoJSONBody12.Bitrate`, `PostV1TextToVideoJSONBody13.Bitrate` and `PostV1TextToVideoJSONBody14.Bitrate`, with matching `...Bitrate` types and `...BitrateHigh` and `...BitrateStandard` constants.
+- Video-to-video: `PostV1VideoToVideoJSONBody5.Bitrate`, `PostV1VideoToVideoJSONBody6.Bitrate` and `PostV1VideoToVideoJSONBody7.Bitrate`, with matching `...Bitrate` types and `...BitrateHigh` and `...BitrateStandard` constants.
+
 ## v0.3.1, 2026-10-28
 
 - Updated Semgrep in the development image to 1.182.1 and refreshed its locked dependencies. certifi 2026.10.23 drops the emSign root CAs whose intermediate keys were compromised (GHSA-6q48-6c7w-9gw2).
