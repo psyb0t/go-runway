@@ -272,7 +272,7 @@ type ClientInterface interface {
 
 	// PostV1GenerateAudioWithBody Routed audio generation
 	//
-	// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, or audio to generate audio described by promptText.
+	// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, audio to generate audio described by promptText, or music to generate a song or instrumental track described by promptText.
 	//
 	// Takes any type of body and a specified content type.
 	//
@@ -281,7 +281,7 @@ type ClientInterface interface {
 
 	// PostV1GenerateAudio Routed audio generation
 	//
-	// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, or audio to generate audio described by promptText.
+	// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, audio to generate audio described by promptText, or music to generate a song or instrumental track described by promptText.
 	//
 	// Takes a body of the `application/json` content type.
 	//
@@ -323,6 +323,24 @@ type ClientInterface interface {
 	//
 	// Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
 	PostV1GenerateVideo(ctx context.Context, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// PostV1ImageToVectorWithBody Image to vector
+	//
+	// Convert a source image into a scalable SVG.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
+	PostV1ImageToVectorWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// PostV1ImageToVector Image to vector
+	//
+	// Convert a source image into a scalable SVG.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
+	PostV1ImageToVector(ctx context.Context, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1ImageToVideoWithBody Image to video
 	//
@@ -699,6 +717,24 @@ type ClientInterface interface {
 	//
 	// Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
 	PostV1TextToImage(ctx context.Context, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// PostV1TextToMusicWithBody Generate music
+	//
+	// This endpoint will start a new task to generate a song or instrumental track from a text description.
+	//
+	// Takes any type of body and a specified content type.
+	//
+	// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
+	PostV1TextToMusicWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// PostV1TextToMusic Generate music
+	//
+	// This endpoint will start a new task to generate a song or instrumental track from a text description.
+	//
+	// Takes a body of the `application/json` content type.
+	//
+	// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
+	PostV1TextToMusic(ctx context.Context, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1TextToSpeechWithBody Text to speech
 	//
@@ -1377,7 +1413,7 @@ func (c *Client) PatchV1DocumentsId(ctx context.Context, id openapi_types.UUID, 
 
 // PostV1GenerateAudioWithBody Routed audio generation
 //
-// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, or audio to generate audio described by promptText.
+// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, audio to generate audio described by promptText, or music to generate a song or instrumental track described by promptText.
 //
 // Takes any type of body and a specified content type.
 //
@@ -1396,7 +1432,7 @@ func (c *Client) PostV1GenerateAudioWithBody(ctx context.Context, contentType st
 
 // PostV1GenerateAudio Routed audio generation
 //
-// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, or audio to generate audio described by promptText.
+// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, audio to generate audio described by promptText, or music to generate a song or instrumental track described by promptText.
 //
 // Takes a body of the `application/json` content type.
 //
@@ -1479,6 +1515,44 @@ func (c *Client) PostV1GenerateVideoWithBody(ctx context.Context, contentType st
 // Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
 func (c *Client) PostV1GenerateVideo(ctx context.Context, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewPostV1GenerateVideoRequest(c.Server, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// PostV1ImageToVectorWithBody Image to vector
+//
+// Convert a source image into a scalable SVG.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
+func (c *Client) PostV1ImageToVectorWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1ImageToVectorRequestWithBody(c.Server, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// PostV1ImageToVector Image to vector
+//
+// Convert a source image into a scalable SVG.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
+func (c *Client) PostV1ImageToVector(ctx context.Context, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1ImageToVectorRequest(c.Server, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2295,6 +2369,44 @@ func (c *Client) PostV1TextToImageWithBody(ctx context.Context, contentType stri
 // Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
 func (c *Client) PostV1TextToImage(ctx context.Context, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewPostV1TextToImageRequest(c.Server, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// PostV1TextToMusicWithBody Generate music
+//
+// This endpoint will start a new task to generate a song or instrumental track from a text description.
+//
+// Takes any type of body and a specified content type.
+//
+// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
+func (c *Client) PostV1TextToMusicWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1TextToMusicRequestWithBody(c.Server, contentType, body)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// PostV1TextToMusic Generate music
+//
+// This endpoint will start a new task to generate a song or instrumental track from a text description.
+//
+// Takes a body of the `application/json` content type.
+//
+// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
+func (c *Client) PostV1TextToMusic(ctx context.Context, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1TextToMusicRequest(c.Server, body)
 	if err != nil {
 		return nil, err
 	}
@@ -3775,6 +3887,46 @@ func NewPostV1GenerateVideoRequestWithBody(server string, contentType string, bo
 	return req, nil
 }
 
+// NewPostV1ImageToVectorRequest calls the generic PostV1ImageToVector builder with application/json body
+func NewPostV1ImageToVectorRequest(server string, body PostV1ImageToVectorJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewPostV1ImageToVectorRequestWithBody(server, "application/json", bodyReader)
+}
+
+// NewPostV1ImageToVectorRequestWithBody constructs an http.Request for the PostV1ImageToVector method, with any body, and a specified content type
+func NewPostV1ImageToVectorRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/image_to_vector")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
 // NewPostV1ImageToVideoRequest calls the generic PostV1ImageToVideo builder with application/json body
 func NewPostV1ImageToVideoRequest(server string, body PostV1ImageToVideoJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
@@ -5081,6 +5233,46 @@ func NewPostV1TextToImageRequestWithBody(server string, contentType string, body
 	return req, nil
 }
 
+// NewPostV1TextToMusicRequest calls the generic PostV1TextToMusic builder with application/json body
+func NewPostV1TextToMusicRequest(server string, body PostV1TextToMusicJSONRequestBody) (*http.Request, error) {
+	var bodyReader io.Reader
+	buf, err := json.Marshal(body)
+	if err != nil {
+		return nil, err
+	}
+	bodyReader = bytes.NewReader(buf)
+	return NewPostV1TextToMusicRequestWithBody(server, "application/json", bodyReader)
+}
+
+// NewPostV1TextToMusicRequestWithBody constructs an http.Request for the PostV1TextToMusic method, with any body, and a specified content type
+func NewPostV1TextToMusicRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/text_to_music")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest(http.MethodPost, queryURL.String(), body)
+	if err != nil {
+		return nil, err
+	}
+
+	req.Header.Add("Content-Type", contentType)
+
+	return req, nil
+}
+
 // NewPostV1TextToSpeechRequest calls the generic PostV1TextToSpeech builder with application/json body
 func NewPostV1TextToSpeechRequest(server string, body PostV1TextToSpeechJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
@@ -6084,7 +6276,7 @@ type ClientWithResponsesInterface interface {
 
 	// PostV1GenerateAudioWithBodyWithResponse Routed audio generation
 	//
-	// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, or audio to generate audio described by promptText.
+	// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, audio to generate audio described by promptText, or music to generate a song or instrumental track described by promptText.
 	//
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
@@ -6093,7 +6285,7 @@ type ClientWithResponsesInterface interface {
 
 	// PostV1GenerateAudioWithResponse Routed audio generation
 	//
-	// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, or audio to generate audio described by promptText.
+	// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, audio to generate audio described by promptText, or music to generate a song or instrumental track described by promptText.
 	//
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
@@ -6135,6 +6327,24 @@ type ClientWithResponsesInterface interface {
 	//
 	// Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
 	PostV1GenerateVideoWithResponse(ctx context.Context, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateVideoResponse, error)
+
+	// PostV1ImageToVectorWithBodyWithResponse Image to vector
+	//
+	// Convert a source image into a scalable SVG.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
+	PostV1ImageToVectorWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error)
+
+	// PostV1ImageToVectorWithResponse Image to vector
+	//
+	// Convert a source image into a scalable SVG.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
+	PostV1ImageToVectorWithResponse(ctx context.Context, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error)
 
 	// PostV1ImageToVideoWithBodyWithResponse Image to video
 	//
@@ -6535,6 +6745,24 @@ type ClientWithResponsesInterface interface {
 	//
 	// Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
 	PostV1TextToImageWithResponse(ctx context.Context, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToImageResponse, error)
+
+	// PostV1TextToMusicWithBodyWithResponse Generate music
+	//
+	// This endpoint will start a new task to generate a song or instrumental track from a text description.
+	//
+	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
+	PostV1TextToMusicWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error)
+
+	// PostV1TextToMusicWithResponse Generate music
+	//
+	// This endpoint will start a new task to generate a song or instrumental track from a text description.
+	//
+	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
+	PostV1TextToMusicWithResponse(ctx context.Context, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error)
 
 	// PostV1TextToSpeechWithBodyWithResponse Text to speech
 	//
@@ -8064,6 +8292,107 @@ func (r PostV1GenerateVideoResponse) ContentType() string {
 	return ""
 }
 
+type PostV1ImageToVectorResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *struct {
+		// EstimatedCost The maximum credits this task may charge. The final amount may be lower after the task completes.
+		EstimatedCost struct {
+			// Credits Estimated cost of the generation in credits.
+			Credits float64 `json:"credits"`
+		} `json:"estimatedCost"`
+
+		// Id The ID of the task that was created. Use this to retrieve the task later.
+		Id openapi_types.UUID `json:"id"`
+	}
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *struct {
+		// DocUrl A link to the public API documentation.
+		DocUrl *string `json:"docUrl,omitempty"`
+
+		// Error A message describing why the request was rejected.
+		Error string `json:"error"`
+
+		// Issues Field-level validation issues when the request failed Zod body/query validation. Omitted for other 400s.
+		Issues *[]PostV1ImageToVector400JSONResponseBody_Issues_Item `json:"issues,omitempty"`
+
+		// Reason A machine-readable rejection reason when one applies — e.g. DEPRECATED_MODEL when the requested model has reached its sunset date.
+		Reason *PostV1ImageToVector400JSONResponseBody_Reason `json:"reason,omitempty"`
+	}
+	// JSON429 the response for an HTTP 429 `application/json` response
+	JSON429 *struct {
+		Error string `json:"error"`
+	}
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r PostV1ImageToVectorResponse) GetJSON200() *struct {
+	// EstimatedCost The maximum credits this task may charge. The final amount may be lower after the task completes.
+	EstimatedCost struct {
+		// Credits Estimated cost of the generation in credits.
+		Credits float64 `json:"credits"`
+	} `json:"estimatedCost"`
+
+	// Id The ID of the task that was created. Use this to retrieve the task later.
+	Id openapi_types.UUID `json:"id"`
+} {
+	return r.JSON200
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r PostV1ImageToVectorResponse) GetJSON400() *struct {
+	// DocUrl A link to the public API documentation.
+	DocUrl *string `json:"docUrl,omitempty"`
+
+	// Error A message describing why the request was rejected.
+	Error string `json:"error"`
+
+	// Issues Field-level validation issues when the request failed Zod body/query validation. Omitted for other 400s.
+	Issues *[]PostV1ImageToVector400JSONResponseBody_Issues_Item `json:"issues,omitempty"`
+
+	// Reason A machine-readable rejection reason when one applies — e.g. DEPRECATED_MODEL when the requested model has reached its sunset date.
+	Reason *PostV1ImageToVector400JSONResponseBody_Reason `json:"reason,omitempty"`
+} {
+	return r.JSON400
+}
+
+// GetJSON429 returns the response for an HTTP 429 `application/json` response
+func (r PostV1ImageToVectorResponse) GetJSON429() *struct {
+	Error string `json:"error"`
+} {
+	return r.JSON429
+}
+
+// GetBody returns the raw response body bytes
+func (r PostV1ImageToVectorResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r PostV1ImageToVectorResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r PostV1ImageToVectorResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r PostV1ImageToVectorResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
 type PostV1ImageToVideoResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -8478,6 +8807,101 @@ type GetV1OrganizationWebappAuditLogsResponse struct {
 			// EventId Unique identifier of the entry.
 			EventId openapi_types.UUID `json:"eventId"`
 
+			// Metadata Action-specific details.
+			Metadata struct {
+				APIAccount                    *string                                                                          `json:"API account,omitempty"`
+				APIProjectID                  *string                                                                          `json:"API project ID,omitempty"`
+				AWSLicense                    *string                                                                          `json:"AWS license,omitempty"`
+				AdAccountID                   *string                                                                          `json:"Ad account ID,omitempty"`
+				AdCreativeID                  *string                                                                          `json:"Ad creative ID,omitempty"`
+				AdLevel                       *string                                                                          `json:"Ad level,omitempty"`
+				AdPublishBatchID              *string                                                                          `json:"Ad publish batch ID,omitempty"`
+				AdReviewBatchID               *string                                                                          `json:"Ad review batch ID,omitempty"`
+				AdReviewRequestID             *string                                                                          `json:"Ad review request ID,omitempty"`
+				AdSyncEndDate                 *string                                                                          `json:"Ad sync end date,omitempty"`
+				AdSyncRunID                   *string                                                                          `json:"Ad sync run ID,omitempty"`
+				AdSyncStartDate               *string                                                                          `json:"Ad sync start date,omitempty"`
+				AdsCreatedAs                  *string                                                                          `json:"Ads created as,omitempty"`
+				AdsOnboardingAnswers          *[]string                                                                        `json:"Ads onboarding answers,omitempty"`
+				AdsOnboardingCompleted        *bool                                                                            `json:"Ads onboarding completed,omitempty"`
+				AgentSessionID                *string                                                                          `json:"Agent session ID,omitempty"`
+				AgentTagged                   *bool                                                                            `json:"Agent tagged,omitempty"`
+				Amount                        *float64                                                                         `json:"Amount,omitempty"`
+				AmountReceived                *float64                                                                         `json:"Amount received,omitempty"`
+				AppStudioApp                  *string                                                                          `json:"App Studio app,omitempty"`
+				AppStudioAppID                *string                                                                          `json:"App Studio app ID,omitempty"`
+				AppStudioDeploy               *string                                                                          `json:"App Studio deploy,omitempty"`
+				AppStudioSession              *string                                                                          `json:"App Studio session,omitempty"`
+				Application                   *string                                                                          `json:"Application,omitempty"`
+				AssetName                     *string                                                                          `json:"Asset name,omitempty"`
+				BrandKitID                    *string                                                                          `json:"Brand kit ID,omitempty"`
+				CommentID                     *string                                                                          `json:"Comment ID,omitempty"`
+				CommentTargetID               *string                                                                          `json:"Comment target ID,omitempty"`
+				CommentTargetType             *string                                                                          `json:"Comment target type,omitempty"`
+				CommentText                   *string                                                                          `json:"Comment text,omitempty"`
+				CreativesCancelled            *float64                                                                         `json:"Creatives cancelled,omitempty"`
+				CreativesQueued               *float64                                                                         `json:"Creatives queued,omitempty"`
+				CreativesRetried              *float64                                                                         `json:"Creatives retried,omitempty"`
+				DefaultProjectDiscoverability *string                                                                          `json:"Default project discoverability,omitempty"`
+				DefaultTaskNameTemplate       *string                                                                          `json:"Default task name template,omitempty"`
+				DestinationCategoryID         *string                                                                          `json:"Destination category ID,omitempty"`
+				Direction                     *string                                                                          `json:"Direction,omitempty"`
+				EmailDomain                   *string                                                                          `json:"Email domain,omitempty"`
+				ErrorCode                     *string                                                                          `json:"Error code,omitempty"`
+				GroupName                     *string                                                                          `json:"Group name,omitempty"`
+				HardSpendCap                  *bool                                                                            `json:"Hard spend cap,omitempty"`
+				IntoANewTestAdSet             *bool                                                                            `json:"Into a new test ad set,omitempty"`
+				InvitedMember                 *string                                                                          `json:"Invited member,omitempty"`
+				LanguageModelOrProvider       *string                                                                          `json:"Language model or provider,omitempty"`
+				LoginMethod                   *string                                                                          `json:"Login method,omitempty"`
+				MediaIncluded                 *bool                                                                            `json:"Media included,omitempty"`
+				MemberEmail                   *string                                                                          `json:"Member email,omitempty"`
+				Mentions                      *float64                                                                         `json:"Mentions,omitempty"`
+				Model                         *string                                                                          `json:"Model,omitempty"`
+				NewUser                       *bool                                                                            `json:"New User,omitempty"`
+				NewRole                       *string                                                                          `json:"New role,omitempty"`
+				NewText                       *string                                                                          `json:"New text,omitempty"`
+				NewValue                      *GetV1OrganizationWebappAuditLogs200JSONResponseBody_Data_Metadata_NewValue      `json:"New value,omitempty"`
+				Operation                     *string                                                                          `json:"Operation,omitempty"`
+				Organization                  *string                                                                          `json:"Organization,omitempty"`
+				Outcome                       *string                                                                          `json:"Outcome,omitempty"`
+				Plan                          *string                                                                          `json:"Plan,omitempty"`
+				Platform                      *string                                                                          `json:"Platform,omitempty"`
+				PlatformAdAccountID           *string                                                                          `json:"Platform ad account ID,omitempty"`
+				PlatformObjectID              *string                                                                          `json:"Platform object ID,omitempty"`
+				PreviousProjectCreditCap      *float64                                                                         `json:"Previous project credit cap,omitempty"`
+				PreviousRole                  *string                                                                          `json:"Previous role,omitempty"`
+				PreviousText                  *string                                                                          `json:"Previous text,omitempty"`
+				PreviousValue                 *GetV1OrganizationWebappAuditLogs200JSONResponseBody_Data_Metadata_PreviousValue `json:"Previous value,omitempty"`
+				ProjectCreditCap              *float64                                                                         `json:"Project credit cap,omitempty"`
+				Provider                      *string                                                                          `json:"Provider,omitempty"`
+				Reason                        *string                                                                          `json:"Reason,omitempty"`
+				RemovedMember                 *string                                                                          `json:"Removed member,omitempty"`
+				ReviewDecision                *string                                                                          `json:"Review decision,omitempty"`
+				Role                          *string                                                                          `json:"Role,omitempty"`
+				RootAssetID                   *string                                                                          `json:"Root asset ID,omitempty"`
+				SecretName                    *string                                                                          `json:"Secret name,omitempty"`
+				Selected                      *bool                                                                            `json:"Selected,omitempty"`
+				Setting                       *string                                                                          `json:"Setting,omitempty"`
+				SharedWithProjects            *[]string                                                                        `json:"Shared with projects,omitempty"`
+				SharedWithWorkspace           *bool                                                                            `json:"Shared with workspace,omitempty"`
+				SourceCategoryID              *string                                                                          `json:"Source category ID,omitempty"`
+				SpendCap                      *float64                                                                         `json:"Spend cap,omitempty"`
+				SpendCapChange                *float64                                                                         `json:"Spend cap change,omitempty"`
+				StatusAfter                   *string                                                                          `json:"Status after,omitempty"`
+				StatusBefore                  *string                                                                          `json:"Status before,omitempty"`
+				SubmittedVia                  *string                                                                          `json:"Submitted via,omitempty"`
+				TagColor                      *string                                                                          `json:"Tag color,omitempty"`
+				TagName                       *string                                                                          `json:"Tag name,omitempty"`
+				TargetMember                  *string                                                                          `json:"Target member,omitempty"`
+				ViaPublicAPI                  *bool                                                                            `json:"Via public API,omitempty"`
+				Workspace                     *string                                                                          `json:"Workspace,omitempty"`
+				WorkspaceID                   *float64                                                                         `json:"Workspace ID,omitempty"`
+				WorkspaceDescription          *string                                                                          `json:"Workspace description,omitempty"`
+				WorkspaceName                 *string                                                                          `json:"Workspace name,omitempty"`
+				WorkspacePicture              *string                                                                          `json:"Workspace picture,omitempty"`
+			} `json:"metadata"`
+
 			// Timestamp When the action occurred.
 			Timestamp time.Time `json:"timestamp"`
 
@@ -8514,6 +8938,101 @@ func (r GetV1OrganizationWebappAuditLogsResponse) GetJSON200() *struct {
 
 		// EventId Unique identifier of the entry.
 		EventId openapi_types.UUID `json:"eventId"`
+
+		// Metadata Action-specific details.
+		Metadata struct {
+			APIAccount                    *string                                                                          `json:"API account,omitempty"`
+			APIProjectID                  *string                                                                          `json:"API project ID,omitempty"`
+			AWSLicense                    *string                                                                          `json:"AWS license,omitempty"`
+			AdAccountID                   *string                                                                          `json:"Ad account ID,omitempty"`
+			AdCreativeID                  *string                                                                          `json:"Ad creative ID,omitempty"`
+			AdLevel                       *string                                                                          `json:"Ad level,omitempty"`
+			AdPublishBatchID              *string                                                                          `json:"Ad publish batch ID,omitempty"`
+			AdReviewBatchID               *string                                                                          `json:"Ad review batch ID,omitempty"`
+			AdReviewRequestID             *string                                                                          `json:"Ad review request ID,omitempty"`
+			AdSyncEndDate                 *string                                                                          `json:"Ad sync end date,omitempty"`
+			AdSyncRunID                   *string                                                                          `json:"Ad sync run ID,omitempty"`
+			AdSyncStartDate               *string                                                                          `json:"Ad sync start date,omitempty"`
+			AdsCreatedAs                  *string                                                                          `json:"Ads created as,omitempty"`
+			AdsOnboardingAnswers          *[]string                                                                        `json:"Ads onboarding answers,omitempty"`
+			AdsOnboardingCompleted        *bool                                                                            `json:"Ads onboarding completed,omitempty"`
+			AgentSessionID                *string                                                                          `json:"Agent session ID,omitempty"`
+			AgentTagged                   *bool                                                                            `json:"Agent tagged,omitempty"`
+			Amount                        *float64                                                                         `json:"Amount,omitempty"`
+			AmountReceived                *float64                                                                         `json:"Amount received,omitempty"`
+			AppStudioApp                  *string                                                                          `json:"App Studio app,omitempty"`
+			AppStudioAppID                *string                                                                          `json:"App Studio app ID,omitempty"`
+			AppStudioDeploy               *string                                                                          `json:"App Studio deploy,omitempty"`
+			AppStudioSession              *string                                                                          `json:"App Studio session,omitempty"`
+			Application                   *string                                                                          `json:"Application,omitempty"`
+			AssetName                     *string                                                                          `json:"Asset name,omitempty"`
+			BrandKitID                    *string                                                                          `json:"Brand kit ID,omitempty"`
+			CommentID                     *string                                                                          `json:"Comment ID,omitempty"`
+			CommentTargetID               *string                                                                          `json:"Comment target ID,omitempty"`
+			CommentTargetType             *string                                                                          `json:"Comment target type,omitempty"`
+			CommentText                   *string                                                                          `json:"Comment text,omitempty"`
+			CreativesCancelled            *float64                                                                         `json:"Creatives cancelled,omitempty"`
+			CreativesQueued               *float64                                                                         `json:"Creatives queued,omitempty"`
+			CreativesRetried              *float64                                                                         `json:"Creatives retried,omitempty"`
+			DefaultProjectDiscoverability *string                                                                          `json:"Default project discoverability,omitempty"`
+			DefaultTaskNameTemplate       *string                                                                          `json:"Default task name template,omitempty"`
+			DestinationCategoryID         *string                                                                          `json:"Destination category ID,omitempty"`
+			Direction                     *string                                                                          `json:"Direction,omitempty"`
+			EmailDomain                   *string                                                                          `json:"Email domain,omitempty"`
+			ErrorCode                     *string                                                                          `json:"Error code,omitempty"`
+			GroupName                     *string                                                                          `json:"Group name,omitempty"`
+			HardSpendCap                  *bool                                                                            `json:"Hard spend cap,omitempty"`
+			IntoANewTestAdSet             *bool                                                                            `json:"Into a new test ad set,omitempty"`
+			InvitedMember                 *string                                                                          `json:"Invited member,omitempty"`
+			LanguageModelOrProvider       *string                                                                          `json:"Language model or provider,omitempty"`
+			LoginMethod                   *string                                                                          `json:"Login method,omitempty"`
+			MediaIncluded                 *bool                                                                            `json:"Media included,omitempty"`
+			MemberEmail                   *string                                                                          `json:"Member email,omitempty"`
+			Mentions                      *float64                                                                         `json:"Mentions,omitempty"`
+			Model                         *string                                                                          `json:"Model,omitempty"`
+			NewUser                       *bool                                                                            `json:"New User,omitempty"`
+			NewRole                       *string                                                                          `json:"New role,omitempty"`
+			NewText                       *string                                                                          `json:"New text,omitempty"`
+			NewValue                      *GetV1OrganizationWebappAuditLogs200JSONResponseBody_Data_Metadata_NewValue      `json:"New value,omitempty"`
+			Operation                     *string                                                                          `json:"Operation,omitempty"`
+			Organization                  *string                                                                          `json:"Organization,omitempty"`
+			Outcome                       *string                                                                          `json:"Outcome,omitempty"`
+			Plan                          *string                                                                          `json:"Plan,omitempty"`
+			Platform                      *string                                                                          `json:"Platform,omitempty"`
+			PlatformAdAccountID           *string                                                                          `json:"Platform ad account ID,omitempty"`
+			PlatformObjectID              *string                                                                          `json:"Platform object ID,omitempty"`
+			PreviousProjectCreditCap      *float64                                                                         `json:"Previous project credit cap,omitempty"`
+			PreviousRole                  *string                                                                          `json:"Previous role,omitempty"`
+			PreviousText                  *string                                                                          `json:"Previous text,omitempty"`
+			PreviousValue                 *GetV1OrganizationWebappAuditLogs200JSONResponseBody_Data_Metadata_PreviousValue `json:"Previous value,omitempty"`
+			ProjectCreditCap              *float64                                                                         `json:"Project credit cap,omitempty"`
+			Provider                      *string                                                                          `json:"Provider,omitempty"`
+			Reason                        *string                                                                          `json:"Reason,omitempty"`
+			RemovedMember                 *string                                                                          `json:"Removed member,omitempty"`
+			ReviewDecision                *string                                                                          `json:"Review decision,omitempty"`
+			Role                          *string                                                                          `json:"Role,omitempty"`
+			RootAssetID                   *string                                                                          `json:"Root asset ID,omitempty"`
+			SecretName                    *string                                                                          `json:"Secret name,omitempty"`
+			Selected                      *bool                                                                            `json:"Selected,omitempty"`
+			Setting                       *string                                                                          `json:"Setting,omitempty"`
+			SharedWithProjects            *[]string                                                                        `json:"Shared with projects,omitempty"`
+			SharedWithWorkspace           *bool                                                                            `json:"Shared with workspace,omitempty"`
+			SourceCategoryID              *string                                                                          `json:"Source category ID,omitempty"`
+			SpendCap                      *float64                                                                         `json:"Spend cap,omitempty"`
+			SpendCapChange                *float64                                                                         `json:"Spend cap change,omitempty"`
+			StatusAfter                   *string                                                                          `json:"Status after,omitempty"`
+			StatusBefore                  *string                                                                          `json:"Status before,omitempty"`
+			SubmittedVia                  *string                                                                          `json:"Submitted via,omitempty"`
+			TagColor                      *string                                                                          `json:"Tag color,omitempty"`
+			TagName                       *string                                                                          `json:"Tag name,omitempty"`
+			TargetMember                  *string                                                                          `json:"Target member,omitempty"`
+			ViaPublicAPI                  *bool                                                                            `json:"Via public API,omitempty"`
+			Workspace                     *string                                                                          `json:"Workspace,omitempty"`
+			WorkspaceID                   *float64                                                                         `json:"Workspace ID,omitempty"`
+			WorkspaceDescription          *string                                                                          `json:"Workspace description,omitempty"`
+			WorkspaceName                 *string                                                                          `json:"Workspace name,omitempty"`
+			WorkspacePicture              *string                                                                          `json:"Workspace picture,omitempty"`
+		} `json:"metadata"`
 
 		// Timestamp When the action occurred.
 		Timestamp time.Time `json:"timestamp"`
@@ -8593,12 +9112,14 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			AWSLicense                    *string                                                                            `json:"AWS license,omitempty"`
 			AdAccountID                   *string                                                                            `json:"Ad account ID,omitempty"`
 			AdCreativeID                  *string                                                                            `json:"Ad creative ID,omitempty"`
+			AdLevel                       *string                                                                            `json:"Ad level,omitempty"`
 			AdPublishBatchID              *string                                                                            `json:"Ad publish batch ID,omitempty"`
 			AdReviewBatchID               *string                                                                            `json:"Ad review batch ID,omitempty"`
 			AdReviewRequestID             *string                                                                            `json:"Ad review request ID,omitempty"`
 			AdSyncEndDate                 *string                                                                            `json:"Ad sync end date,omitempty"`
 			AdSyncRunID                   *string                                                                            `json:"Ad sync run ID,omitempty"`
 			AdSyncStartDate               *string                                                                            `json:"Ad sync start date,omitempty"`
+			AdsCreatedAs                  *string                                                                            `json:"Ads created as,omitempty"`
 			AdsOnboardingAnswers          *[]string                                                                          `json:"Ads onboarding answers,omitempty"`
 			AdsOnboardingCompleted        *bool                                                                              `json:"Ads onboarding completed,omitempty"`
 			AgentSessionID                *string                                                                            `json:"Agent session ID,omitempty"`
@@ -8606,6 +9127,8 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			Amount                        *float64                                                                           `json:"Amount,omitempty"`
 			AmountReceived                *float64                                                                           `json:"Amount received,omitempty"`
 			AppStudioApp                  *string                                                                            `json:"App Studio app,omitempty"`
+			AppStudioAppID                *string                                                                            `json:"App Studio app ID,omitempty"`
+			AppStudioDeploy               *string                                                                            `json:"App Studio deploy,omitempty"`
 			AppStudioSession              *string                                                                            `json:"App Studio session,omitempty"`
 			Application                   *string                                                                            `json:"Application,omitempty"`
 			AssetName                     *string                                                                            `json:"Asset name,omitempty"`
@@ -8643,6 +9166,7 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			Plan                          *string                                                                            `json:"Plan,omitempty"`
 			Platform                      *string                                                                            `json:"Platform,omitempty"`
 			PlatformAdAccountID           *string                                                                            `json:"Platform ad account ID,omitempty"`
+			PlatformObjectID              *string                                                                            `json:"Platform object ID,omitempty"`
 			PreviousProjectCreditCap      *float64                                                                           `json:"Previous project credit cap,omitempty"`
 			PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
 			PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
@@ -8654,6 +9178,7 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			ReviewDecision                *string                                                                            `json:"Review decision,omitempty"`
 			Role                          *string                                                                            `json:"Role,omitempty"`
 			RootAssetID                   *string                                                                            `json:"Root asset ID,omitempty"`
+			SecretName                    *string                                                                            `json:"Secret name,omitempty"`
 			Selected                      *bool                                                                              `json:"Selected,omitempty"`
 			Setting                       *string                                                                            `json:"Setting,omitempty"`
 			SharedWithProjects            *[]string                                                                          `json:"Shared with projects,omitempty"`
@@ -8661,6 +9186,8 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			SourceCategoryID              *string                                                                            `json:"Source category ID,omitempty"`
 			SpendCap                      *float64                                                                           `json:"Spend cap,omitempty"`
 			SpendCapChange                *float64                                                                           `json:"Spend cap change,omitempty"`
+			StatusAfter                   *string                                                                            `json:"Status after,omitempty"`
+			StatusBefore                  *string                                                                            `json:"Status before,omitempty"`
 			SubmittedVia                  *string                                                                            `json:"Submitted via,omitempty"`
 			TagColor                      *string                                                                            `json:"Tag color,omitempty"`
 			TagName                       *string                                                                            `json:"Tag name,omitempty"`
@@ -8727,12 +9254,14 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		AWSLicense                    *string                                                                            `json:"AWS license,omitempty"`
 		AdAccountID                   *string                                                                            `json:"Ad account ID,omitempty"`
 		AdCreativeID                  *string                                                                            `json:"Ad creative ID,omitempty"`
+		AdLevel                       *string                                                                            `json:"Ad level,omitempty"`
 		AdPublishBatchID              *string                                                                            `json:"Ad publish batch ID,omitempty"`
 		AdReviewBatchID               *string                                                                            `json:"Ad review batch ID,omitempty"`
 		AdReviewRequestID             *string                                                                            `json:"Ad review request ID,omitempty"`
 		AdSyncEndDate                 *string                                                                            `json:"Ad sync end date,omitempty"`
 		AdSyncRunID                   *string                                                                            `json:"Ad sync run ID,omitempty"`
 		AdSyncStartDate               *string                                                                            `json:"Ad sync start date,omitempty"`
+		AdsCreatedAs                  *string                                                                            `json:"Ads created as,omitempty"`
 		AdsOnboardingAnswers          *[]string                                                                          `json:"Ads onboarding answers,omitempty"`
 		AdsOnboardingCompleted        *bool                                                                              `json:"Ads onboarding completed,omitempty"`
 		AgentSessionID                *string                                                                            `json:"Agent session ID,omitempty"`
@@ -8740,6 +9269,8 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		Amount                        *float64                                                                           `json:"Amount,omitempty"`
 		AmountReceived                *float64                                                                           `json:"Amount received,omitempty"`
 		AppStudioApp                  *string                                                                            `json:"App Studio app,omitempty"`
+		AppStudioAppID                *string                                                                            `json:"App Studio app ID,omitempty"`
+		AppStudioDeploy               *string                                                                            `json:"App Studio deploy,omitempty"`
 		AppStudioSession              *string                                                                            `json:"App Studio session,omitempty"`
 		Application                   *string                                                                            `json:"Application,omitempty"`
 		AssetName                     *string                                                                            `json:"Asset name,omitempty"`
@@ -8777,6 +9308,7 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		Plan                          *string                                                                            `json:"Plan,omitempty"`
 		Platform                      *string                                                                            `json:"Platform,omitempty"`
 		PlatformAdAccountID           *string                                                                            `json:"Platform ad account ID,omitempty"`
+		PlatformObjectID              *string                                                                            `json:"Platform object ID,omitempty"`
 		PreviousProjectCreditCap      *float64                                                                           `json:"Previous project credit cap,omitempty"`
 		PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
 		PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
@@ -8788,6 +9320,7 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		ReviewDecision                *string                                                                            `json:"Review decision,omitempty"`
 		Role                          *string                                                                            `json:"Role,omitempty"`
 		RootAssetID                   *string                                                                            `json:"Root asset ID,omitempty"`
+		SecretName                    *string                                                                            `json:"Secret name,omitempty"`
 		Selected                      *bool                                                                              `json:"Selected,omitempty"`
 		Setting                       *string                                                                            `json:"Setting,omitempty"`
 		SharedWithProjects            *[]string                                                                          `json:"Shared with projects,omitempty"`
@@ -8795,6 +9328,8 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		SourceCategoryID              *string                                                                            `json:"Source category ID,omitempty"`
 		SpendCap                      *float64                                                                           `json:"Spend cap,omitempty"`
 		SpendCapChange                *float64                                                                           `json:"Spend cap change,omitempty"`
+		StatusAfter                   *string                                                                            `json:"Status after,omitempty"`
+		StatusBefore                  *string                                                                            `json:"Status before,omitempty"`
 		SubmittedVia                  *string                                                                            `json:"Submitted via,omitempty"`
 		TagColor                      *string                                                                            `json:"Tag color,omitempty"`
 		TagName                       *string                                                                            `json:"Tag name,omitempty"`
@@ -8880,14 +9415,26 @@ type GetV1OrganizationWebappUsageResponse struct {
 			// Email Email of the user who generated.
 			Email string `json:"email"`
 
+			// TaskId ID of the generation this row belongs to. A charge and its refunds share it. `null` for App Studio usage, which has no generation.
+			TaskId *string `json:"taskId"`
+
 			// Timestamp When the generation was charged.
 			Timestamp time.Time `json:"timestamp"`
 
 			// Tool Model/task display name for the generation.
 			Tool string `json:"tool"`
 
+			// TransactionId Unique ID of the credit transaction behind this row. Stable across requests, so use it to deduplicate overlapping pulls.
+			TransactionId string `json:"transactionId"`
+
 			// Type Whether the row is a credit charge for a generation or a task refund (negative credits).
 			Type GetV1OrganizationWebappUsage200JSONResponseBodyDataType `json:"type"`
+
+			// Unit Unit of `credits`. Always `credits`.
+			Unit GetV1OrganizationWebappUsage200JSONResponseBodyDataUnit `json:"unit"`
+
+			// UserId ID of the user who generated.
+			UserId int `json:"userId"`
 
 			// WorkspaceId ID of the owning workspace.
 			WorkspaceId int `json:"workspaceId"`
@@ -8914,14 +9461,26 @@ func (r GetV1OrganizationWebappUsageResponse) GetJSON200() *struct {
 		// Email Email of the user who generated.
 		Email string `json:"email"`
 
+		// TaskId ID of the generation this row belongs to. A charge and its refunds share it. `null` for App Studio usage, which has no generation.
+		TaskId *string `json:"taskId"`
+
 		// Timestamp When the generation was charged.
 		Timestamp time.Time `json:"timestamp"`
 
 		// Tool Model/task display name for the generation.
 		Tool string `json:"tool"`
 
+		// TransactionId Unique ID of the credit transaction behind this row. Stable across requests, so use it to deduplicate overlapping pulls.
+		TransactionId string `json:"transactionId"`
+
 		// Type Whether the row is a credit charge for a generation or a task refund (negative credits).
 		Type GetV1OrganizationWebappUsage200JSONResponseBodyDataType `json:"type"`
+
+		// Unit Unit of `credits`. Always `credits`.
+		Unit GetV1OrganizationWebappUsage200JSONResponseBodyDataUnit `json:"unit"`
+
+		// UserId ID of the user who generated.
+		UserId int `json:"userId"`
 
 		// WorkspaceId ID of the owning workspace.
 		WorkspaceId int `json:"workspaceId"`
@@ -10883,6 +11442,107 @@ func (r PostV1TextToImageResponse) ContentType() string {
 	return ""
 }
 
+type PostV1TextToMusicResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *struct {
+		// EstimatedCost The maximum credits this task may charge. The final amount may be lower after the task completes.
+		EstimatedCost struct {
+			// Credits Estimated cost of the generation in credits.
+			Credits float64 `json:"credits"`
+		} `json:"estimatedCost"`
+
+		// Id The ID of the task that was created. Use this to retrieve the task later.
+		Id openapi_types.UUID `json:"id"`
+	}
+	// JSON400 the response for an HTTP 400 `application/json` response
+	JSON400 *struct {
+		// DocUrl A link to the public API documentation.
+		DocUrl *string `json:"docUrl,omitempty"`
+
+		// Error A message describing why the request was rejected.
+		Error string `json:"error"`
+
+		// Issues Field-level validation issues when the request failed Zod body/query validation. Omitted for other 400s.
+		Issues *[]PostV1TextToMusic400JSONResponseBody_Issues_Item `json:"issues,omitempty"`
+
+		// Reason A machine-readable rejection reason when one applies — e.g. DEPRECATED_MODEL when the requested model has reached its sunset date.
+		Reason *PostV1TextToMusic400JSONResponseBody_Reason `json:"reason,omitempty"`
+	}
+	// JSON429 the response for an HTTP 429 `application/json` response
+	JSON429 *struct {
+		Error string `json:"error"`
+	}
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r PostV1TextToMusicResponse) GetJSON200() *struct {
+	// EstimatedCost The maximum credits this task may charge. The final amount may be lower after the task completes.
+	EstimatedCost struct {
+		// Credits Estimated cost of the generation in credits.
+		Credits float64 `json:"credits"`
+	} `json:"estimatedCost"`
+
+	// Id The ID of the task that was created. Use this to retrieve the task later.
+	Id openapi_types.UUID `json:"id"`
+} {
+	return r.JSON200
+}
+
+// GetJSON400 returns the response for an HTTP 400 `application/json` response
+func (r PostV1TextToMusicResponse) GetJSON400() *struct {
+	// DocUrl A link to the public API documentation.
+	DocUrl *string `json:"docUrl,omitempty"`
+
+	// Error A message describing why the request was rejected.
+	Error string `json:"error"`
+
+	// Issues Field-level validation issues when the request failed Zod body/query validation. Omitted for other 400s.
+	Issues *[]PostV1TextToMusic400JSONResponseBody_Issues_Item `json:"issues,omitempty"`
+
+	// Reason A machine-readable rejection reason when one applies — e.g. DEPRECATED_MODEL when the requested model has reached its sunset date.
+	Reason *PostV1TextToMusic400JSONResponseBody_Reason `json:"reason,omitempty"`
+} {
+	return r.JSON400
+}
+
+// GetJSON429 returns the response for an HTTP 429 `application/json` response
+func (r PostV1TextToMusicResponse) GetJSON429() *struct {
+	Error string `json:"error"`
+} {
+	return r.JSON429
+}
+
+// GetBody returns the raw response body bytes
+func (r PostV1TextToMusicResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r PostV1TextToMusicResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r PostV1TextToMusicResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r PostV1TextToMusicResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
 type PostV1TextToSpeechResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -12667,7 +13327,7 @@ func (c *ClientWithResponses) PatchV1DocumentsIdWithResponse(ctx context.Context
 
 // PostV1GenerateAudioWithBodyWithResponse Routed audio generation
 //
-// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, or audio to generate audio described by promptText.
+// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, audio to generate audio described by promptText, or music to generate a song or instrumental track described by promptText.
 //
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
@@ -12682,7 +13342,7 @@ func (c *ClientWithResponses) PostV1GenerateAudioWithBodyWithResponse(ctx contex
 
 // PostV1GenerateAudioWithResponse Routed audio generation
 //
-// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, or audio to generate audio described by promptText.
+// Start an audio generation task using a saved Model Router config instead of naming a model. Set input.type to speech to speak promptText verbatim, audio to generate audio described by promptText, or music to generate a song or instrumental track described by promptText.
 //
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
@@ -12753,6 +13413,36 @@ func (c *ClientWithResponses) PostV1GenerateVideoWithResponse(ctx context.Contex
 		return nil, err
 	}
 	return ParsePostV1GenerateVideoResponse(rsp)
+}
+
+// PostV1ImageToVectorWithBodyWithResponse Image to vector
+//
+// Convert a source image into a scalable SVG.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
+func (c *ClientWithResponses) PostV1ImageToVectorWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error) {
+	rsp, err := c.PostV1ImageToVectorWithBody(ctx, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParsePostV1ImageToVectorResponse(rsp)
+}
+
+// PostV1ImageToVectorWithResponse Image to vector
+//
+// Convert a source image into a scalable SVG.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
+func (c *ClientWithResponses) PostV1ImageToVectorWithResponse(ctx context.Context, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error) {
+	rsp, err := c.PostV1ImageToVector(ctx, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParsePostV1ImageToVectorResponse(rsp)
 }
 
 // PostV1ImageToVideoWithBodyWithResponse Image to video
@@ -13417,6 +14107,36 @@ func (c *ClientWithResponses) PostV1TextToImageWithResponse(ctx context.Context,
 		return nil, err
 	}
 	return ParsePostV1TextToImageResponse(rsp)
+}
+
+// PostV1TextToMusicWithBodyWithResponse Generate music
+//
+// This endpoint will start a new task to generate a song or instrumental track from a text description.
+//
+// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
+func (c *ClientWithResponses) PostV1TextToMusicWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error) {
+	rsp, err := c.PostV1TextToMusicWithBody(ctx, contentType, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParsePostV1TextToMusicResponse(rsp)
+}
+
+// PostV1TextToMusicWithResponse Generate music
+//
+// This endpoint will start a new task to generate a song or instrumental track from a text description.
+//
+// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
+//
+// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
+func (c *ClientWithResponses) PostV1TextToMusicWithResponse(ctx context.Context, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error) {
+	rsp, err := c.PostV1TextToMusic(ctx, body, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParsePostV1TextToMusicResponse(rsp)
 }
 
 // PostV1TextToSpeechWithBodyWithResponse Text to speech
@@ -14639,6 +15359,69 @@ func ParsePostV1GenerateVideoResponse(rsp *http.Response) (*PostV1GenerateVideoR
 	return response, nil
 }
 
+// ParsePostV1ImageToVectorResponse parses an HTTP response from a PostV1ImageToVectorWithResponse call
+func ParsePostV1ImageToVectorResponse(rsp *http.Response) (*PostV1ImageToVectorResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &PostV1ImageToVectorResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest struct {
+			// EstimatedCost The maximum credits this task may charge. The final amount may be lower after the task completes.
+			EstimatedCost struct {
+				// Credits Estimated cost of the generation in credits.
+				Credits float64 `json:"credits"`
+			} `json:"estimatedCost"`
+
+			// Id The ID of the task that was created. Use this to retrieve the task later.
+			Id openapi_types.UUID `json:"id"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest struct {
+			// DocUrl A link to the public API documentation.
+			DocUrl *string `json:"docUrl,omitempty"`
+
+			// Error A message describing why the request was rejected.
+			Error string `json:"error"`
+
+			// Issues Field-level validation issues when the request failed Zod body/query validation. Omitted for other 400s.
+			Issues *[]PostV1ImageToVector400JSONResponseBody_Issues_Item `json:"issues,omitempty"`
+
+			// Reason A machine-readable rejection reason when one applies — e.g. DEPRECATED_MODEL when the requested model has reached its sunset date.
+			Reason *PostV1ImageToVector400JSONResponseBody_Reason `json:"reason,omitempty"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 429:
+		var dest struct {
+			Error string `json:"error"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON429 = &dest
+
+	}
+
+	return response, nil
+}
+
 // ParsePostV1ImageToVideoResponse parses an HTTP response from a PostV1ImageToVideoWithResponse call
 func ParsePostV1ImageToVideoResponse(rsp *http.Response) (*PostV1ImageToVideoResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -14904,6 +15687,101 @@ func ParseGetV1OrganizationWebappAuditLogsResponse(rsp *http.Response) (*GetV1Or
 				// EventId Unique identifier of the entry.
 				EventId openapi_types.UUID `json:"eventId"`
 
+				// Metadata Action-specific details.
+				Metadata struct {
+					APIAccount                    *string                                                                          `json:"API account,omitempty"`
+					APIProjectID                  *string                                                                          `json:"API project ID,omitempty"`
+					AWSLicense                    *string                                                                          `json:"AWS license,omitempty"`
+					AdAccountID                   *string                                                                          `json:"Ad account ID,omitempty"`
+					AdCreativeID                  *string                                                                          `json:"Ad creative ID,omitempty"`
+					AdLevel                       *string                                                                          `json:"Ad level,omitempty"`
+					AdPublishBatchID              *string                                                                          `json:"Ad publish batch ID,omitempty"`
+					AdReviewBatchID               *string                                                                          `json:"Ad review batch ID,omitempty"`
+					AdReviewRequestID             *string                                                                          `json:"Ad review request ID,omitempty"`
+					AdSyncEndDate                 *string                                                                          `json:"Ad sync end date,omitempty"`
+					AdSyncRunID                   *string                                                                          `json:"Ad sync run ID,omitempty"`
+					AdSyncStartDate               *string                                                                          `json:"Ad sync start date,omitempty"`
+					AdsCreatedAs                  *string                                                                          `json:"Ads created as,omitempty"`
+					AdsOnboardingAnswers          *[]string                                                                        `json:"Ads onboarding answers,omitempty"`
+					AdsOnboardingCompleted        *bool                                                                            `json:"Ads onboarding completed,omitempty"`
+					AgentSessionID                *string                                                                          `json:"Agent session ID,omitempty"`
+					AgentTagged                   *bool                                                                            `json:"Agent tagged,omitempty"`
+					Amount                        *float64                                                                         `json:"Amount,omitempty"`
+					AmountReceived                *float64                                                                         `json:"Amount received,omitempty"`
+					AppStudioApp                  *string                                                                          `json:"App Studio app,omitempty"`
+					AppStudioAppID                *string                                                                          `json:"App Studio app ID,omitempty"`
+					AppStudioDeploy               *string                                                                          `json:"App Studio deploy,omitempty"`
+					AppStudioSession              *string                                                                          `json:"App Studio session,omitempty"`
+					Application                   *string                                                                          `json:"Application,omitempty"`
+					AssetName                     *string                                                                          `json:"Asset name,omitempty"`
+					BrandKitID                    *string                                                                          `json:"Brand kit ID,omitempty"`
+					CommentID                     *string                                                                          `json:"Comment ID,omitempty"`
+					CommentTargetID               *string                                                                          `json:"Comment target ID,omitempty"`
+					CommentTargetType             *string                                                                          `json:"Comment target type,omitempty"`
+					CommentText                   *string                                                                          `json:"Comment text,omitempty"`
+					CreativesCancelled            *float64                                                                         `json:"Creatives cancelled,omitempty"`
+					CreativesQueued               *float64                                                                         `json:"Creatives queued,omitempty"`
+					CreativesRetried              *float64                                                                         `json:"Creatives retried,omitempty"`
+					DefaultProjectDiscoverability *string                                                                          `json:"Default project discoverability,omitempty"`
+					DefaultTaskNameTemplate       *string                                                                          `json:"Default task name template,omitempty"`
+					DestinationCategoryID         *string                                                                          `json:"Destination category ID,omitempty"`
+					Direction                     *string                                                                          `json:"Direction,omitempty"`
+					EmailDomain                   *string                                                                          `json:"Email domain,omitempty"`
+					ErrorCode                     *string                                                                          `json:"Error code,omitempty"`
+					GroupName                     *string                                                                          `json:"Group name,omitempty"`
+					HardSpendCap                  *bool                                                                            `json:"Hard spend cap,omitempty"`
+					IntoANewTestAdSet             *bool                                                                            `json:"Into a new test ad set,omitempty"`
+					InvitedMember                 *string                                                                          `json:"Invited member,omitempty"`
+					LanguageModelOrProvider       *string                                                                          `json:"Language model or provider,omitempty"`
+					LoginMethod                   *string                                                                          `json:"Login method,omitempty"`
+					MediaIncluded                 *bool                                                                            `json:"Media included,omitempty"`
+					MemberEmail                   *string                                                                          `json:"Member email,omitempty"`
+					Mentions                      *float64                                                                         `json:"Mentions,omitempty"`
+					Model                         *string                                                                          `json:"Model,omitempty"`
+					NewUser                       *bool                                                                            `json:"New User,omitempty"`
+					NewRole                       *string                                                                          `json:"New role,omitempty"`
+					NewText                       *string                                                                          `json:"New text,omitempty"`
+					NewValue                      *GetV1OrganizationWebappAuditLogs200JSONResponseBody_Data_Metadata_NewValue      `json:"New value,omitempty"`
+					Operation                     *string                                                                          `json:"Operation,omitempty"`
+					Organization                  *string                                                                          `json:"Organization,omitempty"`
+					Outcome                       *string                                                                          `json:"Outcome,omitempty"`
+					Plan                          *string                                                                          `json:"Plan,omitempty"`
+					Platform                      *string                                                                          `json:"Platform,omitempty"`
+					PlatformAdAccountID           *string                                                                          `json:"Platform ad account ID,omitempty"`
+					PlatformObjectID              *string                                                                          `json:"Platform object ID,omitempty"`
+					PreviousProjectCreditCap      *float64                                                                         `json:"Previous project credit cap,omitempty"`
+					PreviousRole                  *string                                                                          `json:"Previous role,omitempty"`
+					PreviousText                  *string                                                                          `json:"Previous text,omitempty"`
+					PreviousValue                 *GetV1OrganizationWebappAuditLogs200JSONResponseBody_Data_Metadata_PreviousValue `json:"Previous value,omitempty"`
+					ProjectCreditCap              *float64                                                                         `json:"Project credit cap,omitempty"`
+					Provider                      *string                                                                          `json:"Provider,omitempty"`
+					Reason                        *string                                                                          `json:"Reason,omitempty"`
+					RemovedMember                 *string                                                                          `json:"Removed member,omitempty"`
+					ReviewDecision                *string                                                                          `json:"Review decision,omitempty"`
+					Role                          *string                                                                          `json:"Role,omitempty"`
+					RootAssetID                   *string                                                                          `json:"Root asset ID,omitempty"`
+					SecretName                    *string                                                                          `json:"Secret name,omitempty"`
+					Selected                      *bool                                                                            `json:"Selected,omitempty"`
+					Setting                       *string                                                                          `json:"Setting,omitempty"`
+					SharedWithProjects            *[]string                                                                        `json:"Shared with projects,omitempty"`
+					SharedWithWorkspace           *bool                                                                            `json:"Shared with workspace,omitempty"`
+					SourceCategoryID              *string                                                                          `json:"Source category ID,omitempty"`
+					SpendCap                      *float64                                                                         `json:"Spend cap,omitempty"`
+					SpendCapChange                *float64                                                                         `json:"Spend cap change,omitempty"`
+					StatusAfter                   *string                                                                          `json:"Status after,omitempty"`
+					StatusBefore                  *string                                                                          `json:"Status before,omitempty"`
+					SubmittedVia                  *string                                                                          `json:"Submitted via,omitempty"`
+					TagColor                      *string                                                                          `json:"Tag color,omitempty"`
+					TagName                       *string                                                                          `json:"Tag name,omitempty"`
+					TargetMember                  *string                                                                          `json:"Target member,omitempty"`
+					ViaPublicAPI                  *bool                                                                            `json:"Via public API,omitempty"`
+					Workspace                     *string                                                                          `json:"Workspace,omitempty"`
+					WorkspaceID                   *float64                                                                         `json:"Workspace ID,omitempty"`
+					WorkspaceDescription          *string                                                                          `json:"Workspace description,omitempty"`
+					WorkspaceName                 *string                                                                          `json:"Workspace name,omitempty"`
+					WorkspacePicture              *string                                                                          `json:"Workspace picture,omitempty"`
+				} `json:"metadata"`
+
 				// Timestamp When the action occurred.
 				Timestamp time.Time `json:"timestamp"`
 
@@ -14971,12 +15849,14 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				AWSLicense                    *string                                                                            `json:"AWS license,omitempty"`
 				AdAccountID                   *string                                                                            `json:"Ad account ID,omitempty"`
 				AdCreativeID                  *string                                                                            `json:"Ad creative ID,omitempty"`
+				AdLevel                       *string                                                                            `json:"Ad level,omitempty"`
 				AdPublishBatchID              *string                                                                            `json:"Ad publish batch ID,omitempty"`
 				AdReviewBatchID               *string                                                                            `json:"Ad review batch ID,omitempty"`
 				AdReviewRequestID             *string                                                                            `json:"Ad review request ID,omitempty"`
 				AdSyncEndDate                 *string                                                                            `json:"Ad sync end date,omitempty"`
 				AdSyncRunID                   *string                                                                            `json:"Ad sync run ID,omitempty"`
 				AdSyncStartDate               *string                                                                            `json:"Ad sync start date,omitempty"`
+				AdsCreatedAs                  *string                                                                            `json:"Ads created as,omitempty"`
 				AdsOnboardingAnswers          *[]string                                                                          `json:"Ads onboarding answers,omitempty"`
 				AdsOnboardingCompleted        *bool                                                                              `json:"Ads onboarding completed,omitempty"`
 				AgentSessionID                *string                                                                            `json:"Agent session ID,omitempty"`
@@ -14984,6 +15864,8 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				Amount                        *float64                                                                           `json:"Amount,omitempty"`
 				AmountReceived                *float64                                                                           `json:"Amount received,omitempty"`
 				AppStudioApp                  *string                                                                            `json:"App Studio app,omitempty"`
+				AppStudioAppID                *string                                                                            `json:"App Studio app ID,omitempty"`
+				AppStudioDeploy               *string                                                                            `json:"App Studio deploy,omitempty"`
 				AppStudioSession              *string                                                                            `json:"App Studio session,omitempty"`
 				Application                   *string                                                                            `json:"Application,omitempty"`
 				AssetName                     *string                                                                            `json:"Asset name,omitempty"`
@@ -15021,6 +15903,7 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				Plan                          *string                                                                            `json:"Plan,omitempty"`
 				Platform                      *string                                                                            `json:"Platform,omitempty"`
 				PlatformAdAccountID           *string                                                                            `json:"Platform ad account ID,omitempty"`
+				PlatformObjectID              *string                                                                            `json:"Platform object ID,omitempty"`
 				PreviousProjectCreditCap      *float64                                                                           `json:"Previous project credit cap,omitempty"`
 				PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
 				PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
@@ -15032,6 +15915,7 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				ReviewDecision                *string                                                                            `json:"Review decision,omitempty"`
 				Role                          *string                                                                            `json:"Role,omitempty"`
 				RootAssetID                   *string                                                                            `json:"Root asset ID,omitempty"`
+				SecretName                    *string                                                                            `json:"Secret name,omitempty"`
 				Selected                      *bool                                                                              `json:"Selected,omitempty"`
 				Setting                       *string                                                                            `json:"Setting,omitempty"`
 				SharedWithProjects            *[]string                                                                          `json:"Shared with projects,omitempty"`
@@ -15039,6 +15923,8 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				SourceCategoryID              *string                                                                            `json:"Source category ID,omitempty"`
 				SpendCap                      *float64                                                                           `json:"Spend cap,omitempty"`
 				SpendCapChange                *float64                                                                           `json:"Spend cap change,omitempty"`
+				StatusAfter                   *string                                                                            `json:"Status after,omitempty"`
+				StatusBefore                  *string                                                                            `json:"Status before,omitempty"`
 				SubmittedVia                  *string                                                                            `json:"Submitted via,omitempty"`
 				TagColor                      *string                                                                            `json:"Tag color,omitempty"`
 				TagName                       *string                                                                            `json:"Tag name,omitempty"`
@@ -15115,14 +16001,26 @@ func ParseGetV1OrganizationWebappUsageResponse(rsp *http.Response) (*GetV1Organi
 				// Email Email of the user who generated.
 				Email string `json:"email"`
 
+				// TaskId ID of the generation this row belongs to. A charge and its refunds share it. `null` for App Studio usage, which has no generation.
+				TaskId *string `json:"taskId"`
+
 				// Timestamp When the generation was charged.
 				Timestamp time.Time `json:"timestamp"`
 
 				// Tool Model/task display name for the generation.
 				Tool string `json:"tool"`
 
+				// TransactionId Unique ID of the credit transaction behind this row. Stable across requests, so use it to deduplicate overlapping pulls.
+				TransactionId string `json:"transactionId"`
+
 				// Type Whether the row is a credit charge for a generation or a task refund (negative credits).
 				Type GetV1OrganizationWebappUsage200JSONResponseBodyDataType `json:"type"`
+
+				// Unit Unit of `credits`. Always `credits`.
+				Unit GetV1OrganizationWebappUsage200JSONResponseBodyDataUnit `json:"unit"`
+
+				// UserId ID of the user who generated.
+				UserId int `json:"userId"`
 
 				// WorkspaceId ID of the owning workspace.
 				WorkspaceId int `json:"workspaceId"`
@@ -16254,6 +17152,69 @@ func ParsePostV1TextToImageResponse(rsp *http.Response) (*PostV1TextToImageRespo
 
 			// Reason A machine-readable rejection reason when one applies — e.g. DEPRECATED_MODEL when the requested model has reached its sunset date.
 			Reason *PostV1TextToImage400JSONResponseBody_Reason `json:"reason,omitempty"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON400 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 429:
+		var dest struct {
+			Error string `json:"error"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON429 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParsePostV1TextToMusicResponse parses an HTTP response from a PostV1TextToMusicWithResponse call
+func ParsePostV1TextToMusicResponse(rsp *http.Response) (*PostV1TextToMusicResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &PostV1TextToMusicResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest struct {
+			// EstimatedCost The maximum credits this task may charge. The final amount may be lower after the task completes.
+			EstimatedCost struct {
+				// Credits Estimated cost of the generation in credits.
+				Credits float64 `json:"credits"`
+			} `json:"estimatedCost"`
+
+			// Id The ID of the task that was created. Use this to retrieve the task later.
+			Id openapi_types.UUID `json:"id"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest struct {
+			// DocUrl A link to the public API documentation.
+			DocUrl *string `json:"docUrl,omitempty"`
+
+			// Error A message describing why the request was rejected.
+			Error string `json:"error"`
+
+			// Issues Field-level validation issues when the request failed Zod body/query validation. Omitted for other 400s.
+			Issues *[]PostV1TextToMusic400JSONResponseBody_Issues_Item `json:"issues,omitempty"`
+
+			// Reason A machine-readable rejection reason when one applies — e.g. DEPRECATED_MODEL when the requested model has reached its sunset date.
+			Reason *PostV1TextToMusic400JSONResponseBody_Reason `json:"reason,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err

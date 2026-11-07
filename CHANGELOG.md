@@ -2,6 +2,16 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.4.0, 2026-11-07
+
+- Added the image-to-vector endpoint: `Client.PostV1ImageToVector`, `Client.PostV1ImageToVectorWithBody`, `ClientWithResponses.PostV1ImageToVectorWithResponse`, `ClientWithResponses.PostV1ImageToVectorWithBodyWithResponse`, `NewPostV1ImageToVectorRequest`, `NewPostV1ImageToVectorRequestWithBody` and `ParsePostV1ImageToVectorResponse`. The request body is `PostV1ImageToVectorJSONBody0` with model `PostV1ImageToVectorJSONBody0ModelIdeogramVector`.
+- Added the text-to-music endpoint: `Client.PostV1TextToMusic`, `Client.PostV1TextToMusicWithBody`, `ClientWithResponses.PostV1TextToMusicWithResponse`, `ClientWithResponses.PostV1TextToMusicWithBodyWithResponse`, `NewPostV1TextToMusicRequest`, `NewPostV1TextToMusicRequestWithBody` and `ParsePostV1TextToMusicResponse`. It uses model `PostV1TextToMusicJSONBody0ModelElevenMusicV25`, and `PostV1GenerateAudioJSONBodyInputTypeMusic` is added.
+- The four new client methods for each endpoint are also added to `ClientInterface` and `ClientWithResponsesInterface`, so custom implementations of those interfaces must add them.
+- Added request union variants with `As`, `From` and `Merge` methods: `PostV1TextToImageJSONBody21`, `22` and `23`, `PostV1TextToVideoJSONBody24` and `25`, `PostV1ImageToVideoJSONBody25` and `26`, and `PostV1VideoToVideoJSONBody12` and `13`. New model constants include `PostV1TextToImageJSONBody21ModelGptImage26Sunburst`, `PostV1TextToImageJSONBody22ModelGptImage26Flare`, `PostV1TextToImageJSONBody23ModelGemini25Flash`, `PostV1ImageToVideoJSONBody25ModelGeminiOmniFlash12` and `PostV1TextToVideoJSONBody25ModelKling4Flash`.
+- Removed `PostV1TextToImageJSONBody20ModelGemini25Flash` and the `PostV1TextToImageJSONBody20RatioN...` constants. `PostV1TextToImageJSONBody20.Ratio` is now `*PostV1TextToImageJSONBody20Ratio` instead of `PostV1TextToImageJSONBody20Ratio`, and the `Tag` field is removed from the `PostV1TextToImageJSONBody20.ReferenceImages` items. Model `Gemini25Flash` moves to `PostV1TextToImageJSONBody23`.
+- Added audit log action constants such as `GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioAppCreated` and `GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdStatusChanged`, with matching constants for the single-event endpoint. Audit log metadata now has new fields such as `AdLevel` and `PlatformObjectID`.
+- Changed the `JSON200` and `GetJSON200` result structs of `GetV1OrganizationWebappAuditLogsResponse`, `GetV1OrganizationWebappAuditLogsEventIdResponse` and `GetV1OrganizationWebappUsageResponse`, so code that names their fields or types must be checked. The usage response adds `GetV1OrganizationWebappUsage200JSONResponseBodyDataUnit`.
+
 ## v0.3.2, 2026-10-28
 
 - Added an optional `Bitrate` field, a pointer to a new string enum type, to the video request bodies. It takes `high` or `standard`, with `Valid` methods on each enum type.
