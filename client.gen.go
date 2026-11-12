@@ -738,7 +738,7 @@ type ClientInterface interface {
 
 	// PostV1TextToSpeechWithBody Text to speech
 	//
-	// This endpoint will start a new task to generate speech from text.
+	// This endpoint will start a new task to generate speech from text. ElevenLabs models accept preset voices or custom voices created via the Voices API. Seed Audio accepts a reference audio clip.
 	//
 	// Takes any type of body and a specified content type.
 	//
@@ -747,7 +747,7 @@ type ClientInterface interface {
 
 	// PostV1TextToSpeech Text to speech
 	//
-	// This endpoint will start a new task to generate speech from text.
+	// This endpoint will start a new task to generate speech from text. ElevenLabs models accept preset voices or custom voices created via the Voices API. Seed Audio accepts a reference audio clip.
 	//
 	// Takes a body of the `application/json` content type.
 	//
@@ -2419,7 +2419,7 @@ func (c *Client) PostV1TextToMusic(ctx context.Context, body PostV1TextToMusicJS
 
 // PostV1TextToSpeechWithBody Text to speech
 //
-// This endpoint will start a new task to generate speech from text.
+// This endpoint will start a new task to generate speech from text. ElevenLabs models accept preset voices or custom voices created via the Voices API. Seed Audio accepts a reference audio clip.
 //
 // Takes any type of body and a specified content type.
 //
@@ -2438,7 +2438,7 @@ func (c *Client) PostV1TextToSpeechWithBody(ctx context.Context, contentType str
 
 // PostV1TextToSpeech Text to speech
 //
-// This endpoint will start a new task to generate speech from text.
+// This endpoint will start a new task to generate speech from text. ElevenLabs models accept preset voices or custom voices created via the Voices API. Seed Audio accepts a reference audio clip.
 //
 // Takes a body of the `application/json` content type.
 //
@@ -6766,7 +6766,7 @@ type ClientWithResponsesInterface interface {
 
 	// PostV1TextToSpeechWithBodyWithResponse Text to speech
 	//
-	// This endpoint will start a new task to generate speech from text.
+	// This endpoint will start a new task to generate speech from text. ElevenLabs models accept preset voices or custom voices created via the Voices API. Seed Audio accepts a reference audio clip.
 	//
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
@@ -6775,7 +6775,7 @@ type ClientWithResponsesInterface interface {
 
 	// PostV1TextToSpeechWithResponse Text to speech
 	//
-	// This endpoint will start a new task to generate speech from text.
+	// This endpoint will start a new task to generate speech from text. ElevenLabs models accept preset voices or custom voices created via the Voices API. Seed Audio accepts a reference audio clip.
 	//
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
@@ -14141,7 +14141,7 @@ func (c *ClientWithResponses) PostV1TextToMusicWithResponse(ctx context.Context,
 
 // PostV1TextToSpeechWithBodyWithResponse Text to speech
 //
-// This endpoint will start a new task to generate speech from text.
+// This endpoint will start a new task to generate speech from text. ElevenLabs models accept preset voices or custom voices created via the Voices API. Seed Audio accepts a reference audio clip.
 //
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
@@ -14156,7 +14156,7 @@ func (c *ClientWithResponses) PostV1TextToSpeechWithBodyWithResponse(ctx context
 
 // PostV1TextToSpeechWithResponse Text to speech
 //
-// This endpoint will start a new task to generate speech from text.
+// This endpoint will start a new task to generate speech from text. ElevenLabs models accept preset voices or custom voices created via the Voices API. Seed Audio accepts a reference audio clip.
 //
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //

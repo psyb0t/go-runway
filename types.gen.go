@@ -3056,13 +3056,13 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason26.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason26INTERNAL PostV1CharacterPerformance400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1CharacterPerformance400JSONResponseBodyReason26INTERNALRESOURCES PostV1CharacterPerformance400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason26 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason26INTERNAL:
+	case PostV1CharacterPerformance400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -3071,13 +3071,28 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason27.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason27UNKNOWN PostV1CharacterPerformance400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1CharacterPerformance400JSONResponseBodyReason27INTERNAL PostV1CharacterPerformance400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason27 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason27UNKNOWN:
+	case PostV1CharacterPerformance400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1CharacterPerformance400JSONResponseBodyReason28.
+const (
+	PostV1CharacterPerformance400JSONResponseBodyReason28UNKNOWN PostV1CharacterPerformance400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason28 enum.
+func (e PostV1CharacterPerformance400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1CharacterPerformance400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -4544,13 +4559,13 @@ func (e PostV1ImageToVector400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason26.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason26INTERNAL PostV1ImageToVector400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1ImageToVector400JSONResponseBodyReason26INTERNALRESOURCES PostV1ImageToVector400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason26 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason26INTERNAL:
+	case PostV1ImageToVector400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -4559,13 +4574,28 @@ func (e PostV1ImageToVector400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason27.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason27UNKNOWN PostV1ImageToVector400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1ImageToVector400JSONResponseBodyReason27INTERNAL PostV1ImageToVector400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason27 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason27UNKNOWN:
+	case PostV1ImageToVector400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVector400JSONResponseBodyReason28.
+const (
+	PostV1ImageToVector400JSONResponseBodyReason28UNKNOWN PostV1ImageToVector400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason28 enum.
+func (e PostV1ImageToVector400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1ImageToVector400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -6616,7 +6646,13 @@ const (
 	PostV1ImageToVideoJSONBody22RatioN1470630  PostV1ImageToVideoJSONBody22Ratio = "1470:630"
 	PostV1ImageToVideoJSONBody22RatioN16641248 PostV1ImageToVideoJSONBody22Ratio = "1664:1248"
 	PostV1ImageToVideoJSONBody22RatioN19201080 PostV1ImageToVideoJSONBody22Ratio = "1920:1080"
+	PostV1ImageToVideoJSONBody22RatioN21603840 PostV1ImageToVideoJSONBody22Ratio = "2160:3840"
 	PostV1ImageToVideoJSONBody22RatioN2206946  PostV1ImageToVideoJSONBody22Ratio = "2206:946"
+	PostV1ImageToVideoJSONBody22RatioN28803840 PostV1ImageToVideoJSONBody22Ratio = "2880:3840"
+	PostV1ImageToVideoJSONBody22RatioN38401646 PostV1ImageToVideoJSONBody22Ratio = "3840:1646"
+	PostV1ImageToVideoJSONBody22RatioN38402160 PostV1ImageToVideoJSONBody22Ratio = "3840:2160"
+	PostV1ImageToVideoJSONBody22RatioN38402880 PostV1ImageToVideoJSONBody22Ratio = "3840:2880"
+	PostV1ImageToVideoJSONBody22RatioN38403840 PostV1ImageToVideoJSONBody22Ratio = "3840:3840"
 	PostV1ImageToVideoJSONBody22RatioN480854   PostV1ImageToVideoJSONBody22Ratio = "480:854"
 	PostV1ImageToVideoJSONBody22RatioN560752   PostV1ImageToVideoJSONBody22Ratio = "560:752"
 	PostV1ImageToVideoJSONBody22RatioN640640   PostV1ImageToVideoJSONBody22Ratio = "640:640"
@@ -6647,7 +6683,19 @@ func (e PostV1ImageToVideoJSONBody22Ratio) Valid() bool {
 		return true
 	case PostV1ImageToVideoJSONBody22RatioN19201080:
 		return true
+	case PostV1ImageToVideoJSONBody22RatioN21603840:
+		return true
 	case PostV1ImageToVideoJSONBody22RatioN2206946:
+		return true
+	case PostV1ImageToVideoJSONBody22RatioN28803840:
+		return true
+	case PostV1ImageToVideoJSONBody22RatioN38401646:
+		return true
+	case PostV1ImageToVideoJSONBody22RatioN38402160:
+		return true
+	case PostV1ImageToVideoJSONBody22RatioN38402880:
+		return true
+	case PostV1ImageToVideoJSONBody22RatioN38403840:
 		return true
 	case PostV1ImageToVideoJSONBody22RatioN480854:
 		return true
@@ -6894,6 +6942,234 @@ const (
 func (e PostV1ImageToVideoJSONBody26Ratio) Valid() bool {
 	switch e {
 	case PostV1ImageToVideoJSONBody26RatioAuto720p:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody27Model.
+const (
+	PostV1ImageToVideoJSONBody27ModelHailuo3Highspeed PostV1ImageToVideoJSONBody27Model = "hailuo3_highspeed"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody27Model enum.
+func (e PostV1ImageToVideoJSONBody27Model) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody27ModelHailuo3Highspeed:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody27PromptImage1Position.
+const (
+	PostV1ImageToVideoJSONBody27PromptImage1PositionFirst PostV1ImageToVideoJSONBody27PromptImage1Position = "first"
+	PostV1ImageToVideoJSONBody27PromptImage1PositionLast  PostV1ImageToVideoJSONBody27PromptImage1Position = "last"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody27PromptImage1Position enum.
+func (e PostV1ImageToVideoJSONBody27PromptImage1Position) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody27PromptImage1PositionFirst:
+		return true
+	case PostV1ImageToVideoJSONBody27PromptImage1PositionLast:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody27Ratio.
+const (
+	PostV1ImageToVideoJSONBody27RatioAdaptive PostV1ImageToVideoJSONBody27Ratio = "adaptive"
+	PostV1ImageToVideoJSONBody27RatioN11      PostV1ImageToVideoJSONBody27Ratio = "1:1"
+	PostV1ImageToVideoJSONBody27RatioN169     PostV1ImageToVideoJSONBody27Ratio = "16:9"
+	PostV1ImageToVideoJSONBody27RatioN219     PostV1ImageToVideoJSONBody27Ratio = "21:9"
+	PostV1ImageToVideoJSONBody27RatioN34      PostV1ImageToVideoJSONBody27Ratio = "3:4"
+	PostV1ImageToVideoJSONBody27RatioN43      PostV1ImageToVideoJSONBody27Ratio = "4:3"
+	PostV1ImageToVideoJSONBody27RatioN916     PostV1ImageToVideoJSONBody27Ratio = "9:16"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody27Ratio enum.
+func (e PostV1ImageToVideoJSONBody27Ratio) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody27RatioAdaptive:
+		return true
+	case PostV1ImageToVideoJSONBody27RatioN11:
+		return true
+	case PostV1ImageToVideoJSONBody27RatioN169:
+		return true
+	case PostV1ImageToVideoJSONBody27RatioN219:
+		return true
+	case PostV1ImageToVideoJSONBody27RatioN34:
+		return true
+	case PostV1ImageToVideoJSONBody27RatioN43:
+		return true
+	case PostV1ImageToVideoJSONBody27RatioN916:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody27ReferenceAudioType.
+const (
+	PostV1ImageToVideoJSONBody27ReferenceAudioTypeAudio PostV1ImageToVideoJSONBody27ReferenceAudioType = "audio"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody27ReferenceAudioType enum.
+func (e PostV1ImageToVideoJSONBody27ReferenceAudioType) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody27ReferenceAudioTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody27ReferenceVideosType.
+const (
+	PostV1ImageToVideoJSONBody27ReferenceVideosTypeVideo PostV1ImageToVideoJSONBody27ReferenceVideosType = "video"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody27ReferenceVideosType enum.
+func (e PostV1ImageToVideoJSONBody27ReferenceVideosType) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody27ReferenceVideosTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody27Resolution.
+const (
+	PostV1ImageToVideoJSONBody27ResolutionN480p PostV1ImageToVideoJSONBody27Resolution = "480p"
+	PostV1ImageToVideoJSONBody27ResolutionN768p PostV1ImageToVideoJSONBody27Resolution = "768p"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody27Resolution enum.
+func (e PostV1ImageToVideoJSONBody27Resolution) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody27ResolutionN480p:
+		return true
+	case PostV1ImageToVideoJSONBody27ResolutionN768p:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody28Model.
+const (
+	PostV1ImageToVideoJSONBody28ModelHailuo3Lite PostV1ImageToVideoJSONBody28Model = "hailuo3_lite"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody28Model enum.
+func (e PostV1ImageToVideoJSONBody28Model) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody28ModelHailuo3Lite:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody28PromptImage1Position.
+const (
+	PostV1ImageToVideoJSONBody28PromptImage1PositionFirst PostV1ImageToVideoJSONBody28PromptImage1Position = "first"
+	PostV1ImageToVideoJSONBody28PromptImage1PositionLast  PostV1ImageToVideoJSONBody28PromptImage1Position = "last"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody28PromptImage1Position enum.
+func (e PostV1ImageToVideoJSONBody28PromptImage1Position) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody28PromptImage1PositionFirst:
+		return true
+	case PostV1ImageToVideoJSONBody28PromptImage1PositionLast:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody28Ratio.
+const (
+	PostV1ImageToVideoJSONBody28RatioAdaptive PostV1ImageToVideoJSONBody28Ratio = "adaptive"
+	PostV1ImageToVideoJSONBody28RatioN11      PostV1ImageToVideoJSONBody28Ratio = "1:1"
+	PostV1ImageToVideoJSONBody28RatioN169     PostV1ImageToVideoJSONBody28Ratio = "16:9"
+	PostV1ImageToVideoJSONBody28RatioN219     PostV1ImageToVideoJSONBody28Ratio = "21:9"
+	PostV1ImageToVideoJSONBody28RatioN34      PostV1ImageToVideoJSONBody28Ratio = "3:4"
+	PostV1ImageToVideoJSONBody28RatioN43      PostV1ImageToVideoJSONBody28Ratio = "4:3"
+	PostV1ImageToVideoJSONBody28RatioN916     PostV1ImageToVideoJSONBody28Ratio = "9:16"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody28Ratio enum.
+func (e PostV1ImageToVideoJSONBody28Ratio) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody28RatioAdaptive:
+		return true
+	case PostV1ImageToVideoJSONBody28RatioN11:
+		return true
+	case PostV1ImageToVideoJSONBody28RatioN169:
+		return true
+	case PostV1ImageToVideoJSONBody28RatioN219:
+		return true
+	case PostV1ImageToVideoJSONBody28RatioN34:
+		return true
+	case PostV1ImageToVideoJSONBody28RatioN43:
+		return true
+	case PostV1ImageToVideoJSONBody28RatioN916:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody28ReferenceAudioType.
+const (
+	PostV1ImageToVideoJSONBody28ReferenceAudioTypeAudio PostV1ImageToVideoJSONBody28ReferenceAudioType = "audio"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody28ReferenceAudioType enum.
+func (e PostV1ImageToVideoJSONBody28ReferenceAudioType) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody28ReferenceAudioTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody28ReferenceVideosType.
+const (
+	PostV1ImageToVideoJSONBody28ReferenceVideosTypeVideo PostV1ImageToVideoJSONBody28ReferenceVideosType = "video"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody28ReferenceVideosType enum.
+func (e PostV1ImageToVideoJSONBody28ReferenceVideosType) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody28ReferenceVideosTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody28Resolution.
+const (
+	PostV1ImageToVideoJSONBody28ResolutionN480p PostV1ImageToVideoJSONBody28Resolution = "480p"
+	PostV1ImageToVideoJSONBody28ResolutionN768p PostV1ImageToVideoJSONBody28Resolution = "768p"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody28Resolution enum.
+func (e PostV1ImageToVideoJSONBody28Resolution) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody28ResolutionN480p:
+		return true
+	case PostV1ImageToVideoJSONBody28ResolutionN768p:
 		return true
 	default:
 		return false
@@ -7232,13 +7508,13 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason26.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason26INTERNAL PostV1ImageToVideo400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1ImageToVideo400JSONResponseBodyReason26INTERNALRESOURCES PostV1ImageToVideo400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason26 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason26INTERNAL:
+	case PostV1ImageToVideo400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -7247,13 +7523,28 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason27.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason27UNKNOWN PostV1ImageToVideo400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1ImageToVideo400JSONResponseBodyReason27INTERNAL PostV1ImageToVideo400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason27 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason27UNKNOWN:
+	case PostV1ImageToVideo400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideo400JSONResponseBodyReason28.
+const (
+	PostV1ImageToVideo400JSONResponseBodyReason28UNKNOWN PostV1ImageToVideo400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason28 enum.
+func (e PostV1ImageToVideo400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1ImageToVideo400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -7652,13 +7943,13 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason26.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason26INTERNAL PostV1ImageUpscale400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1ImageUpscale400JSONResponseBodyReason26INTERNALRESOURCES PostV1ImageUpscale400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason26 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason26INTERNAL:
+	case PostV1ImageUpscale400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -7667,13 +7958,28 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason27.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason27UNKNOWN PostV1ImageUpscale400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1ImageUpscale400JSONResponseBodyReason27INTERNAL PostV1ImageUpscale400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason27 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason27UNKNOWN:
+	case PostV1ImageUpscale400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageUpscale400JSONResponseBodyReason28.
+const (
+	PostV1ImageUpscale400JSONResponseBodyReason28UNKNOWN PostV1ImageUpscale400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason28 enum.
+func (e PostV1ImageUpscale400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1ImageUpscale400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -7723,6 +8029,8 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyModelsGwm1Avatars                   PostV1OrganizationUsage200JSONResponseBodyModels = "gwm1_avatars"
 	PostV1OrganizationUsage200JSONResponseBodyModelsH3Max                         PostV1OrganizationUsage200JSONResponseBodyModels = "h3_max"
 	PostV1OrganizationUsage200JSONResponseBodyModelsHailuo3                       PostV1OrganizationUsage200JSONResponseBodyModels = "hailuo3"
+	PostV1OrganizationUsage200JSONResponseBodyModelsHailuo3Highspeed              PostV1OrganizationUsage200JSONResponseBodyModels = "hailuo3_highspeed"
+	PostV1OrganizationUsage200JSONResponseBodyModelsHailuo3Lite                   PostV1OrganizationUsage200JSONResponseBodyModels = "hailuo3_lite"
 	PostV1OrganizationUsage200JSONResponseBodyModelsHappyhorse10                  PostV1OrganizationUsage200JSONResponseBodyModels = "happyhorse_1_0"
 	PostV1OrganizationUsage200JSONResponseBodyModelsIdeogram40                    PostV1OrganizationUsage200JSONResponseBodyModels = "ideogram_4_0"
 	PostV1OrganizationUsage200JSONResponseBodyModelsIdeogram45                    PostV1OrganizationUsage200JSONResponseBodyModels = "ideogram_4_5"
@@ -7758,6 +8066,7 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Flash                PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5_flash"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Lite                 PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5_lite"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Pro                  PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5_pro"
+	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5ProLayers            PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5_pro_layers"
 	PostV1OrganizationUsage200JSONResponseBodyModelsVeo3                          PostV1OrganizationUsage200JSONResponseBodyModels = "veo3"
 	PostV1OrganizationUsage200JSONResponseBodyModelsVeo31                         PostV1OrganizationUsage200JSONResponseBodyModels = "veo3.1"
 	PostV1OrganizationUsage200JSONResponseBodyModelsVeo31Fast                     PostV1OrganizationUsage200JSONResponseBodyModels = "veo3.1_fast"
@@ -7851,6 +8160,10 @@ func (e PostV1OrganizationUsage200JSONResponseBodyModels) Valid() bool {
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsHailuo3:
 		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsHailuo3Highspeed:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsHailuo3Lite:
+		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsHappyhorse10:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsIdeogram40:
@@ -7921,6 +8234,8 @@ func (e PostV1OrganizationUsage200JSONResponseBodyModels) Valid() bool {
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Pro:
 		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5ProLayers:
+		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsVeo3:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsVeo31:
@@ -7981,6 +8296,8 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGwm1Avatars                   PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gwm1_avatars"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelH3Max                         PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "h3_max"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelHailuo3                       PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "hailuo3"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelHailuo3Highspeed              PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "hailuo3_highspeed"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelHailuo3Lite                   PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "hailuo3_lite"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelHappyhorse10                  PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "happyhorse_1_0"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelIdeogram40                    PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "ideogram_4_0"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelIdeogram45                    PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "ideogram_4_5"
@@ -8016,6 +8333,7 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Flash                PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5_flash"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Lite                 PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5_lite"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Pro                  PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5_pro"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5ProLayers            PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5_pro_layers"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelVeo3                          PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "veo3"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelVeo31                         PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "veo3.1"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelVeo31Fast                     PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "veo3.1_fast"
@@ -8109,6 +8427,10 @@ func (e PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel) Valid
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelHailuo3:
 		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelHailuo3Highspeed:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelHailuo3Lite:
+		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelHappyhorse10:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelIdeogram40:
@@ -8178,6 +8500,8 @@ func (e PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel) Valid
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Lite:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Pro:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5ProLayers:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelVeo3:
 		return true
@@ -9857,13 +10181,13 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason26.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason26INTERNAL PostV1RecipesAdLocalization400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesAdLocalization400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason26INTERNAL:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -9872,13 +10196,28 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason27.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason27UNKNOWN PostV1RecipesAdLocalization400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason27INTERNAL PostV1RecipesAdLocalization400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason27UNKNOWN:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason28.
+const (
+	PostV1RecipesAdLocalization400JSONResponseBodyReason28UNKNOWN PostV1RecipesAdLocalization400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason28 enum.
+func (e PostV1RecipesAdLocalization400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -10256,13 +10595,13 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason25) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason26.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason26INTERNAL PostV1RecipesMarketingStockImage400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesMarketingStockImage400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason26INTERNAL:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -10271,13 +10610,28 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason26) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason27.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason27UNKNOWN PostV1RecipesMarketingStockImage400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason27INTERNAL PostV1RecipesMarketingStockImage400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason27UNKNOWN:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason28.
+const (
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason28UNKNOWN PostV1RecipesMarketingStockImage400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason28 enum.
+func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -10784,13 +11138,13 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason26.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason26INTERNAL PostV1RecipesMultiShotVideo400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesMultiShotVideo400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason26INTERNAL:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -10799,13 +11153,28 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason27.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason27UNKNOWN PostV1RecipesMultiShotVideo400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason27INTERNAL PostV1RecipesMultiShotVideo400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason27UNKNOWN:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason28.
+const (
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason28UNKNOWN PostV1RecipesMultiShotVideo400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason28 enum.
+func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -11201,13 +11570,13 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason26.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason26INTERNAL PostV1RecipesProductAd400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1RecipesProductAd400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesProductAd400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason26INTERNAL:
+	case PostV1RecipesProductAd400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -11216,13 +11585,28 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason27.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason27UNKNOWN PostV1RecipesProductAd400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1RecipesProductAd400JSONResponseBodyReason27INTERNAL PostV1RecipesProductAd400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason27UNKNOWN:
+	case PostV1RecipesProductAd400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesProductAd400JSONResponseBodyReason28.
+const (
+	PostV1RecipesProductAd400JSONResponseBodyReason28UNKNOWN PostV1RecipesProductAd400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason28 enum.
+func (e PostV1RecipesProductAd400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1RecipesProductAd400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -11579,13 +11963,13 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason25) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason26.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason26INTERNAL PostV1RecipesProductCampaignImage400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesProductCampaignImage400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason26INTERNAL:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -11594,13 +11978,28 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason26) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason27.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason27UNKNOWN PostV1RecipesProductCampaignImage400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason27INTERNAL PostV1RecipesProductCampaignImage400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason27UNKNOWN:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason28.
+const (
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason28UNKNOWN PostV1RecipesProductCampaignImage400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason28 enum.
+func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -11996,13 +12395,13 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason26.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason26INTERNAL PostV1RecipesProductSwap400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1RecipesProductSwap400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesProductSwap400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason26INTERNAL:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -12011,13 +12410,28 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason27.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason27UNKNOWN PostV1RecipesProductSwap400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1RecipesProductSwap400JSONResponseBodyReason27INTERNAL PostV1RecipesProductSwap400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason27UNKNOWN:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason28.
+const (
+	PostV1RecipesProductSwap400JSONResponseBodyReason28UNKNOWN PostV1RecipesProductSwap400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason28 enum.
+func (e PostV1RecipesProductSwap400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1RecipesProductSwap400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -12392,13 +12806,13 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason26.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason26INTERNAL PostV1RecipesProductUgc400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1RecipesProductUgc400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesProductUgc400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason26INTERNAL:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -12407,13 +12821,28 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason27.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason27UNKNOWN PostV1RecipesProductUgc400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1RecipesProductUgc400JSONResponseBodyReason27INTERNAL PostV1RecipesProductUgc400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason27UNKNOWN:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason28.
+const (
+	PostV1RecipesProductUgc400JSONResponseBodyReason28UNKNOWN PostV1RecipesProductUgc400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason28 enum.
+func (e PostV1RecipesProductUgc400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1RecipesProductUgc400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -13370,13 +13799,13 @@ func (e PostV1SoundEffect400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason26.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason26INTERNAL PostV1SoundEffect400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1SoundEffect400JSONResponseBodyReason26INTERNALRESOURCES PostV1SoundEffect400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason26 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason26INTERNAL:
+	case PostV1SoundEffect400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -13385,13 +13814,28 @@ func (e PostV1SoundEffect400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason27.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason27UNKNOWN PostV1SoundEffect400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1SoundEffect400JSONResponseBodyReason27INTERNAL PostV1SoundEffect400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason27 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason27UNKNOWN:
+	case PostV1SoundEffect400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1SoundEffect400JSONResponseBodyReason28.
+const (
+	PostV1SoundEffect400JSONResponseBodyReason28UNKNOWN PostV1SoundEffect400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason28 enum.
+func (e PostV1SoundEffect400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1SoundEffect400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -13949,13 +14393,13 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason26.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason26INTERNAL PostV1SpeechToSpeech400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1SpeechToSpeech400JSONResponseBodyReason26INTERNALRESOURCES PostV1SpeechToSpeech400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason26 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason26INTERNAL:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -13964,13 +14408,28 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason27.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason27UNKNOWN PostV1SpeechToSpeech400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1SpeechToSpeech400JSONResponseBodyReason27INTERNAL PostV1SpeechToSpeech400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason27 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason27UNKNOWN:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason28.
+const (
+	PostV1SpeechToSpeech400JSONResponseBodyReason28UNKNOWN PostV1SpeechToSpeech400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason28 enum.
+func (e PostV1SpeechToSpeech400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1SpeechToSpeech400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -16488,6 +16947,33 @@ func (e PostV1TextToImageJSONBody21Model) Valid() bool {
 	}
 }
 
+// Defines values for PostV1TextToImageJSONBody21OutputFormat.
+const (
+	PostV1TextToImageJSONBody21OutputFormatGif  PostV1TextToImageJSONBody21OutputFormat = "gif"
+	PostV1TextToImageJSONBody21OutputFormatJpeg PostV1TextToImageJSONBody21OutputFormat = "jpeg"
+	PostV1TextToImageJSONBody21OutputFormatPng  PostV1TextToImageJSONBody21OutputFormat = "png"
+	PostV1TextToImageJSONBody21OutputFormatSvg  PostV1TextToImageJSONBody21OutputFormat = "svg"
+	PostV1TextToImageJSONBody21OutputFormatWebp PostV1TextToImageJSONBody21OutputFormat = "webp"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody21OutputFormat enum.
+func (e PostV1TextToImageJSONBody21OutputFormat) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody21OutputFormatGif:
+		return true
+	case PostV1TextToImageJSONBody21OutputFormatJpeg:
+		return true
+	case PostV1TextToImageJSONBody21OutputFormatPng:
+		return true
+	case PostV1TextToImageJSONBody21OutputFormatSvg:
+		return true
+	case PostV1TextToImageJSONBody21OutputFormatWebp:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1TextToImageJSONBody21Quality.
 const (
 	PostV1TextToImageJSONBody21QualityHigh   PostV1TextToImageJSONBody21Quality = "high"
@@ -16671,6 +17157,33 @@ func (e PostV1TextToImageJSONBody22Model) Valid() bool {
 	}
 }
 
+// Defines values for PostV1TextToImageJSONBody22OutputFormat.
+const (
+	PostV1TextToImageJSONBody22OutputFormatGif  PostV1TextToImageJSONBody22OutputFormat = "gif"
+	PostV1TextToImageJSONBody22OutputFormatJpeg PostV1TextToImageJSONBody22OutputFormat = "jpeg"
+	PostV1TextToImageJSONBody22OutputFormatPng  PostV1TextToImageJSONBody22OutputFormat = "png"
+	PostV1TextToImageJSONBody22OutputFormatSvg  PostV1TextToImageJSONBody22OutputFormat = "svg"
+	PostV1TextToImageJSONBody22OutputFormatWebp PostV1TextToImageJSONBody22OutputFormat = "webp"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody22OutputFormat enum.
+func (e PostV1TextToImageJSONBody22OutputFormat) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody22OutputFormatGif:
+		return true
+	case PostV1TextToImageJSONBody22OutputFormatJpeg:
+		return true
+	case PostV1TextToImageJSONBody22OutputFormatPng:
+		return true
+	case PostV1TextToImageJSONBody22OutputFormatSvg:
+		return true
+	case PostV1TextToImageJSONBody22OutputFormatWebp:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1TextToImageJSONBody22Quality.
 const (
 	PostV1TextToImageJSONBody22QualityHigh   PostV1TextToImageJSONBody22Quality = "high"
@@ -16820,55 +17333,130 @@ func (e PostV1TextToImageJSONBody22ReasoningEffort) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody23Model.
 const (
-	PostV1TextToImageJSONBody23ModelGemini25Flash PostV1TextToImageJSONBody23Model = "gemini_2.5_flash"
+	PostV1TextToImageJSONBody23ModelSeedream5ProLayers PostV1TextToImageJSONBody23Model = "seedream5_pro_layers"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody23Model enum.
 func (e PostV1TextToImageJSONBody23Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody23ModelGemini25Flash:
+	case PostV1TextToImageJSONBody23ModelSeedream5ProLayers:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToImageJSONBody23Ratio.
+// Defines values for PostV1TextToImageJSONBody23OptimizePromptMode.
 const (
-	PostV1TextToImageJSONBody23RatioN10241024 PostV1TextToImageJSONBody23Ratio = "1024:1024"
-	PostV1TextToImageJSONBody23RatioN1152896  PostV1TextToImageJSONBody23Ratio = "1152:896"
-	PostV1TextToImageJSONBody23RatioN1184864  PostV1TextToImageJSONBody23Ratio = "1184:864"
-	PostV1TextToImageJSONBody23RatioN1248832  PostV1TextToImageJSONBody23Ratio = "1248:832"
-	PostV1TextToImageJSONBody23RatioN1344768  PostV1TextToImageJSONBody23Ratio = "1344:768"
-	PostV1TextToImageJSONBody23RatioN1536672  PostV1TextToImageJSONBody23Ratio = "1536:672"
-	PostV1TextToImageJSONBody23RatioN7681344  PostV1TextToImageJSONBody23Ratio = "768:1344"
-	PostV1TextToImageJSONBody23RatioN8321248  PostV1TextToImageJSONBody23Ratio = "832:1248"
-	PostV1TextToImageJSONBody23RatioN8641184  PostV1TextToImageJSONBody23Ratio = "864:1184"
-	PostV1TextToImageJSONBody23RatioN8961152  PostV1TextToImageJSONBody23Ratio = "896:1152"
+	PostV1TextToImageJSONBody23OptimizePromptModeFast     PostV1TextToImageJSONBody23OptimizePromptMode = "fast"
+	PostV1TextToImageJSONBody23OptimizePromptModeStandard PostV1TextToImageJSONBody23OptimizePromptMode = "standard"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody23Ratio enum.
-func (e PostV1TextToImageJSONBody23Ratio) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody23OptimizePromptMode enum.
+func (e PostV1TextToImageJSONBody23OptimizePromptMode) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody23RatioN10241024:
+	case PostV1TextToImageJSONBody23OptimizePromptModeFast:
 		return true
-	case PostV1TextToImageJSONBody23RatioN1152896:
+	case PostV1TextToImageJSONBody23OptimizePromptModeStandard:
 		return true
-	case PostV1TextToImageJSONBody23RatioN1184864:
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody23OutputFormat.
+const (
+	PostV1TextToImageJSONBody23OutputFormatJpeg PostV1TextToImageJSONBody23OutputFormat = "jpeg"
+	PostV1TextToImageJSONBody23OutputFormatPng  PostV1TextToImageJSONBody23OutputFormat = "png"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody23OutputFormat enum.
+func (e PostV1TextToImageJSONBody23OutputFormat) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody23OutputFormatJpeg:
 		return true
-	case PostV1TextToImageJSONBody23RatioN1248832:
+	case PostV1TextToImageJSONBody23OutputFormatPng:
 		return true
-	case PostV1TextToImageJSONBody23RatioN1344768:
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody23Resolution.
+const (
+	PostV1TextToImageJSONBody23ResolutionAuto PostV1TextToImageJSONBody23Resolution = "auto"
+	PostV1TextToImageJSONBody23ResolutionN15k PostV1TextToImageJSONBody23Resolution = "1.5k"
+	PostV1TextToImageJSONBody23ResolutionN1k  PostV1TextToImageJSONBody23Resolution = "1k"
+	PostV1TextToImageJSONBody23ResolutionN2k  PostV1TextToImageJSONBody23Resolution = "2k"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody23Resolution enum.
+func (e PostV1TextToImageJSONBody23Resolution) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody23ResolutionAuto:
 		return true
-	case PostV1TextToImageJSONBody23RatioN1536672:
+	case PostV1TextToImageJSONBody23ResolutionN15k:
 		return true
-	case PostV1TextToImageJSONBody23RatioN7681344:
+	case PostV1TextToImageJSONBody23ResolutionN1k:
 		return true
-	case PostV1TextToImageJSONBody23RatioN8321248:
+	case PostV1TextToImageJSONBody23ResolutionN2k:
 		return true
-	case PostV1TextToImageJSONBody23RatioN8641184:
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody24Model.
+const (
+	PostV1TextToImageJSONBody24ModelGemini25Flash PostV1TextToImageJSONBody24Model = "gemini_2.5_flash"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody24Model enum.
+func (e PostV1TextToImageJSONBody24Model) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody24ModelGemini25Flash:
 		return true
-	case PostV1TextToImageJSONBody23RatioN8961152:
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody24Ratio.
+const (
+	PostV1TextToImageJSONBody24RatioN10241024 PostV1TextToImageJSONBody24Ratio = "1024:1024"
+	PostV1TextToImageJSONBody24RatioN1152896  PostV1TextToImageJSONBody24Ratio = "1152:896"
+	PostV1TextToImageJSONBody24RatioN1184864  PostV1TextToImageJSONBody24Ratio = "1184:864"
+	PostV1TextToImageJSONBody24RatioN1248832  PostV1TextToImageJSONBody24Ratio = "1248:832"
+	PostV1TextToImageJSONBody24RatioN1344768  PostV1TextToImageJSONBody24Ratio = "1344:768"
+	PostV1TextToImageJSONBody24RatioN1536672  PostV1TextToImageJSONBody24Ratio = "1536:672"
+	PostV1TextToImageJSONBody24RatioN7681344  PostV1TextToImageJSONBody24Ratio = "768:1344"
+	PostV1TextToImageJSONBody24RatioN8321248  PostV1TextToImageJSONBody24Ratio = "832:1248"
+	PostV1TextToImageJSONBody24RatioN8641184  PostV1TextToImageJSONBody24Ratio = "864:1184"
+	PostV1TextToImageJSONBody24RatioN8961152  PostV1TextToImageJSONBody24Ratio = "896:1152"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody24Ratio enum.
+func (e PostV1TextToImageJSONBody24Ratio) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody24RatioN10241024:
+		return true
+	case PostV1TextToImageJSONBody24RatioN1152896:
+		return true
+	case PostV1TextToImageJSONBody24RatioN1184864:
+		return true
+	case PostV1TextToImageJSONBody24RatioN1248832:
+		return true
+	case PostV1TextToImageJSONBody24RatioN1344768:
+		return true
+	case PostV1TextToImageJSONBody24RatioN1536672:
+		return true
+	case PostV1TextToImageJSONBody24RatioN7681344:
+		return true
+	case PostV1TextToImageJSONBody24RatioN8321248:
+		return true
+	case PostV1TextToImageJSONBody24RatioN8641184:
+		return true
+	case PostV1TextToImageJSONBody24RatioN8961152:
 		return true
 	default:
 		return false
@@ -17207,13 +17795,13 @@ func (e PostV1TextToImage400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason26.
 const (
-	PostV1TextToImage400JSONResponseBodyReason26INTERNAL PostV1TextToImage400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1TextToImage400JSONResponseBodyReason26INTERNALRESOURCES PostV1TextToImage400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason26 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason26INTERNAL:
+	case PostV1TextToImage400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -17222,13 +17810,28 @@ func (e PostV1TextToImage400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason27.
 const (
-	PostV1TextToImage400JSONResponseBodyReason27UNKNOWN PostV1TextToImage400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1TextToImage400JSONResponseBodyReason27INTERNAL PostV1TextToImage400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason27 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason27UNKNOWN:
+	case PostV1TextToImage400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImage400JSONResponseBodyReason28.
+const (
+	PostV1TextToImage400JSONResponseBodyReason28UNKNOWN PostV1TextToImage400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason28 enum.
+func (e PostV1TextToImage400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1TextToImage400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -17582,13 +18185,13 @@ func (e PostV1TextToMusic400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason26.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason26INTERNAL PostV1TextToMusic400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1TextToMusic400JSONResponseBodyReason26INTERNALRESOURCES PostV1TextToMusic400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason26 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason26INTERNAL:
+	case PostV1TextToMusic400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -17597,13 +18200,28 @@ func (e PostV1TextToMusic400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason27.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason27UNKNOWN PostV1TextToMusic400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1TextToMusic400JSONResponseBodyReason27INTERNAL PostV1TextToMusic400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason27 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason27UNKNOWN:
+	case PostV1TextToMusic400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToMusic400JSONResponseBodyReason28.
+const (
+	PostV1TextToMusic400JSONResponseBodyReason28UNKNOWN PostV1TextToMusic400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason28 enum.
+func (e PostV1TextToMusic400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1TextToMusic400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -17880,6 +18498,21 @@ func (e PostV1TextToSpeechJSONBody1Voice0Type) Valid() bool {
 	}
 }
 
+// Defines values for PostV1TextToSpeechJSONBody1Voice1Type.
+const (
+	PostV1TextToSpeechJSONBody1Voice1TypeCustom PostV1TextToSpeechJSONBody1Voice1Type = "custom"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody1Voice1Type enum.
+func (e PostV1TextToSpeechJSONBody1Voice1Type) Valid() bool {
+	switch e {
+	case PostV1TextToSpeechJSONBody1Voice1TypeCustom:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1TextToSpeechJSONBody2Model.
 const (
 	PostV1TextToSpeechJSONBody2ModelElevenMultilingualV2 PostV1TextToSpeechJSONBody2Model = "eleven_multilingual_v2"
@@ -18063,6 +18696,21 @@ const (
 func (e PostV1TextToSpeechJSONBody2Voice0Type) Valid() bool {
 	switch e {
 	case PostV1TextToSpeechJSONBody2Voice0TypeRunwayPreset:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToSpeechJSONBody2Voice1Type.
+const (
+	PostV1TextToSpeechJSONBody2Voice1TypeCustom PostV1TextToSpeechJSONBody2Voice1Type = "custom"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody2Voice1Type enum.
+func (e PostV1TextToSpeechJSONBody2Voice1Type) Valid() bool {
+	switch e {
+	case PostV1TextToSpeechJSONBody2Voice1TypeCustom:
 		return true
 	default:
 		return false
@@ -18273,6 +18921,21 @@ const (
 func (e PostV1TextToSpeechJSONBody3Voice0Type) Valid() bool {
 	switch e {
 	case PostV1TextToSpeechJSONBody3Voice0TypeRunwayPreset:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToSpeechJSONBody3Voice1Type.
+const (
+	PostV1TextToSpeechJSONBody3Voice1TypeCustom PostV1TextToSpeechJSONBody3Voice1Type = "custom"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody3Voice1Type enum.
+func (e PostV1TextToSpeechJSONBody3Voice1Type) Valid() bool {
+	switch e {
+	case PostV1TextToSpeechJSONBody3Voice1TypeCustom:
 		return true
 	default:
 		return false
@@ -18611,13 +19274,13 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason26.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason26INTERNAL PostV1TextToSpeech400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1TextToSpeech400JSONResponseBodyReason26INTERNALRESOURCES PostV1TextToSpeech400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason26 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason26INTERNAL:
+	case PostV1TextToSpeech400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -18626,13 +19289,28 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason27.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason27UNKNOWN PostV1TextToSpeech400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1TextToSpeech400JSONResponseBodyReason27INTERNAL PostV1TextToSpeech400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason27 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason27UNKNOWN:
+	case PostV1TextToSpeech400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToSpeech400JSONResponseBodyReason28.
+const (
+	PostV1TextToSpeech400JSONResponseBodyReason28UNKNOWN PostV1TextToSpeech400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason28 enum.
+func (e PostV1TextToSpeech400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1TextToSpeech400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -20365,7 +21043,13 @@ const (
 	PostV1TextToVideoJSONBody21RatioN1470630  PostV1TextToVideoJSONBody21Ratio = "1470:630"
 	PostV1TextToVideoJSONBody21RatioN16641248 PostV1TextToVideoJSONBody21Ratio = "1664:1248"
 	PostV1TextToVideoJSONBody21RatioN19201080 PostV1TextToVideoJSONBody21Ratio = "1920:1080"
+	PostV1TextToVideoJSONBody21RatioN21603840 PostV1TextToVideoJSONBody21Ratio = "2160:3840"
 	PostV1TextToVideoJSONBody21RatioN2206946  PostV1TextToVideoJSONBody21Ratio = "2206:946"
+	PostV1TextToVideoJSONBody21RatioN28803840 PostV1TextToVideoJSONBody21Ratio = "2880:3840"
+	PostV1TextToVideoJSONBody21RatioN38401646 PostV1TextToVideoJSONBody21Ratio = "3840:1646"
+	PostV1TextToVideoJSONBody21RatioN38402160 PostV1TextToVideoJSONBody21Ratio = "3840:2160"
+	PostV1TextToVideoJSONBody21RatioN38402880 PostV1TextToVideoJSONBody21Ratio = "3840:2880"
+	PostV1TextToVideoJSONBody21RatioN38403840 PostV1TextToVideoJSONBody21Ratio = "3840:3840"
 	PostV1TextToVideoJSONBody21RatioN480854   PostV1TextToVideoJSONBody21Ratio = "480:854"
 	PostV1TextToVideoJSONBody21RatioN560752   PostV1TextToVideoJSONBody21Ratio = "560:752"
 	PostV1TextToVideoJSONBody21RatioN640640   PostV1TextToVideoJSONBody21Ratio = "640:640"
@@ -20396,7 +21080,19 @@ func (e PostV1TextToVideoJSONBody21Ratio) Valid() bool {
 		return true
 	case PostV1TextToVideoJSONBody21RatioN19201080:
 		return true
+	case PostV1TextToVideoJSONBody21RatioN21603840:
+		return true
 	case PostV1TextToVideoJSONBody21RatioN2206946:
+		return true
+	case PostV1TextToVideoJSONBody21RatioN28803840:
+		return true
+	case PostV1TextToVideoJSONBody21RatioN38401646:
+		return true
+	case PostV1TextToVideoJSONBody21RatioN38402160:
+		return true
+	case PostV1TextToVideoJSONBody21RatioN38402880:
+		return true
+	case PostV1TextToVideoJSONBody21RatioN38403840:
 		return true
 	case PostV1TextToVideoJSONBody21RatioN480854:
 		return true
@@ -20706,6 +21402,195 @@ func (e PostV1TextToVideoJSONBody25Ratio) Valid() bool {
 	case PostV1TextToVideoJSONBody25RatioN940940:
 		return true
 	case PostV1TextToVideoJSONBody25RatioN960960:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody26Model.
+const (
+	PostV1TextToVideoJSONBody26ModelHailuo3Highspeed PostV1TextToVideoJSONBody26Model = "hailuo3_highspeed"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody26Model enum.
+func (e PostV1TextToVideoJSONBody26Model) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody26ModelHailuo3Highspeed:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody26Ratio.
+const (
+	PostV1TextToVideoJSONBody26RatioAdaptive PostV1TextToVideoJSONBody26Ratio = "adaptive"
+	PostV1TextToVideoJSONBody26RatioN11      PostV1TextToVideoJSONBody26Ratio = "1:1"
+	PostV1TextToVideoJSONBody26RatioN169     PostV1TextToVideoJSONBody26Ratio = "16:9"
+	PostV1TextToVideoJSONBody26RatioN219     PostV1TextToVideoJSONBody26Ratio = "21:9"
+	PostV1TextToVideoJSONBody26RatioN34      PostV1TextToVideoJSONBody26Ratio = "3:4"
+	PostV1TextToVideoJSONBody26RatioN43      PostV1TextToVideoJSONBody26Ratio = "4:3"
+	PostV1TextToVideoJSONBody26RatioN916     PostV1TextToVideoJSONBody26Ratio = "9:16"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody26Ratio enum.
+func (e PostV1TextToVideoJSONBody26Ratio) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody26RatioAdaptive:
+		return true
+	case PostV1TextToVideoJSONBody26RatioN11:
+		return true
+	case PostV1TextToVideoJSONBody26RatioN169:
+		return true
+	case PostV1TextToVideoJSONBody26RatioN219:
+		return true
+	case PostV1TextToVideoJSONBody26RatioN34:
+		return true
+	case PostV1TextToVideoJSONBody26RatioN43:
+		return true
+	case PostV1TextToVideoJSONBody26RatioN916:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody26ReferenceAudioType.
+const (
+	PostV1TextToVideoJSONBody26ReferenceAudioTypeAudio PostV1TextToVideoJSONBody26ReferenceAudioType = "audio"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody26ReferenceAudioType enum.
+func (e PostV1TextToVideoJSONBody26ReferenceAudioType) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody26ReferenceAudioTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody26ReferenceVideosType.
+const (
+	PostV1TextToVideoJSONBody26ReferenceVideosTypeVideo PostV1TextToVideoJSONBody26ReferenceVideosType = "video"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody26ReferenceVideosType enum.
+func (e PostV1TextToVideoJSONBody26ReferenceVideosType) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody26ReferenceVideosTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody26Resolution.
+const (
+	PostV1TextToVideoJSONBody26ResolutionN480p PostV1TextToVideoJSONBody26Resolution = "480p"
+	PostV1TextToVideoJSONBody26ResolutionN768p PostV1TextToVideoJSONBody26Resolution = "768p"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody26Resolution enum.
+func (e PostV1TextToVideoJSONBody26Resolution) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody26ResolutionN480p:
+		return true
+	case PostV1TextToVideoJSONBody26ResolutionN768p:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody27Model.
+const (
+	PostV1TextToVideoJSONBody27ModelHailuo3Lite PostV1TextToVideoJSONBody27Model = "hailuo3_lite"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody27Model enum.
+func (e PostV1TextToVideoJSONBody27Model) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody27ModelHailuo3Lite:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody27Ratio.
+const (
+	PostV1TextToVideoJSONBody27RatioN11  PostV1TextToVideoJSONBody27Ratio = "1:1"
+	PostV1TextToVideoJSONBody27RatioN169 PostV1TextToVideoJSONBody27Ratio = "16:9"
+	PostV1TextToVideoJSONBody27RatioN219 PostV1TextToVideoJSONBody27Ratio = "21:9"
+	PostV1TextToVideoJSONBody27RatioN34  PostV1TextToVideoJSONBody27Ratio = "3:4"
+	PostV1TextToVideoJSONBody27RatioN43  PostV1TextToVideoJSONBody27Ratio = "4:3"
+	PostV1TextToVideoJSONBody27RatioN916 PostV1TextToVideoJSONBody27Ratio = "9:16"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody27Ratio enum.
+func (e PostV1TextToVideoJSONBody27Ratio) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody27RatioN11:
+		return true
+	case PostV1TextToVideoJSONBody27RatioN169:
+		return true
+	case PostV1TextToVideoJSONBody27RatioN219:
+		return true
+	case PostV1TextToVideoJSONBody27RatioN34:
+		return true
+	case PostV1TextToVideoJSONBody27RatioN43:
+		return true
+	case PostV1TextToVideoJSONBody27RatioN916:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody27ReferenceAudioType.
+const (
+	PostV1TextToVideoJSONBody27ReferenceAudioTypeAudio PostV1TextToVideoJSONBody27ReferenceAudioType = "audio"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody27ReferenceAudioType enum.
+func (e PostV1TextToVideoJSONBody27ReferenceAudioType) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody27ReferenceAudioTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody27ReferenceVideosType.
+const (
+	PostV1TextToVideoJSONBody27ReferenceVideosTypeVideo PostV1TextToVideoJSONBody27ReferenceVideosType = "video"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody27ReferenceVideosType enum.
+func (e PostV1TextToVideoJSONBody27ReferenceVideosType) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody27ReferenceVideosTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody27Resolution.
+const (
+	PostV1TextToVideoJSONBody27ResolutionN480p PostV1TextToVideoJSONBody27Resolution = "480p"
+	PostV1TextToVideoJSONBody27ResolutionN768p PostV1TextToVideoJSONBody27Resolution = "768p"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody27Resolution enum.
+func (e PostV1TextToVideoJSONBody27Resolution) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody27ResolutionN480p:
+		return true
+	case PostV1TextToVideoJSONBody27ResolutionN768p:
 		return true
 	default:
 		return false
@@ -21044,13 +21929,13 @@ func (e PostV1TextToVideo400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason26.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason26INTERNAL PostV1TextToVideo400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1TextToVideo400JSONResponseBodyReason26INTERNALRESOURCES PostV1TextToVideo400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason26 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason26INTERNAL:
+	case PostV1TextToVideo400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -21059,13 +21944,28 @@ func (e PostV1TextToVideo400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason27.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason27UNKNOWN PostV1TextToVideo400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1TextToVideo400JSONResponseBodyReason27INTERNAL PostV1TextToVideo400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason27 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason27UNKNOWN:
+	case PostV1TextToVideo400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideo400JSONResponseBodyReason28.
+const (
+	PostV1TextToVideo400JSONResponseBodyReason28UNKNOWN PostV1TextToVideo400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason28 enum.
+func (e PostV1TextToVideo400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1TextToVideo400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -21455,13 +22355,13 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason26.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason26INTERNAL PostV1VideoToAudio400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1VideoToAudio400JSONResponseBodyReason26INTERNALRESOURCES PostV1VideoToAudio400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason26 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason26INTERNAL:
+	case PostV1VideoToAudio400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -21470,13 +22370,28 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason27.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason27UNKNOWN PostV1VideoToAudio400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1VideoToAudio400JSONResponseBodyReason27INTERNAL PostV1VideoToAudio400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason27 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason27UNKNOWN:
+	case PostV1VideoToAudio400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToAudio400JSONResponseBodyReason28.
+const (
+	PostV1VideoToAudio400JSONResponseBodyReason28UNKNOWN PostV1VideoToAudio400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason28 enum.
+func (e PostV1VideoToAudio400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1VideoToAudio400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -21881,13 +22796,13 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason26.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason26INTERNAL PostV1VideoToHdr400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1VideoToHdr400JSONResponseBodyReason26INTERNALRESOURCES PostV1VideoToHdr400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason26 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason26INTERNAL:
+	case PostV1VideoToHdr400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -21896,13 +22811,28 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason27.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason27UNKNOWN PostV1VideoToHdr400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1VideoToHdr400JSONResponseBodyReason27INTERNAL PostV1VideoToHdr400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason27 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason27UNKNOWN:
+	case PostV1VideoToHdr400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToHdr400JSONResponseBodyReason28.
+const (
+	PostV1VideoToHdr400JSONResponseBodyReason28UNKNOWN PostV1VideoToHdr400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason28 enum.
+func (e PostV1VideoToHdr400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1VideoToHdr400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -22882,7 +23812,13 @@ const (
 	PostV1VideoToVideoJSONBody10RatioN1470630  PostV1VideoToVideoJSONBody10Ratio = "1470:630"
 	PostV1VideoToVideoJSONBody10RatioN16641248 PostV1VideoToVideoJSONBody10Ratio = "1664:1248"
 	PostV1VideoToVideoJSONBody10RatioN19201080 PostV1VideoToVideoJSONBody10Ratio = "1920:1080"
+	PostV1VideoToVideoJSONBody10RatioN21603840 PostV1VideoToVideoJSONBody10Ratio = "2160:3840"
 	PostV1VideoToVideoJSONBody10RatioN2206946  PostV1VideoToVideoJSONBody10Ratio = "2206:946"
+	PostV1VideoToVideoJSONBody10RatioN28803840 PostV1VideoToVideoJSONBody10Ratio = "2880:3840"
+	PostV1VideoToVideoJSONBody10RatioN38401646 PostV1VideoToVideoJSONBody10Ratio = "3840:1646"
+	PostV1VideoToVideoJSONBody10RatioN38402160 PostV1VideoToVideoJSONBody10Ratio = "3840:2160"
+	PostV1VideoToVideoJSONBody10RatioN38402880 PostV1VideoToVideoJSONBody10Ratio = "3840:2880"
+	PostV1VideoToVideoJSONBody10RatioN38403840 PostV1VideoToVideoJSONBody10Ratio = "3840:3840"
 	PostV1VideoToVideoJSONBody10RatioN480854   PostV1VideoToVideoJSONBody10Ratio = "480:854"
 	PostV1VideoToVideoJSONBody10RatioN560752   PostV1VideoToVideoJSONBody10Ratio = "560:752"
 	PostV1VideoToVideoJSONBody10RatioN640640   PostV1VideoToVideoJSONBody10Ratio = "640:640"
@@ -22913,7 +23849,19 @@ func (e PostV1VideoToVideoJSONBody10Ratio) Valid() bool {
 		return true
 	case PostV1VideoToVideoJSONBody10RatioN19201080:
 		return true
+	case PostV1VideoToVideoJSONBody10RatioN21603840:
+		return true
 	case PostV1VideoToVideoJSONBody10RatioN2206946:
+		return true
+	case PostV1VideoToVideoJSONBody10RatioN28803840:
+		return true
+	case PostV1VideoToVideoJSONBody10RatioN38401646:
+		return true
+	case PostV1VideoToVideoJSONBody10RatioN38402160:
+		return true
+	case PostV1VideoToVideoJSONBody10RatioN38402880:
+		return true
+	case PostV1VideoToVideoJSONBody10RatioN38403840:
 		return true
 	case PostV1VideoToVideoJSONBody10RatioN480854:
 		return true
@@ -23154,6 +24102,195 @@ func (e PostV1VideoToVideoJSONBody13Ratio) Valid() bool {
 	case PostV1VideoToVideoJSONBody13RatioN940940:
 		return true
 	case PostV1VideoToVideoJSONBody13RatioN960960:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody14Model.
+const (
+	PostV1VideoToVideoJSONBody14ModelHailuo3Highspeed PostV1VideoToVideoJSONBody14Model = "hailuo3_highspeed"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody14Model enum.
+func (e PostV1VideoToVideoJSONBody14Model) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody14ModelHailuo3Highspeed:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody14Ratio.
+const (
+	PostV1VideoToVideoJSONBody14RatioAdaptive PostV1VideoToVideoJSONBody14Ratio = "adaptive"
+	PostV1VideoToVideoJSONBody14RatioN11      PostV1VideoToVideoJSONBody14Ratio = "1:1"
+	PostV1VideoToVideoJSONBody14RatioN169     PostV1VideoToVideoJSONBody14Ratio = "16:9"
+	PostV1VideoToVideoJSONBody14RatioN219     PostV1VideoToVideoJSONBody14Ratio = "21:9"
+	PostV1VideoToVideoJSONBody14RatioN34      PostV1VideoToVideoJSONBody14Ratio = "3:4"
+	PostV1VideoToVideoJSONBody14RatioN43      PostV1VideoToVideoJSONBody14Ratio = "4:3"
+	PostV1VideoToVideoJSONBody14RatioN916     PostV1VideoToVideoJSONBody14Ratio = "9:16"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody14Ratio enum.
+func (e PostV1VideoToVideoJSONBody14Ratio) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody14RatioAdaptive:
+		return true
+	case PostV1VideoToVideoJSONBody14RatioN11:
+		return true
+	case PostV1VideoToVideoJSONBody14RatioN169:
+		return true
+	case PostV1VideoToVideoJSONBody14RatioN219:
+		return true
+	case PostV1VideoToVideoJSONBody14RatioN34:
+		return true
+	case PostV1VideoToVideoJSONBody14RatioN43:
+		return true
+	case PostV1VideoToVideoJSONBody14RatioN916:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody14ReferenceAudioType.
+const (
+	PostV1VideoToVideoJSONBody14ReferenceAudioTypeAudio PostV1VideoToVideoJSONBody14ReferenceAudioType = "audio"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody14ReferenceAudioType enum.
+func (e PostV1VideoToVideoJSONBody14ReferenceAudioType) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody14ReferenceAudioTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody14ReferenceVideosType.
+const (
+	PostV1VideoToVideoJSONBody14ReferenceVideosTypeVideo PostV1VideoToVideoJSONBody14ReferenceVideosType = "video"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody14ReferenceVideosType enum.
+func (e PostV1VideoToVideoJSONBody14ReferenceVideosType) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody14ReferenceVideosTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody14Resolution.
+const (
+	PostV1VideoToVideoJSONBody14ResolutionN480p PostV1VideoToVideoJSONBody14Resolution = "480p"
+	PostV1VideoToVideoJSONBody14ResolutionN768p PostV1VideoToVideoJSONBody14Resolution = "768p"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody14Resolution enum.
+func (e PostV1VideoToVideoJSONBody14Resolution) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody14ResolutionN480p:
+		return true
+	case PostV1VideoToVideoJSONBody14ResolutionN768p:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody15Model.
+const (
+	PostV1VideoToVideoJSONBody15ModelHailuo3Lite PostV1VideoToVideoJSONBody15Model = "hailuo3_lite"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody15Model enum.
+func (e PostV1VideoToVideoJSONBody15Model) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody15ModelHailuo3Lite:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody15Ratio.
+const (
+	PostV1VideoToVideoJSONBody15RatioN11  PostV1VideoToVideoJSONBody15Ratio = "1:1"
+	PostV1VideoToVideoJSONBody15RatioN169 PostV1VideoToVideoJSONBody15Ratio = "16:9"
+	PostV1VideoToVideoJSONBody15RatioN219 PostV1VideoToVideoJSONBody15Ratio = "21:9"
+	PostV1VideoToVideoJSONBody15RatioN34  PostV1VideoToVideoJSONBody15Ratio = "3:4"
+	PostV1VideoToVideoJSONBody15RatioN43  PostV1VideoToVideoJSONBody15Ratio = "4:3"
+	PostV1VideoToVideoJSONBody15RatioN916 PostV1VideoToVideoJSONBody15Ratio = "9:16"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody15Ratio enum.
+func (e PostV1VideoToVideoJSONBody15Ratio) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody15RatioN11:
+		return true
+	case PostV1VideoToVideoJSONBody15RatioN169:
+		return true
+	case PostV1VideoToVideoJSONBody15RatioN219:
+		return true
+	case PostV1VideoToVideoJSONBody15RatioN34:
+		return true
+	case PostV1VideoToVideoJSONBody15RatioN43:
+		return true
+	case PostV1VideoToVideoJSONBody15RatioN916:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody15ReferenceAudioType.
+const (
+	PostV1VideoToVideoJSONBody15ReferenceAudioTypeAudio PostV1VideoToVideoJSONBody15ReferenceAudioType = "audio"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody15ReferenceAudioType enum.
+func (e PostV1VideoToVideoJSONBody15ReferenceAudioType) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody15ReferenceAudioTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody15ReferenceVideosType.
+const (
+	PostV1VideoToVideoJSONBody15ReferenceVideosTypeVideo PostV1VideoToVideoJSONBody15ReferenceVideosType = "video"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody15ReferenceVideosType enum.
+func (e PostV1VideoToVideoJSONBody15ReferenceVideosType) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody15ReferenceVideosTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody15Resolution.
+const (
+	PostV1VideoToVideoJSONBody15ResolutionN480p PostV1VideoToVideoJSONBody15Resolution = "480p"
+	PostV1VideoToVideoJSONBody15ResolutionN768p PostV1VideoToVideoJSONBody15Resolution = "768p"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody15Resolution enum.
+func (e PostV1VideoToVideoJSONBody15Resolution) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody15ResolutionN480p:
+		return true
+	case PostV1VideoToVideoJSONBody15ResolutionN768p:
 		return true
 	default:
 		return false
@@ -23492,13 +24629,13 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason26.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason26INTERNAL PostV1VideoToVideo400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1VideoToVideo400JSONResponseBodyReason26INTERNALRESOURCES PostV1VideoToVideo400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason26 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason26INTERNAL:
+	case PostV1VideoToVideo400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -23507,13 +24644,28 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason27.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason27UNKNOWN PostV1VideoToVideo400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1VideoToVideo400JSONResponseBodyReason27INTERNAL PostV1VideoToVideo400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason27 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason27UNKNOWN:
+	case PostV1VideoToVideo400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideo400JSONResponseBodyReason28.
+const (
+	PostV1VideoToVideo400JSONResponseBodyReason28UNKNOWN PostV1VideoToVideo400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason28 enum.
+func (e PostV1VideoToVideo400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1VideoToVideo400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -23966,13 +25118,13 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason26.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason26INTERNAL PostV1VideoUpscale400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1VideoUpscale400JSONResponseBodyReason26INTERNALRESOURCES PostV1VideoUpscale400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason26 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason26INTERNAL:
+	case PostV1VideoUpscale400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -23981,13 +25133,28 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason27.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason27UNKNOWN PostV1VideoUpscale400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1VideoUpscale400JSONResponseBodyReason27INTERNAL PostV1VideoUpscale400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason27 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason27UNKNOWN:
+	case PostV1VideoUpscale400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoUpscale400JSONResponseBodyReason28.
+const (
+	PostV1VideoUpscale400JSONResponseBodyReason28UNKNOWN PostV1VideoUpscale400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason28 enum.
+func (e PostV1VideoUpscale400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1VideoUpscale400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -24440,13 +25607,13 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason26.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason26INTERNAL PostV1VoiceDubbing400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1VoiceDubbing400JSONResponseBodyReason26INTERNALRESOURCES PostV1VoiceDubbing400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason26 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason26INTERNAL:
+	case PostV1VoiceDubbing400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -24455,13 +25622,28 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason27.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason27UNKNOWN PostV1VoiceDubbing400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1VoiceDubbing400JSONResponseBodyReason27INTERNAL PostV1VoiceDubbing400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason27 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason27UNKNOWN:
+	case PostV1VoiceDubbing400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VoiceDubbing400JSONResponseBodyReason28.
+const (
+	PostV1VoiceDubbing400JSONResponseBodyReason28UNKNOWN PostV1VoiceDubbing400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason28 enum.
+func (e PostV1VoiceDubbing400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1VoiceDubbing400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -24815,13 +25997,13 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason26.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason26INTERNAL PostV1VoiceIsolation400JSONResponseBodyReason26 = "INTERNAL"
+	PostV1VoiceIsolation400JSONResponseBodyReason26INTERNALRESOURCES PostV1VoiceIsolation400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason26 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason26INTERNAL:
+	case PostV1VoiceIsolation400JSONResponseBodyReason26INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -24830,13 +26012,28 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason27.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason27UNKNOWN PostV1VoiceIsolation400JSONResponseBodyReason27 = "UNKNOWN"
+	PostV1VoiceIsolation400JSONResponseBodyReason27INTERNAL PostV1VoiceIsolation400JSONResponseBodyReason27 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason27 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason27UNKNOWN:
+	case PostV1VoiceIsolation400JSONResponseBodyReason27INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VoiceIsolation400JSONResponseBodyReason28.
+const (
+	PostV1VoiceIsolation400JSONResponseBodyReason28UNKNOWN PostV1VoiceIsolation400JSONResponseBodyReason28 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason28 enum.
+func (e PostV1VoiceIsolation400JSONResponseBodyReason28) Valid() bool {
+	switch e {
+	case PostV1VoiceIsolation400JSONResponseBodyReason28UNKNOWN:
 		return true
 	default:
 		return false
@@ -27142,6 +28339,9 @@ type PostV1CharacterPerformance400JSONResponseBodyReason26 string
 // PostV1CharacterPerformance400JSONResponseBodyReason27 defines parameters for PostV1CharacterPerformance.
 type PostV1CharacterPerformance400JSONResponseBodyReason27 string
 
+// PostV1CharacterPerformance400JSONResponseBodyReason28 defines parameters for PostV1CharacterPerformance.
+type PostV1CharacterPerformance400JSONResponseBodyReason28 string
+
 // PostV1CharacterPerformance400JSONResponseBody_Reason defines parameters for PostV1CharacterPerformance.
 type PostV1CharacterPerformance400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -28199,6 +29399,9 @@ type PostV1ImageToVector400JSONResponseBodyReason26 string
 
 // PostV1ImageToVector400JSONResponseBodyReason27 defines parameters for PostV1ImageToVector.
 type PostV1ImageToVector400JSONResponseBodyReason27 string
+
+// PostV1ImageToVector400JSONResponseBodyReason28 defines parameters for PostV1ImageToVector.
+type PostV1ImageToVector400JSONResponseBodyReason28 string
 
 // PostV1ImageToVector400JSONResponseBody_Reason defines parameters for PostV1ImageToVector.
 type PostV1ImageToVector400JSONResponseBody_Reason struct {
@@ -30270,7 +31473,7 @@ type PostV1ImageToVideoJSONBody22 struct {
 	// PromptText An optional text prompt up to 15000 characters describing what should appear in the output.
 	PromptText *string `json:"promptText,omitempty"`
 
-	// Ratio The resolution of the output video. Seedance 2.5 supports 480p, 720p, and 1080p.
+	// Ratio The resolution of the output video. Seedance 2.5 supports 480p, 720p, 1080p, and 4K.
 	Ratio *PostV1ImageToVideoJSONBody22Ratio `json:"ratio,omitempty"`
 
 	// ReferenceAudio An optional array of audio references. The total combined duration must not exceed 30 seconds.
@@ -30679,6 +31882,268 @@ type PostV1ImageToVideoJSONBody_26_References_Uri struct {
 	union json.RawMessage
 }
 
+// PostV1ImageToVideoJSONBody27 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27 struct {
+	Duration    *int                                      `json:"duration,omitempty"`
+	Model       PostV1ImageToVideoJSONBody27Model         `json:"model"`
+	PromptImage PostV1ImageToVideoJSONBody_27_PromptImage `json:"promptImage"`
+
+	// PromptText The text prompt describing the output video.
+	PromptText     string                             `json:"promptText"`
+	Ratio          *PostV1ImageToVideoJSONBody27Ratio `json:"ratio,omitempty"`
+	ReferenceAudio *[]struct {
+		Type PostV1ImageToVideoJSONBody27ReferenceAudioType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded audio. See [our docs](/assets/inputs#audio) on audio inputs for more information.
+		Uri PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri `json:"uri"`
+	} `json:"referenceAudio,omitempty"`
+	ReferenceVideos *[]struct {
+		Type PostV1ImageToVideoJSONBody27ReferenceVideosType `json:"type"`
+
+		// Uri An MP4 or MOV reference video, 2–15 seconds long at 22–62 fps. Frame rates near the limits are normalized to 24–60 fps.
+		Uri PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri `json:"uri"`
+	} `json:"referenceVideos,omitempty"`
+	References *[]struct {
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1ImageToVideoJSONBody_27_References_Uri `json:"uri"`
+	} `json:"references,omitempty"`
+
+	// Resolution The output video resolution.
+	Resolution *PostV1ImageToVideoJSONBody27Resolution `json:"resolution,omitempty"`
+}
+
+// PostV1ImageToVideoJSONBody27Model defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27Model string
+
+// PostV1ImageToVideoJSONBody27PromptImage0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27PromptImage0 struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody27PromptImage00 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27PromptImage00 = string
+
+// PostV1ImageToVideoJSONBody27PromptImage01 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27PromptImage01 = string
+
+// PostV1ImageToVideoJSONBody27PromptImage02 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27PromptImage02 = string
+
+// PostV1ImageToVideoJSONBody27PromptImage1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27PromptImage1 = []struct {
+	Position *PostV1ImageToVideoJSONBody27PromptImage1Position `json:"position,omitempty"`
+
+	// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+	Uri PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri `json:"uri"`
+}
+
+// PostV1ImageToVideoJSONBody27PromptImage1Position defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27PromptImage1Position string
+
+// PostV1ImageToVideoJSONBody27PromptImage1Uri0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27PromptImage1Uri0 = string
+
+// PostV1ImageToVideoJSONBody27PromptImage1Uri1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27PromptImage1Uri1 = string
+
+// PostV1ImageToVideoJSONBody27PromptImage1Uri2 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27PromptImage1Uri2 = string
+
+// PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody_27_PromptImage defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_27_PromptImage struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody27Ratio defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27Ratio string
+
+// PostV1ImageToVideoJSONBody27ReferenceAudioType defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferenceAudioType string
+
+// PostV1ImageToVideoJSONBody27ReferenceAudioUri0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferenceAudioUri0 = string
+
+// PostV1ImageToVideoJSONBody27ReferenceAudioUri1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferenceAudioUri1 = string
+
+// PostV1ImageToVideoJSONBody27ReferenceAudioUri2 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferenceAudioUri2 = string
+
+// PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody27ReferenceVideosType defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferenceVideosType string
+
+// PostV1ImageToVideoJSONBody27ReferenceVideosUri0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferenceVideosUri0 = string
+
+// PostV1ImageToVideoJSONBody27ReferenceVideosUri1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferenceVideosUri1 = string
+
+// PostV1ImageToVideoJSONBody27ReferenceVideosUri2 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferenceVideosUri2 = string
+
+// PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody27ReferencesUri0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferencesUri0 = string
+
+// PostV1ImageToVideoJSONBody27ReferencesUri1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferencesUri1 = string
+
+// PostV1ImageToVideoJSONBody27ReferencesUri2 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27ReferencesUri2 = string
+
+// PostV1ImageToVideoJSONBody_27_References_Uri defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_27_References_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody27Resolution defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody27Resolution string
+
+// PostV1ImageToVideoJSONBody28 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28 struct {
+	Duration    *int                                      `json:"duration,omitempty"`
+	Model       PostV1ImageToVideoJSONBody28Model         `json:"model"`
+	PromptImage PostV1ImageToVideoJSONBody_28_PromptImage `json:"promptImage"`
+
+	// PromptText The text prompt describing the output video.
+	PromptText     string                             `json:"promptText"`
+	Ratio          *PostV1ImageToVideoJSONBody28Ratio `json:"ratio,omitempty"`
+	ReferenceAudio *[]struct {
+		Type PostV1ImageToVideoJSONBody28ReferenceAudioType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded audio. See [our docs](/assets/inputs#audio) on audio inputs for more information.
+		Uri PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri `json:"uri"`
+	} `json:"referenceAudio,omitempty"`
+	ReferenceVideos *[]struct {
+		Type PostV1ImageToVideoJSONBody28ReferenceVideosType `json:"type"`
+
+		// Uri An MP4 or MOV reference video, 2–15 seconds long at 22–62 fps. Frame rates near the limits are normalized to 24–60 fps.
+		Uri PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri `json:"uri"`
+	} `json:"referenceVideos,omitempty"`
+	References *[]struct {
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1ImageToVideoJSONBody_28_References_Uri `json:"uri"`
+	} `json:"references,omitempty"`
+
+	// Resolution The output video resolution.
+	Resolution *PostV1ImageToVideoJSONBody28Resolution `json:"resolution,omitempty"`
+}
+
+// PostV1ImageToVideoJSONBody28Model defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28Model string
+
+// PostV1ImageToVideoJSONBody28PromptImage0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28PromptImage0 struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody28PromptImage00 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28PromptImage00 = string
+
+// PostV1ImageToVideoJSONBody28PromptImage01 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28PromptImage01 = string
+
+// PostV1ImageToVideoJSONBody28PromptImage02 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28PromptImage02 = string
+
+// PostV1ImageToVideoJSONBody28PromptImage1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28PromptImage1 = []struct {
+	Position *PostV1ImageToVideoJSONBody28PromptImage1Position `json:"position,omitempty"`
+
+	// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+	Uri PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri `json:"uri"`
+}
+
+// PostV1ImageToVideoJSONBody28PromptImage1Position defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28PromptImage1Position string
+
+// PostV1ImageToVideoJSONBody28PromptImage1Uri0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28PromptImage1Uri0 = string
+
+// PostV1ImageToVideoJSONBody28PromptImage1Uri1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28PromptImage1Uri1 = string
+
+// PostV1ImageToVideoJSONBody28PromptImage1Uri2 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28PromptImage1Uri2 = string
+
+// PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody_28_PromptImage defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_28_PromptImage struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody28Ratio defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28Ratio string
+
+// PostV1ImageToVideoJSONBody28ReferenceAudioType defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferenceAudioType string
+
+// PostV1ImageToVideoJSONBody28ReferenceAudioUri0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferenceAudioUri0 = string
+
+// PostV1ImageToVideoJSONBody28ReferenceAudioUri1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferenceAudioUri1 = string
+
+// PostV1ImageToVideoJSONBody28ReferenceAudioUri2 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferenceAudioUri2 = string
+
+// PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody28ReferenceVideosType defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferenceVideosType string
+
+// PostV1ImageToVideoJSONBody28ReferenceVideosUri0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferenceVideosUri0 = string
+
+// PostV1ImageToVideoJSONBody28ReferenceVideosUri1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferenceVideosUri1 = string
+
+// PostV1ImageToVideoJSONBody28ReferenceVideosUri2 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferenceVideosUri2 = string
+
+// PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody28ReferencesUri0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferencesUri0 = string
+
+// PostV1ImageToVideoJSONBody28ReferencesUri1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferencesUri1 = string
+
+// PostV1ImageToVideoJSONBody28ReferencesUri2 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28ReferencesUri2 = string
+
+// PostV1ImageToVideoJSONBody_28_References_Uri defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_28_References_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody28Resolution defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody28Resolution string
+
 // PostV1ImageToVideo400JSONResponseBodyIssuesPath0 defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideo400JSONResponseBodyIssuesPath0 = string
 
@@ -30786,6 +32251,9 @@ type PostV1ImageToVideo400JSONResponseBodyReason26 string
 
 // PostV1ImageToVideo400JSONResponseBodyReason27 defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideo400JSONResponseBodyReason27 string
+
+// PostV1ImageToVideo400JSONResponseBodyReason28 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideo400JSONResponseBodyReason28 string
 
 // PostV1ImageToVideo400JSONResponseBody_Reason defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideo400JSONResponseBody_Reason struct {
@@ -30949,6 +32417,9 @@ type PostV1ImageUpscale400JSONResponseBodyReason26 string
 
 // PostV1ImageUpscale400JSONResponseBodyReason27 defines parameters for PostV1ImageUpscale.
 type PostV1ImageUpscale400JSONResponseBodyReason27 string
+
+// PostV1ImageUpscale400JSONResponseBodyReason28 defines parameters for PostV1ImageUpscale.
+type PostV1ImageUpscale400JSONResponseBodyReason28 string
 
 // PostV1ImageUpscale400JSONResponseBody_Reason defines parameters for PostV1ImageUpscale.
 type PostV1ImageUpscale400JSONResponseBody_Reason struct {
@@ -31742,6 +33213,9 @@ type PostV1RecipesAdLocalization400JSONResponseBodyReason26 string
 // PostV1RecipesAdLocalization400JSONResponseBodyReason27 defines parameters for PostV1RecipesAdLocalization.
 type PostV1RecipesAdLocalization400JSONResponseBodyReason27 string
 
+// PostV1RecipesAdLocalization400JSONResponseBodyReason28 defines parameters for PostV1RecipesAdLocalization.
+type PostV1RecipesAdLocalization400JSONResponseBodyReason28 string
+
 // PostV1RecipesAdLocalization400JSONResponseBody_Reason defines parameters for PostV1RecipesAdLocalization.
 type PostV1RecipesAdLocalization400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -31895,6 +33369,9 @@ type PostV1RecipesMarketingStockImage400JSONResponseBodyReason26 string
 
 // PostV1RecipesMarketingStockImage400JSONResponseBodyReason27 defines parameters for PostV1RecipesMarketingStockImage.
 type PostV1RecipesMarketingStockImage400JSONResponseBodyReason27 string
+
+// PostV1RecipesMarketingStockImage400JSONResponseBodyReason28 defines parameters for PostV1RecipesMarketingStockImage.
+type PostV1RecipesMarketingStockImage400JSONResponseBodyReason28 string
 
 // PostV1RecipesMarketingStockImage400JSONResponseBody_Reason defines parameters for PostV1RecipesMarketingStockImage.
 type PostV1RecipesMarketingStockImage400JSONResponseBody_Reason struct {
@@ -32126,6 +33603,9 @@ type PostV1RecipesMultiShotVideo400JSONResponseBodyReason26 string
 // PostV1RecipesMultiShotVideo400JSONResponseBodyReason27 defines parameters for PostV1RecipesMultiShotVideo.
 type PostV1RecipesMultiShotVideo400JSONResponseBodyReason27 string
 
+// PostV1RecipesMultiShotVideo400JSONResponseBodyReason28 defines parameters for PostV1RecipesMultiShotVideo.
+type PostV1RecipesMultiShotVideo400JSONResponseBodyReason28 string
+
 // PostV1RecipesMultiShotVideo400JSONResponseBody_Reason defines parameters for PostV1RecipesMultiShotVideo.
 type PostV1RecipesMultiShotVideo400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -32306,6 +33786,9 @@ type PostV1RecipesProductAd400JSONResponseBodyReason26 string
 // PostV1RecipesProductAd400JSONResponseBodyReason27 defines parameters for PostV1RecipesProductAd.
 type PostV1RecipesProductAd400JSONResponseBodyReason27 string
 
+// PostV1RecipesProductAd400JSONResponseBodyReason28 defines parameters for PostV1RecipesProductAd.
+type PostV1RecipesProductAd400JSONResponseBodyReason28 string
+
 // PostV1RecipesProductAd400JSONResponseBody_Reason defines parameters for PostV1RecipesProductAd.
 type PostV1RecipesProductAd400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -32450,6 +33933,9 @@ type PostV1RecipesProductCampaignImage400JSONResponseBodyReason26 string
 
 // PostV1RecipesProductCampaignImage400JSONResponseBodyReason27 defines parameters for PostV1RecipesProductCampaignImage.
 type PostV1RecipesProductCampaignImage400JSONResponseBodyReason27 string
+
+// PostV1RecipesProductCampaignImage400JSONResponseBodyReason28 defines parameters for PostV1RecipesProductCampaignImage.
+type PostV1RecipesProductCampaignImage400JSONResponseBodyReason28 string
 
 // PostV1RecipesProductCampaignImage400JSONResponseBody_Reason defines parameters for PostV1RecipesProductCampaignImage.
 type PostV1RecipesProductCampaignImage400JSONResponseBody_Reason struct {
@@ -32651,6 +34137,9 @@ type PostV1RecipesProductSwap400JSONResponseBodyReason26 string
 // PostV1RecipesProductSwap400JSONResponseBodyReason27 defines parameters for PostV1RecipesProductSwap.
 type PostV1RecipesProductSwap400JSONResponseBodyReason27 string
 
+// PostV1RecipesProductSwap400JSONResponseBodyReason28 defines parameters for PostV1RecipesProductSwap.
+type PostV1RecipesProductSwap400JSONResponseBodyReason28 string
+
 // PostV1RecipesProductSwap400JSONResponseBody_Reason defines parameters for PostV1RecipesProductSwap.
 type PostV1RecipesProductSwap400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -32830,6 +34319,9 @@ type PostV1RecipesProductUgc400JSONResponseBodyReason26 string
 
 // PostV1RecipesProductUgc400JSONResponseBodyReason27 defines parameters for PostV1RecipesProductUgc.
 type PostV1RecipesProductUgc400JSONResponseBodyReason27 string
+
+// PostV1RecipesProductUgc400JSONResponseBodyReason28 defines parameters for PostV1RecipesProductUgc.
+type PostV1RecipesProductUgc400JSONResponseBodyReason28 string
 
 // PostV1RecipesProductUgc400JSONResponseBody_Reason defines parameters for PostV1RecipesProductUgc.
 type PostV1RecipesProductUgc400JSONResponseBody_Reason struct {
@@ -33245,6 +34737,9 @@ type PostV1SoundEffect400JSONResponseBodyReason26 string
 // PostV1SoundEffect400JSONResponseBodyReason27 defines parameters for PostV1SoundEffect.
 type PostV1SoundEffect400JSONResponseBodyReason27 string
 
+// PostV1SoundEffect400JSONResponseBodyReason28 defines parameters for PostV1SoundEffect.
+type PostV1SoundEffect400JSONResponseBodyReason28 string
+
 // PostV1SoundEffect400JSONResponseBody_Reason defines parameters for PostV1SoundEffect.
 type PostV1SoundEffect400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -33451,6 +34946,9 @@ type PostV1SpeechToSpeech400JSONResponseBodyReason26 string
 // PostV1SpeechToSpeech400JSONResponseBodyReason27 defines parameters for PostV1SpeechToSpeech.
 type PostV1SpeechToSpeech400JSONResponseBodyReason27 string
 
+// PostV1SpeechToSpeech400JSONResponseBodyReason28 defines parameters for PostV1SpeechToSpeech.
+type PostV1SpeechToSpeech400JSONResponseBodyReason28 string
+
 // PostV1SpeechToSpeech400JSONResponseBody_Reason defines parameters for PostV1SpeechToSpeech.
 type PostV1SpeechToSpeech400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -33571,6 +35069,24 @@ type GetV1TasksId200JSONResponseBody5 struct {
 
 	// Id The ID of the task being returned.
 	Id openapi_types.UUID `json:"id"`
+
+	// Layers Layer details for successful Seedream 5 Pro Layers tasks. Each URI matches the output URL at the same index.
+	Layers *[]struct {
+		// BoundingBox The layer bounds in absolute and normalized coordinates, when returned by the model provider.
+		BoundingBox *struct {
+			Absolute   []float64 `json:"absolute"`
+			Normalized []float64 `json:"normalized"`
+		} `json:"boundingBox,omitempty"`
+
+		// Name The layer filename.
+		Name *string `json:"name,omitempty"`
+
+		// Uri An ephemeral URL for this layer, matching output at the same index.
+		Uri string `json:"uri"`
+
+		// ZIndex The layer stacking order returned by the model provider.
+		ZIndex *float64 `json:"zIndex,omitempty"`
+	} `json:"layers,omitempty"`
 
 	// Output An array of URLs that return the output of the task. These URLs will expire within 24-48 hours; fetch the task again to get fresh URLs. It is expected that you download the assets at these URLs and store them in your own storage system.
 	Output []string                               `json:"output"`
@@ -34606,12 +36122,21 @@ type PostV1TextToImageJSONBody_20_ReferenceImages_Uri struct {
 
 // PostV1TextToImageJSONBody21 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody21 struct {
-	// Background Background treatment. Defaults to `auto`, which lets the model pick. Use `transparent` to generate a PNG with an alpha-channel background.
+	// Background Background treatment. Defaults to `auto`, which lets the model pick. Use `transparent` for an alpha-channel background, which `jpeg` output does not support.
 	Background *PostV1TextToImageJSONBody21Background `json:"background,omitempty"`
-	Model      PostV1TextToImageJSONBody21Model       `json:"model"`
+
+	// FrameCount Number of animation frames. Only supported for GIF output.
+	FrameCount *int `json:"frameCount,omitempty"`
+
+	// FrameDurationMs Duration of each animation frame in milliseconds. Only supported for GIF output.
+	FrameDurationMs *int                             `json:"frameDurationMs,omitempty"`
+	Model           PostV1TextToImageJSONBody21Model `json:"model"`
 
 	// OutputCount The number of images to generate (1-10). Increasing this number will affect the number of credits consumed by the generation.
 	OutputCount *int `json:"outputCount,omitempty"`
+
+	// OutputFormat Output format. Defaults to PNG. JPEG and WebP produce smaller files; JPEG cannot have a transparent background. GIF and SVG cannot use reference images; GIF requires ratio auto.
+	OutputFormat *PostV1TextToImageJSONBody21OutputFormat `json:"outputFormat,omitempty"`
 
 	// PromptText A non-empty string describing the desired image.
 	PromptText string `json:"promptText"`
@@ -34641,6 +36166,9 @@ type PostV1TextToImageJSONBody21Background string
 // PostV1TextToImageJSONBody21Model defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody21Model string
 
+// PostV1TextToImageJSONBody21OutputFormat defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody21OutputFormat string
+
 // PostV1TextToImageJSONBody21Quality defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody21Quality string
 
@@ -34666,12 +36194,21 @@ type PostV1TextToImageJSONBody_21_ReferenceImages_Uri struct {
 
 // PostV1TextToImageJSONBody22 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody22 struct {
-	// Background Background treatment. Defaults to `auto`, which lets the model pick. Use `transparent` to generate a PNG with an alpha-channel background.
+	// Background Background treatment. Defaults to `auto`, which lets the model pick. Use `transparent` for an alpha-channel background, which `jpeg` output does not support.
 	Background *PostV1TextToImageJSONBody22Background `json:"background,omitempty"`
-	Model      PostV1TextToImageJSONBody22Model       `json:"model"`
+
+	// FrameCount Number of animation frames. Only supported for GIF output.
+	FrameCount *int `json:"frameCount,omitempty"`
+
+	// FrameDurationMs Duration of each animation frame in milliseconds. Only supported for GIF output.
+	FrameDurationMs *int                             `json:"frameDurationMs,omitempty"`
+	Model           PostV1TextToImageJSONBody22Model `json:"model"`
 
 	// OutputCount The number of images to generate (1-10). Increasing this number will affect the number of credits consumed by the generation.
 	OutputCount *int `json:"outputCount,omitempty"`
+
+	// OutputFormat Output format. Defaults to PNG. JPEG and WebP produce smaller files; JPEG cannot have a transparent background. GIF and SVG cannot use reference images; GIF requires ratio auto.
+	OutputFormat *PostV1TextToImageJSONBody22OutputFormat `json:"outputFormat,omitempty"`
 
 	// PromptText A non-empty string describing the desired image.
 	PromptText string `json:"promptText"`
@@ -34701,6 +36238,9 @@ type PostV1TextToImageJSONBody22Background string
 // PostV1TextToImageJSONBody22Model defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody22Model string
 
+// PostV1TextToImageJSONBody22OutputFormat defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody22OutputFormat string
+
 // PostV1TextToImageJSONBody22Quality defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody22Quality string
 
@@ -34728,27 +36268,33 @@ type PostV1TextToImageJSONBody_22_ReferenceImages_Uri struct {
 type PostV1TextToImageJSONBody23 struct {
 	Model PostV1TextToImageJSONBody23Model `json:"model"`
 
-	// PromptText This should describe in detail what should appear in the output.
-	PromptText string `json:"promptText"`
+	// OptimizePromptMode Prompt optimization: standard prioritizes quality; fast reduces generation time. Defaults to standard.
+	OptimizePromptMode *PostV1TextToImageJSONBody23OptimizePromptMode `json:"optimizePromptMode,omitempty"`
 
-	// Ratio The resolution of the output image.
-	Ratio PostV1TextToImageJSONBody23Ratio `json:"ratio"`
+	// OutputFormat Base image format; defaults to png. Separated layers always use PNG with transparency.
+	OutputFormat *PostV1TextToImageJSONBody23OutputFormat `json:"outputFormat,omitempty"`
 
-	// ReferenceImages An array of up to three images to be used as references for the generated image output.
-	ReferenceImages *[]struct {
-		// Tag A tag to identify the reference image. This is used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores (no hyphens or other punctuation).
-		Tag *string `json:"tag,omitempty"`
+	// PromptText Optional instructions describing which elements to separate. Omit to split the image automatically.
+	PromptText *string `json:"promptText,omitempty"`
 
+	// ReferenceImages The image to split into editable layers. Layer ordering and positioning are returned in the completed task’s layers field.
+	ReferenceImages []struct {
 		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
 		Uri PostV1TextToImageJSONBody_23_ReferenceImages_Uri `json:"uri"`
-	} `json:"referenceImages,omitempty"`
+	} `json:"referenceImages"`
+
+	// Resolution Output resolution tier. Defaults to auto, which adapts to the input image. The base image and layers preserve their respective aspect ratios.
+	Resolution *PostV1TextToImageJSONBody23Resolution `json:"resolution,omitempty"`
 }
 
 // PostV1TextToImageJSONBody23Model defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody23Model string
 
-// PostV1TextToImageJSONBody23Ratio defines parameters for PostV1TextToImage.
-type PostV1TextToImageJSONBody23Ratio string
+// PostV1TextToImageJSONBody23OptimizePromptMode defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody23OptimizePromptMode string
+
+// PostV1TextToImageJSONBody23OutputFormat defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody23OutputFormat string
 
 // PostV1TextToImageJSONBody23ReferenceImagesUri0 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody23ReferenceImagesUri0 = string
@@ -34761,6 +36307,49 @@ type PostV1TextToImageJSONBody23ReferenceImagesUri2 = string
 
 // PostV1TextToImageJSONBody_23_ReferenceImages_Uri defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody_23_ReferenceImages_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToImageJSONBody23Resolution defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody23Resolution string
+
+// PostV1TextToImageJSONBody24 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody24 struct {
+	Model PostV1TextToImageJSONBody24Model `json:"model"`
+
+	// PromptText This should describe in detail what should appear in the output.
+	PromptText string `json:"promptText"`
+
+	// Ratio The resolution of the output image.
+	Ratio PostV1TextToImageJSONBody24Ratio `json:"ratio"`
+
+	// ReferenceImages An array of up to three images to be used as references for the generated image output.
+	ReferenceImages *[]struct {
+		// Tag A tag to identify the reference image. This is used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores (no hyphens or other punctuation).
+		Tag *string `json:"tag,omitempty"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1TextToImageJSONBody_24_ReferenceImages_Uri `json:"uri"`
+	} `json:"referenceImages,omitempty"`
+}
+
+// PostV1TextToImageJSONBody24Model defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody24Model string
+
+// PostV1TextToImageJSONBody24Ratio defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody24Ratio string
+
+// PostV1TextToImageJSONBody24ReferenceImagesUri0 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody24ReferenceImagesUri0 = string
+
+// PostV1TextToImageJSONBody24ReferenceImagesUri1 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody24ReferenceImagesUri1 = string
+
+// PostV1TextToImageJSONBody24ReferenceImagesUri2 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody24ReferenceImagesUri2 = string
+
+// PostV1TextToImageJSONBody_24_ReferenceImages_Uri defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody_24_ReferenceImages_Uri struct {
 	union json.RawMessage
 }
 
@@ -34871,6 +36460,9 @@ type PostV1TextToImage400JSONResponseBodyReason26 string
 
 // PostV1TextToImage400JSONResponseBodyReason27 defines parameters for PostV1TextToImage.
 type PostV1TextToImage400JSONResponseBodyReason27 string
+
+// PostV1TextToImage400JSONResponseBodyReason28 defines parameters for PostV1TextToImage.
+type PostV1TextToImage400JSONResponseBodyReason28 string
 
 // PostV1TextToImage400JSONResponseBody_Reason defines parameters for PostV1TextToImage.
 type PostV1TextToImage400JSONResponseBody_Reason struct {
@@ -35006,6 +36598,9 @@ type PostV1TextToMusic400JSONResponseBodyReason26 string
 // PostV1TextToMusic400JSONResponseBodyReason27 defines parameters for PostV1TextToMusic.
 type PostV1TextToMusic400JSONResponseBodyReason27 string
 
+// PostV1TextToMusic400JSONResponseBodyReason28 defines parameters for PostV1TextToMusic.
+type PostV1TextToMusic400JSONResponseBodyReason28 string
+
 // PostV1TextToMusic400JSONResponseBody_Reason defines parameters for PostV1TextToMusic.
 type PostV1TextToMusic400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -35124,6 +36719,16 @@ type PostV1TextToSpeechJSONBody1Voice0PresetId string
 // PostV1TextToSpeechJSONBody1Voice0Type defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeechJSONBody1Voice0Type string
 
+// PostV1TextToSpeechJSONBody1Voice1 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody1Voice1 struct {
+	// Id The ID of a custom voice created via the Voices API.
+	Id   openapi_types.UUID                    `json:"id"`
+	Type PostV1TextToSpeechJSONBody1Voice1Type `json:"type"`
+}
+
+// PostV1TextToSpeechJSONBody1Voice1Type defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody1Voice1Type string
+
 // PostV1TextToSpeechJSONBody_1_Voice defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeechJSONBody_1_Voice struct {
 	union json.RawMessage
@@ -35155,6 +36760,16 @@ type PostV1TextToSpeechJSONBody2Voice0PresetId string
 
 // PostV1TextToSpeechJSONBody2Voice0Type defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeechJSONBody2Voice0Type string
+
+// PostV1TextToSpeechJSONBody2Voice1 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody2Voice1 struct {
+	// Id The ID of a custom voice created via the Voices API.
+	Id   openapi_types.UUID                    `json:"id"`
+	Type PostV1TextToSpeechJSONBody2Voice1Type `json:"type"`
+}
+
+// PostV1TextToSpeechJSONBody2Voice1Type defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody2Voice1Type string
 
 // PostV1TextToSpeechJSONBody_2_Voice defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeechJSONBody_2_Voice struct {
@@ -35213,6 +36828,16 @@ type PostV1TextToSpeechJSONBody3Voice0PresetId string
 
 // PostV1TextToSpeechJSONBody3Voice0Type defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeechJSONBody3Voice0Type string
+
+// PostV1TextToSpeechJSONBody3Voice1 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody3Voice1 struct {
+	// Id The ID of a custom voice created via the Voices API.
+	Id   openapi_types.UUID                    `json:"id"`
+	Type PostV1TextToSpeechJSONBody3Voice1Type `json:"type"`
+}
+
+// PostV1TextToSpeechJSONBody3Voice1Type defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody3Voice1Type string
 
 // PostV1TextToSpeechJSONBody_3_Voice defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeechJSONBody_3_Voice struct {
@@ -35326,6 +36951,9 @@ type PostV1TextToSpeech400JSONResponseBodyReason26 string
 
 // PostV1TextToSpeech400JSONResponseBodyReason27 defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeech400JSONResponseBodyReason27 string
+
+// PostV1TextToSpeech400JSONResponseBodyReason28 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeech400JSONResponseBodyReason28 string
 
 // PostV1TextToSpeech400JSONResponseBody_Reason defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeech400JSONResponseBody_Reason struct {
@@ -36552,7 +38180,7 @@ type PostV1TextToVideoJSONBody21 struct {
 	// PromptText An optional text prompt up to 15000 characters describing what should appear in the output.
 	PromptText *string `json:"promptText,omitempty"`
 
-	// Ratio The resolution of the output video. Seedance 2.5 supports 480p, 720p, and 1080p. Defaults to `1280:720`.
+	// Ratio The resolution of the output video. Seedance 2.5 supports 480p, 720p, 1080p, and 4K. Defaults to `1280:720`.
 	Ratio *PostV1TextToVideoJSONBody21Ratio `json:"ratio,omitempty"`
 
 	// ReferenceAudio An optional array of audio references. The total combined duration must be less than 30 seconds.
@@ -36831,6 +38459,178 @@ type PostV1TextToVideoJSONBody_25_References_Uri struct {
 	union json.RawMessage
 }
 
+// PostV1TextToVideoJSONBody26 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26 struct {
+	Duration *int                             `json:"duration,omitempty"`
+	Model    PostV1TextToVideoJSONBody26Model `json:"model"`
+
+	// PromptText The text prompt describing the output video.
+	PromptText     string                            `json:"promptText"`
+	Ratio          *PostV1TextToVideoJSONBody26Ratio `json:"ratio,omitempty"`
+	ReferenceAudio *[]struct {
+		Type PostV1TextToVideoJSONBody26ReferenceAudioType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded audio. See [our docs](/assets/inputs#audio) on audio inputs for more information.
+		Uri PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri `json:"uri"`
+	} `json:"referenceAudio,omitempty"`
+	ReferenceVideos *[]struct {
+		Type PostV1TextToVideoJSONBody26ReferenceVideosType `json:"type"`
+
+		// Uri An MP4 or MOV reference video, 2–15 seconds long at 22–62 fps. Frame rates near the limits are normalized to 24–60 fps.
+		Uri PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri `json:"uri"`
+	} `json:"referenceVideos,omitempty"`
+	References *[]struct {
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1TextToVideoJSONBody_26_References_Uri `json:"uri"`
+	} `json:"references,omitempty"`
+
+	// Resolution The output video resolution.
+	Resolution *PostV1TextToVideoJSONBody26Resolution `json:"resolution,omitempty"`
+}
+
+// PostV1TextToVideoJSONBody26Model defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26Model string
+
+// PostV1TextToVideoJSONBody26Ratio defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26Ratio string
+
+// PostV1TextToVideoJSONBody26ReferenceAudioType defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferenceAudioType string
+
+// PostV1TextToVideoJSONBody26ReferenceAudioUri0 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferenceAudioUri0 = string
+
+// PostV1TextToVideoJSONBody26ReferenceAudioUri1 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferenceAudioUri1 = string
+
+// PostV1TextToVideoJSONBody26ReferenceAudioUri2 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferenceAudioUri2 = string
+
+// PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToVideoJSONBody26ReferenceVideosType defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferenceVideosType string
+
+// PostV1TextToVideoJSONBody26ReferenceVideosUri0 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferenceVideosUri0 = string
+
+// PostV1TextToVideoJSONBody26ReferenceVideosUri1 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferenceVideosUri1 = string
+
+// PostV1TextToVideoJSONBody26ReferenceVideosUri2 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferenceVideosUri2 = string
+
+// PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToVideoJSONBody26ReferencesUri0 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferencesUri0 = string
+
+// PostV1TextToVideoJSONBody26ReferencesUri1 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferencesUri1 = string
+
+// PostV1TextToVideoJSONBody26ReferencesUri2 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26ReferencesUri2 = string
+
+// PostV1TextToVideoJSONBody_26_References_Uri defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody_26_References_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToVideoJSONBody26Resolution defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody26Resolution string
+
+// PostV1TextToVideoJSONBody27 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27 struct {
+	Duration *int                             `json:"duration,omitempty"`
+	Model    PostV1TextToVideoJSONBody27Model `json:"model"`
+
+	// PromptText The text prompt describing the output video.
+	PromptText     string                            `json:"promptText"`
+	Ratio          *PostV1TextToVideoJSONBody27Ratio `json:"ratio,omitempty"`
+	ReferenceAudio *[]struct {
+		Type PostV1TextToVideoJSONBody27ReferenceAudioType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded audio. See [our docs](/assets/inputs#audio) on audio inputs for more information.
+		Uri PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri `json:"uri"`
+	} `json:"referenceAudio,omitempty"`
+	ReferenceVideos *[]struct {
+		Type PostV1TextToVideoJSONBody27ReferenceVideosType `json:"type"`
+
+		// Uri An MP4 or MOV reference video, 2–15 seconds long at 22–62 fps. Frame rates near the limits are normalized to 24–60 fps.
+		Uri PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri `json:"uri"`
+	} `json:"referenceVideos,omitempty"`
+	References *[]struct {
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1TextToVideoJSONBody_27_References_Uri `json:"uri"`
+	} `json:"references,omitempty"`
+
+	// Resolution The output video resolution.
+	Resolution *PostV1TextToVideoJSONBody27Resolution `json:"resolution,omitempty"`
+}
+
+// PostV1TextToVideoJSONBody27Model defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27Model string
+
+// PostV1TextToVideoJSONBody27Ratio defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27Ratio string
+
+// PostV1TextToVideoJSONBody27ReferenceAudioType defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferenceAudioType string
+
+// PostV1TextToVideoJSONBody27ReferenceAudioUri0 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferenceAudioUri0 = string
+
+// PostV1TextToVideoJSONBody27ReferenceAudioUri1 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferenceAudioUri1 = string
+
+// PostV1TextToVideoJSONBody27ReferenceAudioUri2 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferenceAudioUri2 = string
+
+// PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToVideoJSONBody27ReferenceVideosType defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferenceVideosType string
+
+// PostV1TextToVideoJSONBody27ReferenceVideosUri0 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferenceVideosUri0 = string
+
+// PostV1TextToVideoJSONBody27ReferenceVideosUri1 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferenceVideosUri1 = string
+
+// PostV1TextToVideoJSONBody27ReferenceVideosUri2 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferenceVideosUri2 = string
+
+// PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToVideoJSONBody27ReferencesUri0 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferencesUri0 = string
+
+// PostV1TextToVideoJSONBody27ReferencesUri1 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferencesUri1 = string
+
+// PostV1TextToVideoJSONBody27ReferencesUri2 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27ReferencesUri2 = string
+
+// PostV1TextToVideoJSONBody_27_References_Uri defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody_27_References_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToVideoJSONBody27Resolution defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody27Resolution string
+
 // PostV1TextToVideo400JSONResponseBodyIssuesPath0 defines parameters for PostV1TextToVideo.
 type PostV1TextToVideo400JSONResponseBodyIssuesPath0 = string
 
@@ -36938,6 +38738,9 @@ type PostV1TextToVideo400JSONResponseBodyReason26 string
 
 // PostV1TextToVideo400JSONResponseBodyReason27 defines parameters for PostV1TextToVideo.
 type PostV1TextToVideo400JSONResponseBodyReason27 string
+
+// PostV1TextToVideo400JSONResponseBodyReason28 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideo400JSONResponseBodyReason28 string
 
 // PostV1TextToVideo400JSONResponseBody_Reason defines parameters for PostV1TextToVideo.
 type PostV1TextToVideo400JSONResponseBody_Reason struct {
@@ -37116,6 +38919,9 @@ type PostV1VideoToAudio400JSONResponseBodyReason26 string
 // PostV1VideoToAudio400JSONResponseBodyReason27 defines parameters for PostV1VideoToAudio.
 type PostV1VideoToAudio400JSONResponseBodyReason27 string
 
+// PostV1VideoToAudio400JSONResponseBodyReason28 defines parameters for PostV1VideoToAudio.
+type PostV1VideoToAudio400JSONResponseBodyReason28 string
+
 // PostV1VideoToAudio400JSONResponseBody_Reason defines parameters for PostV1VideoToAudio.
 type PostV1VideoToAudio400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -37270,6 +39076,9 @@ type PostV1VideoToHdr400JSONResponseBodyReason26 string
 
 // PostV1VideoToHdr400JSONResponseBodyReason27 defines parameters for PostV1VideoToHdr.
 type PostV1VideoToHdr400JSONResponseBodyReason27 string
+
+// PostV1VideoToHdr400JSONResponseBodyReason28 defines parameters for PostV1VideoToHdr.
+type PostV1VideoToHdr400JSONResponseBodyReason28 string
 
 // PostV1VideoToHdr400JSONResponseBody_Reason defines parameters for PostV1VideoToHdr.
 type PostV1VideoToHdr400JSONResponseBody_Reason struct {
@@ -38347,7 +40156,7 @@ type PostV1VideoToVideoJSONBody10 struct {
 	// PromptVideo The input video to use as a reference for the output video. If additional video references are provided, the combined duration across all video references must not exceed 30 seconds.
 	PromptVideo PostV1VideoToVideoJSONBody_10_PromptVideo `json:"promptVideo"`
 
-	// Ratio The resolution of the output video. Seedance 2.5 supports 480p, 720p, and 1080p.
+	// Ratio The resolution of the output video. Seedance 2.5 supports 480p, 720p, 1080p, and 4K.
 	Ratio *PostV1VideoToVideoJSONBody10Ratio `json:"ratio,omitempty"`
 
 	// ReferenceAudio An optional array of audio references. The total combined duration must be less than 30 seconds.
@@ -38666,6 +40475,212 @@ type PostV1VideoToVideoJSONBody_13_VideoUri struct {
 	union json.RawMessage
 }
 
+// PostV1VideoToVideoJSONBody14 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14 struct {
+	Duration *int                              `json:"duration,omitempty"`
+	Model    PostV1VideoToVideoJSONBody14Model `json:"model"`
+
+	// PromptText The text prompt describing the output video.
+	PromptText string `json:"promptText"`
+
+	// PromptVideo An MP4 or MOV reference video, 2–15 seconds long at 22–62 fps. Frame rates near the limits are normalized to 24–60 fps.
+	PromptVideo    PostV1VideoToVideoJSONBody_14_PromptVideo `json:"promptVideo"`
+	Ratio          *PostV1VideoToVideoJSONBody14Ratio        `json:"ratio,omitempty"`
+	ReferenceAudio *[]struct {
+		Type PostV1VideoToVideoJSONBody14ReferenceAudioType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded audio. See [our docs](/assets/inputs#audio) on audio inputs for more information.
+		Uri PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri `json:"uri"`
+	} `json:"referenceAudio,omitempty"`
+	ReferenceVideos *[]struct {
+		Type PostV1VideoToVideoJSONBody14ReferenceVideosType `json:"type"`
+
+		// Uri An MP4 or MOV reference video, 2–15 seconds long at 22–62 fps. Frame rates near the limits are normalized to 24–60 fps.
+		Uri PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri `json:"uri"`
+	} `json:"referenceVideos,omitempty"`
+	References *[]struct {
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1VideoToVideoJSONBody_14_References_Uri `json:"uri"`
+	} `json:"references,omitempty"`
+
+	// Resolution The output video resolution.
+	Resolution *PostV1VideoToVideoJSONBody14Resolution `json:"resolution,omitempty"`
+}
+
+// PostV1VideoToVideoJSONBody14Model defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14Model string
+
+// PostV1VideoToVideoJSONBody14PromptVideo0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14PromptVideo0 = string
+
+// PostV1VideoToVideoJSONBody14PromptVideo1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14PromptVideo1 = string
+
+// PostV1VideoToVideoJSONBody14PromptVideo2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14PromptVideo2 = string
+
+// PostV1VideoToVideoJSONBody_14_PromptVideo defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_14_PromptVideo struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody14Ratio defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14Ratio string
+
+// PostV1VideoToVideoJSONBody14ReferenceAudioType defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferenceAudioType string
+
+// PostV1VideoToVideoJSONBody14ReferenceAudioUri0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferenceAudioUri0 = string
+
+// PostV1VideoToVideoJSONBody14ReferenceAudioUri1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferenceAudioUri1 = string
+
+// PostV1VideoToVideoJSONBody14ReferenceAudioUri2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferenceAudioUri2 = string
+
+// PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody14ReferenceVideosType defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferenceVideosType string
+
+// PostV1VideoToVideoJSONBody14ReferenceVideosUri0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferenceVideosUri0 = string
+
+// PostV1VideoToVideoJSONBody14ReferenceVideosUri1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferenceVideosUri1 = string
+
+// PostV1VideoToVideoJSONBody14ReferenceVideosUri2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferenceVideosUri2 = string
+
+// PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody14ReferencesUri0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferencesUri0 = string
+
+// PostV1VideoToVideoJSONBody14ReferencesUri1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferencesUri1 = string
+
+// PostV1VideoToVideoJSONBody14ReferencesUri2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14ReferencesUri2 = string
+
+// PostV1VideoToVideoJSONBody_14_References_Uri defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_14_References_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody14Resolution defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody14Resolution string
+
+// PostV1VideoToVideoJSONBody15 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15 struct {
+	Duration *int                              `json:"duration,omitempty"`
+	Model    PostV1VideoToVideoJSONBody15Model `json:"model"`
+
+	// PromptText The text prompt describing the output video.
+	PromptText string `json:"promptText"`
+
+	// PromptVideo An MP4 or MOV reference video, 2–15 seconds long at 22–62 fps. Frame rates near the limits are normalized to 24–60 fps.
+	PromptVideo    PostV1VideoToVideoJSONBody_15_PromptVideo `json:"promptVideo"`
+	Ratio          *PostV1VideoToVideoJSONBody15Ratio        `json:"ratio,omitempty"`
+	ReferenceAudio *[]struct {
+		Type PostV1VideoToVideoJSONBody15ReferenceAudioType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded audio. See [our docs](/assets/inputs#audio) on audio inputs for more information.
+		Uri PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri `json:"uri"`
+	} `json:"referenceAudio,omitempty"`
+	ReferenceVideos *[]struct {
+		Type PostV1VideoToVideoJSONBody15ReferenceVideosType `json:"type"`
+
+		// Uri An MP4 or MOV reference video, 2–15 seconds long at 22–62 fps. Frame rates near the limits are normalized to 24–60 fps.
+		Uri PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri `json:"uri"`
+	} `json:"referenceVideos,omitempty"`
+	References *[]struct {
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1VideoToVideoJSONBody_15_References_Uri `json:"uri"`
+	} `json:"references,omitempty"`
+
+	// Resolution The output video resolution.
+	Resolution *PostV1VideoToVideoJSONBody15Resolution `json:"resolution,omitempty"`
+}
+
+// PostV1VideoToVideoJSONBody15Model defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15Model string
+
+// PostV1VideoToVideoJSONBody15PromptVideo0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15PromptVideo0 = string
+
+// PostV1VideoToVideoJSONBody15PromptVideo1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15PromptVideo1 = string
+
+// PostV1VideoToVideoJSONBody15PromptVideo2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15PromptVideo2 = string
+
+// PostV1VideoToVideoJSONBody_15_PromptVideo defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_15_PromptVideo struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody15Ratio defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15Ratio string
+
+// PostV1VideoToVideoJSONBody15ReferenceAudioType defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferenceAudioType string
+
+// PostV1VideoToVideoJSONBody15ReferenceAudioUri0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferenceAudioUri0 = string
+
+// PostV1VideoToVideoJSONBody15ReferenceAudioUri1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferenceAudioUri1 = string
+
+// PostV1VideoToVideoJSONBody15ReferenceAudioUri2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferenceAudioUri2 = string
+
+// PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody15ReferenceVideosType defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferenceVideosType string
+
+// PostV1VideoToVideoJSONBody15ReferenceVideosUri0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferenceVideosUri0 = string
+
+// PostV1VideoToVideoJSONBody15ReferenceVideosUri1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferenceVideosUri1 = string
+
+// PostV1VideoToVideoJSONBody15ReferenceVideosUri2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferenceVideosUri2 = string
+
+// PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody15ReferencesUri0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferencesUri0 = string
+
+// PostV1VideoToVideoJSONBody15ReferencesUri1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferencesUri1 = string
+
+// PostV1VideoToVideoJSONBody15ReferencesUri2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15ReferencesUri2 = string
+
+// PostV1VideoToVideoJSONBody_15_References_Uri defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_15_References_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody15Resolution defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody15Resolution string
+
 // PostV1VideoToVideo400JSONResponseBodyIssuesPath0 defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideo400JSONResponseBodyIssuesPath0 = string
 
@@ -38773,6 +40788,9 @@ type PostV1VideoToVideo400JSONResponseBodyReason26 string
 
 // PostV1VideoToVideo400JSONResponseBodyReason27 defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideo400JSONResponseBodyReason27 string
+
+// PostV1VideoToVideo400JSONResponseBodyReason28 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideo400JSONResponseBodyReason28 string
 
 // PostV1VideoToVideo400JSONResponseBody_Reason defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideo400JSONResponseBody_Reason struct {
@@ -38971,6 +40989,9 @@ type PostV1VideoUpscale400JSONResponseBodyReason26 string
 // PostV1VideoUpscale400JSONResponseBodyReason27 defines parameters for PostV1VideoUpscale.
 type PostV1VideoUpscale400JSONResponseBodyReason27 string
 
+// PostV1VideoUpscale400JSONResponseBodyReason28 defines parameters for PostV1VideoUpscale.
+type PostV1VideoUpscale400JSONResponseBodyReason28 string
+
 // PostV1VideoUpscale400JSONResponseBody_Reason defines parameters for PostV1VideoUpscale.
 type PostV1VideoUpscale400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -39128,6 +41149,9 @@ type PostV1VoiceDubbing400JSONResponseBodyReason26 string
 // PostV1VoiceDubbing400JSONResponseBodyReason27 defines parameters for PostV1VoiceDubbing.
 type PostV1VoiceDubbing400JSONResponseBodyReason27 string
 
+// PostV1VoiceDubbing400JSONResponseBodyReason28 defines parameters for PostV1VoiceDubbing.
+type PostV1VoiceDubbing400JSONResponseBodyReason28 string
+
 // PostV1VoiceDubbing400JSONResponseBody_Reason defines parameters for PostV1VoiceDubbing.
 type PostV1VoiceDubbing400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -39269,6 +41293,9 @@ type PostV1VoiceIsolation400JSONResponseBodyReason26 string
 
 // PostV1VoiceIsolation400JSONResponseBodyReason27 defines parameters for PostV1VoiceIsolation.
 type PostV1VoiceIsolation400JSONResponseBodyReason27 string
+
+// PostV1VoiceIsolation400JSONResponseBodyReason28 defines parameters for PostV1VoiceIsolation.
+type PostV1VoiceIsolation400JSONResponseBodyReason28 string
 
 // PostV1VoiceIsolation400JSONResponseBody_Reason defines parameters for PostV1VoiceIsolation.
 type PostV1VoiceIsolation400JSONResponseBody_Reason struct {
@@ -45233,6 +47260,32 @@ func (t *PostV1CharacterPerformance400JSONResponseBody_Reason) MergePostV1Charac
 	return err
 }
 
+// AsPostV1CharacterPerformance400JSONResponseBodyReason28 returns the union data inside the PostV1CharacterPerformance400JSONResponseBody_Reason as a PostV1CharacterPerformance400JSONResponseBodyReason28
+func (t PostV1CharacterPerformance400JSONResponseBody_Reason) AsPostV1CharacterPerformance400JSONResponseBodyReason28() (PostV1CharacterPerformance400JSONResponseBodyReason28, error) {
+	var body PostV1CharacterPerformance400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1CharacterPerformance400JSONResponseBodyReason28 overwrites any union data inside the PostV1CharacterPerformance400JSONResponseBody_Reason as the provided PostV1CharacterPerformance400JSONResponseBodyReason28
+func (t *PostV1CharacterPerformance400JSONResponseBody_Reason) FromPostV1CharacterPerformance400JSONResponseBodyReason28(v PostV1CharacterPerformance400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1CharacterPerformance400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1CharacterPerformance400JSONResponseBody_Reason, using the provided PostV1CharacterPerformance400JSONResponseBodyReason28
+func (t *PostV1CharacterPerformance400JSONResponseBody_Reason) MergePostV1CharacterPerformance400JSONResponseBodyReason28(v PostV1CharacterPerformance400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1CharacterPerformance400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -47357,6 +49410,32 @@ func (t *PostV1ImageToVector400JSONResponseBody_Reason) MergePostV1ImageToVector
 	return err
 }
 
+// AsPostV1ImageToVector400JSONResponseBodyReason28 returns the union data inside the PostV1ImageToVector400JSONResponseBody_Reason as a PostV1ImageToVector400JSONResponseBodyReason28
+func (t PostV1ImageToVector400JSONResponseBody_Reason) AsPostV1ImageToVector400JSONResponseBodyReason28() (PostV1ImageToVector400JSONResponseBodyReason28, error) {
+	var body PostV1ImageToVector400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVector400JSONResponseBodyReason28 overwrites any union data inside the PostV1ImageToVector400JSONResponseBody_Reason as the provided PostV1ImageToVector400JSONResponseBodyReason28
+func (t *PostV1ImageToVector400JSONResponseBody_Reason) FromPostV1ImageToVector400JSONResponseBodyReason28(v PostV1ImageToVector400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVector400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1ImageToVector400JSONResponseBody_Reason, using the provided PostV1ImageToVector400JSONResponseBodyReason28
+func (t *PostV1ImageToVector400JSONResponseBody_Reason) MergePostV1ImageToVector400JSONResponseBodyReason28(v PostV1ImageToVector400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1ImageToVector400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -48059,6 +50138,58 @@ func (t *PostV1ImageToVideoJSONBody) FromPostV1ImageToVideoJSONBody26(v PostV1Im
 
 // MergePostV1ImageToVideoJSONBody26 performs a merge with any union data inside the PostV1ImageToVideoJSONBody, using the provided PostV1ImageToVideoJSONBody26
 func (t *PostV1ImageToVideoJSONBody) MergePostV1ImageToVideoJSONBody26(v PostV1ImageToVideoJSONBody26) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27 returns the union data inside the PostV1ImageToVideoJSONBody as a PostV1ImageToVideoJSONBody27
+func (t PostV1ImageToVideoJSONBody) AsPostV1ImageToVideoJSONBody27() (PostV1ImageToVideoJSONBody27, error) {
+	var body PostV1ImageToVideoJSONBody27
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27 overwrites any union data inside the PostV1ImageToVideoJSONBody as the provided PostV1ImageToVideoJSONBody27
+func (t *PostV1ImageToVideoJSONBody) FromPostV1ImageToVideoJSONBody27(v PostV1ImageToVideoJSONBody27) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27 performs a merge with any union data inside the PostV1ImageToVideoJSONBody, using the provided PostV1ImageToVideoJSONBody27
+func (t *PostV1ImageToVideoJSONBody) MergePostV1ImageToVideoJSONBody27(v PostV1ImageToVideoJSONBody27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28 returns the union data inside the PostV1ImageToVideoJSONBody as a PostV1ImageToVideoJSONBody28
+func (t PostV1ImageToVideoJSONBody) AsPostV1ImageToVideoJSONBody28() (PostV1ImageToVideoJSONBody28, error) {
+	var body PostV1ImageToVideoJSONBody28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28 overwrites any union data inside the PostV1ImageToVideoJSONBody as the provided PostV1ImageToVideoJSONBody28
+func (t *PostV1ImageToVideoJSONBody) FromPostV1ImageToVideoJSONBody28(v PostV1ImageToVideoJSONBody28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28 performs a merge with any union data inside the PostV1ImageToVideoJSONBody, using the provided PostV1ImageToVideoJSONBody28
+func (t *PostV1ImageToVideoJSONBody) MergePostV1ImageToVideoJSONBody28(v PostV1ImageToVideoJSONBody28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -56295,6 +58426,1010 @@ func (t *PostV1ImageToVideoJSONBody_26_References_Uri) UnmarshalJSON(b []byte) e
 	return err
 }
 
+// AsPostV1ImageToVideoJSONBody27PromptImage00 returns the union data inside the PostV1ImageToVideoJSONBody27PromptImage0 as a PostV1ImageToVideoJSONBody27PromptImage00
+func (t PostV1ImageToVideoJSONBody27PromptImage0) AsPostV1ImageToVideoJSONBody27PromptImage00() (PostV1ImageToVideoJSONBody27PromptImage00, error) {
+	var body PostV1ImageToVideoJSONBody27PromptImage00
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27PromptImage00 overwrites any union data inside the PostV1ImageToVideoJSONBody27PromptImage0 as the provided PostV1ImageToVideoJSONBody27PromptImage00
+func (t *PostV1ImageToVideoJSONBody27PromptImage0) FromPostV1ImageToVideoJSONBody27PromptImage00(v PostV1ImageToVideoJSONBody27PromptImage00) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27PromptImage00 performs a merge with any union data inside the PostV1ImageToVideoJSONBody27PromptImage0, using the provided PostV1ImageToVideoJSONBody27PromptImage00
+func (t *PostV1ImageToVideoJSONBody27PromptImage0) MergePostV1ImageToVideoJSONBody27PromptImage00(v PostV1ImageToVideoJSONBody27PromptImage00) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27PromptImage01 returns the union data inside the PostV1ImageToVideoJSONBody27PromptImage0 as a PostV1ImageToVideoJSONBody27PromptImage01
+func (t PostV1ImageToVideoJSONBody27PromptImage0) AsPostV1ImageToVideoJSONBody27PromptImage01() (PostV1ImageToVideoJSONBody27PromptImage01, error) {
+	var body PostV1ImageToVideoJSONBody27PromptImage01
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27PromptImage01 overwrites any union data inside the PostV1ImageToVideoJSONBody27PromptImage0 as the provided PostV1ImageToVideoJSONBody27PromptImage01
+func (t *PostV1ImageToVideoJSONBody27PromptImage0) FromPostV1ImageToVideoJSONBody27PromptImage01(v PostV1ImageToVideoJSONBody27PromptImage01) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27PromptImage01 performs a merge with any union data inside the PostV1ImageToVideoJSONBody27PromptImage0, using the provided PostV1ImageToVideoJSONBody27PromptImage01
+func (t *PostV1ImageToVideoJSONBody27PromptImage0) MergePostV1ImageToVideoJSONBody27PromptImage01(v PostV1ImageToVideoJSONBody27PromptImage01) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27PromptImage02 returns the union data inside the PostV1ImageToVideoJSONBody27PromptImage0 as a PostV1ImageToVideoJSONBody27PromptImage02
+func (t PostV1ImageToVideoJSONBody27PromptImage0) AsPostV1ImageToVideoJSONBody27PromptImage02() (PostV1ImageToVideoJSONBody27PromptImage02, error) {
+	var body PostV1ImageToVideoJSONBody27PromptImage02
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27PromptImage02 overwrites any union data inside the PostV1ImageToVideoJSONBody27PromptImage0 as the provided PostV1ImageToVideoJSONBody27PromptImage02
+func (t *PostV1ImageToVideoJSONBody27PromptImage0) FromPostV1ImageToVideoJSONBody27PromptImage02(v PostV1ImageToVideoJSONBody27PromptImage02) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27PromptImage02 performs a merge with any union data inside the PostV1ImageToVideoJSONBody27PromptImage0, using the provided PostV1ImageToVideoJSONBody27PromptImage02
+func (t *PostV1ImageToVideoJSONBody27PromptImage0) MergePostV1ImageToVideoJSONBody27PromptImage02(v PostV1ImageToVideoJSONBody27PromptImage02) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody27PromptImage0) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody27PromptImage0) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27PromptImage1Uri0 returns the union data inside the PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri as a PostV1ImageToVideoJSONBody27PromptImage1Uri0
+func (t PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) AsPostV1ImageToVideoJSONBody27PromptImage1Uri0() (PostV1ImageToVideoJSONBody27PromptImage1Uri0, error) {
+	var body PostV1ImageToVideoJSONBody27PromptImage1Uri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27PromptImage1Uri0 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri as the provided PostV1ImageToVideoJSONBody27PromptImage1Uri0
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) FromPostV1ImageToVideoJSONBody27PromptImage1Uri0(v PostV1ImageToVideoJSONBody27PromptImage1Uri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27PromptImage1Uri0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri, using the provided PostV1ImageToVideoJSONBody27PromptImage1Uri0
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) MergePostV1ImageToVideoJSONBody27PromptImage1Uri0(v PostV1ImageToVideoJSONBody27PromptImage1Uri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27PromptImage1Uri1 returns the union data inside the PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri as a PostV1ImageToVideoJSONBody27PromptImage1Uri1
+func (t PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) AsPostV1ImageToVideoJSONBody27PromptImage1Uri1() (PostV1ImageToVideoJSONBody27PromptImage1Uri1, error) {
+	var body PostV1ImageToVideoJSONBody27PromptImage1Uri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27PromptImage1Uri1 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri as the provided PostV1ImageToVideoJSONBody27PromptImage1Uri1
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) FromPostV1ImageToVideoJSONBody27PromptImage1Uri1(v PostV1ImageToVideoJSONBody27PromptImage1Uri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27PromptImage1Uri1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri, using the provided PostV1ImageToVideoJSONBody27PromptImage1Uri1
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) MergePostV1ImageToVideoJSONBody27PromptImage1Uri1(v PostV1ImageToVideoJSONBody27PromptImage1Uri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27PromptImage1Uri2 returns the union data inside the PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri as a PostV1ImageToVideoJSONBody27PromptImage1Uri2
+func (t PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) AsPostV1ImageToVideoJSONBody27PromptImage1Uri2() (PostV1ImageToVideoJSONBody27PromptImage1Uri2, error) {
+	var body PostV1ImageToVideoJSONBody27PromptImage1Uri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27PromptImage1Uri2 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri as the provided PostV1ImageToVideoJSONBody27PromptImage1Uri2
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) FromPostV1ImageToVideoJSONBody27PromptImage1Uri2(v PostV1ImageToVideoJSONBody27PromptImage1Uri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27PromptImage1Uri2 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri, using the provided PostV1ImageToVideoJSONBody27PromptImage1Uri2
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) MergePostV1ImageToVideoJSONBody27PromptImage1Uri2(v PostV1ImageToVideoJSONBody27PromptImage1Uri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage_1_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27PromptImage0 returns the union data inside the PostV1ImageToVideoJSONBody_27_PromptImage as a PostV1ImageToVideoJSONBody27PromptImage0
+func (t PostV1ImageToVideoJSONBody_27_PromptImage) AsPostV1ImageToVideoJSONBody27PromptImage0() (PostV1ImageToVideoJSONBody27PromptImage0, error) {
+	var body PostV1ImageToVideoJSONBody27PromptImage0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27PromptImage0 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_PromptImage as the provided PostV1ImageToVideoJSONBody27PromptImage0
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage) FromPostV1ImageToVideoJSONBody27PromptImage0(v PostV1ImageToVideoJSONBody27PromptImage0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27PromptImage0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_PromptImage, using the provided PostV1ImageToVideoJSONBody27PromptImage0
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage) MergePostV1ImageToVideoJSONBody27PromptImage0(v PostV1ImageToVideoJSONBody27PromptImage0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27PromptImage1 returns the union data inside the PostV1ImageToVideoJSONBody_27_PromptImage as a PostV1ImageToVideoJSONBody27PromptImage1
+func (t PostV1ImageToVideoJSONBody_27_PromptImage) AsPostV1ImageToVideoJSONBody27PromptImage1() (PostV1ImageToVideoJSONBody27PromptImage1, error) {
+	var body PostV1ImageToVideoJSONBody27PromptImage1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27PromptImage1 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_PromptImage as the provided PostV1ImageToVideoJSONBody27PromptImage1
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage) FromPostV1ImageToVideoJSONBody27PromptImage1(v PostV1ImageToVideoJSONBody27PromptImage1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27PromptImage1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_PromptImage, using the provided PostV1ImageToVideoJSONBody27PromptImage1
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage) MergePostV1ImageToVideoJSONBody27PromptImage1(v PostV1ImageToVideoJSONBody27PromptImage1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_27_PromptImage) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_27_PromptImage) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27ReferenceAudioUri0 returns the union data inside the PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri as a PostV1ImageToVideoJSONBody27ReferenceAudioUri0
+func (t PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) AsPostV1ImageToVideoJSONBody27ReferenceAudioUri0() (PostV1ImageToVideoJSONBody27ReferenceAudioUri0, error) {
+	var body PostV1ImageToVideoJSONBody27ReferenceAudioUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27ReferenceAudioUri0 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri as the provided PostV1ImageToVideoJSONBody27ReferenceAudioUri0
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) FromPostV1ImageToVideoJSONBody27ReferenceAudioUri0(v PostV1ImageToVideoJSONBody27ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27ReferenceAudioUri0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri, using the provided PostV1ImageToVideoJSONBody27ReferenceAudioUri0
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) MergePostV1ImageToVideoJSONBody27ReferenceAudioUri0(v PostV1ImageToVideoJSONBody27ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27ReferenceAudioUri1 returns the union data inside the PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri as a PostV1ImageToVideoJSONBody27ReferenceAudioUri1
+func (t PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) AsPostV1ImageToVideoJSONBody27ReferenceAudioUri1() (PostV1ImageToVideoJSONBody27ReferenceAudioUri1, error) {
+	var body PostV1ImageToVideoJSONBody27ReferenceAudioUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27ReferenceAudioUri1 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri as the provided PostV1ImageToVideoJSONBody27ReferenceAudioUri1
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) FromPostV1ImageToVideoJSONBody27ReferenceAudioUri1(v PostV1ImageToVideoJSONBody27ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27ReferenceAudioUri1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri, using the provided PostV1ImageToVideoJSONBody27ReferenceAudioUri1
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) MergePostV1ImageToVideoJSONBody27ReferenceAudioUri1(v PostV1ImageToVideoJSONBody27ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27ReferenceAudioUri2 returns the union data inside the PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri as a PostV1ImageToVideoJSONBody27ReferenceAudioUri2
+func (t PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) AsPostV1ImageToVideoJSONBody27ReferenceAudioUri2() (PostV1ImageToVideoJSONBody27ReferenceAudioUri2, error) {
+	var body PostV1ImageToVideoJSONBody27ReferenceAudioUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27ReferenceAudioUri2 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri as the provided PostV1ImageToVideoJSONBody27ReferenceAudioUri2
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) FromPostV1ImageToVideoJSONBody27ReferenceAudioUri2(v PostV1ImageToVideoJSONBody27ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27ReferenceAudioUri2 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri, using the provided PostV1ImageToVideoJSONBody27ReferenceAudioUri2
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) MergePostV1ImageToVideoJSONBody27ReferenceAudioUri2(v PostV1ImageToVideoJSONBody27ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceAudio_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27ReferenceVideosUri0 returns the union data inside the PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri as a PostV1ImageToVideoJSONBody27ReferenceVideosUri0
+func (t PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) AsPostV1ImageToVideoJSONBody27ReferenceVideosUri0() (PostV1ImageToVideoJSONBody27ReferenceVideosUri0, error) {
+	var body PostV1ImageToVideoJSONBody27ReferenceVideosUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27ReferenceVideosUri0 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri as the provided PostV1ImageToVideoJSONBody27ReferenceVideosUri0
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) FromPostV1ImageToVideoJSONBody27ReferenceVideosUri0(v PostV1ImageToVideoJSONBody27ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27ReferenceVideosUri0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri, using the provided PostV1ImageToVideoJSONBody27ReferenceVideosUri0
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) MergePostV1ImageToVideoJSONBody27ReferenceVideosUri0(v PostV1ImageToVideoJSONBody27ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27ReferenceVideosUri1 returns the union data inside the PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri as a PostV1ImageToVideoJSONBody27ReferenceVideosUri1
+func (t PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) AsPostV1ImageToVideoJSONBody27ReferenceVideosUri1() (PostV1ImageToVideoJSONBody27ReferenceVideosUri1, error) {
+	var body PostV1ImageToVideoJSONBody27ReferenceVideosUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27ReferenceVideosUri1 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri as the provided PostV1ImageToVideoJSONBody27ReferenceVideosUri1
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) FromPostV1ImageToVideoJSONBody27ReferenceVideosUri1(v PostV1ImageToVideoJSONBody27ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27ReferenceVideosUri1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri, using the provided PostV1ImageToVideoJSONBody27ReferenceVideosUri1
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) MergePostV1ImageToVideoJSONBody27ReferenceVideosUri1(v PostV1ImageToVideoJSONBody27ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27ReferenceVideosUri2 returns the union data inside the PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri as a PostV1ImageToVideoJSONBody27ReferenceVideosUri2
+func (t PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) AsPostV1ImageToVideoJSONBody27ReferenceVideosUri2() (PostV1ImageToVideoJSONBody27ReferenceVideosUri2, error) {
+	var body PostV1ImageToVideoJSONBody27ReferenceVideosUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27ReferenceVideosUri2 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri as the provided PostV1ImageToVideoJSONBody27ReferenceVideosUri2
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) FromPostV1ImageToVideoJSONBody27ReferenceVideosUri2(v PostV1ImageToVideoJSONBody27ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27ReferenceVideosUri2 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri, using the provided PostV1ImageToVideoJSONBody27ReferenceVideosUri2
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) MergePostV1ImageToVideoJSONBody27ReferenceVideosUri2(v PostV1ImageToVideoJSONBody27ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_27_ReferenceVideos_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27ReferencesUri0 returns the union data inside the PostV1ImageToVideoJSONBody_27_References_Uri as a PostV1ImageToVideoJSONBody27ReferencesUri0
+func (t PostV1ImageToVideoJSONBody_27_References_Uri) AsPostV1ImageToVideoJSONBody27ReferencesUri0() (PostV1ImageToVideoJSONBody27ReferencesUri0, error) {
+	var body PostV1ImageToVideoJSONBody27ReferencesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27ReferencesUri0 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_References_Uri as the provided PostV1ImageToVideoJSONBody27ReferencesUri0
+func (t *PostV1ImageToVideoJSONBody_27_References_Uri) FromPostV1ImageToVideoJSONBody27ReferencesUri0(v PostV1ImageToVideoJSONBody27ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27ReferencesUri0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_References_Uri, using the provided PostV1ImageToVideoJSONBody27ReferencesUri0
+func (t *PostV1ImageToVideoJSONBody_27_References_Uri) MergePostV1ImageToVideoJSONBody27ReferencesUri0(v PostV1ImageToVideoJSONBody27ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27ReferencesUri1 returns the union data inside the PostV1ImageToVideoJSONBody_27_References_Uri as a PostV1ImageToVideoJSONBody27ReferencesUri1
+func (t PostV1ImageToVideoJSONBody_27_References_Uri) AsPostV1ImageToVideoJSONBody27ReferencesUri1() (PostV1ImageToVideoJSONBody27ReferencesUri1, error) {
+	var body PostV1ImageToVideoJSONBody27ReferencesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27ReferencesUri1 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_References_Uri as the provided PostV1ImageToVideoJSONBody27ReferencesUri1
+func (t *PostV1ImageToVideoJSONBody_27_References_Uri) FromPostV1ImageToVideoJSONBody27ReferencesUri1(v PostV1ImageToVideoJSONBody27ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27ReferencesUri1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_References_Uri, using the provided PostV1ImageToVideoJSONBody27ReferencesUri1
+func (t *PostV1ImageToVideoJSONBody_27_References_Uri) MergePostV1ImageToVideoJSONBody27ReferencesUri1(v PostV1ImageToVideoJSONBody27ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody27ReferencesUri2 returns the union data inside the PostV1ImageToVideoJSONBody_27_References_Uri as a PostV1ImageToVideoJSONBody27ReferencesUri2
+func (t PostV1ImageToVideoJSONBody_27_References_Uri) AsPostV1ImageToVideoJSONBody27ReferencesUri2() (PostV1ImageToVideoJSONBody27ReferencesUri2, error) {
+	var body PostV1ImageToVideoJSONBody27ReferencesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody27ReferencesUri2 overwrites any union data inside the PostV1ImageToVideoJSONBody_27_References_Uri as the provided PostV1ImageToVideoJSONBody27ReferencesUri2
+func (t *PostV1ImageToVideoJSONBody_27_References_Uri) FromPostV1ImageToVideoJSONBody27ReferencesUri2(v PostV1ImageToVideoJSONBody27ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody27ReferencesUri2 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_27_References_Uri, using the provided PostV1ImageToVideoJSONBody27ReferencesUri2
+func (t *PostV1ImageToVideoJSONBody_27_References_Uri) MergePostV1ImageToVideoJSONBody27ReferencesUri2(v PostV1ImageToVideoJSONBody27ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_27_References_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_27_References_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28PromptImage00 returns the union data inside the PostV1ImageToVideoJSONBody28PromptImage0 as a PostV1ImageToVideoJSONBody28PromptImage00
+func (t PostV1ImageToVideoJSONBody28PromptImage0) AsPostV1ImageToVideoJSONBody28PromptImage00() (PostV1ImageToVideoJSONBody28PromptImage00, error) {
+	var body PostV1ImageToVideoJSONBody28PromptImage00
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28PromptImage00 overwrites any union data inside the PostV1ImageToVideoJSONBody28PromptImage0 as the provided PostV1ImageToVideoJSONBody28PromptImage00
+func (t *PostV1ImageToVideoJSONBody28PromptImage0) FromPostV1ImageToVideoJSONBody28PromptImage00(v PostV1ImageToVideoJSONBody28PromptImage00) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28PromptImage00 performs a merge with any union data inside the PostV1ImageToVideoJSONBody28PromptImage0, using the provided PostV1ImageToVideoJSONBody28PromptImage00
+func (t *PostV1ImageToVideoJSONBody28PromptImage0) MergePostV1ImageToVideoJSONBody28PromptImage00(v PostV1ImageToVideoJSONBody28PromptImage00) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28PromptImage01 returns the union data inside the PostV1ImageToVideoJSONBody28PromptImage0 as a PostV1ImageToVideoJSONBody28PromptImage01
+func (t PostV1ImageToVideoJSONBody28PromptImage0) AsPostV1ImageToVideoJSONBody28PromptImage01() (PostV1ImageToVideoJSONBody28PromptImage01, error) {
+	var body PostV1ImageToVideoJSONBody28PromptImage01
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28PromptImage01 overwrites any union data inside the PostV1ImageToVideoJSONBody28PromptImage0 as the provided PostV1ImageToVideoJSONBody28PromptImage01
+func (t *PostV1ImageToVideoJSONBody28PromptImage0) FromPostV1ImageToVideoJSONBody28PromptImage01(v PostV1ImageToVideoJSONBody28PromptImage01) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28PromptImage01 performs a merge with any union data inside the PostV1ImageToVideoJSONBody28PromptImage0, using the provided PostV1ImageToVideoJSONBody28PromptImage01
+func (t *PostV1ImageToVideoJSONBody28PromptImage0) MergePostV1ImageToVideoJSONBody28PromptImage01(v PostV1ImageToVideoJSONBody28PromptImage01) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28PromptImage02 returns the union data inside the PostV1ImageToVideoJSONBody28PromptImage0 as a PostV1ImageToVideoJSONBody28PromptImage02
+func (t PostV1ImageToVideoJSONBody28PromptImage0) AsPostV1ImageToVideoJSONBody28PromptImage02() (PostV1ImageToVideoJSONBody28PromptImage02, error) {
+	var body PostV1ImageToVideoJSONBody28PromptImage02
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28PromptImage02 overwrites any union data inside the PostV1ImageToVideoJSONBody28PromptImage0 as the provided PostV1ImageToVideoJSONBody28PromptImage02
+func (t *PostV1ImageToVideoJSONBody28PromptImage0) FromPostV1ImageToVideoJSONBody28PromptImage02(v PostV1ImageToVideoJSONBody28PromptImage02) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28PromptImage02 performs a merge with any union data inside the PostV1ImageToVideoJSONBody28PromptImage0, using the provided PostV1ImageToVideoJSONBody28PromptImage02
+func (t *PostV1ImageToVideoJSONBody28PromptImage0) MergePostV1ImageToVideoJSONBody28PromptImage02(v PostV1ImageToVideoJSONBody28PromptImage02) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody28PromptImage0) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody28PromptImage0) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28PromptImage1Uri0 returns the union data inside the PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri as a PostV1ImageToVideoJSONBody28PromptImage1Uri0
+func (t PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) AsPostV1ImageToVideoJSONBody28PromptImage1Uri0() (PostV1ImageToVideoJSONBody28PromptImage1Uri0, error) {
+	var body PostV1ImageToVideoJSONBody28PromptImage1Uri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28PromptImage1Uri0 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri as the provided PostV1ImageToVideoJSONBody28PromptImage1Uri0
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) FromPostV1ImageToVideoJSONBody28PromptImage1Uri0(v PostV1ImageToVideoJSONBody28PromptImage1Uri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28PromptImage1Uri0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri, using the provided PostV1ImageToVideoJSONBody28PromptImage1Uri0
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) MergePostV1ImageToVideoJSONBody28PromptImage1Uri0(v PostV1ImageToVideoJSONBody28PromptImage1Uri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28PromptImage1Uri1 returns the union data inside the PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri as a PostV1ImageToVideoJSONBody28PromptImage1Uri1
+func (t PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) AsPostV1ImageToVideoJSONBody28PromptImage1Uri1() (PostV1ImageToVideoJSONBody28PromptImage1Uri1, error) {
+	var body PostV1ImageToVideoJSONBody28PromptImage1Uri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28PromptImage1Uri1 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri as the provided PostV1ImageToVideoJSONBody28PromptImage1Uri1
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) FromPostV1ImageToVideoJSONBody28PromptImage1Uri1(v PostV1ImageToVideoJSONBody28PromptImage1Uri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28PromptImage1Uri1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri, using the provided PostV1ImageToVideoJSONBody28PromptImage1Uri1
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) MergePostV1ImageToVideoJSONBody28PromptImage1Uri1(v PostV1ImageToVideoJSONBody28PromptImage1Uri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28PromptImage1Uri2 returns the union data inside the PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri as a PostV1ImageToVideoJSONBody28PromptImage1Uri2
+func (t PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) AsPostV1ImageToVideoJSONBody28PromptImage1Uri2() (PostV1ImageToVideoJSONBody28PromptImage1Uri2, error) {
+	var body PostV1ImageToVideoJSONBody28PromptImage1Uri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28PromptImage1Uri2 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri as the provided PostV1ImageToVideoJSONBody28PromptImage1Uri2
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) FromPostV1ImageToVideoJSONBody28PromptImage1Uri2(v PostV1ImageToVideoJSONBody28PromptImage1Uri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28PromptImage1Uri2 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri, using the provided PostV1ImageToVideoJSONBody28PromptImage1Uri2
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) MergePostV1ImageToVideoJSONBody28PromptImage1Uri2(v PostV1ImageToVideoJSONBody28PromptImage1Uri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage_1_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28PromptImage0 returns the union data inside the PostV1ImageToVideoJSONBody_28_PromptImage as a PostV1ImageToVideoJSONBody28PromptImage0
+func (t PostV1ImageToVideoJSONBody_28_PromptImage) AsPostV1ImageToVideoJSONBody28PromptImage0() (PostV1ImageToVideoJSONBody28PromptImage0, error) {
+	var body PostV1ImageToVideoJSONBody28PromptImage0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28PromptImage0 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_PromptImage as the provided PostV1ImageToVideoJSONBody28PromptImage0
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage) FromPostV1ImageToVideoJSONBody28PromptImage0(v PostV1ImageToVideoJSONBody28PromptImage0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28PromptImage0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_PromptImage, using the provided PostV1ImageToVideoJSONBody28PromptImage0
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage) MergePostV1ImageToVideoJSONBody28PromptImage0(v PostV1ImageToVideoJSONBody28PromptImage0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28PromptImage1 returns the union data inside the PostV1ImageToVideoJSONBody_28_PromptImage as a PostV1ImageToVideoJSONBody28PromptImage1
+func (t PostV1ImageToVideoJSONBody_28_PromptImage) AsPostV1ImageToVideoJSONBody28PromptImage1() (PostV1ImageToVideoJSONBody28PromptImage1, error) {
+	var body PostV1ImageToVideoJSONBody28PromptImage1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28PromptImage1 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_PromptImage as the provided PostV1ImageToVideoJSONBody28PromptImage1
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage) FromPostV1ImageToVideoJSONBody28PromptImage1(v PostV1ImageToVideoJSONBody28PromptImage1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28PromptImage1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_PromptImage, using the provided PostV1ImageToVideoJSONBody28PromptImage1
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage) MergePostV1ImageToVideoJSONBody28PromptImage1(v PostV1ImageToVideoJSONBody28PromptImage1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_28_PromptImage) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_28_PromptImage) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28ReferenceAudioUri0 returns the union data inside the PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri as a PostV1ImageToVideoJSONBody28ReferenceAudioUri0
+func (t PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) AsPostV1ImageToVideoJSONBody28ReferenceAudioUri0() (PostV1ImageToVideoJSONBody28ReferenceAudioUri0, error) {
+	var body PostV1ImageToVideoJSONBody28ReferenceAudioUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28ReferenceAudioUri0 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri as the provided PostV1ImageToVideoJSONBody28ReferenceAudioUri0
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) FromPostV1ImageToVideoJSONBody28ReferenceAudioUri0(v PostV1ImageToVideoJSONBody28ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28ReferenceAudioUri0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri, using the provided PostV1ImageToVideoJSONBody28ReferenceAudioUri0
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) MergePostV1ImageToVideoJSONBody28ReferenceAudioUri0(v PostV1ImageToVideoJSONBody28ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28ReferenceAudioUri1 returns the union data inside the PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri as a PostV1ImageToVideoJSONBody28ReferenceAudioUri1
+func (t PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) AsPostV1ImageToVideoJSONBody28ReferenceAudioUri1() (PostV1ImageToVideoJSONBody28ReferenceAudioUri1, error) {
+	var body PostV1ImageToVideoJSONBody28ReferenceAudioUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28ReferenceAudioUri1 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri as the provided PostV1ImageToVideoJSONBody28ReferenceAudioUri1
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) FromPostV1ImageToVideoJSONBody28ReferenceAudioUri1(v PostV1ImageToVideoJSONBody28ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28ReferenceAudioUri1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri, using the provided PostV1ImageToVideoJSONBody28ReferenceAudioUri1
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) MergePostV1ImageToVideoJSONBody28ReferenceAudioUri1(v PostV1ImageToVideoJSONBody28ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28ReferenceAudioUri2 returns the union data inside the PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri as a PostV1ImageToVideoJSONBody28ReferenceAudioUri2
+func (t PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) AsPostV1ImageToVideoJSONBody28ReferenceAudioUri2() (PostV1ImageToVideoJSONBody28ReferenceAudioUri2, error) {
+	var body PostV1ImageToVideoJSONBody28ReferenceAudioUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28ReferenceAudioUri2 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri as the provided PostV1ImageToVideoJSONBody28ReferenceAudioUri2
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) FromPostV1ImageToVideoJSONBody28ReferenceAudioUri2(v PostV1ImageToVideoJSONBody28ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28ReferenceAudioUri2 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri, using the provided PostV1ImageToVideoJSONBody28ReferenceAudioUri2
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) MergePostV1ImageToVideoJSONBody28ReferenceAudioUri2(v PostV1ImageToVideoJSONBody28ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceAudio_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28ReferenceVideosUri0 returns the union data inside the PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri as a PostV1ImageToVideoJSONBody28ReferenceVideosUri0
+func (t PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) AsPostV1ImageToVideoJSONBody28ReferenceVideosUri0() (PostV1ImageToVideoJSONBody28ReferenceVideosUri0, error) {
+	var body PostV1ImageToVideoJSONBody28ReferenceVideosUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28ReferenceVideosUri0 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri as the provided PostV1ImageToVideoJSONBody28ReferenceVideosUri0
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) FromPostV1ImageToVideoJSONBody28ReferenceVideosUri0(v PostV1ImageToVideoJSONBody28ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28ReferenceVideosUri0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri, using the provided PostV1ImageToVideoJSONBody28ReferenceVideosUri0
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) MergePostV1ImageToVideoJSONBody28ReferenceVideosUri0(v PostV1ImageToVideoJSONBody28ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28ReferenceVideosUri1 returns the union data inside the PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri as a PostV1ImageToVideoJSONBody28ReferenceVideosUri1
+func (t PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) AsPostV1ImageToVideoJSONBody28ReferenceVideosUri1() (PostV1ImageToVideoJSONBody28ReferenceVideosUri1, error) {
+	var body PostV1ImageToVideoJSONBody28ReferenceVideosUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28ReferenceVideosUri1 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri as the provided PostV1ImageToVideoJSONBody28ReferenceVideosUri1
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) FromPostV1ImageToVideoJSONBody28ReferenceVideosUri1(v PostV1ImageToVideoJSONBody28ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28ReferenceVideosUri1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri, using the provided PostV1ImageToVideoJSONBody28ReferenceVideosUri1
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) MergePostV1ImageToVideoJSONBody28ReferenceVideosUri1(v PostV1ImageToVideoJSONBody28ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28ReferenceVideosUri2 returns the union data inside the PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri as a PostV1ImageToVideoJSONBody28ReferenceVideosUri2
+func (t PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) AsPostV1ImageToVideoJSONBody28ReferenceVideosUri2() (PostV1ImageToVideoJSONBody28ReferenceVideosUri2, error) {
+	var body PostV1ImageToVideoJSONBody28ReferenceVideosUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28ReferenceVideosUri2 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri as the provided PostV1ImageToVideoJSONBody28ReferenceVideosUri2
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) FromPostV1ImageToVideoJSONBody28ReferenceVideosUri2(v PostV1ImageToVideoJSONBody28ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28ReferenceVideosUri2 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri, using the provided PostV1ImageToVideoJSONBody28ReferenceVideosUri2
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) MergePostV1ImageToVideoJSONBody28ReferenceVideosUri2(v PostV1ImageToVideoJSONBody28ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_28_ReferenceVideos_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28ReferencesUri0 returns the union data inside the PostV1ImageToVideoJSONBody_28_References_Uri as a PostV1ImageToVideoJSONBody28ReferencesUri0
+func (t PostV1ImageToVideoJSONBody_28_References_Uri) AsPostV1ImageToVideoJSONBody28ReferencesUri0() (PostV1ImageToVideoJSONBody28ReferencesUri0, error) {
+	var body PostV1ImageToVideoJSONBody28ReferencesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28ReferencesUri0 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_References_Uri as the provided PostV1ImageToVideoJSONBody28ReferencesUri0
+func (t *PostV1ImageToVideoJSONBody_28_References_Uri) FromPostV1ImageToVideoJSONBody28ReferencesUri0(v PostV1ImageToVideoJSONBody28ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28ReferencesUri0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_References_Uri, using the provided PostV1ImageToVideoJSONBody28ReferencesUri0
+func (t *PostV1ImageToVideoJSONBody_28_References_Uri) MergePostV1ImageToVideoJSONBody28ReferencesUri0(v PostV1ImageToVideoJSONBody28ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28ReferencesUri1 returns the union data inside the PostV1ImageToVideoJSONBody_28_References_Uri as a PostV1ImageToVideoJSONBody28ReferencesUri1
+func (t PostV1ImageToVideoJSONBody_28_References_Uri) AsPostV1ImageToVideoJSONBody28ReferencesUri1() (PostV1ImageToVideoJSONBody28ReferencesUri1, error) {
+	var body PostV1ImageToVideoJSONBody28ReferencesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28ReferencesUri1 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_References_Uri as the provided PostV1ImageToVideoJSONBody28ReferencesUri1
+func (t *PostV1ImageToVideoJSONBody_28_References_Uri) FromPostV1ImageToVideoJSONBody28ReferencesUri1(v PostV1ImageToVideoJSONBody28ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28ReferencesUri1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_References_Uri, using the provided PostV1ImageToVideoJSONBody28ReferencesUri1
+func (t *PostV1ImageToVideoJSONBody_28_References_Uri) MergePostV1ImageToVideoJSONBody28ReferencesUri1(v PostV1ImageToVideoJSONBody28ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody28ReferencesUri2 returns the union data inside the PostV1ImageToVideoJSONBody_28_References_Uri as a PostV1ImageToVideoJSONBody28ReferencesUri2
+func (t PostV1ImageToVideoJSONBody_28_References_Uri) AsPostV1ImageToVideoJSONBody28ReferencesUri2() (PostV1ImageToVideoJSONBody28ReferencesUri2, error) {
+	var body PostV1ImageToVideoJSONBody28ReferencesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody28ReferencesUri2 overwrites any union data inside the PostV1ImageToVideoJSONBody_28_References_Uri as the provided PostV1ImageToVideoJSONBody28ReferencesUri2
+func (t *PostV1ImageToVideoJSONBody_28_References_Uri) FromPostV1ImageToVideoJSONBody28ReferencesUri2(v PostV1ImageToVideoJSONBody28ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody28ReferencesUri2 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_28_References_Uri, using the provided PostV1ImageToVideoJSONBody28ReferencesUri2
+func (t *PostV1ImageToVideoJSONBody_28_References_Uri) MergePostV1ImageToVideoJSONBody28ReferencesUri2(v PostV1ImageToVideoJSONBody28ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_28_References_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_28_References_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsPostV1ImageToVideo400JSONResponseBodyIssuesPath0 returns the union data inside the PostV1ImageToVideo400JSONResponseBody_Issues_Path_Item as a PostV1ImageToVideo400JSONResponseBodyIssuesPath0
 func (t PostV1ImageToVideo400JSONResponseBody_Issues_Path_Item) AsPostV1ImageToVideo400JSONResponseBodyIssuesPath0() (PostV1ImageToVideo400JSONResponseBodyIssuesPath0, error) {
 	var body PostV1ImageToVideo400JSONResponseBodyIssuesPath0
@@ -57075,6 +60210,32 @@ func (t *PostV1ImageToVideo400JSONResponseBody_Reason) FromPostV1ImageToVideo400
 
 // MergePostV1ImageToVideo400JSONResponseBodyReason27 performs a merge with any union data inside the PostV1ImageToVideo400JSONResponseBody_Reason, using the provided PostV1ImageToVideo400JSONResponseBodyReason27
 func (t *PostV1ImageToVideo400JSONResponseBody_Reason) MergePostV1ImageToVideo400JSONResponseBodyReason27(v PostV1ImageToVideo400JSONResponseBodyReason27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideo400JSONResponseBodyReason28 returns the union data inside the PostV1ImageToVideo400JSONResponseBody_Reason as a PostV1ImageToVideo400JSONResponseBodyReason28
+func (t PostV1ImageToVideo400JSONResponseBody_Reason) AsPostV1ImageToVideo400JSONResponseBodyReason28() (PostV1ImageToVideo400JSONResponseBodyReason28, error) {
+	var body PostV1ImageToVideo400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideo400JSONResponseBodyReason28 overwrites any union data inside the PostV1ImageToVideo400JSONResponseBody_Reason as the provided PostV1ImageToVideo400JSONResponseBodyReason28
+func (t *PostV1ImageToVideo400JSONResponseBody_Reason) FromPostV1ImageToVideo400JSONResponseBodyReason28(v PostV1ImageToVideo400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideo400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1ImageToVideo400JSONResponseBody_Reason, using the provided PostV1ImageToVideo400JSONResponseBodyReason28
+func (t *PostV1ImageToVideo400JSONResponseBody_Reason) MergePostV1ImageToVideo400JSONResponseBodyReason28(v PostV1ImageToVideo400JSONResponseBodyReason28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -57999,6 +61160,32 @@ func (t *PostV1ImageUpscale400JSONResponseBody_Reason) FromPostV1ImageUpscale400
 
 // MergePostV1ImageUpscale400JSONResponseBodyReason27 performs a merge with any union data inside the PostV1ImageUpscale400JSONResponseBody_Reason, using the provided PostV1ImageUpscale400JSONResponseBodyReason27
 func (t *PostV1ImageUpscale400JSONResponseBody_Reason) MergePostV1ImageUpscale400JSONResponseBodyReason27(v PostV1ImageUpscale400JSONResponseBodyReason27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageUpscale400JSONResponseBodyReason28 returns the union data inside the PostV1ImageUpscale400JSONResponseBody_Reason as a PostV1ImageUpscale400JSONResponseBodyReason28
+func (t PostV1ImageUpscale400JSONResponseBody_Reason) AsPostV1ImageUpscale400JSONResponseBodyReason28() (PostV1ImageUpscale400JSONResponseBodyReason28, error) {
+	var body PostV1ImageUpscale400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageUpscale400JSONResponseBodyReason28 overwrites any union data inside the PostV1ImageUpscale400JSONResponseBody_Reason as the provided PostV1ImageUpscale400JSONResponseBodyReason28
+func (t *PostV1ImageUpscale400JSONResponseBody_Reason) FromPostV1ImageUpscale400JSONResponseBodyReason28(v PostV1ImageUpscale400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageUpscale400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1ImageUpscale400JSONResponseBody_Reason, using the provided PostV1ImageUpscale400JSONResponseBodyReason28
+func (t *PostV1ImageUpscale400JSONResponseBody_Reason) MergePostV1ImageUpscale400JSONResponseBodyReason28(v PostV1ImageUpscale400JSONResponseBodyReason28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -60073,6 +63260,32 @@ func (t *PostV1RecipesAdLocalization400JSONResponseBody_Reason) MergePostV1Recip
 	return err
 }
 
+// AsPostV1RecipesAdLocalization400JSONResponseBodyReason28 returns the union data inside the PostV1RecipesAdLocalization400JSONResponseBody_Reason as a PostV1RecipesAdLocalization400JSONResponseBodyReason28
+func (t PostV1RecipesAdLocalization400JSONResponseBody_Reason) AsPostV1RecipesAdLocalization400JSONResponseBodyReason28() (PostV1RecipesAdLocalization400JSONResponseBodyReason28, error) {
+	var body PostV1RecipesAdLocalization400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesAdLocalization400JSONResponseBodyReason28 overwrites any union data inside the PostV1RecipesAdLocalization400JSONResponseBody_Reason as the provided PostV1RecipesAdLocalization400JSONResponseBodyReason28
+func (t *PostV1RecipesAdLocalization400JSONResponseBody_Reason) FromPostV1RecipesAdLocalization400JSONResponseBodyReason28(v PostV1RecipesAdLocalization400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesAdLocalization400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1RecipesAdLocalization400JSONResponseBody_Reason, using the provided PostV1RecipesAdLocalization400JSONResponseBodyReason28
+func (t *PostV1RecipesAdLocalization400JSONResponseBody_Reason) MergePostV1RecipesAdLocalization400JSONResponseBodyReason28(v PostV1RecipesAdLocalization400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1RecipesAdLocalization400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -60951,6 +64164,32 @@ func (t *PostV1RecipesMarketingStockImage400JSONResponseBody_Reason) FromPostV1R
 
 // MergePostV1RecipesMarketingStockImage400JSONResponseBodyReason27 performs a merge with any union data inside the PostV1RecipesMarketingStockImage400JSONResponseBody_Reason, using the provided PostV1RecipesMarketingStockImage400JSONResponseBodyReason27
 func (t *PostV1RecipesMarketingStockImage400JSONResponseBody_Reason) MergePostV1RecipesMarketingStockImage400JSONResponseBodyReason27(v PostV1RecipesMarketingStockImage400JSONResponseBodyReason27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1RecipesMarketingStockImage400JSONResponseBodyReason28 returns the union data inside the PostV1RecipesMarketingStockImage400JSONResponseBody_Reason as a PostV1RecipesMarketingStockImage400JSONResponseBodyReason28
+func (t PostV1RecipesMarketingStockImage400JSONResponseBody_Reason) AsPostV1RecipesMarketingStockImage400JSONResponseBodyReason28() (PostV1RecipesMarketingStockImage400JSONResponseBodyReason28, error) {
+	var body PostV1RecipesMarketingStockImage400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesMarketingStockImage400JSONResponseBodyReason28 overwrites any union data inside the PostV1RecipesMarketingStockImage400JSONResponseBody_Reason as the provided PostV1RecipesMarketingStockImage400JSONResponseBodyReason28
+func (t *PostV1RecipesMarketingStockImage400JSONResponseBody_Reason) FromPostV1RecipesMarketingStockImage400JSONResponseBodyReason28(v PostV1RecipesMarketingStockImage400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesMarketingStockImage400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1RecipesMarketingStockImage400JSONResponseBody_Reason, using the provided PostV1RecipesMarketingStockImage400JSONResponseBodyReason28
+func (t *PostV1RecipesMarketingStockImage400JSONResponseBody_Reason) MergePostV1RecipesMarketingStockImage400JSONResponseBodyReason28(v PostV1RecipesMarketingStockImage400JSONResponseBodyReason28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -61999,6 +65238,32 @@ func (t *PostV1RecipesMultiShotVideo400JSONResponseBody_Reason) MergePostV1Recip
 	return err
 }
 
+// AsPostV1RecipesMultiShotVideo400JSONResponseBodyReason28 returns the union data inside the PostV1RecipesMultiShotVideo400JSONResponseBody_Reason as a PostV1RecipesMultiShotVideo400JSONResponseBodyReason28
+func (t PostV1RecipesMultiShotVideo400JSONResponseBody_Reason) AsPostV1RecipesMultiShotVideo400JSONResponseBodyReason28() (PostV1RecipesMultiShotVideo400JSONResponseBodyReason28, error) {
+	var body PostV1RecipesMultiShotVideo400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesMultiShotVideo400JSONResponseBodyReason28 overwrites any union data inside the PostV1RecipesMultiShotVideo400JSONResponseBody_Reason as the provided PostV1RecipesMultiShotVideo400JSONResponseBodyReason28
+func (t *PostV1RecipesMultiShotVideo400JSONResponseBody_Reason) FromPostV1RecipesMultiShotVideo400JSONResponseBodyReason28(v PostV1RecipesMultiShotVideo400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesMultiShotVideo400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1RecipesMultiShotVideo400JSONResponseBody_Reason, using the provided PostV1RecipesMultiShotVideo400JSONResponseBodyReason28
+func (t *PostV1RecipesMultiShotVideo400JSONResponseBody_Reason) MergePostV1RecipesMultiShotVideo400JSONResponseBodyReason28(v PostV1RecipesMultiShotVideo400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1RecipesMultiShotVideo400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -62975,6 +66240,32 @@ func (t *PostV1RecipesProductAd400JSONResponseBody_Reason) MergePostV1RecipesPro
 	return err
 }
 
+// AsPostV1RecipesProductAd400JSONResponseBodyReason28 returns the union data inside the PostV1RecipesProductAd400JSONResponseBody_Reason as a PostV1RecipesProductAd400JSONResponseBodyReason28
+func (t PostV1RecipesProductAd400JSONResponseBody_Reason) AsPostV1RecipesProductAd400JSONResponseBodyReason28() (PostV1RecipesProductAd400JSONResponseBodyReason28, error) {
+	var body PostV1RecipesProductAd400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesProductAd400JSONResponseBodyReason28 overwrites any union data inside the PostV1RecipesProductAd400JSONResponseBody_Reason as the provided PostV1RecipesProductAd400JSONResponseBodyReason28
+func (t *PostV1RecipesProductAd400JSONResponseBody_Reason) FromPostV1RecipesProductAd400JSONResponseBodyReason28(v PostV1RecipesProductAd400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesProductAd400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1RecipesProductAd400JSONResponseBody_Reason, using the provided PostV1RecipesProductAd400JSONResponseBodyReason28
+func (t *PostV1RecipesProductAd400JSONResponseBody_Reason) MergePostV1RecipesProductAd400JSONResponseBodyReason28(v PostV1RecipesProductAd400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1RecipesProductAd400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -63853,6 +67144,32 @@ func (t *PostV1RecipesProductCampaignImage400JSONResponseBody_Reason) FromPostV1
 
 // MergePostV1RecipesProductCampaignImage400JSONResponseBodyReason27 performs a merge with any union data inside the PostV1RecipesProductCampaignImage400JSONResponseBody_Reason, using the provided PostV1RecipesProductCampaignImage400JSONResponseBodyReason27
 func (t *PostV1RecipesProductCampaignImage400JSONResponseBody_Reason) MergePostV1RecipesProductCampaignImage400JSONResponseBodyReason27(v PostV1RecipesProductCampaignImage400JSONResponseBodyReason27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1RecipesProductCampaignImage400JSONResponseBodyReason28 returns the union data inside the PostV1RecipesProductCampaignImage400JSONResponseBody_Reason as a PostV1RecipesProductCampaignImage400JSONResponseBodyReason28
+func (t PostV1RecipesProductCampaignImage400JSONResponseBody_Reason) AsPostV1RecipesProductCampaignImage400JSONResponseBodyReason28() (PostV1RecipesProductCampaignImage400JSONResponseBodyReason28, error) {
+	var body PostV1RecipesProductCampaignImage400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesProductCampaignImage400JSONResponseBodyReason28 overwrites any union data inside the PostV1RecipesProductCampaignImage400JSONResponseBody_Reason as the provided PostV1RecipesProductCampaignImage400JSONResponseBodyReason28
+func (t *PostV1RecipesProductCampaignImage400JSONResponseBody_Reason) FromPostV1RecipesProductCampaignImage400JSONResponseBodyReason28(v PostV1RecipesProductCampaignImage400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesProductCampaignImage400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1RecipesProductCampaignImage400JSONResponseBody_Reason, using the provided PostV1RecipesProductCampaignImage400JSONResponseBodyReason28
+func (t *PostV1RecipesProductCampaignImage400JSONResponseBody_Reason) MergePostV1RecipesProductCampaignImage400JSONResponseBodyReason28(v PostV1RecipesProductCampaignImage400JSONResponseBodyReason28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -64927,6 +68244,32 @@ func (t *PostV1RecipesProductSwap400JSONResponseBody_Reason) MergePostV1RecipesP
 	return err
 }
 
+// AsPostV1RecipesProductSwap400JSONResponseBodyReason28 returns the union data inside the PostV1RecipesProductSwap400JSONResponseBody_Reason as a PostV1RecipesProductSwap400JSONResponseBodyReason28
+func (t PostV1RecipesProductSwap400JSONResponseBody_Reason) AsPostV1RecipesProductSwap400JSONResponseBodyReason28() (PostV1RecipesProductSwap400JSONResponseBodyReason28, error) {
+	var body PostV1RecipesProductSwap400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesProductSwap400JSONResponseBodyReason28 overwrites any union data inside the PostV1RecipesProductSwap400JSONResponseBody_Reason as the provided PostV1RecipesProductSwap400JSONResponseBodyReason28
+func (t *PostV1RecipesProductSwap400JSONResponseBody_Reason) FromPostV1RecipesProductSwap400JSONResponseBodyReason28(v PostV1RecipesProductSwap400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesProductSwap400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1RecipesProductSwap400JSONResponseBody_Reason, using the provided PostV1RecipesProductSwap400JSONResponseBodyReason28
+func (t *PostV1RecipesProductSwap400JSONResponseBody_Reason) MergePostV1RecipesProductSwap400JSONResponseBodyReason28(v PostV1RecipesProductSwap400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1RecipesProductSwap400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -65893,6 +69236,32 @@ func (t *PostV1RecipesProductUgc400JSONResponseBody_Reason) FromPostV1RecipesPro
 
 // MergePostV1RecipesProductUgc400JSONResponseBodyReason27 performs a merge with any union data inside the PostV1RecipesProductUgc400JSONResponseBody_Reason, using the provided PostV1RecipesProductUgc400JSONResponseBodyReason27
 func (t *PostV1RecipesProductUgc400JSONResponseBody_Reason) MergePostV1RecipesProductUgc400JSONResponseBodyReason27(v PostV1RecipesProductUgc400JSONResponseBodyReason27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1RecipesProductUgc400JSONResponseBodyReason28 returns the union data inside the PostV1RecipesProductUgc400JSONResponseBody_Reason as a PostV1RecipesProductUgc400JSONResponseBodyReason28
+func (t PostV1RecipesProductUgc400JSONResponseBody_Reason) AsPostV1RecipesProductUgc400JSONResponseBodyReason28() (PostV1RecipesProductUgc400JSONResponseBodyReason28, error) {
+	var body PostV1RecipesProductUgc400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesProductUgc400JSONResponseBodyReason28 overwrites any union data inside the PostV1RecipesProductUgc400JSONResponseBody_Reason as the provided PostV1RecipesProductUgc400JSONResponseBodyReason28
+func (t *PostV1RecipesProductUgc400JSONResponseBody_Reason) FromPostV1RecipesProductUgc400JSONResponseBodyReason28(v PostV1RecipesProductUgc400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesProductUgc400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1RecipesProductUgc400JSONResponseBody_Reason, using the provided PostV1RecipesProductUgc400JSONResponseBodyReason28
+func (t *PostV1RecipesProductUgc400JSONResponseBody_Reason) MergePostV1RecipesProductUgc400JSONResponseBodyReason28(v PostV1RecipesProductUgc400JSONResponseBodyReason28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -66957,6 +70326,32 @@ func (t *PostV1SoundEffect400JSONResponseBody_Reason) FromPostV1SoundEffect400JS
 
 // MergePostV1SoundEffect400JSONResponseBodyReason27 performs a merge with any union data inside the PostV1SoundEffect400JSONResponseBody_Reason, using the provided PostV1SoundEffect400JSONResponseBodyReason27
 func (t *PostV1SoundEffect400JSONResponseBody_Reason) MergePostV1SoundEffect400JSONResponseBodyReason27(v PostV1SoundEffect400JSONResponseBodyReason27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1SoundEffect400JSONResponseBodyReason28 returns the union data inside the PostV1SoundEffect400JSONResponseBody_Reason as a PostV1SoundEffect400JSONResponseBodyReason28
+func (t PostV1SoundEffect400JSONResponseBody_Reason) AsPostV1SoundEffect400JSONResponseBodyReason28() (PostV1SoundEffect400JSONResponseBodyReason28, error) {
+	var body PostV1SoundEffect400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1SoundEffect400JSONResponseBodyReason28 overwrites any union data inside the PostV1SoundEffect400JSONResponseBody_Reason as the provided PostV1SoundEffect400JSONResponseBodyReason28
+func (t *PostV1SoundEffect400JSONResponseBody_Reason) FromPostV1SoundEffect400JSONResponseBodyReason28(v PostV1SoundEffect400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1SoundEffect400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1SoundEffect400JSONResponseBody_Reason, using the provided PostV1SoundEffect400JSONResponseBodyReason28
+func (t *PostV1SoundEffect400JSONResponseBody_Reason) MergePostV1SoundEffect400JSONResponseBodyReason28(v PostV1SoundEffect400JSONResponseBodyReason28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -68077,6 +71472,32 @@ func (t *PostV1SpeechToSpeech400JSONResponseBody_Reason) MergePostV1SpeechToSpee
 	return err
 }
 
+// AsPostV1SpeechToSpeech400JSONResponseBodyReason28 returns the union data inside the PostV1SpeechToSpeech400JSONResponseBody_Reason as a PostV1SpeechToSpeech400JSONResponseBodyReason28
+func (t PostV1SpeechToSpeech400JSONResponseBody_Reason) AsPostV1SpeechToSpeech400JSONResponseBodyReason28() (PostV1SpeechToSpeech400JSONResponseBodyReason28, error) {
+	var body PostV1SpeechToSpeech400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1SpeechToSpeech400JSONResponseBodyReason28 overwrites any union data inside the PostV1SpeechToSpeech400JSONResponseBody_Reason as the provided PostV1SpeechToSpeech400JSONResponseBodyReason28
+func (t *PostV1SpeechToSpeech400JSONResponseBody_Reason) FromPostV1SpeechToSpeech400JSONResponseBodyReason28(v PostV1SpeechToSpeech400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1SpeechToSpeech400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1SpeechToSpeech400JSONResponseBody_Reason, using the provided PostV1SpeechToSpeech400JSONResponseBodyReason28
+func (t *PostV1SpeechToSpeech400JSONResponseBody_Reason) MergePostV1SpeechToSpeech400JSONResponseBodyReason28(v PostV1SpeechToSpeech400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1SpeechToSpeech400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -68867,6 +72288,32 @@ func (t *PostV1TextToImageJSONBody) FromPostV1TextToImageJSONBody23(v PostV1Text
 
 // MergePostV1TextToImageJSONBody23 performs a merge with any union data inside the PostV1TextToImageJSONBody, using the provided PostV1TextToImageJSONBody23
 func (t *PostV1TextToImageJSONBody) MergePostV1TextToImageJSONBody23(v PostV1TextToImageJSONBody23) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody24 returns the union data inside the PostV1TextToImageJSONBody as a PostV1TextToImageJSONBody24
+func (t PostV1TextToImageJSONBody) AsPostV1TextToImageJSONBody24() (PostV1TextToImageJSONBody24, error) {
+	var body PostV1TextToImageJSONBody24
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody24 overwrites any union data inside the PostV1TextToImageJSONBody as the provided PostV1TextToImageJSONBody24
+func (t *PostV1TextToImageJSONBody) FromPostV1TextToImageJSONBody24(v PostV1TextToImageJSONBody24) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody24 performs a merge with any union data inside the PostV1TextToImageJSONBody, using the provided PostV1TextToImageJSONBody24
+func (t *PostV1TextToImageJSONBody) MergePostV1TextToImageJSONBody24(v PostV1TextToImageJSONBody24) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -70973,6 +74420,94 @@ func (t *PostV1TextToImageJSONBody_23_ReferenceImages_Uri) UnmarshalJSON(b []byt
 	return err
 }
 
+// AsPostV1TextToImageJSONBody24ReferenceImagesUri0 returns the union data inside the PostV1TextToImageJSONBody_24_ReferenceImages_Uri as a PostV1TextToImageJSONBody24ReferenceImagesUri0
+func (t PostV1TextToImageJSONBody_24_ReferenceImages_Uri) AsPostV1TextToImageJSONBody24ReferenceImagesUri0() (PostV1TextToImageJSONBody24ReferenceImagesUri0, error) {
+	var body PostV1TextToImageJSONBody24ReferenceImagesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody24ReferenceImagesUri0 overwrites any union data inside the PostV1TextToImageJSONBody_24_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody24ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_24_ReferenceImages_Uri) FromPostV1TextToImageJSONBody24ReferenceImagesUri0(v PostV1TextToImageJSONBody24ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody24ReferenceImagesUri0 performs a merge with any union data inside the PostV1TextToImageJSONBody_24_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody24ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_24_ReferenceImages_Uri) MergePostV1TextToImageJSONBody24ReferenceImagesUri0(v PostV1TextToImageJSONBody24ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody24ReferenceImagesUri1 returns the union data inside the PostV1TextToImageJSONBody_24_ReferenceImages_Uri as a PostV1TextToImageJSONBody24ReferenceImagesUri1
+func (t PostV1TextToImageJSONBody_24_ReferenceImages_Uri) AsPostV1TextToImageJSONBody24ReferenceImagesUri1() (PostV1TextToImageJSONBody24ReferenceImagesUri1, error) {
+	var body PostV1TextToImageJSONBody24ReferenceImagesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody24ReferenceImagesUri1 overwrites any union data inside the PostV1TextToImageJSONBody_24_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody24ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_24_ReferenceImages_Uri) FromPostV1TextToImageJSONBody24ReferenceImagesUri1(v PostV1TextToImageJSONBody24ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody24ReferenceImagesUri1 performs a merge with any union data inside the PostV1TextToImageJSONBody_24_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody24ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_24_ReferenceImages_Uri) MergePostV1TextToImageJSONBody24ReferenceImagesUri1(v PostV1TextToImageJSONBody24ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody24ReferenceImagesUri2 returns the union data inside the PostV1TextToImageJSONBody_24_ReferenceImages_Uri as a PostV1TextToImageJSONBody24ReferenceImagesUri2
+func (t PostV1TextToImageJSONBody_24_ReferenceImages_Uri) AsPostV1TextToImageJSONBody24ReferenceImagesUri2() (PostV1TextToImageJSONBody24ReferenceImagesUri2, error) {
+	var body PostV1TextToImageJSONBody24ReferenceImagesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody24ReferenceImagesUri2 overwrites any union data inside the PostV1TextToImageJSONBody_24_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody24ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_24_ReferenceImages_Uri) FromPostV1TextToImageJSONBody24ReferenceImagesUri2(v PostV1TextToImageJSONBody24ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody24ReferenceImagesUri2 performs a merge with any union data inside the PostV1TextToImageJSONBody_24_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody24ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_24_ReferenceImages_Uri) MergePostV1TextToImageJSONBody24ReferenceImagesUri2(v PostV1TextToImageJSONBody24ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToImageJSONBody_24_ReferenceImages_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToImageJSONBody_24_ReferenceImages_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsPostV1TextToImage400JSONResponseBodyIssuesPath0 returns the union data inside the PostV1TextToImage400JSONResponseBody_Issues_Path_Item as a PostV1TextToImage400JSONResponseBodyIssuesPath0
 func (t PostV1TextToImage400JSONResponseBody_Issues_Path_Item) AsPostV1TextToImage400JSONResponseBodyIssuesPath0() (PostV1TextToImage400JSONResponseBodyIssuesPath0, error) {
 	var body PostV1TextToImage400JSONResponseBodyIssuesPath0
@@ -71753,6 +75288,32 @@ func (t *PostV1TextToImage400JSONResponseBody_Reason) FromPostV1TextToImage400JS
 
 // MergePostV1TextToImage400JSONResponseBodyReason27 performs a merge with any union data inside the PostV1TextToImage400JSONResponseBody_Reason, using the provided PostV1TextToImage400JSONResponseBodyReason27
 func (t *PostV1TextToImage400JSONResponseBody_Reason) MergePostV1TextToImage400JSONResponseBodyReason27(v PostV1TextToImage400JSONResponseBodyReason27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImage400JSONResponseBodyReason28 returns the union data inside the PostV1TextToImage400JSONResponseBody_Reason as a PostV1TextToImage400JSONResponseBodyReason28
+func (t PostV1TextToImage400JSONResponseBody_Reason) AsPostV1TextToImage400JSONResponseBodyReason28() (PostV1TextToImage400JSONResponseBodyReason28, error) {
+	var body PostV1TextToImage400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImage400JSONResponseBodyReason28 overwrites any union data inside the PostV1TextToImage400JSONResponseBody_Reason as the provided PostV1TextToImage400JSONResponseBodyReason28
+func (t *PostV1TextToImage400JSONResponseBody_Reason) FromPostV1TextToImage400JSONResponseBodyReason28(v PostV1TextToImage400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImage400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1TextToImage400JSONResponseBody_Reason, using the provided PostV1TextToImage400JSONResponseBodyReason28
+func (t *PostV1TextToImage400JSONResponseBody_Reason) MergePostV1TextToImage400JSONResponseBodyReason28(v PostV1TextToImage400JSONResponseBodyReason28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -72599,6 +76160,32 @@ func (t *PostV1TextToMusic400JSONResponseBody_Reason) MergePostV1TextToMusic400J
 	return err
 }
 
+// AsPostV1TextToMusic400JSONResponseBodyReason28 returns the union data inside the PostV1TextToMusic400JSONResponseBody_Reason as a PostV1TextToMusic400JSONResponseBodyReason28
+func (t PostV1TextToMusic400JSONResponseBody_Reason) AsPostV1TextToMusic400JSONResponseBodyReason28() (PostV1TextToMusic400JSONResponseBodyReason28, error) {
+	var body PostV1TextToMusic400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToMusic400JSONResponseBodyReason28 overwrites any union data inside the PostV1TextToMusic400JSONResponseBody_Reason as the provided PostV1TextToMusic400JSONResponseBodyReason28
+func (t *PostV1TextToMusic400JSONResponseBody_Reason) FromPostV1TextToMusic400JSONResponseBodyReason28(v PostV1TextToMusic400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToMusic400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1TextToMusic400JSONResponseBody_Reason, using the provided PostV1TextToMusic400JSONResponseBodyReason28
+func (t *PostV1TextToMusic400JSONResponseBody_Reason) MergePostV1TextToMusic400JSONResponseBodyReason28(v PostV1TextToMusic400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1TextToMusic400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -72837,6 +76424,32 @@ func (t *PostV1TextToSpeechJSONBody_1_Voice) MergePostV1TextToSpeechJSONBody1Voi
 	return err
 }
 
+// AsPostV1TextToSpeechJSONBody1Voice1 returns the union data inside the PostV1TextToSpeechJSONBody_1_Voice as a PostV1TextToSpeechJSONBody1Voice1
+func (t PostV1TextToSpeechJSONBody_1_Voice) AsPostV1TextToSpeechJSONBody1Voice1() (PostV1TextToSpeechJSONBody1Voice1, error) {
+	var body PostV1TextToSpeechJSONBody1Voice1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToSpeechJSONBody1Voice1 overwrites any union data inside the PostV1TextToSpeechJSONBody_1_Voice as the provided PostV1TextToSpeechJSONBody1Voice1
+func (t *PostV1TextToSpeechJSONBody_1_Voice) FromPostV1TextToSpeechJSONBody1Voice1(v PostV1TextToSpeechJSONBody1Voice1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToSpeechJSONBody1Voice1 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_1_Voice, using the provided PostV1TextToSpeechJSONBody1Voice1
+func (t *PostV1TextToSpeechJSONBody_1_Voice) MergePostV1TextToSpeechJSONBody1Voice1(v PostV1TextToSpeechJSONBody1Voice1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1TextToSpeechJSONBody_1_Voice) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -72873,6 +76486,32 @@ func (t *PostV1TextToSpeechJSONBody_2_Voice) MergePostV1TextToSpeechJSONBody2Voi
 	return err
 }
 
+// AsPostV1TextToSpeechJSONBody2Voice1 returns the union data inside the PostV1TextToSpeechJSONBody_2_Voice as a PostV1TextToSpeechJSONBody2Voice1
+func (t PostV1TextToSpeechJSONBody_2_Voice) AsPostV1TextToSpeechJSONBody2Voice1() (PostV1TextToSpeechJSONBody2Voice1, error) {
+	var body PostV1TextToSpeechJSONBody2Voice1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToSpeechJSONBody2Voice1 overwrites any union data inside the PostV1TextToSpeechJSONBody_2_Voice as the provided PostV1TextToSpeechJSONBody2Voice1
+func (t *PostV1TextToSpeechJSONBody_2_Voice) FromPostV1TextToSpeechJSONBody2Voice1(v PostV1TextToSpeechJSONBody2Voice1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToSpeechJSONBody2Voice1 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_2_Voice, using the provided PostV1TextToSpeechJSONBody2Voice1
+func (t *PostV1TextToSpeechJSONBody_2_Voice) MergePostV1TextToSpeechJSONBody2Voice1(v PostV1TextToSpeechJSONBody2Voice1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1TextToSpeechJSONBody_2_Voice) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -72899,6 +76538,32 @@ func (t *PostV1TextToSpeechJSONBody_3_Voice) FromPostV1TextToSpeechJSONBody3Voic
 
 // MergePostV1TextToSpeechJSONBody3Voice0 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_3_Voice, using the provided PostV1TextToSpeechJSONBody3Voice0
 func (t *PostV1TextToSpeechJSONBody_3_Voice) MergePostV1TextToSpeechJSONBody3Voice0(v PostV1TextToSpeechJSONBody3Voice0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToSpeechJSONBody3Voice1 returns the union data inside the PostV1TextToSpeechJSONBody_3_Voice as a PostV1TextToSpeechJSONBody3Voice1
+func (t PostV1TextToSpeechJSONBody_3_Voice) AsPostV1TextToSpeechJSONBody3Voice1() (PostV1TextToSpeechJSONBody3Voice1, error) {
+	var body PostV1TextToSpeechJSONBody3Voice1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToSpeechJSONBody3Voice1 overwrites any union data inside the PostV1TextToSpeechJSONBody_3_Voice as the provided PostV1TextToSpeechJSONBody3Voice1
+func (t *PostV1TextToSpeechJSONBody_3_Voice) FromPostV1TextToSpeechJSONBody3Voice1(v PostV1TextToSpeechJSONBody3Voice1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToSpeechJSONBody3Voice1 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_3_Voice, using the provided PostV1TextToSpeechJSONBody3Voice1
+func (t *PostV1TextToSpeechJSONBody_3_Voice) MergePostV1TextToSpeechJSONBody3Voice1(v PostV1TextToSpeechJSONBody3Voice1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -73709,6 +77374,32 @@ func (t *PostV1TextToSpeech400JSONResponseBody_Reason) MergePostV1TextToSpeech40
 	return err
 }
 
+// AsPostV1TextToSpeech400JSONResponseBodyReason28 returns the union data inside the PostV1TextToSpeech400JSONResponseBody_Reason as a PostV1TextToSpeech400JSONResponseBodyReason28
+func (t PostV1TextToSpeech400JSONResponseBody_Reason) AsPostV1TextToSpeech400JSONResponseBodyReason28() (PostV1TextToSpeech400JSONResponseBodyReason28, error) {
+	var body PostV1TextToSpeech400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToSpeech400JSONResponseBodyReason28 overwrites any union data inside the PostV1TextToSpeech400JSONResponseBody_Reason as the provided PostV1TextToSpeech400JSONResponseBodyReason28
+func (t *PostV1TextToSpeech400JSONResponseBody_Reason) FromPostV1TextToSpeech400JSONResponseBodyReason28(v PostV1TextToSpeech400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToSpeech400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1TextToSpeech400JSONResponseBody_Reason, using the provided PostV1TextToSpeech400JSONResponseBodyReason28
+func (t *PostV1TextToSpeech400JSONResponseBody_Reason) MergePostV1TextToSpeech400JSONResponseBodyReason28(v PostV1TextToSpeech400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1TextToSpeech400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -74385,6 +78076,58 @@ func (t *PostV1TextToVideoJSONBody) FromPostV1TextToVideoJSONBody25(v PostV1Text
 
 // MergePostV1TextToVideoJSONBody25 performs a merge with any union data inside the PostV1TextToVideoJSONBody, using the provided PostV1TextToVideoJSONBody25
 func (t *PostV1TextToVideoJSONBody) MergePostV1TextToVideoJSONBody25(v PostV1TextToVideoJSONBody25) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody26 returns the union data inside the PostV1TextToVideoJSONBody as a PostV1TextToVideoJSONBody26
+func (t PostV1TextToVideoJSONBody) AsPostV1TextToVideoJSONBody26() (PostV1TextToVideoJSONBody26, error) {
+	var body PostV1TextToVideoJSONBody26
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody26 overwrites any union data inside the PostV1TextToVideoJSONBody as the provided PostV1TextToVideoJSONBody26
+func (t *PostV1TextToVideoJSONBody) FromPostV1TextToVideoJSONBody26(v PostV1TextToVideoJSONBody26) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody26 performs a merge with any union data inside the PostV1TextToVideoJSONBody, using the provided PostV1TextToVideoJSONBody26
+func (t *PostV1TextToVideoJSONBody) MergePostV1TextToVideoJSONBody26(v PostV1TextToVideoJSONBody26) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody27 returns the union data inside the PostV1TextToVideoJSONBody as a PostV1TextToVideoJSONBody27
+func (t PostV1TextToVideoJSONBody) AsPostV1TextToVideoJSONBody27() (PostV1TextToVideoJSONBody27, error) {
+	var body PostV1TextToVideoJSONBody27
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody27 overwrites any union data inside the PostV1TextToVideoJSONBody as the provided PostV1TextToVideoJSONBody27
+func (t *PostV1TextToVideoJSONBody) FromPostV1TextToVideoJSONBody27(v PostV1TextToVideoJSONBody27) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody27 performs a merge with any union data inside the PostV1TextToVideoJSONBody, using the provided PostV1TextToVideoJSONBody27
+func (t *PostV1TextToVideoJSONBody) MergePostV1TextToVideoJSONBody27(v PostV1TextToVideoJSONBody27) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -77417,6 +81160,534 @@ func (t *PostV1TextToVideoJSONBody_25_References_Uri) UnmarshalJSON(b []byte) er
 	return err
 }
 
+// AsPostV1TextToVideoJSONBody26ReferenceAudioUri0 returns the union data inside the PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri as a PostV1TextToVideoJSONBody26ReferenceAudioUri0
+func (t PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) AsPostV1TextToVideoJSONBody26ReferenceAudioUri0() (PostV1TextToVideoJSONBody26ReferenceAudioUri0, error) {
+	var body PostV1TextToVideoJSONBody26ReferenceAudioUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody26ReferenceAudioUri0 overwrites any union data inside the PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri as the provided PostV1TextToVideoJSONBody26ReferenceAudioUri0
+func (t *PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) FromPostV1TextToVideoJSONBody26ReferenceAudioUri0(v PostV1TextToVideoJSONBody26ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody26ReferenceAudioUri0 performs a merge with any union data inside the PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri, using the provided PostV1TextToVideoJSONBody26ReferenceAudioUri0
+func (t *PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) MergePostV1TextToVideoJSONBody26ReferenceAudioUri0(v PostV1TextToVideoJSONBody26ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody26ReferenceAudioUri1 returns the union data inside the PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri as a PostV1TextToVideoJSONBody26ReferenceAudioUri1
+func (t PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) AsPostV1TextToVideoJSONBody26ReferenceAudioUri1() (PostV1TextToVideoJSONBody26ReferenceAudioUri1, error) {
+	var body PostV1TextToVideoJSONBody26ReferenceAudioUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody26ReferenceAudioUri1 overwrites any union data inside the PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri as the provided PostV1TextToVideoJSONBody26ReferenceAudioUri1
+func (t *PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) FromPostV1TextToVideoJSONBody26ReferenceAudioUri1(v PostV1TextToVideoJSONBody26ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody26ReferenceAudioUri1 performs a merge with any union data inside the PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri, using the provided PostV1TextToVideoJSONBody26ReferenceAudioUri1
+func (t *PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) MergePostV1TextToVideoJSONBody26ReferenceAudioUri1(v PostV1TextToVideoJSONBody26ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody26ReferenceAudioUri2 returns the union data inside the PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri as a PostV1TextToVideoJSONBody26ReferenceAudioUri2
+func (t PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) AsPostV1TextToVideoJSONBody26ReferenceAudioUri2() (PostV1TextToVideoJSONBody26ReferenceAudioUri2, error) {
+	var body PostV1TextToVideoJSONBody26ReferenceAudioUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody26ReferenceAudioUri2 overwrites any union data inside the PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri as the provided PostV1TextToVideoJSONBody26ReferenceAudioUri2
+func (t *PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) FromPostV1TextToVideoJSONBody26ReferenceAudioUri2(v PostV1TextToVideoJSONBody26ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody26ReferenceAudioUri2 performs a merge with any union data inside the PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri, using the provided PostV1TextToVideoJSONBody26ReferenceAudioUri2
+func (t *PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) MergePostV1TextToVideoJSONBody26ReferenceAudioUri2(v PostV1TextToVideoJSONBody26ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToVideoJSONBody_26_ReferenceAudio_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody26ReferenceVideosUri0 returns the union data inside the PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri as a PostV1TextToVideoJSONBody26ReferenceVideosUri0
+func (t PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) AsPostV1TextToVideoJSONBody26ReferenceVideosUri0() (PostV1TextToVideoJSONBody26ReferenceVideosUri0, error) {
+	var body PostV1TextToVideoJSONBody26ReferenceVideosUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody26ReferenceVideosUri0 overwrites any union data inside the PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri as the provided PostV1TextToVideoJSONBody26ReferenceVideosUri0
+func (t *PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) FromPostV1TextToVideoJSONBody26ReferenceVideosUri0(v PostV1TextToVideoJSONBody26ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody26ReferenceVideosUri0 performs a merge with any union data inside the PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri, using the provided PostV1TextToVideoJSONBody26ReferenceVideosUri0
+func (t *PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) MergePostV1TextToVideoJSONBody26ReferenceVideosUri0(v PostV1TextToVideoJSONBody26ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody26ReferenceVideosUri1 returns the union data inside the PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri as a PostV1TextToVideoJSONBody26ReferenceVideosUri1
+func (t PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) AsPostV1TextToVideoJSONBody26ReferenceVideosUri1() (PostV1TextToVideoJSONBody26ReferenceVideosUri1, error) {
+	var body PostV1TextToVideoJSONBody26ReferenceVideosUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody26ReferenceVideosUri1 overwrites any union data inside the PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri as the provided PostV1TextToVideoJSONBody26ReferenceVideosUri1
+func (t *PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) FromPostV1TextToVideoJSONBody26ReferenceVideosUri1(v PostV1TextToVideoJSONBody26ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody26ReferenceVideosUri1 performs a merge with any union data inside the PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri, using the provided PostV1TextToVideoJSONBody26ReferenceVideosUri1
+func (t *PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) MergePostV1TextToVideoJSONBody26ReferenceVideosUri1(v PostV1TextToVideoJSONBody26ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody26ReferenceVideosUri2 returns the union data inside the PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri as a PostV1TextToVideoJSONBody26ReferenceVideosUri2
+func (t PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) AsPostV1TextToVideoJSONBody26ReferenceVideosUri2() (PostV1TextToVideoJSONBody26ReferenceVideosUri2, error) {
+	var body PostV1TextToVideoJSONBody26ReferenceVideosUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody26ReferenceVideosUri2 overwrites any union data inside the PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri as the provided PostV1TextToVideoJSONBody26ReferenceVideosUri2
+func (t *PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) FromPostV1TextToVideoJSONBody26ReferenceVideosUri2(v PostV1TextToVideoJSONBody26ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody26ReferenceVideosUri2 performs a merge with any union data inside the PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri, using the provided PostV1TextToVideoJSONBody26ReferenceVideosUri2
+func (t *PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) MergePostV1TextToVideoJSONBody26ReferenceVideosUri2(v PostV1TextToVideoJSONBody26ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToVideoJSONBody_26_ReferenceVideos_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody26ReferencesUri0 returns the union data inside the PostV1TextToVideoJSONBody_26_References_Uri as a PostV1TextToVideoJSONBody26ReferencesUri0
+func (t PostV1TextToVideoJSONBody_26_References_Uri) AsPostV1TextToVideoJSONBody26ReferencesUri0() (PostV1TextToVideoJSONBody26ReferencesUri0, error) {
+	var body PostV1TextToVideoJSONBody26ReferencesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody26ReferencesUri0 overwrites any union data inside the PostV1TextToVideoJSONBody_26_References_Uri as the provided PostV1TextToVideoJSONBody26ReferencesUri0
+func (t *PostV1TextToVideoJSONBody_26_References_Uri) FromPostV1TextToVideoJSONBody26ReferencesUri0(v PostV1TextToVideoJSONBody26ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody26ReferencesUri0 performs a merge with any union data inside the PostV1TextToVideoJSONBody_26_References_Uri, using the provided PostV1TextToVideoJSONBody26ReferencesUri0
+func (t *PostV1TextToVideoJSONBody_26_References_Uri) MergePostV1TextToVideoJSONBody26ReferencesUri0(v PostV1TextToVideoJSONBody26ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody26ReferencesUri1 returns the union data inside the PostV1TextToVideoJSONBody_26_References_Uri as a PostV1TextToVideoJSONBody26ReferencesUri1
+func (t PostV1TextToVideoJSONBody_26_References_Uri) AsPostV1TextToVideoJSONBody26ReferencesUri1() (PostV1TextToVideoJSONBody26ReferencesUri1, error) {
+	var body PostV1TextToVideoJSONBody26ReferencesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody26ReferencesUri1 overwrites any union data inside the PostV1TextToVideoJSONBody_26_References_Uri as the provided PostV1TextToVideoJSONBody26ReferencesUri1
+func (t *PostV1TextToVideoJSONBody_26_References_Uri) FromPostV1TextToVideoJSONBody26ReferencesUri1(v PostV1TextToVideoJSONBody26ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody26ReferencesUri1 performs a merge with any union data inside the PostV1TextToVideoJSONBody_26_References_Uri, using the provided PostV1TextToVideoJSONBody26ReferencesUri1
+func (t *PostV1TextToVideoJSONBody_26_References_Uri) MergePostV1TextToVideoJSONBody26ReferencesUri1(v PostV1TextToVideoJSONBody26ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody26ReferencesUri2 returns the union data inside the PostV1TextToVideoJSONBody_26_References_Uri as a PostV1TextToVideoJSONBody26ReferencesUri2
+func (t PostV1TextToVideoJSONBody_26_References_Uri) AsPostV1TextToVideoJSONBody26ReferencesUri2() (PostV1TextToVideoJSONBody26ReferencesUri2, error) {
+	var body PostV1TextToVideoJSONBody26ReferencesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody26ReferencesUri2 overwrites any union data inside the PostV1TextToVideoJSONBody_26_References_Uri as the provided PostV1TextToVideoJSONBody26ReferencesUri2
+func (t *PostV1TextToVideoJSONBody_26_References_Uri) FromPostV1TextToVideoJSONBody26ReferencesUri2(v PostV1TextToVideoJSONBody26ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody26ReferencesUri2 performs a merge with any union data inside the PostV1TextToVideoJSONBody_26_References_Uri, using the provided PostV1TextToVideoJSONBody26ReferencesUri2
+func (t *PostV1TextToVideoJSONBody_26_References_Uri) MergePostV1TextToVideoJSONBody26ReferencesUri2(v PostV1TextToVideoJSONBody26ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToVideoJSONBody_26_References_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToVideoJSONBody_26_References_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody27ReferenceAudioUri0 returns the union data inside the PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri as a PostV1TextToVideoJSONBody27ReferenceAudioUri0
+func (t PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) AsPostV1TextToVideoJSONBody27ReferenceAudioUri0() (PostV1TextToVideoJSONBody27ReferenceAudioUri0, error) {
+	var body PostV1TextToVideoJSONBody27ReferenceAudioUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody27ReferenceAudioUri0 overwrites any union data inside the PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri as the provided PostV1TextToVideoJSONBody27ReferenceAudioUri0
+func (t *PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) FromPostV1TextToVideoJSONBody27ReferenceAudioUri0(v PostV1TextToVideoJSONBody27ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody27ReferenceAudioUri0 performs a merge with any union data inside the PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri, using the provided PostV1TextToVideoJSONBody27ReferenceAudioUri0
+func (t *PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) MergePostV1TextToVideoJSONBody27ReferenceAudioUri0(v PostV1TextToVideoJSONBody27ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody27ReferenceAudioUri1 returns the union data inside the PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri as a PostV1TextToVideoJSONBody27ReferenceAudioUri1
+func (t PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) AsPostV1TextToVideoJSONBody27ReferenceAudioUri1() (PostV1TextToVideoJSONBody27ReferenceAudioUri1, error) {
+	var body PostV1TextToVideoJSONBody27ReferenceAudioUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody27ReferenceAudioUri1 overwrites any union data inside the PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri as the provided PostV1TextToVideoJSONBody27ReferenceAudioUri1
+func (t *PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) FromPostV1TextToVideoJSONBody27ReferenceAudioUri1(v PostV1TextToVideoJSONBody27ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody27ReferenceAudioUri1 performs a merge with any union data inside the PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri, using the provided PostV1TextToVideoJSONBody27ReferenceAudioUri1
+func (t *PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) MergePostV1TextToVideoJSONBody27ReferenceAudioUri1(v PostV1TextToVideoJSONBody27ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody27ReferenceAudioUri2 returns the union data inside the PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri as a PostV1TextToVideoJSONBody27ReferenceAudioUri2
+func (t PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) AsPostV1TextToVideoJSONBody27ReferenceAudioUri2() (PostV1TextToVideoJSONBody27ReferenceAudioUri2, error) {
+	var body PostV1TextToVideoJSONBody27ReferenceAudioUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody27ReferenceAudioUri2 overwrites any union data inside the PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri as the provided PostV1TextToVideoJSONBody27ReferenceAudioUri2
+func (t *PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) FromPostV1TextToVideoJSONBody27ReferenceAudioUri2(v PostV1TextToVideoJSONBody27ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody27ReferenceAudioUri2 performs a merge with any union data inside the PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri, using the provided PostV1TextToVideoJSONBody27ReferenceAudioUri2
+func (t *PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) MergePostV1TextToVideoJSONBody27ReferenceAudioUri2(v PostV1TextToVideoJSONBody27ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToVideoJSONBody_27_ReferenceAudio_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody27ReferenceVideosUri0 returns the union data inside the PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri as a PostV1TextToVideoJSONBody27ReferenceVideosUri0
+func (t PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) AsPostV1TextToVideoJSONBody27ReferenceVideosUri0() (PostV1TextToVideoJSONBody27ReferenceVideosUri0, error) {
+	var body PostV1TextToVideoJSONBody27ReferenceVideosUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody27ReferenceVideosUri0 overwrites any union data inside the PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri as the provided PostV1TextToVideoJSONBody27ReferenceVideosUri0
+func (t *PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) FromPostV1TextToVideoJSONBody27ReferenceVideosUri0(v PostV1TextToVideoJSONBody27ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody27ReferenceVideosUri0 performs a merge with any union data inside the PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri, using the provided PostV1TextToVideoJSONBody27ReferenceVideosUri0
+func (t *PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) MergePostV1TextToVideoJSONBody27ReferenceVideosUri0(v PostV1TextToVideoJSONBody27ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody27ReferenceVideosUri1 returns the union data inside the PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri as a PostV1TextToVideoJSONBody27ReferenceVideosUri1
+func (t PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) AsPostV1TextToVideoJSONBody27ReferenceVideosUri1() (PostV1TextToVideoJSONBody27ReferenceVideosUri1, error) {
+	var body PostV1TextToVideoJSONBody27ReferenceVideosUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody27ReferenceVideosUri1 overwrites any union data inside the PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri as the provided PostV1TextToVideoJSONBody27ReferenceVideosUri1
+func (t *PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) FromPostV1TextToVideoJSONBody27ReferenceVideosUri1(v PostV1TextToVideoJSONBody27ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody27ReferenceVideosUri1 performs a merge with any union data inside the PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri, using the provided PostV1TextToVideoJSONBody27ReferenceVideosUri1
+func (t *PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) MergePostV1TextToVideoJSONBody27ReferenceVideosUri1(v PostV1TextToVideoJSONBody27ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody27ReferenceVideosUri2 returns the union data inside the PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri as a PostV1TextToVideoJSONBody27ReferenceVideosUri2
+func (t PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) AsPostV1TextToVideoJSONBody27ReferenceVideosUri2() (PostV1TextToVideoJSONBody27ReferenceVideosUri2, error) {
+	var body PostV1TextToVideoJSONBody27ReferenceVideosUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody27ReferenceVideosUri2 overwrites any union data inside the PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri as the provided PostV1TextToVideoJSONBody27ReferenceVideosUri2
+func (t *PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) FromPostV1TextToVideoJSONBody27ReferenceVideosUri2(v PostV1TextToVideoJSONBody27ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody27ReferenceVideosUri2 performs a merge with any union data inside the PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri, using the provided PostV1TextToVideoJSONBody27ReferenceVideosUri2
+func (t *PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) MergePostV1TextToVideoJSONBody27ReferenceVideosUri2(v PostV1TextToVideoJSONBody27ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToVideoJSONBody_27_ReferenceVideos_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody27ReferencesUri0 returns the union data inside the PostV1TextToVideoJSONBody_27_References_Uri as a PostV1TextToVideoJSONBody27ReferencesUri0
+func (t PostV1TextToVideoJSONBody_27_References_Uri) AsPostV1TextToVideoJSONBody27ReferencesUri0() (PostV1TextToVideoJSONBody27ReferencesUri0, error) {
+	var body PostV1TextToVideoJSONBody27ReferencesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody27ReferencesUri0 overwrites any union data inside the PostV1TextToVideoJSONBody_27_References_Uri as the provided PostV1TextToVideoJSONBody27ReferencesUri0
+func (t *PostV1TextToVideoJSONBody_27_References_Uri) FromPostV1TextToVideoJSONBody27ReferencesUri0(v PostV1TextToVideoJSONBody27ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody27ReferencesUri0 performs a merge with any union data inside the PostV1TextToVideoJSONBody_27_References_Uri, using the provided PostV1TextToVideoJSONBody27ReferencesUri0
+func (t *PostV1TextToVideoJSONBody_27_References_Uri) MergePostV1TextToVideoJSONBody27ReferencesUri0(v PostV1TextToVideoJSONBody27ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody27ReferencesUri1 returns the union data inside the PostV1TextToVideoJSONBody_27_References_Uri as a PostV1TextToVideoJSONBody27ReferencesUri1
+func (t PostV1TextToVideoJSONBody_27_References_Uri) AsPostV1TextToVideoJSONBody27ReferencesUri1() (PostV1TextToVideoJSONBody27ReferencesUri1, error) {
+	var body PostV1TextToVideoJSONBody27ReferencesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody27ReferencesUri1 overwrites any union data inside the PostV1TextToVideoJSONBody_27_References_Uri as the provided PostV1TextToVideoJSONBody27ReferencesUri1
+func (t *PostV1TextToVideoJSONBody_27_References_Uri) FromPostV1TextToVideoJSONBody27ReferencesUri1(v PostV1TextToVideoJSONBody27ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody27ReferencesUri1 performs a merge with any union data inside the PostV1TextToVideoJSONBody_27_References_Uri, using the provided PostV1TextToVideoJSONBody27ReferencesUri1
+func (t *PostV1TextToVideoJSONBody_27_References_Uri) MergePostV1TextToVideoJSONBody27ReferencesUri1(v PostV1TextToVideoJSONBody27ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody27ReferencesUri2 returns the union data inside the PostV1TextToVideoJSONBody_27_References_Uri as a PostV1TextToVideoJSONBody27ReferencesUri2
+func (t PostV1TextToVideoJSONBody_27_References_Uri) AsPostV1TextToVideoJSONBody27ReferencesUri2() (PostV1TextToVideoJSONBody27ReferencesUri2, error) {
+	var body PostV1TextToVideoJSONBody27ReferencesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody27ReferencesUri2 overwrites any union data inside the PostV1TextToVideoJSONBody_27_References_Uri as the provided PostV1TextToVideoJSONBody27ReferencesUri2
+func (t *PostV1TextToVideoJSONBody_27_References_Uri) FromPostV1TextToVideoJSONBody27ReferencesUri2(v PostV1TextToVideoJSONBody27ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody27ReferencesUri2 performs a merge with any union data inside the PostV1TextToVideoJSONBody_27_References_Uri, using the provided PostV1TextToVideoJSONBody27ReferencesUri2
+func (t *PostV1TextToVideoJSONBody_27_References_Uri) MergePostV1TextToVideoJSONBody27ReferencesUri2(v PostV1TextToVideoJSONBody27ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToVideoJSONBody_27_References_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToVideoJSONBody_27_References_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsPostV1TextToVideo400JSONResponseBodyIssuesPath0 returns the union data inside the PostV1TextToVideo400JSONResponseBody_Issues_Path_Item as a PostV1TextToVideo400JSONResponseBodyIssuesPath0
 func (t PostV1TextToVideo400JSONResponseBody_Issues_Path_Item) AsPostV1TextToVideo400JSONResponseBodyIssuesPath0() (PostV1TextToVideo400JSONResponseBodyIssuesPath0, error) {
 	var body PostV1TextToVideo400JSONResponseBodyIssuesPath0
@@ -78197,6 +82468,32 @@ func (t *PostV1TextToVideo400JSONResponseBody_Reason) FromPostV1TextToVideo400JS
 
 // MergePostV1TextToVideo400JSONResponseBodyReason27 performs a merge with any union data inside the PostV1TextToVideo400JSONResponseBody_Reason, using the provided PostV1TextToVideo400JSONResponseBodyReason27
 func (t *PostV1TextToVideo400JSONResponseBody_Reason) MergePostV1TextToVideo400JSONResponseBodyReason27(v PostV1TextToVideo400JSONResponseBodyReason27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideo400JSONResponseBodyReason28 returns the union data inside the PostV1TextToVideo400JSONResponseBody_Reason as a PostV1TextToVideo400JSONResponseBodyReason28
+func (t PostV1TextToVideo400JSONResponseBody_Reason) AsPostV1TextToVideo400JSONResponseBodyReason28() (PostV1TextToVideo400JSONResponseBodyReason28, error) {
+	var body PostV1TextToVideo400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideo400JSONResponseBodyReason28 overwrites any union data inside the PostV1TextToVideo400JSONResponseBody_Reason as the provided PostV1TextToVideo400JSONResponseBodyReason28
+func (t *PostV1TextToVideo400JSONResponseBody_Reason) FromPostV1TextToVideo400JSONResponseBodyReason28(v PostV1TextToVideo400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideo400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1TextToVideo400JSONResponseBody_Reason, using the provided PostV1TextToVideo400JSONResponseBodyReason28
+func (t *PostV1TextToVideo400JSONResponseBody_Reason) MergePostV1TextToVideo400JSONResponseBodyReason28(v PostV1TextToVideo400JSONResponseBodyReason28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -79131,6 +83428,32 @@ func (t *PostV1VideoToAudio400JSONResponseBody_Reason) MergePostV1VideoToAudio40
 	return err
 }
 
+// AsPostV1VideoToAudio400JSONResponseBodyReason28 returns the union data inside the PostV1VideoToAudio400JSONResponseBody_Reason as a PostV1VideoToAudio400JSONResponseBodyReason28
+func (t PostV1VideoToAudio400JSONResponseBody_Reason) AsPostV1VideoToAudio400JSONResponseBodyReason28() (PostV1VideoToAudio400JSONResponseBodyReason28, error) {
+	var body PostV1VideoToAudio400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToAudio400JSONResponseBodyReason28 overwrites any union data inside the PostV1VideoToAudio400JSONResponseBody_Reason as the provided PostV1VideoToAudio400JSONResponseBodyReason28
+func (t *PostV1VideoToAudio400JSONResponseBody_Reason) FromPostV1VideoToAudio400JSONResponseBodyReason28(v PostV1VideoToAudio400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToAudio400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1VideoToAudio400JSONResponseBody_Reason, using the provided PostV1VideoToAudio400JSONResponseBodyReason28
+func (t *PostV1VideoToAudio400JSONResponseBody_Reason) MergePostV1VideoToAudio400JSONResponseBodyReason28(v PostV1VideoToAudio400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1VideoToAudio400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -80055,6 +84378,32 @@ func (t *PostV1VideoToHdr400JSONResponseBody_Reason) MergePostV1VideoToHdr400JSO
 	return err
 }
 
+// AsPostV1VideoToHdr400JSONResponseBodyReason28 returns the union data inside the PostV1VideoToHdr400JSONResponseBody_Reason as a PostV1VideoToHdr400JSONResponseBodyReason28
+func (t PostV1VideoToHdr400JSONResponseBody_Reason) AsPostV1VideoToHdr400JSONResponseBodyReason28() (PostV1VideoToHdr400JSONResponseBodyReason28, error) {
+	var body PostV1VideoToHdr400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToHdr400JSONResponseBodyReason28 overwrites any union data inside the PostV1VideoToHdr400JSONResponseBody_Reason as the provided PostV1VideoToHdr400JSONResponseBodyReason28
+func (t *PostV1VideoToHdr400JSONResponseBody_Reason) FromPostV1VideoToHdr400JSONResponseBodyReason28(v PostV1VideoToHdr400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToHdr400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1VideoToHdr400JSONResponseBody_Reason, using the provided PostV1VideoToHdr400JSONResponseBodyReason28
+func (t *PostV1VideoToHdr400JSONResponseBody_Reason) MergePostV1VideoToHdr400JSONResponseBodyReason28(v PostV1VideoToHdr400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1VideoToHdr400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -80419,6 +84768,58 @@ func (t *PostV1VideoToVideoJSONBody) FromPostV1VideoToVideoJSONBody13(v PostV1Vi
 
 // MergePostV1VideoToVideoJSONBody13 performs a merge with any union data inside the PostV1VideoToVideoJSONBody, using the provided PostV1VideoToVideoJSONBody13
 func (t *PostV1VideoToVideoJSONBody) MergePostV1VideoToVideoJSONBody13(v PostV1VideoToVideoJSONBody13) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14 returns the union data inside the PostV1VideoToVideoJSONBody as a PostV1VideoToVideoJSONBody14
+func (t PostV1VideoToVideoJSONBody) AsPostV1VideoToVideoJSONBody14() (PostV1VideoToVideoJSONBody14, error) {
+	var body PostV1VideoToVideoJSONBody14
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14 overwrites any union data inside the PostV1VideoToVideoJSONBody as the provided PostV1VideoToVideoJSONBody14
+func (t *PostV1VideoToVideoJSONBody) FromPostV1VideoToVideoJSONBody14(v PostV1VideoToVideoJSONBody14) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14 performs a merge with any union data inside the PostV1VideoToVideoJSONBody, using the provided PostV1VideoToVideoJSONBody14
+func (t *PostV1VideoToVideoJSONBody) MergePostV1VideoToVideoJSONBody14(v PostV1VideoToVideoJSONBody14) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15 returns the union data inside the PostV1VideoToVideoJSONBody as a PostV1VideoToVideoJSONBody15
+func (t PostV1VideoToVideoJSONBody) AsPostV1VideoToVideoJSONBody15() (PostV1VideoToVideoJSONBody15, error) {
+	var body PostV1VideoToVideoJSONBody15
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15 overwrites any union data inside the PostV1VideoToVideoJSONBody as the provided PostV1VideoToVideoJSONBody15
+func (t *PostV1VideoToVideoJSONBody) FromPostV1VideoToVideoJSONBody15(v PostV1VideoToVideoJSONBody15) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15 performs a merge with any union data inside the PostV1VideoToVideoJSONBody, using the provided PostV1VideoToVideoJSONBody15
+func (t *PostV1VideoToVideoJSONBody) MergePostV1VideoToVideoJSONBody15(v PostV1VideoToVideoJSONBody15) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -84843,6 +89244,710 @@ func (t *PostV1VideoToVideoJSONBody_13_VideoUri) UnmarshalJSON(b []byte) error {
 	return err
 }
 
+// AsPostV1VideoToVideoJSONBody14PromptVideo0 returns the union data inside the PostV1VideoToVideoJSONBody_14_PromptVideo as a PostV1VideoToVideoJSONBody14PromptVideo0
+func (t PostV1VideoToVideoJSONBody_14_PromptVideo) AsPostV1VideoToVideoJSONBody14PromptVideo0() (PostV1VideoToVideoJSONBody14PromptVideo0, error) {
+	var body PostV1VideoToVideoJSONBody14PromptVideo0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14PromptVideo0 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_PromptVideo as the provided PostV1VideoToVideoJSONBody14PromptVideo0
+func (t *PostV1VideoToVideoJSONBody_14_PromptVideo) FromPostV1VideoToVideoJSONBody14PromptVideo0(v PostV1VideoToVideoJSONBody14PromptVideo0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14PromptVideo0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_PromptVideo, using the provided PostV1VideoToVideoJSONBody14PromptVideo0
+func (t *PostV1VideoToVideoJSONBody_14_PromptVideo) MergePostV1VideoToVideoJSONBody14PromptVideo0(v PostV1VideoToVideoJSONBody14PromptVideo0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14PromptVideo1 returns the union data inside the PostV1VideoToVideoJSONBody_14_PromptVideo as a PostV1VideoToVideoJSONBody14PromptVideo1
+func (t PostV1VideoToVideoJSONBody_14_PromptVideo) AsPostV1VideoToVideoJSONBody14PromptVideo1() (PostV1VideoToVideoJSONBody14PromptVideo1, error) {
+	var body PostV1VideoToVideoJSONBody14PromptVideo1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14PromptVideo1 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_PromptVideo as the provided PostV1VideoToVideoJSONBody14PromptVideo1
+func (t *PostV1VideoToVideoJSONBody_14_PromptVideo) FromPostV1VideoToVideoJSONBody14PromptVideo1(v PostV1VideoToVideoJSONBody14PromptVideo1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14PromptVideo1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_PromptVideo, using the provided PostV1VideoToVideoJSONBody14PromptVideo1
+func (t *PostV1VideoToVideoJSONBody_14_PromptVideo) MergePostV1VideoToVideoJSONBody14PromptVideo1(v PostV1VideoToVideoJSONBody14PromptVideo1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14PromptVideo2 returns the union data inside the PostV1VideoToVideoJSONBody_14_PromptVideo as a PostV1VideoToVideoJSONBody14PromptVideo2
+func (t PostV1VideoToVideoJSONBody_14_PromptVideo) AsPostV1VideoToVideoJSONBody14PromptVideo2() (PostV1VideoToVideoJSONBody14PromptVideo2, error) {
+	var body PostV1VideoToVideoJSONBody14PromptVideo2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14PromptVideo2 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_PromptVideo as the provided PostV1VideoToVideoJSONBody14PromptVideo2
+func (t *PostV1VideoToVideoJSONBody_14_PromptVideo) FromPostV1VideoToVideoJSONBody14PromptVideo2(v PostV1VideoToVideoJSONBody14PromptVideo2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14PromptVideo2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_PromptVideo, using the provided PostV1VideoToVideoJSONBody14PromptVideo2
+func (t *PostV1VideoToVideoJSONBody_14_PromptVideo) MergePostV1VideoToVideoJSONBody14PromptVideo2(v PostV1VideoToVideoJSONBody14PromptVideo2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_14_PromptVideo) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_14_PromptVideo) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14ReferenceAudioUri0 returns the union data inside the PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri as a PostV1VideoToVideoJSONBody14ReferenceAudioUri0
+func (t PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) AsPostV1VideoToVideoJSONBody14ReferenceAudioUri0() (PostV1VideoToVideoJSONBody14ReferenceAudioUri0, error) {
+	var body PostV1VideoToVideoJSONBody14ReferenceAudioUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14ReferenceAudioUri0 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri as the provided PostV1VideoToVideoJSONBody14ReferenceAudioUri0
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) FromPostV1VideoToVideoJSONBody14ReferenceAudioUri0(v PostV1VideoToVideoJSONBody14ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14ReferenceAudioUri0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri, using the provided PostV1VideoToVideoJSONBody14ReferenceAudioUri0
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) MergePostV1VideoToVideoJSONBody14ReferenceAudioUri0(v PostV1VideoToVideoJSONBody14ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14ReferenceAudioUri1 returns the union data inside the PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri as a PostV1VideoToVideoJSONBody14ReferenceAudioUri1
+func (t PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) AsPostV1VideoToVideoJSONBody14ReferenceAudioUri1() (PostV1VideoToVideoJSONBody14ReferenceAudioUri1, error) {
+	var body PostV1VideoToVideoJSONBody14ReferenceAudioUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14ReferenceAudioUri1 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri as the provided PostV1VideoToVideoJSONBody14ReferenceAudioUri1
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) FromPostV1VideoToVideoJSONBody14ReferenceAudioUri1(v PostV1VideoToVideoJSONBody14ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14ReferenceAudioUri1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri, using the provided PostV1VideoToVideoJSONBody14ReferenceAudioUri1
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) MergePostV1VideoToVideoJSONBody14ReferenceAudioUri1(v PostV1VideoToVideoJSONBody14ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14ReferenceAudioUri2 returns the union data inside the PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri as a PostV1VideoToVideoJSONBody14ReferenceAudioUri2
+func (t PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) AsPostV1VideoToVideoJSONBody14ReferenceAudioUri2() (PostV1VideoToVideoJSONBody14ReferenceAudioUri2, error) {
+	var body PostV1VideoToVideoJSONBody14ReferenceAudioUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14ReferenceAudioUri2 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri as the provided PostV1VideoToVideoJSONBody14ReferenceAudioUri2
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) FromPostV1VideoToVideoJSONBody14ReferenceAudioUri2(v PostV1VideoToVideoJSONBody14ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14ReferenceAudioUri2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri, using the provided PostV1VideoToVideoJSONBody14ReferenceAudioUri2
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) MergePostV1VideoToVideoJSONBody14ReferenceAudioUri2(v PostV1VideoToVideoJSONBody14ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceAudio_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14ReferenceVideosUri0 returns the union data inside the PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri as a PostV1VideoToVideoJSONBody14ReferenceVideosUri0
+func (t PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) AsPostV1VideoToVideoJSONBody14ReferenceVideosUri0() (PostV1VideoToVideoJSONBody14ReferenceVideosUri0, error) {
+	var body PostV1VideoToVideoJSONBody14ReferenceVideosUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14ReferenceVideosUri0 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri as the provided PostV1VideoToVideoJSONBody14ReferenceVideosUri0
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) FromPostV1VideoToVideoJSONBody14ReferenceVideosUri0(v PostV1VideoToVideoJSONBody14ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14ReferenceVideosUri0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri, using the provided PostV1VideoToVideoJSONBody14ReferenceVideosUri0
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) MergePostV1VideoToVideoJSONBody14ReferenceVideosUri0(v PostV1VideoToVideoJSONBody14ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14ReferenceVideosUri1 returns the union data inside the PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri as a PostV1VideoToVideoJSONBody14ReferenceVideosUri1
+func (t PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) AsPostV1VideoToVideoJSONBody14ReferenceVideosUri1() (PostV1VideoToVideoJSONBody14ReferenceVideosUri1, error) {
+	var body PostV1VideoToVideoJSONBody14ReferenceVideosUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14ReferenceVideosUri1 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri as the provided PostV1VideoToVideoJSONBody14ReferenceVideosUri1
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) FromPostV1VideoToVideoJSONBody14ReferenceVideosUri1(v PostV1VideoToVideoJSONBody14ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14ReferenceVideosUri1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri, using the provided PostV1VideoToVideoJSONBody14ReferenceVideosUri1
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) MergePostV1VideoToVideoJSONBody14ReferenceVideosUri1(v PostV1VideoToVideoJSONBody14ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14ReferenceVideosUri2 returns the union data inside the PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri as a PostV1VideoToVideoJSONBody14ReferenceVideosUri2
+func (t PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) AsPostV1VideoToVideoJSONBody14ReferenceVideosUri2() (PostV1VideoToVideoJSONBody14ReferenceVideosUri2, error) {
+	var body PostV1VideoToVideoJSONBody14ReferenceVideosUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14ReferenceVideosUri2 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri as the provided PostV1VideoToVideoJSONBody14ReferenceVideosUri2
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) FromPostV1VideoToVideoJSONBody14ReferenceVideosUri2(v PostV1VideoToVideoJSONBody14ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14ReferenceVideosUri2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri, using the provided PostV1VideoToVideoJSONBody14ReferenceVideosUri2
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) MergePostV1VideoToVideoJSONBody14ReferenceVideosUri2(v PostV1VideoToVideoJSONBody14ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_14_ReferenceVideos_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14ReferencesUri0 returns the union data inside the PostV1VideoToVideoJSONBody_14_References_Uri as a PostV1VideoToVideoJSONBody14ReferencesUri0
+func (t PostV1VideoToVideoJSONBody_14_References_Uri) AsPostV1VideoToVideoJSONBody14ReferencesUri0() (PostV1VideoToVideoJSONBody14ReferencesUri0, error) {
+	var body PostV1VideoToVideoJSONBody14ReferencesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14ReferencesUri0 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_References_Uri as the provided PostV1VideoToVideoJSONBody14ReferencesUri0
+func (t *PostV1VideoToVideoJSONBody_14_References_Uri) FromPostV1VideoToVideoJSONBody14ReferencesUri0(v PostV1VideoToVideoJSONBody14ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14ReferencesUri0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_References_Uri, using the provided PostV1VideoToVideoJSONBody14ReferencesUri0
+func (t *PostV1VideoToVideoJSONBody_14_References_Uri) MergePostV1VideoToVideoJSONBody14ReferencesUri0(v PostV1VideoToVideoJSONBody14ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14ReferencesUri1 returns the union data inside the PostV1VideoToVideoJSONBody_14_References_Uri as a PostV1VideoToVideoJSONBody14ReferencesUri1
+func (t PostV1VideoToVideoJSONBody_14_References_Uri) AsPostV1VideoToVideoJSONBody14ReferencesUri1() (PostV1VideoToVideoJSONBody14ReferencesUri1, error) {
+	var body PostV1VideoToVideoJSONBody14ReferencesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14ReferencesUri1 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_References_Uri as the provided PostV1VideoToVideoJSONBody14ReferencesUri1
+func (t *PostV1VideoToVideoJSONBody_14_References_Uri) FromPostV1VideoToVideoJSONBody14ReferencesUri1(v PostV1VideoToVideoJSONBody14ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14ReferencesUri1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_References_Uri, using the provided PostV1VideoToVideoJSONBody14ReferencesUri1
+func (t *PostV1VideoToVideoJSONBody_14_References_Uri) MergePostV1VideoToVideoJSONBody14ReferencesUri1(v PostV1VideoToVideoJSONBody14ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody14ReferencesUri2 returns the union data inside the PostV1VideoToVideoJSONBody_14_References_Uri as a PostV1VideoToVideoJSONBody14ReferencesUri2
+func (t PostV1VideoToVideoJSONBody_14_References_Uri) AsPostV1VideoToVideoJSONBody14ReferencesUri2() (PostV1VideoToVideoJSONBody14ReferencesUri2, error) {
+	var body PostV1VideoToVideoJSONBody14ReferencesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody14ReferencesUri2 overwrites any union data inside the PostV1VideoToVideoJSONBody_14_References_Uri as the provided PostV1VideoToVideoJSONBody14ReferencesUri2
+func (t *PostV1VideoToVideoJSONBody_14_References_Uri) FromPostV1VideoToVideoJSONBody14ReferencesUri2(v PostV1VideoToVideoJSONBody14ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody14ReferencesUri2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_14_References_Uri, using the provided PostV1VideoToVideoJSONBody14ReferencesUri2
+func (t *PostV1VideoToVideoJSONBody_14_References_Uri) MergePostV1VideoToVideoJSONBody14ReferencesUri2(v PostV1VideoToVideoJSONBody14ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_14_References_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_14_References_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15PromptVideo0 returns the union data inside the PostV1VideoToVideoJSONBody_15_PromptVideo as a PostV1VideoToVideoJSONBody15PromptVideo0
+func (t PostV1VideoToVideoJSONBody_15_PromptVideo) AsPostV1VideoToVideoJSONBody15PromptVideo0() (PostV1VideoToVideoJSONBody15PromptVideo0, error) {
+	var body PostV1VideoToVideoJSONBody15PromptVideo0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15PromptVideo0 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_PromptVideo as the provided PostV1VideoToVideoJSONBody15PromptVideo0
+func (t *PostV1VideoToVideoJSONBody_15_PromptVideo) FromPostV1VideoToVideoJSONBody15PromptVideo0(v PostV1VideoToVideoJSONBody15PromptVideo0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15PromptVideo0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_PromptVideo, using the provided PostV1VideoToVideoJSONBody15PromptVideo0
+func (t *PostV1VideoToVideoJSONBody_15_PromptVideo) MergePostV1VideoToVideoJSONBody15PromptVideo0(v PostV1VideoToVideoJSONBody15PromptVideo0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15PromptVideo1 returns the union data inside the PostV1VideoToVideoJSONBody_15_PromptVideo as a PostV1VideoToVideoJSONBody15PromptVideo1
+func (t PostV1VideoToVideoJSONBody_15_PromptVideo) AsPostV1VideoToVideoJSONBody15PromptVideo1() (PostV1VideoToVideoJSONBody15PromptVideo1, error) {
+	var body PostV1VideoToVideoJSONBody15PromptVideo1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15PromptVideo1 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_PromptVideo as the provided PostV1VideoToVideoJSONBody15PromptVideo1
+func (t *PostV1VideoToVideoJSONBody_15_PromptVideo) FromPostV1VideoToVideoJSONBody15PromptVideo1(v PostV1VideoToVideoJSONBody15PromptVideo1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15PromptVideo1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_PromptVideo, using the provided PostV1VideoToVideoJSONBody15PromptVideo1
+func (t *PostV1VideoToVideoJSONBody_15_PromptVideo) MergePostV1VideoToVideoJSONBody15PromptVideo1(v PostV1VideoToVideoJSONBody15PromptVideo1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15PromptVideo2 returns the union data inside the PostV1VideoToVideoJSONBody_15_PromptVideo as a PostV1VideoToVideoJSONBody15PromptVideo2
+func (t PostV1VideoToVideoJSONBody_15_PromptVideo) AsPostV1VideoToVideoJSONBody15PromptVideo2() (PostV1VideoToVideoJSONBody15PromptVideo2, error) {
+	var body PostV1VideoToVideoJSONBody15PromptVideo2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15PromptVideo2 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_PromptVideo as the provided PostV1VideoToVideoJSONBody15PromptVideo2
+func (t *PostV1VideoToVideoJSONBody_15_PromptVideo) FromPostV1VideoToVideoJSONBody15PromptVideo2(v PostV1VideoToVideoJSONBody15PromptVideo2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15PromptVideo2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_PromptVideo, using the provided PostV1VideoToVideoJSONBody15PromptVideo2
+func (t *PostV1VideoToVideoJSONBody_15_PromptVideo) MergePostV1VideoToVideoJSONBody15PromptVideo2(v PostV1VideoToVideoJSONBody15PromptVideo2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_15_PromptVideo) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_15_PromptVideo) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15ReferenceAudioUri0 returns the union data inside the PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri as a PostV1VideoToVideoJSONBody15ReferenceAudioUri0
+func (t PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) AsPostV1VideoToVideoJSONBody15ReferenceAudioUri0() (PostV1VideoToVideoJSONBody15ReferenceAudioUri0, error) {
+	var body PostV1VideoToVideoJSONBody15ReferenceAudioUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15ReferenceAudioUri0 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri as the provided PostV1VideoToVideoJSONBody15ReferenceAudioUri0
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) FromPostV1VideoToVideoJSONBody15ReferenceAudioUri0(v PostV1VideoToVideoJSONBody15ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15ReferenceAudioUri0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri, using the provided PostV1VideoToVideoJSONBody15ReferenceAudioUri0
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) MergePostV1VideoToVideoJSONBody15ReferenceAudioUri0(v PostV1VideoToVideoJSONBody15ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15ReferenceAudioUri1 returns the union data inside the PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri as a PostV1VideoToVideoJSONBody15ReferenceAudioUri1
+func (t PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) AsPostV1VideoToVideoJSONBody15ReferenceAudioUri1() (PostV1VideoToVideoJSONBody15ReferenceAudioUri1, error) {
+	var body PostV1VideoToVideoJSONBody15ReferenceAudioUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15ReferenceAudioUri1 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri as the provided PostV1VideoToVideoJSONBody15ReferenceAudioUri1
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) FromPostV1VideoToVideoJSONBody15ReferenceAudioUri1(v PostV1VideoToVideoJSONBody15ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15ReferenceAudioUri1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri, using the provided PostV1VideoToVideoJSONBody15ReferenceAudioUri1
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) MergePostV1VideoToVideoJSONBody15ReferenceAudioUri1(v PostV1VideoToVideoJSONBody15ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15ReferenceAudioUri2 returns the union data inside the PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri as a PostV1VideoToVideoJSONBody15ReferenceAudioUri2
+func (t PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) AsPostV1VideoToVideoJSONBody15ReferenceAudioUri2() (PostV1VideoToVideoJSONBody15ReferenceAudioUri2, error) {
+	var body PostV1VideoToVideoJSONBody15ReferenceAudioUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15ReferenceAudioUri2 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri as the provided PostV1VideoToVideoJSONBody15ReferenceAudioUri2
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) FromPostV1VideoToVideoJSONBody15ReferenceAudioUri2(v PostV1VideoToVideoJSONBody15ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15ReferenceAudioUri2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri, using the provided PostV1VideoToVideoJSONBody15ReferenceAudioUri2
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) MergePostV1VideoToVideoJSONBody15ReferenceAudioUri2(v PostV1VideoToVideoJSONBody15ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceAudio_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15ReferenceVideosUri0 returns the union data inside the PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri as a PostV1VideoToVideoJSONBody15ReferenceVideosUri0
+func (t PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) AsPostV1VideoToVideoJSONBody15ReferenceVideosUri0() (PostV1VideoToVideoJSONBody15ReferenceVideosUri0, error) {
+	var body PostV1VideoToVideoJSONBody15ReferenceVideosUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15ReferenceVideosUri0 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri as the provided PostV1VideoToVideoJSONBody15ReferenceVideosUri0
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) FromPostV1VideoToVideoJSONBody15ReferenceVideosUri0(v PostV1VideoToVideoJSONBody15ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15ReferenceVideosUri0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri, using the provided PostV1VideoToVideoJSONBody15ReferenceVideosUri0
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) MergePostV1VideoToVideoJSONBody15ReferenceVideosUri0(v PostV1VideoToVideoJSONBody15ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15ReferenceVideosUri1 returns the union data inside the PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri as a PostV1VideoToVideoJSONBody15ReferenceVideosUri1
+func (t PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) AsPostV1VideoToVideoJSONBody15ReferenceVideosUri1() (PostV1VideoToVideoJSONBody15ReferenceVideosUri1, error) {
+	var body PostV1VideoToVideoJSONBody15ReferenceVideosUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15ReferenceVideosUri1 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri as the provided PostV1VideoToVideoJSONBody15ReferenceVideosUri1
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) FromPostV1VideoToVideoJSONBody15ReferenceVideosUri1(v PostV1VideoToVideoJSONBody15ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15ReferenceVideosUri1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri, using the provided PostV1VideoToVideoJSONBody15ReferenceVideosUri1
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) MergePostV1VideoToVideoJSONBody15ReferenceVideosUri1(v PostV1VideoToVideoJSONBody15ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15ReferenceVideosUri2 returns the union data inside the PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri as a PostV1VideoToVideoJSONBody15ReferenceVideosUri2
+func (t PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) AsPostV1VideoToVideoJSONBody15ReferenceVideosUri2() (PostV1VideoToVideoJSONBody15ReferenceVideosUri2, error) {
+	var body PostV1VideoToVideoJSONBody15ReferenceVideosUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15ReferenceVideosUri2 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri as the provided PostV1VideoToVideoJSONBody15ReferenceVideosUri2
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) FromPostV1VideoToVideoJSONBody15ReferenceVideosUri2(v PostV1VideoToVideoJSONBody15ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15ReferenceVideosUri2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri, using the provided PostV1VideoToVideoJSONBody15ReferenceVideosUri2
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) MergePostV1VideoToVideoJSONBody15ReferenceVideosUri2(v PostV1VideoToVideoJSONBody15ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_15_ReferenceVideos_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15ReferencesUri0 returns the union data inside the PostV1VideoToVideoJSONBody_15_References_Uri as a PostV1VideoToVideoJSONBody15ReferencesUri0
+func (t PostV1VideoToVideoJSONBody_15_References_Uri) AsPostV1VideoToVideoJSONBody15ReferencesUri0() (PostV1VideoToVideoJSONBody15ReferencesUri0, error) {
+	var body PostV1VideoToVideoJSONBody15ReferencesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15ReferencesUri0 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_References_Uri as the provided PostV1VideoToVideoJSONBody15ReferencesUri0
+func (t *PostV1VideoToVideoJSONBody_15_References_Uri) FromPostV1VideoToVideoJSONBody15ReferencesUri0(v PostV1VideoToVideoJSONBody15ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15ReferencesUri0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_References_Uri, using the provided PostV1VideoToVideoJSONBody15ReferencesUri0
+func (t *PostV1VideoToVideoJSONBody_15_References_Uri) MergePostV1VideoToVideoJSONBody15ReferencesUri0(v PostV1VideoToVideoJSONBody15ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15ReferencesUri1 returns the union data inside the PostV1VideoToVideoJSONBody_15_References_Uri as a PostV1VideoToVideoJSONBody15ReferencesUri1
+func (t PostV1VideoToVideoJSONBody_15_References_Uri) AsPostV1VideoToVideoJSONBody15ReferencesUri1() (PostV1VideoToVideoJSONBody15ReferencesUri1, error) {
+	var body PostV1VideoToVideoJSONBody15ReferencesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15ReferencesUri1 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_References_Uri as the provided PostV1VideoToVideoJSONBody15ReferencesUri1
+func (t *PostV1VideoToVideoJSONBody_15_References_Uri) FromPostV1VideoToVideoJSONBody15ReferencesUri1(v PostV1VideoToVideoJSONBody15ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15ReferencesUri1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_References_Uri, using the provided PostV1VideoToVideoJSONBody15ReferencesUri1
+func (t *PostV1VideoToVideoJSONBody_15_References_Uri) MergePostV1VideoToVideoJSONBody15ReferencesUri1(v PostV1VideoToVideoJSONBody15ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody15ReferencesUri2 returns the union data inside the PostV1VideoToVideoJSONBody_15_References_Uri as a PostV1VideoToVideoJSONBody15ReferencesUri2
+func (t PostV1VideoToVideoJSONBody_15_References_Uri) AsPostV1VideoToVideoJSONBody15ReferencesUri2() (PostV1VideoToVideoJSONBody15ReferencesUri2, error) {
+	var body PostV1VideoToVideoJSONBody15ReferencesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody15ReferencesUri2 overwrites any union data inside the PostV1VideoToVideoJSONBody_15_References_Uri as the provided PostV1VideoToVideoJSONBody15ReferencesUri2
+func (t *PostV1VideoToVideoJSONBody_15_References_Uri) FromPostV1VideoToVideoJSONBody15ReferencesUri2(v PostV1VideoToVideoJSONBody15ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody15ReferencesUri2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_15_References_Uri, using the provided PostV1VideoToVideoJSONBody15ReferencesUri2
+func (t *PostV1VideoToVideoJSONBody_15_References_Uri) MergePostV1VideoToVideoJSONBody15ReferencesUri2(v PostV1VideoToVideoJSONBody15ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_15_References_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_15_References_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsPostV1VideoToVideo400JSONResponseBodyIssuesPath0 returns the union data inside the PostV1VideoToVideo400JSONResponseBody_Issues_Path_Item as a PostV1VideoToVideo400JSONResponseBodyIssuesPath0
 func (t PostV1VideoToVideo400JSONResponseBody_Issues_Path_Item) AsPostV1VideoToVideo400JSONResponseBodyIssuesPath0() (PostV1VideoToVideo400JSONResponseBodyIssuesPath0, error) {
 	var body PostV1VideoToVideo400JSONResponseBodyIssuesPath0
@@ -85623,6 +90728,32 @@ func (t *PostV1VideoToVideo400JSONResponseBody_Reason) FromPostV1VideoToVideo400
 
 // MergePostV1VideoToVideo400JSONResponseBodyReason27 performs a merge with any union data inside the PostV1VideoToVideo400JSONResponseBody_Reason, using the provided PostV1VideoToVideo400JSONResponseBodyReason27
 func (t *PostV1VideoToVideo400JSONResponseBody_Reason) MergePostV1VideoToVideo400JSONResponseBodyReason27(v PostV1VideoToVideo400JSONResponseBodyReason27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideo400JSONResponseBodyReason28 returns the union data inside the PostV1VideoToVideo400JSONResponseBody_Reason as a PostV1VideoToVideo400JSONResponseBodyReason28
+func (t PostV1VideoToVideo400JSONResponseBody_Reason) AsPostV1VideoToVideo400JSONResponseBodyReason28() (PostV1VideoToVideo400JSONResponseBodyReason28, error) {
+	var body PostV1VideoToVideo400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideo400JSONResponseBodyReason28 overwrites any union data inside the PostV1VideoToVideo400JSONResponseBody_Reason as the provided PostV1VideoToVideo400JSONResponseBodyReason28
+func (t *PostV1VideoToVideo400JSONResponseBody_Reason) FromPostV1VideoToVideo400JSONResponseBodyReason28(v PostV1VideoToVideo400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideo400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1VideoToVideo400JSONResponseBody_Reason, using the provided PostV1VideoToVideo400JSONResponseBodyReason28
+func (t *PostV1VideoToVideo400JSONResponseBody_Reason) MergePostV1VideoToVideo400JSONResponseBodyReason28(v PostV1VideoToVideo400JSONResponseBodyReason28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -86671,6 +91802,32 @@ func (t *PostV1VideoUpscale400JSONResponseBody_Reason) MergePostV1VideoUpscale40
 	return err
 }
 
+// AsPostV1VideoUpscale400JSONResponseBodyReason28 returns the union data inside the PostV1VideoUpscale400JSONResponseBody_Reason as a PostV1VideoUpscale400JSONResponseBodyReason28
+func (t PostV1VideoUpscale400JSONResponseBody_Reason) AsPostV1VideoUpscale400JSONResponseBodyReason28() (PostV1VideoUpscale400JSONResponseBodyReason28, error) {
+	var body PostV1VideoUpscale400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoUpscale400JSONResponseBodyReason28 overwrites any union data inside the PostV1VideoUpscale400JSONResponseBody_Reason as the provided PostV1VideoUpscale400JSONResponseBodyReason28
+func (t *PostV1VideoUpscale400JSONResponseBody_Reason) FromPostV1VideoUpscale400JSONResponseBodyReason28(v PostV1VideoUpscale400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoUpscale400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1VideoUpscale400JSONResponseBody_Reason, using the provided PostV1VideoUpscale400JSONResponseBodyReason28
+func (t *PostV1VideoUpscale400JSONResponseBody_Reason) MergePostV1VideoUpscale400JSONResponseBodyReason28(v PostV1VideoUpscale400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1VideoUpscale400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -87595,6 +92752,32 @@ func (t *PostV1VoiceDubbing400JSONResponseBody_Reason) MergePostV1VoiceDubbing40
 	return err
 }
 
+// AsPostV1VoiceDubbing400JSONResponseBodyReason28 returns the union data inside the PostV1VoiceDubbing400JSONResponseBody_Reason as a PostV1VoiceDubbing400JSONResponseBodyReason28
+func (t PostV1VoiceDubbing400JSONResponseBody_Reason) AsPostV1VoiceDubbing400JSONResponseBodyReason28() (PostV1VoiceDubbing400JSONResponseBodyReason28, error) {
+	var body PostV1VoiceDubbing400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VoiceDubbing400JSONResponseBodyReason28 overwrites any union data inside the PostV1VoiceDubbing400JSONResponseBody_Reason as the provided PostV1VoiceDubbing400JSONResponseBodyReason28
+func (t *PostV1VoiceDubbing400JSONResponseBody_Reason) FromPostV1VoiceDubbing400JSONResponseBodyReason28(v PostV1VoiceDubbing400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VoiceDubbing400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1VoiceDubbing400JSONResponseBody_Reason, using the provided PostV1VoiceDubbing400JSONResponseBodyReason28
+func (t *PostV1VoiceDubbing400JSONResponseBody_Reason) MergePostV1VoiceDubbing400JSONResponseBodyReason28(v PostV1VoiceDubbing400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1VoiceDubbing400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -88509,6 +93692,32 @@ func (t *PostV1VoiceIsolation400JSONResponseBody_Reason) FromPostV1VoiceIsolatio
 
 // MergePostV1VoiceIsolation400JSONResponseBodyReason27 performs a merge with any union data inside the PostV1VoiceIsolation400JSONResponseBody_Reason, using the provided PostV1VoiceIsolation400JSONResponseBodyReason27
 func (t *PostV1VoiceIsolation400JSONResponseBody_Reason) MergePostV1VoiceIsolation400JSONResponseBodyReason27(v PostV1VoiceIsolation400JSONResponseBodyReason27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VoiceIsolation400JSONResponseBodyReason28 returns the union data inside the PostV1VoiceIsolation400JSONResponseBody_Reason as a PostV1VoiceIsolation400JSONResponseBodyReason28
+func (t PostV1VoiceIsolation400JSONResponseBody_Reason) AsPostV1VoiceIsolation400JSONResponseBodyReason28() (PostV1VoiceIsolation400JSONResponseBodyReason28, error) {
+	var body PostV1VoiceIsolation400JSONResponseBodyReason28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VoiceIsolation400JSONResponseBodyReason28 overwrites any union data inside the PostV1VoiceIsolation400JSONResponseBody_Reason as the provided PostV1VoiceIsolation400JSONResponseBodyReason28
+func (t *PostV1VoiceIsolation400JSONResponseBody_Reason) FromPostV1VoiceIsolation400JSONResponseBodyReason28(v PostV1VoiceIsolation400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VoiceIsolation400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1VoiceIsolation400JSONResponseBody_Reason, using the provided PostV1VoiceIsolation400JSONResponseBodyReason28
+func (t *PostV1VoiceIsolation400JSONResponseBody_Reason) MergePostV1VoiceIsolation400JSONResponseBodyReason28(v PostV1VoiceIsolation400JSONResponseBodyReason28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err

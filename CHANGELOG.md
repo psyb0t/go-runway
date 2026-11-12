@@ -2,6 +2,16 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.5.0, 2026-11-12
+
+- Added request union variants with `As`, `From` and `Merge` methods: `PostV1TextToImageJSONBody24`, `PostV1TextToVideoJSONBody26` and `27`, `PostV1ImageToVideoJSONBody27` and `28`, and `PostV1VideoToVideoJSONBody14` and `15`. New models include `PostV1TextToImageJSONBody23ModelSeedream5ProLayers`, `PostV1TextToImageJSONBody24ModelGemini25Flash`, `PostV1ImageToVideoJSONBody27ModelHailuo3Highspeed` and `PostV1ImageToVideoJSONBody28ModelHailuo3Lite`.
+- Added a custom voice variant for text-to-speech: `PostV1TextToSpeechJSONBody1Voice1`, `PostV1TextToSpeechJSONBody2Voice1` and `PostV1TextToSpeechJSONBody3Voice1`, each with `PostV1TextToSpeechJSONBody1Voice1TypeCustom` style constants and `From` and `Merge` methods on the voice types.
+- Added `GetV1TasksId200JSONResponseBody5.Layers`, new ratio constants such as `PostV1ImageToVideoJSONBody22RatioN38403840`, and Hailuo 3 and Seedream layers usage model constants under `PostV1OrganizationUsage200JSONResponseBodyModels`.
+- Changed `PostV1TextToImageJSONBody23`: `PromptText` is now `*string` instead of `string`, `ReferenceImages` is now a slice instead of a pointer to a slice and its items lose `Tag`, and `Ratio`, its `PostV1TextToImageJSONBody23Ratio` type and `PostV1TextToImageJSONBody23ModelGemini25Flash` are removed. The struct is no longer comparable. The Gemini model moves to `PostV1TextToImageJSONBody24`.
+- Error reason enums were renumbered in the 400 response bodies of endpoints such as `PostV1ImageToVideo`, `PostV1ImageUpscale` and `PostV1CharacterPerformance`. `...Reason26INTERNAL` and `...Reason27UNKNOWN` are removed. The values are now `...Reason26INTERNALRESOURCES`, `...Reason27INTERNAL` and a new `...Reason28UNKNOWN`.
+- The text-to-speech endpoint docs now say ElevenLabs models accept preset or custom voices and Seed Audio accepts a reference audio clip.
+- Raised the minimum Go version to 1.26.11 in `go.mod`, which fixes GO-2026-6859, a `net/http` crash in the 1.26.10 standard library. The development image uses the same toolchain.
+
 ## v0.4.0, 2026-11-07
 
 - Added the image-to-vector endpoint: `Client.PostV1ImageToVector`, `Client.PostV1ImageToVectorWithBody`, `ClientWithResponses.PostV1ImageToVectorWithResponse`, `ClientWithResponses.PostV1ImageToVectorWithBodyWithResponse`, `NewPostV1ImageToVectorRequest`, `NewPostV1ImageToVectorRequestWithBody` and `ParsePostV1ImageToVectorResponse`. The request body is `PostV1ImageToVectorJSONBody0` with model `PostV1ImageToVectorJSONBody0ModelIdeogramVector`.
