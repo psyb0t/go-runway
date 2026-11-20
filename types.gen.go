@@ -8004,6 +8004,8 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyModelsElevenVoiceIsolation          PostV1OrganizationUsage200JSONResponseBodyModels = "eleven_voice_isolation"
 	PostV1OrganizationUsage200JSONResponseBodyModelsEnhanceFrameRate              PostV1OrganizationUsage200JSONResponseBodyModels = "enhance_frame_rate"
 	PostV1OrganizationUsage200JSONResponseBodyModelsGemini25Flash                 PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_2.5_flash"
+	PostV1OrganizationUsage200JSONResponseBodyModelsGemini38FlashLiteTts          PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_3.8_flash_lite_tts"
+	PostV1OrganizationUsage200JSONResponseBodyModelsGemini38FlashTts              PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_3.8_flash_tts"
 	PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage31Flash            PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_image3.1_flash"
 	PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage31FlashLite        PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_image3.1_flash_lite"
 	PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage3Pro               PostV1OrganizationUsage200JSONResponseBodyModels = "gemini_image3_pro"
@@ -8109,6 +8111,10 @@ func (e PostV1OrganizationUsage200JSONResponseBodyModels) Valid() bool {
 	case PostV1OrganizationUsage200JSONResponseBodyModelsEnhanceFrameRate:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsGemini25Flash:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsGemini38FlashLiteTts:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsGemini38FlashTts:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsGeminiImage31Flash:
 		return true
@@ -8271,6 +8277,8 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelElevenVoiceIsolation          PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "eleven_voice_isolation"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelEnhanceFrameRate              PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "enhance_frame_rate"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGemini25Flash                 PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_2.5_flash"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGemini38FlashLiteTts          PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_3.8_flash_lite_tts"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGemini38FlashTts              PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_3.8_flash_tts"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiImage31Flash            PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_image3.1_flash"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiImage31FlashLite        PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_image3.1_flash_lite"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiImage3Pro               PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "gemini_image3_pro"
@@ -8376,6 +8384,10 @@ func (e PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel) Valid
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelEnhanceFrameRate:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGemini25Flash:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGemini38FlashLiteTts:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGemini38FlashTts:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelGeminiImage31Flash:
 		return true
@@ -9252,6 +9264,81 @@ func (e GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction) Valid(
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionWorkspaceTagUnassigned:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionWorkspaceTagUpdated:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType.
+const (
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeAudio   GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "audio"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeCloud   GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "cloud"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeFile    GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "file"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeFont    GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "font"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeImage   GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "image"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeMesh    GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "mesh"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeModel   GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "model"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeProject GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "project"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeSplat   GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "splat"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeText    GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "text"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeVideo   GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType = "video"
+)
+
+// Valid indicates whether the value is a known member of the GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType enum.
+func (e GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType) Valid() bool {
+	switch e {
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeAudio:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeCloud:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeFile:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeFont:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeImage:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeMesh:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeModel:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeProject:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeSplat:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeText:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus.
+const (
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusCANCELLED GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus = "CANCELLED"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusFAILED    GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus = "FAILED"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusPENDING   GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus = "PENDING"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusRUNNING   GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus = "RUNNING"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusSUCCEEDED GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus = "SUCCEEDED"
+	GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusTHROTTLED GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus = "THROTTLED"
+)
+
+// Valid indicates whether the value is a known member of the GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus enum.
+func (e GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus) Valid() bool {
+	switch e {
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusCANCELLED:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusFAILED:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusPENDING:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusRUNNING:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusSUCCEEDED:
+		return true
+	case GetV1OrganizationWebappUsage200JSONResponseBodyDataStatusTHROTTLED:
 		return true
 	default:
 		return false
@@ -18515,223 +18602,13 @@ func (e PostV1TextToSpeechJSONBody1Voice1Type) Valid() bool {
 
 // Defines values for PostV1TextToSpeechJSONBody2Model.
 const (
-	PostV1TextToSpeechJSONBody2ModelElevenMultilingualV2 PostV1TextToSpeechJSONBody2Model = "eleven_multilingual_v2"
+	PostV1TextToSpeechJSONBody2ModelGemini38FlashTts PostV1TextToSpeechJSONBody2Model = "gemini_3.8_flash_tts"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody2Model enum.
 func (e PostV1TextToSpeechJSONBody2Model) Valid() bool {
 	switch e {
-	case PostV1TextToSpeechJSONBody2ModelElevenMultilingualV2:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for PostV1TextToSpeechJSONBody2Voice0PresetId.
-const (
-	PostV1TextToSpeechJSONBody2Voice0PresetIdArjun    PostV1TextToSpeechJSONBody2Voice0PresetId = "Arjun"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdBenjamin PostV1TextToSpeechJSONBody2Voice0PresetId = "Benjamin"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdBernard  PostV1TextToSpeechJSONBody2Voice0PresetId = "Bernard"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdBilly    PostV1TextToSpeechJSONBody2Voice0PresetId = "Billy"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdBrodie   PostV1TextToSpeechJSONBody2Voice0PresetId = "Brodie"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdChad     PostV1TextToSpeechJSONBody2Voice0PresetId = "Chad"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdClaudia  PostV1TextToSpeechJSONBody2Voice0PresetId = "Claudia"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdClint    PostV1TextToSpeechJSONBody2Voice0PresetId = "Clint"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdEleanor  PostV1TextToSpeechJSONBody2Voice0PresetId = "Eleanor"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdElias    PostV1TextToSpeechJSONBody2Voice0PresetId = "Elias"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdElla     PostV1TextToSpeechJSONBody2Voice0PresetId = "Ella"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdElliot   PostV1TextToSpeechJSONBody2Voice0PresetId = "Elliot"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdFrank    PostV1TextToSpeechJSONBody2Voice0PresetId = "Frank"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdGrungle  PostV1TextToSpeechJSONBody2Voice0PresetId = "Grungle"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdJack     PostV1TextToSpeechJSONBody2Voice0PresetId = "Jack"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdJames    PostV1TextToSpeechJSONBody2Voice0PresetId = "James"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdKatie    PostV1TextToSpeechJSONBody2Voice0PresetId = "Katie"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdKendrick PostV1TextToSpeechJSONBody2Voice0PresetId = "Kendrick"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdKiana    PostV1TextToSpeechJSONBody2Voice0PresetId = "Kiana"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdKirk     PostV1TextToSpeechJSONBody2Voice0PresetId = "Kirk"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdKylie    PostV1TextToSpeechJSONBody2Voice0PresetId = "Kylie"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdLara     PostV1TextToSpeechJSONBody2Voice0PresetId = "Lara"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdLeslie   PostV1TextToSpeechJSONBody2Voice0PresetId = "Leslie"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdLisa     PostV1TextToSpeechJSONBody2Voice0PresetId = "Lisa"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMabel    PostV1TextToSpeechJSONBody2Voice0PresetId = "Mabel"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMaggie   PostV1TextToSpeechJSONBody2Voice0PresetId = "Maggie"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMalachi  PostV1TextToSpeechJSONBody2Voice0PresetId = "Malachi"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMariah   PostV1TextToSpeechJSONBody2Voice0PresetId = "Mariah"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMark     PostV1TextToSpeechJSONBody2Voice0PresetId = "Mark"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMarlene  PostV1TextToSpeechJSONBody2Voice0PresetId = "Marlene"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMartin   PostV1TextToSpeechJSONBody2Voice0PresetId = "Martin"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMaya     PostV1TextToSpeechJSONBody2Voice0PresetId = "Maya"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMiriam   PostV1TextToSpeechJSONBody2Voice0PresetId = "Miriam"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMonster  PostV1TextToSpeechJSONBody2Voice0PresetId = "Monster"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdMyrna    PostV1TextToSpeechJSONBody2Voice0PresetId = "Myrna"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdNiki     PostV1TextToSpeechJSONBody2Voice0PresetId = "Niki"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdNoah     PostV1TextToSpeechJSONBody2Voice0PresetId = "Noah"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdPaula    PostV1TextToSpeechJSONBody2Voice0PresetId = "Paula"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdPip      PostV1TextToSpeechJSONBody2Voice0PresetId = "Pip"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdRachel   PostV1TextToSpeechJSONBody2Voice0PresetId = "Rachel"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdRagnar   PostV1TextToSpeechJSONBody2Voice0PresetId = "Ragnar"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdRina     PostV1TextToSpeechJSONBody2Voice0PresetId = "Rina"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdRusty    PostV1TextToSpeechJSONBody2Voice0PresetId = "Rusty"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdSandra   PostV1TextToSpeechJSONBody2Voice0PresetId = "Sandra"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdSerene   PostV1TextToSpeechJSONBody2Voice0PresetId = "Serene"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdTom      PostV1TextToSpeechJSONBody2Voice0PresetId = "Tom"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdVincent  PostV1TextToSpeechJSONBody2Voice0PresetId = "Vincent"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdWanda    PostV1TextToSpeechJSONBody2Voice0PresetId = "Wanda"
-	PostV1TextToSpeechJSONBody2Voice0PresetIdXylar    PostV1TextToSpeechJSONBody2Voice0PresetId = "Xylar"
-)
-
-// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody2Voice0PresetId enum.
-func (e PostV1TextToSpeechJSONBody2Voice0PresetId) Valid() bool {
-	switch e {
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdArjun:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdBenjamin:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdBernard:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdBilly:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdBrodie:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdChad:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdClaudia:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdClint:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdEleanor:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdElias:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdElla:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdElliot:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdFrank:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdGrungle:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdJack:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdJames:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdKatie:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdKendrick:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdKiana:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdKirk:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdKylie:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdLara:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdLeslie:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdLisa:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMabel:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMaggie:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMalachi:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMariah:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMark:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMarlene:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMartin:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMaya:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMiriam:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMonster:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdMyrna:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdNiki:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdNoah:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdPaula:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdPip:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdRachel:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdRagnar:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdRina:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdRusty:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdSandra:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdSerene:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdTom:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdVincent:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdWanda:
-		return true
-	case PostV1TextToSpeechJSONBody2Voice0PresetIdXylar:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for PostV1TextToSpeechJSONBody2Voice0Type.
-const (
-	PostV1TextToSpeechJSONBody2Voice0TypeRunwayPreset PostV1TextToSpeechJSONBody2Voice0Type = "runway-preset"
-)
-
-// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody2Voice0Type enum.
-func (e PostV1TextToSpeechJSONBody2Voice0Type) Valid() bool {
-	switch e {
-	case PostV1TextToSpeechJSONBody2Voice0TypeRunwayPreset:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for PostV1TextToSpeechJSONBody2Voice1Type.
-const (
-	PostV1TextToSpeechJSONBody2Voice1TypeCustom PostV1TextToSpeechJSONBody2Voice1Type = "custom"
-)
-
-// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody2Voice1Type enum.
-func (e PostV1TextToSpeechJSONBody2Voice1Type) Valid() bool {
-	switch e {
-	case PostV1TextToSpeechJSONBody2Voice1TypeCustom:
-		return true
-	default:
-		return false
-	}
-}
-
-// Defines values for PostV1TextToSpeechJSONBody3ApplyTextNormalization.
-const (
-	PostV1TextToSpeechJSONBody3ApplyTextNormalizationAuto PostV1TextToSpeechJSONBody3ApplyTextNormalization = "auto"
-	PostV1TextToSpeechJSONBody3ApplyTextNormalizationOff  PostV1TextToSpeechJSONBody3ApplyTextNormalization = "off"
-	PostV1TextToSpeechJSONBody3ApplyTextNormalizationOn   PostV1TextToSpeechJSONBody3ApplyTextNormalization = "on"
-)
-
-// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody3ApplyTextNormalization enum.
-func (e PostV1TextToSpeechJSONBody3ApplyTextNormalization) Valid() bool {
-	switch e {
-	case PostV1TextToSpeechJSONBody3ApplyTextNormalizationAuto:
-		return true
-	case PostV1TextToSpeechJSONBody3ApplyTextNormalizationOff:
-		return true
-	case PostV1TextToSpeechJSONBody3ApplyTextNormalizationOn:
+	case PostV1TextToSpeechJSONBody2ModelGemini38FlashTts:
 		return true
 	default:
 		return false
@@ -18740,202 +18617,442 @@ func (e PostV1TextToSpeechJSONBody3ApplyTextNormalization) Valid() bool {
 
 // Defines values for PostV1TextToSpeechJSONBody3Model.
 const (
-	PostV1TextToSpeechJSONBody3ModelElevenV3 PostV1TextToSpeechJSONBody3Model = "eleven_v3"
+	PostV1TextToSpeechJSONBody3ModelGemini38FlashLiteTts PostV1TextToSpeechJSONBody3Model = "gemini_3.8_flash_lite_tts"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody3Model enum.
 func (e PostV1TextToSpeechJSONBody3Model) Valid() bool {
 	switch e {
-	case PostV1TextToSpeechJSONBody3ModelElevenV3:
+	case PostV1TextToSpeechJSONBody3ModelGemini38FlashLiteTts:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToSpeechJSONBody3Voice0PresetId.
+// Defines values for PostV1TextToSpeechJSONBody4Model.
 const (
-	PostV1TextToSpeechJSONBody3Voice0PresetIdArjun    PostV1TextToSpeechJSONBody3Voice0PresetId = "Arjun"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdBenjamin PostV1TextToSpeechJSONBody3Voice0PresetId = "Benjamin"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdBernard  PostV1TextToSpeechJSONBody3Voice0PresetId = "Bernard"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdBilly    PostV1TextToSpeechJSONBody3Voice0PresetId = "Billy"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdBrodie   PostV1TextToSpeechJSONBody3Voice0PresetId = "Brodie"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdChad     PostV1TextToSpeechJSONBody3Voice0PresetId = "Chad"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdClaudia  PostV1TextToSpeechJSONBody3Voice0PresetId = "Claudia"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdClint    PostV1TextToSpeechJSONBody3Voice0PresetId = "Clint"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdEleanor  PostV1TextToSpeechJSONBody3Voice0PresetId = "Eleanor"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdElias    PostV1TextToSpeechJSONBody3Voice0PresetId = "Elias"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdElla     PostV1TextToSpeechJSONBody3Voice0PresetId = "Ella"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdElliot   PostV1TextToSpeechJSONBody3Voice0PresetId = "Elliot"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdFrank    PostV1TextToSpeechJSONBody3Voice0PresetId = "Frank"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdGrungle  PostV1TextToSpeechJSONBody3Voice0PresetId = "Grungle"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdJack     PostV1TextToSpeechJSONBody3Voice0PresetId = "Jack"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdJames    PostV1TextToSpeechJSONBody3Voice0PresetId = "James"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdKatie    PostV1TextToSpeechJSONBody3Voice0PresetId = "Katie"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdKendrick PostV1TextToSpeechJSONBody3Voice0PresetId = "Kendrick"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdKiana    PostV1TextToSpeechJSONBody3Voice0PresetId = "Kiana"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdKirk     PostV1TextToSpeechJSONBody3Voice0PresetId = "Kirk"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdKylie    PostV1TextToSpeechJSONBody3Voice0PresetId = "Kylie"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdLara     PostV1TextToSpeechJSONBody3Voice0PresetId = "Lara"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdLeslie   PostV1TextToSpeechJSONBody3Voice0PresetId = "Leslie"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdLisa     PostV1TextToSpeechJSONBody3Voice0PresetId = "Lisa"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMabel    PostV1TextToSpeechJSONBody3Voice0PresetId = "Mabel"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMaggie   PostV1TextToSpeechJSONBody3Voice0PresetId = "Maggie"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMalachi  PostV1TextToSpeechJSONBody3Voice0PresetId = "Malachi"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMariah   PostV1TextToSpeechJSONBody3Voice0PresetId = "Mariah"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMark     PostV1TextToSpeechJSONBody3Voice0PresetId = "Mark"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMarlene  PostV1TextToSpeechJSONBody3Voice0PresetId = "Marlene"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMartin   PostV1TextToSpeechJSONBody3Voice0PresetId = "Martin"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMaya     PostV1TextToSpeechJSONBody3Voice0PresetId = "Maya"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMiriam   PostV1TextToSpeechJSONBody3Voice0PresetId = "Miriam"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMonster  PostV1TextToSpeechJSONBody3Voice0PresetId = "Monster"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdMyrna    PostV1TextToSpeechJSONBody3Voice0PresetId = "Myrna"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdNiki     PostV1TextToSpeechJSONBody3Voice0PresetId = "Niki"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdNoah     PostV1TextToSpeechJSONBody3Voice0PresetId = "Noah"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdPaula    PostV1TextToSpeechJSONBody3Voice0PresetId = "Paula"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdPip      PostV1TextToSpeechJSONBody3Voice0PresetId = "Pip"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdRachel   PostV1TextToSpeechJSONBody3Voice0PresetId = "Rachel"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdRagnar   PostV1TextToSpeechJSONBody3Voice0PresetId = "Ragnar"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdRina     PostV1TextToSpeechJSONBody3Voice0PresetId = "Rina"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdRusty    PostV1TextToSpeechJSONBody3Voice0PresetId = "Rusty"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdSandra   PostV1TextToSpeechJSONBody3Voice0PresetId = "Sandra"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdSerene   PostV1TextToSpeechJSONBody3Voice0PresetId = "Serene"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdTom      PostV1TextToSpeechJSONBody3Voice0PresetId = "Tom"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdVincent  PostV1TextToSpeechJSONBody3Voice0PresetId = "Vincent"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdWanda    PostV1TextToSpeechJSONBody3Voice0PresetId = "Wanda"
-	PostV1TextToSpeechJSONBody3Voice0PresetIdXylar    PostV1TextToSpeechJSONBody3Voice0PresetId = "Xylar"
+	PostV1TextToSpeechJSONBody4ModelElevenMultilingualV2 PostV1TextToSpeechJSONBody4Model = "eleven_multilingual_v2"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody3Voice0PresetId enum.
-func (e PostV1TextToSpeechJSONBody3Voice0PresetId) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody4Model enum.
+func (e PostV1TextToSpeechJSONBody4Model) Valid() bool {
 	switch e {
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdArjun:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdBenjamin:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdBernard:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdBilly:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdBrodie:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdChad:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdClaudia:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdClint:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdEleanor:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdElias:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdElla:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdElliot:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdFrank:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdGrungle:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdJack:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdJames:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdKatie:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdKendrick:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdKiana:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdKirk:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdKylie:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdLara:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdLeslie:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdLisa:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMabel:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMaggie:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMalachi:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMariah:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMark:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMarlene:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMartin:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMaya:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMiriam:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMonster:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdMyrna:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdNiki:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdNoah:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdPaula:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdPip:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdRachel:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdRagnar:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdRina:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdRusty:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdSandra:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdSerene:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdTom:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdVincent:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdWanda:
-		return true
-	case PostV1TextToSpeechJSONBody3Voice0PresetIdXylar:
+	case PostV1TextToSpeechJSONBody4ModelElevenMultilingualV2:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToSpeechJSONBody3Voice0Type.
+// Defines values for PostV1TextToSpeechJSONBody4Voice0PresetId.
 const (
-	PostV1TextToSpeechJSONBody3Voice0TypeRunwayPreset PostV1TextToSpeechJSONBody3Voice0Type = "runway-preset"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdArjun    PostV1TextToSpeechJSONBody4Voice0PresetId = "Arjun"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdBenjamin PostV1TextToSpeechJSONBody4Voice0PresetId = "Benjamin"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdBernard  PostV1TextToSpeechJSONBody4Voice0PresetId = "Bernard"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdBilly    PostV1TextToSpeechJSONBody4Voice0PresetId = "Billy"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdBrodie   PostV1TextToSpeechJSONBody4Voice0PresetId = "Brodie"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdChad     PostV1TextToSpeechJSONBody4Voice0PresetId = "Chad"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdClaudia  PostV1TextToSpeechJSONBody4Voice0PresetId = "Claudia"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdClint    PostV1TextToSpeechJSONBody4Voice0PresetId = "Clint"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdEleanor  PostV1TextToSpeechJSONBody4Voice0PresetId = "Eleanor"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdElias    PostV1TextToSpeechJSONBody4Voice0PresetId = "Elias"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdElla     PostV1TextToSpeechJSONBody4Voice0PresetId = "Ella"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdElliot   PostV1TextToSpeechJSONBody4Voice0PresetId = "Elliot"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdFrank    PostV1TextToSpeechJSONBody4Voice0PresetId = "Frank"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdGrungle  PostV1TextToSpeechJSONBody4Voice0PresetId = "Grungle"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdJack     PostV1TextToSpeechJSONBody4Voice0PresetId = "Jack"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdJames    PostV1TextToSpeechJSONBody4Voice0PresetId = "James"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdKatie    PostV1TextToSpeechJSONBody4Voice0PresetId = "Katie"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdKendrick PostV1TextToSpeechJSONBody4Voice0PresetId = "Kendrick"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdKiana    PostV1TextToSpeechJSONBody4Voice0PresetId = "Kiana"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdKirk     PostV1TextToSpeechJSONBody4Voice0PresetId = "Kirk"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdKylie    PostV1TextToSpeechJSONBody4Voice0PresetId = "Kylie"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdLara     PostV1TextToSpeechJSONBody4Voice0PresetId = "Lara"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdLeslie   PostV1TextToSpeechJSONBody4Voice0PresetId = "Leslie"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdLisa     PostV1TextToSpeechJSONBody4Voice0PresetId = "Lisa"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMabel    PostV1TextToSpeechJSONBody4Voice0PresetId = "Mabel"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMaggie   PostV1TextToSpeechJSONBody4Voice0PresetId = "Maggie"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMalachi  PostV1TextToSpeechJSONBody4Voice0PresetId = "Malachi"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMariah   PostV1TextToSpeechJSONBody4Voice0PresetId = "Mariah"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMark     PostV1TextToSpeechJSONBody4Voice0PresetId = "Mark"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMarlene  PostV1TextToSpeechJSONBody4Voice0PresetId = "Marlene"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMartin   PostV1TextToSpeechJSONBody4Voice0PresetId = "Martin"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMaya     PostV1TextToSpeechJSONBody4Voice0PresetId = "Maya"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMiriam   PostV1TextToSpeechJSONBody4Voice0PresetId = "Miriam"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMonster  PostV1TextToSpeechJSONBody4Voice0PresetId = "Monster"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdMyrna    PostV1TextToSpeechJSONBody4Voice0PresetId = "Myrna"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdNiki     PostV1TextToSpeechJSONBody4Voice0PresetId = "Niki"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdNoah     PostV1TextToSpeechJSONBody4Voice0PresetId = "Noah"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdPaula    PostV1TextToSpeechJSONBody4Voice0PresetId = "Paula"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdPip      PostV1TextToSpeechJSONBody4Voice0PresetId = "Pip"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdRachel   PostV1TextToSpeechJSONBody4Voice0PresetId = "Rachel"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdRagnar   PostV1TextToSpeechJSONBody4Voice0PresetId = "Ragnar"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdRina     PostV1TextToSpeechJSONBody4Voice0PresetId = "Rina"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdRusty    PostV1TextToSpeechJSONBody4Voice0PresetId = "Rusty"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdSandra   PostV1TextToSpeechJSONBody4Voice0PresetId = "Sandra"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdSerene   PostV1TextToSpeechJSONBody4Voice0PresetId = "Serene"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdTom      PostV1TextToSpeechJSONBody4Voice0PresetId = "Tom"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdVincent  PostV1TextToSpeechJSONBody4Voice0PresetId = "Vincent"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdWanda    PostV1TextToSpeechJSONBody4Voice0PresetId = "Wanda"
+	PostV1TextToSpeechJSONBody4Voice0PresetIdXylar    PostV1TextToSpeechJSONBody4Voice0PresetId = "Xylar"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody3Voice0Type enum.
-func (e PostV1TextToSpeechJSONBody3Voice0Type) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody4Voice0PresetId enum.
+func (e PostV1TextToSpeechJSONBody4Voice0PresetId) Valid() bool {
 	switch e {
-	case PostV1TextToSpeechJSONBody3Voice0TypeRunwayPreset:
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdArjun:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdBenjamin:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdBernard:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdBilly:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdBrodie:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdChad:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdClaudia:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdClint:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdEleanor:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdElias:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdElla:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdElliot:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdFrank:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdGrungle:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdJack:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdJames:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdKatie:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdKendrick:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdKiana:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdKirk:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdKylie:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdLara:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdLeslie:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdLisa:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMabel:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMaggie:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMalachi:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMariah:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMark:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMarlene:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMartin:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMaya:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMiriam:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMonster:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdMyrna:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdNiki:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdNoah:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdPaula:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdPip:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdRachel:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdRagnar:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdRina:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdRusty:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdSandra:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdSerene:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdTom:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdVincent:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdWanda:
+		return true
+	case PostV1TextToSpeechJSONBody4Voice0PresetIdXylar:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToSpeechJSONBody3Voice1Type.
+// Defines values for PostV1TextToSpeechJSONBody4Voice0Type.
 const (
-	PostV1TextToSpeechJSONBody3Voice1TypeCustom PostV1TextToSpeechJSONBody3Voice1Type = "custom"
+	PostV1TextToSpeechJSONBody4Voice0TypeRunwayPreset PostV1TextToSpeechJSONBody4Voice0Type = "runway-preset"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody3Voice1Type enum.
-func (e PostV1TextToSpeechJSONBody3Voice1Type) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody4Voice0Type enum.
+func (e PostV1TextToSpeechJSONBody4Voice0Type) Valid() bool {
 	switch e {
-	case PostV1TextToSpeechJSONBody3Voice1TypeCustom:
+	case PostV1TextToSpeechJSONBody4Voice0TypeRunwayPreset:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToSpeechJSONBody4Voice1Type.
+const (
+	PostV1TextToSpeechJSONBody4Voice1TypeCustom PostV1TextToSpeechJSONBody4Voice1Type = "custom"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody4Voice1Type enum.
+func (e PostV1TextToSpeechJSONBody4Voice1Type) Valid() bool {
+	switch e {
+	case PostV1TextToSpeechJSONBody4Voice1TypeCustom:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToSpeechJSONBody5ApplyTextNormalization.
+const (
+	PostV1TextToSpeechJSONBody5ApplyTextNormalizationAuto PostV1TextToSpeechJSONBody5ApplyTextNormalization = "auto"
+	PostV1TextToSpeechJSONBody5ApplyTextNormalizationOff  PostV1TextToSpeechJSONBody5ApplyTextNormalization = "off"
+	PostV1TextToSpeechJSONBody5ApplyTextNormalizationOn   PostV1TextToSpeechJSONBody5ApplyTextNormalization = "on"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody5ApplyTextNormalization enum.
+func (e PostV1TextToSpeechJSONBody5ApplyTextNormalization) Valid() bool {
+	switch e {
+	case PostV1TextToSpeechJSONBody5ApplyTextNormalizationAuto:
+		return true
+	case PostV1TextToSpeechJSONBody5ApplyTextNormalizationOff:
+		return true
+	case PostV1TextToSpeechJSONBody5ApplyTextNormalizationOn:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToSpeechJSONBody5Model.
+const (
+	PostV1TextToSpeechJSONBody5ModelElevenV3 PostV1TextToSpeechJSONBody5Model = "eleven_v3"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody5Model enum.
+func (e PostV1TextToSpeechJSONBody5Model) Valid() bool {
+	switch e {
+	case PostV1TextToSpeechJSONBody5ModelElevenV3:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToSpeechJSONBody5Voice0PresetId.
+const (
+	PostV1TextToSpeechJSONBody5Voice0PresetIdArjun    PostV1TextToSpeechJSONBody5Voice0PresetId = "Arjun"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdBenjamin PostV1TextToSpeechJSONBody5Voice0PresetId = "Benjamin"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdBernard  PostV1TextToSpeechJSONBody5Voice0PresetId = "Bernard"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdBilly    PostV1TextToSpeechJSONBody5Voice0PresetId = "Billy"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdBrodie   PostV1TextToSpeechJSONBody5Voice0PresetId = "Brodie"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdChad     PostV1TextToSpeechJSONBody5Voice0PresetId = "Chad"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdClaudia  PostV1TextToSpeechJSONBody5Voice0PresetId = "Claudia"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdClint    PostV1TextToSpeechJSONBody5Voice0PresetId = "Clint"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdEleanor  PostV1TextToSpeechJSONBody5Voice0PresetId = "Eleanor"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdElias    PostV1TextToSpeechJSONBody5Voice0PresetId = "Elias"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdElla     PostV1TextToSpeechJSONBody5Voice0PresetId = "Ella"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdElliot   PostV1TextToSpeechJSONBody5Voice0PresetId = "Elliot"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdFrank    PostV1TextToSpeechJSONBody5Voice0PresetId = "Frank"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdGrungle  PostV1TextToSpeechJSONBody5Voice0PresetId = "Grungle"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdJack     PostV1TextToSpeechJSONBody5Voice0PresetId = "Jack"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdJames    PostV1TextToSpeechJSONBody5Voice0PresetId = "James"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdKatie    PostV1TextToSpeechJSONBody5Voice0PresetId = "Katie"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdKendrick PostV1TextToSpeechJSONBody5Voice0PresetId = "Kendrick"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdKiana    PostV1TextToSpeechJSONBody5Voice0PresetId = "Kiana"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdKirk     PostV1TextToSpeechJSONBody5Voice0PresetId = "Kirk"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdKylie    PostV1TextToSpeechJSONBody5Voice0PresetId = "Kylie"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdLara     PostV1TextToSpeechJSONBody5Voice0PresetId = "Lara"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdLeslie   PostV1TextToSpeechJSONBody5Voice0PresetId = "Leslie"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdLisa     PostV1TextToSpeechJSONBody5Voice0PresetId = "Lisa"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMabel    PostV1TextToSpeechJSONBody5Voice0PresetId = "Mabel"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMaggie   PostV1TextToSpeechJSONBody5Voice0PresetId = "Maggie"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMalachi  PostV1TextToSpeechJSONBody5Voice0PresetId = "Malachi"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMariah   PostV1TextToSpeechJSONBody5Voice0PresetId = "Mariah"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMark     PostV1TextToSpeechJSONBody5Voice0PresetId = "Mark"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMarlene  PostV1TextToSpeechJSONBody5Voice0PresetId = "Marlene"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMartin   PostV1TextToSpeechJSONBody5Voice0PresetId = "Martin"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMaya     PostV1TextToSpeechJSONBody5Voice0PresetId = "Maya"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMiriam   PostV1TextToSpeechJSONBody5Voice0PresetId = "Miriam"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMonster  PostV1TextToSpeechJSONBody5Voice0PresetId = "Monster"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdMyrna    PostV1TextToSpeechJSONBody5Voice0PresetId = "Myrna"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdNiki     PostV1TextToSpeechJSONBody5Voice0PresetId = "Niki"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdNoah     PostV1TextToSpeechJSONBody5Voice0PresetId = "Noah"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdPaula    PostV1TextToSpeechJSONBody5Voice0PresetId = "Paula"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdPip      PostV1TextToSpeechJSONBody5Voice0PresetId = "Pip"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdRachel   PostV1TextToSpeechJSONBody5Voice0PresetId = "Rachel"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdRagnar   PostV1TextToSpeechJSONBody5Voice0PresetId = "Ragnar"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdRina     PostV1TextToSpeechJSONBody5Voice0PresetId = "Rina"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdRusty    PostV1TextToSpeechJSONBody5Voice0PresetId = "Rusty"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdSandra   PostV1TextToSpeechJSONBody5Voice0PresetId = "Sandra"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdSerene   PostV1TextToSpeechJSONBody5Voice0PresetId = "Serene"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdTom      PostV1TextToSpeechJSONBody5Voice0PresetId = "Tom"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdVincent  PostV1TextToSpeechJSONBody5Voice0PresetId = "Vincent"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdWanda    PostV1TextToSpeechJSONBody5Voice0PresetId = "Wanda"
+	PostV1TextToSpeechJSONBody5Voice0PresetIdXylar    PostV1TextToSpeechJSONBody5Voice0PresetId = "Xylar"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody5Voice0PresetId enum.
+func (e PostV1TextToSpeechJSONBody5Voice0PresetId) Valid() bool {
+	switch e {
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdArjun:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdBenjamin:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdBernard:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdBilly:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdBrodie:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdChad:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdClaudia:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdClint:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdEleanor:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdElias:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdElla:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdElliot:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdFrank:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdGrungle:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdJack:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdJames:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdKatie:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdKendrick:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdKiana:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdKirk:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdKylie:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdLara:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdLeslie:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdLisa:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMabel:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMaggie:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMalachi:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMariah:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMark:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMarlene:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMartin:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMaya:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMiriam:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMonster:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdMyrna:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdNiki:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdNoah:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdPaula:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdPip:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdRachel:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdRagnar:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdRina:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdRusty:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdSandra:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdSerene:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdTom:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdVincent:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdWanda:
+		return true
+	case PostV1TextToSpeechJSONBody5Voice0PresetIdXylar:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToSpeechJSONBody5Voice0Type.
+const (
+	PostV1TextToSpeechJSONBody5Voice0TypeRunwayPreset PostV1TextToSpeechJSONBody5Voice0Type = "runway-preset"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody5Voice0Type enum.
+func (e PostV1TextToSpeechJSONBody5Voice0Type) Valid() bool {
+	switch e {
+	case PostV1TextToSpeechJSONBody5Voice0TypeRunwayPreset:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToSpeechJSONBody5Voice1Type.
+const (
+	PostV1TextToSpeechJSONBody5Voice1TypeCustom PostV1TextToSpeechJSONBody5Voice1Type = "custom"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeechJSONBody5Voice1Type enum.
+func (e PostV1TextToSpeechJSONBody5Voice1Type) Valid() bool {
+	switch e {
+	case PostV1TextToSpeechJSONBody5Voice1TypeCustom:
 		return true
 	default:
 		return false
@@ -23935,6 +24052,14 @@ func (e PostV1VideoToVideoJSONBody11Model) Valid() bool {
 const (
 	PostV1VideoToVideoJSONBody11RatioAuto1080p PostV1VideoToVideoJSONBody11Ratio = "auto_1080p"
 	PostV1VideoToVideoJSONBody11RatioAuto720p  PostV1VideoToVideoJSONBody11Ratio = "auto_720p"
+	PostV1VideoToVideoJSONBody11RatioN10801920 PostV1VideoToVideoJSONBody11Ratio = "1080:1920"
+	PostV1VideoToVideoJSONBody11RatioN1280720  PostV1VideoToVideoJSONBody11Ratio = "1280:720"
+	PostV1VideoToVideoJSONBody11RatioN14401440 PostV1VideoToVideoJSONBody11Ratio = "1440:1440"
+	PostV1VideoToVideoJSONBody11RatioN1460624  PostV1VideoToVideoJSONBody11Ratio = "1460:624"
+	PostV1VideoToVideoJSONBody11RatioN19201080 PostV1VideoToVideoJSONBody11Ratio = "1920:1080"
+	PostV1VideoToVideoJSONBody11RatioN2200940  PostV1VideoToVideoJSONBody11Ratio = "2200:940"
+	PostV1VideoToVideoJSONBody11RatioN7201280  PostV1VideoToVideoJSONBody11Ratio = "720:1280"
+	PostV1VideoToVideoJSONBody11RatioN940940   PostV1VideoToVideoJSONBody11Ratio = "940:940"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody11Ratio enum.
@@ -23943,6 +24068,22 @@ func (e PostV1VideoToVideoJSONBody11Ratio) Valid() bool {
 	case PostV1VideoToVideoJSONBody11RatioAuto1080p:
 		return true
 	case PostV1VideoToVideoJSONBody11RatioAuto720p:
+		return true
+	case PostV1VideoToVideoJSONBody11RatioN10801920:
+		return true
+	case PostV1VideoToVideoJSONBody11RatioN1280720:
+		return true
+	case PostV1VideoToVideoJSONBody11RatioN14401440:
+		return true
+	case PostV1VideoToVideoJSONBody11RatioN1460624:
+		return true
+	case PostV1VideoToVideoJSONBody11RatioN19201080:
+		return true
+	case PostV1VideoToVideoJSONBody11RatioN2200940:
+		return true
+	case PostV1VideoToVideoJSONBody11RatioN7201280:
+		return true
+	case PostV1VideoToVideoJSONBody11RatioN940940:
 		return true
 	default:
 		return false
@@ -32585,6 +32726,12 @@ type GetV1OrganizationWebappUsageParamsTo0 = time.Time
 // GetV1OrganizationWebappUsageParamsTo1 defines parameters for GetV1OrganizationWebappUsage.
 type GetV1OrganizationWebappUsageParamsTo1 = openapi_types.Date
 
+// GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType defines parameters for GetV1OrganizationWebappUsage.
+type GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType string
+
+// GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus defines parameters for GetV1OrganizationWebappUsage.
+type GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus string
+
 // GetV1OrganizationWebappUsage200JSONResponseBodyDataType defines parameters for GetV1OrganizationWebappUsage.
 type GetV1OrganizationWebappUsage200JSONResponseBodyDataType string
 
@@ -35070,7 +35217,7 @@ type GetV1TasksId200JSONResponseBody5 struct {
 	// Id The ID of the task being returned.
 	Id openapi_types.UUID `json:"id"`
 
-	// Layers Layer details for successful Seedream 5 Pro Layers tasks. Each URI matches the output URL at the same index.
+	// Layers Layer details for successful Seedream layer decomposition tasks. Each URI matches the output URL at the same index.
 	Layers *[]struct {
 		// BoundingBox The layer bounds in absolute and normalized coordinates, when returned by the model provider.
 		BoundingBox *struct {
@@ -36736,54 +36883,104 @@ type PostV1TextToSpeechJSONBody_1_Voice struct {
 
 // PostV1TextToSpeechJSONBody2 defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeechJSONBody2 struct {
-	Model PostV1TextToSpeechJSONBody2Model `json:"model"`
+	// LanguageCode The language of the script, such as "en-US". When omitted, the model detects it.
+	LanguageCode *string                          `json:"languageCode,omitempty"`
+	Model        PostV1TextToSpeechJSONBody2Model `json:"model"`
 
-	// PromptText A non-empty string up to 1000 characters (measured in UTF-16 code units). This should describe in detail what should appear in the output.
-	PromptText string `json:"promptText"`
+	// Turns The script, in the order it is spoken. Use one turn for a single speaker, or alternate speakers across turns for a dialogue.
+	Turns []struct {
+		// Speaker The position in `voiceIds` of the voice that speaks this turn. Defaults to the first voice.
+		Speaker *int `json:"speaker,omitempty"`
 
-	// Voice The voice to use for the generated speech.
-	Voice PostV1TextToSpeechJSONBody_2_Voice `json:"voice"`
+		// Style How this turn should be delivered, such as "calm and reassuring". It guides the delivery and is not read aloud.
+		Style *string `json:"style,omitempty"`
+
+		// Text The words to speak in this turn.
+		Text string `json:"text"`
+	} `json:"turns"`
+
+	// VoiceIds The Google voice for each speaker, such as "Kore" or "Puck". Pass one voice for a single speaker, or two for a dialogue.
+	VoiceIds []string `json:"voiceIds"`
 }
 
 // PostV1TextToSpeechJSONBody2Model defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeechJSONBody2Model string
 
-// PostV1TextToSpeechJSONBody2Voice0 defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody2Voice0 struct {
-	// PresetId The preset voice ID to use for the generated speech.
-	PresetId PostV1TextToSpeechJSONBody2Voice0PresetId `json:"presetId"`
-	Type     PostV1TextToSpeechJSONBody2Voice0Type     `json:"type"`
+// PostV1TextToSpeechJSONBody3 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody3 struct {
+	// LanguageCode The language of the script, such as "en-US". When omitted, the model detects it.
+	LanguageCode *string                          `json:"languageCode,omitempty"`
+	Model        PostV1TextToSpeechJSONBody3Model `json:"model"`
+
+	// Turns The script, in the order it is spoken. Use one turn for a single speaker, or alternate speakers across turns for a dialogue.
+	Turns []struct {
+		// Speaker The position in `voiceIds` of the voice that speaks this turn. Defaults to the first voice.
+		Speaker *int `json:"speaker,omitempty"`
+
+		// Style How this turn should be delivered, such as "calm and reassuring". It guides the delivery and is not read aloud.
+		Style *string `json:"style,omitempty"`
+
+		// Text The words to speak in this turn.
+		Text string `json:"text"`
+	} `json:"turns"`
+
+	// VoiceIds The Google voice for each speaker, such as "Kore" or "Puck". Pass one voice for a single speaker, or two for a dialogue.
+	VoiceIds []string `json:"voiceIds"`
 }
 
-// PostV1TextToSpeechJSONBody2Voice0PresetId defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody2Voice0PresetId string
+// PostV1TextToSpeechJSONBody3Model defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody3Model string
 
-// PostV1TextToSpeechJSONBody2Voice0Type defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody2Voice0Type string
+// PostV1TextToSpeechJSONBody4 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody4 struct {
+	Model PostV1TextToSpeechJSONBody4Model `json:"model"`
 
-// PostV1TextToSpeechJSONBody2Voice1 defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody2Voice1 struct {
+	// PromptText A non-empty string up to 1000 characters (measured in UTF-16 code units). This should describe in detail what should appear in the output.
+	PromptText string `json:"promptText"`
+
+	// Voice The voice to use for the generated speech.
+	Voice PostV1TextToSpeechJSONBody_4_Voice `json:"voice"`
+}
+
+// PostV1TextToSpeechJSONBody4Model defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody4Model string
+
+// PostV1TextToSpeechJSONBody4Voice0 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody4Voice0 struct {
+	// PresetId The preset voice ID to use for the generated speech.
+	PresetId PostV1TextToSpeechJSONBody4Voice0PresetId `json:"presetId"`
+	Type     PostV1TextToSpeechJSONBody4Voice0Type     `json:"type"`
+}
+
+// PostV1TextToSpeechJSONBody4Voice0PresetId defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody4Voice0PresetId string
+
+// PostV1TextToSpeechJSONBody4Voice0Type defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody4Voice0Type string
+
+// PostV1TextToSpeechJSONBody4Voice1 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody4Voice1 struct {
 	// Id The ID of a custom voice created via the Voices API.
 	Id   openapi_types.UUID                    `json:"id"`
-	Type PostV1TextToSpeechJSONBody2Voice1Type `json:"type"`
+	Type PostV1TextToSpeechJSONBody4Voice1Type `json:"type"`
 }
 
-// PostV1TextToSpeechJSONBody2Voice1Type defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody2Voice1Type string
+// PostV1TextToSpeechJSONBody4Voice1Type defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody4Voice1Type string
 
-// PostV1TextToSpeechJSONBody_2_Voice defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody_2_Voice struct {
+// PostV1TextToSpeechJSONBody_4_Voice defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody_4_Voice struct {
 	union json.RawMessage
 }
 
-// PostV1TextToSpeechJSONBody3 defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody3 struct {
+// PostV1TextToSpeechJSONBody5 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody5 struct {
 	// ApplyTextNormalization Text normalization mode: 'auto', 'on', or 'off' (e.g. spelling out numbers).
-	ApplyTextNormalization *PostV1TextToSpeechJSONBody3ApplyTextNormalization `json:"applyTextNormalization,omitempty"`
+	ApplyTextNormalization *PostV1TextToSpeechJSONBody5ApplyTextNormalization `json:"applyTextNormalization,omitempty"`
 
 	// LanguageCode ISO 639-1 language code to enforce pronunciation and normalization.
 	LanguageCode *string                          `json:"languageCode,omitempty"`
-	Model        PostV1TextToSpeechJSONBody3Model `json:"model"`
+	Model        PostV1TextToSpeechJSONBody5Model `json:"model"`
 
 	// PromptText The text to convert to speech. You can include expressive audio tags like [laughs] or [whispers] in the script.
 	PromptText string `json:"promptText"`
@@ -36807,40 +37004,40 @@ type PostV1TextToSpeechJSONBody3 struct {
 	UseSpeakerBoost *bool `json:"useSpeakerBoost,omitempty"`
 
 	// Voice The voice to use for the generated speech.
-	Voice PostV1TextToSpeechJSONBody_3_Voice `json:"voice"`
+	Voice PostV1TextToSpeechJSONBody_5_Voice `json:"voice"`
 }
 
-// PostV1TextToSpeechJSONBody3ApplyTextNormalization defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody3ApplyTextNormalization string
+// PostV1TextToSpeechJSONBody5ApplyTextNormalization defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody5ApplyTextNormalization string
 
-// PostV1TextToSpeechJSONBody3Model defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody3Model string
+// PostV1TextToSpeechJSONBody5Model defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody5Model string
 
-// PostV1TextToSpeechJSONBody3Voice0 defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody3Voice0 struct {
+// PostV1TextToSpeechJSONBody5Voice0 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody5Voice0 struct {
 	// PresetId The preset voice ID to use for the generated speech.
-	PresetId PostV1TextToSpeechJSONBody3Voice0PresetId `json:"presetId"`
-	Type     PostV1TextToSpeechJSONBody3Voice0Type     `json:"type"`
+	PresetId PostV1TextToSpeechJSONBody5Voice0PresetId `json:"presetId"`
+	Type     PostV1TextToSpeechJSONBody5Voice0Type     `json:"type"`
 }
 
-// PostV1TextToSpeechJSONBody3Voice0PresetId defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody3Voice0PresetId string
+// PostV1TextToSpeechJSONBody5Voice0PresetId defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody5Voice0PresetId string
 
-// PostV1TextToSpeechJSONBody3Voice0Type defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody3Voice0Type string
+// PostV1TextToSpeechJSONBody5Voice0Type defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody5Voice0Type string
 
-// PostV1TextToSpeechJSONBody3Voice1 defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody3Voice1 struct {
+// PostV1TextToSpeechJSONBody5Voice1 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody5Voice1 struct {
 	// Id The ID of a custom voice created via the Voices API.
 	Id   openapi_types.UUID                    `json:"id"`
-	Type PostV1TextToSpeechJSONBody3Voice1Type `json:"type"`
+	Type PostV1TextToSpeechJSONBody5Voice1Type `json:"type"`
 }
 
-// PostV1TextToSpeechJSONBody3Voice1Type defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody3Voice1Type string
+// PostV1TextToSpeechJSONBody5Voice1Type defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody5Voice1Type string
 
-// PostV1TextToSpeechJSONBody_3_Voice defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeechJSONBody_3_Voice struct {
+// PostV1TextToSpeechJSONBody_5_Voice defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechJSONBody_5_Voice struct {
 	union json.RawMessage
 }
 
@@ -40272,13 +40469,21 @@ type PostV1VideoToVideoJSONBody_10_References_Uri struct {
 
 // PostV1VideoToVideoJSONBody11 defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideoJSONBody11 struct {
-	Model PostV1VideoToVideoJSONBody11Model `json:"model"`
+	// Duration The duration of the edited video in seconds.
+	Duration *int                              `json:"duration,omitempty"`
+	Model    PostV1VideoToVideoJSONBody11Model `json:"model"`
+
+	// PromptImage Optional first, middle, and last frames guiding the edit. Middle or last frames can be provided without a first frame.
+	PromptImage *PostV1VideoToVideoJSONBody_11_PromptImage `json:"promptImage,omitempty"`
 
 	// PromptText A text prompt describing how to edit the video.
 	PromptText string `json:"promptText"`
 
-	// Ratio Output quality tier. The video keeps the input media framing.
+	// Ratio The target output size. Use a pixel ratio such as `1280:720` or `auto_720p` / `auto_1080p` for adaptive framing.
 	Ratio *PostV1VideoToVideoJSONBody11Ratio `json:"ratio,omitempty"`
+
+	// ReferenceVideos Up to 4 videos whose style, motion or camera work should guide the output, together at most 30 seconds long.
+	ReferenceVideos *[]interface{} `json:"referenceVideos,omitempty"`
 
 	// References Images of characters, objects or styles to use in the video. Up to 10 images in total, frames included.
 	References *[]struct {
@@ -40292,6 +40497,28 @@ type PostV1VideoToVideoJSONBody11 struct {
 
 // PostV1VideoToVideoJSONBody11Model defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideoJSONBody11Model string
+
+// PostV1VideoToVideoJSONBody11PromptImage0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody11PromptImage0 struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody11PromptImage00 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody11PromptImage00 = string
+
+// PostV1VideoToVideoJSONBody11PromptImage01 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody11PromptImage01 = string
+
+// PostV1VideoToVideoJSONBody11PromptImage02 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody11PromptImage02 = string
+
+// PostV1VideoToVideoJSONBody11PromptImage1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody11PromptImage1 = []interface{}
+
+// PostV1VideoToVideoJSONBody_11_PromptImage defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_11_PromptImage struct {
+	union json.RawMessage
+}
 
 // PostV1VideoToVideoJSONBody11Ratio defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideoJSONBody11Ratio string
@@ -76300,6 +76527,58 @@ func (t *PostV1TextToSpeechJSONBody) MergePostV1TextToSpeechJSONBody3(v PostV1Te
 	return err
 }
 
+// AsPostV1TextToSpeechJSONBody4 returns the union data inside the PostV1TextToSpeechJSONBody as a PostV1TextToSpeechJSONBody4
+func (t PostV1TextToSpeechJSONBody) AsPostV1TextToSpeechJSONBody4() (PostV1TextToSpeechJSONBody4, error) {
+	var body PostV1TextToSpeechJSONBody4
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToSpeechJSONBody4 overwrites any union data inside the PostV1TextToSpeechJSONBody as the provided PostV1TextToSpeechJSONBody4
+func (t *PostV1TextToSpeechJSONBody) FromPostV1TextToSpeechJSONBody4(v PostV1TextToSpeechJSONBody4) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToSpeechJSONBody4 performs a merge with any union data inside the PostV1TextToSpeechJSONBody, using the provided PostV1TextToSpeechJSONBody4
+func (t *PostV1TextToSpeechJSONBody) MergePostV1TextToSpeechJSONBody4(v PostV1TextToSpeechJSONBody4) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToSpeechJSONBody5 returns the union data inside the PostV1TextToSpeechJSONBody as a PostV1TextToSpeechJSONBody5
+func (t PostV1TextToSpeechJSONBody) AsPostV1TextToSpeechJSONBody5() (PostV1TextToSpeechJSONBody5, error) {
+	var body PostV1TextToSpeechJSONBody5
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToSpeechJSONBody5 overwrites any union data inside the PostV1TextToSpeechJSONBody as the provided PostV1TextToSpeechJSONBody5
+func (t *PostV1TextToSpeechJSONBody) FromPostV1TextToSpeechJSONBody5(v PostV1TextToSpeechJSONBody5) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToSpeechJSONBody5 performs a merge with any union data inside the PostV1TextToSpeechJSONBody, using the provided PostV1TextToSpeechJSONBody5
+func (t *PostV1TextToSpeechJSONBody) MergePostV1TextToSpeechJSONBody5(v PostV1TextToSpeechJSONBody5) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1TextToSpeechJSONBody) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -76460,22 +76739,22 @@ func (t *PostV1TextToSpeechJSONBody_1_Voice) UnmarshalJSON(b []byte) error {
 	return err
 }
 
-// AsPostV1TextToSpeechJSONBody2Voice0 returns the union data inside the PostV1TextToSpeechJSONBody_2_Voice as a PostV1TextToSpeechJSONBody2Voice0
-func (t PostV1TextToSpeechJSONBody_2_Voice) AsPostV1TextToSpeechJSONBody2Voice0() (PostV1TextToSpeechJSONBody2Voice0, error) {
-	var body PostV1TextToSpeechJSONBody2Voice0
+// AsPostV1TextToSpeechJSONBody4Voice0 returns the union data inside the PostV1TextToSpeechJSONBody_4_Voice as a PostV1TextToSpeechJSONBody4Voice0
+func (t PostV1TextToSpeechJSONBody_4_Voice) AsPostV1TextToSpeechJSONBody4Voice0() (PostV1TextToSpeechJSONBody4Voice0, error) {
+	var body PostV1TextToSpeechJSONBody4Voice0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromPostV1TextToSpeechJSONBody2Voice0 overwrites any union data inside the PostV1TextToSpeechJSONBody_2_Voice as the provided PostV1TextToSpeechJSONBody2Voice0
-func (t *PostV1TextToSpeechJSONBody_2_Voice) FromPostV1TextToSpeechJSONBody2Voice0(v PostV1TextToSpeechJSONBody2Voice0) error {
+// FromPostV1TextToSpeechJSONBody4Voice0 overwrites any union data inside the PostV1TextToSpeechJSONBody_4_Voice as the provided PostV1TextToSpeechJSONBody4Voice0
+func (t *PostV1TextToSpeechJSONBody_4_Voice) FromPostV1TextToSpeechJSONBody4Voice0(v PostV1TextToSpeechJSONBody4Voice0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergePostV1TextToSpeechJSONBody2Voice0 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_2_Voice, using the provided PostV1TextToSpeechJSONBody2Voice0
-func (t *PostV1TextToSpeechJSONBody_2_Voice) MergePostV1TextToSpeechJSONBody2Voice0(v PostV1TextToSpeechJSONBody2Voice0) error {
+// MergePostV1TextToSpeechJSONBody4Voice0 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_4_Voice, using the provided PostV1TextToSpeechJSONBody4Voice0
+func (t *PostV1TextToSpeechJSONBody_4_Voice) MergePostV1TextToSpeechJSONBody4Voice0(v PostV1TextToSpeechJSONBody4Voice0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -76486,22 +76765,22 @@ func (t *PostV1TextToSpeechJSONBody_2_Voice) MergePostV1TextToSpeechJSONBody2Voi
 	return err
 }
 
-// AsPostV1TextToSpeechJSONBody2Voice1 returns the union data inside the PostV1TextToSpeechJSONBody_2_Voice as a PostV1TextToSpeechJSONBody2Voice1
-func (t PostV1TextToSpeechJSONBody_2_Voice) AsPostV1TextToSpeechJSONBody2Voice1() (PostV1TextToSpeechJSONBody2Voice1, error) {
-	var body PostV1TextToSpeechJSONBody2Voice1
+// AsPostV1TextToSpeechJSONBody4Voice1 returns the union data inside the PostV1TextToSpeechJSONBody_4_Voice as a PostV1TextToSpeechJSONBody4Voice1
+func (t PostV1TextToSpeechJSONBody_4_Voice) AsPostV1TextToSpeechJSONBody4Voice1() (PostV1TextToSpeechJSONBody4Voice1, error) {
+	var body PostV1TextToSpeechJSONBody4Voice1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromPostV1TextToSpeechJSONBody2Voice1 overwrites any union data inside the PostV1TextToSpeechJSONBody_2_Voice as the provided PostV1TextToSpeechJSONBody2Voice1
-func (t *PostV1TextToSpeechJSONBody_2_Voice) FromPostV1TextToSpeechJSONBody2Voice1(v PostV1TextToSpeechJSONBody2Voice1) error {
+// FromPostV1TextToSpeechJSONBody4Voice1 overwrites any union data inside the PostV1TextToSpeechJSONBody_4_Voice as the provided PostV1TextToSpeechJSONBody4Voice1
+func (t *PostV1TextToSpeechJSONBody_4_Voice) FromPostV1TextToSpeechJSONBody4Voice1(v PostV1TextToSpeechJSONBody4Voice1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergePostV1TextToSpeechJSONBody2Voice1 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_2_Voice, using the provided PostV1TextToSpeechJSONBody2Voice1
-func (t *PostV1TextToSpeechJSONBody_2_Voice) MergePostV1TextToSpeechJSONBody2Voice1(v PostV1TextToSpeechJSONBody2Voice1) error {
+// MergePostV1TextToSpeechJSONBody4Voice1 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_4_Voice, using the provided PostV1TextToSpeechJSONBody4Voice1
+func (t *PostV1TextToSpeechJSONBody_4_Voice) MergePostV1TextToSpeechJSONBody4Voice1(v PostV1TextToSpeechJSONBody4Voice1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -76512,32 +76791,32 @@ func (t *PostV1TextToSpeechJSONBody_2_Voice) MergePostV1TextToSpeechJSONBody2Voi
 	return err
 }
 
-func (t PostV1TextToSpeechJSONBody_2_Voice) MarshalJSON() ([]byte, error) {
+func (t PostV1TextToSpeechJSONBody_4_Voice) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *PostV1TextToSpeechJSONBody_2_Voice) UnmarshalJSON(b []byte) error {
+func (t *PostV1TextToSpeechJSONBody_4_Voice) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
 
-// AsPostV1TextToSpeechJSONBody3Voice0 returns the union data inside the PostV1TextToSpeechJSONBody_3_Voice as a PostV1TextToSpeechJSONBody3Voice0
-func (t PostV1TextToSpeechJSONBody_3_Voice) AsPostV1TextToSpeechJSONBody3Voice0() (PostV1TextToSpeechJSONBody3Voice0, error) {
-	var body PostV1TextToSpeechJSONBody3Voice0
+// AsPostV1TextToSpeechJSONBody5Voice0 returns the union data inside the PostV1TextToSpeechJSONBody_5_Voice as a PostV1TextToSpeechJSONBody5Voice0
+func (t PostV1TextToSpeechJSONBody_5_Voice) AsPostV1TextToSpeechJSONBody5Voice0() (PostV1TextToSpeechJSONBody5Voice0, error) {
+	var body PostV1TextToSpeechJSONBody5Voice0
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromPostV1TextToSpeechJSONBody3Voice0 overwrites any union data inside the PostV1TextToSpeechJSONBody_3_Voice as the provided PostV1TextToSpeechJSONBody3Voice0
-func (t *PostV1TextToSpeechJSONBody_3_Voice) FromPostV1TextToSpeechJSONBody3Voice0(v PostV1TextToSpeechJSONBody3Voice0) error {
+// FromPostV1TextToSpeechJSONBody5Voice0 overwrites any union data inside the PostV1TextToSpeechJSONBody_5_Voice as the provided PostV1TextToSpeechJSONBody5Voice0
+func (t *PostV1TextToSpeechJSONBody_5_Voice) FromPostV1TextToSpeechJSONBody5Voice0(v PostV1TextToSpeechJSONBody5Voice0) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergePostV1TextToSpeechJSONBody3Voice0 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_3_Voice, using the provided PostV1TextToSpeechJSONBody3Voice0
-func (t *PostV1TextToSpeechJSONBody_3_Voice) MergePostV1TextToSpeechJSONBody3Voice0(v PostV1TextToSpeechJSONBody3Voice0) error {
+// MergePostV1TextToSpeechJSONBody5Voice0 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_5_Voice, using the provided PostV1TextToSpeechJSONBody5Voice0
+func (t *PostV1TextToSpeechJSONBody_5_Voice) MergePostV1TextToSpeechJSONBody5Voice0(v PostV1TextToSpeechJSONBody5Voice0) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -76548,22 +76827,22 @@ func (t *PostV1TextToSpeechJSONBody_3_Voice) MergePostV1TextToSpeechJSONBody3Voi
 	return err
 }
 
-// AsPostV1TextToSpeechJSONBody3Voice1 returns the union data inside the PostV1TextToSpeechJSONBody_3_Voice as a PostV1TextToSpeechJSONBody3Voice1
-func (t PostV1TextToSpeechJSONBody_3_Voice) AsPostV1TextToSpeechJSONBody3Voice1() (PostV1TextToSpeechJSONBody3Voice1, error) {
-	var body PostV1TextToSpeechJSONBody3Voice1
+// AsPostV1TextToSpeechJSONBody5Voice1 returns the union data inside the PostV1TextToSpeechJSONBody_5_Voice as a PostV1TextToSpeechJSONBody5Voice1
+func (t PostV1TextToSpeechJSONBody_5_Voice) AsPostV1TextToSpeechJSONBody5Voice1() (PostV1TextToSpeechJSONBody5Voice1, error) {
+	var body PostV1TextToSpeechJSONBody5Voice1
 	err := json.Unmarshal(t.union, &body)
 	return body, err
 }
 
-// FromPostV1TextToSpeechJSONBody3Voice1 overwrites any union data inside the PostV1TextToSpeechJSONBody_3_Voice as the provided PostV1TextToSpeechJSONBody3Voice1
-func (t *PostV1TextToSpeechJSONBody_3_Voice) FromPostV1TextToSpeechJSONBody3Voice1(v PostV1TextToSpeechJSONBody3Voice1) error {
+// FromPostV1TextToSpeechJSONBody5Voice1 overwrites any union data inside the PostV1TextToSpeechJSONBody_5_Voice as the provided PostV1TextToSpeechJSONBody5Voice1
+func (t *PostV1TextToSpeechJSONBody_5_Voice) FromPostV1TextToSpeechJSONBody5Voice1(v PostV1TextToSpeechJSONBody5Voice1) error {
 	b, err := json.Marshal(v)
 	t.union = b
 	return err
 }
 
-// MergePostV1TextToSpeechJSONBody3Voice1 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_3_Voice, using the provided PostV1TextToSpeechJSONBody3Voice1
-func (t *PostV1TextToSpeechJSONBody_3_Voice) MergePostV1TextToSpeechJSONBody3Voice1(v PostV1TextToSpeechJSONBody3Voice1) error {
+// MergePostV1TextToSpeechJSONBody5Voice1 performs a merge with any union data inside the PostV1TextToSpeechJSONBody_5_Voice, using the provided PostV1TextToSpeechJSONBody5Voice1
+func (t *PostV1TextToSpeechJSONBody_5_Voice) MergePostV1TextToSpeechJSONBody5Voice1(v PostV1TextToSpeechJSONBody5Voice1) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -76574,12 +76853,12 @@ func (t *PostV1TextToSpeechJSONBody_3_Voice) MergePostV1TextToSpeechJSONBody3Voi
 	return err
 }
 
-func (t PostV1TextToSpeechJSONBody_3_Voice) MarshalJSON() ([]byte, error) {
+func (t PostV1TextToSpeechJSONBody_5_Voice) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
 }
 
-func (t *PostV1TextToSpeechJSONBody_3_Voice) UnmarshalJSON(b []byte) error {
+func (t *PostV1TextToSpeechJSONBody_5_Voice) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }
@@ -88562,6 +88841,156 @@ func (t PostV1VideoToVideoJSONBody_10_References_Uri) MarshalJSON() ([]byte, err
 }
 
 func (t *PostV1VideoToVideoJSONBody_10_References_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody11PromptImage00 returns the union data inside the PostV1VideoToVideoJSONBody11PromptImage0 as a PostV1VideoToVideoJSONBody11PromptImage00
+func (t PostV1VideoToVideoJSONBody11PromptImage0) AsPostV1VideoToVideoJSONBody11PromptImage00() (PostV1VideoToVideoJSONBody11PromptImage00, error) {
+	var body PostV1VideoToVideoJSONBody11PromptImage00
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody11PromptImage00 overwrites any union data inside the PostV1VideoToVideoJSONBody11PromptImage0 as the provided PostV1VideoToVideoJSONBody11PromptImage00
+func (t *PostV1VideoToVideoJSONBody11PromptImage0) FromPostV1VideoToVideoJSONBody11PromptImage00(v PostV1VideoToVideoJSONBody11PromptImage00) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody11PromptImage00 performs a merge with any union data inside the PostV1VideoToVideoJSONBody11PromptImage0, using the provided PostV1VideoToVideoJSONBody11PromptImage00
+func (t *PostV1VideoToVideoJSONBody11PromptImage0) MergePostV1VideoToVideoJSONBody11PromptImage00(v PostV1VideoToVideoJSONBody11PromptImage00) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody11PromptImage01 returns the union data inside the PostV1VideoToVideoJSONBody11PromptImage0 as a PostV1VideoToVideoJSONBody11PromptImage01
+func (t PostV1VideoToVideoJSONBody11PromptImage0) AsPostV1VideoToVideoJSONBody11PromptImage01() (PostV1VideoToVideoJSONBody11PromptImage01, error) {
+	var body PostV1VideoToVideoJSONBody11PromptImage01
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody11PromptImage01 overwrites any union data inside the PostV1VideoToVideoJSONBody11PromptImage0 as the provided PostV1VideoToVideoJSONBody11PromptImage01
+func (t *PostV1VideoToVideoJSONBody11PromptImage0) FromPostV1VideoToVideoJSONBody11PromptImage01(v PostV1VideoToVideoJSONBody11PromptImage01) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody11PromptImage01 performs a merge with any union data inside the PostV1VideoToVideoJSONBody11PromptImage0, using the provided PostV1VideoToVideoJSONBody11PromptImage01
+func (t *PostV1VideoToVideoJSONBody11PromptImage0) MergePostV1VideoToVideoJSONBody11PromptImage01(v PostV1VideoToVideoJSONBody11PromptImage01) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody11PromptImage02 returns the union data inside the PostV1VideoToVideoJSONBody11PromptImage0 as a PostV1VideoToVideoJSONBody11PromptImage02
+func (t PostV1VideoToVideoJSONBody11PromptImage0) AsPostV1VideoToVideoJSONBody11PromptImage02() (PostV1VideoToVideoJSONBody11PromptImage02, error) {
+	var body PostV1VideoToVideoJSONBody11PromptImage02
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody11PromptImage02 overwrites any union data inside the PostV1VideoToVideoJSONBody11PromptImage0 as the provided PostV1VideoToVideoJSONBody11PromptImage02
+func (t *PostV1VideoToVideoJSONBody11PromptImage0) FromPostV1VideoToVideoJSONBody11PromptImage02(v PostV1VideoToVideoJSONBody11PromptImage02) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody11PromptImage02 performs a merge with any union data inside the PostV1VideoToVideoJSONBody11PromptImage0, using the provided PostV1VideoToVideoJSONBody11PromptImage02
+func (t *PostV1VideoToVideoJSONBody11PromptImage0) MergePostV1VideoToVideoJSONBody11PromptImage02(v PostV1VideoToVideoJSONBody11PromptImage02) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody11PromptImage0) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody11PromptImage0) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody11PromptImage0 returns the union data inside the PostV1VideoToVideoJSONBody_11_PromptImage as a PostV1VideoToVideoJSONBody11PromptImage0
+func (t PostV1VideoToVideoJSONBody_11_PromptImage) AsPostV1VideoToVideoJSONBody11PromptImage0() (PostV1VideoToVideoJSONBody11PromptImage0, error) {
+	var body PostV1VideoToVideoJSONBody11PromptImage0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody11PromptImage0 overwrites any union data inside the PostV1VideoToVideoJSONBody_11_PromptImage as the provided PostV1VideoToVideoJSONBody11PromptImage0
+func (t *PostV1VideoToVideoJSONBody_11_PromptImage) FromPostV1VideoToVideoJSONBody11PromptImage0(v PostV1VideoToVideoJSONBody11PromptImage0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody11PromptImage0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_11_PromptImage, using the provided PostV1VideoToVideoJSONBody11PromptImage0
+func (t *PostV1VideoToVideoJSONBody_11_PromptImage) MergePostV1VideoToVideoJSONBody11PromptImage0(v PostV1VideoToVideoJSONBody11PromptImage0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody11PromptImage1 returns the union data inside the PostV1VideoToVideoJSONBody_11_PromptImage as a PostV1VideoToVideoJSONBody11PromptImage1
+func (t PostV1VideoToVideoJSONBody_11_PromptImage) AsPostV1VideoToVideoJSONBody11PromptImage1() (PostV1VideoToVideoJSONBody11PromptImage1, error) {
+	var body PostV1VideoToVideoJSONBody11PromptImage1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody11PromptImage1 overwrites any union data inside the PostV1VideoToVideoJSONBody_11_PromptImage as the provided PostV1VideoToVideoJSONBody11PromptImage1
+func (t *PostV1VideoToVideoJSONBody_11_PromptImage) FromPostV1VideoToVideoJSONBody11PromptImage1(v PostV1VideoToVideoJSONBody11PromptImage1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody11PromptImage1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_11_PromptImage, using the provided PostV1VideoToVideoJSONBody11PromptImage1
+func (t *PostV1VideoToVideoJSONBody_11_PromptImage) MergePostV1VideoToVideoJSONBody11PromptImage1(v PostV1VideoToVideoJSONBody11PromptImage1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_11_PromptImage) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_11_PromptImage) UnmarshalJSON(b []byte) error {
 	err := t.union.UnmarshalJSON(b)
 	return err
 }

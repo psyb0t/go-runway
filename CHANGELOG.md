@@ -2,6 +2,16 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.6.0, 2026-11-20
+
+- Added Gemini 3.8 text-to-speech variants: `PostV1TextToSpeechJSONBody2` with `PostV1TextToSpeechJSONBody2ModelGemini38FlashTts` and `PostV1TextToSpeechJSONBody3` with `PostV1TextToSpeechJSONBody3ModelGemini38FlashLiteTts`. Both take `Turns` and `VoiceIds`, and `PostV1TextToSpeechJSONBody2` also takes `LanguageCode`.
+- Changed `PostV1TextToSpeechJSONBody2` and `PostV1TextToSpeechJSONBody3`: they now describe the Gemini variants, so `PromptText`, `Voice` and the ElevenLabs fields (`ApplyTextNormalization`, `Seed`, `SimilarityBoost`, `Speed`, `Stability`, `Style`, `UseSpeakerBoost`) are removed from them, along with the `Voice0`, `Voice1`, preset and normalization types and constants under those names.
+- The ElevenLabs variants moved to `PostV1TextToSpeechJSONBody4` (`ModelElevenMultilingualV2`) and `PostV1TextToSpeechJSONBody5` (`ModelElevenV3`), with the same voice, preset and normalization types renamed to match. `PostV1TextToSpeechJSONBody` gains `AsPostV1TextToSpeechJSONBody4`, `AsPostV1TextToSpeechJSONBody5` and the matching `From` and `Merge` methods. `PostV1TextToSpeechJSONBody_2_Voice` and `_3_Voice` become `_4_Voice` and `_5_Voice`.
+- Added `PostV1VideoToVideoJSONBody11.Duration`, `PromptImage` and `ReferenceVideos`, new ratio constants such as `PostV1VideoToVideoJSONBody11RatioN19201080`, and the `PostV1VideoToVideoJSONBody11PromptImage0` type.
+- Added `GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType` and `GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus` enum types with constants. The `JSON200` field and `GetJSON200` method of `GetV1OrganizationWebappUsageResponse` change type to use them.
+- Changed the `JSON200` field and `GetJSON200` method of `GetV1OrganizationWebappAuditLogsResponse` and `GetV1OrganizationWebappAuditLogsEventIdResponse`: the metadata struct has new fields, so the anonymous struct type differs.
+- Added usage model constants `PostV1OrganizationUsage200JSONResponseBodyModelsGemini38FlashTts` and `...Gemini38FlashLiteTts`, with matching used-credits model constants.
+
 ## v0.5.0, 2026-11-12
 
 - Added request union variants with `As`, `From` and `Merge` methods: `PostV1TextToImageJSONBody24`, `PostV1TextToVideoJSONBody26` and `27`, `PostV1ImageToVideoJSONBody27` and `28`, and `PostV1VideoToVideoJSONBody14` and `15`. New models include `PostV1TextToImageJSONBody23ModelSeedream5ProLayers`, `PostV1TextToImageJSONBody24ModelGemini25Flash`, `PostV1ImageToVideoJSONBody27ModelHailuo3Highspeed` and `PostV1ImageToVideoJSONBody28ModelHailuo3Lite`.
