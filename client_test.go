@@ -147,6 +147,7 @@ func TestPostTextToImageUnionBody(t *testing.T) {
 
 	res, err := client.PostV1TextToImageWithBodyWithResponse(
 		context.Background(),
+		nil,
 		"application/json",
 		bytes.NewReader(payload),
 	)

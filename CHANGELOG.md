@@ -2,6 +2,15 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.7.0, 2026-11-21
+
+- Breaking: about 25 request methods on `Client` and `ClientWithResponses` now take a `*PostV1...Params` argument after the context, for the new optional `X-Runway-Tags` header. Examples: `PostV1TextToImage`, `PostV1TextToImageWithBody`, `PostV1TextToImageWithResponse`, `PostV1TextToImageWithBodyWithResponse`, `PostV1GenerateVideo`, `PostV1VoiceDubbing`. Pass `nil` to keep the old behavior.
+- The same signature change applies to the matching `ClientInterface` methods, so custom implementations must be updated.
+- Added `GetV1OrganizationWebappMembers` on `ClientInterface`, `Client`, and `ClientWithResponses` (`GetV1OrganizationWebappMembersWithResponse`).
+- Several 400 response `Reason` union types changed: the `...Reason23` helper methods, for example `FromPostV1ImageToVideo400JSONResponseBodyReason23`, changed their parameter types, and new `...Reason29` variants were added. `PostV1ImageToVideoJSONBody` gained `FromPostV1ImageToVideoJSONBody29` and `MergePostV1ImageToVideoJSONBody29`.
+- Many generated request and response types in `types.gen.go` changed to follow the updated Runway spec.
+- Updated `client_test.go` and the example in `.agents/skills/go-runway/SKILL.md` to pass the new `nil` params argument.
+
 ## v0.6.0, 2026-11-20
 
 - Added Gemini 3.8 text-to-speech variants: `PostV1TextToSpeechJSONBody2` with `PostV1TextToSpeechJSONBody2ModelGemini38FlashTts` and `PostV1TextToSpeechJSONBody3` with `PostV1TextToSpeechJSONBody3ModelGemini38FlashLiteTts`. Both take `Turns` and `VoiceIds`, and `PostV1TextToSpeechJSONBody2` also takes `LanguageCode`.

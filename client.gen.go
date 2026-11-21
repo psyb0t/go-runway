@@ -127,7 +127,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/avatar_videos (the `PostV1AvatarVideos` operationId).
-	PostV1AvatarVideosWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1AvatarVideosWithBody(ctx context.Context, params *PostV1AvatarVideosParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1AvatarVideos Generate avatar video from audio or text
 	//
@@ -136,7 +136,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/avatar_videos (the `PostV1AvatarVideos` operationId).
-	PostV1AvatarVideos(ctx context.Context, body PostV1AvatarVideosJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1AvatarVideos(ctx context.Context, params *PostV1AvatarVideosParams, body PostV1AvatarVideosJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// GetV1Avatars List avatars
 	//
@@ -202,7 +202,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/character_performance (the `PostV1CharacterPerformance` operationId).
-	PostV1CharacterPerformanceWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1CharacterPerformanceWithBody(ctx context.Context, params *PostV1CharacterPerformanceParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1CharacterPerformance Control a character
 	//
@@ -211,7 +211,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/character_performance (the `PostV1CharacterPerformance` operationId).
-	PostV1CharacterPerformance(ctx context.Context, body PostV1CharacterPerformanceJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1CharacterPerformance(ctx context.Context, params *PostV1CharacterPerformanceParams, body PostV1CharacterPerformanceJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// GetV1Documents List documents
 	//
@@ -277,7 +277,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/generate/audio (the `PostV1GenerateAudio` operationId).
-	PostV1GenerateAudioWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1GenerateAudioWithBody(ctx context.Context, params *PostV1GenerateAudioParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1GenerateAudio Routed audio generation
 	//
@@ -286,7 +286,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/generate/audio (the `PostV1GenerateAudio` operationId).
-	PostV1GenerateAudio(ctx context.Context, body PostV1GenerateAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1GenerateAudio(ctx context.Context, params *PostV1GenerateAudioParams, body PostV1GenerateAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1GenerateImageWithBody Routed image generation
 	//
@@ -295,7 +295,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/generate/image (the `PostV1GenerateImage` operationId).
-	PostV1GenerateImageWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1GenerateImageWithBody(ctx context.Context, params *PostV1GenerateImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1GenerateImage Routed image generation
 	//
@@ -304,7 +304,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/generate/image (the `PostV1GenerateImage` operationId).
-	PostV1GenerateImage(ctx context.Context, body PostV1GenerateImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1GenerateImage(ctx context.Context, params *PostV1GenerateImageParams, body PostV1GenerateImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1GenerateVideoWithBody Routed video generation
 	//
@@ -313,7 +313,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
-	PostV1GenerateVideoWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1GenerateVideoWithBody(ctx context.Context, params *PostV1GenerateVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1GenerateVideo Routed video generation
 	//
@@ -322,7 +322,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
-	PostV1GenerateVideo(ctx context.Context, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1GenerateVideo(ctx context.Context, params *PostV1GenerateVideoParams, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1ImageToVectorWithBody Image to vector
 	//
@@ -331,7 +331,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
-	PostV1ImageToVectorWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1ImageToVectorWithBody(ctx context.Context, params *PostV1ImageToVectorParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1ImageToVector Image to vector
 	//
@@ -340,7 +340,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
-	PostV1ImageToVector(ctx context.Context, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1ImageToVector(ctx context.Context, params *PostV1ImageToVectorParams, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1ImageToVideoWithBody Image to video
 	//
@@ -349,7 +349,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/image_to_video (the `PostV1ImageToVideo` operationId).
-	PostV1ImageToVideoWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1ImageToVideoWithBody(ctx context.Context, params *PostV1ImageToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1ImageToVideo Image to video
 	//
@@ -358,7 +358,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/image_to_video (the `PostV1ImageToVideo` operationId).
-	PostV1ImageToVideo(ctx context.Context, body PostV1ImageToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1ImageToVideo(ctx context.Context, params *PostV1ImageToVideoParams, body PostV1ImageToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1ImageUpscaleWithBody Image upscale
 	//
@@ -367,7 +367,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/image_upscale (the `PostV1ImageUpscale` operationId).
-	PostV1ImageUpscaleWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1ImageUpscaleWithBody(ctx context.Context, params *PostV1ImageUpscaleParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1ImageUpscale Image upscale
 	//
@@ -376,7 +376,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/image_upscale (the `PostV1ImageUpscale` operationId).
-	PostV1ImageUpscale(ctx context.Context, body PostV1ImageUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1ImageUpscale(ctx context.Context, params *PostV1ImageUpscaleParams, body PostV1ImageUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// GetV1Organization Get organization information
 	//
@@ -387,7 +387,7 @@ type ClientInterface interface {
 
 	// PostV1OrganizationUsageWithBody Query credit usage
 	//
-	// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time.
+	// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time. Usage updates hourly; recent activity may not appear yet.
 	//
 	// Takes any type of body and a specified content type.
 	//
@@ -396,7 +396,7 @@ type ClientInterface interface {
 
 	// PostV1OrganizationUsage Query credit usage
 	//
-	// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time.
+	// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time. Usage updates hourly; recent activity may not appear yet.
 	//
 	// Takes a body of the `application/json` content type.
 	//
@@ -417,6 +417,13 @@ type ClientInterface interface {
 	// Corresponds with GET /v1/organization/webapp/audit_logs/{eventId} (the `GetV1OrganizationWebappAuditLogsEventId` operationId).
 	GetV1OrganizationWebappAuditLogsEventId(ctx context.Context, eventId openapi_types.UUID, params *GetV1OrganizationWebappAuditLogsEventIdParams, reqEditors ...RequestEditorFn) (*http.Response, error)
 
+	// GetV1OrganizationWebappMembers List linked workspace members
+	//
+	// List the members of the linked Runway workspaces you administer, one row per member per workspace, including pending invites and members who were removed. Ordered by `membershipId`. Authorized via the account link between this API project and the workspace.
+	//
+	// Corresponds with GET /v1/organization/webapp/members (the `GetV1OrganizationWebappMembers` operationId).
+	GetV1OrganizationWebappMembers(ctx context.Context, params *GetV1OrganizationWebappMembersParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
 	// GetV1OrganizationWebappUsage List linked workspace usage
 	//
 	// List per-generation credit-usage rows for the linked Runway workspaces you administer, newest first. Unlike `/v1/organization/usage` (this API project's own usage), this reports usage from the workspace linked to this API project. Authorized via that account link.
@@ -431,7 +438,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/realtime_sessions (the `PostV1RealtimeSessions` operationId).
-	PostV1RealtimeSessionsWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RealtimeSessionsWithBody(ctx context.Context, params *PostV1RealtimeSessionsParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RealtimeSessions Create realtime session
 	//
@@ -440,7 +447,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/realtime_sessions (the `PostV1RealtimeSessions` operationId).
-	PostV1RealtimeSessions(ctx context.Context, body PostV1RealtimeSessionsJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RealtimeSessions(ctx context.Context, params *PostV1RealtimeSessionsParams, body PostV1RealtimeSessionsJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// DeleteV1RealtimeSessionsId Cancel realtime session
 	//
@@ -463,7 +470,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/recipes/ad_localization (the `PostV1RecipesAdLocalization` operationId).
-	PostV1RecipesAdLocalizationWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesAdLocalizationWithBody(ctx context.Context, params *PostV1RecipesAdLocalizationParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesAdLocalization Localize an ad image
 	//
@@ -472,7 +479,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/recipes/ad_localization (the `PostV1RecipesAdLocalization` operationId).
-	PostV1RecipesAdLocalization(ctx context.Context, body PostV1RecipesAdLocalizationJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesAdLocalization(ctx context.Context, params *PostV1RecipesAdLocalizationParams, body PostV1RecipesAdLocalizationJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesMarketingStockImageWithBody Create a marketing stock image
 	//
@@ -481,7 +488,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/recipes/marketing_stock_image (the `PostV1RecipesMarketingStockImage` operationId).
-	PostV1RecipesMarketingStockImageWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesMarketingStockImageWithBody(ctx context.Context, params *PostV1RecipesMarketingStockImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesMarketingStockImage Create a marketing stock image
 	//
@@ -490,7 +497,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/recipes/marketing_stock_image (the `PostV1RecipesMarketingStockImage` operationId).
-	PostV1RecipesMarketingStockImage(ctx context.Context, body PostV1RecipesMarketingStockImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesMarketingStockImage(ctx context.Context, params *PostV1RecipesMarketingStockImageParams, body PostV1RecipesMarketingStockImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesMultiShotVideoWithBody Create a multi-shot video
 	//
@@ -499,7 +506,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/recipes/multi_shot_video (the `PostV1RecipesMultiShotVideo` operationId).
-	PostV1RecipesMultiShotVideoWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesMultiShotVideoWithBody(ctx context.Context, params *PostV1RecipesMultiShotVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesMultiShotVideo Create a multi-shot video
 	//
@@ -508,7 +515,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/recipes/multi_shot_video (the `PostV1RecipesMultiShotVideo` operationId).
-	PostV1RecipesMultiShotVideo(ctx context.Context, body PostV1RecipesMultiShotVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesMultiShotVideo(ctx context.Context, params *PostV1RecipesMultiShotVideoParams, body PostV1RecipesMultiShotVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesProductAdWithBody Create a product ad video
 	//
@@ -517,7 +524,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/recipes/product_ad (the `PostV1RecipesProductAd` operationId).
-	PostV1RecipesProductAdWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesProductAdWithBody(ctx context.Context, params *PostV1RecipesProductAdParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesProductAd Create a product ad video
 	//
@@ -526,7 +533,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/recipes/product_ad (the `PostV1RecipesProductAd` operationId).
-	PostV1RecipesProductAd(ctx context.Context, body PostV1RecipesProductAdJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesProductAd(ctx context.Context, params *PostV1RecipesProductAdParams, body PostV1RecipesProductAdJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesProductCampaignImageWithBody Create product campaign images
 	//
@@ -535,7 +542,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/recipes/product_campaign_image (the `PostV1RecipesProductCampaignImage` operationId).
-	PostV1RecipesProductCampaignImageWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesProductCampaignImageWithBody(ctx context.Context, params *PostV1RecipesProductCampaignImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesProductCampaignImage Create product campaign images
 	//
@@ -544,7 +551,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/recipes/product_campaign_image (the `PostV1RecipesProductCampaignImage` operationId).
-	PostV1RecipesProductCampaignImage(ctx context.Context, body PostV1RecipesProductCampaignImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesProductCampaignImage(ctx context.Context, params *PostV1RecipesProductCampaignImageParams, body PostV1RecipesProductCampaignImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesProductSwapWithBody Swap a product in a reference video
 	//
@@ -553,7 +560,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/recipes/product_swap (the `PostV1RecipesProductSwap` operationId).
-	PostV1RecipesProductSwapWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesProductSwapWithBody(ctx context.Context, params *PostV1RecipesProductSwapParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesProductSwap Swap a product in a reference video
 	//
@@ -562,7 +569,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/recipes/product_swap (the `PostV1RecipesProductSwap` operationId).
-	PostV1RecipesProductSwap(ctx context.Context, body PostV1RecipesProductSwapJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesProductSwap(ctx context.Context, params *PostV1RecipesProductSwapParams, body PostV1RecipesProductSwapJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesProductUgcWithBody Create a product UGC video
 	//
@@ -571,7 +578,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/recipes/product_ugc (the `PostV1RecipesProductUgc` operationId).
-	PostV1RecipesProductUgcWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesProductUgcWithBody(ctx context.Context, params *PostV1RecipesProductUgcParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1RecipesProductUgc Create a product UGC video
 	//
@@ -580,7 +587,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/recipes/product_ugc (the `PostV1RecipesProductUgc` operationId).
-	PostV1RecipesProductUgc(ctx context.Context, body PostV1RecipesProductUgcJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1RecipesProductUgc(ctx context.Context, params *PostV1RecipesProductUgcParams, body PostV1RecipesProductUgcJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// GetV1Routers List Model Routers
 	//
@@ -653,7 +660,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/sound_effect (the `PostV1SoundEffect` operationId).
-	PostV1SoundEffectWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1SoundEffectWithBody(ctx context.Context, params *PostV1SoundEffectParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1SoundEffect Generate sound effects
 	//
@@ -662,7 +669,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/sound_effect (the `PostV1SoundEffect` operationId).
-	PostV1SoundEffect(ctx context.Context, body PostV1SoundEffectJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1SoundEffect(ctx context.Context, params *PostV1SoundEffectParams, body PostV1SoundEffectJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1SpeechToSpeechWithBody Speech to speech
 	//
@@ -671,7 +678,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/speech_to_speech (the `PostV1SpeechToSpeech` operationId).
-	PostV1SpeechToSpeechWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1SpeechToSpeechWithBody(ctx context.Context, params *PostV1SpeechToSpeechParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1SpeechToSpeech Speech to speech
 	//
@@ -680,7 +687,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/speech_to_speech (the `PostV1SpeechToSpeech` operationId).
-	PostV1SpeechToSpeech(ctx context.Context, body PostV1SpeechToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1SpeechToSpeech(ctx context.Context, params *PostV1SpeechToSpeechParams, body PostV1SpeechToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// DeleteV1TasksId Cancel or delete a task
 	//
@@ -707,7 +714,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
-	PostV1TextToImageWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1TextToImageWithBody(ctx context.Context, params *PostV1TextToImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1TextToImage Text/Image to Image
 	//
@@ -716,7 +723,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
-	PostV1TextToImage(ctx context.Context, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1TextToImage(ctx context.Context, params *PostV1TextToImageParams, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1TextToMusicWithBody Generate music
 	//
@@ -725,7 +732,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
-	PostV1TextToMusicWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1TextToMusicWithBody(ctx context.Context, params *PostV1TextToMusicParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1TextToMusic Generate music
 	//
@@ -734,7 +741,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
-	PostV1TextToMusic(ctx context.Context, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1TextToMusic(ctx context.Context, params *PostV1TextToMusicParams, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1TextToSpeechWithBody Text to speech
 	//
@@ -743,7 +750,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/text_to_speech (the `PostV1TextToSpeech` operationId).
-	PostV1TextToSpeechWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1TextToSpeechWithBody(ctx context.Context, params *PostV1TextToSpeechParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1TextToSpeech Text to speech
 	//
@@ -752,7 +759,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/text_to_speech (the `PostV1TextToSpeech` operationId).
-	PostV1TextToSpeech(ctx context.Context, body PostV1TextToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1TextToSpeech(ctx context.Context, params *PostV1TextToSpeechParams, body PostV1TextToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1TextToVideoWithBody Text to video
 	//
@@ -761,7 +768,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/text_to_video (the `PostV1TextToVideo` operationId).
-	PostV1TextToVideoWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1TextToVideoWithBody(ctx context.Context, params *PostV1TextToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1TextToVideo Text to video
 	//
@@ -770,7 +777,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/text_to_video (the `PostV1TextToVideo` operationId).
-	PostV1TextToVideo(ctx context.Context, body PostV1TextToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1TextToVideo(ctx context.Context, params *PostV1TextToVideoParams, body PostV1TextToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1UploadsWithBody Upload a file
 	//
@@ -797,7 +804,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
-	PostV1VideoToAudioWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VideoToAudioWithBody(ctx context.Context, params *PostV1VideoToAudioParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VideoToAudio Generate audio from a video
 	//
@@ -806,7 +813,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
-	PostV1VideoToAudio(ctx context.Context, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VideoToAudio(ctx context.Context, params *PostV1VideoToAudioParams, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VideoToHdrWithBody Video to HDR
 	//
@@ -815,7 +822,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/video_to_hdr (the `PostV1VideoToHdr` operationId).
-	PostV1VideoToHdrWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VideoToHdrWithBody(ctx context.Context, params *PostV1VideoToHdrParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VideoToHdr Video to HDR
 	//
@@ -824,7 +831,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/video_to_hdr (the `PostV1VideoToHdr` operationId).
-	PostV1VideoToHdr(ctx context.Context, body PostV1VideoToHdrJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VideoToHdr(ctx context.Context, params *PostV1VideoToHdrParams, body PostV1VideoToHdrJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VideoToVideoWithBody Video to video
 	//
@@ -833,7 +840,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/video_to_video (the `PostV1VideoToVideo` operationId).
-	PostV1VideoToVideoWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VideoToVideoWithBody(ctx context.Context, params *PostV1VideoToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VideoToVideo Video to video
 	//
@@ -842,7 +849,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/video_to_video (the `PostV1VideoToVideo` operationId).
-	PostV1VideoToVideo(ctx context.Context, body PostV1VideoToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VideoToVideo(ctx context.Context, params *PostV1VideoToVideoParams, body PostV1VideoToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VideoUpscaleWithBody Video upscale
 	//
@@ -851,7 +858,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/video_upscale (the `PostV1VideoUpscale` operationId).
-	PostV1VideoUpscaleWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VideoUpscaleWithBody(ctx context.Context, params *PostV1VideoUpscaleParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VideoUpscale Video upscale
 	//
@@ -860,7 +867,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/video_upscale (the `PostV1VideoUpscale` operationId).
-	PostV1VideoUpscale(ctx context.Context, body PostV1VideoUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VideoUpscale(ctx context.Context, params *PostV1VideoUpscaleParams, body PostV1VideoUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VoiceDubbingWithBody Voice dubbing
 	//
@@ -869,7 +876,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/voice_dubbing (the `PostV1VoiceDubbing` operationId).
-	PostV1VoiceDubbingWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VoiceDubbingWithBody(ctx context.Context, params *PostV1VoiceDubbingParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VoiceDubbing Voice dubbing
 	//
@@ -878,7 +885,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/voice_dubbing (the `PostV1VoiceDubbing` operationId).
-	PostV1VoiceDubbing(ctx context.Context, body PostV1VoiceDubbingJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VoiceDubbing(ctx context.Context, params *PostV1VoiceDubbingParams, body PostV1VoiceDubbingJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VoiceIsolationWithBody Voice isolation
 	//
@@ -887,7 +894,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/voice_isolation (the `PostV1VoiceIsolation` operationId).
-	PostV1VoiceIsolationWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VoiceIsolationWithBody(ctx context.Context, params *PostV1VoiceIsolationParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VoiceIsolation Voice isolation
 	//
@@ -896,7 +903,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/voice_isolation (the `PostV1VoiceIsolation` operationId).
-	PostV1VoiceIsolation(ctx context.Context, body PostV1VoiceIsolationJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VoiceIsolation(ctx context.Context, params *PostV1VoiceIsolationParams, body PostV1VoiceIsolationJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// GetV1Voices List voices
 	//
@@ -912,7 +919,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/voices (the `PostV1Voices` operationId).
-	PostV1VoicesWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1VoicesWithBody(ctx context.Context, params *PostV1VoicesParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1Voices Create a voice
 	//
@@ -921,7 +928,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/voices (the `PostV1Voices` operationId).
-	PostV1Voices(ctx context.Context, body PostV1VoicesJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1Voices(ctx context.Context, params *PostV1VoicesParams, body PostV1VoicesJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1VoicesPreviewWithBody Preview a voice
 	//
@@ -1001,7 +1008,7 @@ type ClientInterface interface {
 	// Takes any type of body and a specified content type.
 	//
 	// Corresponds with POST /v1/workflows/{id} (the `PostV1WorkflowsId` operationId).
-	PostV1WorkflowsIdWithBody(ctx context.Context, id openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1WorkflowsIdWithBody(ctx context.Context, id openapi_types.UUID, params *PostV1WorkflowsIdParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// PostV1WorkflowsId Run a published workflow
 	//
@@ -1010,7 +1017,7 @@ type ClientInterface interface {
 	// Takes a body of the `application/json` content type.
 	//
 	// Corresponds with POST /v1/workflows/{id} (the `PostV1WorkflowsId` operationId).
-	PostV1WorkflowsId(ctx context.Context, id openapi_types.UUID, body PostV1WorkflowsIdJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
+	PostV1WorkflowsId(ctx context.Context, id openapi_types.UUID, params *PostV1WorkflowsIdParams, body PostV1WorkflowsIdJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error)
 }
 
 // GetV1AvatarConversations List conversations
@@ -1088,8 +1095,8 @@ func (c *Client) GetV1AvatarUsage(ctx context.Context, params *GetV1AvatarUsageP
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/avatar_videos (the `PostV1AvatarVideos` operationId).
-func (c *Client) PostV1AvatarVideosWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1AvatarVideosRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1AvatarVideosWithBody(ctx context.Context, params *PostV1AvatarVideosParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1AvatarVideosRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1107,8 +1114,8 @@ func (c *Client) PostV1AvatarVideosWithBody(ctx context.Context, contentType str
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/avatar_videos (the `PostV1AvatarVideos` operationId).
-func (c *Client) PostV1AvatarVideos(ctx context.Context, body PostV1AvatarVideosJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1AvatarVideosRequest(c.Server, body)
+func (c *Client) PostV1AvatarVideos(ctx context.Context, params *PostV1AvatarVideosParams, body PostV1AvatarVideosJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1AvatarVideosRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1253,8 +1260,8 @@ func (c *Client) PatchV1AvatarsId(ctx context.Context, id openapi_types.UUID, bo
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/character_performance (the `PostV1CharacterPerformance` operationId).
-func (c *Client) PostV1CharacterPerformanceWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1CharacterPerformanceRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1CharacterPerformanceWithBody(ctx context.Context, params *PostV1CharacterPerformanceParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1CharacterPerformanceRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1272,8 +1279,8 @@ func (c *Client) PostV1CharacterPerformanceWithBody(ctx context.Context, content
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/character_performance (the `PostV1CharacterPerformance` operationId).
-func (c *Client) PostV1CharacterPerformance(ctx context.Context, body PostV1CharacterPerformanceJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1CharacterPerformanceRequest(c.Server, body)
+func (c *Client) PostV1CharacterPerformance(ctx context.Context, params *PostV1CharacterPerformanceParams, body PostV1CharacterPerformanceJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1CharacterPerformanceRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1418,8 +1425,8 @@ func (c *Client) PatchV1DocumentsId(ctx context.Context, id openapi_types.UUID, 
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/generate/audio (the `PostV1GenerateAudio` operationId).
-func (c *Client) PostV1GenerateAudioWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1GenerateAudioRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1GenerateAudioWithBody(ctx context.Context, params *PostV1GenerateAudioParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1GenerateAudioRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1437,8 +1444,8 @@ func (c *Client) PostV1GenerateAudioWithBody(ctx context.Context, contentType st
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/generate/audio (the `PostV1GenerateAudio` operationId).
-func (c *Client) PostV1GenerateAudio(ctx context.Context, body PostV1GenerateAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1GenerateAudioRequest(c.Server, body)
+func (c *Client) PostV1GenerateAudio(ctx context.Context, params *PostV1GenerateAudioParams, body PostV1GenerateAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1GenerateAudioRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1456,8 +1463,8 @@ func (c *Client) PostV1GenerateAudio(ctx context.Context, body PostV1GenerateAud
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/generate/image (the `PostV1GenerateImage` operationId).
-func (c *Client) PostV1GenerateImageWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1GenerateImageRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1GenerateImageWithBody(ctx context.Context, params *PostV1GenerateImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1GenerateImageRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1475,8 +1482,8 @@ func (c *Client) PostV1GenerateImageWithBody(ctx context.Context, contentType st
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/generate/image (the `PostV1GenerateImage` operationId).
-func (c *Client) PostV1GenerateImage(ctx context.Context, body PostV1GenerateImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1GenerateImageRequest(c.Server, body)
+func (c *Client) PostV1GenerateImage(ctx context.Context, params *PostV1GenerateImageParams, body PostV1GenerateImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1GenerateImageRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1494,8 +1501,8 @@ func (c *Client) PostV1GenerateImage(ctx context.Context, body PostV1GenerateIma
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
-func (c *Client) PostV1GenerateVideoWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1GenerateVideoRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1GenerateVideoWithBody(ctx context.Context, params *PostV1GenerateVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1GenerateVideoRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1513,8 +1520,8 @@ func (c *Client) PostV1GenerateVideoWithBody(ctx context.Context, contentType st
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
-func (c *Client) PostV1GenerateVideo(ctx context.Context, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1GenerateVideoRequest(c.Server, body)
+func (c *Client) PostV1GenerateVideo(ctx context.Context, params *PostV1GenerateVideoParams, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1GenerateVideoRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1532,8 +1539,8 @@ func (c *Client) PostV1GenerateVideo(ctx context.Context, body PostV1GenerateVid
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
-func (c *Client) PostV1ImageToVectorWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1ImageToVectorRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1ImageToVectorWithBody(ctx context.Context, params *PostV1ImageToVectorParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1ImageToVectorRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1551,8 +1558,8 @@ func (c *Client) PostV1ImageToVectorWithBody(ctx context.Context, contentType st
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
-func (c *Client) PostV1ImageToVector(ctx context.Context, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1ImageToVectorRequest(c.Server, body)
+func (c *Client) PostV1ImageToVector(ctx context.Context, params *PostV1ImageToVectorParams, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1ImageToVectorRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1570,8 +1577,8 @@ func (c *Client) PostV1ImageToVector(ctx context.Context, body PostV1ImageToVect
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/image_to_video (the `PostV1ImageToVideo` operationId).
-func (c *Client) PostV1ImageToVideoWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1ImageToVideoRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1ImageToVideoWithBody(ctx context.Context, params *PostV1ImageToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1ImageToVideoRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1589,8 +1596,8 @@ func (c *Client) PostV1ImageToVideoWithBody(ctx context.Context, contentType str
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/image_to_video (the `PostV1ImageToVideo` operationId).
-func (c *Client) PostV1ImageToVideo(ctx context.Context, body PostV1ImageToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1ImageToVideoRequest(c.Server, body)
+func (c *Client) PostV1ImageToVideo(ctx context.Context, params *PostV1ImageToVideoParams, body PostV1ImageToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1ImageToVideoRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1608,8 +1615,8 @@ func (c *Client) PostV1ImageToVideo(ctx context.Context, body PostV1ImageToVideo
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/image_upscale (the `PostV1ImageUpscale` operationId).
-func (c *Client) PostV1ImageUpscaleWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1ImageUpscaleRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1ImageUpscaleWithBody(ctx context.Context, params *PostV1ImageUpscaleParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1ImageUpscaleRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1627,8 +1634,8 @@ func (c *Client) PostV1ImageUpscaleWithBody(ctx context.Context, contentType str
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/image_upscale (the `PostV1ImageUpscale` operationId).
-func (c *Client) PostV1ImageUpscale(ctx context.Context, body PostV1ImageUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1ImageUpscaleRequest(c.Server, body)
+func (c *Client) PostV1ImageUpscale(ctx context.Context, params *PostV1ImageUpscaleParams, body PostV1ImageUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1ImageUpscaleRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1658,7 +1665,7 @@ func (c *Client) GetV1Organization(ctx context.Context, reqEditors ...RequestEdi
 
 // PostV1OrganizationUsageWithBody Query credit usage
 //
-// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time.
+// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time. Usage updates hourly; recent activity may not appear yet.
 //
 // Takes any type of body and a specified content type.
 //
@@ -1677,7 +1684,7 @@ func (c *Client) PostV1OrganizationUsageWithBody(ctx context.Context, contentTyp
 
 // PostV1OrganizationUsage Query credit usage
 //
-// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time.
+// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time. Usage updates hourly; recent activity may not appear yet.
 //
 // Takes a body of the `application/json` content type.
 //
@@ -1728,6 +1735,23 @@ func (c *Client) GetV1OrganizationWebappAuditLogsEventId(ctx context.Context, ev
 	return c.Client.Do(req)
 }
 
+// GetV1OrganizationWebappMembers List linked workspace members
+//
+// List the members of the linked Runway workspaces you administer, one row per member per workspace, including pending invites and members who were removed. Ordered by `membershipId`. Authorized via the account link between this API project and the workspace.
+//
+// Corresponds with GET /v1/organization/webapp/members (the `GetV1OrganizationWebappMembers` operationId).
+func (c *Client) GetV1OrganizationWebappMembers(ctx context.Context, params *GetV1OrganizationWebappMembersParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetV1OrganizationWebappMembersRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
 // GetV1OrganizationWebappUsage List linked workspace usage
 //
 // List per-generation credit-usage rows for the linked Runway workspaces you administer, newest first. Unlike `/v1/organization/usage` (this API project's own usage), this reports usage from the workspace linked to this API project. Authorized via that account link.
@@ -1752,8 +1776,8 @@ func (c *Client) GetV1OrganizationWebappUsage(ctx context.Context, params *GetV1
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/realtime_sessions (the `PostV1RealtimeSessions` operationId).
-func (c *Client) PostV1RealtimeSessionsWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RealtimeSessionsRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1RealtimeSessionsWithBody(ctx context.Context, params *PostV1RealtimeSessionsParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RealtimeSessionsRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1771,8 +1795,8 @@ func (c *Client) PostV1RealtimeSessionsWithBody(ctx context.Context, contentType
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/realtime_sessions (the `PostV1RealtimeSessions` operationId).
-func (c *Client) PostV1RealtimeSessions(ctx context.Context, body PostV1RealtimeSessionsJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RealtimeSessionsRequest(c.Server, body)
+func (c *Client) PostV1RealtimeSessions(ctx context.Context, params *PostV1RealtimeSessionsParams, body PostV1RealtimeSessionsJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RealtimeSessionsRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1824,8 +1848,8 @@ func (c *Client) GetV1RealtimeSessionsId(ctx context.Context, id openapi_types.U
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/recipes/ad_localization (the `PostV1RecipesAdLocalization` operationId).
-func (c *Client) PostV1RecipesAdLocalizationWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesAdLocalizationRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1RecipesAdLocalizationWithBody(ctx context.Context, params *PostV1RecipesAdLocalizationParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesAdLocalizationRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1843,8 +1867,8 @@ func (c *Client) PostV1RecipesAdLocalizationWithBody(ctx context.Context, conten
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/recipes/ad_localization (the `PostV1RecipesAdLocalization` operationId).
-func (c *Client) PostV1RecipesAdLocalization(ctx context.Context, body PostV1RecipesAdLocalizationJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesAdLocalizationRequest(c.Server, body)
+func (c *Client) PostV1RecipesAdLocalization(ctx context.Context, params *PostV1RecipesAdLocalizationParams, body PostV1RecipesAdLocalizationJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesAdLocalizationRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1862,8 +1886,8 @@ func (c *Client) PostV1RecipesAdLocalization(ctx context.Context, body PostV1Rec
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/recipes/marketing_stock_image (the `PostV1RecipesMarketingStockImage` operationId).
-func (c *Client) PostV1RecipesMarketingStockImageWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesMarketingStockImageRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1RecipesMarketingStockImageWithBody(ctx context.Context, params *PostV1RecipesMarketingStockImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesMarketingStockImageRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1881,8 +1905,8 @@ func (c *Client) PostV1RecipesMarketingStockImageWithBody(ctx context.Context, c
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/recipes/marketing_stock_image (the `PostV1RecipesMarketingStockImage` operationId).
-func (c *Client) PostV1RecipesMarketingStockImage(ctx context.Context, body PostV1RecipesMarketingStockImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesMarketingStockImageRequest(c.Server, body)
+func (c *Client) PostV1RecipesMarketingStockImage(ctx context.Context, params *PostV1RecipesMarketingStockImageParams, body PostV1RecipesMarketingStockImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesMarketingStockImageRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1900,8 +1924,8 @@ func (c *Client) PostV1RecipesMarketingStockImage(ctx context.Context, body Post
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/recipes/multi_shot_video (the `PostV1RecipesMultiShotVideo` operationId).
-func (c *Client) PostV1RecipesMultiShotVideoWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesMultiShotVideoRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1RecipesMultiShotVideoWithBody(ctx context.Context, params *PostV1RecipesMultiShotVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesMultiShotVideoRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1919,8 +1943,8 @@ func (c *Client) PostV1RecipesMultiShotVideoWithBody(ctx context.Context, conten
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/recipes/multi_shot_video (the `PostV1RecipesMultiShotVideo` operationId).
-func (c *Client) PostV1RecipesMultiShotVideo(ctx context.Context, body PostV1RecipesMultiShotVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesMultiShotVideoRequest(c.Server, body)
+func (c *Client) PostV1RecipesMultiShotVideo(ctx context.Context, params *PostV1RecipesMultiShotVideoParams, body PostV1RecipesMultiShotVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesMultiShotVideoRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1938,8 +1962,8 @@ func (c *Client) PostV1RecipesMultiShotVideo(ctx context.Context, body PostV1Rec
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/recipes/product_ad (the `PostV1RecipesProductAd` operationId).
-func (c *Client) PostV1RecipesProductAdWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesProductAdRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1RecipesProductAdWithBody(ctx context.Context, params *PostV1RecipesProductAdParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesProductAdRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1957,8 +1981,8 @@ func (c *Client) PostV1RecipesProductAdWithBody(ctx context.Context, contentType
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/recipes/product_ad (the `PostV1RecipesProductAd` operationId).
-func (c *Client) PostV1RecipesProductAd(ctx context.Context, body PostV1RecipesProductAdJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesProductAdRequest(c.Server, body)
+func (c *Client) PostV1RecipesProductAd(ctx context.Context, params *PostV1RecipesProductAdParams, body PostV1RecipesProductAdJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesProductAdRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1976,8 +2000,8 @@ func (c *Client) PostV1RecipesProductAd(ctx context.Context, body PostV1RecipesP
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/recipes/product_campaign_image (the `PostV1RecipesProductCampaignImage` operationId).
-func (c *Client) PostV1RecipesProductCampaignImageWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesProductCampaignImageRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1RecipesProductCampaignImageWithBody(ctx context.Context, params *PostV1RecipesProductCampaignImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesProductCampaignImageRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -1995,8 +2019,8 @@ func (c *Client) PostV1RecipesProductCampaignImageWithBody(ctx context.Context, 
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/recipes/product_campaign_image (the `PostV1RecipesProductCampaignImage` operationId).
-func (c *Client) PostV1RecipesProductCampaignImage(ctx context.Context, body PostV1RecipesProductCampaignImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesProductCampaignImageRequest(c.Server, body)
+func (c *Client) PostV1RecipesProductCampaignImage(ctx context.Context, params *PostV1RecipesProductCampaignImageParams, body PostV1RecipesProductCampaignImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesProductCampaignImageRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2014,8 +2038,8 @@ func (c *Client) PostV1RecipesProductCampaignImage(ctx context.Context, body Pos
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/recipes/product_swap (the `PostV1RecipesProductSwap` operationId).
-func (c *Client) PostV1RecipesProductSwapWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesProductSwapRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1RecipesProductSwapWithBody(ctx context.Context, params *PostV1RecipesProductSwapParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesProductSwapRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2033,8 +2057,8 @@ func (c *Client) PostV1RecipesProductSwapWithBody(ctx context.Context, contentTy
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/recipes/product_swap (the `PostV1RecipesProductSwap` operationId).
-func (c *Client) PostV1RecipesProductSwap(ctx context.Context, body PostV1RecipesProductSwapJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesProductSwapRequest(c.Server, body)
+func (c *Client) PostV1RecipesProductSwap(ctx context.Context, params *PostV1RecipesProductSwapParams, body PostV1RecipesProductSwapJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesProductSwapRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2052,8 +2076,8 @@ func (c *Client) PostV1RecipesProductSwap(ctx context.Context, body PostV1Recipe
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/recipes/product_ugc (the `PostV1RecipesProductUgc` operationId).
-func (c *Client) PostV1RecipesProductUgcWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesProductUgcRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1RecipesProductUgcWithBody(ctx context.Context, params *PostV1RecipesProductUgcParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesProductUgcRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2071,8 +2095,8 @@ func (c *Client) PostV1RecipesProductUgcWithBody(ctx context.Context, contentTyp
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/recipes/product_ugc (the `PostV1RecipesProductUgc` operationId).
-func (c *Client) PostV1RecipesProductUgc(ctx context.Context, body PostV1RecipesProductUgcJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1RecipesProductUgcRequest(c.Server, body)
+func (c *Client) PostV1RecipesProductUgc(ctx context.Context, params *PostV1RecipesProductUgcParams, body PostV1RecipesProductUgcJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1RecipesProductUgcRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2234,8 +2258,8 @@ func (c *Client) GetV1RoutersIdRequests(ctx context.Context, id openapi_types.UU
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/sound_effect (the `PostV1SoundEffect` operationId).
-func (c *Client) PostV1SoundEffectWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1SoundEffectRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1SoundEffectWithBody(ctx context.Context, params *PostV1SoundEffectParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1SoundEffectRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2253,8 +2277,8 @@ func (c *Client) PostV1SoundEffectWithBody(ctx context.Context, contentType stri
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/sound_effect (the `PostV1SoundEffect` operationId).
-func (c *Client) PostV1SoundEffect(ctx context.Context, body PostV1SoundEffectJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1SoundEffectRequest(c.Server, body)
+func (c *Client) PostV1SoundEffect(ctx context.Context, params *PostV1SoundEffectParams, body PostV1SoundEffectJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1SoundEffectRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2272,8 +2296,8 @@ func (c *Client) PostV1SoundEffect(ctx context.Context, body PostV1SoundEffectJS
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/speech_to_speech (the `PostV1SpeechToSpeech` operationId).
-func (c *Client) PostV1SpeechToSpeechWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1SpeechToSpeechRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1SpeechToSpeechWithBody(ctx context.Context, params *PostV1SpeechToSpeechParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1SpeechToSpeechRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2291,8 +2315,8 @@ func (c *Client) PostV1SpeechToSpeechWithBody(ctx context.Context, contentType s
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/speech_to_speech (the `PostV1SpeechToSpeech` operationId).
-func (c *Client) PostV1SpeechToSpeech(ctx context.Context, body PostV1SpeechToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1SpeechToSpeechRequest(c.Server, body)
+func (c *Client) PostV1SpeechToSpeech(ctx context.Context, params *PostV1SpeechToSpeechParams, body PostV1SpeechToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1SpeechToSpeechRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2348,8 +2372,8 @@ func (c *Client) GetV1TasksId(ctx context.Context, id openapi_types.UUID, reqEdi
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
-func (c *Client) PostV1TextToImageWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1TextToImageRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1TextToImageWithBody(ctx context.Context, params *PostV1TextToImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1TextToImageRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2367,8 +2391,8 @@ func (c *Client) PostV1TextToImageWithBody(ctx context.Context, contentType stri
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
-func (c *Client) PostV1TextToImage(ctx context.Context, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1TextToImageRequest(c.Server, body)
+func (c *Client) PostV1TextToImage(ctx context.Context, params *PostV1TextToImageParams, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1TextToImageRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2386,8 +2410,8 @@ func (c *Client) PostV1TextToImage(ctx context.Context, body PostV1TextToImageJS
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
-func (c *Client) PostV1TextToMusicWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1TextToMusicRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1TextToMusicWithBody(ctx context.Context, params *PostV1TextToMusicParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1TextToMusicRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2405,8 +2429,8 @@ func (c *Client) PostV1TextToMusicWithBody(ctx context.Context, contentType stri
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
-func (c *Client) PostV1TextToMusic(ctx context.Context, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1TextToMusicRequest(c.Server, body)
+func (c *Client) PostV1TextToMusic(ctx context.Context, params *PostV1TextToMusicParams, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1TextToMusicRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2424,8 +2448,8 @@ func (c *Client) PostV1TextToMusic(ctx context.Context, body PostV1TextToMusicJS
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/text_to_speech (the `PostV1TextToSpeech` operationId).
-func (c *Client) PostV1TextToSpeechWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1TextToSpeechRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1TextToSpeechWithBody(ctx context.Context, params *PostV1TextToSpeechParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1TextToSpeechRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2443,8 +2467,8 @@ func (c *Client) PostV1TextToSpeechWithBody(ctx context.Context, contentType str
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/text_to_speech (the `PostV1TextToSpeech` operationId).
-func (c *Client) PostV1TextToSpeech(ctx context.Context, body PostV1TextToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1TextToSpeechRequest(c.Server, body)
+func (c *Client) PostV1TextToSpeech(ctx context.Context, params *PostV1TextToSpeechParams, body PostV1TextToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1TextToSpeechRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2462,8 +2486,8 @@ func (c *Client) PostV1TextToSpeech(ctx context.Context, body PostV1TextToSpeech
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/text_to_video (the `PostV1TextToVideo` operationId).
-func (c *Client) PostV1TextToVideoWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1TextToVideoRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1TextToVideoWithBody(ctx context.Context, params *PostV1TextToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1TextToVideoRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2481,8 +2505,8 @@ func (c *Client) PostV1TextToVideoWithBody(ctx context.Context, contentType stri
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/text_to_video (the `PostV1TextToVideo` operationId).
-func (c *Client) PostV1TextToVideo(ctx context.Context, body PostV1TextToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1TextToVideoRequest(c.Server, body)
+func (c *Client) PostV1TextToVideo(ctx context.Context, params *PostV1TextToVideoParams, body PostV1TextToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1TextToVideoRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2538,8 +2562,8 @@ func (c *Client) PostV1Uploads(ctx context.Context, body PostV1UploadsJSONReques
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
-func (c *Client) PostV1VideoToAudioWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VideoToAudioRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1VideoToAudioWithBody(ctx context.Context, params *PostV1VideoToAudioParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VideoToAudioRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2557,8 +2581,8 @@ func (c *Client) PostV1VideoToAudioWithBody(ctx context.Context, contentType str
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
-func (c *Client) PostV1VideoToAudio(ctx context.Context, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VideoToAudioRequest(c.Server, body)
+func (c *Client) PostV1VideoToAudio(ctx context.Context, params *PostV1VideoToAudioParams, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VideoToAudioRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2576,8 +2600,8 @@ func (c *Client) PostV1VideoToAudio(ctx context.Context, body PostV1VideoToAudio
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/video_to_hdr (the `PostV1VideoToHdr` operationId).
-func (c *Client) PostV1VideoToHdrWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VideoToHdrRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1VideoToHdrWithBody(ctx context.Context, params *PostV1VideoToHdrParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VideoToHdrRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2595,8 +2619,8 @@ func (c *Client) PostV1VideoToHdrWithBody(ctx context.Context, contentType strin
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/video_to_hdr (the `PostV1VideoToHdr` operationId).
-func (c *Client) PostV1VideoToHdr(ctx context.Context, body PostV1VideoToHdrJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VideoToHdrRequest(c.Server, body)
+func (c *Client) PostV1VideoToHdr(ctx context.Context, params *PostV1VideoToHdrParams, body PostV1VideoToHdrJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VideoToHdrRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2614,8 +2638,8 @@ func (c *Client) PostV1VideoToHdr(ctx context.Context, body PostV1VideoToHdrJSON
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/video_to_video (the `PostV1VideoToVideo` operationId).
-func (c *Client) PostV1VideoToVideoWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VideoToVideoRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1VideoToVideoWithBody(ctx context.Context, params *PostV1VideoToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VideoToVideoRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2633,8 +2657,8 @@ func (c *Client) PostV1VideoToVideoWithBody(ctx context.Context, contentType str
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/video_to_video (the `PostV1VideoToVideo` operationId).
-func (c *Client) PostV1VideoToVideo(ctx context.Context, body PostV1VideoToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VideoToVideoRequest(c.Server, body)
+func (c *Client) PostV1VideoToVideo(ctx context.Context, params *PostV1VideoToVideoParams, body PostV1VideoToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VideoToVideoRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2652,8 +2676,8 @@ func (c *Client) PostV1VideoToVideo(ctx context.Context, body PostV1VideoToVideo
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/video_upscale (the `PostV1VideoUpscale` operationId).
-func (c *Client) PostV1VideoUpscaleWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VideoUpscaleRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1VideoUpscaleWithBody(ctx context.Context, params *PostV1VideoUpscaleParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VideoUpscaleRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2671,8 +2695,8 @@ func (c *Client) PostV1VideoUpscaleWithBody(ctx context.Context, contentType str
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/video_upscale (the `PostV1VideoUpscale` operationId).
-func (c *Client) PostV1VideoUpscale(ctx context.Context, body PostV1VideoUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VideoUpscaleRequest(c.Server, body)
+func (c *Client) PostV1VideoUpscale(ctx context.Context, params *PostV1VideoUpscaleParams, body PostV1VideoUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VideoUpscaleRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2690,8 +2714,8 @@ func (c *Client) PostV1VideoUpscale(ctx context.Context, body PostV1VideoUpscale
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/voice_dubbing (the `PostV1VoiceDubbing` operationId).
-func (c *Client) PostV1VoiceDubbingWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VoiceDubbingRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1VoiceDubbingWithBody(ctx context.Context, params *PostV1VoiceDubbingParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VoiceDubbingRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2709,8 +2733,8 @@ func (c *Client) PostV1VoiceDubbingWithBody(ctx context.Context, contentType str
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/voice_dubbing (the `PostV1VoiceDubbing` operationId).
-func (c *Client) PostV1VoiceDubbing(ctx context.Context, body PostV1VoiceDubbingJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VoiceDubbingRequest(c.Server, body)
+func (c *Client) PostV1VoiceDubbing(ctx context.Context, params *PostV1VoiceDubbingParams, body PostV1VoiceDubbingJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VoiceDubbingRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2728,8 +2752,8 @@ func (c *Client) PostV1VoiceDubbing(ctx context.Context, body PostV1VoiceDubbing
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/voice_isolation (the `PostV1VoiceIsolation` operationId).
-func (c *Client) PostV1VoiceIsolationWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VoiceIsolationRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1VoiceIsolationWithBody(ctx context.Context, params *PostV1VoiceIsolationParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VoiceIsolationRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2747,8 +2771,8 @@ func (c *Client) PostV1VoiceIsolationWithBody(ctx context.Context, contentType s
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/voice_isolation (the `PostV1VoiceIsolation` operationId).
-func (c *Client) PostV1VoiceIsolation(ctx context.Context, body PostV1VoiceIsolationJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VoiceIsolationRequest(c.Server, body)
+func (c *Client) PostV1VoiceIsolation(ctx context.Context, params *PostV1VoiceIsolationParams, body PostV1VoiceIsolationJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VoiceIsolationRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2783,8 +2807,8 @@ func (c *Client) GetV1Voices(ctx context.Context, params *GetV1VoicesParams, req
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/voices (the `PostV1Voices` operationId).
-func (c *Client) PostV1VoicesWithBody(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VoicesRequestWithBody(c.Server, contentType, body)
+func (c *Client) PostV1VoicesWithBody(ctx context.Context, params *PostV1VoicesParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VoicesRequestWithBody(c.Server, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2802,8 +2826,8 @@ func (c *Client) PostV1VoicesWithBody(ctx context.Context, contentType string, b
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/voices (the `PostV1Voices` operationId).
-func (c *Client) PostV1Voices(ctx context.Context, body PostV1VoicesJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1VoicesRequest(c.Server, body)
+func (c *Client) PostV1Voices(ctx context.Context, params *PostV1VoicesParams, body PostV1VoicesJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1VoicesRequest(c.Server, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -2982,8 +3006,8 @@ func (c *Client) GetV1WorkflowsId(ctx context.Context, id openapi_types.UUID, re
 // Takes any type of body and a specified content type.
 //
 // Corresponds with POST /v1/workflows/{id} (the `PostV1WorkflowsId` operationId).
-func (c *Client) PostV1WorkflowsIdWithBody(ctx context.Context, id openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1WorkflowsIdRequestWithBody(c.Server, id, contentType, body)
+func (c *Client) PostV1WorkflowsIdWithBody(ctx context.Context, id openapi_types.UUID, params *PostV1WorkflowsIdParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1WorkflowsIdRequestWithBody(c.Server, id, params, contentType, body)
 	if err != nil {
 		return nil, err
 	}
@@ -3001,8 +3025,8 @@ func (c *Client) PostV1WorkflowsIdWithBody(ctx context.Context, id openapi_types
 // Takes a body of the `application/json` content type.
 //
 // Corresponds with POST /v1/workflows/{id} (the `PostV1WorkflowsId` operationId).
-func (c *Client) PostV1WorkflowsId(ctx context.Context, id openapi_types.UUID, body PostV1WorkflowsIdJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
-	req, err := NewPostV1WorkflowsIdRequest(c.Server, id, body)
+func (c *Client) PostV1WorkflowsId(ctx context.Context, id openapi_types.UUID, params *PostV1WorkflowsIdParams, body PostV1WorkflowsIdJSONRequestBody, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewPostV1WorkflowsIdRequest(c.Server, id, params, body)
 	if err != nil {
 		return nil, err
 	}
@@ -3053,12 +3077,16 @@ func NewGetV1AvatarConversationsRequest(server string, params *GetV1AvatarConver
 
 		}
 
-		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-			return nil, err
-		} else {
-			for _, qp := range strings.Split(queryFrag, "&") {
-				rawQueryFragments = append(rawQueryFragments, qp)
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
 			}
+
 		}
 
 		if params.Avatar != nil {
@@ -3238,18 +3266,18 @@ func NewGetV1AvatarUsageRequest(server string, params *GetV1AvatarUsageParams) (
 }
 
 // NewPostV1AvatarVideosRequest calls the generic PostV1AvatarVideos builder with application/json body
-func NewPostV1AvatarVideosRequest(server string, body PostV1AvatarVideosJSONRequestBody) (*http.Request, error) {
+func NewPostV1AvatarVideosRequest(server string, params *PostV1AvatarVideosParams, body PostV1AvatarVideosJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1AvatarVideosRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1AvatarVideosRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1AvatarVideosRequestWithBody constructs an http.Request for the PostV1AvatarVideos method, with any body, and a specified content type
-func NewPostV1AvatarVideosRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1AvatarVideosRequestWithBody(server string, params *PostV1AvatarVideosParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -3273,6 +3301,21 @@ func NewPostV1AvatarVideosRequestWithBody(server string, contentType string, bod
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
 
 	return req, nil
 }
@@ -3317,12 +3360,16 @@ func NewGetV1AvatarsRequest(server string, params *GetV1AvatarsParams) (*http.Re
 
 		}
 
-		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-			return nil, err
-		} else {
-			for _, qp := range strings.Split(queryFrag, "&") {
-				rawQueryFragments = append(rawQueryFragments, qp)
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
 			}
+
 		}
 
 		if encoded := queryValues.Encode(); encoded != "" {
@@ -3495,18 +3542,18 @@ func NewPatchV1AvatarsIdRequestWithBody(server string, id openapi_types.UUID, co
 }
 
 // NewPostV1CharacterPerformanceRequest calls the generic PostV1CharacterPerformance builder with application/json body
-func NewPostV1CharacterPerformanceRequest(server string, body PostV1CharacterPerformanceJSONRequestBody) (*http.Request, error) {
+func NewPostV1CharacterPerformanceRequest(server string, params *PostV1CharacterPerformanceParams, body PostV1CharacterPerformanceJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1CharacterPerformanceRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1CharacterPerformanceRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1CharacterPerformanceRequestWithBody constructs an http.Request for the PostV1CharacterPerformance method, with any body, and a specified content type
-func NewPostV1CharacterPerformanceRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1CharacterPerformanceRequestWithBody(server string, params *PostV1CharacterPerformanceParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -3530,6 +3577,21 @@ func NewPostV1CharacterPerformanceRequestWithBody(server string, contentType str
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
 
 	return req, nil
 }
@@ -3574,28 +3636,40 @@ func NewGetV1DocumentsRequest(server string, params *GetV1DocumentsParams) (*htt
 
 		}
 
-		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-			return nil, err
-		} else {
-			for _, qp := range strings.Split(queryFrag, "&") {
-				rawQueryFragments = append(rawQueryFragments, qp)
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
 			}
+
 		}
 
-		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sort", params.Sort, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-			return nil, err
-		} else {
-			for _, qp := range strings.Split(queryFrag, "&") {
-				rawQueryFragments = append(rawQueryFragments, qp)
+		if params.Sort != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "sort", *params.Sort, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
 			}
+
 		}
 
-		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "order", params.Order, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
-			return nil, err
-		} else {
-			for _, qp := range strings.Split(queryFrag, "&") {
-				rawQueryFragments = append(rawQueryFragments, qp)
+		if params.Order != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "order", *params.Order, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
 			}
+
 		}
 
 		if encoded := queryValues.Encode(); encoded != "" {
@@ -3768,18 +3842,18 @@ func NewPatchV1DocumentsIdRequestWithBody(server string, id openapi_types.UUID, 
 }
 
 // NewPostV1GenerateAudioRequest calls the generic PostV1GenerateAudio builder with application/json body
-func NewPostV1GenerateAudioRequest(server string, body PostV1GenerateAudioJSONRequestBody) (*http.Request, error) {
+func NewPostV1GenerateAudioRequest(server string, params *PostV1GenerateAudioParams, body PostV1GenerateAudioJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1GenerateAudioRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1GenerateAudioRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1GenerateAudioRequestWithBody constructs an http.Request for the PostV1GenerateAudio method, with any body, and a specified content type
-func NewPostV1GenerateAudioRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1GenerateAudioRequestWithBody(server string, params *PostV1GenerateAudioParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -3804,22 +3878,37 @@ func NewPostV1GenerateAudioRequestWithBody(server string, contentType string, bo
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1GenerateImageRequest calls the generic PostV1GenerateImage builder with application/json body
-func NewPostV1GenerateImageRequest(server string, body PostV1GenerateImageJSONRequestBody) (*http.Request, error) {
+func NewPostV1GenerateImageRequest(server string, params *PostV1GenerateImageParams, body PostV1GenerateImageJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1GenerateImageRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1GenerateImageRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1GenerateImageRequestWithBody constructs an http.Request for the PostV1GenerateImage method, with any body, and a specified content type
-func NewPostV1GenerateImageRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1GenerateImageRequestWithBody(server string, params *PostV1GenerateImageParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -3844,22 +3933,37 @@ func NewPostV1GenerateImageRequestWithBody(server string, contentType string, bo
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1GenerateVideoRequest calls the generic PostV1GenerateVideo builder with application/json body
-func NewPostV1GenerateVideoRequest(server string, body PostV1GenerateVideoJSONRequestBody) (*http.Request, error) {
+func NewPostV1GenerateVideoRequest(server string, params *PostV1GenerateVideoParams, body PostV1GenerateVideoJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1GenerateVideoRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1GenerateVideoRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1GenerateVideoRequestWithBody constructs an http.Request for the PostV1GenerateVideo method, with any body, and a specified content type
-func NewPostV1GenerateVideoRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1GenerateVideoRequestWithBody(server string, params *PostV1GenerateVideoParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -3884,22 +3988,37 @@ func NewPostV1GenerateVideoRequestWithBody(server string, contentType string, bo
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1ImageToVectorRequest calls the generic PostV1ImageToVector builder with application/json body
-func NewPostV1ImageToVectorRequest(server string, body PostV1ImageToVectorJSONRequestBody) (*http.Request, error) {
+func NewPostV1ImageToVectorRequest(server string, params *PostV1ImageToVectorParams, body PostV1ImageToVectorJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1ImageToVectorRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1ImageToVectorRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1ImageToVectorRequestWithBody constructs an http.Request for the PostV1ImageToVector method, with any body, and a specified content type
-func NewPostV1ImageToVectorRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1ImageToVectorRequestWithBody(server string, params *PostV1ImageToVectorParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -3924,22 +4043,37 @@ func NewPostV1ImageToVectorRequestWithBody(server string, contentType string, bo
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1ImageToVideoRequest calls the generic PostV1ImageToVideo builder with application/json body
-func NewPostV1ImageToVideoRequest(server string, body PostV1ImageToVideoJSONRequestBody) (*http.Request, error) {
+func NewPostV1ImageToVideoRequest(server string, params *PostV1ImageToVideoParams, body PostV1ImageToVideoJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1ImageToVideoRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1ImageToVideoRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1ImageToVideoRequestWithBody constructs an http.Request for the PostV1ImageToVideo method, with any body, and a specified content type
-func NewPostV1ImageToVideoRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1ImageToVideoRequestWithBody(server string, params *PostV1ImageToVideoParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -3964,22 +4098,37 @@ func NewPostV1ImageToVideoRequestWithBody(server string, contentType string, bod
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1ImageUpscaleRequest calls the generic PostV1ImageUpscale builder with application/json body
-func NewPostV1ImageUpscaleRequest(server string, body PostV1ImageUpscaleJSONRequestBody) (*http.Request, error) {
+func NewPostV1ImageUpscaleRequest(server string, params *PostV1ImageUpscaleParams, body PostV1ImageUpscaleJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1ImageUpscaleRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1ImageUpscaleRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1ImageUpscaleRequestWithBody constructs an http.Request for the PostV1ImageUpscale method, with any body, and a specified content type
-func NewPostV1ImageUpscaleRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1ImageUpscaleRequestWithBody(server string, params *PostV1ImageUpscaleParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -4003,6 +4152,21 @@ func NewPostV1ImageUpscaleRequestWithBody(server string, contentType string, bod
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
 
 	return req, nil
 }
@@ -4114,12 +4278,16 @@ func NewGetV1OrganizationWebappAuditLogsRequest(server string, params *GetV1Orga
 
 		}
 
-		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-			return nil, err
-		} else {
-			for _, qp := range strings.Split(queryFrag, "&") {
-				rawQueryFragments = append(rawQueryFragments, qp)
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
 			}
+
 		}
 
 		if params.OrganizationId != nil {
@@ -4269,6 +4437,96 @@ func NewGetV1OrganizationWebappAuditLogsEventIdRequest(server string, eventId op
 	return req, nil
 }
 
+// NewGetV1OrganizationWebappMembersRequest constructs an http.Request for the GetV1OrganizationWebappMembers method
+func NewGetV1OrganizationWebappMembersRequest(server string, params *GetV1OrganizationWebappMembersParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/v1/organization/webapp/members")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		// queryValues collects non-styled parameters (passthrough, JSON)
+		// that are safe to round-trip through url.Values.Encode().
+		queryValues := queryURL.Query()
+		// rawQueryFragments collects pre-encoded query fragments from
+		// styled parameters, preserving literal commas as delimiters
+		// per the OpenAPI spec (e.g. "color=blue,black,brown").
+		var rawQueryFragments []string
+
+		if params.Cursor != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "cursor", *params.Cursor, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.OrganizationId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "organizationId", *params.OrganizationId, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: "uuid"}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if params.WorkspaceIds != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "workspaceIds", *params.WorkspaceIds, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "string", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
+			}
+
+		}
+
+		if encoded := queryValues.Encode(); encoded != "" {
+			rawQueryFragments = append(rawQueryFragments, encoded)
+		}
+		queryURL.RawQuery = strings.Join(rawQueryFragments, "&")
+	}
+
+	req, err := http.NewRequest(http.MethodGet, queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
 // NewGetV1OrganizationWebappUsageRequest constructs an http.Request for the GetV1OrganizationWebappUsage method
 func NewGetV1OrganizationWebappUsageRequest(server string, params *GetV1OrganizationWebappUsageParams) (*http.Request, error) {
 	var err error
@@ -4309,12 +4567,16 @@ func NewGetV1OrganizationWebappUsageRequest(server string, params *GetV1Organiza
 
 		}
 
-		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-			return nil, err
-		} else {
-			for _, qp := range strings.Split(queryFrag, "&") {
-				rawQueryFragments = append(rawQueryFragments, qp)
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
 			}
+
 		}
 
 		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "from", params.From, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "", Format: ""}); err != nil {
@@ -4372,18 +4634,18 @@ func NewGetV1OrganizationWebappUsageRequest(server string, params *GetV1Organiza
 }
 
 // NewPostV1RealtimeSessionsRequest calls the generic PostV1RealtimeSessions builder with application/json body
-func NewPostV1RealtimeSessionsRequest(server string, body PostV1RealtimeSessionsJSONRequestBody) (*http.Request, error) {
+func NewPostV1RealtimeSessionsRequest(server string, params *PostV1RealtimeSessionsParams, body PostV1RealtimeSessionsJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1RealtimeSessionsRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1RealtimeSessionsRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1RealtimeSessionsRequestWithBody constructs an http.Request for the PostV1RealtimeSessions method, with any body, and a specified content type
-func NewPostV1RealtimeSessionsRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1RealtimeSessionsRequestWithBody(server string, params *PostV1RealtimeSessionsParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -4407,6 +4669,21 @@ func NewPostV1RealtimeSessionsRequestWithBody(server string, contentType string,
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
 
 	return req, nil
 }
@@ -4480,18 +4757,18 @@ func NewGetV1RealtimeSessionsIdRequest(server string, id openapi_types.UUID) (*h
 }
 
 // NewPostV1RecipesAdLocalizationRequest calls the generic PostV1RecipesAdLocalization builder with application/json body
-func NewPostV1RecipesAdLocalizationRequest(server string, body PostV1RecipesAdLocalizationJSONRequestBody) (*http.Request, error) {
+func NewPostV1RecipesAdLocalizationRequest(server string, params *PostV1RecipesAdLocalizationParams, body PostV1RecipesAdLocalizationJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1RecipesAdLocalizationRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1RecipesAdLocalizationRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1RecipesAdLocalizationRequestWithBody constructs an http.Request for the PostV1RecipesAdLocalization method, with any body, and a specified content type
-func NewPostV1RecipesAdLocalizationRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1RecipesAdLocalizationRequestWithBody(server string, params *PostV1RecipesAdLocalizationParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -4516,22 +4793,37 @@ func NewPostV1RecipesAdLocalizationRequestWithBody(server string, contentType st
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1RecipesMarketingStockImageRequest calls the generic PostV1RecipesMarketingStockImage builder with application/json body
-func NewPostV1RecipesMarketingStockImageRequest(server string, body PostV1RecipesMarketingStockImageJSONRequestBody) (*http.Request, error) {
+func NewPostV1RecipesMarketingStockImageRequest(server string, params *PostV1RecipesMarketingStockImageParams, body PostV1RecipesMarketingStockImageJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1RecipesMarketingStockImageRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1RecipesMarketingStockImageRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1RecipesMarketingStockImageRequestWithBody constructs an http.Request for the PostV1RecipesMarketingStockImage method, with any body, and a specified content type
-func NewPostV1RecipesMarketingStockImageRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1RecipesMarketingStockImageRequestWithBody(server string, params *PostV1RecipesMarketingStockImageParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -4556,22 +4848,37 @@ func NewPostV1RecipesMarketingStockImageRequestWithBody(server string, contentTy
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1RecipesMultiShotVideoRequest calls the generic PostV1RecipesMultiShotVideo builder with application/json body
-func NewPostV1RecipesMultiShotVideoRequest(server string, body PostV1RecipesMultiShotVideoJSONRequestBody) (*http.Request, error) {
+func NewPostV1RecipesMultiShotVideoRequest(server string, params *PostV1RecipesMultiShotVideoParams, body PostV1RecipesMultiShotVideoJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1RecipesMultiShotVideoRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1RecipesMultiShotVideoRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1RecipesMultiShotVideoRequestWithBody constructs an http.Request for the PostV1RecipesMultiShotVideo method, with any body, and a specified content type
-func NewPostV1RecipesMultiShotVideoRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1RecipesMultiShotVideoRequestWithBody(server string, params *PostV1RecipesMultiShotVideoParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -4596,22 +4903,37 @@ func NewPostV1RecipesMultiShotVideoRequestWithBody(server string, contentType st
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1RecipesProductAdRequest calls the generic PostV1RecipesProductAd builder with application/json body
-func NewPostV1RecipesProductAdRequest(server string, body PostV1RecipesProductAdJSONRequestBody) (*http.Request, error) {
+func NewPostV1RecipesProductAdRequest(server string, params *PostV1RecipesProductAdParams, body PostV1RecipesProductAdJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1RecipesProductAdRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1RecipesProductAdRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1RecipesProductAdRequestWithBody constructs an http.Request for the PostV1RecipesProductAd method, with any body, and a specified content type
-func NewPostV1RecipesProductAdRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1RecipesProductAdRequestWithBody(server string, params *PostV1RecipesProductAdParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -4636,22 +4958,37 @@ func NewPostV1RecipesProductAdRequestWithBody(server string, contentType string,
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1RecipesProductCampaignImageRequest calls the generic PostV1RecipesProductCampaignImage builder with application/json body
-func NewPostV1RecipesProductCampaignImageRequest(server string, body PostV1RecipesProductCampaignImageJSONRequestBody) (*http.Request, error) {
+func NewPostV1RecipesProductCampaignImageRequest(server string, params *PostV1RecipesProductCampaignImageParams, body PostV1RecipesProductCampaignImageJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1RecipesProductCampaignImageRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1RecipesProductCampaignImageRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1RecipesProductCampaignImageRequestWithBody constructs an http.Request for the PostV1RecipesProductCampaignImage method, with any body, and a specified content type
-func NewPostV1RecipesProductCampaignImageRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1RecipesProductCampaignImageRequestWithBody(server string, params *PostV1RecipesProductCampaignImageParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -4676,22 +5013,37 @@ func NewPostV1RecipesProductCampaignImageRequestWithBody(server string, contentT
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1RecipesProductSwapRequest calls the generic PostV1RecipesProductSwap builder with application/json body
-func NewPostV1RecipesProductSwapRequest(server string, body PostV1RecipesProductSwapJSONRequestBody) (*http.Request, error) {
+func NewPostV1RecipesProductSwapRequest(server string, params *PostV1RecipesProductSwapParams, body PostV1RecipesProductSwapJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1RecipesProductSwapRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1RecipesProductSwapRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1RecipesProductSwapRequestWithBody constructs an http.Request for the PostV1RecipesProductSwap method, with any body, and a specified content type
-func NewPostV1RecipesProductSwapRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1RecipesProductSwapRequestWithBody(server string, params *PostV1RecipesProductSwapParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -4716,22 +5068,37 @@ func NewPostV1RecipesProductSwapRequestWithBody(server string, contentType strin
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1RecipesProductUgcRequest calls the generic PostV1RecipesProductUgc builder with application/json body
-func NewPostV1RecipesProductUgcRequest(server string, body PostV1RecipesProductUgcJSONRequestBody) (*http.Request, error) {
+func NewPostV1RecipesProductUgcRequest(server string, params *PostV1RecipesProductUgcParams, body PostV1RecipesProductUgcJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1RecipesProductUgcRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1RecipesProductUgcRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1RecipesProductUgcRequestWithBody constructs an http.Request for the PostV1RecipesProductUgc method, with any body, and a specified content type
-func NewPostV1RecipesProductUgcRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1RecipesProductUgcRequestWithBody(server string, params *PostV1RecipesProductUgcParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -4755,6 +5122,21 @@ func NewPostV1RecipesProductUgcRequestWithBody(server string, contentType string
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
 
 	return req, nil
 }
@@ -4799,12 +5181,16 @@ func NewGetV1RoutersRequest(server string, params *GetV1RoutersParams) (*http.Re
 
 		}
 
-		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-			return nil, err
-		} else {
-			for _, qp := range strings.Split(queryFrag, "&") {
-				rawQueryFragments = append(rawQueryFragments, qp)
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
 			}
+
 		}
 
 		if encoded := queryValues.Encode(); encoded != "" {
@@ -5023,12 +5409,16 @@ func NewGetV1RoutersIdRequestsRequest(server string, id openapi_types.UUID, para
 
 		}
 
-		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-			return nil, err
-		} else {
-			for _, qp := range strings.Split(queryFrag, "&") {
-				rawQueryFragments = append(rawQueryFragments, qp)
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
 			}
+
 		}
 
 		if encoded := queryValues.Encode(); encoded != "" {
@@ -5046,18 +5436,18 @@ func NewGetV1RoutersIdRequestsRequest(server string, id openapi_types.UUID, para
 }
 
 // NewPostV1SoundEffectRequest calls the generic PostV1SoundEffect builder with application/json body
-func NewPostV1SoundEffectRequest(server string, body PostV1SoundEffectJSONRequestBody) (*http.Request, error) {
+func NewPostV1SoundEffectRequest(server string, params *PostV1SoundEffectParams, body PostV1SoundEffectJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1SoundEffectRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1SoundEffectRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1SoundEffectRequestWithBody constructs an http.Request for the PostV1SoundEffect method, with any body, and a specified content type
-func NewPostV1SoundEffectRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1SoundEffectRequestWithBody(server string, params *PostV1SoundEffectParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5082,22 +5472,37 @@ func NewPostV1SoundEffectRequestWithBody(server string, contentType string, body
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1SpeechToSpeechRequest calls the generic PostV1SpeechToSpeech builder with application/json body
-func NewPostV1SpeechToSpeechRequest(server string, body PostV1SpeechToSpeechJSONRequestBody) (*http.Request, error) {
+func NewPostV1SpeechToSpeechRequest(server string, params *PostV1SpeechToSpeechParams, body PostV1SpeechToSpeechJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1SpeechToSpeechRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1SpeechToSpeechRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1SpeechToSpeechRequestWithBody constructs an http.Request for the PostV1SpeechToSpeech method, with any body, and a specified content type
-func NewPostV1SpeechToSpeechRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1SpeechToSpeechRequestWithBody(server string, params *PostV1SpeechToSpeechParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5121,6 +5526,21 @@ func NewPostV1SpeechToSpeechRequestWithBody(server string, contentType string, b
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
 
 	return req, nil
 }
@@ -5194,18 +5614,18 @@ func NewGetV1TasksIdRequest(server string, id openapi_types.UUID) (*http.Request
 }
 
 // NewPostV1TextToImageRequest calls the generic PostV1TextToImage builder with application/json body
-func NewPostV1TextToImageRequest(server string, body PostV1TextToImageJSONRequestBody) (*http.Request, error) {
+func NewPostV1TextToImageRequest(server string, params *PostV1TextToImageParams, body PostV1TextToImageJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1TextToImageRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1TextToImageRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1TextToImageRequestWithBody constructs an http.Request for the PostV1TextToImage method, with any body, and a specified content type
-func NewPostV1TextToImageRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1TextToImageRequestWithBody(server string, params *PostV1TextToImageParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5230,22 +5650,37 @@ func NewPostV1TextToImageRequestWithBody(server string, contentType string, body
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1TextToMusicRequest calls the generic PostV1TextToMusic builder with application/json body
-func NewPostV1TextToMusicRequest(server string, body PostV1TextToMusicJSONRequestBody) (*http.Request, error) {
+func NewPostV1TextToMusicRequest(server string, params *PostV1TextToMusicParams, body PostV1TextToMusicJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1TextToMusicRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1TextToMusicRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1TextToMusicRequestWithBody constructs an http.Request for the PostV1TextToMusic method, with any body, and a specified content type
-func NewPostV1TextToMusicRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1TextToMusicRequestWithBody(server string, params *PostV1TextToMusicParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5270,22 +5705,37 @@ func NewPostV1TextToMusicRequestWithBody(server string, contentType string, body
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1TextToSpeechRequest calls the generic PostV1TextToSpeech builder with application/json body
-func NewPostV1TextToSpeechRequest(server string, body PostV1TextToSpeechJSONRequestBody) (*http.Request, error) {
+func NewPostV1TextToSpeechRequest(server string, params *PostV1TextToSpeechParams, body PostV1TextToSpeechJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1TextToSpeechRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1TextToSpeechRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1TextToSpeechRequestWithBody constructs an http.Request for the PostV1TextToSpeech method, with any body, and a specified content type
-func NewPostV1TextToSpeechRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1TextToSpeechRequestWithBody(server string, params *PostV1TextToSpeechParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5310,22 +5760,37 @@ func NewPostV1TextToSpeechRequestWithBody(server string, contentType string, bod
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1TextToVideoRequest calls the generic PostV1TextToVideo builder with application/json body
-func NewPostV1TextToVideoRequest(server string, body PostV1TextToVideoJSONRequestBody) (*http.Request, error) {
+func NewPostV1TextToVideoRequest(server string, params *PostV1TextToVideoParams, body PostV1TextToVideoJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1TextToVideoRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1TextToVideoRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1TextToVideoRequestWithBody constructs an http.Request for the PostV1TextToVideo method, with any body, and a specified content type
-func NewPostV1TextToVideoRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1TextToVideoRequestWithBody(server string, params *PostV1TextToVideoParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5349,6 +5814,21 @@ func NewPostV1TextToVideoRequestWithBody(server string, contentType string, body
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
 
 	return req, nil
 }
@@ -5394,18 +5874,18 @@ func NewPostV1UploadsRequestWithBody(server string, contentType string, body io.
 }
 
 // NewPostV1VideoToAudioRequest calls the generic PostV1VideoToAudio builder with application/json body
-func NewPostV1VideoToAudioRequest(server string, body PostV1VideoToAudioJSONRequestBody) (*http.Request, error) {
+func NewPostV1VideoToAudioRequest(server string, params *PostV1VideoToAudioParams, body PostV1VideoToAudioJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1VideoToAudioRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1VideoToAudioRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1VideoToAudioRequestWithBody constructs an http.Request for the PostV1VideoToAudio method, with any body, and a specified content type
-func NewPostV1VideoToAudioRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1VideoToAudioRequestWithBody(server string, params *PostV1VideoToAudioParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5430,22 +5910,37 @@ func NewPostV1VideoToAudioRequestWithBody(server string, contentType string, bod
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1VideoToHdrRequest calls the generic PostV1VideoToHdr builder with application/json body
-func NewPostV1VideoToHdrRequest(server string, body PostV1VideoToHdrJSONRequestBody) (*http.Request, error) {
+func NewPostV1VideoToHdrRequest(server string, params *PostV1VideoToHdrParams, body PostV1VideoToHdrJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1VideoToHdrRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1VideoToHdrRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1VideoToHdrRequestWithBody constructs an http.Request for the PostV1VideoToHdr method, with any body, and a specified content type
-func NewPostV1VideoToHdrRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1VideoToHdrRequestWithBody(server string, params *PostV1VideoToHdrParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5470,22 +5965,37 @@ func NewPostV1VideoToHdrRequestWithBody(server string, contentType string, body 
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1VideoToVideoRequest calls the generic PostV1VideoToVideo builder with application/json body
-func NewPostV1VideoToVideoRequest(server string, body PostV1VideoToVideoJSONRequestBody) (*http.Request, error) {
+func NewPostV1VideoToVideoRequest(server string, params *PostV1VideoToVideoParams, body PostV1VideoToVideoJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1VideoToVideoRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1VideoToVideoRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1VideoToVideoRequestWithBody constructs an http.Request for the PostV1VideoToVideo method, with any body, and a specified content type
-func NewPostV1VideoToVideoRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1VideoToVideoRequestWithBody(server string, params *PostV1VideoToVideoParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5510,22 +6020,37 @@ func NewPostV1VideoToVideoRequestWithBody(server string, contentType string, bod
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1VideoUpscaleRequest calls the generic PostV1VideoUpscale builder with application/json body
-func NewPostV1VideoUpscaleRequest(server string, body PostV1VideoUpscaleJSONRequestBody) (*http.Request, error) {
+func NewPostV1VideoUpscaleRequest(server string, params *PostV1VideoUpscaleParams, body PostV1VideoUpscaleJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1VideoUpscaleRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1VideoUpscaleRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1VideoUpscaleRequestWithBody constructs an http.Request for the PostV1VideoUpscale method, with any body, and a specified content type
-func NewPostV1VideoUpscaleRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1VideoUpscaleRequestWithBody(server string, params *PostV1VideoUpscaleParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5550,22 +6075,37 @@ func NewPostV1VideoUpscaleRequestWithBody(server string, contentType string, bod
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1VoiceDubbingRequest calls the generic PostV1VoiceDubbing builder with application/json body
-func NewPostV1VoiceDubbingRequest(server string, body PostV1VoiceDubbingJSONRequestBody) (*http.Request, error) {
+func NewPostV1VoiceDubbingRequest(server string, params *PostV1VoiceDubbingParams, body PostV1VoiceDubbingJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1VoiceDubbingRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1VoiceDubbingRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1VoiceDubbingRequestWithBody constructs an http.Request for the PostV1VoiceDubbing method, with any body, and a specified content type
-func NewPostV1VoiceDubbingRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1VoiceDubbingRequestWithBody(server string, params *PostV1VoiceDubbingParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5590,22 +6130,37 @@ func NewPostV1VoiceDubbingRequestWithBody(server string, contentType string, bod
 
 	req.Header.Add("Content-Type", contentType)
 
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
+
 	return req, nil
 }
 
 // NewPostV1VoiceIsolationRequest calls the generic PostV1VoiceIsolation builder with application/json body
-func NewPostV1VoiceIsolationRequest(server string, body PostV1VoiceIsolationJSONRequestBody) (*http.Request, error) {
+func NewPostV1VoiceIsolationRequest(server string, params *PostV1VoiceIsolationParams, body PostV1VoiceIsolationJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1VoiceIsolationRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1VoiceIsolationRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1VoiceIsolationRequestWithBody constructs an http.Request for the PostV1VoiceIsolation method, with any body, and a specified content type
-func NewPostV1VoiceIsolationRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1VoiceIsolationRequestWithBody(server string, params *PostV1VoiceIsolationParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5629,6 +6184,21 @@ func NewPostV1VoiceIsolationRequestWithBody(server string, contentType string, b
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
 
 	return req, nil
 }
@@ -5673,12 +6243,16 @@ func NewGetV1VoicesRequest(server string, params *GetV1VoicesParams) (*http.Requ
 
 		}
 
-		if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
-			return nil, err
-		} else {
-			for _, qp := range strings.Split(queryFrag, "&") {
-				rawQueryFragments = append(rawQueryFragments, qp)
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithOptions("form", true, "limit", *params.Limit, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationQuery, Type: "integer", Format: ""}); err != nil {
+				return nil, err
+			} else {
+				for _, qp := range strings.Split(queryFrag, "&") {
+					rawQueryFragments = append(rawQueryFragments, qp)
+				}
 			}
+
 		}
 
 		if encoded := queryValues.Encode(); encoded != "" {
@@ -5696,18 +6270,18 @@ func NewGetV1VoicesRequest(server string, params *GetV1VoicesParams) (*http.Requ
 }
 
 // NewPostV1VoicesRequest calls the generic PostV1Voices builder with application/json body
-func NewPostV1VoicesRequest(server string, body PostV1VoicesJSONRequestBody) (*http.Request, error) {
+func NewPostV1VoicesRequest(server string, params *PostV1VoicesParams, body PostV1VoicesJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1VoicesRequestWithBody(server, "application/json", bodyReader)
+	return NewPostV1VoicesRequestWithBody(server, params, "application/json", bodyReader)
 }
 
 // NewPostV1VoicesRequestWithBody constructs an http.Request for the PostV1Voices method, with any body, and a specified content type
-func NewPostV1VoicesRequestWithBody(server string, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1VoicesRequestWithBody(server string, params *PostV1VoicesParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	serverURL, err := url.Parse(server)
@@ -5731,6 +6305,21 @@ func NewPostV1VoicesRequestWithBody(server string, contentType string, body io.R
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
 
 	return req, nil
 }
@@ -5986,18 +6575,18 @@ func NewGetV1WorkflowsIdRequest(server string, id openapi_types.UUID) (*http.Req
 }
 
 // NewPostV1WorkflowsIdRequest calls the generic PostV1WorkflowsId builder with application/json body
-func NewPostV1WorkflowsIdRequest(server string, id openapi_types.UUID, body PostV1WorkflowsIdJSONRequestBody) (*http.Request, error) {
+func NewPostV1WorkflowsIdRequest(server string, id openapi_types.UUID, params *PostV1WorkflowsIdParams, body PostV1WorkflowsIdJSONRequestBody) (*http.Request, error) {
 	var bodyReader io.Reader
 	buf, err := json.Marshal(body)
 	if err != nil {
 		return nil, err
 	}
 	bodyReader = bytes.NewReader(buf)
-	return NewPostV1WorkflowsIdRequestWithBody(server, id, "application/json", bodyReader)
+	return NewPostV1WorkflowsIdRequestWithBody(server, id, params, "application/json", bodyReader)
 }
 
 // NewPostV1WorkflowsIdRequestWithBody constructs an http.Request for the PostV1WorkflowsId method, with any body, and a specified content type
-func NewPostV1WorkflowsIdRequestWithBody(server string, id openapi_types.UUID, contentType string, body io.Reader) (*http.Request, error) {
+func NewPostV1WorkflowsIdRequestWithBody(server string, id openapi_types.UUID, params *PostV1WorkflowsIdParams, contentType string, body io.Reader) (*http.Request, error) {
 	var err error
 
 	var pathParam0 string
@@ -6028,6 +6617,21 @@ func NewPostV1WorkflowsIdRequestWithBody(server string, id openapi_types.UUID, c
 	}
 
 	req.Header.Add("Content-Type", contentType)
+
+	if params != nil {
+
+		if params.XRunwayTags != nil {
+			var headerParam0 string
+
+			headerParam0, err = runtime.StyleParamWithOptions("simple", false, "X-Runway-Tags", *params.XRunwayTags, runtime.StyleParamOptions{ParamLocation: runtime.ParamLocationHeader, Type: "string", Format: ""})
+			if err != nil {
+				return nil, err
+			}
+
+			req.Header.Set("X-Runway-Tags", headerParam0)
+		}
+
+	}
 
 	return req, nil
 }
@@ -6119,7 +6723,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/avatar_videos (the `PostV1AvatarVideos` operationId).
-	PostV1AvatarVideosWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1AvatarVideosResponse, error)
+	PostV1AvatarVideosWithBodyWithResponse(ctx context.Context, params *PostV1AvatarVideosParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1AvatarVideosResponse, error)
 
 	// PostV1AvatarVideosWithResponse Generate avatar video from audio or text
 	//
@@ -6128,7 +6732,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/avatar_videos (the `PostV1AvatarVideos` operationId).
-	PostV1AvatarVideosWithResponse(ctx context.Context, body PostV1AvatarVideosJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1AvatarVideosResponse, error)
+	PostV1AvatarVideosWithResponse(ctx context.Context, params *PostV1AvatarVideosParams, body PostV1AvatarVideosJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1AvatarVideosResponse, error)
 
 	// GetV1AvatarsWithResponse List avatars
 	//
@@ -6200,7 +6804,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/character_performance (the `PostV1CharacterPerformance` operationId).
-	PostV1CharacterPerformanceWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1CharacterPerformanceResponse, error)
+	PostV1CharacterPerformanceWithBodyWithResponse(ctx context.Context, params *PostV1CharacterPerformanceParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1CharacterPerformanceResponse, error)
 
 	// PostV1CharacterPerformanceWithResponse Control a character
 	//
@@ -6209,7 +6813,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/character_performance (the `PostV1CharacterPerformance` operationId).
-	PostV1CharacterPerformanceWithResponse(ctx context.Context, body PostV1CharacterPerformanceJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1CharacterPerformanceResponse, error)
+	PostV1CharacterPerformanceWithResponse(ctx context.Context, params *PostV1CharacterPerformanceParams, body PostV1CharacterPerformanceJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1CharacterPerformanceResponse, error)
 
 	// GetV1DocumentsWithResponse List documents
 	//
@@ -6281,7 +6885,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/generate/audio (the `PostV1GenerateAudio` operationId).
-	PostV1GenerateAudioWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateAudioResponse, error)
+	PostV1GenerateAudioWithBodyWithResponse(ctx context.Context, params *PostV1GenerateAudioParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateAudioResponse, error)
 
 	// PostV1GenerateAudioWithResponse Routed audio generation
 	//
@@ -6290,7 +6894,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/generate/audio (the `PostV1GenerateAudio` operationId).
-	PostV1GenerateAudioWithResponse(ctx context.Context, body PostV1GenerateAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateAudioResponse, error)
+	PostV1GenerateAudioWithResponse(ctx context.Context, params *PostV1GenerateAudioParams, body PostV1GenerateAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateAudioResponse, error)
 
 	// PostV1GenerateImageWithBodyWithResponse Routed image generation
 	//
@@ -6299,7 +6903,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/generate/image (the `PostV1GenerateImage` operationId).
-	PostV1GenerateImageWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateImageResponse, error)
+	PostV1GenerateImageWithBodyWithResponse(ctx context.Context, params *PostV1GenerateImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateImageResponse, error)
 
 	// PostV1GenerateImageWithResponse Routed image generation
 	//
@@ -6308,7 +6912,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/generate/image (the `PostV1GenerateImage` operationId).
-	PostV1GenerateImageWithResponse(ctx context.Context, body PostV1GenerateImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateImageResponse, error)
+	PostV1GenerateImageWithResponse(ctx context.Context, params *PostV1GenerateImageParams, body PostV1GenerateImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateImageResponse, error)
 
 	// PostV1GenerateVideoWithBodyWithResponse Routed video generation
 	//
@@ -6317,7 +6921,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
-	PostV1GenerateVideoWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateVideoResponse, error)
+	PostV1GenerateVideoWithBodyWithResponse(ctx context.Context, params *PostV1GenerateVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateVideoResponse, error)
 
 	// PostV1GenerateVideoWithResponse Routed video generation
 	//
@@ -6326,7 +6930,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
-	PostV1GenerateVideoWithResponse(ctx context.Context, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateVideoResponse, error)
+	PostV1GenerateVideoWithResponse(ctx context.Context, params *PostV1GenerateVideoParams, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateVideoResponse, error)
 
 	// PostV1ImageToVectorWithBodyWithResponse Image to vector
 	//
@@ -6335,7 +6939,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
-	PostV1ImageToVectorWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error)
+	PostV1ImageToVectorWithBodyWithResponse(ctx context.Context, params *PostV1ImageToVectorParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error)
 
 	// PostV1ImageToVectorWithResponse Image to vector
 	//
@@ -6344,7 +6948,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
-	PostV1ImageToVectorWithResponse(ctx context.Context, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error)
+	PostV1ImageToVectorWithResponse(ctx context.Context, params *PostV1ImageToVectorParams, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error)
 
 	// PostV1ImageToVideoWithBodyWithResponse Image to video
 	//
@@ -6353,7 +6957,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/image_to_video (the `PostV1ImageToVideo` operationId).
-	PostV1ImageToVideoWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageToVideoResponse, error)
+	PostV1ImageToVideoWithBodyWithResponse(ctx context.Context, params *PostV1ImageToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageToVideoResponse, error)
 
 	// PostV1ImageToVideoWithResponse Image to video
 	//
@@ -6362,7 +6966,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/image_to_video (the `PostV1ImageToVideo` operationId).
-	PostV1ImageToVideoWithResponse(ctx context.Context, body PostV1ImageToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageToVideoResponse, error)
+	PostV1ImageToVideoWithResponse(ctx context.Context, params *PostV1ImageToVideoParams, body PostV1ImageToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageToVideoResponse, error)
 
 	// PostV1ImageUpscaleWithBodyWithResponse Image upscale
 	//
@@ -6371,7 +6975,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/image_upscale (the `PostV1ImageUpscale` operationId).
-	PostV1ImageUpscaleWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageUpscaleResponse, error)
+	PostV1ImageUpscaleWithBodyWithResponse(ctx context.Context, params *PostV1ImageUpscaleParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageUpscaleResponse, error)
 
 	// PostV1ImageUpscaleWithResponse Image upscale
 	//
@@ -6380,7 +6984,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/image_upscale (the `PostV1ImageUpscale` operationId).
-	PostV1ImageUpscaleWithResponse(ctx context.Context, body PostV1ImageUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageUpscaleResponse, error)
+	PostV1ImageUpscaleWithResponse(ctx context.Context, params *PostV1ImageUpscaleParams, body PostV1ImageUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageUpscaleResponse, error)
 
 	// GetV1OrganizationWithResponse Get organization information
 	//
@@ -6393,7 +6997,7 @@ type ClientWithResponsesInterface interface {
 
 	// PostV1OrganizationUsageWithBodyWithResponse Query credit usage
 	//
-	// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time.
+	// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time. Usage updates hourly; recent activity may not appear yet.
 	//
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
@@ -6402,7 +7006,7 @@ type ClientWithResponsesInterface interface {
 
 	// PostV1OrganizationUsageWithResponse Query credit usage
 	//
-	// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time.
+	// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time. Usage updates hourly; recent activity may not appear yet.
 	//
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
@@ -6427,6 +7031,15 @@ type ClientWithResponsesInterface interface {
 	// Corresponds with GET /v1/organization/webapp/audit_logs/{eventId} (the `GetV1OrganizationWebappAuditLogsEventId` operationId).
 	GetV1OrganizationWebappAuditLogsEventIdWithResponse(ctx context.Context, eventId openapi_types.UUID, params *GetV1OrganizationWebappAuditLogsEventIdParams, reqEditors ...RequestEditorFn) (*GetV1OrganizationWebappAuditLogsEventIdResponse, error)
 
+	// GetV1OrganizationWebappMembersWithResponse List linked workspace members
+	//
+	// List the members of the linked Runway workspaces you administer, one row per member per workspace, including pending invites and members who were removed. Ordered by `membershipId`. Authorized via the account link between this API project and the workspace.
+	//
+	// Returns a wrapper object for the known response body format(s).
+	//
+	// Corresponds with GET /v1/organization/webapp/members (the `GetV1OrganizationWebappMembers` operationId).
+	GetV1OrganizationWebappMembersWithResponse(ctx context.Context, params *GetV1OrganizationWebappMembersParams, reqEditors ...RequestEditorFn) (*GetV1OrganizationWebappMembersResponse, error)
+
 	// GetV1OrganizationWebappUsageWithResponse List linked workspace usage
 	//
 	// List per-generation credit-usage rows for the linked Runway workspaces you administer, newest first. Unlike `/v1/organization/usage` (this API project's own usage), this reports usage from the workspace linked to this API project. Authorized via that account link.
@@ -6443,7 +7056,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/realtime_sessions (the `PostV1RealtimeSessions` operationId).
-	PostV1RealtimeSessionsWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RealtimeSessionsResponse, error)
+	PostV1RealtimeSessionsWithBodyWithResponse(ctx context.Context, params *PostV1RealtimeSessionsParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RealtimeSessionsResponse, error)
 
 	// PostV1RealtimeSessionsWithResponse Create realtime session
 	//
@@ -6452,7 +7065,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/realtime_sessions (the `PostV1RealtimeSessions` operationId).
-	PostV1RealtimeSessionsWithResponse(ctx context.Context, body PostV1RealtimeSessionsJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RealtimeSessionsResponse, error)
+	PostV1RealtimeSessionsWithResponse(ctx context.Context, params *PostV1RealtimeSessionsParams, body PostV1RealtimeSessionsJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RealtimeSessionsResponse, error)
 
 	// DeleteV1RealtimeSessionsIdWithResponse Cancel realtime session
 	//
@@ -6479,7 +7092,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/ad_localization (the `PostV1RecipesAdLocalization` operationId).
-	PostV1RecipesAdLocalizationWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesAdLocalizationResponse, error)
+	PostV1RecipesAdLocalizationWithBodyWithResponse(ctx context.Context, params *PostV1RecipesAdLocalizationParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesAdLocalizationResponse, error)
 
 	// PostV1RecipesAdLocalizationWithResponse Localize an ad image
 	//
@@ -6488,7 +7101,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/ad_localization (the `PostV1RecipesAdLocalization` operationId).
-	PostV1RecipesAdLocalizationWithResponse(ctx context.Context, body PostV1RecipesAdLocalizationJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesAdLocalizationResponse, error)
+	PostV1RecipesAdLocalizationWithResponse(ctx context.Context, params *PostV1RecipesAdLocalizationParams, body PostV1RecipesAdLocalizationJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesAdLocalizationResponse, error)
 
 	// PostV1RecipesMarketingStockImageWithBodyWithResponse Create a marketing stock image
 	//
@@ -6497,7 +7110,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/marketing_stock_image (the `PostV1RecipesMarketingStockImage` operationId).
-	PostV1RecipesMarketingStockImageWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesMarketingStockImageResponse, error)
+	PostV1RecipesMarketingStockImageWithBodyWithResponse(ctx context.Context, params *PostV1RecipesMarketingStockImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesMarketingStockImageResponse, error)
 
 	// PostV1RecipesMarketingStockImageWithResponse Create a marketing stock image
 	//
@@ -6506,7 +7119,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/marketing_stock_image (the `PostV1RecipesMarketingStockImage` operationId).
-	PostV1RecipesMarketingStockImageWithResponse(ctx context.Context, body PostV1RecipesMarketingStockImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesMarketingStockImageResponse, error)
+	PostV1RecipesMarketingStockImageWithResponse(ctx context.Context, params *PostV1RecipesMarketingStockImageParams, body PostV1RecipesMarketingStockImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesMarketingStockImageResponse, error)
 
 	// PostV1RecipesMultiShotVideoWithBodyWithResponse Create a multi-shot video
 	//
@@ -6515,7 +7128,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/multi_shot_video (the `PostV1RecipesMultiShotVideo` operationId).
-	PostV1RecipesMultiShotVideoWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesMultiShotVideoResponse, error)
+	PostV1RecipesMultiShotVideoWithBodyWithResponse(ctx context.Context, params *PostV1RecipesMultiShotVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesMultiShotVideoResponse, error)
 
 	// PostV1RecipesMultiShotVideoWithResponse Create a multi-shot video
 	//
@@ -6524,7 +7137,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/multi_shot_video (the `PostV1RecipesMultiShotVideo` operationId).
-	PostV1RecipesMultiShotVideoWithResponse(ctx context.Context, body PostV1RecipesMultiShotVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesMultiShotVideoResponse, error)
+	PostV1RecipesMultiShotVideoWithResponse(ctx context.Context, params *PostV1RecipesMultiShotVideoParams, body PostV1RecipesMultiShotVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesMultiShotVideoResponse, error)
 
 	// PostV1RecipesProductAdWithBodyWithResponse Create a product ad video
 	//
@@ -6533,7 +7146,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/product_ad (the `PostV1RecipesProductAd` operationId).
-	PostV1RecipesProductAdWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductAdResponse, error)
+	PostV1RecipesProductAdWithBodyWithResponse(ctx context.Context, params *PostV1RecipesProductAdParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductAdResponse, error)
 
 	// PostV1RecipesProductAdWithResponse Create a product ad video
 	//
@@ -6542,7 +7155,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/product_ad (the `PostV1RecipesProductAd` operationId).
-	PostV1RecipesProductAdWithResponse(ctx context.Context, body PostV1RecipesProductAdJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductAdResponse, error)
+	PostV1RecipesProductAdWithResponse(ctx context.Context, params *PostV1RecipesProductAdParams, body PostV1RecipesProductAdJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductAdResponse, error)
 
 	// PostV1RecipesProductCampaignImageWithBodyWithResponse Create product campaign images
 	//
@@ -6551,7 +7164,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/product_campaign_image (the `PostV1RecipesProductCampaignImage` operationId).
-	PostV1RecipesProductCampaignImageWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductCampaignImageResponse, error)
+	PostV1RecipesProductCampaignImageWithBodyWithResponse(ctx context.Context, params *PostV1RecipesProductCampaignImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductCampaignImageResponse, error)
 
 	// PostV1RecipesProductCampaignImageWithResponse Create product campaign images
 	//
@@ -6560,7 +7173,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/product_campaign_image (the `PostV1RecipesProductCampaignImage` operationId).
-	PostV1RecipesProductCampaignImageWithResponse(ctx context.Context, body PostV1RecipesProductCampaignImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductCampaignImageResponse, error)
+	PostV1RecipesProductCampaignImageWithResponse(ctx context.Context, params *PostV1RecipesProductCampaignImageParams, body PostV1RecipesProductCampaignImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductCampaignImageResponse, error)
 
 	// PostV1RecipesProductSwapWithBodyWithResponse Swap a product in a reference video
 	//
@@ -6569,7 +7182,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/product_swap (the `PostV1RecipesProductSwap` operationId).
-	PostV1RecipesProductSwapWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductSwapResponse, error)
+	PostV1RecipesProductSwapWithBodyWithResponse(ctx context.Context, params *PostV1RecipesProductSwapParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductSwapResponse, error)
 
 	// PostV1RecipesProductSwapWithResponse Swap a product in a reference video
 	//
@@ -6578,7 +7191,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/product_swap (the `PostV1RecipesProductSwap` operationId).
-	PostV1RecipesProductSwapWithResponse(ctx context.Context, body PostV1RecipesProductSwapJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductSwapResponse, error)
+	PostV1RecipesProductSwapWithResponse(ctx context.Context, params *PostV1RecipesProductSwapParams, body PostV1RecipesProductSwapJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductSwapResponse, error)
 
 	// PostV1RecipesProductUgcWithBodyWithResponse Create a product UGC video
 	//
@@ -6587,7 +7200,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/product_ugc (the `PostV1RecipesProductUgc` operationId).
-	PostV1RecipesProductUgcWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductUgcResponse, error)
+	PostV1RecipesProductUgcWithBodyWithResponse(ctx context.Context, params *PostV1RecipesProductUgcParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductUgcResponse, error)
 
 	// PostV1RecipesProductUgcWithResponse Create a product UGC video
 	//
@@ -6596,7 +7209,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/recipes/product_ugc (the `PostV1RecipesProductUgc` operationId).
-	PostV1RecipesProductUgcWithResponse(ctx context.Context, body PostV1RecipesProductUgcJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductUgcResponse, error)
+	PostV1RecipesProductUgcWithResponse(ctx context.Context, params *PostV1RecipesProductUgcParams, body PostV1RecipesProductUgcJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductUgcResponse, error)
 
 	// GetV1RoutersWithResponse List Model Routers
 	//
@@ -6677,7 +7290,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/sound_effect (the `PostV1SoundEffect` operationId).
-	PostV1SoundEffectWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1SoundEffectResponse, error)
+	PostV1SoundEffectWithBodyWithResponse(ctx context.Context, params *PostV1SoundEffectParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1SoundEffectResponse, error)
 
 	// PostV1SoundEffectWithResponse Generate sound effects
 	//
@@ -6686,7 +7299,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/sound_effect (the `PostV1SoundEffect` operationId).
-	PostV1SoundEffectWithResponse(ctx context.Context, body PostV1SoundEffectJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1SoundEffectResponse, error)
+	PostV1SoundEffectWithResponse(ctx context.Context, params *PostV1SoundEffectParams, body PostV1SoundEffectJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1SoundEffectResponse, error)
 
 	// PostV1SpeechToSpeechWithBodyWithResponse Speech to speech
 	//
@@ -6695,7 +7308,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/speech_to_speech (the `PostV1SpeechToSpeech` operationId).
-	PostV1SpeechToSpeechWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1SpeechToSpeechResponse, error)
+	PostV1SpeechToSpeechWithBodyWithResponse(ctx context.Context, params *PostV1SpeechToSpeechParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1SpeechToSpeechResponse, error)
 
 	// PostV1SpeechToSpeechWithResponse Speech to speech
 	//
@@ -6704,7 +7317,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/speech_to_speech (the `PostV1SpeechToSpeech` operationId).
-	PostV1SpeechToSpeechWithResponse(ctx context.Context, body PostV1SpeechToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1SpeechToSpeechResponse, error)
+	PostV1SpeechToSpeechWithResponse(ctx context.Context, params *PostV1SpeechToSpeechParams, body PostV1SpeechToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1SpeechToSpeechResponse, error)
 
 	// DeleteV1TasksIdWithResponse Cancel or delete a task
 	//
@@ -6735,7 +7348,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
-	PostV1TextToImageWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToImageResponse, error)
+	PostV1TextToImageWithBodyWithResponse(ctx context.Context, params *PostV1TextToImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToImageResponse, error)
 
 	// PostV1TextToImageWithResponse Text/Image to Image
 	//
@@ -6744,7 +7357,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
-	PostV1TextToImageWithResponse(ctx context.Context, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToImageResponse, error)
+	PostV1TextToImageWithResponse(ctx context.Context, params *PostV1TextToImageParams, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToImageResponse, error)
 
 	// PostV1TextToMusicWithBodyWithResponse Generate music
 	//
@@ -6753,7 +7366,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
-	PostV1TextToMusicWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error)
+	PostV1TextToMusicWithBodyWithResponse(ctx context.Context, params *PostV1TextToMusicParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error)
 
 	// PostV1TextToMusicWithResponse Generate music
 	//
@@ -6762,7 +7375,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
-	PostV1TextToMusicWithResponse(ctx context.Context, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error)
+	PostV1TextToMusicWithResponse(ctx context.Context, params *PostV1TextToMusicParams, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error)
 
 	// PostV1TextToSpeechWithBodyWithResponse Text to speech
 	//
@@ -6771,7 +7384,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/text_to_speech (the `PostV1TextToSpeech` operationId).
-	PostV1TextToSpeechWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToSpeechResponse, error)
+	PostV1TextToSpeechWithBodyWithResponse(ctx context.Context, params *PostV1TextToSpeechParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToSpeechResponse, error)
 
 	// PostV1TextToSpeechWithResponse Text to speech
 	//
@@ -6780,7 +7393,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/text_to_speech (the `PostV1TextToSpeech` operationId).
-	PostV1TextToSpeechWithResponse(ctx context.Context, body PostV1TextToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToSpeechResponse, error)
+	PostV1TextToSpeechWithResponse(ctx context.Context, params *PostV1TextToSpeechParams, body PostV1TextToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToSpeechResponse, error)
 
 	// PostV1TextToVideoWithBodyWithResponse Text to video
 	//
@@ -6789,7 +7402,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/text_to_video (the `PostV1TextToVideo` operationId).
-	PostV1TextToVideoWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToVideoResponse, error)
+	PostV1TextToVideoWithBodyWithResponse(ctx context.Context, params *PostV1TextToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToVideoResponse, error)
 
 	// PostV1TextToVideoWithResponse Text to video
 	//
@@ -6798,7 +7411,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/text_to_video (the `PostV1TextToVideo` operationId).
-	PostV1TextToVideoWithResponse(ctx context.Context, body PostV1TextToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToVideoResponse, error)
+	PostV1TextToVideoWithResponse(ctx context.Context, params *PostV1TextToVideoParams, body PostV1TextToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToVideoResponse, error)
 
 	// PostV1UploadsWithBodyWithResponse Upload a file
 	//
@@ -6825,7 +7438,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
-	PostV1VideoToAudioWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error)
+	PostV1VideoToAudioWithBodyWithResponse(ctx context.Context, params *PostV1VideoToAudioParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error)
 
 	// PostV1VideoToAudioWithResponse Generate audio from a video
 	//
@@ -6834,7 +7447,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
-	PostV1VideoToAudioWithResponse(ctx context.Context, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error)
+	PostV1VideoToAudioWithResponse(ctx context.Context, params *PostV1VideoToAudioParams, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error)
 
 	// PostV1VideoToHdrWithBodyWithResponse Video to HDR
 	//
@@ -6843,7 +7456,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/video_to_hdr (the `PostV1VideoToHdr` operationId).
-	PostV1VideoToHdrWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToHdrResponse, error)
+	PostV1VideoToHdrWithBodyWithResponse(ctx context.Context, params *PostV1VideoToHdrParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToHdrResponse, error)
 
 	// PostV1VideoToHdrWithResponse Video to HDR
 	//
@@ -6852,7 +7465,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/video_to_hdr (the `PostV1VideoToHdr` operationId).
-	PostV1VideoToHdrWithResponse(ctx context.Context, body PostV1VideoToHdrJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToHdrResponse, error)
+	PostV1VideoToHdrWithResponse(ctx context.Context, params *PostV1VideoToHdrParams, body PostV1VideoToHdrJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToHdrResponse, error)
 
 	// PostV1VideoToVideoWithBodyWithResponse Video to video
 	//
@@ -6861,7 +7474,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/video_to_video (the `PostV1VideoToVideo` operationId).
-	PostV1VideoToVideoWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToVideoResponse, error)
+	PostV1VideoToVideoWithBodyWithResponse(ctx context.Context, params *PostV1VideoToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToVideoResponse, error)
 
 	// PostV1VideoToVideoWithResponse Video to video
 	//
@@ -6870,7 +7483,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/video_to_video (the `PostV1VideoToVideo` operationId).
-	PostV1VideoToVideoWithResponse(ctx context.Context, body PostV1VideoToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToVideoResponse, error)
+	PostV1VideoToVideoWithResponse(ctx context.Context, params *PostV1VideoToVideoParams, body PostV1VideoToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToVideoResponse, error)
 
 	// PostV1VideoUpscaleWithBodyWithResponse Video upscale
 	//
@@ -6879,7 +7492,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/video_upscale (the `PostV1VideoUpscale` operationId).
-	PostV1VideoUpscaleWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoUpscaleResponse, error)
+	PostV1VideoUpscaleWithBodyWithResponse(ctx context.Context, params *PostV1VideoUpscaleParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoUpscaleResponse, error)
 
 	// PostV1VideoUpscaleWithResponse Video upscale
 	//
@@ -6888,7 +7501,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/video_upscale (the `PostV1VideoUpscale` operationId).
-	PostV1VideoUpscaleWithResponse(ctx context.Context, body PostV1VideoUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoUpscaleResponse, error)
+	PostV1VideoUpscaleWithResponse(ctx context.Context, params *PostV1VideoUpscaleParams, body PostV1VideoUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoUpscaleResponse, error)
 
 	// PostV1VoiceDubbingWithBodyWithResponse Voice dubbing
 	//
@@ -6897,7 +7510,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/voice_dubbing (the `PostV1VoiceDubbing` operationId).
-	PostV1VoiceDubbingWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoiceDubbingResponse, error)
+	PostV1VoiceDubbingWithBodyWithResponse(ctx context.Context, params *PostV1VoiceDubbingParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoiceDubbingResponse, error)
 
 	// PostV1VoiceDubbingWithResponse Voice dubbing
 	//
@@ -6906,7 +7519,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/voice_dubbing (the `PostV1VoiceDubbing` operationId).
-	PostV1VoiceDubbingWithResponse(ctx context.Context, body PostV1VoiceDubbingJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoiceDubbingResponse, error)
+	PostV1VoiceDubbingWithResponse(ctx context.Context, params *PostV1VoiceDubbingParams, body PostV1VoiceDubbingJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoiceDubbingResponse, error)
 
 	// PostV1VoiceIsolationWithBodyWithResponse Voice isolation
 	//
@@ -6915,7 +7528,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/voice_isolation (the `PostV1VoiceIsolation` operationId).
-	PostV1VoiceIsolationWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoiceIsolationResponse, error)
+	PostV1VoiceIsolationWithBodyWithResponse(ctx context.Context, params *PostV1VoiceIsolationParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoiceIsolationResponse, error)
 
 	// PostV1VoiceIsolationWithResponse Voice isolation
 	//
@@ -6924,7 +7537,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/voice_isolation (the `PostV1VoiceIsolation` operationId).
-	PostV1VoiceIsolationWithResponse(ctx context.Context, body PostV1VoiceIsolationJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoiceIsolationResponse, error)
+	PostV1VoiceIsolationWithResponse(ctx context.Context, params *PostV1VoiceIsolationParams, body PostV1VoiceIsolationJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoiceIsolationResponse, error)
 
 	// GetV1VoicesWithResponse List voices
 	//
@@ -6942,7 +7555,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/voices (the `PostV1Voices` operationId).
-	PostV1VoicesWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoicesResponse, error)
+	PostV1VoicesWithBodyWithResponse(ctx context.Context, params *PostV1VoicesParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoicesResponse, error)
 
 	// PostV1VoicesWithResponse Create a voice
 	//
@@ -6951,7 +7564,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/voices (the `PostV1Voices` operationId).
-	PostV1VoicesWithResponse(ctx context.Context, body PostV1VoicesJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoicesResponse, error)
+	PostV1VoicesWithResponse(ctx context.Context, params *PostV1VoicesParams, body PostV1VoicesJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoicesResponse, error)
 
 	// PostV1VoicesPreviewWithBodyWithResponse Preview a voice
 	//
@@ -7041,7 +7654,7 @@ type ClientWithResponsesInterface interface {
 	// Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/workflows/{id} (the `PostV1WorkflowsId` operationId).
-	PostV1WorkflowsIdWithBodyWithResponse(ctx context.Context, id openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1WorkflowsIdResponse, error)
+	PostV1WorkflowsIdWithBodyWithResponse(ctx context.Context, id openapi_types.UUID, params *PostV1WorkflowsIdParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1WorkflowsIdResponse, error)
 
 	// PostV1WorkflowsIdWithResponse Run a published workflow
 	//
@@ -7050,7 +7663,7 @@ type ClientWithResponsesInterface interface {
 	// Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 	//
 	// Corresponds with POST /v1/workflows/{id} (the `PostV1WorkflowsId` operationId).
-	PostV1WorkflowsIdWithResponse(ctx context.Context, id openapi_types.UUID, body PostV1WorkflowsIdJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1WorkflowsIdResponse, error)
+	PostV1WorkflowsIdWithResponse(ctx context.Context, id openapi_types.UUID, params *PostV1WorkflowsIdParams, body PostV1WorkflowsIdJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1WorkflowsIdResponse, error)
 }
 
 type GetV1AvatarConversationsResponse struct {
@@ -8720,6 +9333,24 @@ type PostV1OrganizationUsageResponse struct {
 				ApiKeyId openapi_types.UUID `json:"apiKeyId"`
 			} `json:"usedCredits"`
 		} `json:"resultsByApiKey,omitempty"`
+
+		// ResultsByTag Credit usage broken down by tag, present when `groupBy` is set. With `groupBy: "tag"`, a generation with several tags counts toward each of them, so the buckets can add up to more than the total. With `groupBy: "tag:<key>"`, each generation counts once, under its `<key>:<value>` tag.
+		ResultsByTag *[]struct {
+			// Date The date of the usage data in ISO-8601 format (YYYY-MM-DD). All dates are in UTC.
+			Date openapi_types.Date `json:"date"`
+
+			// UsedCredits The credits used per tag for the date.
+			UsedCredits []struct {
+				// Amount The net number of credits spent under the tag. May be negative if refunds exceeded charges on this day.
+				Amount int `json:"amount"`
+
+				// Tag The tag that credits were spent under, or null for usage without a matching tag.
+				Tag *string `json:"tag"`
+			} `json:"usedCredits"`
+		} `json:"resultsByTag,omitempty"`
+
+		// Tags The tags on usage in the queried time range, sorted alphabetically, present when `tags` or `groupBy` is set. Lists at most the 1,000 tags with the most credits.
+		Tags *[]string `json:"tags,omitempty"`
 	}
 }
 
@@ -8752,6 +9383,24 @@ func (r PostV1OrganizationUsageResponse) GetJSON200() *struct {
 			ApiKeyId openapi_types.UUID `json:"apiKeyId"`
 		} `json:"usedCredits"`
 	} `json:"resultsByApiKey,omitempty"`
+
+	// ResultsByTag Credit usage broken down by tag, present when `groupBy` is set. With `groupBy: "tag"`, a generation with several tags counts toward each of them, so the buckets can add up to more than the total. With `groupBy: "tag:<key>"`, each generation counts once, under its `<key>:<value>` tag.
+	ResultsByTag *[]struct {
+		// Date The date of the usage data in ISO-8601 format (YYYY-MM-DD). All dates are in UTC.
+		Date openapi_types.Date `json:"date"`
+
+		// UsedCredits The credits used per tag for the date.
+		UsedCredits []struct {
+			// Amount The net number of credits spent under the tag. May be negative if refunds exceeded charges on this day.
+			Amount int `json:"amount"`
+
+			// Tag The tag that credits were spent under, or null for usage without a matching tag.
+			Tag *string `json:"tag"`
+		} `json:"usedCredits"`
+	} `json:"resultsByTag,omitempty"`
+
+	// Tags The tags on usage in the queried time range, sorted alphabetically, present when `tags` or `groupBy` is set. Lists at most the 1,000 tags with the most credits.
+	Tags *[]string `json:"tags,omitempty"`
 } {
 	return r.JSON200
 }
@@ -8836,10 +9485,14 @@ type GetV1OrganizationWebappAuditLogsResponse struct {
 				AppStudioDeploy               *string                                                                          `json:"App Studio deploy,omitempty"`
 				AppStudioSession              *string                                                                          `json:"App Studio session,omitempty"`
 				Application                   *string                                                                          `json:"Application,omitempty"`
+				AssetID                       *string                                                                          `json:"Asset ID,omitempty"`
 				AssetName                     *string                                                                          `json:"Asset name,omitempty"`
 				AssetType                     *string                                                                          `json:"Asset type,omitempty"`
 				Automatic                     *bool                                                                            `json:"Automatic,omitempty"`
 				BrandKitID                    *string                                                                          `json:"Brand kit ID,omitempty"`
+				CampaignSetupID               *string                                                                          `json:"Campaign setup ID,omitempty"`
+				CampaignSetupType             *string                                                                          `json:"Campaign setup type,omitempty"`
+				CampaignSetupVersion          *float64                                                                         `json:"Campaign setup version,omitempty"`
 				CancelsAtPeriodEnd            *bool                                                                            `json:"Cancels at period end,omitempty"`
 				CommentID                     *string                                                                          `json:"Comment ID,omitempty"`
 				CommentTargetID               *string                                                                          `json:"Comment target ID,omitempty"`
@@ -8859,6 +9512,7 @@ type GetV1OrganizationWebappAuditLogsResponse struct {
 				Enabled                       *bool                                                                            `json:"Enabled,omitempty"`
 				ErrorCode                     *string                                                                          `json:"Error code,omitempty"`
 				Filename                      *string                                                                          `json:"Filename,omitempty"`
+				FilesMoved                    *float64                                                                         `json:"Files moved,omitempty"`
 				FromWorkspaceID               *float64                                                                         `json:"From workspace ID,omitempty"`
 				GroupName                     *string                                                                          `json:"Group name,omitempty"`
 				HardSpendCap                  *bool                                                                            `json:"Hard spend cap,omitempty"`
@@ -8890,14 +9544,18 @@ type GetV1OrganizationWebappAuditLogsResponse struct {
 				PreviousRole                  *string                                                                          `json:"Previous role,omitempty"`
 				PreviousText                  *string                                                                          `json:"Previous text,omitempty"`
 				PreviousValue                 *GetV1OrganizationWebappAuditLogs200JSONResponseBody_Data_Metadata_PreviousValue `json:"Previous value,omitempty"`
+				PreviouslySharedInProject     *string                                                                          `json:"Previously shared in project,omitempty"`
 				ProjectID                     *string                                                                          `json:"Project ID,omitempty"`
 				ProjectCreditCap              *float64                                                                         `json:"Project credit cap,omitempty"`
+				Promotion                     *string                                                                          `json:"Promotion,omitempty"`
 				Provider                      *string                                                                          `json:"Provider,omitempty"`
+				ReadOrWrite                   *string                                                                          `json:"Read or write,omitempty"`
 				Reason                        *string                                                                          `json:"Reason,omitempty"`
 				RechargeAmountUSDCents        *float64                                                                         `json:"Recharge amount (USD cents),omitempty"`
 				RechargeBelowCredits          *float64                                                                         `json:"Recharge below (credits),omitempty"`
 				RemovedMember                 *string                                                                          `json:"Removed member,omitempty"`
 				RequestedVia                  *[]string                                                                        `json:"Requested via,omitempty"`
+				Result                        *string                                                                          `json:"Result,omitempty"`
 				ResultMetricID                *string                                                                          `json:"Result metric ID,omitempty"`
 				ReviewDecision                *string                                                                          `json:"Review decision,omitempty"`
 				Role                          *string                                                                          `json:"Role,omitempty"`
@@ -8911,6 +9569,7 @@ type GetV1OrganizationWebappAuditLogsResponse struct {
 				Source                        *string                                                                          `json:"Source,omitempty"`
 				SourceApplication             *string                                                                          `json:"Source application,omitempty"`
 				SourceCategoryID              *string                                                                          `json:"Source category ID,omitempty"`
+				SourceVersionAssetID          *string                                                                          `json:"Source version asset ID,omitempty"`
 				SpendCap                      *float64                                                                         `json:"Spend cap,omitempty"`
 				SpendCapUSDCents              *float64                                                                         `json:"Spend cap (USD cents),omitempty"`
 				SpendCapChange                *float64                                                                         `json:"Spend cap change,omitempty"`
@@ -8999,10 +9658,14 @@ func (r GetV1OrganizationWebappAuditLogsResponse) GetJSON200() *struct {
 			AppStudioDeploy               *string                                                                          `json:"App Studio deploy,omitempty"`
 			AppStudioSession              *string                                                                          `json:"App Studio session,omitempty"`
 			Application                   *string                                                                          `json:"Application,omitempty"`
+			AssetID                       *string                                                                          `json:"Asset ID,omitempty"`
 			AssetName                     *string                                                                          `json:"Asset name,omitempty"`
 			AssetType                     *string                                                                          `json:"Asset type,omitempty"`
 			Automatic                     *bool                                                                            `json:"Automatic,omitempty"`
 			BrandKitID                    *string                                                                          `json:"Brand kit ID,omitempty"`
+			CampaignSetupID               *string                                                                          `json:"Campaign setup ID,omitempty"`
+			CampaignSetupType             *string                                                                          `json:"Campaign setup type,omitempty"`
+			CampaignSetupVersion          *float64                                                                         `json:"Campaign setup version,omitempty"`
 			CancelsAtPeriodEnd            *bool                                                                            `json:"Cancels at period end,omitempty"`
 			CommentID                     *string                                                                          `json:"Comment ID,omitempty"`
 			CommentTargetID               *string                                                                          `json:"Comment target ID,omitempty"`
@@ -9022,6 +9685,7 @@ func (r GetV1OrganizationWebappAuditLogsResponse) GetJSON200() *struct {
 			Enabled                       *bool                                                                            `json:"Enabled,omitempty"`
 			ErrorCode                     *string                                                                          `json:"Error code,omitempty"`
 			Filename                      *string                                                                          `json:"Filename,omitempty"`
+			FilesMoved                    *float64                                                                         `json:"Files moved,omitempty"`
 			FromWorkspaceID               *float64                                                                         `json:"From workspace ID,omitempty"`
 			GroupName                     *string                                                                          `json:"Group name,omitempty"`
 			HardSpendCap                  *bool                                                                            `json:"Hard spend cap,omitempty"`
@@ -9053,14 +9717,18 @@ func (r GetV1OrganizationWebappAuditLogsResponse) GetJSON200() *struct {
 			PreviousRole                  *string                                                                          `json:"Previous role,omitempty"`
 			PreviousText                  *string                                                                          `json:"Previous text,omitempty"`
 			PreviousValue                 *GetV1OrganizationWebappAuditLogs200JSONResponseBody_Data_Metadata_PreviousValue `json:"Previous value,omitempty"`
+			PreviouslySharedInProject     *string                                                                          `json:"Previously shared in project,omitempty"`
 			ProjectID                     *string                                                                          `json:"Project ID,omitempty"`
 			ProjectCreditCap              *float64                                                                         `json:"Project credit cap,omitempty"`
+			Promotion                     *string                                                                          `json:"Promotion,omitempty"`
 			Provider                      *string                                                                          `json:"Provider,omitempty"`
+			ReadOrWrite                   *string                                                                          `json:"Read or write,omitempty"`
 			Reason                        *string                                                                          `json:"Reason,omitempty"`
 			RechargeAmountUSDCents        *float64                                                                         `json:"Recharge amount (USD cents),omitempty"`
 			RechargeBelowCredits          *float64                                                                         `json:"Recharge below (credits),omitempty"`
 			RemovedMember                 *string                                                                          `json:"Removed member,omitempty"`
 			RequestedVia                  *[]string                                                                        `json:"Requested via,omitempty"`
+			Result                        *string                                                                          `json:"Result,omitempty"`
 			ResultMetricID                *string                                                                          `json:"Result metric ID,omitempty"`
 			ReviewDecision                *string                                                                          `json:"Review decision,omitempty"`
 			Role                          *string                                                                          `json:"Role,omitempty"`
@@ -9074,6 +9742,7 @@ func (r GetV1OrganizationWebappAuditLogsResponse) GetJSON200() *struct {
 			Source                        *string                                                                          `json:"Source,omitempty"`
 			SourceApplication             *string                                                                          `json:"Source application,omitempty"`
 			SourceCategoryID              *string                                                                          `json:"Source category ID,omitempty"`
+			SourceVersionAssetID          *string                                                                          `json:"Source version asset ID,omitempty"`
 			SpendCap                      *float64                                                                         `json:"Spend cap,omitempty"`
 			SpendCapUSDCents              *float64                                                                         `json:"Spend cap (USD cents),omitempty"`
 			SpendCapChange                *float64                                                                         `json:"Spend cap change,omitempty"`
@@ -9196,10 +9865,14 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			AppStudioDeploy               *string                                                                            `json:"App Studio deploy,omitempty"`
 			AppStudioSession              *string                                                                            `json:"App Studio session,omitempty"`
 			Application                   *string                                                                            `json:"Application,omitempty"`
+			AssetID                       *string                                                                            `json:"Asset ID,omitempty"`
 			AssetName                     *string                                                                            `json:"Asset name,omitempty"`
 			AssetType                     *string                                                                            `json:"Asset type,omitempty"`
 			Automatic                     *bool                                                                              `json:"Automatic,omitempty"`
 			BrandKitID                    *string                                                                            `json:"Brand kit ID,omitempty"`
+			CampaignSetupID               *string                                                                            `json:"Campaign setup ID,omitempty"`
+			CampaignSetupType             *string                                                                            `json:"Campaign setup type,omitempty"`
+			CampaignSetupVersion          *float64                                                                           `json:"Campaign setup version,omitempty"`
 			CancelsAtPeriodEnd            *bool                                                                              `json:"Cancels at period end,omitempty"`
 			CommentID                     *string                                                                            `json:"Comment ID,omitempty"`
 			CommentTargetID               *string                                                                            `json:"Comment target ID,omitempty"`
@@ -9219,6 +9892,7 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			Enabled                       *bool                                                                              `json:"Enabled,omitempty"`
 			ErrorCode                     *string                                                                            `json:"Error code,omitempty"`
 			Filename                      *string                                                                            `json:"Filename,omitempty"`
+			FilesMoved                    *float64                                                                           `json:"Files moved,omitempty"`
 			FromWorkspaceID               *float64                                                                           `json:"From workspace ID,omitempty"`
 			GroupName                     *string                                                                            `json:"Group name,omitempty"`
 			HardSpendCap                  *bool                                                                              `json:"Hard spend cap,omitempty"`
@@ -9250,14 +9924,18 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
 			PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
 			PreviousValue                 *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_PreviousValue `json:"Previous value,omitempty"`
+			PreviouslySharedInProject     *string                                                                            `json:"Previously shared in project,omitempty"`
 			ProjectID                     *string                                                                            `json:"Project ID,omitempty"`
 			ProjectCreditCap              *float64                                                                           `json:"Project credit cap,omitempty"`
+			Promotion                     *string                                                                            `json:"Promotion,omitempty"`
 			Provider                      *string                                                                            `json:"Provider,omitempty"`
+			ReadOrWrite                   *string                                                                            `json:"Read or write,omitempty"`
 			Reason                        *string                                                                            `json:"Reason,omitempty"`
 			RechargeAmountUSDCents        *float64                                                                           `json:"Recharge amount (USD cents),omitempty"`
 			RechargeBelowCredits          *float64                                                                           `json:"Recharge below (credits),omitempty"`
 			RemovedMember                 *string                                                                            `json:"Removed member,omitempty"`
 			RequestedVia                  *[]string                                                                          `json:"Requested via,omitempty"`
+			Result                        *string                                                                            `json:"Result,omitempty"`
 			ResultMetricID                *string                                                                            `json:"Result metric ID,omitempty"`
 			ReviewDecision                *string                                                                            `json:"Review decision,omitempty"`
 			Role                          *string                                                                            `json:"Role,omitempty"`
@@ -9271,6 +9949,7 @@ type GetV1OrganizationWebappAuditLogsEventIdResponse struct {
 			Source                        *string                                                                            `json:"Source,omitempty"`
 			SourceApplication             *string                                                                            `json:"Source application,omitempty"`
 			SourceCategoryID              *string                                                                            `json:"Source category ID,omitempty"`
+			SourceVersionAssetID          *string                                                                            `json:"Source version asset ID,omitempty"`
 			SpendCap                      *float64                                                                           `json:"Spend cap,omitempty"`
 			SpendCapUSDCents              *float64                                                                           `json:"Spend cap (USD cents),omitempty"`
 			SpendCapChange                *float64                                                                           `json:"Spend cap change,omitempty"`
@@ -9369,10 +10048,14 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		AppStudioDeploy               *string                                                                            `json:"App Studio deploy,omitempty"`
 		AppStudioSession              *string                                                                            `json:"App Studio session,omitempty"`
 		Application                   *string                                                                            `json:"Application,omitempty"`
+		AssetID                       *string                                                                            `json:"Asset ID,omitempty"`
 		AssetName                     *string                                                                            `json:"Asset name,omitempty"`
 		AssetType                     *string                                                                            `json:"Asset type,omitempty"`
 		Automatic                     *bool                                                                              `json:"Automatic,omitempty"`
 		BrandKitID                    *string                                                                            `json:"Brand kit ID,omitempty"`
+		CampaignSetupID               *string                                                                            `json:"Campaign setup ID,omitempty"`
+		CampaignSetupType             *string                                                                            `json:"Campaign setup type,omitempty"`
+		CampaignSetupVersion          *float64                                                                           `json:"Campaign setup version,omitempty"`
 		CancelsAtPeriodEnd            *bool                                                                              `json:"Cancels at period end,omitempty"`
 		CommentID                     *string                                                                            `json:"Comment ID,omitempty"`
 		CommentTargetID               *string                                                                            `json:"Comment target ID,omitempty"`
@@ -9392,6 +10075,7 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		Enabled                       *bool                                                                              `json:"Enabled,omitempty"`
 		ErrorCode                     *string                                                                            `json:"Error code,omitempty"`
 		Filename                      *string                                                                            `json:"Filename,omitempty"`
+		FilesMoved                    *float64                                                                           `json:"Files moved,omitempty"`
 		FromWorkspaceID               *float64                                                                           `json:"From workspace ID,omitempty"`
 		GroupName                     *string                                                                            `json:"Group name,omitempty"`
 		HardSpendCap                  *bool                                                                              `json:"Hard spend cap,omitempty"`
@@ -9423,14 +10107,18 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
 		PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
 		PreviousValue                 *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_PreviousValue `json:"Previous value,omitempty"`
+		PreviouslySharedInProject     *string                                                                            `json:"Previously shared in project,omitempty"`
 		ProjectID                     *string                                                                            `json:"Project ID,omitempty"`
 		ProjectCreditCap              *float64                                                                           `json:"Project credit cap,omitempty"`
+		Promotion                     *string                                                                            `json:"Promotion,omitempty"`
 		Provider                      *string                                                                            `json:"Provider,omitempty"`
+		ReadOrWrite                   *string                                                                            `json:"Read or write,omitempty"`
 		Reason                        *string                                                                            `json:"Reason,omitempty"`
 		RechargeAmountUSDCents        *float64                                                                           `json:"Recharge amount (USD cents),omitempty"`
 		RechargeBelowCredits          *float64                                                                           `json:"Recharge below (credits),omitempty"`
 		RemovedMember                 *string                                                                            `json:"Removed member,omitempty"`
 		RequestedVia                  *[]string                                                                          `json:"Requested via,omitempty"`
+		Result                        *string                                                                            `json:"Result,omitempty"`
 		ResultMetricID                *string                                                                            `json:"Result metric ID,omitempty"`
 		ReviewDecision                *string                                                                            `json:"Review decision,omitempty"`
 		Role                          *string                                                                            `json:"Role,omitempty"`
@@ -9444,6 +10132,7 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) GetJSON200() *struct {
 		Source                        *string                                                                            `json:"Source,omitempty"`
 		SourceApplication             *string                                                                            `json:"Source application,omitempty"`
 		SourceCategoryID              *string                                                                            `json:"Source category ID,omitempty"`
+		SourceVersionAssetID          *string                                                                            `json:"Source version asset ID,omitempty"`
 		SpendCap                      *float64                                                                           `json:"Spend cap,omitempty"`
 		SpendCapUSDCents              *float64                                                                           `json:"Spend cap (USD cents),omitempty"`
 		SpendCapChange                *float64                                                                           `json:"Spend cap change,omitempty"`
@@ -9526,6 +10215,131 @@ func (r GetV1OrganizationWebappAuditLogsEventIdResponse) ContentType() string {
 	return ""
 }
 
+type GetV1OrganizationWebappMembersResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	// JSON200 the response for an HTTP 200 `application/json` response
+	JSON200 *struct {
+		// Data The list of items for the current page.
+		Data []struct {
+			// DeactivationReason Why the membership is `deactivated`. `removed`: the member was removed from the workspace. `invite_ended`: the invite was declined or revoked, which are recorded the same way. `suspended`: the user is suspended. `null` unless `status` is `deactivated`.
+			DeactivationReason *GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason `json:"deactivationReason"`
+
+			// DeprovisionedAt Approximately when the member was removed, or the invite was declined or revoked: the membership's last change. `null` when the membership was not ended, including for a suspended user.
+			DeprovisionedAt *time.Time `json:"deprovisionedAt"`
+
+			// Email Email of the member, or the email the invite was sent to.
+			Email string `json:"email"`
+
+			// LastActiveDate Last UTC date the member used Runway, on the web or mobile app and in any workspace. `null` when they never accepted the invite or have no recorded activity.
+			LastActiveDate *openapi_types.Date `json:"lastActiveDate"`
+
+			// MembershipId Unique ID of the membership. Stable across requests, so use it to update a member's row between pulls.
+			MembershipId int `json:"membershipId"`
+
+			// ProvisionedAt When the member was added, or when the invite was sent.
+			ProvisionedAt time.Time `json:"provisionedAt"`
+
+			// Role Role in the workspace. `non-generating-admin` is a Billing Admin.
+			Role GetV1OrganizationWebappMembers200JSONResponseBodyDataRole `json:"role"`
+
+			// Status `active`: a member of the workspace. `invited`: invited, and the invite is not accepted yet. `deactivated`: no longer a member; `deactivationReason` says why.
+			Status GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus `json:"status"`
+
+			// UserId ID of the member's Runway user. It doesn't change when their email does. `null` for an invite to an email with no Runway account yet.
+			UserId *int `json:"userId"`
+
+			// WorkspaceId ID of the workspace.
+			WorkspaceId int `json:"workspaceId"`
+
+			// WorkspaceName Name of the workspace.
+			WorkspaceName string `json:"workspaceName"`
+		} `json:"data"`
+
+		// HasMore Whether there are more items available after this page.
+		HasMore bool `json:"hasMore"`
+
+		// NextCursor Cursor to use for fetching the next page, or null if there are no more pages.
+		NextCursor *string `json:"nextCursor"`
+	}
+}
+
+// GetJSON200 returns the response for an HTTP 200 `application/json` response
+func (r GetV1OrganizationWebappMembersResponse) GetJSON200() *struct {
+	// Data The list of items for the current page.
+	Data []struct {
+		// DeactivationReason Why the membership is `deactivated`. `removed`: the member was removed from the workspace. `invite_ended`: the invite was declined or revoked, which are recorded the same way. `suspended`: the user is suspended. `null` unless `status` is `deactivated`.
+		DeactivationReason *GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason `json:"deactivationReason"`
+
+		// DeprovisionedAt Approximately when the member was removed, or the invite was declined or revoked: the membership's last change. `null` when the membership was not ended, including for a suspended user.
+		DeprovisionedAt *time.Time `json:"deprovisionedAt"`
+
+		// Email Email of the member, or the email the invite was sent to.
+		Email string `json:"email"`
+
+		// LastActiveDate Last UTC date the member used Runway, on the web or mobile app and in any workspace. `null` when they never accepted the invite or have no recorded activity.
+		LastActiveDate *openapi_types.Date `json:"lastActiveDate"`
+
+		// MembershipId Unique ID of the membership. Stable across requests, so use it to update a member's row between pulls.
+		MembershipId int `json:"membershipId"`
+
+		// ProvisionedAt When the member was added, or when the invite was sent.
+		ProvisionedAt time.Time `json:"provisionedAt"`
+
+		// Role Role in the workspace. `non-generating-admin` is a Billing Admin.
+		Role GetV1OrganizationWebappMembers200JSONResponseBodyDataRole `json:"role"`
+
+		// Status `active`: a member of the workspace. `invited`: invited, and the invite is not accepted yet. `deactivated`: no longer a member; `deactivationReason` says why.
+		Status GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus `json:"status"`
+
+		// UserId ID of the member's Runway user. It doesn't change when their email does. `null` for an invite to an email with no Runway account yet.
+		UserId *int `json:"userId"`
+
+		// WorkspaceId ID of the workspace.
+		WorkspaceId int `json:"workspaceId"`
+
+		// WorkspaceName Name of the workspace.
+		WorkspaceName string `json:"workspaceName"`
+	} `json:"data"`
+
+	// HasMore Whether there are more items available after this page.
+	HasMore bool `json:"hasMore"`
+
+	// NextCursor Cursor to use for fetching the next page, or null if there are no more pages.
+	NextCursor *string `json:"nextCursor"`
+} {
+	return r.JSON200
+}
+
+// GetBody returns the raw response body bytes
+func (r GetV1OrganizationWebappMembersResponse) GetBody() []byte {
+	return r.Body
+}
+
+// Status returns HTTPResponse.Status
+func (r GetV1OrganizationWebappMembersResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetV1OrganizationWebappMembersResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// ContentType is a convenience method to retrieve the Content-Type value from the HTTP response headers
+func (r GetV1OrganizationWebappMembersResponse) ContentType() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Header.Get("Content-Type")
+	}
+	return ""
+}
+
 type GetV1OrganizationWebappUsageResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
@@ -9544,6 +10358,12 @@ type GetV1OrganizationWebappUsageResponse struct {
 
 			// OutputType Media type of the generation's output: one of the listed values, which won't be remapped. Agent sandbox sessions report `file`. `null` when `taskId` is null, the generation no longer exists, or the type wasn't recorded.
 			OutputType *GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType `json:"outputType"`
+
+			// ProjectId ID of the Runway web app project the generation was made in (not this API project). `null` when no project is recorded for it, which includes generations made outside a project, generations made before project tracking was rolled out (late May to mid-August 2026), and rows with a null `taskId`.
+			ProjectId *openapi_types.UUID `json:"projectId"`
+
+			// ProjectName Current name of that project, so it changes when the project is renamed (group by `projectId`). Still returned after the project is archived or deleted. `null` when `projectId` is null.
+			ProjectName *string `json:"projectName"`
 
 			// Status Current status of the generation when you request it, so it can change between pulls (upsert on `transactionId`). A refund row doesn't mean the generation failed. `null` when `taskId` is null or the generation no longer exists.
 			Status *GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus `json:"status"`
@@ -9599,6 +10419,12 @@ func (r GetV1OrganizationWebappUsageResponse) GetJSON200() *struct {
 
 		// OutputType Media type of the generation's output: one of the listed values, which won't be remapped. Agent sandbox sessions report `file`. `null` when `taskId` is null, the generation no longer exists, or the type wasn't recorded.
 		OutputType *GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType `json:"outputType"`
+
+		// ProjectId ID of the Runway web app project the generation was made in (not this API project). `null` when no project is recorded for it, which includes generations made outside a project, generations made before project tracking was rolled out (late May to mid-August 2026), and rows with a null `taskId`.
+		ProjectId *openapi_types.UUID `json:"projectId"`
+
+		// ProjectName Current name of that project, so it changes when the project is renamed (group by `projectId`). Still returned after the project is archived or deleted. `null` when `projectId` is null.
+		ProjectName *string `json:"projectName"`
 
 		// Status Current status of the generation when you request it, so it can change between pulls (upsert on `transactionId`). A refund row doesn't mean the generation failed. `null` when `taskId` is null or the generation no longer exists.
 		Status *GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus `json:"status"`
@@ -10527,10 +11353,11 @@ type GetV1RoutersResponse struct {
 				MaxCreditsPerGeneration *struct {
 					Audio *int `json:"audio,omitempty"`
 					Image *int `json:"image,omitempty"`
+					Mesh  *int `json:"mesh,omitempty"`
 					Video *int `json:"video,omitempty"`
 				} `json:"maxCreditsPerGeneration,omitempty"`
 
-				// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+				// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 				Models *struct {
 					Ids  []string                                              `json:"ids"`
 					Mode GetV1Routers200JSONResponseBodyDataSettingsModelsMode `json:"mode"`
@@ -10587,10 +11414,11 @@ func (r GetV1RoutersResponse) GetJSON200() *struct {
 			MaxCreditsPerGeneration *struct {
 				Audio *int `json:"audio,omitempty"`
 				Image *int `json:"image,omitempty"`
+				Mesh  *int `json:"mesh,omitempty"`
 				Video *int `json:"video,omitempty"`
 			} `json:"maxCreditsPerGeneration,omitempty"`
 
-			// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+			// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 			Models *struct {
 				Ids  []string                                              `json:"ids"`
 				Mode GetV1Routers200JSONResponseBodyDataSettingsModelsMode `json:"mode"`
@@ -10678,10 +11506,11 @@ type PostV1RoutersResponse struct {
 			MaxCreditsPerGeneration *struct {
 				Audio *int `json:"audio,omitempty"`
 				Image *int `json:"image,omitempty"`
+				Mesh  *int `json:"mesh,omitempty"`
 				Video *int `json:"video,omitempty"`
 			} `json:"maxCreditsPerGeneration,omitempty"`
 
-			// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+			// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 			Models *struct {
 				Ids  []string                                           `json:"ids"`
 				Mode PostV1Routers200JSONResponseBodySettingsModelsMode `json:"mode"`
@@ -10729,10 +11558,11 @@ func (r PostV1RoutersResponse) GetJSON200() *struct {
 		MaxCreditsPerGeneration *struct {
 			Audio *int `json:"audio,omitempty"`
 			Image *int `json:"image,omitempty"`
+			Mesh  *int `json:"mesh,omitempty"`
 			Video *int `json:"video,omitempty"`
 		} `json:"maxCreditsPerGeneration,omitempty"`
 
-		// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+		// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 		Models *struct {
 			Ids  []string                                           `json:"ids"`
 			Mode PostV1Routers200JSONResponseBodySettingsModelsMode `json:"mode"`
@@ -10847,10 +11677,11 @@ type GetV1RoutersIdResponse struct {
 			MaxCreditsPerGeneration *struct {
 				Audio *int `json:"audio,omitempty"`
 				Image *int `json:"image,omitempty"`
+				Mesh  *int `json:"mesh,omitempty"`
 				Video *int `json:"video,omitempty"`
 			} `json:"maxCreditsPerGeneration,omitempty"`
 
-			// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+			// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 			Models *struct {
 				Ids  []string                                            `json:"ids"`
 				Mode GetV1RoutersId200JSONResponseBodySettingsModelsMode `json:"mode"`
@@ -10898,10 +11729,11 @@ func (r GetV1RoutersIdResponse) GetJSON200() *struct {
 		MaxCreditsPerGeneration *struct {
 			Audio *int `json:"audio,omitempty"`
 			Image *int `json:"image,omitempty"`
+			Mesh  *int `json:"mesh,omitempty"`
 			Video *int `json:"video,omitempty"`
 		} `json:"maxCreditsPerGeneration,omitempty"`
 
-		// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+		// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 		Models *struct {
 			Ids  []string                                            `json:"ids"`
 			Mode GetV1RoutersId200JSONResponseBodySettingsModelsMode `json:"mode"`
@@ -10982,10 +11814,11 @@ type PatchV1RoutersIdResponse struct {
 			MaxCreditsPerGeneration *struct {
 				Audio *int `json:"audio,omitempty"`
 				Image *int `json:"image,omitempty"`
+				Mesh  *int `json:"mesh,omitempty"`
 				Video *int `json:"video,omitempty"`
 			} `json:"maxCreditsPerGeneration,omitempty"`
 
-			// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+			// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 			Models *struct {
 				Ids  []string                                              `json:"ids"`
 				Mode PatchV1RoutersId200JSONResponseBodySettingsModelsMode `json:"mode"`
@@ -11033,10 +11866,11 @@ func (r PatchV1RoutersIdResponse) GetJSON200() *struct {
 		MaxCreditsPerGeneration *struct {
 			Audio *int `json:"audio,omitempty"`
 			Image *int `json:"image,omitempty"`
+			Mesh  *int `json:"mesh,omitempty"`
 			Video *int `json:"video,omitempty"`
 		} `json:"maxCreditsPerGeneration,omitempty"`
 
-		// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+		// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 		Models *struct {
 			Ids  []string                                              `json:"ids"`
 			Mode PatchV1RoutersId200JSONResponseBodySettingsModelsMode `json:"mode"`
@@ -13204,8 +14038,8 @@ func (c *ClientWithResponses) GetV1AvatarUsageWithResponse(ctx context.Context, 
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/avatar_videos (the `PostV1AvatarVideos` operationId).
-func (c *ClientWithResponses) PostV1AvatarVideosWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1AvatarVideosResponse, error) {
-	rsp, err := c.PostV1AvatarVideosWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1AvatarVideosWithBodyWithResponse(ctx context.Context, params *PostV1AvatarVideosParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1AvatarVideosResponse, error) {
+	rsp, err := c.PostV1AvatarVideosWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13219,8 +14053,8 @@ func (c *ClientWithResponses) PostV1AvatarVideosWithBodyWithResponse(ctx context
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/avatar_videos (the `PostV1AvatarVideos` operationId).
-func (c *ClientWithResponses) PostV1AvatarVideosWithResponse(ctx context.Context, body PostV1AvatarVideosJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1AvatarVideosResponse, error) {
-	rsp, err := c.PostV1AvatarVideos(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1AvatarVideosWithResponse(ctx context.Context, params *PostV1AvatarVideosParams, body PostV1AvatarVideosJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1AvatarVideosResponse, error) {
+	rsp, err := c.PostV1AvatarVideos(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13339,8 +14173,8 @@ func (c *ClientWithResponses) PatchV1AvatarsIdWithResponse(ctx context.Context, 
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/character_performance (the `PostV1CharacterPerformance` operationId).
-func (c *ClientWithResponses) PostV1CharacterPerformanceWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1CharacterPerformanceResponse, error) {
-	rsp, err := c.PostV1CharacterPerformanceWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1CharacterPerformanceWithBodyWithResponse(ctx context.Context, params *PostV1CharacterPerformanceParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1CharacterPerformanceResponse, error) {
+	rsp, err := c.PostV1CharacterPerformanceWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13354,8 +14188,8 @@ func (c *ClientWithResponses) PostV1CharacterPerformanceWithBodyWithResponse(ctx
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/character_performance (the `PostV1CharacterPerformance` operationId).
-func (c *ClientWithResponses) PostV1CharacterPerformanceWithResponse(ctx context.Context, body PostV1CharacterPerformanceJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1CharacterPerformanceResponse, error) {
-	rsp, err := c.PostV1CharacterPerformance(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1CharacterPerformanceWithResponse(ctx context.Context, params *PostV1CharacterPerformanceParams, body PostV1CharacterPerformanceJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1CharacterPerformanceResponse, error) {
+	rsp, err := c.PostV1CharacterPerformance(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13474,8 +14308,8 @@ func (c *ClientWithResponses) PatchV1DocumentsIdWithResponse(ctx context.Context
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/generate/audio (the `PostV1GenerateAudio` operationId).
-func (c *ClientWithResponses) PostV1GenerateAudioWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateAudioResponse, error) {
-	rsp, err := c.PostV1GenerateAudioWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1GenerateAudioWithBodyWithResponse(ctx context.Context, params *PostV1GenerateAudioParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateAudioResponse, error) {
+	rsp, err := c.PostV1GenerateAudioWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13489,8 +14323,8 @@ func (c *ClientWithResponses) PostV1GenerateAudioWithBodyWithResponse(ctx contex
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/generate/audio (the `PostV1GenerateAudio` operationId).
-func (c *ClientWithResponses) PostV1GenerateAudioWithResponse(ctx context.Context, body PostV1GenerateAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateAudioResponse, error) {
-	rsp, err := c.PostV1GenerateAudio(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1GenerateAudioWithResponse(ctx context.Context, params *PostV1GenerateAudioParams, body PostV1GenerateAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateAudioResponse, error) {
+	rsp, err := c.PostV1GenerateAudio(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13504,8 +14338,8 @@ func (c *ClientWithResponses) PostV1GenerateAudioWithResponse(ctx context.Contex
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/generate/image (the `PostV1GenerateImage` operationId).
-func (c *ClientWithResponses) PostV1GenerateImageWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateImageResponse, error) {
-	rsp, err := c.PostV1GenerateImageWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1GenerateImageWithBodyWithResponse(ctx context.Context, params *PostV1GenerateImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateImageResponse, error) {
+	rsp, err := c.PostV1GenerateImageWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13519,8 +14353,8 @@ func (c *ClientWithResponses) PostV1GenerateImageWithBodyWithResponse(ctx contex
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/generate/image (the `PostV1GenerateImage` operationId).
-func (c *ClientWithResponses) PostV1GenerateImageWithResponse(ctx context.Context, body PostV1GenerateImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateImageResponse, error) {
-	rsp, err := c.PostV1GenerateImage(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1GenerateImageWithResponse(ctx context.Context, params *PostV1GenerateImageParams, body PostV1GenerateImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateImageResponse, error) {
+	rsp, err := c.PostV1GenerateImage(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13534,8 +14368,8 @@ func (c *ClientWithResponses) PostV1GenerateImageWithResponse(ctx context.Contex
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
-func (c *ClientWithResponses) PostV1GenerateVideoWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateVideoResponse, error) {
-	rsp, err := c.PostV1GenerateVideoWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1GenerateVideoWithBodyWithResponse(ctx context.Context, params *PostV1GenerateVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1GenerateVideoResponse, error) {
+	rsp, err := c.PostV1GenerateVideoWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13549,8 +14383,8 @@ func (c *ClientWithResponses) PostV1GenerateVideoWithBodyWithResponse(ctx contex
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/generate/video (the `PostV1GenerateVideo` operationId).
-func (c *ClientWithResponses) PostV1GenerateVideoWithResponse(ctx context.Context, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateVideoResponse, error) {
-	rsp, err := c.PostV1GenerateVideo(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1GenerateVideoWithResponse(ctx context.Context, params *PostV1GenerateVideoParams, body PostV1GenerateVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1GenerateVideoResponse, error) {
+	rsp, err := c.PostV1GenerateVideo(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13564,8 +14398,8 @@ func (c *ClientWithResponses) PostV1GenerateVideoWithResponse(ctx context.Contex
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
-func (c *ClientWithResponses) PostV1ImageToVectorWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error) {
-	rsp, err := c.PostV1ImageToVectorWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1ImageToVectorWithBodyWithResponse(ctx context.Context, params *PostV1ImageToVectorParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error) {
+	rsp, err := c.PostV1ImageToVectorWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13579,8 +14413,8 @@ func (c *ClientWithResponses) PostV1ImageToVectorWithBodyWithResponse(ctx contex
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/image_to_vector (the `PostV1ImageToVector` operationId).
-func (c *ClientWithResponses) PostV1ImageToVectorWithResponse(ctx context.Context, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error) {
-	rsp, err := c.PostV1ImageToVector(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1ImageToVectorWithResponse(ctx context.Context, params *PostV1ImageToVectorParams, body PostV1ImageToVectorJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageToVectorResponse, error) {
+	rsp, err := c.PostV1ImageToVector(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13594,8 +14428,8 @@ func (c *ClientWithResponses) PostV1ImageToVectorWithResponse(ctx context.Contex
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/image_to_video (the `PostV1ImageToVideo` operationId).
-func (c *ClientWithResponses) PostV1ImageToVideoWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageToVideoResponse, error) {
-	rsp, err := c.PostV1ImageToVideoWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1ImageToVideoWithBodyWithResponse(ctx context.Context, params *PostV1ImageToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageToVideoResponse, error) {
+	rsp, err := c.PostV1ImageToVideoWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13609,8 +14443,8 @@ func (c *ClientWithResponses) PostV1ImageToVideoWithBodyWithResponse(ctx context
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/image_to_video (the `PostV1ImageToVideo` operationId).
-func (c *ClientWithResponses) PostV1ImageToVideoWithResponse(ctx context.Context, body PostV1ImageToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageToVideoResponse, error) {
-	rsp, err := c.PostV1ImageToVideo(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1ImageToVideoWithResponse(ctx context.Context, params *PostV1ImageToVideoParams, body PostV1ImageToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageToVideoResponse, error) {
+	rsp, err := c.PostV1ImageToVideo(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13624,8 +14458,8 @@ func (c *ClientWithResponses) PostV1ImageToVideoWithResponse(ctx context.Context
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/image_upscale (the `PostV1ImageUpscale` operationId).
-func (c *ClientWithResponses) PostV1ImageUpscaleWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageUpscaleResponse, error) {
-	rsp, err := c.PostV1ImageUpscaleWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1ImageUpscaleWithBodyWithResponse(ctx context.Context, params *PostV1ImageUpscaleParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1ImageUpscaleResponse, error) {
+	rsp, err := c.PostV1ImageUpscaleWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13639,8 +14473,8 @@ func (c *ClientWithResponses) PostV1ImageUpscaleWithBodyWithResponse(ctx context
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/image_upscale (the `PostV1ImageUpscale` operationId).
-func (c *ClientWithResponses) PostV1ImageUpscaleWithResponse(ctx context.Context, body PostV1ImageUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageUpscaleResponse, error) {
-	rsp, err := c.PostV1ImageUpscale(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1ImageUpscaleWithResponse(ctx context.Context, params *PostV1ImageUpscaleParams, body PostV1ImageUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1ImageUpscaleResponse, error) {
+	rsp, err := c.PostV1ImageUpscale(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13664,7 +14498,7 @@ func (c *ClientWithResponses) GetV1OrganizationWithResponse(ctx context.Context,
 
 // PostV1OrganizationUsageWithBodyWithResponse Query credit usage
 //
-// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time.
+// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time. Usage updates hourly; recent activity may not appear yet.
 //
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
@@ -13679,7 +14513,7 @@ func (c *ClientWithResponses) PostV1OrganizationUsageWithBodyWithResponse(ctx co
 
 // PostV1OrganizationUsageWithResponse Query credit usage
 //
-// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time.
+// Fetch credit usage data broken down by model and day for the organization associated with the API key used to make the request. Up to 90 days of data can be queried at a time. Usage updates hourly; recent activity may not appear yet.
 //
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
@@ -13722,6 +14556,21 @@ func (c *ClientWithResponses) GetV1OrganizationWebappAuditLogsEventIdWithRespons
 	return ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp)
 }
 
+// GetV1OrganizationWebappMembersWithResponse List linked workspace members
+//
+// List the members of the linked Runway workspaces you administer, one row per member per workspace, including pending invites and members who were removed. Ordered by `membershipId`. Authorized via the account link between this API project and the workspace.
+//
+// Returns a wrapper object for the known response body format(s).
+//
+// Corresponds with GET /v1/organization/webapp/members (the `GetV1OrganizationWebappMembers` operationId).
+func (c *ClientWithResponses) GetV1OrganizationWebappMembersWithResponse(ctx context.Context, params *GetV1OrganizationWebappMembersParams, reqEditors ...RequestEditorFn) (*GetV1OrganizationWebappMembersResponse, error) {
+	rsp, err := c.GetV1OrganizationWebappMembers(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetV1OrganizationWebappMembersResponse(rsp)
+}
+
 // GetV1OrganizationWebappUsageWithResponse List linked workspace usage
 //
 // List per-generation credit-usage rows for the linked Runway workspaces you administer, newest first. Unlike `/v1/organization/usage` (this API project's own usage), this reports usage from the workspace linked to this API project. Authorized via that account link.
@@ -13744,8 +14593,8 @@ func (c *ClientWithResponses) GetV1OrganizationWebappUsageWithResponse(ctx conte
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/realtime_sessions (the `PostV1RealtimeSessions` operationId).
-func (c *ClientWithResponses) PostV1RealtimeSessionsWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RealtimeSessionsResponse, error) {
-	rsp, err := c.PostV1RealtimeSessionsWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RealtimeSessionsWithBodyWithResponse(ctx context.Context, params *PostV1RealtimeSessionsParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RealtimeSessionsResponse, error) {
+	rsp, err := c.PostV1RealtimeSessionsWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13759,8 +14608,8 @@ func (c *ClientWithResponses) PostV1RealtimeSessionsWithBodyWithResponse(ctx con
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/realtime_sessions (the `PostV1RealtimeSessions` operationId).
-func (c *ClientWithResponses) PostV1RealtimeSessionsWithResponse(ctx context.Context, body PostV1RealtimeSessionsJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RealtimeSessionsResponse, error) {
-	rsp, err := c.PostV1RealtimeSessions(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RealtimeSessionsWithResponse(ctx context.Context, params *PostV1RealtimeSessionsParams, body PostV1RealtimeSessionsJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RealtimeSessionsResponse, error) {
+	rsp, err := c.PostV1RealtimeSessions(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13804,8 +14653,8 @@ func (c *ClientWithResponses) GetV1RealtimeSessionsIdWithResponse(ctx context.Co
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/ad_localization (the `PostV1RecipesAdLocalization` operationId).
-func (c *ClientWithResponses) PostV1RecipesAdLocalizationWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesAdLocalizationResponse, error) {
-	rsp, err := c.PostV1RecipesAdLocalizationWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesAdLocalizationWithBodyWithResponse(ctx context.Context, params *PostV1RecipesAdLocalizationParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesAdLocalizationResponse, error) {
+	rsp, err := c.PostV1RecipesAdLocalizationWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13819,8 +14668,8 @@ func (c *ClientWithResponses) PostV1RecipesAdLocalizationWithBodyWithResponse(ct
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/ad_localization (the `PostV1RecipesAdLocalization` operationId).
-func (c *ClientWithResponses) PostV1RecipesAdLocalizationWithResponse(ctx context.Context, body PostV1RecipesAdLocalizationJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesAdLocalizationResponse, error) {
-	rsp, err := c.PostV1RecipesAdLocalization(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesAdLocalizationWithResponse(ctx context.Context, params *PostV1RecipesAdLocalizationParams, body PostV1RecipesAdLocalizationJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesAdLocalizationResponse, error) {
+	rsp, err := c.PostV1RecipesAdLocalization(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13834,8 +14683,8 @@ func (c *ClientWithResponses) PostV1RecipesAdLocalizationWithResponse(ctx contex
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/marketing_stock_image (the `PostV1RecipesMarketingStockImage` operationId).
-func (c *ClientWithResponses) PostV1RecipesMarketingStockImageWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesMarketingStockImageResponse, error) {
-	rsp, err := c.PostV1RecipesMarketingStockImageWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesMarketingStockImageWithBodyWithResponse(ctx context.Context, params *PostV1RecipesMarketingStockImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesMarketingStockImageResponse, error) {
+	rsp, err := c.PostV1RecipesMarketingStockImageWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13849,8 +14698,8 @@ func (c *ClientWithResponses) PostV1RecipesMarketingStockImageWithBodyWithRespon
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/marketing_stock_image (the `PostV1RecipesMarketingStockImage` operationId).
-func (c *ClientWithResponses) PostV1RecipesMarketingStockImageWithResponse(ctx context.Context, body PostV1RecipesMarketingStockImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesMarketingStockImageResponse, error) {
-	rsp, err := c.PostV1RecipesMarketingStockImage(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesMarketingStockImageWithResponse(ctx context.Context, params *PostV1RecipesMarketingStockImageParams, body PostV1RecipesMarketingStockImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesMarketingStockImageResponse, error) {
+	rsp, err := c.PostV1RecipesMarketingStockImage(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13864,8 +14713,8 @@ func (c *ClientWithResponses) PostV1RecipesMarketingStockImageWithResponse(ctx c
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/multi_shot_video (the `PostV1RecipesMultiShotVideo` operationId).
-func (c *ClientWithResponses) PostV1RecipesMultiShotVideoWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesMultiShotVideoResponse, error) {
-	rsp, err := c.PostV1RecipesMultiShotVideoWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesMultiShotVideoWithBodyWithResponse(ctx context.Context, params *PostV1RecipesMultiShotVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesMultiShotVideoResponse, error) {
+	rsp, err := c.PostV1RecipesMultiShotVideoWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13879,8 +14728,8 @@ func (c *ClientWithResponses) PostV1RecipesMultiShotVideoWithBodyWithResponse(ct
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/multi_shot_video (the `PostV1RecipesMultiShotVideo` operationId).
-func (c *ClientWithResponses) PostV1RecipesMultiShotVideoWithResponse(ctx context.Context, body PostV1RecipesMultiShotVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesMultiShotVideoResponse, error) {
-	rsp, err := c.PostV1RecipesMultiShotVideo(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesMultiShotVideoWithResponse(ctx context.Context, params *PostV1RecipesMultiShotVideoParams, body PostV1RecipesMultiShotVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesMultiShotVideoResponse, error) {
+	rsp, err := c.PostV1RecipesMultiShotVideo(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13894,8 +14743,8 @@ func (c *ClientWithResponses) PostV1RecipesMultiShotVideoWithResponse(ctx contex
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/product_ad (the `PostV1RecipesProductAd` operationId).
-func (c *ClientWithResponses) PostV1RecipesProductAdWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductAdResponse, error) {
-	rsp, err := c.PostV1RecipesProductAdWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesProductAdWithBodyWithResponse(ctx context.Context, params *PostV1RecipesProductAdParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductAdResponse, error) {
+	rsp, err := c.PostV1RecipesProductAdWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13909,8 +14758,8 @@ func (c *ClientWithResponses) PostV1RecipesProductAdWithBodyWithResponse(ctx con
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/product_ad (the `PostV1RecipesProductAd` operationId).
-func (c *ClientWithResponses) PostV1RecipesProductAdWithResponse(ctx context.Context, body PostV1RecipesProductAdJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductAdResponse, error) {
-	rsp, err := c.PostV1RecipesProductAd(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesProductAdWithResponse(ctx context.Context, params *PostV1RecipesProductAdParams, body PostV1RecipesProductAdJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductAdResponse, error) {
+	rsp, err := c.PostV1RecipesProductAd(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13924,8 +14773,8 @@ func (c *ClientWithResponses) PostV1RecipesProductAdWithResponse(ctx context.Con
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/product_campaign_image (the `PostV1RecipesProductCampaignImage` operationId).
-func (c *ClientWithResponses) PostV1RecipesProductCampaignImageWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductCampaignImageResponse, error) {
-	rsp, err := c.PostV1RecipesProductCampaignImageWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesProductCampaignImageWithBodyWithResponse(ctx context.Context, params *PostV1RecipesProductCampaignImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductCampaignImageResponse, error) {
+	rsp, err := c.PostV1RecipesProductCampaignImageWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13939,8 +14788,8 @@ func (c *ClientWithResponses) PostV1RecipesProductCampaignImageWithBodyWithRespo
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/product_campaign_image (the `PostV1RecipesProductCampaignImage` operationId).
-func (c *ClientWithResponses) PostV1RecipesProductCampaignImageWithResponse(ctx context.Context, body PostV1RecipesProductCampaignImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductCampaignImageResponse, error) {
-	rsp, err := c.PostV1RecipesProductCampaignImage(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesProductCampaignImageWithResponse(ctx context.Context, params *PostV1RecipesProductCampaignImageParams, body PostV1RecipesProductCampaignImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductCampaignImageResponse, error) {
+	rsp, err := c.PostV1RecipesProductCampaignImage(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13954,8 +14803,8 @@ func (c *ClientWithResponses) PostV1RecipesProductCampaignImageWithResponse(ctx 
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/product_swap (the `PostV1RecipesProductSwap` operationId).
-func (c *ClientWithResponses) PostV1RecipesProductSwapWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductSwapResponse, error) {
-	rsp, err := c.PostV1RecipesProductSwapWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesProductSwapWithBodyWithResponse(ctx context.Context, params *PostV1RecipesProductSwapParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductSwapResponse, error) {
+	rsp, err := c.PostV1RecipesProductSwapWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13969,8 +14818,8 @@ func (c *ClientWithResponses) PostV1RecipesProductSwapWithBodyWithResponse(ctx c
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/product_swap (the `PostV1RecipesProductSwap` operationId).
-func (c *ClientWithResponses) PostV1RecipesProductSwapWithResponse(ctx context.Context, body PostV1RecipesProductSwapJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductSwapResponse, error) {
-	rsp, err := c.PostV1RecipesProductSwap(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesProductSwapWithResponse(ctx context.Context, params *PostV1RecipesProductSwapParams, body PostV1RecipesProductSwapJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductSwapResponse, error) {
+	rsp, err := c.PostV1RecipesProductSwap(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13984,8 +14833,8 @@ func (c *ClientWithResponses) PostV1RecipesProductSwapWithResponse(ctx context.C
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/product_ugc (the `PostV1RecipesProductUgc` operationId).
-func (c *ClientWithResponses) PostV1RecipesProductUgcWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductUgcResponse, error) {
-	rsp, err := c.PostV1RecipesProductUgcWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesProductUgcWithBodyWithResponse(ctx context.Context, params *PostV1RecipesProductUgcParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1RecipesProductUgcResponse, error) {
+	rsp, err := c.PostV1RecipesProductUgcWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -13999,8 +14848,8 @@ func (c *ClientWithResponses) PostV1RecipesProductUgcWithBodyWithResponse(ctx co
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/recipes/product_ugc (the `PostV1RecipesProductUgc` operationId).
-func (c *ClientWithResponses) PostV1RecipesProductUgcWithResponse(ctx context.Context, body PostV1RecipesProductUgcJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductUgcResponse, error) {
-	rsp, err := c.PostV1RecipesProductUgc(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1RecipesProductUgcWithResponse(ctx context.Context, params *PostV1RecipesProductUgcParams, body PostV1RecipesProductUgcJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1RecipesProductUgcResponse, error) {
+	rsp, err := c.PostV1RecipesProductUgc(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14134,8 +14983,8 @@ func (c *ClientWithResponses) GetV1RoutersIdRequestsWithResponse(ctx context.Con
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/sound_effect (the `PostV1SoundEffect` operationId).
-func (c *ClientWithResponses) PostV1SoundEffectWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1SoundEffectResponse, error) {
-	rsp, err := c.PostV1SoundEffectWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1SoundEffectWithBodyWithResponse(ctx context.Context, params *PostV1SoundEffectParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1SoundEffectResponse, error) {
+	rsp, err := c.PostV1SoundEffectWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14149,8 +14998,8 @@ func (c *ClientWithResponses) PostV1SoundEffectWithBodyWithResponse(ctx context.
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/sound_effect (the `PostV1SoundEffect` operationId).
-func (c *ClientWithResponses) PostV1SoundEffectWithResponse(ctx context.Context, body PostV1SoundEffectJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1SoundEffectResponse, error) {
-	rsp, err := c.PostV1SoundEffect(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1SoundEffectWithResponse(ctx context.Context, params *PostV1SoundEffectParams, body PostV1SoundEffectJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1SoundEffectResponse, error) {
+	rsp, err := c.PostV1SoundEffect(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14164,8 +15013,8 @@ func (c *ClientWithResponses) PostV1SoundEffectWithResponse(ctx context.Context,
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/speech_to_speech (the `PostV1SpeechToSpeech` operationId).
-func (c *ClientWithResponses) PostV1SpeechToSpeechWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1SpeechToSpeechResponse, error) {
-	rsp, err := c.PostV1SpeechToSpeechWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1SpeechToSpeechWithBodyWithResponse(ctx context.Context, params *PostV1SpeechToSpeechParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1SpeechToSpeechResponse, error) {
+	rsp, err := c.PostV1SpeechToSpeechWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14179,8 +15028,8 @@ func (c *ClientWithResponses) PostV1SpeechToSpeechWithBodyWithResponse(ctx conte
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/speech_to_speech (the `PostV1SpeechToSpeech` operationId).
-func (c *ClientWithResponses) PostV1SpeechToSpeechWithResponse(ctx context.Context, body PostV1SpeechToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1SpeechToSpeechResponse, error) {
-	rsp, err := c.PostV1SpeechToSpeech(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1SpeechToSpeechWithResponse(ctx context.Context, params *PostV1SpeechToSpeechParams, body PostV1SpeechToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1SpeechToSpeechResponse, error) {
+	rsp, err := c.PostV1SpeechToSpeech(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14228,8 +15077,8 @@ func (c *ClientWithResponses) GetV1TasksIdWithResponse(ctx context.Context, id o
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
-func (c *ClientWithResponses) PostV1TextToImageWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToImageResponse, error) {
-	rsp, err := c.PostV1TextToImageWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1TextToImageWithBodyWithResponse(ctx context.Context, params *PostV1TextToImageParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToImageResponse, error) {
+	rsp, err := c.PostV1TextToImageWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14243,8 +15092,8 @@ func (c *ClientWithResponses) PostV1TextToImageWithBodyWithResponse(ctx context.
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/text_to_image (the `PostV1TextToImage` operationId).
-func (c *ClientWithResponses) PostV1TextToImageWithResponse(ctx context.Context, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToImageResponse, error) {
-	rsp, err := c.PostV1TextToImage(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1TextToImageWithResponse(ctx context.Context, params *PostV1TextToImageParams, body PostV1TextToImageJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToImageResponse, error) {
+	rsp, err := c.PostV1TextToImage(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14258,8 +15107,8 @@ func (c *ClientWithResponses) PostV1TextToImageWithResponse(ctx context.Context,
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
-func (c *ClientWithResponses) PostV1TextToMusicWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error) {
-	rsp, err := c.PostV1TextToMusicWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1TextToMusicWithBodyWithResponse(ctx context.Context, params *PostV1TextToMusicParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error) {
+	rsp, err := c.PostV1TextToMusicWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14273,8 +15122,8 @@ func (c *ClientWithResponses) PostV1TextToMusicWithBodyWithResponse(ctx context.
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/text_to_music (the `PostV1TextToMusic` operationId).
-func (c *ClientWithResponses) PostV1TextToMusicWithResponse(ctx context.Context, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error) {
-	rsp, err := c.PostV1TextToMusic(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1TextToMusicWithResponse(ctx context.Context, params *PostV1TextToMusicParams, body PostV1TextToMusicJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToMusicResponse, error) {
+	rsp, err := c.PostV1TextToMusic(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14288,8 +15137,8 @@ func (c *ClientWithResponses) PostV1TextToMusicWithResponse(ctx context.Context,
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/text_to_speech (the `PostV1TextToSpeech` operationId).
-func (c *ClientWithResponses) PostV1TextToSpeechWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToSpeechResponse, error) {
-	rsp, err := c.PostV1TextToSpeechWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1TextToSpeechWithBodyWithResponse(ctx context.Context, params *PostV1TextToSpeechParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToSpeechResponse, error) {
+	rsp, err := c.PostV1TextToSpeechWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14303,8 +15152,8 @@ func (c *ClientWithResponses) PostV1TextToSpeechWithBodyWithResponse(ctx context
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/text_to_speech (the `PostV1TextToSpeech` operationId).
-func (c *ClientWithResponses) PostV1TextToSpeechWithResponse(ctx context.Context, body PostV1TextToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToSpeechResponse, error) {
-	rsp, err := c.PostV1TextToSpeech(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1TextToSpeechWithResponse(ctx context.Context, params *PostV1TextToSpeechParams, body PostV1TextToSpeechJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToSpeechResponse, error) {
+	rsp, err := c.PostV1TextToSpeech(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14318,8 +15167,8 @@ func (c *ClientWithResponses) PostV1TextToSpeechWithResponse(ctx context.Context
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/text_to_video (the `PostV1TextToVideo` operationId).
-func (c *ClientWithResponses) PostV1TextToVideoWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToVideoResponse, error) {
-	rsp, err := c.PostV1TextToVideoWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1TextToVideoWithBodyWithResponse(ctx context.Context, params *PostV1TextToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1TextToVideoResponse, error) {
+	rsp, err := c.PostV1TextToVideoWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14333,8 +15182,8 @@ func (c *ClientWithResponses) PostV1TextToVideoWithBodyWithResponse(ctx context.
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/text_to_video (the `PostV1TextToVideo` operationId).
-func (c *ClientWithResponses) PostV1TextToVideoWithResponse(ctx context.Context, body PostV1TextToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToVideoResponse, error) {
-	rsp, err := c.PostV1TextToVideo(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1TextToVideoWithResponse(ctx context.Context, params *PostV1TextToVideoParams, body PostV1TextToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1TextToVideoResponse, error) {
+	rsp, err := c.PostV1TextToVideo(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14378,8 +15227,8 @@ func (c *ClientWithResponses) PostV1UploadsWithResponse(ctx context.Context, bod
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
-func (c *ClientWithResponses) PostV1VideoToAudioWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error) {
-	rsp, err := c.PostV1VideoToAudioWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VideoToAudioWithBodyWithResponse(ctx context.Context, params *PostV1VideoToAudioParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error) {
+	rsp, err := c.PostV1VideoToAudioWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14393,8 +15242,8 @@ func (c *ClientWithResponses) PostV1VideoToAudioWithBodyWithResponse(ctx context
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/video_to_audio (the `PostV1VideoToAudio` operationId).
-func (c *ClientWithResponses) PostV1VideoToAudioWithResponse(ctx context.Context, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error) {
-	rsp, err := c.PostV1VideoToAudio(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VideoToAudioWithResponse(ctx context.Context, params *PostV1VideoToAudioParams, body PostV1VideoToAudioJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToAudioResponse, error) {
+	rsp, err := c.PostV1VideoToAudio(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14408,8 +15257,8 @@ func (c *ClientWithResponses) PostV1VideoToAudioWithResponse(ctx context.Context
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/video_to_hdr (the `PostV1VideoToHdr` operationId).
-func (c *ClientWithResponses) PostV1VideoToHdrWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToHdrResponse, error) {
-	rsp, err := c.PostV1VideoToHdrWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VideoToHdrWithBodyWithResponse(ctx context.Context, params *PostV1VideoToHdrParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToHdrResponse, error) {
+	rsp, err := c.PostV1VideoToHdrWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14423,8 +15272,8 @@ func (c *ClientWithResponses) PostV1VideoToHdrWithBodyWithResponse(ctx context.C
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/video_to_hdr (the `PostV1VideoToHdr` operationId).
-func (c *ClientWithResponses) PostV1VideoToHdrWithResponse(ctx context.Context, body PostV1VideoToHdrJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToHdrResponse, error) {
-	rsp, err := c.PostV1VideoToHdr(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VideoToHdrWithResponse(ctx context.Context, params *PostV1VideoToHdrParams, body PostV1VideoToHdrJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToHdrResponse, error) {
+	rsp, err := c.PostV1VideoToHdr(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14438,8 +15287,8 @@ func (c *ClientWithResponses) PostV1VideoToHdrWithResponse(ctx context.Context, 
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/video_to_video (the `PostV1VideoToVideo` operationId).
-func (c *ClientWithResponses) PostV1VideoToVideoWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToVideoResponse, error) {
-	rsp, err := c.PostV1VideoToVideoWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VideoToVideoWithBodyWithResponse(ctx context.Context, params *PostV1VideoToVideoParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoToVideoResponse, error) {
+	rsp, err := c.PostV1VideoToVideoWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14453,8 +15302,8 @@ func (c *ClientWithResponses) PostV1VideoToVideoWithBodyWithResponse(ctx context
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/video_to_video (the `PostV1VideoToVideo` operationId).
-func (c *ClientWithResponses) PostV1VideoToVideoWithResponse(ctx context.Context, body PostV1VideoToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToVideoResponse, error) {
-	rsp, err := c.PostV1VideoToVideo(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VideoToVideoWithResponse(ctx context.Context, params *PostV1VideoToVideoParams, body PostV1VideoToVideoJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoToVideoResponse, error) {
+	rsp, err := c.PostV1VideoToVideo(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14468,8 +15317,8 @@ func (c *ClientWithResponses) PostV1VideoToVideoWithResponse(ctx context.Context
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/video_upscale (the `PostV1VideoUpscale` operationId).
-func (c *ClientWithResponses) PostV1VideoUpscaleWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoUpscaleResponse, error) {
-	rsp, err := c.PostV1VideoUpscaleWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VideoUpscaleWithBodyWithResponse(ctx context.Context, params *PostV1VideoUpscaleParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VideoUpscaleResponse, error) {
+	rsp, err := c.PostV1VideoUpscaleWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14483,8 +15332,8 @@ func (c *ClientWithResponses) PostV1VideoUpscaleWithBodyWithResponse(ctx context
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/video_upscale (the `PostV1VideoUpscale` operationId).
-func (c *ClientWithResponses) PostV1VideoUpscaleWithResponse(ctx context.Context, body PostV1VideoUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoUpscaleResponse, error) {
-	rsp, err := c.PostV1VideoUpscale(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VideoUpscaleWithResponse(ctx context.Context, params *PostV1VideoUpscaleParams, body PostV1VideoUpscaleJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VideoUpscaleResponse, error) {
+	rsp, err := c.PostV1VideoUpscale(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14498,8 +15347,8 @@ func (c *ClientWithResponses) PostV1VideoUpscaleWithResponse(ctx context.Context
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/voice_dubbing (the `PostV1VoiceDubbing` operationId).
-func (c *ClientWithResponses) PostV1VoiceDubbingWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoiceDubbingResponse, error) {
-	rsp, err := c.PostV1VoiceDubbingWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VoiceDubbingWithBodyWithResponse(ctx context.Context, params *PostV1VoiceDubbingParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoiceDubbingResponse, error) {
+	rsp, err := c.PostV1VoiceDubbingWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14513,8 +15362,8 @@ func (c *ClientWithResponses) PostV1VoiceDubbingWithBodyWithResponse(ctx context
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/voice_dubbing (the `PostV1VoiceDubbing` operationId).
-func (c *ClientWithResponses) PostV1VoiceDubbingWithResponse(ctx context.Context, body PostV1VoiceDubbingJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoiceDubbingResponse, error) {
-	rsp, err := c.PostV1VoiceDubbing(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VoiceDubbingWithResponse(ctx context.Context, params *PostV1VoiceDubbingParams, body PostV1VoiceDubbingJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoiceDubbingResponse, error) {
+	rsp, err := c.PostV1VoiceDubbing(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14528,8 +15377,8 @@ func (c *ClientWithResponses) PostV1VoiceDubbingWithResponse(ctx context.Context
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/voice_isolation (the `PostV1VoiceIsolation` operationId).
-func (c *ClientWithResponses) PostV1VoiceIsolationWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoiceIsolationResponse, error) {
-	rsp, err := c.PostV1VoiceIsolationWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VoiceIsolationWithBodyWithResponse(ctx context.Context, params *PostV1VoiceIsolationParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoiceIsolationResponse, error) {
+	rsp, err := c.PostV1VoiceIsolationWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14543,8 +15392,8 @@ func (c *ClientWithResponses) PostV1VoiceIsolationWithBodyWithResponse(ctx conte
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/voice_isolation (the `PostV1VoiceIsolation` operationId).
-func (c *ClientWithResponses) PostV1VoiceIsolationWithResponse(ctx context.Context, body PostV1VoiceIsolationJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoiceIsolationResponse, error) {
-	rsp, err := c.PostV1VoiceIsolation(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VoiceIsolationWithResponse(ctx context.Context, params *PostV1VoiceIsolationParams, body PostV1VoiceIsolationJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoiceIsolationResponse, error) {
+	rsp, err := c.PostV1VoiceIsolation(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14573,8 +15422,8 @@ func (c *ClientWithResponses) GetV1VoicesWithResponse(ctx context.Context, param
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/voices (the `PostV1Voices` operationId).
-func (c *ClientWithResponses) PostV1VoicesWithBodyWithResponse(ctx context.Context, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoicesResponse, error) {
-	rsp, err := c.PostV1VoicesWithBody(ctx, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VoicesWithBodyWithResponse(ctx context.Context, params *PostV1VoicesParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1VoicesResponse, error) {
+	rsp, err := c.PostV1VoicesWithBody(ctx, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14588,8 +15437,8 @@ func (c *ClientWithResponses) PostV1VoicesWithBodyWithResponse(ctx context.Conte
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/voices (the `PostV1Voices` operationId).
-func (c *ClientWithResponses) PostV1VoicesWithResponse(ctx context.Context, body PostV1VoicesJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoicesResponse, error) {
-	rsp, err := c.PostV1Voices(ctx, body, reqEditors...)
+func (c *ClientWithResponses) PostV1VoicesWithResponse(ctx context.Context, params *PostV1VoicesParams, body PostV1VoicesJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1VoicesResponse, error) {
+	rsp, err := c.PostV1Voices(ctx, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14738,8 +15587,8 @@ func (c *ClientWithResponses) GetV1WorkflowsIdWithResponse(ctx context.Context, 
 // Takes any type of body and a specified content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/workflows/{id} (the `PostV1WorkflowsId` operationId).
-func (c *ClientWithResponses) PostV1WorkflowsIdWithBodyWithResponse(ctx context.Context, id openapi_types.UUID, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1WorkflowsIdResponse, error) {
-	rsp, err := c.PostV1WorkflowsIdWithBody(ctx, id, contentType, body, reqEditors...)
+func (c *ClientWithResponses) PostV1WorkflowsIdWithBodyWithResponse(ctx context.Context, id openapi_types.UUID, params *PostV1WorkflowsIdParams, contentType string, body io.Reader, reqEditors ...RequestEditorFn) (*PostV1WorkflowsIdResponse, error) {
+	rsp, err := c.PostV1WorkflowsIdWithBody(ctx, id, params, contentType, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -14753,8 +15602,8 @@ func (c *ClientWithResponses) PostV1WorkflowsIdWithBodyWithResponse(ctx context.
 // Takes a body of the `application/json` content type, and returns a wrapper object for the known response body format(s).
 //
 // Corresponds with POST /v1/workflows/{id} (the `PostV1WorkflowsId` operationId).
-func (c *ClientWithResponses) PostV1WorkflowsIdWithResponse(ctx context.Context, id openapi_types.UUID, body PostV1WorkflowsIdJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1WorkflowsIdResponse, error) {
-	rsp, err := c.PostV1WorkflowsId(ctx, id, body, reqEditors...)
+func (c *ClientWithResponses) PostV1WorkflowsIdWithResponse(ctx context.Context, id openapi_types.UUID, params *PostV1WorkflowsIdParams, body PostV1WorkflowsIdJSONRequestBody, reqEditors ...RequestEditorFn) (*PostV1WorkflowsIdResponse, error) {
+	rsp, err := c.PostV1WorkflowsId(ctx, id, params, body, reqEditors...)
 	if err != nil {
 		return nil, err
 	}
@@ -15785,6 +16634,24 @@ func ParsePostV1OrganizationUsageResponse(rsp *http.Response) (*PostV1Organizati
 					ApiKeyId openapi_types.UUID `json:"apiKeyId"`
 				} `json:"usedCredits"`
 			} `json:"resultsByApiKey,omitempty"`
+
+			// ResultsByTag Credit usage broken down by tag, present when `groupBy` is set. With `groupBy: "tag"`, a generation with several tags counts toward each of them, so the buckets can add up to more than the total. With `groupBy: "tag:<key>"`, each generation counts once, under its `<key>:<value>` tag.
+			ResultsByTag *[]struct {
+				// Date The date of the usage data in ISO-8601 format (YYYY-MM-DD). All dates are in UTC.
+				Date openapi_types.Date `json:"date"`
+
+				// UsedCredits The credits used per tag for the date.
+				UsedCredits []struct {
+					// Amount The net number of credits spent under the tag. May be negative if refunds exceeded charges on this day.
+					Amount int `json:"amount"`
+
+					// Tag The tag that credits were spent under, or null for usage without a matching tag.
+					Tag *string `json:"tag"`
+				} `json:"usedCredits"`
+			} `json:"resultsByTag,omitempty"`
+
+			// Tags The tags on usage in the queried time range, sorted alphabetically, present when `tags` or `groupBy` is set. Lists at most the 1,000 tags with the most credits.
+			Tags *[]string `json:"tags,omitempty"`
 		}
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
@@ -15858,10 +16725,14 @@ func ParseGetV1OrganizationWebappAuditLogsResponse(rsp *http.Response) (*GetV1Or
 					AppStudioDeploy               *string                                                                          `json:"App Studio deploy,omitempty"`
 					AppStudioSession              *string                                                                          `json:"App Studio session,omitempty"`
 					Application                   *string                                                                          `json:"Application,omitempty"`
+					AssetID                       *string                                                                          `json:"Asset ID,omitempty"`
 					AssetName                     *string                                                                          `json:"Asset name,omitempty"`
 					AssetType                     *string                                                                          `json:"Asset type,omitempty"`
 					Automatic                     *bool                                                                            `json:"Automatic,omitempty"`
 					BrandKitID                    *string                                                                          `json:"Brand kit ID,omitempty"`
+					CampaignSetupID               *string                                                                          `json:"Campaign setup ID,omitempty"`
+					CampaignSetupType             *string                                                                          `json:"Campaign setup type,omitempty"`
+					CampaignSetupVersion          *float64                                                                         `json:"Campaign setup version,omitempty"`
 					CancelsAtPeriodEnd            *bool                                                                            `json:"Cancels at period end,omitempty"`
 					CommentID                     *string                                                                          `json:"Comment ID,omitempty"`
 					CommentTargetID               *string                                                                          `json:"Comment target ID,omitempty"`
@@ -15881,6 +16752,7 @@ func ParseGetV1OrganizationWebappAuditLogsResponse(rsp *http.Response) (*GetV1Or
 					Enabled                       *bool                                                                            `json:"Enabled,omitempty"`
 					ErrorCode                     *string                                                                          `json:"Error code,omitempty"`
 					Filename                      *string                                                                          `json:"Filename,omitempty"`
+					FilesMoved                    *float64                                                                         `json:"Files moved,omitempty"`
 					FromWorkspaceID               *float64                                                                         `json:"From workspace ID,omitempty"`
 					GroupName                     *string                                                                          `json:"Group name,omitempty"`
 					HardSpendCap                  *bool                                                                            `json:"Hard spend cap,omitempty"`
@@ -15912,14 +16784,18 @@ func ParseGetV1OrganizationWebappAuditLogsResponse(rsp *http.Response) (*GetV1Or
 					PreviousRole                  *string                                                                          `json:"Previous role,omitempty"`
 					PreviousText                  *string                                                                          `json:"Previous text,omitempty"`
 					PreviousValue                 *GetV1OrganizationWebappAuditLogs200JSONResponseBody_Data_Metadata_PreviousValue `json:"Previous value,omitempty"`
+					PreviouslySharedInProject     *string                                                                          `json:"Previously shared in project,omitempty"`
 					ProjectID                     *string                                                                          `json:"Project ID,omitempty"`
 					ProjectCreditCap              *float64                                                                         `json:"Project credit cap,omitempty"`
+					Promotion                     *string                                                                          `json:"Promotion,omitempty"`
 					Provider                      *string                                                                          `json:"Provider,omitempty"`
+					ReadOrWrite                   *string                                                                          `json:"Read or write,omitempty"`
 					Reason                        *string                                                                          `json:"Reason,omitempty"`
 					RechargeAmountUSDCents        *float64                                                                         `json:"Recharge amount (USD cents),omitempty"`
 					RechargeBelowCredits          *float64                                                                         `json:"Recharge below (credits),omitempty"`
 					RemovedMember                 *string                                                                          `json:"Removed member,omitempty"`
 					RequestedVia                  *[]string                                                                        `json:"Requested via,omitempty"`
+					Result                        *string                                                                          `json:"Result,omitempty"`
 					ResultMetricID                *string                                                                          `json:"Result metric ID,omitempty"`
 					ReviewDecision                *string                                                                          `json:"Review decision,omitempty"`
 					Role                          *string                                                                          `json:"Role,omitempty"`
@@ -15933,6 +16809,7 @@ func ParseGetV1OrganizationWebappAuditLogsResponse(rsp *http.Response) (*GetV1Or
 					Source                        *string                                                                          `json:"Source,omitempty"`
 					SourceApplication             *string                                                                          `json:"Source application,omitempty"`
 					SourceCategoryID              *string                                                                          `json:"Source category ID,omitempty"`
+					SourceVersionAssetID          *string                                                                          `json:"Source version asset ID,omitempty"`
 					SpendCap                      *float64                                                                         `json:"Spend cap,omitempty"`
 					SpendCapUSDCents              *float64                                                                         `json:"Spend cap (USD cents),omitempty"`
 					SpendCapChange                *float64                                                                         `json:"Spend cap change,omitempty"`
@@ -16044,10 +16921,14 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				AppStudioDeploy               *string                                                                            `json:"App Studio deploy,omitempty"`
 				AppStudioSession              *string                                                                            `json:"App Studio session,omitempty"`
 				Application                   *string                                                                            `json:"Application,omitempty"`
+				AssetID                       *string                                                                            `json:"Asset ID,omitempty"`
 				AssetName                     *string                                                                            `json:"Asset name,omitempty"`
 				AssetType                     *string                                                                            `json:"Asset type,omitempty"`
 				Automatic                     *bool                                                                              `json:"Automatic,omitempty"`
 				BrandKitID                    *string                                                                            `json:"Brand kit ID,omitempty"`
+				CampaignSetupID               *string                                                                            `json:"Campaign setup ID,omitempty"`
+				CampaignSetupType             *string                                                                            `json:"Campaign setup type,omitempty"`
+				CampaignSetupVersion          *float64                                                                           `json:"Campaign setup version,omitempty"`
 				CancelsAtPeriodEnd            *bool                                                                              `json:"Cancels at period end,omitempty"`
 				CommentID                     *string                                                                            `json:"Comment ID,omitempty"`
 				CommentTargetID               *string                                                                            `json:"Comment target ID,omitempty"`
@@ -16067,6 +16948,7 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				Enabled                       *bool                                                                              `json:"Enabled,omitempty"`
 				ErrorCode                     *string                                                                            `json:"Error code,omitempty"`
 				Filename                      *string                                                                            `json:"Filename,omitempty"`
+				FilesMoved                    *float64                                                                           `json:"Files moved,omitempty"`
 				FromWorkspaceID               *float64                                                                           `json:"From workspace ID,omitempty"`
 				GroupName                     *string                                                                            `json:"Group name,omitempty"`
 				HardSpendCap                  *bool                                                                              `json:"Hard spend cap,omitempty"`
@@ -16098,14 +16980,18 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				PreviousRole                  *string                                                                            `json:"Previous role,omitempty"`
 				PreviousText                  *string                                                                            `json:"Previous text,omitempty"`
 				PreviousValue                 *GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_PreviousValue `json:"Previous value,omitempty"`
+				PreviouslySharedInProject     *string                                                                            `json:"Previously shared in project,omitempty"`
 				ProjectID                     *string                                                                            `json:"Project ID,omitempty"`
 				ProjectCreditCap              *float64                                                                           `json:"Project credit cap,omitempty"`
+				Promotion                     *string                                                                            `json:"Promotion,omitempty"`
 				Provider                      *string                                                                            `json:"Provider,omitempty"`
+				ReadOrWrite                   *string                                                                            `json:"Read or write,omitempty"`
 				Reason                        *string                                                                            `json:"Reason,omitempty"`
 				RechargeAmountUSDCents        *float64                                                                           `json:"Recharge amount (USD cents),omitempty"`
 				RechargeBelowCredits          *float64                                                                           `json:"Recharge below (credits),omitempty"`
 				RemovedMember                 *string                                                                            `json:"Removed member,omitempty"`
 				RequestedVia                  *[]string                                                                          `json:"Requested via,omitempty"`
+				Result                        *string                                                                            `json:"Result,omitempty"`
 				ResultMetricID                *string                                                                            `json:"Result metric ID,omitempty"`
 				ReviewDecision                *string                                                                            `json:"Review decision,omitempty"`
 				Role                          *string                                                                            `json:"Role,omitempty"`
@@ -16119,6 +17005,7 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 				Source                        *string                                                                            `json:"Source,omitempty"`
 				SourceApplication             *string                                                                            `json:"Source application,omitempty"`
 				SourceCategoryID              *string                                                                            `json:"Source category ID,omitempty"`
+				SourceVersionAssetID          *string                                                                            `json:"Source version asset ID,omitempty"`
 				SpendCap                      *float64                                                                           `json:"Spend cap,omitempty"`
 				SpendCapUSDCents              *float64                                                                           `json:"Spend cap (USD cents),omitempty"`
 				SpendCapChange                *float64                                                                           `json:"Spend cap change,omitempty"`
@@ -16181,6 +17068,74 @@ func ParseGetV1OrganizationWebappAuditLogsEventIdResponse(rsp *http.Response) (*
 	return response, nil
 }
 
+// ParseGetV1OrganizationWebappMembersResponse parses an HTTP response from a GetV1OrganizationWebappMembersWithResponse call
+func ParseGetV1OrganizationWebappMembersResponse(rsp *http.Response) (*GetV1OrganizationWebappMembersResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetV1OrganizationWebappMembersResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest struct {
+			// Data The list of items for the current page.
+			Data []struct {
+				// DeactivationReason Why the membership is `deactivated`. `removed`: the member was removed from the workspace. `invite_ended`: the invite was declined or revoked, which are recorded the same way. `suspended`: the user is suspended. `null` unless `status` is `deactivated`.
+				DeactivationReason *GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason `json:"deactivationReason"`
+
+				// DeprovisionedAt Approximately when the member was removed, or the invite was declined or revoked: the membership's last change. `null` when the membership was not ended, including for a suspended user.
+				DeprovisionedAt *time.Time `json:"deprovisionedAt"`
+
+				// Email Email of the member, or the email the invite was sent to.
+				Email string `json:"email"`
+
+				// LastActiveDate Last UTC date the member used Runway, on the web or mobile app and in any workspace. `null` when they never accepted the invite or have no recorded activity.
+				LastActiveDate *openapi_types.Date `json:"lastActiveDate"`
+
+				// MembershipId Unique ID of the membership. Stable across requests, so use it to update a member's row between pulls.
+				MembershipId int `json:"membershipId"`
+
+				// ProvisionedAt When the member was added, or when the invite was sent.
+				ProvisionedAt time.Time `json:"provisionedAt"`
+
+				// Role Role in the workspace. `non-generating-admin` is a Billing Admin.
+				Role GetV1OrganizationWebappMembers200JSONResponseBodyDataRole `json:"role"`
+
+				// Status `active`: a member of the workspace. `invited`: invited, and the invite is not accepted yet. `deactivated`: no longer a member; `deactivationReason` says why.
+				Status GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus `json:"status"`
+
+				// UserId ID of the member's Runway user. It doesn't change when their email does. `null` for an invite to an email with no Runway account yet.
+				UserId *int `json:"userId"`
+
+				// WorkspaceId ID of the workspace.
+				WorkspaceId int `json:"workspaceId"`
+
+				// WorkspaceName Name of the workspace.
+				WorkspaceName string `json:"workspaceName"`
+			} `json:"data"`
+
+			// HasMore Whether there are more items available after this page.
+			HasMore bool `json:"hasMore"`
+
+			// NextCursor Cursor to use for fetching the next page, or null if there are no more pages.
+			NextCursor *string `json:"nextCursor"`
+		}
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
 // ParseGetV1OrganizationWebappUsageResponse parses an HTTP response from a GetV1OrganizationWebappUsageWithResponse call
 func ParseGetV1OrganizationWebappUsageResponse(rsp *http.Response) (*GetV1OrganizationWebappUsageResponse, error) {
 	bodyBytes, err := io.ReadAll(rsp.Body)
@@ -16210,6 +17165,12 @@ func ParseGetV1OrganizationWebappUsageResponse(rsp *http.Response) (*GetV1Organi
 
 				// OutputType Media type of the generation's output: one of the listed values, which won't be remapped. Agent sandbox sessions report `file`. `null` when `taskId` is null, the generation no longer exists, or the type wasn't recorded.
 				OutputType *GetV1OrganizationWebappUsage200JSONResponseBodyDataOutputType `json:"outputType"`
+
+				// ProjectId ID of the Runway web app project the generation was made in (not this API project). `null` when no project is recorded for it, which includes generations made outside a project, generations made before project tracking was rolled out (late May to mid-August 2026), and rows with a null `taskId`.
+				ProjectId *openapi_types.UUID `json:"projectId"`
+
+				// ProjectName Current name of that project, so it changes when the project is renamed (group by `projectId`). Still returned after the project is archived or deleted. `null` when `projectId` is null.
+				ProjectName *string `json:"projectName"`
 
 				// Status Current status of the generation when you request it, so it can change between pulls (upsert on `transactionId`). A refund row doesn't mean the generation failed. `null` when `taskId` is null or the generation no longer exists.
 				Status *GetV1OrganizationWebappUsage200JSONResponseBodyDataStatus `json:"status"`
@@ -16810,10 +17771,11 @@ func ParseGetV1RoutersResponse(rsp *http.Response) (*GetV1RoutersResponse, error
 					MaxCreditsPerGeneration *struct {
 						Audio *int `json:"audio,omitempty"`
 						Image *int `json:"image,omitempty"`
+						Mesh  *int `json:"mesh,omitempty"`
 						Video *int `json:"video,omitempty"`
 					} `json:"maxCreditsPerGeneration,omitempty"`
 
-					// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+					// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 					Models *struct {
 						Ids  []string                                              `json:"ids"`
 						Mode GetV1Routers200JSONResponseBodyDataSettingsModelsMode `json:"mode"`
@@ -16890,10 +17852,11 @@ func ParsePostV1RoutersResponse(rsp *http.Response) (*PostV1RoutersResponse, err
 				MaxCreditsPerGeneration *struct {
 					Audio *int `json:"audio,omitempty"`
 					Image *int `json:"image,omitempty"`
+					Mesh  *int `json:"mesh,omitempty"`
 					Video *int `json:"video,omitempty"`
 				} `json:"maxCreditsPerGeneration,omitempty"`
 
-				// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+				// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 				Models *struct {
 					Ids  []string                                           `json:"ids"`
 					Mode PostV1Routers200JSONResponseBodySettingsModelsMode `json:"mode"`
@@ -16979,10 +17942,11 @@ func ParseGetV1RoutersIdResponse(rsp *http.Response) (*GetV1RoutersIdResponse, e
 				MaxCreditsPerGeneration *struct {
 					Audio *int `json:"audio,omitempty"`
 					Image *int `json:"image,omitempty"`
+					Mesh  *int `json:"mesh,omitempty"`
 					Video *int `json:"video,omitempty"`
 				} `json:"maxCreditsPerGeneration,omitempty"`
 
-				// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+				// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 				Models *struct {
 					Ids  []string                                            `json:"ids"`
 					Mode GetV1RoutersId200JSONResponseBodySettingsModelsMode `json:"mode"`
@@ -17052,10 +18016,11 @@ func ParsePatchV1RoutersIdResponse(rsp *http.Response) (*PatchV1RoutersIdRespons
 				MaxCreditsPerGeneration *struct {
 					Audio *int `json:"audio,omitempty"`
 					Image *int `json:"image,omitempty"`
+					Mesh  *int `json:"mesh,omitempty"`
 					Video *int `json:"video,omitempty"`
 				} `json:"maxCreditsPerGeneration,omitempty"`
 
-				// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+				// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 				Models *struct {
 					Ids  []string                                              `json:"ids"`
 					Mode PatchV1RoutersId200JSONResponseBodySettingsModelsMode `json:"mode"`

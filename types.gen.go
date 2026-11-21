@@ -2921,13 +2921,13 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason16.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason16ASSETMISSING PostV1CharacterPerformance400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1CharacterPerformance400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1CharacterPerformance400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason16 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1CharacterPerformance400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -2936,13 +2936,13 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason17.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason17ASSETINVALID PostV1CharacterPerformance400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1CharacterPerformance400JSONResponseBodyReason17ASSETMISSING PostV1CharacterPerformance400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason17 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1CharacterPerformance400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -2951,13 +2951,13 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason18.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1CharacterPerformance400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1CharacterPerformance400JSONResponseBodyReason18ASSETINVALID PostV1CharacterPerformance400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason18 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1CharacterPerformance400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -2966,13 +2966,13 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason19.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1CharacterPerformance400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1CharacterPerformance400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1CharacterPerformance400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason19 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1CharacterPerformance400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -2981,13 +2981,13 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason20.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1CharacterPerformance400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1CharacterPerformance400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1CharacterPerformance400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason20 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1CharacterPerformance400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -2996,13 +2996,13 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason21.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason21FORBIDDEN PostV1CharacterPerformance400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1CharacterPerformance400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1CharacterPerformance400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason21 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1CharacterPerformance400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -3011,28 +3011,28 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason22.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason22QUOTA PostV1CharacterPerformance400JSONResponseBodyReason22 = "QUOTA"
+	PostV1CharacterPerformance400JSONResponseBodyReason22FORBIDDEN PostV1CharacterPerformance400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason22 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason22QUOTA:
+	case PostV1CharacterPerformance400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1CharacterPerformance400JSONResponseBodyReason24.
+// Defines values for PostV1CharacterPerformance400JSONResponseBodyReason23.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason24INTERNALTIMEOUT PostV1CharacterPerformance400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1CharacterPerformance400JSONResponseBodyReason23QUOTA PostV1CharacterPerformance400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason24 enum.
-func (e PostV1CharacterPerformance400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason23 enum.
+func (e PostV1CharacterPerformance400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1CharacterPerformance400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -3041,13 +3041,13 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason25.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1CharacterPerformance400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1CharacterPerformance400JSONResponseBodyReason25INTERNALTIMEOUT PostV1CharacterPerformance400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason25 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1CharacterPerformance400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -3056,13 +3056,13 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason26.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason26INTERNALRESOURCES PostV1CharacterPerformance400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1CharacterPerformance400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1CharacterPerformance400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason26 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1CharacterPerformance400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -3071,13 +3071,13 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason27.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason27INTERNAL PostV1CharacterPerformance400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1CharacterPerformance400JSONResponseBodyReason27INTERNALRESOURCES PostV1CharacterPerformance400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason27 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason27INTERNAL:
+	case PostV1CharacterPerformance400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -3086,13 +3086,28 @@ func (e PostV1CharacterPerformance400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1CharacterPerformance400JSONResponseBodyReason28.
 const (
-	PostV1CharacterPerformance400JSONResponseBodyReason28UNKNOWN PostV1CharacterPerformance400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1CharacterPerformance400JSONResponseBodyReason28INTERNAL PostV1CharacterPerformance400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason28 enum.
 func (e PostV1CharacterPerformance400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1CharacterPerformance400JSONResponseBodyReason28UNKNOWN:
+	case PostV1CharacterPerformance400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1CharacterPerformance400JSONResponseBodyReason29.
+const (
+	PostV1CharacterPerformance400JSONResponseBodyReason29UNKNOWN PostV1CharacterPerformance400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1CharacterPerformance400JSONResponseBodyReason29 enum.
+func (e PostV1CharacterPerformance400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1CharacterPerformance400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -4424,13 +4439,13 @@ func (e PostV1ImageToVector400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason16.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason16ASSETMISSING PostV1ImageToVector400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1ImageToVector400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1ImageToVector400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason16 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1ImageToVector400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -4439,13 +4454,13 @@ func (e PostV1ImageToVector400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason17.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason17ASSETINVALID PostV1ImageToVector400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1ImageToVector400JSONResponseBodyReason17ASSETMISSING PostV1ImageToVector400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason17 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1ImageToVector400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -4454,13 +4469,13 @@ func (e PostV1ImageToVector400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason18.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1ImageToVector400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1ImageToVector400JSONResponseBodyReason18ASSETINVALID PostV1ImageToVector400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason18 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1ImageToVector400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -4469,13 +4484,13 @@ func (e PostV1ImageToVector400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason19.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1ImageToVector400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1ImageToVector400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1ImageToVector400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason19 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1ImageToVector400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -4484,13 +4499,13 @@ func (e PostV1ImageToVector400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason20.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1ImageToVector400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1ImageToVector400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1ImageToVector400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason20 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1ImageToVector400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -4499,13 +4514,13 @@ func (e PostV1ImageToVector400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason21.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason21FORBIDDEN PostV1ImageToVector400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1ImageToVector400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1ImageToVector400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason21 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1ImageToVector400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -4514,28 +4529,28 @@ func (e PostV1ImageToVector400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason22.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason22QUOTA PostV1ImageToVector400JSONResponseBodyReason22 = "QUOTA"
+	PostV1ImageToVector400JSONResponseBodyReason22FORBIDDEN PostV1ImageToVector400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason22 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason22QUOTA:
+	case PostV1ImageToVector400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1ImageToVector400JSONResponseBodyReason24.
+// Defines values for PostV1ImageToVector400JSONResponseBodyReason23.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason24INTERNALTIMEOUT PostV1ImageToVector400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1ImageToVector400JSONResponseBodyReason23QUOTA PostV1ImageToVector400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason24 enum.
-func (e PostV1ImageToVector400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason23 enum.
+func (e PostV1ImageToVector400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1ImageToVector400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -4544,13 +4559,13 @@ func (e PostV1ImageToVector400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason25.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1ImageToVector400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1ImageToVector400JSONResponseBodyReason25INTERNALTIMEOUT PostV1ImageToVector400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason25 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1ImageToVector400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -4559,13 +4574,13 @@ func (e PostV1ImageToVector400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason26.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason26INTERNALRESOURCES PostV1ImageToVector400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1ImageToVector400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1ImageToVector400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason26 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1ImageToVector400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -4574,13 +4589,13 @@ func (e PostV1ImageToVector400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason27.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason27INTERNAL PostV1ImageToVector400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1ImageToVector400JSONResponseBodyReason27INTERNALRESOURCES PostV1ImageToVector400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason27 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason27INTERNAL:
+	case PostV1ImageToVector400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -4589,13 +4604,28 @@ func (e PostV1ImageToVector400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1ImageToVector400JSONResponseBodyReason28.
 const (
-	PostV1ImageToVector400JSONResponseBodyReason28UNKNOWN PostV1ImageToVector400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1ImageToVector400JSONResponseBodyReason28INTERNAL PostV1ImageToVector400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason28 enum.
 func (e PostV1ImageToVector400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1ImageToVector400JSONResponseBodyReason28UNKNOWN:
+	case PostV1ImageToVector400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVector400JSONResponseBodyReason29.
+const (
+	PostV1ImageToVector400JSONResponseBodyReason29UNKNOWN PostV1ImageToVector400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVector400JSONResponseBodyReason29 enum.
+func (e PostV1ImageToVector400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1ImageToVector400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -7176,6 +7206,135 @@ func (e PostV1ImageToVideoJSONBody28Resolution) Valid() bool {
 	}
 }
 
+// Defines values for PostV1ImageToVideoJSONBody29Duration1.
+const (
+	PostV1ImageToVideoJSONBody29Duration1Auto PostV1ImageToVideoJSONBody29Duration1 = "auto"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody29Duration1 enum.
+func (e PostV1ImageToVideoJSONBody29Duration1) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody29Duration1Auto:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody29Model.
+const (
+	PostV1ImageToVideoJSONBody29ModelSeedance25Flash PostV1ImageToVideoJSONBody29Model = "seedance2_5_flash"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody29Model enum.
+func (e PostV1ImageToVideoJSONBody29Model) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody29ModelSeedance25Flash:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody29OutputFormat.
+const (
+	PostV1ImageToVideoJSONBody29OutputFormatMov PostV1ImageToVideoJSONBody29OutputFormat = "mov"
+	PostV1ImageToVideoJSONBody29OutputFormatMp4 PostV1ImageToVideoJSONBody29OutputFormat = "mp4"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody29OutputFormat enum.
+func (e PostV1ImageToVideoJSONBody29OutputFormat) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody29OutputFormatMov:
+		return true
+	case PostV1ImageToVideoJSONBody29OutputFormatMp4:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody29PromptImage1Position.
+const (
+	PostV1ImageToVideoJSONBody29PromptImage1PositionFirst PostV1ImageToVideoJSONBody29PromptImage1Position = "first"
+	PostV1ImageToVideoJSONBody29PromptImage1PositionLast  PostV1ImageToVideoJSONBody29PromptImage1Position = "last"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody29PromptImage1Position enum.
+func (e PostV1ImageToVideoJSONBody29PromptImage1Position) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody29PromptImage1PositionFirst:
+		return true
+	case PostV1ImageToVideoJSONBody29PromptImage1PositionLast:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody29Ratio.
+const (
+	PostV1ImageToVideoJSONBody29RatioN1112834 PostV1ImageToVideoJSONBody29Ratio = "1112:834"
+	PostV1ImageToVideoJSONBody29RatioN1280720 PostV1ImageToVideoJSONBody29Ratio = "1280:720"
+	PostV1ImageToVideoJSONBody29RatioN1470630 PostV1ImageToVideoJSONBody29Ratio = "1470:630"
+	PostV1ImageToVideoJSONBody29RatioN480854  PostV1ImageToVideoJSONBody29Ratio = "480:854"
+	PostV1ImageToVideoJSONBody29RatioN560752  PostV1ImageToVideoJSONBody29Ratio = "560:752"
+	PostV1ImageToVideoJSONBody29RatioN640640  PostV1ImageToVideoJSONBody29Ratio = "640:640"
+	PostV1ImageToVideoJSONBody29RatioN7201280 PostV1ImageToVideoJSONBody29Ratio = "720:1280"
+	PostV1ImageToVideoJSONBody29RatioN752560  PostV1ImageToVideoJSONBody29Ratio = "752:560"
+	PostV1ImageToVideoJSONBody29RatioN8341112 PostV1ImageToVideoJSONBody29Ratio = "834:1112"
+	PostV1ImageToVideoJSONBody29RatioN854480  PostV1ImageToVideoJSONBody29Ratio = "854:480"
+	PostV1ImageToVideoJSONBody29RatioN960960  PostV1ImageToVideoJSONBody29Ratio = "960:960"
+	PostV1ImageToVideoJSONBody29RatioN992432  PostV1ImageToVideoJSONBody29Ratio = "992:432"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody29Ratio enum.
+func (e PostV1ImageToVideoJSONBody29Ratio) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody29RatioN1112834:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN1280720:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN1470630:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN480854:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN560752:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN640640:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN7201280:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN752560:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN8341112:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN854480:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN960960:
+		return true
+	case PostV1ImageToVideoJSONBody29RatioN992432:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideoJSONBody29ReferenceAudioType.
+const (
+	PostV1ImageToVideoJSONBody29ReferenceAudioTypeAudio PostV1ImageToVideoJSONBody29ReferenceAudioType = "audio"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideoJSONBody29ReferenceAudioType enum.
+func (e PostV1ImageToVideoJSONBody29ReferenceAudioType) Valid() bool {
+	switch e {
+	case PostV1ImageToVideoJSONBody29ReferenceAudioTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason1.
 const (
 	PostV1ImageToVideo400JSONResponseBodyReason1SAFETYINPUTPUBLICFIGURE PostV1ImageToVideo400JSONResponseBodyReason1 = "SAFETY.INPUT.PUBLIC_FIGURE"
@@ -7373,13 +7532,13 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason16.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason16ASSETMISSING PostV1ImageToVideo400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1ImageToVideo400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1ImageToVideo400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason16 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1ImageToVideo400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -7388,13 +7547,13 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason17.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason17ASSETINVALID PostV1ImageToVideo400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1ImageToVideo400JSONResponseBodyReason17ASSETMISSING PostV1ImageToVideo400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason17 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1ImageToVideo400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -7403,13 +7562,13 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason18.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1ImageToVideo400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1ImageToVideo400JSONResponseBodyReason18ASSETINVALID PostV1ImageToVideo400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason18 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1ImageToVideo400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -7418,13 +7577,13 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason19.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1ImageToVideo400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1ImageToVideo400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1ImageToVideo400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason19 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1ImageToVideo400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -7433,13 +7592,13 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason20.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1ImageToVideo400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1ImageToVideo400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1ImageToVideo400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason20 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1ImageToVideo400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -7448,13 +7607,13 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason21.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason21FORBIDDEN PostV1ImageToVideo400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1ImageToVideo400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1ImageToVideo400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason21 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1ImageToVideo400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -7463,28 +7622,28 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason22.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason22QUOTA PostV1ImageToVideo400JSONResponseBodyReason22 = "QUOTA"
+	PostV1ImageToVideo400JSONResponseBodyReason22FORBIDDEN PostV1ImageToVideo400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason22 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason22QUOTA:
+	case PostV1ImageToVideo400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1ImageToVideo400JSONResponseBodyReason24.
+// Defines values for PostV1ImageToVideo400JSONResponseBodyReason23.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason24INTERNALTIMEOUT PostV1ImageToVideo400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1ImageToVideo400JSONResponseBodyReason23QUOTA PostV1ImageToVideo400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason24 enum.
-func (e PostV1ImageToVideo400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason23 enum.
+func (e PostV1ImageToVideo400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1ImageToVideo400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -7493,13 +7652,13 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason25.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1ImageToVideo400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1ImageToVideo400JSONResponseBodyReason25INTERNALTIMEOUT PostV1ImageToVideo400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason25 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1ImageToVideo400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -7508,13 +7667,13 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason26.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason26INTERNALRESOURCES PostV1ImageToVideo400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1ImageToVideo400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1ImageToVideo400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason26 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1ImageToVideo400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -7523,13 +7682,13 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason27.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason27INTERNAL PostV1ImageToVideo400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1ImageToVideo400JSONResponseBodyReason27INTERNALRESOURCES PostV1ImageToVideo400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason27 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason27INTERNAL:
+	case PostV1ImageToVideo400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -7538,13 +7697,28 @@ func (e PostV1ImageToVideo400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1ImageToVideo400JSONResponseBodyReason28.
 const (
-	PostV1ImageToVideo400JSONResponseBodyReason28UNKNOWN PostV1ImageToVideo400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1ImageToVideo400JSONResponseBodyReason28INTERNAL PostV1ImageToVideo400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason28 enum.
 func (e PostV1ImageToVideo400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1ImageToVideo400JSONResponseBodyReason28UNKNOWN:
+	case PostV1ImageToVideo400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageToVideo400JSONResponseBodyReason29.
+const (
+	PostV1ImageToVideo400JSONResponseBodyReason29UNKNOWN PostV1ImageToVideo400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageToVideo400JSONResponseBodyReason29 enum.
+func (e PostV1ImageToVideo400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1ImageToVideo400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -7808,13 +7982,13 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason16.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason16ASSETMISSING PostV1ImageUpscale400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1ImageUpscale400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1ImageUpscale400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason16 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1ImageUpscale400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -7823,13 +7997,13 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason17.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason17ASSETINVALID PostV1ImageUpscale400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1ImageUpscale400JSONResponseBodyReason17ASSETMISSING PostV1ImageUpscale400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason17 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1ImageUpscale400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -7838,13 +8012,13 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason18.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1ImageUpscale400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1ImageUpscale400JSONResponseBodyReason18ASSETINVALID PostV1ImageUpscale400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason18 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1ImageUpscale400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -7853,13 +8027,13 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason19.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1ImageUpscale400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1ImageUpscale400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1ImageUpscale400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason19 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1ImageUpscale400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -7868,13 +8042,13 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason20.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1ImageUpscale400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1ImageUpscale400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1ImageUpscale400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason20 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1ImageUpscale400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -7883,13 +8057,13 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason21.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason21FORBIDDEN PostV1ImageUpscale400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1ImageUpscale400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1ImageUpscale400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason21 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1ImageUpscale400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -7898,28 +8072,28 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason22.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason22QUOTA PostV1ImageUpscale400JSONResponseBodyReason22 = "QUOTA"
+	PostV1ImageUpscale400JSONResponseBodyReason22FORBIDDEN PostV1ImageUpscale400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason22 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason22QUOTA:
+	case PostV1ImageUpscale400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1ImageUpscale400JSONResponseBodyReason24.
+// Defines values for PostV1ImageUpscale400JSONResponseBodyReason23.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason24INTERNALTIMEOUT PostV1ImageUpscale400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1ImageUpscale400JSONResponseBodyReason23QUOTA PostV1ImageUpscale400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason24 enum.
-func (e PostV1ImageUpscale400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason23 enum.
+func (e PostV1ImageUpscale400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1ImageUpscale400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -7928,13 +8102,13 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason25.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1ImageUpscale400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1ImageUpscale400JSONResponseBodyReason25INTERNALTIMEOUT PostV1ImageUpscale400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason25 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1ImageUpscale400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -7943,13 +8117,13 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason26.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason26INTERNALRESOURCES PostV1ImageUpscale400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1ImageUpscale400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1ImageUpscale400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason26 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1ImageUpscale400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -7958,13 +8132,13 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason27.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason27INTERNAL PostV1ImageUpscale400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1ImageUpscale400JSONResponseBodyReason27INTERNALRESOURCES PostV1ImageUpscale400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason27 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason27INTERNAL:
+	case PostV1ImageUpscale400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -7973,13 +8147,28 @@ func (e PostV1ImageUpscale400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1ImageUpscale400JSONResponseBodyReason28.
 const (
-	PostV1ImageUpscale400JSONResponseBodyReason28UNKNOWN PostV1ImageUpscale400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1ImageUpscale400JSONResponseBodyReason28INTERNAL PostV1ImageUpscale400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason28 enum.
 func (e PostV1ImageUpscale400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1ImageUpscale400JSONResponseBodyReason28UNKNOWN:
+	case PostV1ImageUpscale400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1ImageUpscale400JSONResponseBodyReason29.
+const (
+	PostV1ImageUpscale400JSONResponseBodyReason29UNKNOWN PostV1ImageUpscale400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1ImageUpscale400JSONResponseBodyReason29 enum.
+func (e PostV1ImageUpscale400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1ImageUpscale400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -8049,6 +8238,7 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyModelsMagnificPrecisionUpscalerV2   PostV1OrganizationUsage200JSONResponseBodyModels = "magnific_precision_upscaler_v2"
 	PostV1OrganizationUsage200JSONResponseBodyModelsMagnificVideoUpscalerCreative PostV1OrganizationUsage200JSONResponseBodyModels = "magnific_video_upscaler_creative"
 	PostV1OrganizationUsage200JSONResponseBodyModelsMarketingStockImage           PostV1OrganizationUsage200JSONResponseBodyModels = "marketing_stock_image"
+	PostV1OrganizationUsage200JSONResponseBodyModelsMinimaxH3Image                PostV1OrganizationUsage200JSONResponseBodyModels = "minimax_h3_image"
 	PostV1OrganizationUsage200JSONResponseBodyModelsMireloSfx20                   PostV1OrganizationUsage200JSONResponseBodyModels = "mirelo_sfx_2_0"
 	PostV1OrganizationUsage200JSONResponseBodyModelsMultiShotVideo                PostV1OrganizationUsage200JSONResponseBodyModels = "multi_shot_video"
 	PostV1OrganizationUsage200JSONResponseBodyModelsMuseImage                     PostV1OrganizationUsage200JSONResponseBodyModels = "muse_image"
@@ -8063,8 +8253,11 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedAudio                     PostV1OrganizationUsage200JSONResponseBodyModels = "seed_audio"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedance2                     PostV1OrganizationUsage200JSONResponseBodyModels = "seedance2"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedance25                    PostV1OrganizationUsage200JSONResponseBodyModels = "seedance2_5"
+	PostV1OrganizationUsage200JSONResponseBodyModelsSeedance25Flash               PostV1OrganizationUsage200JSONResponseBodyModels = "seedance2_5_flash"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedance2Fast                 PostV1OrganizationUsage200JSONResponseBodyModels = "seedance2_fast"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedance2Mini                 PostV1OrganizationUsage200JSONResponseBodyModels = "seedance2_mini"
+	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream55                    PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5.5"
+	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream55Layers              PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5.5_layers"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Flash                PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5_flash"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Lite                 PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5_lite"
 	PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Pro                  PostV1OrganizationUsage200JSONResponseBodyModels = "seedream5_pro"
@@ -8202,6 +8395,8 @@ func (e PostV1OrganizationUsage200JSONResponseBodyModels) Valid() bool {
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsMarketingStockImage:
 		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsMinimaxH3Image:
+		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsMireloSfx20:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsMultiShotVideo:
@@ -8230,9 +8425,15 @@ func (e PostV1OrganizationUsage200JSONResponseBodyModels) Valid() bool {
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedance25:
 		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedance25Flash:
+		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedance2Fast:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedance2Mini:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedream55:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedream55Layers:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyModelsSeedream5Flash:
 		return true
@@ -8322,6 +8523,7 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMagnificPrecisionUpscalerV2   PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "magnific_precision_upscaler_v2"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMagnificVideoUpscalerCreative PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "magnific_video_upscaler_creative"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMarketingStockImage           PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "marketing_stock_image"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMinimaxH3Image                PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "minimax_h3_image"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMireloSfx20                   PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "mirelo_sfx_2_0"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMultiShotVideo                PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "multi_shot_video"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMuseImage                     PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "muse_image"
@@ -8336,8 +8538,11 @@ const (
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedAudio                     PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seed_audio"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance2                     PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedance2"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance25                    PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedance2_5"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance25Flash               PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedance2_5_flash"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance2Fast                 PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedance2_fast"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance2Mini                 PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedance2_mini"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream55                    PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5.5"
+	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream55Layers              PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5.5_layers"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Flash                PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5_flash"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Lite                 PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5_lite"
 	PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Pro                  PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel = "seedream5_pro"
@@ -8475,6 +8680,8 @@ func (e PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel) Valid
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMarketingStockImage:
 		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMinimaxH3Image:
+		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMireloSfx20:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelMultiShotVideo:
@@ -8503,9 +8710,15 @@ func (e PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModel) Valid
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance25:
 		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance25Flash:
+		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance2Fast:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedance2Mini:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream55:
+		return true
+	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream55Layers:
 		return true
 	case PostV1OrganizationUsage200JSONResponseBodyResultsUsedCreditsModelSeedream5Flash:
 		return true
@@ -8538,6 +8751,11 @@ const (
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAccountLinkDeleted                         GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AccountLinkDeleted"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdAccountSelectionUpdated                  GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdAccountSelectionUpdated"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdAccountSyncRequested                     GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdAccountSyncRequested"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCampaignSetupCancelled                   GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCampaignSetupCancelled"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCampaignSetupConfirmed                   GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCampaignSetupConfirmed"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCampaignSetupDiscarded                   GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCampaignSetupDiscarded"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCampaignSetupDrafted                     GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCampaignSetupDrafted"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCampaignSetupRetried                     GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdCampaignSetupRetried"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdConnectionAuthorizationStarted           GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdConnectionAuthorizationStarted"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdConnectionConnected                      GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdConnectionConnected"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdConnectionDisconnected                   GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdConnectionDisconnected"
@@ -8552,6 +8770,11 @@ const (
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdPublishBatchRetried                      GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdPublishBatchRetried"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdStatusChanged                            GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdStatusChanged"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdWorkspaceOnboardingUpdated               GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AdWorkspaceOnboardingUpdated"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentArtifactCommentCreated                GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AgentArtifactCommentCreated"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentArtifactCreated                       GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AgentArtifactCreated"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentArtifactSessionAttached               GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AgentArtifactSessionAttached"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentArtifactSessionDetached               GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AgentArtifactSessionDetached"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentArtifactVersionSaved                  GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AgentArtifactVersionSaved"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentConnectorAssetExported                GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AgentConnectorAssetExported"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentConnectorConnected                    GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AgentConnectorConnected"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentConnectorDisconnected                 GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AgentConnectorDisconnected"
@@ -8574,6 +8797,12 @@ const (
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioAppRunwayAccessRevoked            GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AppStudioAppRunwayAccessRevoked"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioAppSecretChanged                  GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AppStudioAppSecretChanged"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioAppVisibilityChanged              GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AppStudioAppVisibilityChanged"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorAppGranted               GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AppStudioConnectorAppGranted"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorAppRevoked               GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AppStudioConnectorAppRevoked"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorConnected                GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AppStudioConnectorConnected"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorDisconnected             GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AppStudioConnectorDisconnected"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorPolicyChanged            GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AppStudioConnectorPolicyChanged"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorToolCalled               GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AppStudioConnectorToolCalled"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAssetCreated                               GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AssetCreated"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAssetDeleted                               GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AssetDeleted"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAssetDownloaded                            GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "AssetDownloaded"
@@ -8618,12 +8847,14 @@ const (
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionPermissionGranted                          GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "PermissionGranted"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionPermissionRevoked                          GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "PermissionRevoked"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionPermissionUpdated                          GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "PermissionUpdated"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionPromotionCreditsGranted                    GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "PromotionCreditsGranted"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSSOConfigCreated                           GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "SSOConfigCreated"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSSODomainRegistrationCloned                GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "SSODomainRegistrationCloned"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSSOLogin                                   GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "SSOLogin"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSSOUserAutoAddedToTeam                     GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "SSOUserAutoAddedToTeam"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSSOUserProvisioned                         GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "SSOUserProvisioned"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSeatsTransferred                           GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "SeatsTransferred"
+	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSessionMadePrivateByAdmin                  GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "SessionMadePrivateByAdmin"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSessionShared                              GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "SessionShared"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSessionUnshared                            GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "SessionUnshared"
 	GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionStudioSessionOpened                        GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction = "StudioSessionOpened"
@@ -8666,6 +8897,16 @@ func (e GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction) Valid() b
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdAccountSyncRequested:
 		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCampaignSetupCancelled:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCampaignSetupConfirmed:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCampaignSetupDiscarded:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCampaignSetupDrafted:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdCampaignSetupRetried:
+		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdConnectionAuthorizationStarted:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdConnectionConnected:
@@ -8693,6 +8934,16 @@ func (e GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction) Valid() b
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdStatusChanged:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAdWorkspaceOnboardingUpdated:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentArtifactCommentCreated:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentArtifactCreated:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentArtifactSessionAttached:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentArtifactSessionDetached:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentArtifactVersionSaved:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAgentConnectorAssetExported:
 		return true
@@ -8737,6 +8988,18 @@ func (e GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction) Valid() b
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioAppSecretChanged:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioAppVisibilityChanged:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorAppGranted:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorAppRevoked:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorConnected:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorDisconnected:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorPolicyChanged:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAppStudioConnectorToolCalled:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionAssetCreated:
 		return true
@@ -8826,6 +9089,8 @@ func (e GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction) Valid() b
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionPermissionUpdated:
 		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionPromotionCreditsGranted:
+		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSSOConfigCreated:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSSODomainRegistrationCloned:
@@ -8837,6 +9102,8 @@ func (e GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataAction) Valid() b
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSSOUserProvisioned:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSeatsTransferred:
+		return true
+	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSessionMadePrivateByAdmin:
 		return true
 	case GetV1OrganizationWebappAuditLogs200JSONResponseBodyDataActionSessionShared:
 		return true
@@ -8907,6 +9174,11 @@ const (
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAccountLinkDeleted                         GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AccountLinkDeleted"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdAccountSelectionUpdated                  GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdAccountSelectionUpdated"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdAccountSyncRequested                     GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdAccountSyncRequested"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCampaignSetupCancelled                   GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCampaignSetupCancelled"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCampaignSetupConfirmed                   GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCampaignSetupConfirmed"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCampaignSetupDiscarded                   GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCampaignSetupDiscarded"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCampaignSetupDrafted                     GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCampaignSetupDrafted"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCampaignSetupRetried                     GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdCampaignSetupRetried"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdConnectionAuthorizationStarted           GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdConnectionAuthorizationStarted"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdConnectionConnected                      GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdConnectionConnected"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdConnectionDisconnected                   GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdConnectionDisconnected"
@@ -8921,6 +9193,11 @@ const (
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdPublishBatchRetried                      GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdPublishBatchRetried"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdStatusChanged                            GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdStatusChanged"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdWorkspaceOnboardingUpdated               GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AdWorkspaceOnboardingUpdated"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentArtifactCommentCreated                GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AgentArtifactCommentCreated"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentArtifactCreated                       GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AgentArtifactCreated"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentArtifactSessionAttached               GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AgentArtifactSessionAttached"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentArtifactSessionDetached               GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AgentArtifactSessionDetached"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentArtifactVersionSaved                  GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AgentArtifactVersionSaved"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentConnectorAssetExported                GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AgentConnectorAssetExported"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentConnectorConnected                    GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AgentConnectorConnected"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentConnectorDisconnected                 GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AgentConnectorDisconnected"
@@ -8943,6 +9220,12 @@ const (
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioAppRunwayAccessRevoked            GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AppStudioAppRunwayAccessRevoked"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioAppSecretChanged                  GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AppStudioAppSecretChanged"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioAppVisibilityChanged              GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AppStudioAppVisibilityChanged"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorAppGranted               GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AppStudioConnectorAppGranted"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorAppRevoked               GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AppStudioConnectorAppRevoked"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorConnected                GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AppStudioConnectorConnected"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorDisconnected             GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AppStudioConnectorDisconnected"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorPolicyChanged            GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AppStudioConnectorPolicyChanged"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorToolCalled               GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AppStudioConnectorToolCalled"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAssetCreated                               GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AssetCreated"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAssetDeleted                               GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AssetDeleted"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAssetDownloaded                            GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "AssetDownloaded"
@@ -8987,12 +9270,14 @@ const (
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionPermissionGranted                          GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "PermissionGranted"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionPermissionRevoked                          GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "PermissionRevoked"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionPermissionUpdated                          GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "PermissionUpdated"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionPromotionCreditsGranted                    GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "PromotionCreditsGranted"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSSOConfigCreated                           GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "SSOConfigCreated"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSSODomainRegistrationCloned                GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "SSODomainRegistrationCloned"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSSOLogin                                   GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "SSOLogin"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSSOUserAutoAddedToTeam                     GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "SSOUserAutoAddedToTeam"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSSOUserProvisioned                         GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "SSOUserProvisioned"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSeatsTransferred                           GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "SeatsTransferred"
+	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSessionMadePrivateByAdmin                  GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "SessionMadePrivateByAdmin"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSessionShared                              GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "SessionShared"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSessionUnshared                            GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "SessionUnshared"
 	GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionStudioSessionOpened                        GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction = "StudioSessionOpened"
@@ -9035,6 +9320,16 @@ func (e GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction) Valid(
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdAccountSyncRequested:
 		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCampaignSetupCancelled:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCampaignSetupConfirmed:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCampaignSetupDiscarded:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCampaignSetupDrafted:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdCampaignSetupRetried:
+		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdConnectionAuthorizationStarted:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdConnectionConnected:
@@ -9062,6 +9357,16 @@ func (e GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction) Valid(
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdStatusChanged:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAdWorkspaceOnboardingUpdated:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentArtifactCommentCreated:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentArtifactCreated:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentArtifactSessionAttached:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentArtifactSessionDetached:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentArtifactVersionSaved:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAgentConnectorAssetExported:
 		return true
@@ -9106,6 +9411,18 @@ func (e GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction) Valid(
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioAppSecretChanged:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioAppVisibilityChanged:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorAppGranted:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorAppRevoked:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorConnected:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorDisconnected:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorPolicyChanged:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAppStudioConnectorToolCalled:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionAssetCreated:
 		return true
@@ -9195,6 +9512,8 @@ func (e GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction) Valid(
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionPermissionUpdated:
 		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionPromotionCreditsGranted:
+		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSSOConfigCreated:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSSODomainRegistrationCloned:
@@ -9206,6 +9525,8 @@ func (e GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction) Valid(
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSSOUserProvisioned:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSeatsTransferred:
+		return true
+	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSessionMadePrivateByAdmin:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionSessionShared:
 		return true
@@ -9264,6 +9585,72 @@ func (e GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyAction) Valid(
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionWorkspaceTagUnassigned:
 		return true
 	case GetV1OrganizationWebappAuditLogsEventId200JSONResponseBodyActionWorkspaceTagUpdated:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason.
+const (
+	GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReasonInviteEnded GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason = "invite_ended"
+	GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReasonRemoved     GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason = "removed"
+	GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReasonSuspended   GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason = "suspended"
+)
+
+// Valid indicates whether the value is a known member of the GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason enum.
+func (e GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason) Valid() bool {
+	switch e {
+	case GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReasonInviteEnded:
+		return true
+	case GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReasonRemoved:
+		return true
+	case GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReasonSuspended:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetV1OrganizationWebappMembers200JSONResponseBodyDataRole.
+const (
+	GetV1OrganizationWebappMembers200JSONResponseBodyDataRoleAdmin              GetV1OrganizationWebappMembers200JSONResponseBodyDataRole = "admin"
+	GetV1OrganizationWebappMembers200JSONResponseBodyDataRoleEditor             GetV1OrganizationWebappMembers200JSONResponseBodyDataRole = "editor"
+	GetV1OrganizationWebappMembers200JSONResponseBodyDataRoleNonGeneratingAdmin GetV1OrganizationWebappMembers200JSONResponseBodyDataRole = "non-generating-admin"
+	GetV1OrganizationWebappMembers200JSONResponseBodyDataRoleViewer             GetV1OrganizationWebappMembers200JSONResponseBodyDataRole = "viewer"
+)
+
+// Valid indicates whether the value is a known member of the GetV1OrganizationWebappMembers200JSONResponseBodyDataRole enum.
+func (e GetV1OrganizationWebappMembers200JSONResponseBodyDataRole) Valid() bool {
+	switch e {
+	case GetV1OrganizationWebappMembers200JSONResponseBodyDataRoleAdmin:
+		return true
+	case GetV1OrganizationWebappMembers200JSONResponseBodyDataRoleEditor:
+		return true
+	case GetV1OrganizationWebappMembers200JSONResponseBodyDataRoleNonGeneratingAdmin:
+		return true
+	case GetV1OrganizationWebappMembers200JSONResponseBodyDataRoleViewer:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus.
+const (
+	GetV1OrganizationWebappMembers200JSONResponseBodyDataStatusActive      GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus = "active"
+	GetV1OrganizationWebappMembers200JSONResponseBodyDataStatusDeactivated GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus = "deactivated"
+	GetV1OrganizationWebappMembers200JSONResponseBodyDataStatusInvited     GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus = "invited"
+)
+
+// Valid indicates whether the value is a known member of the GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus enum.
+func (e GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus) Valid() bool {
+	switch e {
+	case GetV1OrganizationWebappMembers200JSONResponseBodyDataStatusActive:
+		return true
+	case GetV1OrganizationWebappMembers200JSONResponseBodyDataStatusDeactivated:
+		return true
+	case GetV1OrganizationWebappMembers200JSONResponseBodyDataStatusInvited:
 		return true
 	default:
 		return false
@@ -10133,13 +10520,13 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason16.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason16ASSETMISSING PostV1RecipesAdLocalization400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1RecipesAdLocalization400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason16 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -10148,13 +10535,13 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason17.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason17ASSETINVALID PostV1RecipesAdLocalization400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason17ASSETMISSING PostV1RecipesAdLocalization400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason17 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -10163,13 +10550,13 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason18.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1RecipesAdLocalization400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason18ASSETINVALID PostV1RecipesAdLocalization400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason18 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -10178,13 +10565,13 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason19.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1RecipesAdLocalization400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1RecipesAdLocalization400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason19 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -10193,13 +10580,13 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason20.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1RecipesAdLocalization400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1RecipesAdLocalization400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason20 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -10208,13 +10595,13 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason21.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason21FORBIDDEN PostV1RecipesAdLocalization400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1RecipesAdLocalization400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason21 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -10223,28 +10610,28 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason22.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason22QUOTA PostV1RecipesAdLocalization400JSONResponseBodyReason22 = "QUOTA"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason22FORBIDDEN PostV1RecipesAdLocalization400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason22 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason22QUOTA:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason24.
+// Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason23.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason24INTERNALTIMEOUT PostV1RecipesAdLocalization400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason23QUOTA PostV1RecipesAdLocalization400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason24 enum.
-func (e PostV1RecipesAdLocalization400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason23 enum.
+func (e PostV1RecipesAdLocalization400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -10253,13 +10640,13 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason25.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1RecipesAdLocalization400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason25INTERNALTIMEOUT PostV1RecipesAdLocalization400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason25 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -10268,13 +10655,13 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason26.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesAdLocalization400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1RecipesAdLocalization400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -10283,13 +10670,13 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason27.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason27INTERNAL PostV1RecipesAdLocalization400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason27INTERNALRESOURCES PostV1RecipesAdLocalization400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason27INTERNAL:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -10298,13 +10685,28 @@ func (e PostV1RecipesAdLocalization400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason28.
 const (
-	PostV1RecipesAdLocalization400JSONResponseBodyReason28UNKNOWN PostV1RecipesAdLocalization400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1RecipesAdLocalization400JSONResponseBodyReason28INTERNAL PostV1RecipesAdLocalization400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason28 enum.
 func (e PostV1RecipesAdLocalization400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1RecipesAdLocalization400JSONResponseBodyReason28UNKNOWN:
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesAdLocalization400JSONResponseBodyReason29.
+const (
+	PostV1RecipesAdLocalization400JSONResponseBodyReason29UNKNOWN PostV1RecipesAdLocalization400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesAdLocalization400JSONResponseBodyReason29 enum.
+func (e PostV1RecipesAdLocalization400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1RecipesAdLocalization400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -10547,13 +10949,13 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason15) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason16.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason16ASSETMISSING PostV1RecipesMarketingStockImage400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1RecipesMarketingStockImage400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason16 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -10562,13 +10964,13 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason16) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason17.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason17ASSETINVALID PostV1RecipesMarketingStockImage400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason17ASSETMISSING PostV1RecipesMarketingStockImage400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason17 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -10577,13 +10979,13 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason17) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason18.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1RecipesMarketingStockImage400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason18ASSETINVALID PostV1RecipesMarketingStockImage400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason18 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -10592,13 +10994,13 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason18) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason19.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1RecipesMarketingStockImage400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1RecipesMarketingStockImage400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason19 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -10607,13 +11009,13 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason19) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason20.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1RecipesMarketingStockImage400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1RecipesMarketingStockImage400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason20 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -10622,13 +11024,13 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason20) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason21.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason21FORBIDDEN PostV1RecipesMarketingStockImage400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1RecipesMarketingStockImage400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason21 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -10637,28 +11039,28 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason21) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason22.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason22QUOTA PostV1RecipesMarketingStockImage400JSONResponseBodyReason22 = "QUOTA"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason22FORBIDDEN PostV1RecipesMarketingStockImage400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason22 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason22QUOTA:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason24.
+// Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason23.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason24INTERNALTIMEOUT PostV1RecipesMarketingStockImage400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason23QUOTA PostV1RecipesMarketingStockImage400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason24 enum.
-func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason23 enum.
+func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -10667,13 +11069,13 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason24) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason25.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1RecipesMarketingStockImage400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason25INTERNALTIMEOUT PostV1RecipesMarketingStockImage400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason25 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -10682,13 +11084,13 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason25) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason26.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesMarketingStockImage400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1RecipesMarketingStockImage400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -10697,13 +11099,13 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason26) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason27.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason27INTERNAL PostV1RecipesMarketingStockImage400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason27INTERNALRESOURCES PostV1RecipesMarketingStockImage400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason27INTERNAL:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -10712,13 +11114,28 @@ func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason27) Valid() boo
 
 // Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason28.
 const (
-	PostV1RecipesMarketingStockImage400JSONResponseBodyReason28UNKNOWN PostV1RecipesMarketingStockImage400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason28INTERNAL PostV1RecipesMarketingStockImage400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason28 enum.
 func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason28UNKNOWN:
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesMarketingStockImage400JSONResponseBodyReason29.
+const (
+	PostV1RecipesMarketingStockImage400JSONResponseBodyReason29UNKNOWN PostV1RecipesMarketingStockImage400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesMarketingStockImage400JSONResponseBodyReason29 enum.
+func (e PostV1RecipesMarketingStockImage400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1RecipesMarketingStockImage400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -11090,13 +11507,13 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason16.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason16ASSETMISSING PostV1RecipesMultiShotVideo400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1RecipesMultiShotVideo400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason16 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -11105,13 +11522,13 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason17.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason17ASSETINVALID PostV1RecipesMultiShotVideo400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason17ASSETMISSING PostV1RecipesMultiShotVideo400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason17 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -11120,13 +11537,13 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason18.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1RecipesMultiShotVideo400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason18ASSETINVALID PostV1RecipesMultiShotVideo400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason18 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -11135,13 +11552,13 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason19.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1RecipesMultiShotVideo400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1RecipesMultiShotVideo400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason19 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -11150,13 +11567,13 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason20.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1RecipesMultiShotVideo400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1RecipesMultiShotVideo400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason20 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -11165,13 +11582,13 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason21.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason21FORBIDDEN PostV1RecipesMultiShotVideo400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1RecipesMultiShotVideo400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason21 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -11180,28 +11597,28 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason22.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason22QUOTA PostV1RecipesMultiShotVideo400JSONResponseBodyReason22 = "QUOTA"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason22FORBIDDEN PostV1RecipesMultiShotVideo400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason22 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason22QUOTA:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason24.
+// Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason23.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason24INTERNALTIMEOUT PostV1RecipesMultiShotVideo400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason23QUOTA PostV1RecipesMultiShotVideo400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason24 enum.
-func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason23 enum.
+func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -11210,13 +11627,13 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason25.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1RecipesMultiShotVideo400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason25INTERNALTIMEOUT PostV1RecipesMultiShotVideo400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason25 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -11225,13 +11642,13 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason26.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesMultiShotVideo400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1RecipesMultiShotVideo400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -11240,13 +11657,13 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason27.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason27INTERNAL PostV1RecipesMultiShotVideo400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason27INTERNALRESOURCES PostV1RecipesMultiShotVideo400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason27INTERNAL:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -11255,13 +11672,28 @@ func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason28.
 const (
-	PostV1RecipesMultiShotVideo400JSONResponseBodyReason28UNKNOWN PostV1RecipesMultiShotVideo400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason28INTERNAL PostV1RecipesMultiShotVideo400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason28 enum.
 func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason28UNKNOWN:
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesMultiShotVideo400JSONResponseBodyReason29.
+const (
+	PostV1RecipesMultiShotVideo400JSONResponseBodyReason29UNKNOWN PostV1RecipesMultiShotVideo400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesMultiShotVideo400JSONResponseBodyReason29 enum.
+func (e PostV1RecipesMultiShotVideo400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1RecipesMultiShotVideo400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -11522,13 +11954,13 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason16.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason16ASSETMISSING PostV1RecipesProductAd400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1RecipesProductAd400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1RecipesProductAd400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason16 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1RecipesProductAd400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -11537,13 +11969,13 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason17.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason17ASSETINVALID PostV1RecipesProductAd400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1RecipesProductAd400JSONResponseBodyReason17ASSETMISSING PostV1RecipesProductAd400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason17 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1RecipesProductAd400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -11552,13 +11984,13 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason18.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1RecipesProductAd400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1RecipesProductAd400JSONResponseBodyReason18ASSETINVALID PostV1RecipesProductAd400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason18 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1RecipesProductAd400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -11567,13 +11999,13 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason19.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1RecipesProductAd400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1RecipesProductAd400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1RecipesProductAd400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason19 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1RecipesProductAd400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -11582,13 +12014,13 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason20.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1RecipesProductAd400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1RecipesProductAd400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1RecipesProductAd400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason20 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1RecipesProductAd400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -11597,13 +12029,13 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason21.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason21FORBIDDEN PostV1RecipesProductAd400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1RecipesProductAd400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1RecipesProductAd400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason21 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1RecipesProductAd400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -11612,28 +12044,28 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason22.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason22QUOTA PostV1RecipesProductAd400JSONResponseBodyReason22 = "QUOTA"
+	PostV1RecipesProductAd400JSONResponseBodyReason22FORBIDDEN PostV1RecipesProductAd400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason22 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason22QUOTA:
+	case PostV1RecipesProductAd400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1RecipesProductAd400JSONResponseBodyReason24.
+// Defines values for PostV1RecipesProductAd400JSONResponseBodyReason23.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason24INTERNALTIMEOUT PostV1RecipesProductAd400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1RecipesProductAd400JSONResponseBodyReason23QUOTA PostV1RecipesProductAd400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason24 enum.
-func (e PostV1RecipesProductAd400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason23 enum.
+func (e PostV1RecipesProductAd400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1RecipesProductAd400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -11642,13 +12074,13 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason25.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1RecipesProductAd400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1RecipesProductAd400JSONResponseBodyReason25INTERNALTIMEOUT PostV1RecipesProductAd400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason25 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1RecipesProductAd400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -11657,13 +12089,13 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason26.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesProductAd400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1RecipesProductAd400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1RecipesProductAd400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1RecipesProductAd400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -11672,13 +12104,13 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason27.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason27INTERNAL PostV1RecipesProductAd400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1RecipesProductAd400JSONResponseBodyReason27INTERNALRESOURCES PostV1RecipesProductAd400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason27INTERNAL:
+	case PostV1RecipesProductAd400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -11687,13 +12119,28 @@ func (e PostV1RecipesProductAd400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1RecipesProductAd400JSONResponseBodyReason28.
 const (
-	PostV1RecipesProductAd400JSONResponseBodyReason28UNKNOWN PostV1RecipesProductAd400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1RecipesProductAd400JSONResponseBodyReason28INTERNAL PostV1RecipesProductAd400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason28 enum.
 func (e PostV1RecipesProductAd400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1RecipesProductAd400JSONResponseBodyReason28UNKNOWN:
+	case PostV1RecipesProductAd400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesProductAd400JSONResponseBodyReason29.
+const (
+	PostV1RecipesProductAd400JSONResponseBodyReason29UNKNOWN PostV1RecipesProductAd400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesProductAd400JSONResponseBodyReason29 enum.
+func (e PostV1RecipesProductAd400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1RecipesProductAd400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -11915,13 +12362,13 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason15) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason16.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason16ASSETMISSING PostV1RecipesProductCampaignImage400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1RecipesProductCampaignImage400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason16 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -11930,13 +12377,13 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason16) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason17.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason17ASSETINVALID PostV1RecipesProductCampaignImage400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason17ASSETMISSING PostV1RecipesProductCampaignImage400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason17 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -11945,13 +12392,13 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason17) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason18.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1RecipesProductCampaignImage400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason18ASSETINVALID PostV1RecipesProductCampaignImage400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason18 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -11960,13 +12407,13 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason18) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason19.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1RecipesProductCampaignImage400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1RecipesProductCampaignImage400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason19 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -11975,13 +12422,13 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason19) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason20.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1RecipesProductCampaignImage400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1RecipesProductCampaignImage400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason20 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -11990,13 +12437,13 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason20) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason21.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason21FORBIDDEN PostV1RecipesProductCampaignImage400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1RecipesProductCampaignImage400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason21 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -12005,28 +12452,28 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason21) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason22.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason22QUOTA PostV1RecipesProductCampaignImage400JSONResponseBodyReason22 = "QUOTA"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason22FORBIDDEN PostV1RecipesProductCampaignImage400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason22 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason22QUOTA:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason24.
+// Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason23.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason24INTERNALTIMEOUT PostV1RecipesProductCampaignImage400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason23QUOTA PostV1RecipesProductCampaignImage400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason24 enum.
-func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason23 enum.
+func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -12035,13 +12482,13 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason24) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason25.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1RecipesProductCampaignImage400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason25INTERNALTIMEOUT PostV1RecipesProductCampaignImage400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason25 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -12050,13 +12497,13 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason25) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason26.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesProductCampaignImage400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1RecipesProductCampaignImage400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -12065,13 +12512,13 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason26) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason27.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason27INTERNAL PostV1RecipesProductCampaignImage400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason27INTERNALRESOURCES PostV1RecipesProductCampaignImage400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason27INTERNAL:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -12080,13 +12527,28 @@ func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason27) Valid() bo
 
 // Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason28.
 const (
-	PostV1RecipesProductCampaignImage400JSONResponseBodyReason28UNKNOWN PostV1RecipesProductCampaignImage400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason28INTERNAL PostV1RecipesProductCampaignImage400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason28 enum.
 func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason28UNKNOWN:
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesProductCampaignImage400JSONResponseBodyReason29.
+const (
+	PostV1RecipesProductCampaignImage400JSONResponseBodyReason29UNKNOWN PostV1RecipesProductCampaignImage400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesProductCampaignImage400JSONResponseBodyReason29 enum.
+func (e PostV1RecipesProductCampaignImage400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1RecipesProductCampaignImage400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -12347,13 +12809,13 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason16.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason16ASSETMISSING PostV1RecipesProductSwap400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1RecipesProductSwap400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1RecipesProductSwap400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason16 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -12362,13 +12824,13 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason17.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason17ASSETINVALID PostV1RecipesProductSwap400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1RecipesProductSwap400JSONResponseBodyReason17ASSETMISSING PostV1RecipesProductSwap400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason17 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -12377,13 +12839,13 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason18.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1RecipesProductSwap400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1RecipesProductSwap400JSONResponseBodyReason18ASSETINVALID PostV1RecipesProductSwap400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason18 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -12392,13 +12854,13 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason19.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1RecipesProductSwap400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1RecipesProductSwap400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1RecipesProductSwap400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason19 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -12407,13 +12869,13 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason20.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1RecipesProductSwap400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1RecipesProductSwap400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1RecipesProductSwap400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason20 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -12422,13 +12884,13 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason21.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason21FORBIDDEN PostV1RecipesProductSwap400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1RecipesProductSwap400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1RecipesProductSwap400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason21 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -12437,28 +12899,28 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason22.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason22QUOTA PostV1RecipesProductSwap400JSONResponseBodyReason22 = "QUOTA"
+	PostV1RecipesProductSwap400JSONResponseBodyReason22FORBIDDEN PostV1RecipesProductSwap400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason22 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason22QUOTA:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason24.
+// Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason23.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason24INTERNALTIMEOUT PostV1RecipesProductSwap400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1RecipesProductSwap400JSONResponseBodyReason23QUOTA PostV1RecipesProductSwap400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason24 enum.
-func (e PostV1RecipesProductSwap400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason23 enum.
+func (e PostV1RecipesProductSwap400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -12467,13 +12929,13 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason25.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1RecipesProductSwap400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1RecipesProductSwap400JSONResponseBodyReason25INTERNALTIMEOUT PostV1RecipesProductSwap400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason25 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -12482,13 +12944,13 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason26.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesProductSwap400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1RecipesProductSwap400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1RecipesProductSwap400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -12497,13 +12959,13 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason27.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason27INTERNAL PostV1RecipesProductSwap400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1RecipesProductSwap400JSONResponseBodyReason27INTERNALRESOURCES PostV1RecipesProductSwap400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason27INTERNAL:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -12512,13 +12974,28 @@ func (e PostV1RecipesProductSwap400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason28.
 const (
-	PostV1RecipesProductSwap400JSONResponseBodyReason28UNKNOWN PostV1RecipesProductSwap400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1RecipesProductSwap400JSONResponseBodyReason28INTERNAL PostV1RecipesProductSwap400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason28 enum.
 func (e PostV1RecipesProductSwap400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1RecipesProductSwap400JSONResponseBodyReason28UNKNOWN:
+	case PostV1RecipesProductSwap400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesProductSwap400JSONResponseBodyReason29.
+const (
+	PostV1RecipesProductSwap400JSONResponseBodyReason29UNKNOWN PostV1RecipesProductSwap400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesProductSwap400JSONResponseBodyReason29 enum.
+func (e PostV1RecipesProductSwap400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1RecipesProductSwap400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -12758,13 +13235,13 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason16.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason16ASSETMISSING PostV1RecipesProductUgc400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1RecipesProductUgc400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1RecipesProductUgc400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason16 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -12773,13 +13250,13 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason17.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason17ASSETINVALID PostV1RecipesProductUgc400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1RecipesProductUgc400JSONResponseBodyReason17ASSETMISSING PostV1RecipesProductUgc400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason17 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -12788,13 +13265,13 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason18.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1RecipesProductUgc400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1RecipesProductUgc400JSONResponseBodyReason18ASSETINVALID PostV1RecipesProductUgc400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason18 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -12803,13 +13280,13 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason19.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1RecipesProductUgc400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1RecipesProductUgc400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1RecipesProductUgc400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason19 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -12818,13 +13295,13 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason20.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1RecipesProductUgc400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1RecipesProductUgc400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1RecipesProductUgc400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason20 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -12833,13 +13310,13 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason21.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason21FORBIDDEN PostV1RecipesProductUgc400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1RecipesProductUgc400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1RecipesProductUgc400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason21 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -12848,28 +13325,28 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason22.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason22QUOTA PostV1RecipesProductUgc400JSONResponseBodyReason22 = "QUOTA"
+	PostV1RecipesProductUgc400JSONResponseBodyReason22FORBIDDEN PostV1RecipesProductUgc400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason22 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason22QUOTA:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason24.
+// Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason23.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason24INTERNALTIMEOUT PostV1RecipesProductUgc400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1RecipesProductUgc400JSONResponseBodyReason23QUOTA PostV1RecipesProductUgc400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason24 enum.
-func (e PostV1RecipesProductUgc400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason23 enum.
+func (e PostV1RecipesProductUgc400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -12878,13 +13355,13 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason25.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1RecipesProductUgc400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1RecipesProductUgc400JSONResponseBodyReason25INTERNALTIMEOUT PostV1RecipesProductUgc400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason25 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -12893,13 +13370,13 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason26.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason26INTERNALRESOURCES PostV1RecipesProductUgc400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1RecipesProductUgc400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1RecipesProductUgc400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason26 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -12908,13 +13385,13 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason27.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason27INTERNAL PostV1RecipesProductUgc400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1RecipesProductUgc400JSONResponseBodyReason27INTERNALRESOURCES PostV1RecipesProductUgc400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason27 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason27INTERNAL:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -12923,13 +13400,28 @@ func (e PostV1RecipesProductUgc400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason28.
 const (
-	PostV1RecipesProductUgc400JSONResponseBodyReason28UNKNOWN PostV1RecipesProductUgc400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1RecipesProductUgc400JSONResponseBodyReason28INTERNAL PostV1RecipesProductUgc400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason28 enum.
 func (e PostV1RecipesProductUgc400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1RecipesProductUgc400JSONResponseBodyReason28UNKNOWN:
+	case PostV1RecipesProductUgc400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1RecipesProductUgc400JSONResponseBodyReason29.
+const (
+	PostV1RecipesProductUgc400JSONResponseBodyReason29UNKNOWN PostV1RecipesProductUgc400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1RecipesProductUgc400JSONResponseBodyReason29 enum.
+func (e PostV1RecipesProductUgc400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1RecipesProductUgc400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -13751,13 +14243,13 @@ func (e PostV1SoundEffect400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason16.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason16ASSETMISSING PostV1SoundEffect400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1SoundEffect400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1SoundEffect400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason16 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1SoundEffect400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -13766,13 +14258,13 @@ func (e PostV1SoundEffect400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason17.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason17ASSETINVALID PostV1SoundEffect400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1SoundEffect400JSONResponseBodyReason17ASSETMISSING PostV1SoundEffect400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason17 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1SoundEffect400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -13781,13 +14273,13 @@ func (e PostV1SoundEffect400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason18.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1SoundEffect400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1SoundEffect400JSONResponseBodyReason18ASSETINVALID PostV1SoundEffect400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason18 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1SoundEffect400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -13796,13 +14288,13 @@ func (e PostV1SoundEffect400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason19.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1SoundEffect400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1SoundEffect400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1SoundEffect400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason19 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1SoundEffect400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -13811,13 +14303,13 @@ func (e PostV1SoundEffect400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason20.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1SoundEffect400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1SoundEffect400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1SoundEffect400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason20 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1SoundEffect400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -13826,13 +14318,13 @@ func (e PostV1SoundEffect400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason21.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason21FORBIDDEN PostV1SoundEffect400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1SoundEffect400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1SoundEffect400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason21 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1SoundEffect400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -13841,28 +14333,28 @@ func (e PostV1SoundEffect400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason22.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason22QUOTA PostV1SoundEffect400JSONResponseBodyReason22 = "QUOTA"
+	PostV1SoundEffect400JSONResponseBodyReason22FORBIDDEN PostV1SoundEffect400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason22 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason22QUOTA:
+	case PostV1SoundEffect400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1SoundEffect400JSONResponseBodyReason24.
+// Defines values for PostV1SoundEffect400JSONResponseBodyReason23.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason24INTERNALTIMEOUT PostV1SoundEffect400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1SoundEffect400JSONResponseBodyReason23QUOTA PostV1SoundEffect400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason24 enum.
-func (e PostV1SoundEffect400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason23 enum.
+func (e PostV1SoundEffect400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1SoundEffect400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -13871,13 +14363,13 @@ func (e PostV1SoundEffect400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason25.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1SoundEffect400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1SoundEffect400JSONResponseBodyReason25INTERNALTIMEOUT PostV1SoundEffect400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason25 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1SoundEffect400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -13886,13 +14378,13 @@ func (e PostV1SoundEffect400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason26.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason26INTERNALRESOURCES PostV1SoundEffect400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1SoundEffect400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1SoundEffect400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason26 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1SoundEffect400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -13901,13 +14393,13 @@ func (e PostV1SoundEffect400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason27.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason27INTERNAL PostV1SoundEffect400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1SoundEffect400JSONResponseBodyReason27INTERNALRESOURCES PostV1SoundEffect400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason27 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason27INTERNAL:
+	case PostV1SoundEffect400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -13916,13 +14408,28 @@ func (e PostV1SoundEffect400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1SoundEffect400JSONResponseBodyReason28.
 const (
-	PostV1SoundEffect400JSONResponseBodyReason28UNKNOWN PostV1SoundEffect400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1SoundEffect400JSONResponseBodyReason28INTERNAL PostV1SoundEffect400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason28 enum.
 func (e PostV1SoundEffect400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1SoundEffect400JSONResponseBodyReason28UNKNOWN:
+	case PostV1SoundEffect400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1SoundEffect400JSONResponseBodyReason29.
+const (
+	PostV1SoundEffect400JSONResponseBodyReason29UNKNOWN PostV1SoundEffect400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1SoundEffect400JSONResponseBodyReason29 enum.
+func (e PostV1SoundEffect400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1SoundEffect400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -14345,13 +14852,13 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason16.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason16ASSETMISSING PostV1SpeechToSpeech400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1SpeechToSpeech400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1SpeechToSpeech400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason16 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -14360,13 +14867,13 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason17.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason17ASSETINVALID PostV1SpeechToSpeech400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1SpeechToSpeech400JSONResponseBodyReason17ASSETMISSING PostV1SpeechToSpeech400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason17 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -14375,13 +14882,13 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason18.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1SpeechToSpeech400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1SpeechToSpeech400JSONResponseBodyReason18ASSETINVALID PostV1SpeechToSpeech400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason18 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -14390,13 +14897,13 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason19.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1SpeechToSpeech400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1SpeechToSpeech400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1SpeechToSpeech400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason19 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -14405,13 +14912,13 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason20.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1SpeechToSpeech400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1SpeechToSpeech400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1SpeechToSpeech400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason20 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -14420,13 +14927,13 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason21.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason21FORBIDDEN PostV1SpeechToSpeech400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1SpeechToSpeech400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1SpeechToSpeech400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason21 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -14435,28 +14942,28 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason22.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason22QUOTA PostV1SpeechToSpeech400JSONResponseBodyReason22 = "QUOTA"
+	PostV1SpeechToSpeech400JSONResponseBodyReason22FORBIDDEN PostV1SpeechToSpeech400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason22 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason22QUOTA:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason24.
+// Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason23.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason24INTERNALTIMEOUT PostV1SpeechToSpeech400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1SpeechToSpeech400JSONResponseBodyReason23QUOTA PostV1SpeechToSpeech400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason24 enum.
-func (e PostV1SpeechToSpeech400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason23 enum.
+func (e PostV1SpeechToSpeech400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -14465,13 +14972,13 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason25.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1SpeechToSpeech400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1SpeechToSpeech400JSONResponseBodyReason25INTERNALTIMEOUT PostV1SpeechToSpeech400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason25 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -14480,13 +14987,13 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason26.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason26INTERNALRESOURCES PostV1SpeechToSpeech400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1SpeechToSpeech400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1SpeechToSpeech400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason26 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -14495,13 +15002,13 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason27.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason27INTERNAL PostV1SpeechToSpeech400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1SpeechToSpeech400JSONResponseBodyReason27INTERNALRESOURCES PostV1SpeechToSpeech400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason27 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason27INTERNAL:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -14510,13 +15017,28 @@ func (e PostV1SpeechToSpeech400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason28.
 const (
-	PostV1SpeechToSpeech400JSONResponseBodyReason28UNKNOWN PostV1SpeechToSpeech400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1SpeechToSpeech400JSONResponseBodyReason28INTERNAL PostV1SpeechToSpeech400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason28 enum.
 func (e PostV1SpeechToSpeech400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1SpeechToSpeech400JSONResponseBodyReason28UNKNOWN:
+	case PostV1SpeechToSpeech400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1SpeechToSpeech400JSONResponseBodyReason29.
+const (
+	PostV1SpeechToSpeech400JSONResponseBodyReason29UNKNOWN PostV1SpeechToSpeech400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1SpeechToSpeech400JSONResponseBodyReason29 enum.
+func (e PostV1SpeechToSpeech400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1SpeechToSpeech400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -17493,15 +18015,51 @@ func (e PostV1TextToImageJSONBody23Resolution) Valid() bool {
 	}
 }
 
+// Defines values for PostV1TextToImageJSONBody24Background.
+const (
+	PostV1TextToImageJSONBody24BackgroundOpaque      PostV1TextToImageJSONBody24Background = "opaque"
+	PostV1TextToImageJSONBody24BackgroundTransparent PostV1TextToImageJSONBody24Background = "transparent"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody24Background enum.
+func (e PostV1TextToImageJSONBody24Background) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody24BackgroundOpaque:
+		return true
+	case PostV1TextToImageJSONBody24BackgroundTransparent:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1TextToImageJSONBody24Model.
 const (
-	PostV1TextToImageJSONBody24ModelGemini25Flash PostV1TextToImageJSONBody24Model = "gemini_2.5_flash"
+	PostV1TextToImageJSONBody24ModelSeedream55 PostV1TextToImageJSONBody24Model = "seedream5.5"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody24Model enum.
 func (e PostV1TextToImageJSONBody24Model) Valid() bool {
 	switch e {
-	case PostV1TextToImageJSONBody24ModelGemini25Flash:
+	case PostV1TextToImageJSONBody24ModelSeedream55:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody24OutputFormat.
+const (
+	PostV1TextToImageJSONBody24OutputFormatJpeg PostV1TextToImageJSONBody24OutputFormat = "jpeg"
+	PostV1TextToImageJSONBody24OutputFormatPng  PostV1TextToImageJSONBody24OutputFormat = "png"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody24OutputFormat enum.
+func (e PostV1TextToImageJSONBody24OutputFormat) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody24OutputFormatJpeg:
+		return true
+	case PostV1TextToImageJSONBody24OutputFormatPng:
 		return true
 	default:
 		return false
@@ -17510,40 +18068,376 @@ func (e PostV1TextToImageJSONBody24Model) Valid() bool {
 
 // Defines values for PostV1TextToImageJSONBody24Ratio.
 const (
+	PostV1TextToImageJSONBody24RatioAuto15k   PostV1TextToImageJSONBody24Ratio = "auto_1.5k"
+	PostV1TextToImageJSONBody24RatioAuto1k    PostV1TextToImageJSONBody24Ratio = "auto_1k"
+	PostV1TextToImageJSONBody24RatioAuto2k    PostV1TextToImageJSONBody24Ratio = "auto_2k"
 	PostV1TextToImageJSONBody24RatioN10241024 PostV1TextToImageJSONBody24Ratio = "1024:1024"
-	PostV1TextToImageJSONBody24RatioN1152896  PostV1TextToImageJSONBody24Ratio = "1152:896"
-	PostV1TextToImageJSONBody24RatioN1184864  PostV1TextToImageJSONBody24Ratio = "1184:864"
+	PostV1TextToImageJSONBody24RatioN11522048 PostV1TextToImageJSONBody24Ratio = "1152:2048"
+	PostV1TextToImageJSONBody24RatioN1152864  PostV1TextToImageJSONBody24Ratio = "1152:864"
+	PostV1TextToImageJSONBody24RatioN12481872 PostV1TextToImageJSONBody24Ratio = "1248:1872"
 	PostV1TextToImageJSONBody24RatioN1248832  PostV1TextToImageJSONBody24Ratio = "1248:832"
-	PostV1TextToImageJSONBody24RatioN1344768  PostV1TextToImageJSONBody24Ratio = "1344:768"
-	PostV1TextToImageJSONBody24RatioN1536672  PostV1TextToImageJSONBody24Ratio = "1536:672"
-	PostV1TextToImageJSONBody24RatioN7681344  PostV1TextToImageJSONBody24Ratio = "768:1344"
+	PostV1TextToImageJSONBody24RatioN13441792 PostV1TextToImageJSONBody24Ratio = "1344:1792"
+	PostV1TextToImageJSONBody24RatioN1424800  PostV1TextToImageJSONBody24Ratio = "1424:800"
+	PostV1TextToImageJSONBody24RatioN15361536 PostV1TextToImageJSONBody24Ratio = "1536:1536"
+	PostV1TextToImageJSONBody24RatioN1568672  PostV1TextToImageJSONBody24Ratio = "1568:672"
+	PostV1TextToImageJSONBody24RatioN15842816 PostV1TextToImageJSONBody24Ratio = "1584:2816"
+	PostV1TextToImageJSONBody24RatioN16642496 PostV1TextToImageJSONBody24Ratio = "1664:2496"
+	PostV1TextToImageJSONBody24RatioN17762368 PostV1TextToImageJSONBody24Ratio = "1776:2368"
+	PostV1TextToImageJSONBody24RatioN17921344 PostV1TextToImageJSONBody24Ratio = "1792:1344"
+	PostV1TextToImageJSONBody24RatioN18721248 PostV1TextToImageJSONBody24Ratio = "1872:1248"
+	PostV1TextToImageJSONBody24RatioN20481152 PostV1TextToImageJSONBody24Ratio = "2048:1152"
+	PostV1TextToImageJSONBody24RatioN20482048 PostV1TextToImageJSONBody24Ratio = "2048:2048"
+	PostV1TextToImageJSONBody24RatioN23521008 PostV1TextToImageJSONBody24Ratio = "2352:1008"
+	PostV1TextToImageJSONBody24RatioN23681776 PostV1TextToImageJSONBody24Ratio = "2368:1776"
+	PostV1TextToImageJSONBody24RatioN24961664 PostV1TextToImageJSONBody24Ratio = "2496:1664"
+	PostV1TextToImageJSONBody24RatioN28161584 PostV1TextToImageJSONBody24Ratio = "2816:1584"
+	PostV1TextToImageJSONBody24RatioN31361344 PostV1TextToImageJSONBody24Ratio = "3136:1344"
+	PostV1TextToImageJSONBody24RatioN8001424  PostV1TextToImageJSONBody24Ratio = "800:1424"
 	PostV1TextToImageJSONBody24RatioN8321248  PostV1TextToImageJSONBody24Ratio = "832:1248"
-	PostV1TextToImageJSONBody24RatioN8641184  PostV1TextToImageJSONBody24Ratio = "864:1184"
-	PostV1TextToImageJSONBody24RatioN8961152  PostV1TextToImageJSONBody24Ratio = "896:1152"
+	PostV1TextToImageJSONBody24RatioN8641152  PostV1TextToImageJSONBody24Ratio = "864:1152"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody24Ratio enum.
 func (e PostV1TextToImageJSONBody24Ratio) Valid() bool {
 	switch e {
+	case PostV1TextToImageJSONBody24RatioAuto15k:
+		return true
+	case PostV1TextToImageJSONBody24RatioAuto1k:
+		return true
+	case PostV1TextToImageJSONBody24RatioAuto2k:
+		return true
 	case PostV1TextToImageJSONBody24RatioN10241024:
 		return true
-	case PostV1TextToImageJSONBody24RatioN1152896:
+	case PostV1TextToImageJSONBody24RatioN11522048:
 		return true
-	case PostV1TextToImageJSONBody24RatioN1184864:
+	case PostV1TextToImageJSONBody24RatioN1152864:
+		return true
+	case PostV1TextToImageJSONBody24RatioN12481872:
 		return true
 	case PostV1TextToImageJSONBody24RatioN1248832:
 		return true
-	case PostV1TextToImageJSONBody24RatioN1344768:
+	case PostV1TextToImageJSONBody24RatioN13441792:
 		return true
-	case PostV1TextToImageJSONBody24RatioN1536672:
+	case PostV1TextToImageJSONBody24RatioN1424800:
 		return true
-	case PostV1TextToImageJSONBody24RatioN7681344:
+	case PostV1TextToImageJSONBody24RatioN15361536:
+		return true
+	case PostV1TextToImageJSONBody24RatioN1568672:
+		return true
+	case PostV1TextToImageJSONBody24RatioN15842816:
+		return true
+	case PostV1TextToImageJSONBody24RatioN16642496:
+		return true
+	case PostV1TextToImageJSONBody24RatioN17762368:
+		return true
+	case PostV1TextToImageJSONBody24RatioN17921344:
+		return true
+	case PostV1TextToImageJSONBody24RatioN18721248:
+		return true
+	case PostV1TextToImageJSONBody24RatioN20481152:
+		return true
+	case PostV1TextToImageJSONBody24RatioN20482048:
+		return true
+	case PostV1TextToImageJSONBody24RatioN23521008:
+		return true
+	case PostV1TextToImageJSONBody24RatioN23681776:
+		return true
+	case PostV1TextToImageJSONBody24RatioN24961664:
+		return true
+	case PostV1TextToImageJSONBody24RatioN28161584:
+		return true
+	case PostV1TextToImageJSONBody24RatioN31361344:
+		return true
+	case PostV1TextToImageJSONBody24RatioN8001424:
 		return true
 	case PostV1TextToImageJSONBody24RatioN8321248:
 		return true
-	case PostV1TextToImageJSONBody24RatioN8641184:
+	case PostV1TextToImageJSONBody24RatioN8641152:
 		return true
-	case PostV1TextToImageJSONBody24RatioN8961152:
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody25Model.
+const (
+	PostV1TextToImageJSONBody25ModelSeedream55Layers PostV1TextToImageJSONBody25Model = "seedream5.5_layers"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody25Model enum.
+func (e PostV1TextToImageJSONBody25Model) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody25ModelSeedream55Layers:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody25OutputFormat.
+const (
+	PostV1TextToImageJSONBody25OutputFormatJpeg PostV1TextToImageJSONBody25OutputFormat = "jpeg"
+	PostV1TextToImageJSONBody25OutputFormatPng  PostV1TextToImageJSONBody25OutputFormat = "png"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody25OutputFormat enum.
+func (e PostV1TextToImageJSONBody25OutputFormat) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody25OutputFormatJpeg:
+		return true
+	case PostV1TextToImageJSONBody25OutputFormatPng:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody25Resolution.
+const (
+	PostV1TextToImageJSONBody25ResolutionAuto PostV1TextToImageJSONBody25Resolution = "auto"
+	PostV1TextToImageJSONBody25ResolutionN15k PostV1TextToImageJSONBody25Resolution = "1.5k"
+	PostV1TextToImageJSONBody25ResolutionN1k  PostV1TextToImageJSONBody25Resolution = "1k"
+	PostV1TextToImageJSONBody25ResolutionN2k  PostV1TextToImageJSONBody25Resolution = "2k"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody25Resolution enum.
+func (e PostV1TextToImageJSONBody25Resolution) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody25ResolutionAuto:
+		return true
+	case PostV1TextToImageJSONBody25ResolutionN15k:
+		return true
+	case PostV1TextToImageJSONBody25ResolutionN1k:
+		return true
+	case PostV1TextToImageJSONBody25ResolutionN2k:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody26Model.
+const (
+	PostV1TextToImageJSONBody26ModelMinimaxH3Image PostV1TextToImageJSONBody26Model = "minimax_h3_image"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody26Model enum.
+func (e PostV1TextToImageJSONBody26Model) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody26ModelMinimaxH3Image:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody26Ratio.
+const (
+	PostV1TextToImageJSONBody26RatioAuto1k    PostV1TextToImageJSONBody26Ratio = "auto_1k"
+	PostV1TextToImageJSONBody26RatioAuto2k    PostV1TextToImageJSONBody26Ratio = "auto_2k"
+	PostV1TextToImageJSONBody26RatioAuto4k    PostV1TextToImageJSONBody26Ratio = "auto_4k"
+	PostV1TextToImageJSONBody26RatioN10241024 PostV1TextToImageJSONBody26Ratio = "1024:1024"
+	PostV1TextToImageJSONBody26RatioN1152928  PostV1TextToImageJSONBody26Ratio = "1152:928"
+	PostV1TextToImageJSONBody26RatioN11843552 PostV1TextToImageJSONBody26Ratio = "1184:3552"
+	PostV1TextToImageJSONBody26RatioN1184896  PostV1TextToImageJSONBody26Ratio = "1184:896"
+	PostV1TextToImageJSONBody26RatioN1248832  PostV1TextToImageJSONBody26Ratio = "1248:832"
+	PostV1TextToImageJSONBody26RatioN13443136 PostV1TextToImageJSONBody26Ratio = "1344:3136"
+	PostV1TextToImageJSONBody26RatioN1376768  PostV1TextToImageJSONBody26Ratio = "1376:768"
+	PostV1TextToImageJSONBody26RatioN14402912 PostV1TextToImageJSONBody26Ratio = "1440:2912"
+	PostV1TextToImageJSONBody26RatioN1440736  PostV1TextToImageJSONBody26Ratio = "1440:736"
+	PostV1TextToImageJSONBody26RatioN15362720 PostV1TextToImageJSONBody26Ratio = "1536:2720"
+	PostV1TextToImageJSONBody26RatioN1568672  PostV1TextToImageJSONBody26Ratio = "1568:672"
+	PostV1TextToImageJSONBody26RatioN16642496 PostV1TextToImageJSONBody26Ratio = "1664:2496"
+	PostV1TextToImageJSONBody26RatioN17602368 PostV1TextToImageJSONBody26Ratio = "1760:2368"
+	PostV1TextToImageJSONBody26RatioN1760576  PostV1TextToImageJSONBody26Ratio = "1760:576"
+	PostV1TextToImageJSONBody26RatioN18242304 PostV1TextToImageJSONBody26Ratio = "1824:2304"
+	PostV1TextToImageJSONBody26RatioN20482048 PostV1TextToImageJSONBody26Ratio = "2048:2048"
+	PostV1TextToImageJSONBody26RatioN23041824 PostV1TextToImageJSONBody26Ratio = "2304:1824"
+	PostV1TextToImageJSONBody26RatioN23681760 PostV1TextToImageJSONBody26Ratio = "2368:1760"
+	PostV1TextToImageJSONBody26RatioN23687104 PostV1TextToImageJSONBody26Ratio = "2368:7104"
+	PostV1TextToImageJSONBody26RatioN24961664 PostV1TextToImageJSONBody26Ratio = "2496:1664"
+	PostV1TextToImageJSONBody26RatioN26886272 PostV1TextToImageJSONBody26Ratio = "2688:6272"
+	PostV1TextToImageJSONBody26RatioN27201536 PostV1TextToImageJSONBody26Ratio = "2720:1536"
+	PostV1TextToImageJSONBody26RatioN29121440 PostV1TextToImageJSONBody26Ratio = "2912:1440"
+	PostV1TextToImageJSONBody26RatioN29125792 PostV1TextToImageJSONBody26Ratio = "2912:5792"
+	PostV1TextToImageJSONBody26RatioN30725472 PostV1TextToImageJSONBody26Ratio = "3072:5472"
+	PostV1TextToImageJSONBody26RatioN31361344 PostV1TextToImageJSONBody26Ratio = "3136:1344"
+	PostV1TextToImageJSONBody26RatioN33605024 PostV1TextToImageJSONBody26Ratio = "3360:5024"
+	PostV1TextToImageJSONBody26RatioN35521184 PostV1TextToImageJSONBody26Ratio = "3552:1184"
+	PostV1TextToImageJSONBody26RatioN35524736 PostV1TextToImageJSONBody26Ratio = "3552:4736"
+	PostV1TextToImageJSONBody26RatioN36484576 PostV1TextToImageJSONBody26Ratio = "3648:4576"
+	PostV1TextToImageJSONBody26RatioN40964096 PostV1TextToImageJSONBody26Ratio = "4096:4096"
+	PostV1TextToImageJSONBody26RatioN45763648 PostV1TextToImageJSONBody26Ratio = "4576:3648"
+	PostV1TextToImageJSONBody26RatioN47363552 PostV1TextToImageJSONBody26Ratio = "4736:3552"
+	PostV1TextToImageJSONBody26RatioN50243360 PostV1TextToImageJSONBody26Ratio = "5024:3360"
+	PostV1TextToImageJSONBody26RatioN54723072 PostV1TextToImageJSONBody26Ratio = "5472:3072"
+	PostV1TextToImageJSONBody26RatioN5761760  PostV1TextToImageJSONBody26Ratio = "576:1760"
+	PostV1TextToImageJSONBody26RatioN57922912 PostV1TextToImageJSONBody26Ratio = "5792:2912"
+	PostV1TextToImageJSONBody26RatioN62722688 PostV1TextToImageJSONBody26Ratio = "6272:2688"
+	PostV1TextToImageJSONBody26RatioN6721568  PostV1TextToImageJSONBody26Ratio = "672:1568"
+	PostV1TextToImageJSONBody26RatioN71042368 PostV1TextToImageJSONBody26Ratio = "7104:2368"
+	PostV1TextToImageJSONBody26RatioN7361440  PostV1TextToImageJSONBody26Ratio = "736:1440"
+	PostV1TextToImageJSONBody26RatioN7681376  PostV1TextToImageJSONBody26Ratio = "768:1376"
+	PostV1TextToImageJSONBody26RatioN8321248  PostV1TextToImageJSONBody26Ratio = "832:1248"
+	PostV1TextToImageJSONBody26RatioN8961184  PostV1TextToImageJSONBody26Ratio = "896:1184"
+	PostV1TextToImageJSONBody26RatioN9281152  PostV1TextToImageJSONBody26Ratio = "928:1152"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody26Ratio enum.
+func (e PostV1TextToImageJSONBody26Ratio) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody26RatioAuto1k:
+		return true
+	case PostV1TextToImageJSONBody26RatioAuto2k:
+		return true
+	case PostV1TextToImageJSONBody26RatioAuto4k:
+		return true
+	case PostV1TextToImageJSONBody26RatioN10241024:
+		return true
+	case PostV1TextToImageJSONBody26RatioN1152928:
+		return true
+	case PostV1TextToImageJSONBody26RatioN11843552:
+		return true
+	case PostV1TextToImageJSONBody26RatioN1184896:
+		return true
+	case PostV1TextToImageJSONBody26RatioN1248832:
+		return true
+	case PostV1TextToImageJSONBody26RatioN13443136:
+		return true
+	case PostV1TextToImageJSONBody26RatioN1376768:
+		return true
+	case PostV1TextToImageJSONBody26RatioN14402912:
+		return true
+	case PostV1TextToImageJSONBody26RatioN1440736:
+		return true
+	case PostV1TextToImageJSONBody26RatioN15362720:
+		return true
+	case PostV1TextToImageJSONBody26RatioN1568672:
+		return true
+	case PostV1TextToImageJSONBody26RatioN16642496:
+		return true
+	case PostV1TextToImageJSONBody26RatioN17602368:
+		return true
+	case PostV1TextToImageJSONBody26RatioN1760576:
+		return true
+	case PostV1TextToImageJSONBody26RatioN18242304:
+		return true
+	case PostV1TextToImageJSONBody26RatioN20482048:
+		return true
+	case PostV1TextToImageJSONBody26RatioN23041824:
+		return true
+	case PostV1TextToImageJSONBody26RatioN23681760:
+		return true
+	case PostV1TextToImageJSONBody26RatioN23687104:
+		return true
+	case PostV1TextToImageJSONBody26RatioN24961664:
+		return true
+	case PostV1TextToImageJSONBody26RatioN26886272:
+		return true
+	case PostV1TextToImageJSONBody26RatioN27201536:
+		return true
+	case PostV1TextToImageJSONBody26RatioN29121440:
+		return true
+	case PostV1TextToImageJSONBody26RatioN29125792:
+		return true
+	case PostV1TextToImageJSONBody26RatioN30725472:
+		return true
+	case PostV1TextToImageJSONBody26RatioN31361344:
+		return true
+	case PostV1TextToImageJSONBody26RatioN33605024:
+		return true
+	case PostV1TextToImageJSONBody26RatioN35521184:
+		return true
+	case PostV1TextToImageJSONBody26RatioN35524736:
+		return true
+	case PostV1TextToImageJSONBody26RatioN36484576:
+		return true
+	case PostV1TextToImageJSONBody26RatioN40964096:
+		return true
+	case PostV1TextToImageJSONBody26RatioN45763648:
+		return true
+	case PostV1TextToImageJSONBody26RatioN47363552:
+		return true
+	case PostV1TextToImageJSONBody26RatioN50243360:
+		return true
+	case PostV1TextToImageJSONBody26RatioN54723072:
+		return true
+	case PostV1TextToImageJSONBody26RatioN5761760:
+		return true
+	case PostV1TextToImageJSONBody26RatioN57922912:
+		return true
+	case PostV1TextToImageJSONBody26RatioN62722688:
+		return true
+	case PostV1TextToImageJSONBody26RatioN6721568:
+		return true
+	case PostV1TextToImageJSONBody26RatioN71042368:
+		return true
+	case PostV1TextToImageJSONBody26RatioN7361440:
+		return true
+	case PostV1TextToImageJSONBody26RatioN7681376:
+		return true
+	case PostV1TextToImageJSONBody26RatioN8321248:
+		return true
+	case PostV1TextToImageJSONBody26RatioN8961184:
+		return true
+	case PostV1TextToImageJSONBody26RatioN9281152:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody27Model.
+const (
+	PostV1TextToImageJSONBody27ModelGemini25Flash PostV1TextToImageJSONBody27Model = "gemini_2.5_flash"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody27Model enum.
+func (e PostV1TextToImageJSONBody27Model) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody27ModelGemini25Flash:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImageJSONBody27Ratio.
+const (
+	PostV1TextToImageJSONBody27RatioN10241024 PostV1TextToImageJSONBody27Ratio = "1024:1024"
+	PostV1TextToImageJSONBody27RatioN1152896  PostV1TextToImageJSONBody27Ratio = "1152:896"
+	PostV1TextToImageJSONBody27RatioN1184864  PostV1TextToImageJSONBody27Ratio = "1184:864"
+	PostV1TextToImageJSONBody27RatioN1248832  PostV1TextToImageJSONBody27Ratio = "1248:832"
+	PostV1TextToImageJSONBody27RatioN1344768  PostV1TextToImageJSONBody27Ratio = "1344:768"
+	PostV1TextToImageJSONBody27RatioN1536672  PostV1TextToImageJSONBody27Ratio = "1536:672"
+	PostV1TextToImageJSONBody27RatioN7681344  PostV1TextToImageJSONBody27Ratio = "768:1344"
+	PostV1TextToImageJSONBody27RatioN8321248  PostV1TextToImageJSONBody27Ratio = "832:1248"
+	PostV1TextToImageJSONBody27RatioN8641184  PostV1TextToImageJSONBody27Ratio = "864:1184"
+	PostV1TextToImageJSONBody27RatioN8961152  PostV1TextToImageJSONBody27Ratio = "896:1152"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImageJSONBody27Ratio enum.
+func (e PostV1TextToImageJSONBody27Ratio) Valid() bool {
+	switch e {
+	case PostV1TextToImageJSONBody27RatioN10241024:
+		return true
+	case PostV1TextToImageJSONBody27RatioN1152896:
+		return true
+	case PostV1TextToImageJSONBody27RatioN1184864:
+		return true
+	case PostV1TextToImageJSONBody27RatioN1248832:
+		return true
+	case PostV1TextToImageJSONBody27RatioN1344768:
+		return true
+	case PostV1TextToImageJSONBody27RatioN1536672:
+		return true
+	case PostV1TextToImageJSONBody27RatioN7681344:
+		return true
+	case PostV1TextToImageJSONBody27RatioN8321248:
+		return true
+	case PostV1TextToImageJSONBody27RatioN8641184:
+		return true
+	case PostV1TextToImageJSONBody27RatioN8961152:
 		return true
 	default:
 		return false
@@ -17747,13 +18641,13 @@ func (e PostV1TextToImage400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason16.
 const (
-	PostV1TextToImage400JSONResponseBodyReason16ASSETMISSING PostV1TextToImage400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1TextToImage400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1TextToImage400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason16 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1TextToImage400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -17762,13 +18656,13 @@ func (e PostV1TextToImage400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason17.
 const (
-	PostV1TextToImage400JSONResponseBodyReason17ASSETINVALID PostV1TextToImage400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1TextToImage400JSONResponseBodyReason17ASSETMISSING PostV1TextToImage400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason17 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1TextToImage400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -17777,13 +18671,13 @@ func (e PostV1TextToImage400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason18.
 const (
-	PostV1TextToImage400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1TextToImage400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1TextToImage400JSONResponseBodyReason18ASSETINVALID PostV1TextToImage400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason18 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1TextToImage400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -17792,13 +18686,13 @@ func (e PostV1TextToImage400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason19.
 const (
-	PostV1TextToImage400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1TextToImage400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1TextToImage400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1TextToImage400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason19 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1TextToImage400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -17807,13 +18701,13 @@ func (e PostV1TextToImage400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason20.
 const (
-	PostV1TextToImage400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1TextToImage400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1TextToImage400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1TextToImage400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason20 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1TextToImage400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -17822,13 +18716,13 @@ func (e PostV1TextToImage400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason21.
 const (
-	PostV1TextToImage400JSONResponseBodyReason21FORBIDDEN PostV1TextToImage400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1TextToImage400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1TextToImage400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason21 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1TextToImage400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -17837,28 +18731,28 @@ func (e PostV1TextToImage400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason22.
 const (
-	PostV1TextToImage400JSONResponseBodyReason22QUOTA PostV1TextToImage400JSONResponseBodyReason22 = "QUOTA"
+	PostV1TextToImage400JSONResponseBodyReason22FORBIDDEN PostV1TextToImage400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason22 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason22QUOTA:
+	case PostV1TextToImage400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToImage400JSONResponseBodyReason24.
+// Defines values for PostV1TextToImage400JSONResponseBodyReason23.
 const (
-	PostV1TextToImage400JSONResponseBodyReason24INTERNALTIMEOUT PostV1TextToImage400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1TextToImage400JSONResponseBodyReason23QUOTA PostV1TextToImage400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason24 enum.
-func (e PostV1TextToImage400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason23 enum.
+func (e PostV1TextToImage400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1TextToImage400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -17867,13 +18761,13 @@ func (e PostV1TextToImage400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason25.
 const (
-	PostV1TextToImage400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1TextToImage400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1TextToImage400JSONResponseBodyReason25INTERNALTIMEOUT PostV1TextToImage400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason25 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1TextToImage400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -17882,13 +18776,13 @@ func (e PostV1TextToImage400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason26.
 const (
-	PostV1TextToImage400JSONResponseBodyReason26INTERNALRESOURCES PostV1TextToImage400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1TextToImage400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1TextToImage400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason26 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1TextToImage400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -17897,13 +18791,13 @@ func (e PostV1TextToImage400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason27.
 const (
-	PostV1TextToImage400JSONResponseBodyReason27INTERNAL PostV1TextToImage400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1TextToImage400JSONResponseBodyReason27INTERNALRESOURCES PostV1TextToImage400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason27 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason27INTERNAL:
+	case PostV1TextToImage400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -17912,13 +18806,28 @@ func (e PostV1TextToImage400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1TextToImage400JSONResponseBodyReason28.
 const (
-	PostV1TextToImage400JSONResponseBodyReason28UNKNOWN PostV1TextToImage400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1TextToImage400JSONResponseBodyReason28INTERNAL PostV1TextToImage400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason28 enum.
 func (e PostV1TextToImage400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1TextToImage400JSONResponseBodyReason28UNKNOWN:
+	case PostV1TextToImage400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToImage400JSONResponseBodyReason29.
+const (
+	PostV1TextToImage400JSONResponseBodyReason29UNKNOWN PostV1TextToImage400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToImage400JSONResponseBodyReason29 enum.
+func (e PostV1TextToImage400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1TextToImage400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -18137,13 +19046,13 @@ func (e PostV1TextToMusic400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason16.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason16ASSETMISSING PostV1TextToMusic400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1TextToMusic400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1TextToMusic400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason16 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1TextToMusic400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -18152,13 +19061,13 @@ func (e PostV1TextToMusic400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason17.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason17ASSETINVALID PostV1TextToMusic400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1TextToMusic400JSONResponseBodyReason17ASSETMISSING PostV1TextToMusic400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason17 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1TextToMusic400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -18167,13 +19076,13 @@ func (e PostV1TextToMusic400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason18.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1TextToMusic400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1TextToMusic400JSONResponseBodyReason18ASSETINVALID PostV1TextToMusic400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason18 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1TextToMusic400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -18182,13 +19091,13 @@ func (e PostV1TextToMusic400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason19.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1TextToMusic400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1TextToMusic400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1TextToMusic400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason19 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1TextToMusic400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -18197,13 +19106,13 @@ func (e PostV1TextToMusic400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason20.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1TextToMusic400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1TextToMusic400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1TextToMusic400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason20 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1TextToMusic400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -18212,13 +19121,13 @@ func (e PostV1TextToMusic400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason21.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason21FORBIDDEN PostV1TextToMusic400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1TextToMusic400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1TextToMusic400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason21 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1TextToMusic400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -18227,28 +19136,28 @@ func (e PostV1TextToMusic400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason22.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason22QUOTA PostV1TextToMusic400JSONResponseBodyReason22 = "QUOTA"
+	PostV1TextToMusic400JSONResponseBodyReason22FORBIDDEN PostV1TextToMusic400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason22 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason22QUOTA:
+	case PostV1TextToMusic400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToMusic400JSONResponseBodyReason24.
+// Defines values for PostV1TextToMusic400JSONResponseBodyReason23.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason24INTERNALTIMEOUT PostV1TextToMusic400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1TextToMusic400JSONResponseBodyReason23QUOTA PostV1TextToMusic400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason24 enum.
-func (e PostV1TextToMusic400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason23 enum.
+func (e PostV1TextToMusic400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1TextToMusic400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -18257,13 +19166,13 @@ func (e PostV1TextToMusic400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason25.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1TextToMusic400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1TextToMusic400JSONResponseBodyReason25INTERNALTIMEOUT PostV1TextToMusic400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason25 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1TextToMusic400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -18272,13 +19181,13 @@ func (e PostV1TextToMusic400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason26.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason26INTERNALRESOURCES PostV1TextToMusic400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1TextToMusic400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1TextToMusic400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason26 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1TextToMusic400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -18287,13 +19196,13 @@ func (e PostV1TextToMusic400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason27.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason27INTERNAL PostV1TextToMusic400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1TextToMusic400JSONResponseBodyReason27INTERNALRESOURCES PostV1TextToMusic400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason27 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason27INTERNAL:
+	case PostV1TextToMusic400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -18302,13 +19211,28 @@ func (e PostV1TextToMusic400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1TextToMusic400JSONResponseBodyReason28.
 const (
-	PostV1TextToMusic400JSONResponseBodyReason28UNKNOWN PostV1TextToMusic400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1TextToMusic400JSONResponseBodyReason28INTERNAL PostV1TextToMusic400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason28 enum.
 func (e PostV1TextToMusic400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1TextToMusic400JSONResponseBodyReason28UNKNOWN:
+	case PostV1TextToMusic400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToMusic400JSONResponseBodyReason29.
+const (
+	PostV1TextToMusic400JSONResponseBodyReason29UNKNOWN PostV1TextToMusic400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToMusic400JSONResponseBodyReason29 enum.
+func (e PostV1TextToMusic400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1TextToMusic400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -19256,13 +20180,13 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason16.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason16ASSETMISSING PostV1TextToSpeech400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1TextToSpeech400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1TextToSpeech400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason16 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1TextToSpeech400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -19271,13 +20195,13 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason17.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason17ASSETINVALID PostV1TextToSpeech400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1TextToSpeech400JSONResponseBodyReason17ASSETMISSING PostV1TextToSpeech400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason17 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1TextToSpeech400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -19286,13 +20210,13 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason18.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1TextToSpeech400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1TextToSpeech400JSONResponseBodyReason18ASSETINVALID PostV1TextToSpeech400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason18 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1TextToSpeech400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -19301,13 +20225,13 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason19.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1TextToSpeech400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1TextToSpeech400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1TextToSpeech400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason19 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1TextToSpeech400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -19316,13 +20240,13 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason20.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1TextToSpeech400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1TextToSpeech400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1TextToSpeech400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason20 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1TextToSpeech400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -19331,13 +20255,13 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason21.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason21FORBIDDEN PostV1TextToSpeech400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1TextToSpeech400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1TextToSpeech400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason21 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1TextToSpeech400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -19346,28 +20270,28 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason22.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason22QUOTA PostV1TextToSpeech400JSONResponseBodyReason22 = "QUOTA"
+	PostV1TextToSpeech400JSONResponseBodyReason22FORBIDDEN PostV1TextToSpeech400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason22 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason22QUOTA:
+	case PostV1TextToSpeech400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToSpeech400JSONResponseBodyReason24.
+// Defines values for PostV1TextToSpeech400JSONResponseBodyReason23.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason24INTERNALTIMEOUT PostV1TextToSpeech400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1TextToSpeech400JSONResponseBodyReason23QUOTA PostV1TextToSpeech400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason24 enum.
-func (e PostV1TextToSpeech400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason23 enum.
+func (e PostV1TextToSpeech400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1TextToSpeech400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -19376,13 +20300,13 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason25.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1TextToSpeech400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1TextToSpeech400JSONResponseBodyReason25INTERNALTIMEOUT PostV1TextToSpeech400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason25 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1TextToSpeech400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -19391,13 +20315,13 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason26.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason26INTERNALRESOURCES PostV1TextToSpeech400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1TextToSpeech400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1TextToSpeech400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason26 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1TextToSpeech400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -19406,13 +20330,13 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason27.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason27INTERNAL PostV1TextToSpeech400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1TextToSpeech400JSONResponseBodyReason27INTERNALRESOURCES PostV1TextToSpeech400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason27 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason27INTERNAL:
+	case PostV1TextToSpeech400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -19421,13 +20345,28 @@ func (e PostV1TextToSpeech400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1TextToSpeech400JSONResponseBodyReason28.
 const (
-	PostV1TextToSpeech400JSONResponseBodyReason28UNKNOWN PostV1TextToSpeech400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1TextToSpeech400JSONResponseBodyReason28INTERNAL PostV1TextToSpeech400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason28 enum.
 func (e PostV1TextToSpeech400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1TextToSpeech400JSONResponseBodyReason28UNKNOWN:
+	case PostV1TextToSpeech400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToSpeech400JSONResponseBodyReason29.
+const (
+	PostV1TextToSpeech400JSONResponseBodyReason29UNKNOWN PostV1TextToSpeech400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToSpeech400JSONResponseBodyReason29 enum.
+func (e PostV1TextToSpeech400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1TextToSpeech400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -21714,6 +22653,132 @@ func (e PostV1TextToVideoJSONBody27Resolution) Valid() bool {
 	}
 }
 
+// Defines values for PostV1TextToVideoJSONBody28Duration1.
+const (
+	PostV1TextToVideoJSONBody28Duration1Auto PostV1TextToVideoJSONBody28Duration1 = "auto"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody28Duration1 enum.
+func (e PostV1TextToVideoJSONBody28Duration1) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody28Duration1Auto:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody28Model.
+const (
+	PostV1TextToVideoJSONBody28ModelSeedance25Flash PostV1TextToVideoJSONBody28Model = "seedance2_5_flash"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody28Model enum.
+func (e PostV1TextToVideoJSONBody28Model) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody28ModelSeedance25Flash:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody28OutputFormat.
+const (
+	PostV1TextToVideoJSONBody28OutputFormatMov PostV1TextToVideoJSONBody28OutputFormat = "mov"
+	PostV1TextToVideoJSONBody28OutputFormatMp4 PostV1TextToVideoJSONBody28OutputFormat = "mp4"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody28OutputFormat enum.
+func (e PostV1TextToVideoJSONBody28OutputFormat) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody28OutputFormatMov:
+		return true
+	case PostV1TextToVideoJSONBody28OutputFormatMp4:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody28Ratio.
+const (
+	PostV1TextToVideoJSONBody28RatioN1112834 PostV1TextToVideoJSONBody28Ratio = "1112:834"
+	PostV1TextToVideoJSONBody28RatioN1280720 PostV1TextToVideoJSONBody28Ratio = "1280:720"
+	PostV1TextToVideoJSONBody28RatioN1470630 PostV1TextToVideoJSONBody28Ratio = "1470:630"
+	PostV1TextToVideoJSONBody28RatioN480854  PostV1TextToVideoJSONBody28Ratio = "480:854"
+	PostV1TextToVideoJSONBody28RatioN560752  PostV1TextToVideoJSONBody28Ratio = "560:752"
+	PostV1TextToVideoJSONBody28RatioN640640  PostV1TextToVideoJSONBody28Ratio = "640:640"
+	PostV1TextToVideoJSONBody28RatioN7201280 PostV1TextToVideoJSONBody28Ratio = "720:1280"
+	PostV1TextToVideoJSONBody28RatioN752560  PostV1TextToVideoJSONBody28Ratio = "752:560"
+	PostV1TextToVideoJSONBody28RatioN8341112 PostV1TextToVideoJSONBody28Ratio = "834:1112"
+	PostV1TextToVideoJSONBody28RatioN854480  PostV1TextToVideoJSONBody28Ratio = "854:480"
+	PostV1TextToVideoJSONBody28RatioN960960  PostV1TextToVideoJSONBody28Ratio = "960:960"
+	PostV1TextToVideoJSONBody28RatioN992432  PostV1TextToVideoJSONBody28Ratio = "992:432"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody28Ratio enum.
+func (e PostV1TextToVideoJSONBody28Ratio) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody28RatioN1112834:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN1280720:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN1470630:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN480854:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN560752:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN640640:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN7201280:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN752560:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN8341112:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN854480:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN960960:
+		return true
+	case PostV1TextToVideoJSONBody28RatioN992432:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody28ReferenceAudioType.
+const (
+	PostV1TextToVideoJSONBody28ReferenceAudioTypeAudio PostV1TextToVideoJSONBody28ReferenceAudioType = "audio"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody28ReferenceAudioType enum.
+func (e PostV1TextToVideoJSONBody28ReferenceAudioType) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody28ReferenceAudioTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideoJSONBody28ReferenceVideosType.
+const (
+	PostV1TextToVideoJSONBody28ReferenceVideosTypeVideo PostV1TextToVideoJSONBody28ReferenceVideosType = "video"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideoJSONBody28ReferenceVideosType enum.
+func (e PostV1TextToVideoJSONBody28ReferenceVideosType) Valid() bool {
+	switch e {
+	case PostV1TextToVideoJSONBody28ReferenceVideosTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason1.
 const (
 	PostV1TextToVideo400JSONResponseBodyReason1SAFETYINPUTPUBLICFIGURE PostV1TextToVideo400JSONResponseBodyReason1 = "SAFETY.INPUT.PUBLIC_FIGURE"
@@ -21911,13 +22976,13 @@ func (e PostV1TextToVideo400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason16.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason16ASSETMISSING PostV1TextToVideo400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1TextToVideo400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1TextToVideo400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason16 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1TextToVideo400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -21926,13 +22991,13 @@ func (e PostV1TextToVideo400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason17.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason17ASSETINVALID PostV1TextToVideo400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1TextToVideo400JSONResponseBodyReason17ASSETMISSING PostV1TextToVideo400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason17 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1TextToVideo400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -21941,13 +23006,13 @@ func (e PostV1TextToVideo400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason18.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1TextToVideo400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1TextToVideo400JSONResponseBodyReason18ASSETINVALID PostV1TextToVideo400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason18 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1TextToVideo400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -21956,13 +23021,13 @@ func (e PostV1TextToVideo400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason19.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1TextToVideo400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1TextToVideo400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1TextToVideo400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason19 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1TextToVideo400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -21971,13 +23036,13 @@ func (e PostV1TextToVideo400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason20.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1TextToVideo400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1TextToVideo400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1TextToVideo400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason20 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1TextToVideo400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -21986,13 +23051,13 @@ func (e PostV1TextToVideo400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason21.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason21FORBIDDEN PostV1TextToVideo400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1TextToVideo400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1TextToVideo400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason21 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1TextToVideo400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -22001,28 +23066,28 @@ func (e PostV1TextToVideo400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason22.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason22QUOTA PostV1TextToVideo400JSONResponseBodyReason22 = "QUOTA"
+	PostV1TextToVideo400JSONResponseBodyReason22FORBIDDEN PostV1TextToVideo400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason22 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason22QUOTA:
+	case PostV1TextToVideo400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1TextToVideo400JSONResponseBodyReason24.
+// Defines values for PostV1TextToVideo400JSONResponseBodyReason23.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason24INTERNALTIMEOUT PostV1TextToVideo400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1TextToVideo400JSONResponseBodyReason23QUOTA PostV1TextToVideo400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason24 enum.
-func (e PostV1TextToVideo400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason23 enum.
+func (e PostV1TextToVideo400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1TextToVideo400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -22031,13 +23096,13 @@ func (e PostV1TextToVideo400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason25.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1TextToVideo400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1TextToVideo400JSONResponseBodyReason25INTERNALTIMEOUT PostV1TextToVideo400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason25 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1TextToVideo400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -22046,13 +23111,13 @@ func (e PostV1TextToVideo400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason26.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason26INTERNALRESOURCES PostV1TextToVideo400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1TextToVideo400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1TextToVideo400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason26 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1TextToVideo400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -22061,13 +23126,13 @@ func (e PostV1TextToVideo400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason27.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason27INTERNAL PostV1TextToVideo400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1TextToVideo400JSONResponseBodyReason27INTERNALRESOURCES PostV1TextToVideo400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason27 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason27INTERNAL:
+	case PostV1TextToVideo400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -22076,13 +23141,28 @@ func (e PostV1TextToVideo400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1TextToVideo400JSONResponseBodyReason28.
 const (
-	PostV1TextToVideo400JSONResponseBodyReason28UNKNOWN PostV1TextToVideo400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1TextToVideo400JSONResponseBodyReason28INTERNAL PostV1TextToVideo400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason28 enum.
 func (e PostV1TextToVideo400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1TextToVideo400JSONResponseBodyReason28UNKNOWN:
+	case PostV1TextToVideo400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1TextToVideo400JSONResponseBodyReason29.
+const (
+	PostV1TextToVideo400JSONResponseBodyReason29UNKNOWN PostV1TextToVideo400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1TextToVideo400JSONResponseBodyReason29 enum.
+func (e PostV1TextToVideo400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1TextToVideo400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -22337,13 +23417,13 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason16.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason16ASSETMISSING PostV1VideoToAudio400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1VideoToAudio400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1VideoToAudio400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason16 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1VideoToAudio400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -22352,13 +23432,13 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason17.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason17ASSETINVALID PostV1VideoToAudio400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1VideoToAudio400JSONResponseBodyReason17ASSETMISSING PostV1VideoToAudio400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason17 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1VideoToAudio400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -22367,13 +23447,13 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason18.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1VideoToAudio400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1VideoToAudio400JSONResponseBodyReason18ASSETINVALID PostV1VideoToAudio400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason18 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1VideoToAudio400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -22382,13 +23462,13 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason19.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1VideoToAudio400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1VideoToAudio400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1VideoToAudio400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason19 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1VideoToAudio400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -22397,13 +23477,13 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason20.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1VideoToAudio400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1VideoToAudio400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1VideoToAudio400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason20 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1VideoToAudio400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -22412,13 +23492,13 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason21.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason21FORBIDDEN PostV1VideoToAudio400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1VideoToAudio400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1VideoToAudio400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason21 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1VideoToAudio400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -22427,28 +23507,28 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason22.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason22QUOTA PostV1VideoToAudio400JSONResponseBodyReason22 = "QUOTA"
+	PostV1VideoToAudio400JSONResponseBodyReason22FORBIDDEN PostV1VideoToAudio400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason22 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason22QUOTA:
+	case PostV1VideoToAudio400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1VideoToAudio400JSONResponseBodyReason24.
+// Defines values for PostV1VideoToAudio400JSONResponseBodyReason23.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason24INTERNALTIMEOUT PostV1VideoToAudio400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1VideoToAudio400JSONResponseBodyReason23QUOTA PostV1VideoToAudio400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason24 enum.
-func (e PostV1VideoToAudio400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason23 enum.
+func (e PostV1VideoToAudio400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1VideoToAudio400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -22457,13 +23537,13 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason25.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1VideoToAudio400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1VideoToAudio400JSONResponseBodyReason25INTERNALTIMEOUT PostV1VideoToAudio400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason25 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1VideoToAudio400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -22472,13 +23552,13 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason26.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason26INTERNALRESOURCES PostV1VideoToAudio400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1VideoToAudio400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1VideoToAudio400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason26 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1VideoToAudio400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -22487,13 +23567,13 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason27.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason27INTERNAL PostV1VideoToAudio400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1VideoToAudio400JSONResponseBodyReason27INTERNALRESOURCES PostV1VideoToAudio400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason27 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason27INTERNAL:
+	case PostV1VideoToAudio400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -22502,13 +23582,28 @@ func (e PostV1VideoToAudio400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1VideoToAudio400JSONResponseBodyReason28.
 const (
-	PostV1VideoToAudio400JSONResponseBodyReason28UNKNOWN PostV1VideoToAudio400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1VideoToAudio400JSONResponseBodyReason28INTERNAL PostV1VideoToAudio400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason28 enum.
 func (e PostV1VideoToAudio400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1VideoToAudio400JSONResponseBodyReason28UNKNOWN:
+	case PostV1VideoToAudio400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToAudio400JSONResponseBodyReason29.
+const (
+	PostV1VideoToAudio400JSONResponseBodyReason29UNKNOWN PostV1VideoToAudio400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToAudio400JSONResponseBodyReason29 enum.
+func (e PostV1VideoToAudio400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1VideoToAudio400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -22778,13 +23873,13 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason16.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason16ASSETMISSING PostV1VideoToHdr400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1VideoToHdr400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1VideoToHdr400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason16 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1VideoToHdr400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -22793,13 +23888,13 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason17.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason17ASSETINVALID PostV1VideoToHdr400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1VideoToHdr400JSONResponseBodyReason17ASSETMISSING PostV1VideoToHdr400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason17 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1VideoToHdr400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -22808,13 +23903,13 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason18.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1VideoToHdr400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1VideoToHdr400JSONResponseBodyReason18ASSETINVALID PostV1VideoToHdr400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason18 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1VideoToHdr400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -22823,13 +23918,13 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason19.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1VideoToHdr400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1VideoToHdr400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1VideoToHdr400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason19 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1VideoToHdr400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -22838,13 +23933,13 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason20.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1VideoToHdr400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1VideoToHdr400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1VideoToHdr400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason20 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1VideoToHdr400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -22853,13 +23948,13 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason21.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason21FORBIDDEN PostV1VideoToHdr400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1VideoToHdr400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1VideoToHdr400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason21 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1VideoToHdr400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -22868,28 +23963,28 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason22.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason22QUOTA PostV1VideoToHdr400JSONResponseBodyReason22 = "QUOTA"
+	PostV1VideoToHdr400JSONResponseBodyReason22FORBIDDEN PostV1VideoToHdr400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason22 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason22QUOTA:
+	case PostV1VideoToHdr400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1VideoToHdr400JSONResponseBodyReason24.
+// Defines values for PostV1VideoToHdr400JSONResponseBodyReason23.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason24INTERNALTIMEOUT PostV1VideoToHdr400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1VideoToHdr400JSONResponseBodyReason23QUOTA PostV1VideoToHdr400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason24 enum.
-func (e PostV1VideoToHdr400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason23 enum.
+func (e PostV1VideoToHdr400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1VideoToHdr400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -22898,13 +23993,13 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason25.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1VideoToHdr400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1VideoToHdr400JSONResponseBodyReason25INTERNALTIMEOUT PostV1VideoToHdr400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason25 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1VideoToHdr400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -22913,13 +24008,13 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason26.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason26INTERNALRESOURCES PostV1VideoToHdr400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1VideoToHdr400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1VideoToHdr400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason26 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1VideoToHdr400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -22928,13 +24023,13 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason27.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason27INTERNAL PostV1VideoToHdr400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1VideoToHdr400JSONResponseBodyReason27INTERNALRESOURCES PostV1VideoToHdr400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason27 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason27INTERNAL:
+	case PostV1VideoToHdr400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -22943,13 +24038,28 @@ func (e PostV1VideoToHdr400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1VideoToHdr400JSONResponseBodyReason28.
 const (
-	PostV1VideoToHdr400JSONResponseBodyReason28UNKNOWN PostV1VideoToHdr400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1VideoToHdr400JSONResponseBodyReason28INTERNAL PostV1VideoToHdr400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason28 enum.
 func (e PostV1VideoToHdr400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1VideoToHdr400JSONResponseBodyReason28UNKNOWN:
+	case PostV1VideoToHdr400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToHdr400JSONResponseBodyReason29.
+const (
+	PostV1VideoToHdr400JSONResponseBodyReason29UNKNOWN PostV1VideoToHdr400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToHdr400JSONResponseBodyReason29 enum.
+func (e PostV1VideoToHdr400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1VideoToHdr400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -24438,6 +25548,153 @@ func (e PostV1VideoToVideoJSONBody15Resolution) Valid() bool {
 	}
 }
 
+// Defines values for PostV1VideoToVideoJSONBody16Duration1.
+const (
+	PostV1VideoToVideoJSONBody16Duration1Auto PostV1VideoToVideoJSONBody16Duration1 = "auto"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody16Duration1 enum.
+func (e PostV1VideoToVideoJSONBody16Duration1) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody16Duration1Auto:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody16Mode.
+const (
+	PostV1VideoToVideoJSONBody16ModeEdit      PostV1VideoToVideoJSONBody16Mode = "edit"
+	PostV1VideoToVideoJSONBody16ModeExtend    PostV1VideoToVideoJSONBody16Mode = "extend"
+	PostV1VideoToVideoJSONBody16ModeReference PostV1VideoToVideoJSONBody16Mode = "reference"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody16Mode enum.
+func (e PostV1VideoToVideoJSONBody16Mode) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody16ModeEdit:
+		return true
+	case PostV1VideoToVideoJSONBody16ModeExtend:
+		return true
+	case PostV1VideoToVideoJSONBody16ModeReference:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody16Model.
+const (
+	PostV1VideoToVideoJSONBody16ModelSeedance25Flash PostV1VideoToVideoJSONBody16Model = "seedance2_5_flash"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody16Model enum.
+func (e PostV1VideoToVideoJSONBody16Model) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody16ModelSeedance25Flash:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody16OutputFormat.
+const (
+	PostV1VideoToVideoJSONBody16OutputFormatMov PostV1VideoToVideoJSONBody16OutputFormat = "mov"
+	PostV1VideoToVideoJSONBody16OutputFormatMp4 PostV1VideoToVideoJSONBody16OutputFormat = "mp4"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody16OutputFormat enum.
+func (e PostV1VideoToVideoJSONBody16OutputFormat) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody16OutputFormatMov:
+		return true
+	case PostV1VideoToVideoJSONBody16OutputFormatMp4:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody16Ratio.
+const (
+	PostV1VideoToVideoJSONBody16RatioN1112834 PostV1VideoToVideoJSONBody16Ratio = "1112:834"
+	PostV1VideoToVideoJSONBody16RatioN1280720 PostV1VideoToVideoJSONBody16Ratio = "1280:720"
+	PostV1VideoToVideoJSONBody16RatioN1470630 PostV1VideoToVideoJSONBody16Ratio = "1470:630"
+	PostV1VideoToVideoJSONBody16RatioN480854  PostV1VideoToVideoJSONBody16Ratio = "480:854"
+	PostV1VideoToVideoJSONBody16RatioN560752  PostV1VideoToVideoJSONBody16Ratio = "560:752"
+	PostV1VideoToVideoJSONBody16RatioN640640  PostV1VideoToVideoJSONBody16Ratio = "640:640"
+	PostV1VideoToVideoJSONBody16RatioN7201280 PostV1VideoToVideoJSONBody16Ratio = "720:1280"
+	PostV1VideoToVideoJSONBody16RatioN752560  PostV1VideoToVideoJSONBody16Ratio = "752:560"
+	PostV1VideoToVideoJSONBody16RatioN8341112 PostV1VideoToVideoJSONBody16Ratio = "834:1112"
+	PostV1VideoToVideoJSONBody16RatioN854480  PostV1VideoToVideoJSONBody16Ratio = "854:480"
+	PostV1VideoToVideoJSONBody16RatioN960960  PostV1VideoToVideoJSONBody16Ratio = "960:960"
+	PostV1VideoToVideoJSONBody16RatioN992432  PostV1VideoToVideoJSONBody16Ratio = "992:432"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody16Ratio enum.
+func (e PostV1VideoToVideoJSONBody16Ratio) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody16RatioN1112834:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN1280720:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN1470630:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN480854:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN560752:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN640640:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN7201280:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN752560:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN8341112:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN854480:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN960960:
+		return true
+	case PostV1VideoToVideoJSONBody16RatioN992432:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody16ReferenceAudioType.
+const (
+	PostV1VideoToVideoJSONBody16ReferenceAudioTypeAudio PostV1VideoToVideoJSONBody16ReferenceAudioType = "audio"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody16ReferenceAudioType enum.
+func (e PostV1VideoToVideoJSONBody16ReferenceAudioType) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody16ReferenceAudioTypeAudio:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideoJSONBody16ReferenceVideosType.
+const (
+	PostV1VideoToVideoJSONBody16ReferenceVideosTypeVideo PostV1VideoToVideoJSONBody16ReferenceVideosType = "video"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideoJSONBody16ReferenceVideosType enum.
+func (e PostV1VideoToVideoJSONBody16ReferenceVideosType) Valid() bool {
+	switch e {
+	case PostV1VideoToVideoJSONBody16ReferenceVideosTypeVideo:
+		return true
+	default:
+		return false
+	}
+}
+
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason1.
 const (
 	PostV1VideoToVideo400JSONResponseBodyReason1SAFETYINPUTPUBLICFIGURE PostV1VideoToVideo400JSONResponseBodyReason1 = "SAFETY.INPUT.PUBLIC_FIGURE"
@@ -24635,13 +25892,13 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason16.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason16ASSETMISSING PostV1VideoToVideo400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1VideoToVideo400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1VideoToVideo400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason16 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1VideoToVideo400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -24650,13 +25907,13 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason17.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason17ASSETINVALID PostV1VideoToVideo400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1VideoToVideo400JSONResponseBodyReason17ASSETMISSING PostV1VideoToVideo400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason17 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1VideoToVideo400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -24665,13 +25922,13 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason18.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1VideoToVideo400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1VideoToVideo400JSONResponseBodyReason18ASSETINVALID PostV1VideoToVideo400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason18 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1VideoToVideo400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -24680,13 +25937,13 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason19.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1VideoToVideo400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1VideoToVideo400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1VideoToVideo400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason19 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1VideoToVideo400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -24695,13 +25952,13 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason20.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1VideoToVideo400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1VideoToVideo400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1VideoToVideo400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason20 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1VideoToVideo400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -24710,13 +25967,13 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason21.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason21FORBIDDEN PostV1VideoToVideo400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1VideoToVideo400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1VideoToVideo400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason21 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1VideoToVideo400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -24725,28 +25982,28 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason22.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason22QUOTA PostV1VideoToVideo400JSONResponseBodyReason22 = "QUOTA"
+	PostV1VideoToVideo400JSONResponseBodyReason22FORBIDDEN PostV1VideoToVideo400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason22 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason22QUOTA:
+	case PostV1VideoToVideo400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1VideoToVideo400JSONResponseBodyReason24.
+// Defines values for PostV1VideoToVideo400JSONResponseBodyReason23.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason24INTERNALTIMEOUT PostV1VideoToVideo400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1VideoToVideo400JSONResponseBodyReason23QUOTA PostV1VideoToVideo400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason24 enum.
-func (e PostV1VideoToVideo400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason23 enum.
+func (e PostV1VideoToVideo400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1VideoToVideo400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -24755,13 +26012,13 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason25.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1VideoToVideo400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1VideoToVideo400JSONResponseBodyReason25INTERNALTIMEOUT PostV1VideoToVideo400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason25 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1VideoToVideo400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -24770,13 +26027,13 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason26.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason26INTERNALRESOURCES PostV1VideoToVideo400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1VideoToVideo400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1VideoToVideo400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason26 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1VideoToVideo400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -24785,13 +26042,13 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason27.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason27INTERNAL PostV1VideoToVideo400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1VideoToVideo400JSONResponseBodyReason27INTERNALRESOURCES PostV1VideoToVideo400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason27 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason27INTERNAL:
+	case PostV1VideoToVideo400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -24800,13 +26057,28 @@ func (e PostV1VideoToVideo400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1VideoToVideo400JSONResponseBodyReason28.
 const (
-	PostV1VideoToVideo400JSONResponseBodyReason28UNKNOWN PostV1VideoToVideo400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1VideoToVideo400JSONResponseBodyReason28INTERNAL PostV1VideoToVideo400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason28 enum.
 func (e PostV1VideoToVideo400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1VideoToVideo400JSONResponseBodyReason28UNKNOWN:
+	case PostV1VideoToVideo400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoToVideo400JSONResponseBodyReason29.
+const (
+	PostV1VideoToVideo400JSONResponseBodyReason29UNKNOWN PostV1VideoToVideo400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoToVideo400JSONResponseBodyReason29 enum.
+func (e PostV1VideoToVideo400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1VideoToVideo400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -25124,13 +26396,13 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason16.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason16ASSETMISSING PostV1VideoUpscale400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1VideoUpscale400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1VideoUpscale400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason16 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1VideoUpscale400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -25139,13 +26411,13 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason17.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason17ASSETINVALID PostV1VideoUpscale400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1VideoUpscale400JSONResponseBodyReason17ASSETMISSING PostV1VideoUpscale400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason17 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1VideoUpscale400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -25154,13 +26426,13 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason18.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1VideoUpscale400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1VideoUpscale400JSONResponseBodyReason18ASSETINVALID PostV1VideoUpscale400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason18 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1VideoUpscale400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -25169,13 +26441,13 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason19.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1VideoUpscale400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1VideoUpscale400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1VideoUpscale400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason19 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1VideoUpscale400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -25184,13 +26456,13 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason20.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1VideoUpscale400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1VideoUpscale400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1VideoUpscale400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason20 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1VideoUpscale400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -25199,13 +26471,13 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason21.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason21FORBIDDEN PostV1VideoUpscale400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1VideoUpscale400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1VideoUpscale400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason21 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1VideoUpscale400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -25214,28 +26486,28 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason22.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason22QUOTA PostV1VideoUpscale400JSONResponseBodyReason22 = "QUOTA"
+	PostV1VideoUpscale400JSONResponseBodyReason22FORBIDDEN PostV1VideoUpscale400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason22 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason22QUOTA:
+	case PostV1VideoUpscale400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1VideoUpscale400JSONResponseBodyReason24.
+// Defines values for PostV1VideoUpscale400JSONResponseBodyReason23.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason24INTERNALTIMEOUT PostV1VideoUpscale400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1VideoUpscale400JSONResponseBodyReason23QUOTA PostV1VideoUpscale400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason24 enum.
-func (e PostV1VideoUpscale400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason23 enum.
+func (e PostV1VideoUpscale400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1VideoUpscale400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -25244,13 +26516,13 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason25.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1VideoUpscale400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1VideoUpscale400JSONResponseBodyReason25INTERNALTIMEOUT PostV1VideoUpscale400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason25 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1VideoUpscale400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -25259,13 +26531,13 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason26.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason26INTERNALRESOURCES PostV1VideoUpscale400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1VideoUpscale400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1VideoUpscale400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason26 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1VideoUpscale400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -25274,13 +26546,13 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason27.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason27INTERNAL PostV1VideoUpscale400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1VideoUpscale400JSONResponseBodyReason27INTERNALRESOURCES PostV1VideoUpscale400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason27 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason27INTERNAL:
+	case PostV1VideoUpscale400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -25289,13 +26561,28 @@ func (e PostV1VideoUpscale400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1VideoUpscale400JSONResponseBodyReason28.
 const (
-	PostV1VideoUpscale400JSONResponseBodyReason28UNKNOWN PostV1VideoUpscale400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1VideoUpscale400JSONResponseBodyReason28INTERNAL PostV1VideoUpscale400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason28 enum.
 func (e PostV1VideoUpscale400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1VideoUpscale400JSONResponseBodyReason28UNKNOWN:
+	case PostV1VideoUpscale400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VideoUpscale400JSONResponseBodyReason29.
+const (
+	PostV1VideoUpscale400JSONResponseBodyReason29UNKNOWN PostV1VideoUpscale400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VideoUpscale400JSONResponseBodyReason29 enum.
+func (e PostV1VideoUpscale400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1VideoUpscale400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -25613,13 +26900,13 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason16.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason16ASSETMISSING PostV1VoiceDubbing400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1VoiceDubbing400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1VoiceDubbing400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason16 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1VoiceDubbing400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -25628,13 +26915,13 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason17.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason17ASSETINVALID PostV1VoiceDubbing400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1VoiceDubbing400JSONResponseBodyReason17ASSETMISSING PostV1VoiceDubbing400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason17 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1VoiceDubbing400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -25643,13 +26930,13 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason18.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1VoiceDubbing400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1VoiceDubbing400JSONResponseBodyReason18ASSETINVALID PostV1VoiceDubbing400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason18 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1VoiceDubbing400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -25658,13 +26945,13 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason19.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1VoiceDubbing400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1VoiceDubbing400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1VoiceDubbing400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason19 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1VoiceDubbing400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -25673,13 +26960,13 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason20.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1VoiceDubbing400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1VoiceDubbing400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1VoiceDubbing400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason20 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1VoiceDubbing400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -25688,13 +26975,13 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason21.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason21FORBIDDEN PostV1VoiceDubbing400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1VoiceDubbing400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1VoiceDubbing400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason21 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1VoiceDubbing400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -25703,28 +26990,28 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason22.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason22QUOTA PostV1VoiceDubbing400JSONResponseBodyReason22 = "QUOTA"
+	PostV1VoiceDubbing400JSONResponseBodyReason22FORBIDDEN PostV1VoiceDubbing400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason22 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason22QUOTA:
+	case PostV1VoiceDubbing400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1VoiceDubbing400JSONResponseBodyReason24.
+// Defines values for PostV1VoiceDubbing400JSONResponseBodyReason23.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason24INTERNALTIMEOUT PostV1VoiceDubbing400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1VoiceDubbing400JSONResponseBodyReason23QUOTA PostV1VoiceDubbing400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason24 enum.
-func (e PostV1VoiceDubbing400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason23 enum.
+func (e PostV1VoiceDubbing400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1VoiceDubbing400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -25733,13 +27020,13 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason25.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1VoiceDubbing400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1VoiceDubbing400JSONResponseBodyReason25INTERNALTIMEOUT PostV1VoiceDubbing400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason25 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1VoiceDubbing400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -25748,13 +27035,13 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason26.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason26INTERNALRESOURCES PostV1VoiceDubbing400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1VoiceDubbing400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1VoiceDubbing400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason26 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1VoiceDubbing400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -25763,13 +27050,13 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason27.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason27INTERNAL PostV1VoiceDubbing400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1VoiceDubbing400JSONResponseBodyReason27INTERNALRESOURCES PostV1VoiceDubbing400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason27 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason27INTERNAL:
+	case PostV1VoiceDubbing400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -25778,13 +27065,28 @@ func (e PostV1VoiceDubbing400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1VoiceDubbing400JSONResponseBodyReason28.
 const (
-	PostV1VoiceDubbing400JSONResponseBodyReason28UNKNOWN PostV1VoiceDubbing400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1VoiceDubbing400JSONResponseBodyReason28INTERNAL PostV1VoiceDubbing400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason28 enum.
 func (e PostV1VoiceDubbing400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1VoiceDubbing400JSONResponseBodyReason28UNKNOWN:
+	case PostV1VoiceDubbing400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VoiceDubbing400JSONResponseBodyReason29.
+const (
+	PostV1VoiceDubbing400JSONResponseBodyReason29UNKNOWN PostV1VoiceDubbing400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VoiceDubbing400JSONResponseBodyReason29 enum.
+func (e PostV1VoiceDubbing400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1VoiceDubbing400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -26003,13 +27305,13 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason15) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason16.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason16ASSETMISSING PostV1VoiceIsolation400JSONResponseBodyReason16 = "ASSET.MISSING"
+	PostV1VoiceIsolation400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC PostV1VoiceIsolation400JSONResponseBodyReason16 = "INPUT_VALIDATION.VIDEO.UNSUPPORTED_CODEC"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason16 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason16) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason16ASSETMISSING:
+	case PostV1VoiceIsolation400JSONResponseBodyReason16INPUTVALIDATIONVIDEOUNSUPPORTEDCODEC:
 		return true
 	default:
 		return false
@@ -26018,13 +27320,13 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason16) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason17.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason17ASSETINVALID PostV1VoiceIsolation400JSONResponseBodyReason17 = "ASSET.INVALID"
+	PostV1VoiceIsolation400JSONResponseBodyReason17ASSETMISSING PostV1VoiceIsolation400JSONResponseBodyReason17 = "ASSET.MISSING"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason17 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason17) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason17ASSETINVALID:
+	case PostV1VoiceIsolation400JSONResponseBodyReason17ASSETMISSING:
 		return true
 	default:
 		return false
@@ -26033,13 +27335,13 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason17) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason18.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT PostV1VoiceIsolation400JSONResponseBodyReason18 = "SANDBOX.WORKSPACE_LIMIT"
+	PostV1VoiceIsolation400JSONResponseBodyReason18ASSETINVALID PostV1VoiceIsolation400JSONResponseBodyReason18 = "ASSET.INVALID"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason18 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason18) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason18SANDBOXWORKSPACELIMIT:
+	case PostV1VoiceIsolation400JSONResponseBodyReason18ASSETINVALID:
 		return true
 	default:
 		return false
@@ -26048,13 +27350,13 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason18) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason19.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason19SANDBOXCONTAINERLOST PostV1VoiceIsolation400JSONResponseBodyReason19 = "SANDBOX.CONTAINER_LOST"
+	PostV1VoiceIsolation400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT PostV1VoiceIsolation400JSONResponseBodyReason19 = "SANDBOX.WORKSPACE_LIMIT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason19 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason19) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason19SANDBOXCONTAINERLOST:
+	case PostV1VoiceIsolation400JSONResponseBodyReason19SANDBOXWORKSPACELIMIT:
 		return true
 	default:
 		return false
@@ -26063,13 +27365,13 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason19) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason20.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason20SANDBOXNOTRESUMABLE PostV1VoiceIsolation400JSONResponseBodyReason20 = "SANDBOX.NOT_RESUMABLE"
+	PostV1VoiceIsolation400JSONResponseBodyReason20SANDBOXCONTAINERLOST PostV1VoiceIsolation400JSONResponseBodyReason20 = "SANDBOX.CONTAINER_LOST"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason20 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason20) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason20SANDBOXNOTRESUMABLE:
+	case PostV1VoiceIsolation400JSONResponseBodyReason20SANDBOXCONTAINERLOST:
 		return true
 	default:
 		return false
@@ -26078,13 +27380,13 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason20) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason21.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason21FORBIDDEN PostV1VoiceIsolation400JSONResponseBodyReason21 = "FORBIDDEN"
+	PostV1VoiceIsolation400JSONResponseBodyReason21SANDBOXNOTRESUMABLE PostV1VoiceIsolation400JSONResponseBodyReason21 = "SANDBOX.NOT_RESUMABLE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason21 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason21) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason21FORBIDDEN:
+	case PostV1VoiceIsolation400JSONResponseBodyReason21SANDBOXNOTRESUMABLE:
 		return true
 	default:
 		return false
@@ -26093,28 +27395,28 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason21) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason22.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason22QUOTA PostV1VoiceIsolation400JSONResponseBodyReason22 = "QUOTA"
+	PostV1VoiceIsolation400JSONResponseBodyReason22FORBIDDEN PostV1VoiceIsolation400JSONResponseBodyReason22 = "FORBIDDEN"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason22 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason22) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason22QUOTA:
+	case PostV1VoiceIsolation400JSONResponseBodyReason22FORBIDDEN:
 		return true
 	default:
 		return false
 	}
 }
 
-// Defines values for PostV1VoiceIsolation400JSONResponseBodyReason24.
+// Defines values for PostV1VoiceIsolation400JSONResponseBodyReason23.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason24INTERNALTIMEOUT PostV1VoiceIsolation400JSONResponseBodyReason24 = "INTERNAL.TIMEOUT"
+	PostV1VoiceIsolation400JSONResponseBodyReason23QUOTA PostV1VoiceIsolation400JSONResponseBodyReason23 = "QUOTA"
 )
 
-// Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason24 enum.
-func (e PostV1VoiceIsolation400JSONResponseBodyReason24) Valid() bool {
+// Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason23 enum.
+func (e PostV1VoiceIsolation400JSONResponseBodyReason23) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason24INTERNALTIMEOUT:
+	case PostV1VoiceIsolation400JSONResponseBodyReason23QUOTA:
 		return true
 	default:
 		return false
@@ -26123,13 +27425,13 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason24) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason25.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason25INTERNALHDRCOMPOSE PostV1VoiceIsolation400JSONResponseBodyReason25 = "INTERNAL.HDR_COMPOSE"
+	PostV1VoiceIsolation400JSONResponseBodyReason25INTERNALTIMEOUT PostV1VoiceIsolation400JSONResponseBodyReason25 = "INTERNAL.TIMEOUT"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason25 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason25) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason25INTERNALHDRCOMPOSE:
+	case PostV1VoiceIsolation400JSONResponseBodyReason25INTERNALTIMEOUT:
 		return true
 	default:
 		return false
@@ -26138,13 +27440,13 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason25) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason26.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason26INTERNALRESOURCES PostV1VoiceIsolation400JSONResponseBodyReason26 = "INTERNAL.RESOURCES"
+	PostV1VoiceIsolation400JSONResponseBodyReason26INTERNALHDRCOMPOSE PostV1VoiceIsolation400JSONResponseBodyReason26 = "INTERNAL.HDR_COMPOSE"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason26 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason26) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason26INTERNALRESOURCES:
+	case PostV1VoiceIsolation400JSONResponseBodyReason26INTERNALHDRCOMPOSE:
 		return true
 	default:
 		return false
@@ -26153,13 +27455,13 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason26) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason27.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason27INTERNAL PostV1VoiceIsolation400JSONResponseBodyReason27 = "INTERNAL"
+	PostV1VoiceIsolation400JSONResponseBodyReason27INTERNALRESOURCES PostV1VoiceIsolation400JSONResponseBodyReason27 = "INTERNAL.RESOURCES"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason27 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason27) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason27INTERNAL:
+	case PostV1VoiceIsolation400JSONResponseBodyReason27INTERNALRESOURCES:
 		return true
 	default:
 		return false
@@ -26168,13 +27470,28 @@ func (e PostV1VoiceIsolation400JSONResponseBodyReason27) Valid() bool {
 
 // Defines values for PostV1VoiceIsolation400JSONResponseBodyReason28.
 const (
-	PostV1VoiceIsolation400JSONResponseBodyReason28UNKNOWN PostV1VoiceIsolation400JSONResponseBodyReason28 = "UNKNOWN"
+	PostV1VoiceIsolation400JSONResponseBodyReason28INTERNAL PostV1VoiceIsolation400JSONResponseBodyReason28 = "INTERNAL"
 )
 
 // Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason28 enum.
 func (e PostV1VoiceIsolation400JSONResponseBodyReason28) Valid() bool {
 	switch e {
-	case PostV1VoiceIsolation400JSONResponseBodyReason28UNKNOWN:
+	case PostV1VoiceIsolation400JSONResponseBodyReason28INTERNAL:
+		return true
+	default:
+		return false
+	}
+}
+
+// Defines values for PostV1VoiceIsolation400JSONResponseBodyReason29.
+const (
+	PostV1VoiceIsolation400JSONResponseBodyReason29UNKNOWN PostV1VoiceIsolation400JSONResponseBodyReason29 = "UNKNOWN"
+)
+
+// Valid indicates whether the value is a known member of the PostV1VoiceIsolation400JSONResponseBodyReason29 enum.
+func (e PostV1VoiceIsolation400JSONResponseBodyReason29) Valid() bool {
+	switch e {
+	case PostV1VoiceIsolation400JSONResponseBodyReason29UNKNOWN:
 		return true
 	default:
 		return false
@@ -26532,13 +27849,16 @@ func (e PostV1WorkflowsIdJSONBodyNodeOutputs3Type) Valid() bool {
 	}
 }
 
+// XRunwayTags defines model for X-Runway-Tags.
+type XRunwayTags = string
+
 // GetV1AvatarConversationsParams defines parameters for GetV1AvatarConversations.
 type GetV1AvatarConversationsParams struct {
 	// Cursor Cursor from a previous response for fetching the next page of results.
 	Cursor *string `form:"cursor,omitempty" json:"cursor,omitempty"`
 
 	// Limit The maximum number of items to return per page.
-	Limit int `form:"limit" json:"limit"`
+	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
 
 	// Avatar Filter to conversations that used the given custom avatar.
 	Avatar *openapi_types.UUID `form:"avatar,omitempty" json:"avatar,omitempty"`
@@ -27007,6 +28327,14 @@ type PostV1AvatarVideosJSONBody struct {
 	Speech PostV1AvatarVideosJSONBody_Speech `json:"speech"`
 }
 
+// PostV1AvatarVideosParams defines parameters for PostV1AvatarVideos.
+type PostV1AvatarVideosParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
+}
+
 // PostV1AvatarVideosJSONBodyAvatar0 defines parameters for PostV1AvatarVideos.
 type PostV1AvatarVideosJSONBodyAvatar0 struct {
 	// PresetId ID of a preset avatar.
@@ -27112,7 +28440,7 @@ type GetV1AvatarsParams struct {
 	Cursor *string `form:"cursor,omitempty" json:"cursor,omitempty"`
 
 	// Limit The maximum number of items to return per page.
-	Limit int `form:"limit" json:"limit"`
+	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
 }
 
 // GetV1Avatars200JSONResponseBodyData0 defines parameters for GetV1Avatars.
@@ -28250,6 +29578,14 @@ type PostV1CharacterPerformanceJSONBody struct {
 	union json.RawMessage
 }
 
+// PostV1CharacterPerformanceParams defines parameters for PostV1CharacterPerformance.
+type PostV1CharacterPerformanceParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
+}
+
 // PostV1CharacterPerformanceJSONBody0 defines parameters for PostV1CharacterPerformance.
 type PostV1CharacterPerformanceJSONBody0 struct {
 	// BodyControl A boolean indicating whether to enable body control. When enabled, non-facial movements and gestures will be applied to the character in addition to facial expressions.
@@ -28466,10 +29802,10 @@ type PostV1CharacterPerformance400JSONResponseBodyReason21 string
 type PostV1CharacterPerformance400JSONResponseBodyReason22 string
 
 // PostV1CharacterPerformance400JSONResponseBodyReason23 defines parameters for PostV1CharacterPerformance.
-type PostV1CharacterPerformance400JSONResponseBodyReason23 = string
+type PostV1CharacterPerformance400JSONResponseBodyReason23 string
 
 // PostV1CharacterPerformance400JSONResponseBodyReason24 defines parameters for PostV1CharacterPerformance.
-type PostV1CharacterPerformance400JSONResponseBodyReason24 string
+type PostV1CharacterPerformance400JSONResponseBodyReason24 = string
 
 // PostV1CharacterPerformance400JSONResponseBodyReason25 defines parameters for PostV1CharacterPerformance.
 type PostV1CharacterPerformance400JSONResponseBodyReason25 string
@@ -28483,6 +29819,9 @@ type PostV1CharacterPerformance400JSONResponseBodyReason27 string
 // PostV1CharacterPerformance400JSONResponseBodyReason28 defines parameters for PostV1CharacterPerformance.
 type PostV1CharacterPerformance400JSONResponseBodyReason28 string
 
+// PostV1CharacterPerformance400JSONResponseBodyReason29 defines parameters for PostV1CharacterPerformance.
+type PostV1CharacterPerformance400JSONResponseBodyReason29 string
+
 // PostV1CharacterPerformance400JSONResponseBody_Reason defines parameters for PostV1CharacterPerformance.
 type PostV1CharacterPerformance400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -28494,13 +29833,13 @@ type GetV1DocumentsParams struct {
 	Cursor *string `form:"cursor,omitempty" json:"cursor,omitempty"`
 
 	// Limit The maximum number of items to return per page.
-	Limit int `form:"limit" json:"limit"`
+	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
 
 	// Sort Field to sort results by.
-	Sort GetV1DocumentsParamsSort `form:"sort" json:"sort"`
+	Sort *GetV1DocumentsParamsSort `form:"sort,omitempty" json:"sort,omitempty"`
 
 	// Order Sort direction.
-	Order GetV1DocumentsParamsOrder `form:"order" json:"order"`
+	Order *GetV1DocumentsParamsOrder `form:"order,omitempty" json:"order,omitempty"`
 }
 
 // GetV1DocumentsParamsSort defines parameters for GetV1Documents.
@@ -28567,6 +29906,14 @@ type PostV1GenerateAudioJSONBody struct {
 		// Voice The voice to speak with. When omitted, models that support a default voice remain eligible.
 		Voice *PostV1GenerateAudioJSONBody_Input_Voice `json:"voice,omitempty"`
 	} `json:"input"`
+}
+
+// PostV1GenerateAudioParams defines parameters for PostV1GenerateAudio.
+type PostV1GenerateAudioParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1GenerateAudioJSONBodyInputReferenceAudiosUri0 defines parameters for PostV1GenerateAudio.
@@ -28847,6 +30194,14 @@ type PostV1GenerateImageJSONBody struct {
 	} `json:"input"`
 }
 
+// PostV1GenerateImageParams defines parameters for PostV1GenerateImage.
+type PostV1GenerateImageParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
+}
+
 // PostV1GenerateImageJSONBodyInputAspectRatio defines parameters for PostV1GenerateImage.
 type PostV1GenerateImageJSONBodyInputAspectRatio string
 
@@ -29108,6 +30463,14 @@ type PostV1GenerateVideoJSONBody struct {
 		// Seed A seed for reproducible generation. Random if omitted.
 		Seed *int `json:"seed,omitempty"`
 	} `json:"input"`
+}
+
+// PostV1GenerateVideoParams defines parameters for PostV1GenerateVideo.
+type PostV1GenerateVideoParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1GenerateVideoJSONBodyInputAspectRatio defines parameters for PostV1GenerateVideo.
@@ -29403,6 +30766,14 @@ type PostV1ImageToVectorJSONBody struct {
 	union json.RawMessage
 }
 
+// PostV1ImageToVectorParams defines parameters for PostV1ImageToVector.
+type PostV1ImageToVectorParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
+}
+
 // PostV1ImageToVectorJSONBody0 defines parameters for PostV1ImageToVector.
 type PostV1ImageToVectorJSONBody0 struct {
 	// ImageUri The source image to convert to SVG.
@@ -29527,10 +30898,10 @@ type PostV1ImageToVector400JSONResponseBodyReason21 string
 type PostV1ImageToVector400JSONResponseBodyReason22 string
 
 // PostV1ImageToVector400JSONResponseBodyReason23 defines parameters for PostV1ImageToVector.
-type PostV1ImageToVector400JSONResponseBodyReason23 = string
+type PostV1ImageToVector400JSONResponseBodyReason23 string
 
 // PostV1ImageToVector400JSONResponseBodyReason24 defines parameters for PostV1ImageToVector.
-type PostV1ImageToVector400JSONResponseBodyReason24 string
+type PostV1ImageToVector400JSONResponseBodyReason24 = string
 
 // PostV1ImageToVector400JSONResponseBodyReason25 defines parameters for PostV1ImageToVector.
 type PostV1ImageToVector400JSONResponseBodyReason25 string
@@ -29544,6 +30915,9 @@ type PostV1ImageToVector400JSONResponseBodyReason27 string
 // PostV1ImageToVector400JSONResponseBodyReason28 defines parameters for PostV1ImageToVector.
 type PostV1ImageToVector400JSONResponseBodyReason28 string
 
+// PostV1ImageToVector400JSONResponseBodyReason29 defines parameters for PostV1ImageToVector.
+type PostV1ImageToVector400JSONResponseBodyReason29 string
+
 // PostV1ImageToVector400JSONResponseBody_Reason defines parameters for PostV1ImageToVector.
 type PostV1ImageToVector400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -29552,6 +30926,14 @@ type PostV1ImageToVector400JSONResponseBody_Reason struct {
 // PostV1ImageToVideoJSONBody defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideoJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1ImageToVideoParams defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1ImageToVideoJSONBody0 defines parameters for PostV1ImageToVideo.
@@ -32285,6 +33667,121 @@ type PostV1ImageToVideoJSONBody_28_References_Uri struct {
 // PostV1ImageToVideoJSONBody28Resolution defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideoJSONBody28Resolution string
 
+// PostV1ImageToVideoJSONBody29 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29 struct {
+	// Audio Whether to generate audio for the video.
+	Audio *bool `json:"audio,omitempty"`
+
+	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes.
+	Duration *PostV1ImageToVideoJSONBody_29_Duration `json:"duration,omitempty"`
+	Model    PostV1ImageToVideoJSONBody29Model       `json:"model"`
+
+	// OutputFormat Container for the output video. `mov` keeps high colour precision for grading and compositing. Defaults to `mp4`.
+	OutputFormat *PostV1ImageToVideoJSONBody29OutputFormat `json:"outputFormat,omitempty"`
+
+	// PromptImage An image or array of images. Use position `first`/`last` for keyframe mode, or omit position for reference images. The two modes cannot be mixed.
+	PromptImage PostV1ImageToVideoJSONBody_29_PromptImage `json:"promptImage"`
+
+	// PromptText An optional text prompt up to 15000 characters describing what should appear in the output.
+	PromptText *string `json:"promptText,omitempty"`
+
+	// Ratio The resolution of the output video. Seedance 2.5 Flash supports 480p and 720p.
+	Ratio *PostV1ImageToVideoJSONBody29Ratio `json:"ratio,omitempty"`
+
+	// ReferenceAudio An optional array of audio references. The total combined duration must be less than 30 seconds.
+	ReferenceAudio *[]struct {
+		Type PostV1ImageToVideoJSONBody29ReferenceAudioType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded audio. See [our docs](/assets/inputs#audio) on audio inputs for more information.
+		Uri PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri `json:"uri"`
+	} `json:"referenceAudio,omitempty"`
+
+	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
+	Seed *int `json:"seed,omitempty"`
+}
+
+// PostV1ImageToVideoJSONBody29Duration0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29Duration0 = int
+
+// PostV1ImageToVideoJSONBody29Duration1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29Duration1 string
+
+// PostV1ImageToVideoJSONBody_29_Duration defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_29_Duration struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody29Model defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29Model string
+
+// PostV1ImageToVideoJSONBody29OutputFormat defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29OutputFormat string
+
+// PostV1ImageToVideoJSONBody29PromptImage0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29PromptImage0 struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody29PromptImage00 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29PromptImage00 = string
+
+// PostV1ImageToVideoJSONBody29PromptImage01 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29PromptImage01 = string
+
+// PostV1ImageToVideoJSONBody29PromptImage02 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29PromptImage02 = string
+
+// PostV1ImageToVideoJSONBody29PromptImage1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29PromptImage1 = []struct {
+	// Position The position of the image in the output video. "first" will use the image as the first frame, "last" as the last frame. Omit for a reference image.
+	Position *PostV1ImageToVideoJSONBody29PromptImage1Position `json:"position,omitempty"`
+
+	// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+	Uri PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri `json:"uri"`
+}
+
+// PostV1ImageToVideoJSONBody29PromptImage1Position defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29PromptImage1Position string
+
+// PostV1ImageToVideoJSONBody29PromptImage1Uri0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29PromptImage1Uri0 = string
+
+// PostV1ImageToVideoJSONBody29PromptImage1Uri1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29PromptImage1Uri1 = string
+
+// PostV1ImageToVideoJSONBody29PromptImage1Uri2 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29PromptImage1Uri2 = string
+
+// PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody_29_PromptImage defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_29_PromptImage struct {
+	union json.RawMessage
+}
+
+// PostV1ImageToVideoJSONBody29Ratio defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29Ratio string
+
+// PostV1ImageToVideoJSONBody29ReferenceAudioType defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29ReferenceAudioType string
+
+// PostV1ImageToVideoJSONBody29ReferenceAudioUri0 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29ReferenceAudioUri0 = string
+
+// PostV1ImageToVideoJSONBody29ReferenceAudioUri1 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29ReferenceAudioUri1 = string
+
+// PostV1ImageToVideoJSONBody29ReferenceAudioUri2 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody29ReferenceAudioUri2 = string
+
+// PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri struct {
+	union json.RawMessage
+}
+
 // PostV1ImageToVideo400JSONResponseBodyIssuesPath0 defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideo400JSONResponseBodyIssuesPath0 = string
 
@@ -32379,10 +33876,10 @@ type PostV1ImageToVideo400JSONResponseBodyReason21 string
 type PostV1ImageToVideo400JSONResponseBodyReason22 string
 
 // PostV1ImageToVideo400JSONResponseBodyReason23 defines parameters for PostV1ImageToVideo.
-type PostV1ImageToVideo400JSONResponseBodyReason23 = string
+type PostV1ImageToVideo400JSONResponseBodyReason23 string
 
 // PostV1ImageToVideo400JSONResponseBodyReason24 defines parameters for PostV1ImageToVideo.
-type PostV1ImageToVideo400JSONResponseBodyReason24 string
+type PostV1ImageToVideo400JSONResponseBodyReason24 = string
 
 // PostV1ImageToVideo400JSONResponseBodyReason25 defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideo400JSONResponseBodyReason25 string
@@ -32396,6 +33893,9 @@ type PostV1ImageToVideo400JSONResponseBodyReason27 string
 // PostV1ImageToVideo400JSONResponseBodyReason28 defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideo400JSONResponseBodyReason28 string
 
+// PostV1ImageToVideo400JSONResponseBodyReason29 defines parameters for PostV1ImageToVideo.
+type PostV1ImageToVideo400JSONResponseBodyReason29 string
+
 // PostV1ImageToVideo400JSONResponseBody_Reason defines parameters for PostV1ImageToVideo.
 type PostV1ImageToVideo400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -32404,6 +33904,14 @@ type PostV1ImageToVideo400JSONResponseBody_Reason struct {
 // PostV1ImageUpscaleJSONBody defines parameters for PostV1ImageUpscale.
 type PostV1ImageUpscaleJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1ImageUpscaleParams defines parameters for PostV1ImageUpscale.
+type PostV1ImageUpscaleParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1ImageUpscaleJSONBody0 defines parameters for PostV1ImageUpscale.
@@ -32545,10 +34053,10 @@ type PostV1ImageUpscale400JSONResponseBodyReason21 string
 type PostV1ImageUpscale400JSONResponseBodyReason22 string
 
 // PostV1ImageUpscale400JSONResponseBodyReason23 defines parameters for PostV1ImageUpscale.
-type PostV1ImageUpscale400JSONResponseBodyReason23 = string
+type PostV1ImageUpscale400JSONResponseBodyReason23 string
 
 // PostV1ImageUpscale400JSONResponseBodyReason24 defines parameters for PostV1ImageUpscale.
-type PostV1ImageUpscale400JSONResponseBodyReason24 string
+type PostV1ImageUpscale400JSONResponseBodyReason24 = string
 
 // PostV1ImageUpscale400JSONResponseBodyReason25 defines parameters for PostV1ImageUpscale.
 type PostV1ImageUpscale400JSONResponseBodyReason25 string
@@ -32562,6 +34070,9 @@ type PostV1ImageUpscale400JSONResponseBodyReason27 string
 // PostV1ImageUpscale400JSONResponseBodyReason28 defines parameters for PostV1ImageUpscale.
 type PostV1ImageUpscale400JSONResponseBodyReason28 string
 
+// PostV1ImageUpscale400JSONResponseBodyReason29 defines parameters for PostV1ImageUpscale.
+type PostV1ImageUpscale400JSONResponseBodyReason29 string
+
 // PostV1ImageUpscale400JSONResponseBody_Reason defines parameters for PostV1ImageUpscale.
 type PostV1ImageUpscale400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -32572,8 +34083,14 @@ type PostV1OrganizationUsageJSONBody struct {
 	// BeforeDate The end date of the usage data in ISO-8601 format (YYYY-MM-DD), not inclusive. If unspecified, it will default to thirty days after the start date. Must be less than or equal to 90 days after the start date. All dates are in UTC.
 	BeforeDate *openapi_types.Date `json:"beforeDate,omitempty"`
 
+	// GroupBy Also break usage down by tag in `resultsByTag`. `"tag"` gives one bucket per tag; a generation with several tags counts toward each of them. `"tag:<key>"` (for example `"tag:team"`) gives one bucket per value of that key, so each generation counts once. Generations without a matching tag fall under a `null` tag.
+	GroupBy *string `json:"groupBy,omitempty"`
+
 	// StartDate The start date of the usage data in ISO-8601 format (YYYY-MM-DD). If unspecified, it will default to 30 days before the current date. All dates are in UTC.
 	StartDate *openapi_types.Date `json:"startDate,omitempty"`
+
+	// Tags Only count generations that were created with every one of these tags in the `X-Runway-Tags` header. Tags are case-insensitive. Up to 10 tags.
+	Tags *[]string `json:"tags,omitempty"`
 }
 
 // PostV1OrganizationUsage200JSONResponseBodyModels defines parameters for PostV1OrganizationUsage.
@@ -32588,15 +34105,15 @@ type GetV1OrganizationWebappAuditLogsParams struct {
 	Cursor *string `form:"cursor,omitempty" json:"cursor,omitempty"`
 
 	// Limit The maximum number of items to return per page.
-	Limit int `form:"limit" json:"limit"`
+	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
 
-	// OrganizationId Organization to report on. Optional when this API project is linked to a single organization; required when it is linked to more than one.
+	// OrganizationId Organization to report on. Optional when this API project is linked to a single organization; required when it is linked to more than one. If it is missing then, the 400 response lists the IDs and names of the linked organizations in `details.organizations`.
 	OrganizationId *openapi_types.UUID `form:"organizationId,omitempty" json:"organizationId,omitempty"`
 
 	// WorkspaceIds Restrict results to these workspace IDs, as a comma-separated list of up to 50 IDs. Defaults to every workspace you administer in the organization.
 	WorkspaceIds *string `form:"workspaceIds,omitempty" json:"workspaceIds,omitempty"`
 
-	// Actions Restrict results to these audit log actions, as a comma-separated list of up to 50 actions. Allowed values: `UserLogin`, `PasswordChanged`, `EmailChangeRequested`, `EmailChanged`, `UserRegistered`, `UserAccountDeleted`, `WorkspaceCreated`, `WorkspaceDeleted`, `MemberInvited`, `MemberInviteReminderSent`, `MemberRemoved`, `MemberRoleChanged`, `InviteAccepted`, `MemberJoinedViaDomain`, `TeamSettingsUpdated`, `InviteLinkToggled`, `UserGroupCreated`, `UserGroupUpdated`, `UserGroupDeleted`, `UserGroupArchived`, `UserGroupRestored`, `UserGroupMemberAdded`, `UserGroupMemberRemoved`, `UserGroupCreditCapUpdated`, `UserGroupVisibilityUpdated`, `SSOLogin`, `SSOUserProvisioned`, `SSOConfigCreated`, `SSOUserAutoAddedToTeam`, `SSODomainRegistrationCloned`, `AssetCreated`, `AssetUpdated`, `AssetDeleted`, `AssetDownloaded`, `AssetShared`, `AssetUnshared`, `CommentCreated`, `CommentEdited`, `CommentDeleted`, `CommentAgentCallRun`, `CommentRemovedByModerator`, `CommentRestoredByModerator`, `CommentRemovalReasonChanged`, `PermissionGranted`, `PermissionUpdated`, `PermissionRevoked`, `PermissionAccepted`, `SubscriptionCancelled`, `SubscriptionReactivatedWithOffer`, `SubscriptionPlanSwitched`, `CreditsTransferred`, `SeatsTransferred`, `SessionShared`, `SessionUnshared`, `VideoProjectShared`, `VideoProjectUnshared`, `BrandKitShared`, `BrandKitUnshared`, `AgentCustomSkillCreated`, `AgentCustomSkillDeleted`, `AgentCustomSkillShared`, `AgentCustomSkillUnshared`, `AgentSessionShared`, `AgentSessionUnshared`, `AgentConnectorLinkTokenCreated`, `AgentConnectorConnected`, `AgentConnectorDisconnected`, `AgentConnectorAssetExported`, `AgentConnectorSessionEnabled`, `AgentConnectorSessionDisabled`, `GenerationCreated`, `StudioSessionOpened`, `AppStudioAiRunOpened`, `AppStudioAppCreated`, `AppStudioAppPublished`, `AppStudioAppVisibilityChanged`, `AppStudioAppRenamed`, `AppStudioAppDeleted`, `AppStudioAppCoOwnerChanged`, `AppStudioAppSecretChanged`, `AppStudioAppRunwayAccessGranted`, `AppStudioAppRunwayAccessRevoked`, `AccountLinkCreated`, `AccountLinkDeleted`, `AdConnectionAuthorizationStarted`, `AdConnectionConnected`, `AdAccountSelectionUpdated`, `AdAccountSyncRequested`, `AdConnectionDisconnected`, `AdWorkspaceOnboardingUpdated`, `AdCreativeReviewSubmitted`, `AdCreativeReviewCancelled`, `AdCreativeReviewDecided`, `AdCreativeApprovalRevoked`, `AdCreativeArchived`, `AdCreativeUnarchived`, `AdPublishBatchQueued`, `AdPublishBatchCancelled`, `AdPublishBatchRetried`, `AdStatusChanged`, `OrganizationSettingsUpdated`, `OrganizationDisabledModelsUpdated`, `OrganizationAgentSandboxUpdated`, `OrganizationApiAccountReleased`, `OrganizationApiAccountMemberInvited`, `OrganizationApiAccountMemberRoleChanged`, `OrganizationApiAccountMemberRemoved`, `WorkspaceCountryLockUpdated`, `WorkspaceTagCreated`, `WorkspaceTagUpdated`, `WorkspaceTagDeleted`, `WorkspaceTagAssigned`, `WorkspaceTagUnassigned`, `MeteredBillingConfigUpdated`, `MeteredBillingRefillTriggered`, `MeteredBillingRetryTriggered`, `EnterpriseSpendCapEnforcementUpdated`, `OnboardingBonusGranted`, `AwsMarketplaceEnterpriseSubscriptionLinked`.
+	// Actions Restrict results to these audit log actions, as a comma-separated list of up to 50 actions. Allowed values: `AgentArtifactCommentCreated`, `AgentArtifactCreated`, `AgentArtifactVersionSaved`, `AgentArtifactSessionAttached`, `AgentArtifactSessionDetached`, `UserLogin`, `PasswordChanged`, `EmailChangeRequested`, `EmailChanged`, `UserRegistered`, `UserAccountDeleted`, `WorkspaceCreated`, `WorkspaceDeleted`, `MemberInvited`, `MemberInviteReminderSent`, `MemberRemoved`, `MemberRoleChanged`, `InviteAccepted`, `MemberJoinedViaDomain`, `TeamSettingsUpdated`, `InviteLinkToggled`, `UserGroupCreated`, `UserGroupUpdated`, `UserGroupDeleted`, `UserGroupArchived`, `UserGroupRestored`, `UserGroupMemberAdded`, `UserGroupMemberRemoved`, `UserGroupCreditCapUpdated`, `UserGroupVisibilityUpdated`, `SSOLogin`, `SSOUserProvisioned`, `SSOConfigCreated`, `SSOUserAutoAddedToTeam`, `SSODomainRegistrationCloned`, `AssetCreated`, `AssetUpdated`, `AssetDeleted`, `AssetDownloaded`, `AssetShared`, `AssetUnshared`, `CommentCreated`, `CommentEdited`, `CommentDeleted`, `CommentAgentCallRun`, `CommentRemovedByModerator`, `CommentRestoredByModerator`, `CommentRemovalReasonChanged`, `PermissionGranted`, `PermissionUpdated`, `PermissionRevoked`, `PermissionAccepted`, `SubscriptionCancelled`, `SubscriptionReactivatedWithOffer`, `SubscriptionPlanSwitched`, `CreditsTransferred`, `SeatsTransferred`, `SessionShared`, `SessionUnshared`, `SessionMadePrivateByAdmin`, `VideoProjectShared`, `VideoProjectUnshared`, `BrandKitShared`, `BrandKitUnshared`, `AgentCustomSkillCreated`, `AgentCustomSkillDeleted`, `AgentCustomSkillShared`, `AgentCustomSkillUnshared`, `AgentSessionShared`, `AgentSessionUnshared`, `AgentConnectorLinkTokenCreated`, `AgentConnectorConnected`, `AgentConnectorDisconnected`, `AgentConnectorAssetExported`, `AgentConnectorSessionEnabled`, `AgentConnectorSessionDisabled`, `GenerationCreated`, `StudioSessionOpened`, `AppStudioAiRunOpened`, `AppStudioAppCreated`, `AppStudioAppPublished`, `AppStudioAppVisibilityChanged`, `AppStudioAppRenamed`, `AppStudioAppDeleted`, `AppStudioAppCoOwnerChanged`, `AppStudioAppSecretChanged`, `AppStudioAppRunwayAccessGranted`, `AppStudioAppRunwayAccessRevoked`, `AppStudioConnectorConnected`, `AppStudioConnectorDisconnected`, `AppStudioConnectorAppGranted`, `AppStudioConnectorAppRevoked`, `AppStudioConnectorPolicyChanged`, `AppStudioConnectorToolCalled`, `AccountLinkCreated`, `AccountLinkDeleted`, `AdConnectionAuthorizationStarted`, `AdConnectionConnected`, `AdAccountSelectionUpdated`, `AdAccountSyncRequested`, `AdConnectionDisconnected`, `AdWorkspaceOnboardingUpdated`, `AdCreativeReviewSubmitted`, `AdCreativeReviewCancelled`, `AdCreativeReviewDecided`, `AdCreativeApprovalRevoked`, `AdCreativeArchived`, `AdCreativeUnarchived`, `AdPublishBatchQueued`, `AdPublishBatchCancelled`, `AdPublishBatchRetried`, `AdStatusChanged`, `AdCampaignSetupDrafted`, `AdCampaignSetupDiscarded`, `AdCampaignSetupConfirmed`, `AdCampaignSetupCancelled`, `AdCampaignSetupRetried`, `OrganizationSettingsUpdated`, `OrganizationDisabledModelsUpdated`, `OrganizationAgentSandboxUpdated`, `OrganizationApiAccountReleased`, `OrganizationApiAccountMemberInvited`, `OrganizationApiAccountMemberRoleChanged`, `OrganizationApiAccountMemberRemoved`, `WorkspaceCountryLockUpdated`, `WorkspaceTagCreated`, `WorkspaceTagUpdated`, `WorkspaceTagDeleted`, `WorkspaceTagAssigned`, `WorkspaceTagUnassigned`, `MeteredBillingConfigUpdated`, `MeteredBillingRefillTriggered`, `MeteredBillingRetryTriggered`, `EnterpriseSpendCapEnforcementUpdated`, `OnboardingBonusGranted`, `PromotionCreditsGranted`, `AwsMarketplaceEnterpriseSubscriptionLinked`.
 	Actions *string `form:"actions,omitempty" json:"actions,omitempty"`
 
 	// ActorEmails Restrict results to entries performed by the users with these emails, as a comma-separated list of up to 50 emails.
@@ -32648,7 +34165,7 @@ type GetV1OrganizationWebappAuditLogs200JSONResponseBody_Data_Metadata_PreviousV
 
 // GetV1OrganizationWebappAuditLogsEventIdParams defines parameters for GetV1OrganizationWebappAuditLogsEventId.
 type GetV1OrganizationWebappAuditLogsEventIdParams struct {
-	// OrganizationId Organization to report on. Optional when this API project is linked to a single organization; required when it is linked to more than one.
+	// OrganizationId Organization to report on. Optional when this API project is linked to a single organization; required when it is linked to more than one. If it is missing then, the 400 response lists the IDs and names of the linked organizations in `details.organizations`.
 	OrganizationId *openapi_types.UUID `form:"organizationId,omitempty" json:"organizationId,omitempty"`
 }
 
@@ -32689,13 +34206,37 @@ type GetV1OrganizationWebappAuditLogsEventId200JSONResponseBody_Metadata_Previou
 	union json.RawMessage
 }
 
+// GetV1OrganizationWebappMembersParams defines parameters for GetV1OrganizationWebappMembers.
+type GetV1OrganizationWebappMembersParams struct {
+	// Cursor Cursor from a previous response for fetching the next page of results.
+	Cursor *string `form:"cursor,omitempty" json:"cursor,omitempty"`
+
+	// Limit The maximum number of items to return per page.
+	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrganizationId Organization to report on. Optional when this API project is linked to a single organization; required when it is linked to more than one. If it is missing then, the 400 response lists the IDs and names of the linked organizations in `details.organizations`.
+	OrganizationId *openapi_types.UUID `form:"organizationId,omitempty" json:"organizationId,omitempty"`
+
+	// WorkspaceIds Restrict results to these workspace IDs, as a comma-separated list of up to 50 IDs. Defaults to every workspace you administer in the organization.
+	WorkspaceIds *string `form:"workspaceIds,omitempty" json:"workspaceIds,omitempty"`
+}
+
+// GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason defines parameters for GetV1OrganizationWebappMembers.
+type GetV1OrganizationWebappMembers200JSONResponseBodyDataDeactivationReason string
+
+// GetV1OrganizationWebappMembers200JSONResponseBodyDataRole defines parameters for GetV1OrganizationWebappMembers.
+type GetV1OrganizationWebappMembers200JSONResponseBodyDataRole string
+
+// GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus defines parameters for GetV1OrganizationWebappMembers.
+type GetV1OrganizationWebappMembers200JSONResponseBodyDataStatus string
+
 // GetV1OrganizationWebappUsageParams defines parameters for GetV1OrganizationWebappUsage.
 type GetV1OrganizationWebappUsageParams struct {
 	// Cursor Cursor from a previous response for fetching the next page of results.
 	Cursor *string `form:"cursor,omitempty" json:"cursor,omitempty"`
 
 	// Limit The maximum number of items to return per page.
-	Limit int `form:"limit" json:"limit"`
+	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
 
 	// From Start of the time window (inclusive), ISO-8601 datetime or date. A date means midnight UTC.
 	From struct {
@@ -32707,7 +34248,7 @@ type GetV1OrganizationWebappUsageParams struct {
 		union json.RawMessage
 	} `form:"to" json:"to"`
 
-	// OrganizationId Organization to report on. Optional when this API project is linked to a single organization; required when it is linked to more than one.
+	// OrganizationId Organization to report on. Optional when this API project is linked to a single organization; required when it is linked to more than one. If it is missing then, the 400 response lists the IDs and names of the linked organizations in `details.organizations`.
 	OrganizationId *openapi_types.UUID `form:"organizationId,omitempty" json:"organizationId,omitempty"`
 
 	// WorkspaceIds Restrict results to these workspace IDs, as a comma-separated list. Defaults to every workspace you administer in the organization.
@@ -32741,6 +34282,14 @@ type GetV1OrganizationWebappUsage200JSONResponseBodyDataUnit string
 // PostV1RealtimeSessionsJSONBody defines parameters for PostV1RealtimeSessions.
 type PostV1RealtimeSessionsJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1RealtimeSessionsParams defines parameters for PostV1RealtimeSessions.
+type PostV1RealtimeSessionsParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1RealtimeSessionsJSONBody0 defines parameters for PostV1RealtimeSessions.
@@ -33232,6 +34781,14 @@ type PostV1RecipesAdLocalizationJSONBody struct {
 	Version PostV1RecipesAdLocalizationJSONBodyVersion `json:"version"`
 }
 
+// PostV1RecipesAdLocalizationParams defines parameters for PostV1RecipesAdLocalization.
+type PostV1RecipesAdLocalizationParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
+}
+
 // PostV1RecipesAdLocalizationJSONBodyReferenceImageUri0 defines parameters for PostV1RecipesAdLocalization.
 type PostV1RecipesAdLocalizationJSONBodyReferenceImageUri0 = string
 
@@ -33346,10 +34903,10 @@ type PostV1RecipesAdLocalization400JSONResponseBodyReason21 string
 type PostV1RecipesAdLocalization400JSONResponseBodyReason22 string
 
 // PostV1RecipesAdLocalization400JSONResponseBodyReason23 defines parameters for PostV1RecipesAdLocalization.
-type PostV1RecipesAdLocalization400JSONResponseBodyReason23 = string
+type PostV1RecipesAdLocalization400JSONResponseBodyReason23 string
 
 // PostV1RecipesAdLocalization400JSONResponseBodyReason24 defines parameters for PostV1RecipesAdLocalization.
-type PostV1RecipesAdLocalization400JSONResponseBodyReason24 string
+type PostV1RecipesAdLocalization400JSONResponseBodyReason24 = string
 
 // PostV1RecipesAdLocalization400JSONResponseBodyReason25 defines parameters for PostV1RecipesAdLocalization.
 type PostV1RecipesAdLocalization400JSONResponseBodyReason25 string
@@ -33362,6 +34919,9 @@ type PostV1RecipesAdLocalization400JSONResponseBodyReason27 string
 
 // PostV1RecipesAdLocalization400JSONResponseBodyReason28 defines parameters for PostV1RecipesAdLocalization.
 type PostV1RecipesAdLocalization400JSONResponseBodyReason28 string
+
+// PostV1RecipesAdLocalization400JSONResponseBodyReason29 defines parameters for PostV1RecipesAdLocalization.
+type PostV1RecipesAdLocalization400JSONResponseBodyReason29 string
 
 // PostV1RecipesAdLocalization400JSONResponseBody_Reason defines parameters for PostV1RecipesAdLocalization.
 type PostV1RecipesAdLocalization400JSONResponseBody_Reason struct {
@@ -33387,6 +34947,14 @@ type PostV1RecipesMarketingStockImageJSONBody struct {
 
 	// Version Workflow version. Use a dated version (e.g. "2026-06") to pin behavior, or "unsafe-latest" to track the newest stable version (may break without notice).
 	Version PostV1RecipesMarketingStockImageJSONBodyVersion `json:"version"`
+}
+
+// PostV1RecipesMarketingStockImageParams defines parameters for PostV1RecipesMarketingStockImage.
+type PostV1RecipesMarketingStockImageParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1RecipesMarketingStockImageJSONBodyQuality defines parameters for PostV1RecipesMarketingStockImage.
@@ -33503,10 +35071,10 @@ type PostV1RecipesMarketingStockImage400JSONResponseBodyReason21 string
 type PostV1RecipesMarketingStockImage400JSONResponseBodyReason22 string
 
 // PostV1RecipesMarketingStockImage400JSONResponseBodyReason23 defines parameters for PostV1RecipesMarketingStockImage.
-type PostV1RecipesMarketingStockImage400JSONResponseBodyReason23 = string
+type PostV1RecipesMarketingStockImage400JSONResponseBodyReason23 string
 
 // PostV1RecipesMarketingStockImage400JSONResponseBodyReason24 defines parameters for PostV1RecipesMarketingStockImage.
-type PostV1RecipesMarketingStockImage400JSONResponseBodyReason24 string
+type PostV1RecipesMarketingStockImage400JSONResponseBodyReason24 = string
 
 // PostV1RecipesMarketingStockImage400JSONResponseBodyReason25 defines parameters for PostV1RecipesMarketingStockImage.
 type PostV1RecipesMarketingStockImage400JSONResponseBodyReason25 string
@@ -33520,6 +35088,9 @@ type PostV1RecipesMarketingStockImage400JSONResponseBodyReason27 string
 // PostV1RecipesMarketingStockImage400JSONResponseBodyReason28 defines parameters for PostV1RecipesMarketingStockImage.
 type PostV1RecipesMarketingStockImage400JSONResponseBodyReason28 string
 
+// PostV1RecipesMarketingStockImage400JSONResponseBodyReason29 defines parameters for PostV1RecipesMarketingStockImage.
+type PostV1RecipesMarketingStockImage400JSONResponseBodyReason29 string
+
 // PostV1RecipesMarketingStockImage400JSONResponseBody_Reason defines parameters for PostV1RecipesMarketingStockImage.
 type PostV1RecipesMarketingStockImage400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -33528,6 +35099,14 @@ type PostV1RecipesMarketingStockImage400JSONResponseBody_Reason struct {
 // PostV1RecipesMultiShotVideoJSONBody defines parameters for PostV1RecipesMultiShotVideo.
 type PostV1RecipesMultiShotVideoJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1RecipesMultiShotVideoParams defines parameters for PostV1RecipesMultiShotVideo.
+type PostV1RecipesMultiShotVideoParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1RecipesMultiShotVideoJSONBody0 defines parameters for PostV1RecipesMultiShotVideo.
@@ -33736,10 +35315,10 @@ type PostV1RecipesMultiShotVideo400JSONResponseBodyReason21 string
 type PostV1RecipesMultiShotVideo400JSONResponseBodyReason22 string
 
 // PostV1RecipesMultiShotVideo400JSONResponseBodyReason23 defines parameters for PostV1RecipesMultiShotVideo.
-type PostV1RecipesMultiShotVideo400JSONResponseBodyReason23 = string
+type PostV1RecipesMultiShotVideo400JSONResponseBodyReason23 string
 
 // PostV1RecipesMultiShotVideo400JSONResponseBodyReason24 defines parameters for PostV1RecipesMultiShotVideo.
-type PostV1RecipesMultiShotVideo400JSONResponseBodyReason24 string
+type PostV1RecipesMultiShotVideo400JSONResponseBodyReason24 = string
 
 // PostV1RecipesMultiShotVideo400JSONResponseBodyReason25 defines parameters for PostV1RecipesMultiShotVideo.
 type PostV1RecipesMultiShotVideo400JSONResponseBodyReason25 string
@@ -33752,6 +35331,9 @@ type PostV1RecipesMultiShotVideo400JSONResponseBodyReason27 string
 
 // PostV1RecipesMultiShotVideo400JSONResponseBodyReason28 defines parameters for PostV1RecipesMultiShotVideo.
 type PostV1RecipesMultiShotVideo400JSONResponseBodyReason28 string
+
+// PostV1RecipesMultiShotVideo400JSONResponseBodyReason29 defines parameters for PostV1RecipesMultiShotVideo.
+type PostV1RecipesMultiShotVideo400JSONResponseBodyReason29 string
 
 // PostV1RecipesMultiShotVideo400JSONResponseBody_Reason defines parameters for PostV1RecipesMultiShotVideo.
 type PostV1RecipesMultiShotVideo400JSONResponseBody_Reason struct {
@@ -33789,6 +35371,14 @@ type PostV1RecipesProductAdJSONBody struct {
 
 	// Version Workflow version. Use a dated version (e.g. "2026-07") to pin behavior, or "unsafe-latest" to track the newest stable version (may break without notice).
 	Version PostV1RecipesProductAdJSONBodyVersion `json:"version"`
+}
+
+// PostV1RecipesProductAdParams defines parameters for PostV1RecipesProductAd.
+type PostV1RecipesProductAdParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1RecipesProductAdJSONBodyProductImagesUri0 defines parameters for PostV1RecipesProductAd.
@@ -33919,10 +35509,10 @@ type PostV1RecipesProductAd400JSONResponseBodyReason21 string
 type PostV1RecipesProductAd400JSONResponseBodyReason22 string
 
 // PostV1RecipesProductAd400JSONResponseBodyReason23 defines parameters for PostV1RecipesProductAd.
-type PostV1RecipesProductAd400JSONResponseBodyReason23 = string
+type PostV1RecipesProductAd400JSONResponseBodyReason23 string
 
 // PostV1RecipesProductAd400JSONResponseBodyReason24 defines parameters for PostV1RecipesProductAd.
-type PostV1RecipesProductAd400JSONResponseBodyReason24 string
+type PostV1RecipesProductAd400JSONResponseBodyReason24 = string
 
 // PostV1RecipesProductAd400JSONResponseBodyReason25 defines parameters for PostV1RecipesProductAd.
 type PostV1RecipesProductAd400JSONResponseBodyReason25 string
@@ -33935,6 +35525,9 @@ type PostV1RecipesProductAd400JSONResponseBodyReason27 string
 
 // PostV1RecipesProductAd400JSONResponseBodyReason28 defines parameters for PostV1RecipesProductAd.
 type PostV1RecipesProductAd400JSONResponseBodyReason28 string
+
+// PostV1RecipesProductAd400JSONResponseBodyReason29 defines parameters for PostV1RecipesProductAd.
+type PostV1RecipesProductAd400JSONResponseBodyReason29 string
 
 // PostV1RecipesProductAd400JSONResponseBody_Reason defines parameters for PostV1RecipesProductAd.
 type PostV1RecipesProductAd400JSONResponseBody_Reason struct {
@@ -33954,6 +35547,14 @@ type PostV1RecipesProductCampaignImageJSONBody struct {
 
 	// Version Workflow version. Use a dated version (e.g. "2026-06") to pin behavior, or "unsafe-latest" to track the newest stable version (may break without notice).
 	Version PostV1RecipesProductCampaignImageJSONBodyVersion `json:"version"`
+}
+
+// PostV1RecipesProductCampaignImageParams defines parameters for PostV1RecipesProductCampaignImage.
+type PostV1RecipesProductCampaignImageParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1RecipesProductCampaignImageJSONBodyImageUri0 defines parameters for PostV1RecipesProductCampaignImage.
@@ -34067,10 +35668,10 @@ type PostV1RecipesProductCampaignImage400JSONResponseBodyReason21 string
 type PostV1RecipesProductCampaignImage400JSONResponseBodyReason22 string
 
 // PostV1RecipesProductCampaignImage400JSONResponseBodyReason23 defines parameters for PostV1RecipesProductCampaignImage.
-type PostV1RecipesProductCampaignImage400JSONResponseBodyReason23 = string
+type PostV1RecipesProductCampaignImage400JSONResponseBodyReason23 string
 
 // PostV1RecipesProductCampaignImage400JSONResponseBodyReason24 defines parameters for PostV1RecipesProductCampaignImage.
-type PostV1RecipesProductCampaignImage400JSONResponseBodyReason24 string
+type PostV1RecipesProductCampaignImage400JSONResponseBodyReason24 = string
 
 // PostV1RecipesProductCampaignImage400JSONResponseBodyReason25 defines parameters for PostV1RecipesProductCampaignImage.
 type PostV1RecipesProductCampaignImage400JSONResponseBodyReason25 string
@@ -34083,6 +35684,9 @@ type PostV1RecipesProductCampaignImage400JSONResponseBodyReason27 string
 
 // PostV1RecipesProductCampaignImage400JSONResponseBodyReason28 defines parameters for PostV1RecipesProductCampaignImage.
 type PostV1RecipesProductCampaignImage400JSONResponseBodyReason28 string
+
+// PostV1RecipesProductCampaignImage400JSONResponseBodyReason29 defines parameters for PostV1RecipesProductCampaignImage.
+type PostV1RecipesProductCampaignImage400JSONResponseBodyReason29 string
 
 // PostV1RecipesProductCampaignImage400JSONResponseBody_Reason defines parameters for PostV1RecipesProductCampaignImage.
 type PostV1RecipesProductCampaignImage400JSONResponseBody_Reason struct {
@@ -34123,6 +35727,14 @@ type PostV1RecipesProductSwapJSONBody struct {
 
 	// Version Workflow version. Use a dated version (e.g. "2026-06") to pin behavior, or "unsafe-latest" to track the newest stable version (may break without notice).
 	Version PostV1RecipesProductSwapJSONBodyVersion `json:"version"`
+}
+
+// PostV1RecipesProductSwapParams defines parameters for PostV1RecipesProductSwap.
+type PostV1RecipesProductSwapParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1RecipesProductSwapJSONBodyNewProductImagesUri0 defines parameters for PostV1RecipesProductSwap.
@@ -34270,10 +35882,10 @@ type PostV1RecipesProductSwap400JSONResponseBodyReason21 string
 type PostV1RecipesProductSwap400JSONResponseBodyReason22 string
 
 // PostV1RecipesProductSwap400JSONResponseBodyReason23 defines parameters for PostV1RecipesProductSwap.
-type PostV1RecipesProductSwap400JSONResponseBodyReason23 = string
+type PostV1RecipesProductSwap400JSONResponseBodyReason23 string
 
 // PostV1RecipesProductSwap400JSONResponseBodyReason24 defines parameters for PostV1RecipesProductSwap.
-type PostV1RecipesProductSwap400JSONResponseBodyReason24 string
+type PostV1RecipesProductSwap400JSONResponseBodyReason24 = string
 
 // PostV1RecipesProductSwap400JSONResponseBodyReason25 defines parameters for PostV1RecipesProductSwap.
 type PostV1RecipesProductSwap400JSONResponseBodyReason25 string
@@ -34286,6 +35898,9 @@ type PostV1RecipesProductSwap400JSONResponseBodyReason27 string
 
 // PostV1RecipesProductSwap400JSONResponseBodyReason28 defines parameters for PostV1RecipesProductSwap.
 type PostV1RecipesProductSwap400JSONResponseBodyReason28 string
+
+// PostV1RecipesProductSwap400JSONResponseBodyReason29 defines parameters for PostV1RecipesProductSwap.
+type PostV1RecipesProductSwap400JSONResponseBodyReason29 string
 
 // PostV1RecipesProductSwap400JSONResponseBody_Reason defines parameters for PostV1RecipesProductSwap.
 type PostV1RecipesProductSwap400JSONResponseBody_Reason struct {
@@ -34323,6 +35938,14 @@ type PostV1RecipesProductUgcJSONBody struct {
 
 	// Version Workflow version. Use a dated version (e.g. "2026-06") to pin behavior, or "unsafe-latest" to track the newest stable version (may break without notice).
 	Version PostV1RecipesProductUgcJSONBodyVersion `json:"version"`
+}
+
+// PostV1RecipesProductUgcParams defines parameters for PostV1RecipesProductUgc.
+type PostV1RecipesProductUgcParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1RecipesProductUgcJSONBodyCharacterImageUri0 defines parameters for PostV1RecipesProductUgc.
@@ -34453,10 +36076,10 @@ type PostV1RecipesProductUgc400JSONResponseBodyReason21 string
 type PostV1RecipesProductUgc400JSONResponseBodyReason22 string
 
 // PostV1RecipesProductUgc400JSONResponseBodyReason23 defines parameters for PostV1RecipesProductUgc.
-type PostV1RecipesProductUgc400JSONResponseBodyReason23 = string
+type PostV1RecipesProductUgc400JSONResponseBodyReason23 string
 
 // PostV1RecipesProductUgc400JSONResponseBodyReason24 defines parameters for PostV1RecipesProductUgc.
-type PostV1RecipesProductUgc400JSONResponseBodyReason24 string
+type PostV1RecipesProductUgc400JSONResponseBodyReason24 = string
 
 // PostV1RecipesProductUgc400JSONResponseBodyReason25 defines parameters for PostV1RecipesProductUgc.
 type PostV1RecipesProductUgc400JSONResponseBodyReason25 string
@@ -34470,6 +36093,9 @@ type PostV1RecipesProductUgc400JSONResponseBodyReason27 string
 // PostV1RecipesProductUgc400JSONResponseBodyReason28 defines parameters for PostV1RecipesProductUgc.
 type PostV1RecipesProductUgc400JSONResponseBodyReason28 string
 
+// PostV1RecipesProductUgc400JSONResponseBodyReason29 defines parameters for PostV1RecipesProductUgc.
+type PostV1RecipesProductUgc400JSONResponseBodyReason29 string
+
 // PostV1RecipesProductUgc400JSONResponseBody_Reason defines parameters for PostV1RecipesProductUgc.
 type PostV1RecipesProductUgc400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -34481,7 +36107,7 @@ type GetV1RoutersParams struct {
 	Cursor *string `form:"cursor,omitempty" json:"cursor,omitempty"`
 
 	// Limit The maximum number of items to return per page.
-	Limit int `form:"limit" json:"limit"`
+	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
 }
 
 // GetV1Routers200JSONResponseBodyDataSettingsModelsMode defines parameters for GetV1Routers.
@@ -34513,10 +36139,11 @@ type PostV1RoutersJSONBody struct {
 		MaxCreditsPerGeneration *struct {
 			Audio *int `json:"audio,omitempty"`
 			Image *int `json:"image,omitempty"`
+			Mesh  *int `json:"mesh,omitempty"`
 			Video *int `json:"video,omitempty"`
 		} `json:"maxCreditsPerGeneration,omitempty"`
 
-		// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+		// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 		Models *struct {
 			Ids  []string                                `json:"ids"`
 			Mode PostV1RoutersJSONBodySettingsModelsMode `json:"mode"`
@@ -34579,10 +36206,11 @@ type PatchV1RoutersIdJSONBody struct {
 		MaxCreditsPerGeneration *struct {
 			Audio *int `json:"audio,omitempty"`
 			Image *int `json:"image,omitempty"`
+			Mesh  *int `json:"mesh,omitempty"`
 			Video *int `json:"video,omitempty"`
 		} `json:"maxCreditsPerGeneration,omitempty"`
 
-		// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video or image model name (unknown ids are rejected on create/update).
+		// Models When mode is allow_new_except, ids are excluded; when allowlist_only, ids are the only allowed values. Each id must be a known public video, image, audio, or mesh model name (unknown ids are rejected on create/update).
 		Models *struct {
 			Ids  []string                                   `json:"ids"`
 			Mode PatchV1RoutersIdJSONBodySettingsModelsMode `json:"mode"`
@@ -34620,7 +36248,7 @@ type GetV1RoutersIdRequestsParams struct {
 	Cursor *string `form:"cursor,omitempty" json:"cursor,omitempty"`
 
 	// Limit The maximum number of items to return per page.
-	Limit int `form:"limit" json:"limit"`
+	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
 }
 
 // GetV1RoutersIdRequests200JSONResponseBodyDataEmptiedBy defines parameters for GetV1RoutersIdRequests.
@@ -34682,6 +36310,14 @@ type GetV1RoutersIdRequests200JSONResponseBodyDataStatus string
 // PostV1SoundEffectJSONBody defines parameters for PostV1SoundEffect.
 type PostV1SoundEffectJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1SoundEffectParams defines parameters for PostV1SoundEffect.
+type PostV1SoundEffectParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1SoundEffectJSONBody0 defines parameters for PostV1SoundEffect.
@@ -34870,10 +36506,10 @@ type PostV1SoundEffect400JSONResponseBodyReason21 string
 type PostV1SoundEffect400JSONResponseBodyReason22 string
 
 // PostV1SoundEffect400JSONResponseBodyReason23 defines parameters for PostV1SoundEffect.
-type PostV1SoundEffect400JSONResponseBodyReason23 = string
+type PostV1SoundEffect400JSONResponseBodyReason23 string
 
 // PostV1SoundEffect400JSONResponseBodyReason24 defines parameters for PostV1SoundEffect.
-type PostV1SoundEffect400JSONResponseBodyReason24 string
+type PostV1SoundEffect400JSONResponseBodyReason24 = string
 
 // PostV1SoundEffect400JSONResponseBodyReason25 defines parameters for PostV1SoundEffect.
 type PostV1SoundEffect400JSONResponseBodyReason25 string
@@ -34887,6 +36523,9 @@ type PostV1SoundEffect400JSONResponseBodyReason27 string
 // PostV1SoundEffect400JSONResponseBodyReason28 defines parameters for PostV1SoundEffect.
 type PostV1SoundEffect400JSONResponseBodyReason28 string
 
+// PostV1SoundEffect400JSONResponseBodyReason29 defines parameters for PostV1SoundEffect.
+type PostV1SoundEffect400JSONResponseBodyReason29 string
+
 // PostV1SoundEffect400JSONResponseBody_Reason defines parameters for PostV1SoundEffect.
 type PostV1SoundEffect400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -34895,6 +36534,14 @@ type PostV1SoundEffect400JSONResponseBody_Reason struct {
 // PostV1SpeechToSpeechJSONBody defines parameters for PostV1SpeechToSpeech.
 type PostV1SpeechToSpeechJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1SpeechToSpeechParams defines parameters for PostV1SpeechToSpeech.
+type PostV1SpeechToSpeechParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1SpeechToSpeechJSONBody0 defines parameters for PostV1SpeechToSpeech.
@@ -35079,10 +36726,10 @@ type PostV1SpeechToSpeech400JSONResponseBodyReason21 string
 type PostV1SpeechToSpeech400JSONResponseBodyReason22 string
 
 // PostV1SpeechToSpeech400JSONResponseBodyReason23 defines parameters for PostV1SpeechToSpeech.
-type PostV1SpeechToSpeech400JSONResponseBodyReason23 = string
+type PostV1SpeechToSpeech400JSONResponseBodyReason23 string
 
 // PostV1SpeechToSpeech400JSONResponseBodyReason24 defines parameters for PostV1SpeechToSpeech.
-type PostV1SpeechToSpeech400JSONResponseBodyReason24 string
+type PostV1SpeechToSpeech400JSONResponseBodyReason24 = string
 
 // PostV1SpeechToSpeech400JSONResponseBodyReason25 defines parameters for PostV1SpeechToSpeech.
 type PostV1SpeechToSpeech400JSONResponseBodyReason25 string
@@ -35095,6 +36742,9 @@ type PostV1SpeechToSpeech400JSONResponseBodyReason27 string
 
 // PostV1SpeechToSpeech400JSONResponseBodyReason28 defines parameters for PostV1SpeechToSpeech.
 type PostV1SpeechToSpeech400JSONResponseBodyReason28 string
+
+// PostV1SpeechToSpeech400JSONResponseBodyReason29 defines parameters for PostV1SpeechToSpeech.
+type PostV1SpeechToSpeech400JSONResponseBodyReason29 string
 
 // PostV1SpeechToSpeech400JSONResponseBody_Reason defines parameters for PostV1SpeechToSpeech.
 type PostV1SpeechToSpeech400JSONResponseBody_Reason struct {
@@ -35251,6 +36901,14 @@ type GetV1TasksId200JSONResponseBody struct {
 // PostV1TextToImageJSONBody defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1TextToImageParams defines parameters for PostV1TextToImage.
+type PostV1TextToImageParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1TextToImageJSONBody0 defines parameters for PostV1TextToImage.
@@ -36462,26 +38120,37 @@ type PostV1TextToImageJSONBody23Resolution string
 
 // PostV1TextToImageJSONBody24 defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody24 struct {
-	Model PostV1TextToImageJSONBody24Model `json:"model"`
+	// Background Whether the image has a transparent or an opaque background. A transparent background needs the png output format. Omit to let the model decide from the prompt.
+	Background *PostV1TextToImageJSONBody24Background `json:"background,omitempty"`
+	Model      PostV1TextToImageJSONBody24Model       `json:"model"`
 
-	// PromptText This should describe in detail what should appear in the output.
+	// OutputCount The number of images to generate. Increasing this number will affect the number of credits consumed by the generation.
+	OutputCount *int `json:"outputCount,omitempty"`
+
+	// OutputFormat The file format of the output image. Defaults to png.
+	OutputFormat *PostV1TextToImageJSONBody24OutputFormat `json:"outputFormat,omitempty"`
+
+	// PromptText A description of the image you want to generate.
 	PromptText string `json:"promptText"`
 
-	// Ratio The resolution of the output image.
+	// Ratio The resolution of the output image, expressed as `<width>:<height>`. Use `auto_1k`, `auto_1.5k` or `auto_2k` to let the model pick the aspect ratio at a fixed resolution tier.
 	Ratio PostV1TextToImageJSONBody24Ratio `json:"ratio"`
 
-	// ReferenceImages An array of up to three images to be used as references for the generated image output.
+	// ReferenceImages Images to edit or combine. Refer to them in the prompt by upload order (Figure 1, Figure 2, and so on).
 	ReferenceImages *[]struct {
-		// Tag A tag to identify the reference image. This is used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores (no hyphens or other punctuation).
-		Tag *string `json:"tag,omitempty"`
-
 		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
 		Uri PostV1TextToImageJSONBody_24_ReferenceImages_Uri `json:"uri"`
 	} `json:"referenceImages,omitempty"`
 }
 
+// PostV1TextToImageJSONBody24Background defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody24Background string
+
 // PostV1TextToImageJSONBody24Model defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody24Model string
+
+// PostV1TextToImageJSONBody24OutputFormat defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody24OutputFormat string
 
 // PostV1TextToImageJSONBody24Ratio defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody24Ratio string
@@ -36497,6 +38166,133 @@ type PostV1TextToImageJSONBody24ReferenceImagesUri2 = string
 
 // PostV1TextToImageJSONBody_24_ReferenceImages_Uri defines parameters for PostV1TextToImage.
 type PostV1TextToImageJSONBody_24_ReferenceImages_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToImageJSONBody25 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody25 struct {
+	// MaxImages The most images the task may return, counting the base image. Each returned image is billed separately. Defaults to 30.
+	MaxImages *int                             `json:"maxImages,omitempty"`
+	Model     PostV1TextToImageJSONBody25Model `json:"model"`
+
+	// OutputFormat Base image format; defaults to png. Separated layers always use PNG with transparency.
+	OutputFormat *PostV1TextToImageJSONBody25OutputFormat `json:"outputFormat,omitempty"`
+
+	// PromptText Optional instructions describing which elements to separate. Omit to split the image automatically.
+	PromptText *string `json:"promptText,omitempty"`
+
+	// ReferenceImages The image to split into editable layers. Layer ordering and positioning are returned in the completed task’s layers field.
+	ReferenceImages []struct {
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1TextToImageJSONBody_25_ReferenceImages_Uri `json:"uri"`
+	} `json:"referenceImages"`
+
+	// Resolution Output resolution tier. Defaults to auto, which adapts to the input image. The base image and layers preserve their respective aspect ratios.
+	Resolution *PostV1TextToImageJSONBody25Resolution `json:"resolution,omitempty"`
+}
+
+// PostV1TextToImageJSONBody25Model defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody25Model string
+
+// PostV1TextToImageJSONBody25OutputFormat defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody25OutputFormat string
+
+// PostV1TextToImageJSONBody25ReferenceImagesUri0 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody25ReferenceImagesUri0 = string
+
+// PostV1TextToImageJSONBody25ReferenceImagesUri1 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody25ReferenceImagesUri1 = string
+
+// PostV1TextToImageJSONBody25ReferenceImagesUri2 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody25ReferenceImagesUri2 = string
+
+// PostV1TextToImageJSONBody_25_ReferenceImages_Uri defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody_25_ReferenceImages_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToImageJSONBody25Resolution defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody25Resolution string
+
+// PostV1TextToImageJSONBody26 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody26 struct {
+	// Highspeed When true, generate with the faster MiniMax H3 Image Highspeed model, which costs more credits per image. Defaults to false.
+	Highspeed *bool                            `json:"highspeed,omitempty"`
+	Model     PostV1TextToImageJSONBody26Model `json:"model"`
+
+	// OutputCount The number of images to generate. Increasing this number will affect the number of credits consumed by the generation.
+	OutputCount *int `json:"outputCount,omitempty"`
+
+	// PromptText A non-empty text prompt describing what should appear in the output image.
+	PromptText string `json:"promptText"`
+
+	// Ratio The resolution of the output image, expressed as `<width>:<height>`. 4K ratios cost more credits per image than 1K and 2K. Use `auto_1k`, `auto_2k` or `auto_4k` to pick a resolution tier and let the model choose the framing from the prompt.
+	Ratio PostV1TextToImageJSONBody26Ratio `json:"ratio"`
+
+	// ReferenceImages Up to 16 images to edit or combine. Refer to them in the prompt by upload order (image 1, image 2, and so on). Each reference image adds to the credits per image.
+	ReferenceImages *[]struct {
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1TextToImageJSONBody_26_ReferenceImages_Uri `json:"uri"`
+	} `json:"referenceImages,omitempty"`
+}
+
+// PostV1TextToImageJSONBody26Model defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody26Model string
+
+// PostV1TextToImageJSONBody26Ratio defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody26Ratio string
+
+// PostV1TextToImageJSONBody26ReferenceImagesUri0 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody26ReferenceImagesUri0 = string
+
+// PostV1TextToImageJSONBody26ReferenceImagesUri1 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody26ReferenceImagesUri1 = string
+
+// PostV1TextToImageJSONBody26ReferenceImagesUri2 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody26ReferenceImagesUri2 = string
+
+// PostV1TextToImageJSONBody_26_ReferenceImages_Uri defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody_26_ReferenceImages_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToImageJSONBody27 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody27 struct {
+	Model PostV1TextToImageJSONBody27Model `json:"model"`
+
+	// PromptText This should describe in detail what should appear in the output.
+	PromptText string `json:"promptText"`
+
+	// Ratio The resolution of the output image.
+	Ratio PostV1TextToImageJSONBody27Ratio `json:"ratio"`
+
+	// ReferenceImages An array of up to three images to be used as references for the generated image output.
+	ReferenceImages *[]struct {
+		// Tag A tag to identify the reference image. This is used to reference the image in prompt text. Must be 3-16 characters, start with a letter, and use only letters, digits, and underscores (no hyphens or other punctuation).
+		Tag *string `json:"tag,omitempty"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1TextToImageJSONBody_27_ReferenceImages_Uri `json:"uri"`
+	} `json:"referenceImages,omitempty"`
+}
+
+// PostV1TextToImageJSONBody27Model defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody27Model string
+
+// PostV1TextToImageJSONBody27Ratio defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody27Ratio string
+
+// PostV1TextToImageJSONBody27ReferenceImagesUri0 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody27ReferenceImagesUri0 = string
+
+// PostV1TextToImageJSONBody27ReferenceImagesUri1 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody27ReferenceImagesUri1 = string
+
+// PostV1TextToImageJSONBody27ReferenceImagesUri2 defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody27ReferenceImagesUri2 = string
+
+// PostV1TextToImageJSONBody_27_ReferenceImages_Uri defines parameters for PostV1TextToImage.
+type PostV1TextToImageJSONBody_27_ReferenceImages_Uri struct {
 	union json.RawMessage
 }
 
@@ -36594,10 +38390,10 @@ type PostV1TextToImage400JSONResponseBodyReason21 string
 type PostV1TextToImage400JSONResponseBodyReason22 string
 
 // PostV1TextToImage400JSONResponseBodyReason23 defines parameters for PostV1TextToImage.
-type PostV1TextToImage400JSONResponseBodyReason23 = string
+type PostV1TextToImage400JSONResponseBodyReason23 string
 
 // PostV1TextToImage400JSONResponseBodyReason24 defines parameters for PostV1TextToImage.
-type PostV1TextToImage400JSONResponseBodyReason24 string
+type PostV1TextToImage400JSONResponseBodyReason24 = string
 
 // PostV1TextToImage400JSONResponseBodyReason25 defines parameters for PostV1TextToImage.
 type PostV1TextToImage400JSONResponseBodyReason25 string
@@ -36611,6 +38407,9 @@ type PostV1TextToImage400JSONResponseBodyReason27 string
 // PostV1TextToImage400JSONResponseBodyReason28 defines parameters for PostV1TextToImage.
 type PostV1TextToImage400JSONResponseBodyReason28 string
 
+// PostV1TextToImage400JSONResponseBodyReason29 defines parameters for PostV1TextToImage.
+type PostV1TextToImage400JSONResponseBodyReason29 string
+
 // PostV1TextToImage400JSONResponseBody_Reason defines parameters for PostV1TextToImage.
 type PostV1TextToImage400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -36619,6 +38418,14 @@ type PostV1TextToImage400JSONResponseBody_Reason struct {
 // PostV1TextToMusicJSONBody defines parameters for PostV1TextToMusic.
 type PostV1TextToMusicJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1TextToMusicParams defines parameters for PostV1TextToMusic.
+type PostV1TextToMusicParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1TextToMusicJSONBody0 defines parameters for PostV1TextToMusic.
@@ -36731,10 +38538,10 @@ type PostV1TextToMusic400JSONResponseBodyReason21 string
 type PostV1TextToMusic400JSONResponseBodyReason22 string
 
 // PostV1TextToMusic400JSONResponseBodyReason23 defines parameters for PostV1TextToMusic.
-type PostV1TextToMusic400JSONResponseBodyReason23 = string
+type PostV1TextToMusic400JSONResponseBodyReason23 string
 
 // PostV1TextToMusic400JSONResponseBodyReason24 defines parameters for PostV1TextToMusic.
-type PostV1TextToMusic400JSONResponseBodyReason24 string
+type PostV1TextToMusic400JSONResponseBodyReason24 = string
 
 // PostV1TextToMusic400JSONResponseBodyReason25 defines parameters for PostV1TextToMusic.
 type PostV1TextToMusic400JSONResponseBodyReason25 string
@@ -36748,6 +38555,9 @@ type PostV1TextToMusic400JSONResponseBodyReason27 string
 // PostV1TextToMusic400JSONResponseBodyReason28 defines parameters for PostV1TextToMusic.
 type PostV1TextToMusic400JSONResponseBodyReason28 string
 
+// PostV1TextToMusic400JSONResponseBodyReason29 defines parameters for PostV1TextToMusic.
+type PostV1TextToMusic400JSONResponseBodyReason29 string
+
 // PostV1TextToMusic400JSONResponseBody_Reason defines parameters for PostV1TextToMusic.
 type PostV1TextToMusic400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -36756,6 +38566,14 @@ type PostV1TextToMusic400JSONResponseBody_Reason struct {
 // PostV1TextToSpeechJSONBody defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeechJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1TextToSpeechParams defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeechParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1TextToSpeechJSONBody0 defines parameters for PostV1TextToSpeech.
@@ -37135,10 +38953,10 @@ type PostV1TextToSpeech400JSONResponseBodyReason21 string
 type PostV1TextToSpeech400JSONResponseBodyReason22 string
 
 // PostV1TextToSpeech400JSONResponseBodyReason23 defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeech400JSONResponseBodyReason23 = string
+type PostV1TextToSpeech400JSONResponseBodyReason23 string
 
 // PostV1TextToSpeech400JSONResponseBodyReason24 defines parameters for PostV1TextToSpeech.
-type PostV1TextToSpeech400JSONResponseBodyReason24 string
+type PostV1TextToSpeech400JSONResponseBodyReason24 = string
 
 // PostV1TextToSpeech400JSONResponseBodyReason25 defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeech400JSONResponseBodyReason25 string
@@ -37152,6 +38970,9 @@ type PostV1TextToSpeech400JSONResponseBodyReason27 string
 // PostV1TextToSpeech400JSONResponseBodyReason28 defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeech400JSONResponseBodyReason28 string
 
+// PostV1TextToSpeech400JSONResponseBodyReason29 defines parameters for PostV1TextToSpeech.
+type PostV1TextToSpeech400JSONResponseBodyReason29 string
+
 // PostV1TextToSpeech400JSONResponseBody_Reason defines parameters for PostV1TextToSpeech.
 type PostV1TextToSpeech400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -37160,6 +38981,14 @@ type PostV1TextToSpeech400JSONResponseBody_Reason struct {
 // PostV1TextToVideoJSONBody defines parameters for PostV1TextToVideo.
 type PostV1TextToVideoJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1TextToVideoParams defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1TextToVideoJSONBody0 defines parameters for PostV1TextToVideo.
@@ -38828,6 +40657,118 @@ type PostV1TextToVideoJSONBody_27_References_Uri struct {
 // PostV1TextToVideoJSONBody27Resolution defines parameters for PostV1TextToVideo.
 type PostV1TextToVideoJSONBody27Resolution string
 
+// PostV1TextToVideoJSONBody28 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28 struct {
+	// Audio Whether to generate audio for the video. Defaults to `true`.
+	Audio *bool `json:"audio,omitempty"`
+
+	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes. Defaults to 5.
+	Duration *PostV1TextToVideoJSONBody_28_Duration `json:"duration,omitempty"`
+	Model    PostV1TextToVideoJSONBody28Model       `json:"model"`
+
+	// OutputFormat Container for the output video. `mov` keeps high colour precision for grading and compositing. Defaults to `mp4`.
+	OutputFormat *PostV1TextToVideoJSONBody28OutputFormat `json:"outputFormat,omitempty"`
+
+	// PromptText An optional text prompt up to 15000 characters describing what should appear in the output.
+	PromptText *string `json:"promptText,omitempty"`
+
+	// Ratio The resolution of the output video. Seedance 2.5 Flash supports 480p and 720p. Defaults to `1280:720`.
+	Ratio *PostV1TextToVideoJSONBody28Ratio `json:"ratio,omitempty"`
+
+	// ReferenceAudio An optional array of audio references. The total combined duration must be less than 30 seconds.
+	ReferenceAudio *[]struct {
+		Type PostV1TextToVideoJSONBody28ReferenceAudioType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded audio. See [our docs](/assets/inputs#audio) on audio inputs for more information.
+		Uri PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri `json:"uri"`
+	} `json:"referenceAudio,omitempty"`
+
+	// ReferenceVideos An optional array of video references. The combined duration across all video references must not exceed 30 seconds. See [our docs](/assets/inputs#videos) on video inputs for more information.
+	ReferenceVideos *[]struct {
+		Type PostV1TextToVideoJSONBody28ReferenceVideosType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded video. See [our docs](/assets/inputs#videos) on video inputs for more information.
+		Uri PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri `json:"uri"`
+	} `json:"referenceVideos,omitempty"`
+
+	// References An optional array of image references (up to 10). See [our docs](/assets/inputs#images) on image inputs for more information.
+	References *[]struct {
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1TextToVideoJSONBody_28_References_Uri `json:"uri"`
+	} `json:"references,omitempty"`
+
+	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
+	Seed *int `json:"seed,omitempty"`
+}
+
+// PostV1TextToVideoJSONBody28Duration0 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28Duration0 = int
+
+// PostV1TextToVideoJSONBody28Duration1 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28Duration1 string
+
+// PostV1TextToVideoJSONBody_28_Duration defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody_28_Duration struct {
+	union json.RawMessage
+}
+
+// PostV1TextToVideoJSONBody28Model defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28Model string
+
+// PostV1TextToVideoJSONBody28OutputFormat defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28OutputFormat string
+
+// PostV1TextToVideoJSONBody28Ratio defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28Ratio string
+
+// PostV1TextToVideoJSONBody28ReferenceAudioType defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferenceAudioType string
+
+// PostV1TextToVideoJSONBody28ReferenceAudioUri0 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferenceAudioUri0 = string
+
+// PostV1TextToVideoJSONBody28ReferenceAudioUri1 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferenceAudioUri1 = string
+
+// PostV1TextToVideoJSONBody28ReferenceAudioUri2 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferenceAudioUri2 = string
+
+// PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToVideoJSONBody28ReferenceVideosType defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferenceVideosType string
+
+// PostV1TextToVideoJSONBody28ReferenceVideosUri0 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferenceVideosUri0 = string
+
+// PostV1TextToVideoJSONBody28ReferenceVideosUri1 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferenceVideosUri1 = string
+
+// PostV1TextToVideoJSONBody28ReferenceVideosUri2 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferenceVideosUri2 = string
+
+// PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1TextToVideoJSONBody28ReferencesUri0 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferencesUri0 = string
+
+// PostV1TextToVideoJSONBody28ReferencesUri1 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferencesUri1 = string
+
+// PostV1TextToVideoJSONBody28ReferencesUri2 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody28ReferencesUri2 = string
+
+// PostV1TextToVideoJSONBody_28_References_Uri defines parameters for PostV1TextToVideo.
+type PostV1TextToVideoJSONBody_28_References_Uri struct {
+	union json.RawMessage
+}
+
 // PostV1TextToVideo400JSONResponseBodyIssuesPath0 defines parameters for PostV1TextToVideo.
 type PostV1TextToVideo400JSONResponseBodyIssuesPath0 = string
 
@@ -38922,10 +40863,10 @@ type PostV1TextToVideo400JSONResponseBodyReason21 string
 type PostV1TextToVideo400JSONResponseBodyReason22 string
 
 // PostV1TextToVideo400JSONResponseBodyReason23 defines parameters for PostV1TextToVideo.
-type PostV1TextToVideo400JSONResponseBodyReason23 = string
+type PostV1TextToVideo400JSONResponseBodyReason23 string
 
 // PostV1TextToVideo400JSONResponseBodyReason24 defines parameters for PostV1TextToVideo.
-type PostV1TextToVideo400JSONResponseBodyReason24 string
+type PostV1TextToVideo400JSONResponseBodyReason24 = string
 
 // PostV1TextToVideo400JSONResponseBodyReason25 defines parameters for PostV1TextToVideo.
 type PostV1TextToVideo400JSONResponseBodyReason25 string
@@ -38938,6 +40879,9 @@ type PostV1TextToVideo400JSONResponseBodyReason27 string
 
 // PostV1TextToVideo400JSONResponseBodyReason28 defines parameters for PostV1TextToVideo.
 type PostV1TextToVideo400JSONResponseBodyReason28 string
+
+// PostV1TextToVideo400JSONResponseBodyReason29 defines parameters for PostV1TextToVideo.
+type PostV1TextToVideo400JSONResponseBodyReason29 string
 
 // PostV1TextToVideo400JSONResponseBody_Reason defines parameters for PostV1TextToVideo.
 type PostV1TextToVideo400JSONResponseBody_Reason struct {
@@ -38959,6 +40903,14 @@ type PostV1UploadsJSONBodyType string
 // PostV1VideoToAudioJSONBody defines parameters for PostV1VideoToAudio.
 type PostV1VideoToAudioJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1VideoToAudioParams defines parameters for PostV1VideoToAudio.
+type PostV1VideoToAudioParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1VideoToAudioJSONBody0 defines parameters for PostV1VideoToAudio.
@@ -39102,10 +41054,10 @@ type PostV1VideoToAudio400JSONResponseBodyReason21 string
 type PostV1VideoToAudio400JSONResponseBodyReason22 string
 
 // PostV1VideoToAudio400JSONResponseBodyReason23 defines parameters for PostV1VideoToAudio.
-type PostV1VideoToAudio400JSONResponseBodyReason23 = string
+type PostV1VideoToAudio400JSONResponseBodyReason23 string
 
 // PostV1VideoToAudio400JSONResponseBodyReason24 defines parameters for PostV1VideoToAudio.
-type PostV1VideoToAudio400JSONResponseBodyReason24 string
+type PostV1VideoToAudio400JSONResponseBodyReason24 = string
 
 // PostV1VideoToAudio400JSONResponseBodyReason25 defines parameters for PostV1VideoToAudio.
 type PostV1VideoToAudio400JSONResponseBodyReason25 string
@@ -39119,6 +41071,9 @@ type PostV1VideoToAudio400JSONResponseBodyReason27 string
 // PostV1VideoToAudio400JSONResponseBodyReason28 defines parameters for PostV1VideoToAudio.
 type PostV1VideoToAudio400JSONResponseBodyReason28 string
 
+// PostV1VideoToAudio400JSONResponseBodyReason29 defines parameters for PostV1VideoToAudio.
+type PostV1VideoToAudio400JSONResponseBodyReason29 string
+
 // PostV1VideoToAudio400JSONResponseBody_Reason defines parameters for PostV1VideoToAudio.
 type PostV1VideoToAudio400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -39127,6 +41082,14 @@ type PostV1VideoToAudio400JSONResponseBody_Reason struct {
 // PostV1VideoToHdrJSONBody defines parameters for PostV1VideoToHdr.
 type PostV1VideoToHdrJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1VideoToHdrParams defines parameters for PostV1VideoToHdr.
+type PostV1VideoToHdrParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1VideoToHdrJSONBody0 defines parameters for PostV1VideoToHdr.
@@ -39260,10 +41223,10 @@ type PostV1VideoToHdr400JSONResponseBodyReason21 string
 type PostV1VideoToHdr400JSONResponseBodyReason22 string
 
 // PostV1VideoToHdr400JSONResponseBodyReason23 defines parameters for PostV1VideoToHdr.
-type PostV1VideoToHdr400JSONResponseBodyReason23 = string
+type PostV1VideoToHdr400JSONResponseBodyReason23 string
 
 // PostV1VideoToHdr400JSONResponseBodyReason24 defines parameters for PostV1VideoToHdr.
-type PostV1VideoToHdr400JSONResponseBodyReason24 string
+type PostV1VideoToHdr400JSONResponseBodyReason24 = string
 
 // PostV1VideoToHdr400JSONResponseBodyReason25 defines parameters for PostV1VideoToHdr.
 type PostV1VideoToHdr400JSONResponseBodyReason25 string
@@ -39277,6 +41240,9 @@ type PostV1VideoToHdr400JSONResponseBodyReason27 string
 // PostV1VideoToHdr400JSONResponseBodyReason28 defines parameters for PostV1VideoToHdr.
 type PostV1VideoToHdr400JSONResponseBodyReason28 string
 
+// PostV1VideoToHdr400JSONResponseBodyReason29 defines parameters for PostV1VideoToHdr.
+type PostV1VideoToHdr400JSONResponseBodyReason29 string
+
 // PostV1VideoToHdr400JSONResponseBody_Reason defines parameters for PostV1VideoToHdr.
 type PostV1VideoToHdr400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -39285,6 +41251,14 @@ type PostV1VideoToHdr400JSONResponseBody_Reason struct {
 // PostV1VideoToVideoJSONBody defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideoJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1VideoToVideoParams defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1VideoToVideoJSONBody0 defines parameters for PostV1VideoToVideo.
@@ -40908,6 +42882,141 @@ type PostV1VideoToVideoJSONBody_15_References_Uri struct {
 // PostV1VideoToVideoJSONBody15Resolution defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideoJSONBody15Resolution string
 
+// PostV1VideoToVideoJSONBody16 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16 struct {
+	// Audio Whether to generate audio for the video.
+	Audio *bool `json:"audio,omitempty"`
+
+	// Duration Seconds of video to generate, or `auto` to let the model choose. `auto` is billed at the variant maximum up front; unused credits are refunded after the generation finishes. Defaults to 5.
+	Duration *PostV1VideoToVideoJSONBody_16_Duration `json:"duration,omitempty"`
+
+	// Mode How the input video is used. `reference` (the default) generates a new video conditioned on the input video and accepts `duration` and `ratio`. `extend` continues the input video, requires `promptText`, and matches the input aspect ratio, so `ratio` may not be provided. `edit` modifies the input video in place, requires `promptText`, requires `duration: "auto"`, and does not accept `ratio`.
+	Mode  *PostV1VideoToVideoJSONBody16Mode `json:"mode,omitempty"`
+	Model PostV1VideoToVideoJSONBody16Model `json:"model"`
+
+	// OutputFormat Container for the output video. `mov` keeps high colour precision for grading and compositing. Defaults to `mp4`.
+	OutputFormat *PostV1VideoToVideoJSONBody16OutputFormat `json:"outputFormat,omitempty"`
+
+	// PromptText An optional text prompt up to 15000 characters describing what should appear in the output.
+	PromptText *string `json:"promptText,omitempty"`
+
+	// PromptVideo The input video to use as a reference for the output video. If additional video references are provided, the combined duration across all video references must not exceed 30 seconds.
+	PromptVideo PostV1VideoToVideoJSONBody_16_PromptVideo `json:"promptVideo"`
+
+	// Ratio The resolution of the output video. Seedance 2.5 Flash supports 480p and 720p.
+	Ratio *PostV1VideoToVideoJSONBody16Ratio `json:"ratio,omitempty"`
+
+	// ReferenceAudio An optional array of audio references. The total combined duration must be less than 30 seconds.
+	ReferenceAudio *[]struct {
+		Type PostV1VideoToVideoJSONBody16ReferenceAudioType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded audio. See [our docs](/assets/inputs#audio) on audio inputs for more information.
+		Uri PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri `json:"uri"`
+	} `json:"referenceAudio,omitempty"`
+
+	// ReferenceVideos An optional array of video references. The combined duration across all video references must not exceed 30 seconds. See [our docs](/assets/inputs#videos) on video inputs for more information.
+	ReferenceVideos *[]struct {
+		Type PostV1VideoToVideoJSONBody16ReferenceVideosType `json:"type"`
+
+		// Uri A HTTPS URL, Runway or data URI containing an encoded video. See [our docs](/assets/inputs#videos) on video inputs for more information.
+		Uri PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri `json:"uri"`
+	} `json:"referenceVideos,omitempty"`
+
+	// References An optional array of image references (up to 10). See [our docs](/assets/inputs#images) on image inputs for more information.
+	References *[]struct {
+		// Uri A HTTPS URL, Runway or data URI containing an encoded image. See [our docs](/assets/inputs#images) on image inputs for more information.
+		Uri PostV1VideoToVideoJSONBody_16_References_Uri `json:"uri"`
+	} `json:"references,omitempty"`
+
+	// Seed If unspecified, a random number is chosen. Varying the seed integer is a way to get different results for the same other request parameters. Using the same seed integer for an identical request will produce similar results.
+	Seed *int `json:"seed,omitempty"`
+}
+
+// PostV1VideoToVideoJSONBody16Duration0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16Duration0 = int
+
+// PostV1VideoToVideoJSONBody16Duration1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16Duration1 string
+
+// PostV1VideoToVideoJSONBody_16_Duration defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_16_Duration struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody16Mode defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16Mode string
+
+// PostV1VideoToVideoJSONBody16Model defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16Model string
+
+// PostV1VideoToVideoJSONBody16OutputFormat defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16OutputFormat string
+
+// PostV1VideoToVideoJSONBody16PromptVideo0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16PromptVideo0 = string
+
+// PostV1VideoToVideoJSONBody16PromptVideo1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16PromptVideo1 = string
+
+// PostV1VideoToVideoJSONBody16PromptVideo2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16PromptVideo2 = string
+
+// PostV1VideoToVideoJSONBody_16_PromptVideo defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_16_PromptVideo struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody16Ratio defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16Ratio string
+
+// PostV1VideoToVideoJSONBody16ReferenceAudioType defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferenceAudioType string
+
+// PostV1VideoToVideoJSONBody16ReferenceAudioUri0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferenceAudioUri0 = string
+
+// PostV1VideoToVideoJSONBody16ReferenceAudioUri1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferenceAudioUri1 = string
+
+// PostV1VideoToVideoJSONBody16ReferenceAudioUri2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferenceAudioUri2 = string
+
+// PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody16ReferenceVideosType defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferenceVideosType string
+
+// PostV1VideoToVideoJSONBody16ReferenceVideosUri0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferenceVideosUri0 = string
+
+// PostV1VideoToVideoJSONBody16ReferenceVideosUri1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferenceVideosUri1 = string
+
+// PostV1VideoToVideoJSONBody16ReferenceVideosUri2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferenceVideosUri2 = string
+
+// PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri struct {
+	union json.RawMessage
+}
+
+// PostV1VideoToVideoJSONBody16ReferencesUri0 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferencesUri0 = string
+
+// PostV1VideoToVideoJSONBody16ReferencesUri1 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferencesUri1 = string
+
+// PostV1VideoToVideoJSONBody16ReferencesUri2 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody16ReferencesUri2 = string
+
+// PostV1VideoToVideoJSONBody_16_References_Uri defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideoJSONBody_16_References_Uri struct {
+	union json.RawMessage
+}
+
 // PostV1VideoToVideo400JSONResponseBodyIssuesPath0 defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideo400JSONResponseBodyIssuesPath0 = string
 
@@ -41002,10 +43111,10 @@ type PostV1VideoToVideo400JSONResponseBodyReason21 string
 type PostV1VideoToVideo400JSONResponseBodyReason22 string
 
 // PostV1VideoToVideo400JSONResponseBodyReason23 defines parameters for PostV1VideoToVideo.
-type PostV1VideoToVideo400JSONResponseBodyReason23 = string
+type PostV1VideoToVideo400JSONResponseBodyReason23 string
 
 // PostV1VideoToVideo400JSONResponseBodyReason24 defines parameters for PostV1VideoToVideo.
-type PostV1VideoToVideo400JSONResponseBodyReason24 string
+type PostV1VideoToVideo400JSONResponseBodyReason24 = string
 
 // PostV1VideoToVideo400JSONResponseBodyReason25 defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideo400JSONResponseBodyReason25 string
@@ -41019,6 +43128,9 @@ type PostV1VideoToVideo400JSONResponseBodyReason27 string
 // PostV1VideoToVideo400JSONResponseBodyReason28 defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideo400JSONResponseBodyReason28 string
 
+// PostV1VideoToVideo400JSONResponseBodyReason29 defines parameters for PostV1VideoToVideo.
+type PostV1VideoToVideo400JSONResponseBodyReason29 string
+
 // PostV1VideoToVideo400JSONResponseBody_Reason defines parameters for PostV1VideoToVideo.
 type PostV1VideoToVideo400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -41027,6 +43139,14 @@ type PostV1VideoToVideo400JSONResponseBody_Reason struct {
 // PostV1VideoUpscaleJSONBody defines parameters for PostV1VideoUpscale.
 type PostV1VideoUpscaleJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1VideoUpscaleParams defines parameters for PostV1VideoUpscale.
+type PostV1VideoUpscaleParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1VideoUpscaleJSONBody0 defines parameters for PostV1VideoUpscale.
@@ -41202,10 +43322,10 @@ type PostV1VideoUpscale400JSONResponseBodyReason21 string
 type PostV1VideoUpscale400JSONResponseBodyReason22 string
 
 // PostV1VideoUpscale400JSONResponseBodyReason23 defines parameters for PostV1VideoUpscale.
-type PostV1VideoUpscale400JSONResponseBodyReason23 = string
+type PostV1VideoUpscale400JSONResponseBodyReason23 string
 
 // PostV1VideoUpscale400JSONResponseBodyReason24 defines parameters for PostV1VideoUpscale.
-type PostV1VideoUpscale400JSONResponseBodyReason24 string
+type PostV1VideoUpscale400JSONResponseBodyReason24 = string
 
 // PostV1VideoUpscale400JSONResponseBodyReason25 defines parameters for PostV1VideoUpscale.
 type PostV1VideoUpscale400JSONResponseBodyReason25 string
@@ -41219,6 +43339,9 @@ type PostV1VideoUpscale400JSONResponseBodyReason27 string
 // PostV1VideoUpscale400JSONResponseBodyReason28 defines parameters for PostV1VideoUpscale.
 type PostV1VideoUpscale400JSONResponseBodyReason28 string
 
+// PostV1VideoUpscale400JSONResponseBodyReason29 defines parameters for PostV1VideoUpscale.
+type PostV1VideoUpscale400JSONResponseBodyReason29 string
+
 // PostV1VideoUpscale400JSONResponseBody_Reason defines parameters for PostV1VideoUpscale.
 type PostV1VideoUpscale400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -41227,6 +43350,14 @@ type PostV1VideoUpscale400JSONResponseBody_Reason struct {
 // PostV1VoiceDubbingJSONBody defines parameters for PostV1VoiceDubbing.
 type PostV1VoiceDubbingJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1VoiceDubbingParams defines parameters for PostV1VoiceDubbing.
+type PostV1VoiceDubbingParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1VoiceDubbingJSONBody0 defines parameters for PostV1VoiceDubbing.
@@ -41362,10 +43493,10 @@ type PostV1VoiceDubbing400JSONResponseBodyReason21 string
 type PostV1VoiceDubbing400JSONResponseBodyReason22 string
 
 // PostV1VoiceDubbing400JSONResponseBodyReason23 defines parameters for PostV1VoiceDubbing.
-type PostV1VoiceDubbing400JSONResponseBodyReason23 = string
+type PostV1VoiceDubbing400JSONResponseBodyReason23 string
 
 // PostV1VoiceDubbing400JSONResponseBodyReason24 defines parameters for PostV1VoiceDubbing.
-type PostV1VoiceDubbing400JSONResponseBodyReason24 string
+type PostV1VoiceDubbing400JSONResponseBodyReason24 = string
 
 // PostV1VoiceDubbing400JSONResponseBodyReason25 defines parameters for PostV1VoiceDubbing.
 type PostV1VoiceDubbing400JSONResponseBodyReason25 string
@@ -41379,6 +43510,9 @@ type PostV1VoiceDubbing400JSONResponseBodyReason27 string
 // PostV1VoiceDubbing400JSONResponseBodyReason28 defines parameters for PostV1VoiceDubbing.
 type PostV1VoiceDubbing400JSONResponseBodyReason28 string
 
+// PostV1VoiceDubbing400JSONResponseBodyReason29 defines parameters for PostV1VoiceDubbing.
+type PostV1VoiceDubbing400JSONResponseBodyReason29 string
+
 // PostV1VoiceDubbing400JSONResponseBody_Reason defines parameters for PostV1VoiceDubbing.
 type PostV1VoiceDubbing400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -41387,6 +43521,14 @@ type PostV1VoiceDubbing400JSONResponseBody_Reason struct {
 // PostV1VoiceIsolationJSONBody defines parameters for PostV1VoiceIsolation.
 type PostV1VoiceIsolationJSONBody struct {
 	union json.RawMessage
+}
+
+// PostV1VoiceIsolationParams defines parameters for PostV1VoiceIsolation.
+type PostV1VoiceIsolationParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1VoiceIsolationJSONBody0 defines parameters for PostV1VoiceIsolation.
@@ -41507,10 +43649,10 @@ type PostV1VoiceIsolation400JSONResponseBodyReason21 string
 type PostV1VoiceIsolation400JSONResponseBodyReason22 string
 
 // PostV1VoiceIsolation400JSONResponseBodyReason23 defines parameters for PostV1VoiceIsolation.
-type PostV1VoiceIsolation400JSONResponseBodyReason23 = string
+type PostV1VoiceIsolation400JSONResponseBodyReason23 string
 
 // PostV1VoiceIsolation400JSONResponseBodyReason24 defines parameters for PostV1VoiceIsolation.
-type PostV1VoiceIsolation400JSONResponseBodyReason24 string
+type PostV1VoiceIsolation400JSONResponseBodyReason24 = string
 
 // PostV1VoiceIsolation400JSONResponseBodyReason25 defines parameters for PostV1VoiceIsolation.
 type PostV1VoiceIsolation400JSONResponseBodyReason25 string
@@ -41524,6 +43666,9 @@ type PostV1VoiceIsolation400JSONResponseBodyReason27 string
 // PostV1VoiceIsolation400JSONResponseBodyReason28 defines parameters for PostV1VoiceIsolation.
 type PostV1VoiceIsolation400JSONResponseBodyReason28 string
 
+// PostV1VoiceIsolation400JSONResponseBodyReason29 defines parameters for PostV1VoiceIsolation.
+type PostV1VoiceIsolation400JSONResponseBodyReason29 string
+
 // PostV1VoiceIsolation400JSONResponseBody_Reason defines parameters for PostV1VoiceIsolation.
 type PostV1VoiceIsolation400JSONResponseBody_Reason struct {
 	union json.RawMessage
@@ -41535,7 +43680,7 @@ type GetV1VoicesParams struct {
 	Cursor *string `form:"cursor,omitempty" json:"cursor,omitempty"`
 
 	// Limit The maximum number of items to return per page.
-	Limit int `form:"limit" json:"limit"`
+	Limit *int `form:"limit,omitempty" json:"limit,omitempty"`
 }
 
 // GetV1Voices200JSONResponseBodyData0 defines parameters for GetV1Voices.
@@ -41614,6 +43759,14 @@ type PostV1VoicesJSONBody struct {
 
 	// Name A name for the voice.
 	Name string `json:"name"`
+}
+
+// PostV1VoicesParams defines parameters for PostV1Voices.
+type PostV1VoicesParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1VoicesJSONBodyFrom0 defines parameters for PostV1Voices.
@@ -41968,6 +44121,14 @@ type GetV1WorkflowInvocationsId200JSONResponseBody struct {
 type PostV1WorkflowsIdJSONBody struct {
 	// NodeOutputs Optional node outputs to override default values. Keys are node IDs from the workflow graph, values are objects mapping output keys to typed values.
 	NodeOutputs *map[string]map[string]PostV1WorkflowsIdJSONBody_NodeOutputs_AdditionalProperties `json:"nodeOutputs,omitempty"`
+}
+
+// PostV1WorkflowsIdParams defines parameters for PostV1WorkflowsId.
+type PostV1WorkflowsIdParams struct {
+	// XRunwayTags Comma-separated tags to attribute this generation's credit usage to, so you can filter and break down usage with `POST /v1/organization/usage`. Each tag is a plain label (`campaign-q4`) or a `key:value` pair (`team:growth`), split at the first colon. Tags are case-insensitive and stored lowercase. Up to 10 tags, each up to 64 characters of letters, numbers, and `_ - . / :`. An invalid tag rejects the request with a 400. Workflow runs pass their tags on to every generation they start.
+	//
+	// **Tags appear in usage reports. Do not put end-user PII (like names or emails) in them.**
+	XRunwayTags *XRunwayTags `json:"X-Runway-Tags,omitempty"`
 }
 
 // PostV1WorkflowsIdJSONBodyNodeOutputs0 defines parameters for PostV1WorkflowsId.
@@ -47513,6 +49674,32 @@ func (t *PostV1CharacterPerformance400JSONResponseBody_Reason) MergePostV1Charac
 	return err
 }
 
+// AsPostV1CharacterPerformance400JSONResponseBodyReason29 returns the union data inside the PostV1CharacterPerformance400JSONResponseBody_Reason as a PostV1CharacterPerformance400JSONResponseBodyReason29
+func (t PostV1CharacterPerformance400JSONResponseBody_Reason) AsPostV1CharacterPerformance400JSONResponseBodyReason29() (PostV1CharacterPerformance400JSONResponseBodyReason29, error) {
+	var body PostV1CharacterPerformance400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1CharacterPerformance400JSONResponseBodyReason29 overwrites any union data inside the PostV1CharacterPerformance400JSONResponseBody_Reason as the provided PostV1CharacterPerformance400JSONResponseBodyReason29
+func (t *PostV1CharacterPerformance400JSONResponseBody_Reason) FromPostV1CharacterPerformance400JSONResponseBodyReason29(v PostV1CharacterPerformance400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1CharacterPerformance400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1CharacterPerformance400JSONResponseBody_Reason, using the provided PostV1CharacterPerformance400JSONResponseBodyReason29
+func (t *PostV1CharacterPerformance400JSONResponseBody_Reason) MergePostV1CharacterPerformance400JSONResponseBodyReason29(v PostV1CharacterPerformance400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1CharacterPerformance400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -49663,6 +51850,32 @@ func (t *PostV1ImageToVector400JSONResponseBody_Reason) MergePostV1ImageToVector
 	return err
 }
 
+// AsPostV1ImageToVector400JSONResponseBodyReason29 returns the union data inside the PostV1ImageToVector400JSONResponseBody_Reason as a PostV1ImageToVector400JSONResponseBodyReason29
+func (t PostV1ImageToVector400JSONResponseBody_Reason) AsPostV1ImageToVector400JSONResponseBodyReason29() (PostV1ImageToVector400JSONResponseBodyReason29, error) {
+	var body PostV1ImageToVector400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVector400JSONResponseBodyReason29 overwrites any union data inside the PostV1ImageToVector400JSONResponseBody_Reason as the provided PostV1ImageToVector400JSONResponseBodyReason29
+func (t *PostV1ImageToVector400JSONResponseBody_Reason) FromPostV1ImageToVector400JSONResponseBodyReason29(v PostV1ImageToVector400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVector400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1ImageToVector400JSONResponseBody_Reason, using the provided PostV1ImageToVector400JSONResponseBodyReason29
+func (t *PostV1ImageToVector400JSONResponseBody_Reason) MergePostV1ImageToVector400JSONResponseBodyReason29(v PostV1ImageToVector400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1ImageToVector400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -50417,6 +52630,32 @@ func (t *PostV1ImageToVideoJSONBody) FromPostV1ImageToVideoJSONBody28(v PostV1Im
 
 // MergePostV1ImageToVideoJSONBody28 performs a merge with any union data inside the PostV1ImageToVideoJSONBody, using the provided PostV1ImageToVideoJSONBody28
 func (t *PostV1ImageToVideoJSONBody) MergePostV1ImageToVideoJSONBody28(v PostV1ImageToVideoJSONBody28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29 returns the union data inside the PostV1ImageToVideoJSONBody as a PostV1ImageToVideoJSONBody29
+func (t PostV1ImageToVideoJSONBody) AsPostV1ImageToVideoJSONBody29() (PostV1ImageToVideoJSONBody29, error) {
+	var body PostV1ImageToVideoJSONBody29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29 overwrites any union data inside the PostV1ImageToVideoJSONBody as the provided PostV1ImageToVideoJSONBody29
+func (t *PostV1ImageToVideoJSONBody) FromPostV1ImageToVideoJSONBody29(v PostV1ImageToVideoJSONBody29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29 performs a merge with any union data inside the PostV1ImageToVideoJSONBody, using the provided PostV1ImageToVideoJSONBody29
+func (t *PostV1ImageToVideoJSONBody) MergePostV1ImageToVideoJSONBody29(v PostV1ImageToVideoJSONBody29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -59657,6 +61896,394 @@ func (t *PostV1ImageToVideoJSONBody_28_References_Uri) UnmarshalJSON(b []byte) e
 	return err
 }
 
+// AsPostV1ImageToVideoJSONBody29Duration0 returns the union data inside the PostV1ImageToVideoJSONBody_29_Duration as a PostV1ImageToVideoJSONBody29Duration0
+func (t PostV1ImageToVideoJSONBody_29_Duration) AsPostV1ImageToVideoJSONBody29Duration0() (PostV1ImageToVideoJSONBody29Duration0, error) {
+	var body PostV1ImageToVideoJSONBody29Duration0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29Duration0 overwrites any union data inside the PostV1ImageToVideoJSONBody_29_Duration as the provided PostV1ImageToVideoJSONBody29Duration0
+func (t *PostV1ImageToVideoJSONBody_29_Duration) FromPostV1ImageToVideoJSONBody29Duration0(v PostV1ImageToVideoJSONBody29Duration0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29Duration0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_29_Duration, using the provided PostV1ImageToVideoJSONBody29Duration0
+func (t *PostV1ImageToVideoJSONBody_29_Duration) MergePostV1ImageToVideoJSONBody29Duration0(v PostV1ImageToVideoJSONBody29Duration0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29Duration1 returns the union data inside the PostV1ImageToVideoJSONBody_29_Duration as a PostV1ImageToVideoJSONBody29Duration1
+func (t PostV1ImageToVideoJSONBody_29_Duration) AsPostV1ImageToVideoJSONBody29Duration1() (PostV1ImageToVideoJSONBody29Duration1, error) {
+	var body PostV1ImageToVideoJSONBody29Duration1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29Duration1 overwrites any union data inside the PostV1ImageToVideoJSONBody_29_Duration as the provided PostV1ImageToVideoJSONBody29Duration1
+func (t *PostV1ImageToVideoJSONBody_29_Duration) FromPostV1ImageToVideoJSONBody29Duration1(v PostV1ImageToVideoJSONBody29Duration1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29Duration1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_29_Duration, using the provided PostV1ImageToVideoJSONBody29Duration1
+func (t *PostV1ImageToVideoJSONBody_29_Duration) MergePostV1ImageToVideoJSONBody29Duration1(v PostV1ImageToVideoJSONBody29Duration1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_29_Duration) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_29_Duration) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29PromptImage00 returns the union data inside the PostV1ImageToVideoJSONBody29PromptImage0 as a PostV1ImageToVideoJSONBody29PromptImage00
+func (t PostV1ImageToVideoJSONBody29PromptImage0) AsPostV1ImageToVideoJSONBody29PromptImage00() (PostV1ImageToVideoJSONBody29PromptImage00, error) {
+	var body PostV1ImageToVideoJSONBody29PromptImage00
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29PromptImage00 overwrites any union data inside the PostV1ImageToVideoJSONBody29PromptImage0 as the provided PostV1ImageToVideoJSONBody29PromptImage00
+func (t *PostV1ImageToVideoJSONBody29PromptImage0) FromPostV1ImageToVideoJSONBody29PromptImage00(v PostV1ImageToVideoJSONBody29PromptImage00) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29PromptImage00 performs a merge with any union data inside the PostV1ImageToVideoJSONBody29PromptImage0, using the provided PostV1ImageToVideoJSONBody29PromptImage00
+func (t *PostV1ImageToVideoJSONBody29PromptImage0) MergePostV1ImageToVideoJSONBody29PromptImage00(v PostV1ImageToVideoJSONBody29PromptImage00) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29PromptImage01 returns the union data inside the PostV1ImageToVideoJSONBody29PromptImage0 as a PostV1ImageToVideoJSONBody29PromptImage01
+func (t PostV1ImageToVideoJSONBody29PromptImage0) AsPostV1ImageToVideoJSONBody29PromptImage01() (PostV1ImageToVideoJSONBody29PromptImage01, error) {
+	var body PostV1ImageToVideoJSONBody29PromptImage01
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29PromptImage01 overwrites any union data inside the PostV1ImageToVideoJSONBody29PromptImage0 as the provided PostV1ImageToVideoJSONBody29PromptImage01
+func (t *PostV1ImageToVideoJSONBody29PromptImage0) FromPostV1ImageToVideoJSONBody29PromptImage01(v PostV1ImageToVideoJSONBody29PromptImage01) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29PromptImage01 performs a merge with any union data inside the PostV1ImageToVideoJSONBody29PromptImage0, using the provided PostV1ImageToVideoJSONBody29PromptImage01
+func (t *PostV1ImageToVideoJSONBody29PromptImage0) MergePostV1ImageToVideoJSONBody29PromptImage01(v PostV1ImageToVideoJSONBody29PromptImage01) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29PromptImage02 returns the union data inside the PostV1ImageToVideoJSONBody29PromptImage0 as a PostV1ImageToVideoJSONBody29PromptImage02
+func (t PostV1ImageToVideoJSONBody29PromptImage0) AsPostV1ImageToVideoJSONBody29PromptImage02() (PostV1ImageToVideoJSONBody29PromptImage02, error) {
+	var body PostV1ImageToVideoJSONBody29PromptImage02
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29PromptImage02 overwrites any union data inside the PostV1ImageToVideoJSONBody29PromptImage0 as the provided PostV1ImageToVideoJSONBody29PromptImage02
+func (t *PostV1ImageToVideoJSONBody29PromptImage0) FromPostV1ImageToVideoJSONBody29PromptImage02(v PostV1ImageToVideoJSONBody29PromptImage02) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29PromptImage02 performs a merge with any union data inside the PostV1ImageToVideoJSONBody29PromptImage0, using the provided PostV1ImageToVideoJSONBody29PromptImage02
+func (t *PostV1ImageToVideoJSONBody29PromptImage0) MergePostV1ImageToVideoJSONBody29PromptImage02(v PostV1ImageToVideoJSONBody29PromptImage02) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody29PromptImage0) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody29PromptImage0) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29PromptImage1Uri0 returns the union data inside the PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri as a PostV1ImageToVideoJSONBody29PromptImage1Uri0
+func (t PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) AsPostV1ImageToVideoJSONBody29PromptImage1Uri0() (PostV1ImageToVideoJSONBody29PromptImage1Uri0, error) {
+	var body PostV1ImageToVideoJSONBody29PromptImage1Uri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29PromptImage1Uri0 overwrites any union data inside the PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri as the provided PostV1ImageToVideoJSONBody29PromptImage1Uri0
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) FromPostV1ImageToVideoJSONBody29PromptImage1Uri0(v PostV1ImageToVideoJSONBody29PromptImage1Uri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29PromptImage1Uri0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri, using the provided PostV1ImageToVideoJSONBody29PromptImage1Uri0
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) MergePostV1ImageToVideoJSONBody29PromptImage1Uri0(v PostV1ImageToVideoJSONBody29PromptImage1Uri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29PromptImage1Uri1 returns the union data inside the PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri as a PostV1ImageToVideoJSONBody29PromptImage1Uri1
+func (t PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) AsPostV1ImageToVideoJSONBody29PromptImage1Uri1() (PostV1ImageToVideoJSONBody29PromptImage1Uri1, error) {
+	var body PostV1ImageToVideoJSONBody29PromptImage1Uri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29PromptImage1Uri1 overwrites any union data inside the PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri as the provided PostV1ImageToVideoJSONBody29PromptImage1Uri1
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) FromPostV1ImageToVideoJSONBody29PromptImage1Uri1(v PostV1ImageToVideoJSONBody29PromptImage1Uri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29PromptImage1Uri1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri, using the provided PostV1ImageToVideoJSONBody29PromptImage1Uri1
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) MergePostV1ImageToVideoJSONBody29PromptImage1Uri1(v PostV1ImageToVideoJSONBody29PromptImage1Uri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29PromptImage1Uri2 returns the union data inside the PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri as a PostV1ImageToVideoJSONBody29PromptImage1Uri2
+func (t PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) AsPostV1ImageToVideoJSONBody29PromptImage1Uri2() (PostV1ImageToVideoJSONBody29PromptImage1Uri2, error) {
+	var body PostV1ImageToVideoJSONBody29PromptImage1Uri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29PromptImage1Uri2 overwrites any union data inside the PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri as the provided PostV1ImageToVideoJSONBody29PromptImage1Uri2
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) FromPostV1ImageToVideoJSONBody29PromptImage1Uri2(v PostV1ImageToVideoJSONBody29PromptImage1Uri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29PromptImage1Uri2 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri, using the provided PostV1ImageToVideoJSONBody29PromptImage1Uri2
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) MergePostV1ImageToVideoJSONBody29PromptImage1Uri2(v PostV1ImageToVideoJSONBody29PromptImage1Uri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage_1_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29PromptImage0 returns the union data inside the PostV1ImageToVideoJSONBody_29_PromptImage as a PostV1ImageToVideoJSONBody29PromptImage0
+func (t PostV1ImageToVideoJSONBody_29_PromptImage) AsPostV1ImageToVideoJSONBody29PromptImage0() (PostV1ImageToVideoJSONBody29PromptImage0, error) {
+	var body PostV1ImageToVideoJSONBody29PromptImage0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29PromptImage0 overwrites any union data inside the PostV1ImageToVideoJSONBody_29_PromptImage as the provided PostV1ImageToVideoJSONBody29PromptImage0
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage) FromPostV1ImageToVideoJSONBody29PromptImage0(v PostV1ImageToVideoJSONBody29PromptImage0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29PromptImage0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_29_PromptImage, using the provided PostV1ImageToVideoJSONBody29PromptImage0
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage) MergePostV1ImageToVideoJSONBody29PromptImage0(v PostV1ImageToVideoJSONBody29PromptImage0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29PromptImage1 returns the union data inside the PostV1ImageToVideoJSONBody_29_PromptImage as a PostV1ImageToVideoJSONBody29PromptImage1
+func (t PostV1ImageToVideoJSONBody_29_PromptImage) AsPostV1ImageToVideoJSONBody29PromptImage1() (PostV1ImageToVideoJSONBody29PromptImage1, error) {
+	var body PostV1ImageToVideoJSONBody29PromptImage1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29PromptImage1 overwrites any union data inside the PostV1ImageToVideoJSONBody_29_PromptImage as the provided PostV1ImageToVideoJSONBody29PromptImage1
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage) FromPostV1ImageToVideoJSONBody29PromptImage1(v PostV1ImageToVideoJSONBody29PromptImage1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29PromptImage1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_29_PromptImage, using the provided PostV1ImageToVideoJSONBody29PromptImage1
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage) MergePostV1ImageToVideoJSONBody29PromptImage1(v PostV1ImageToVideoJSONBody29PromptImage1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_29_PromptImage) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_29_PromptImage) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29ReferenceAudioUri0 returns the union data inside the PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri as a PostV1ImageToVideoJSONBody29ReferenceAudioUri0
+func (t PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) AsPostV1ImageToVideoJSONBody29ReferenceAudioUri0() (PostV1ImageToVideoJSONBody29ReferenceAudioUri0, error) {
+	var body PostV1ImageToVideoJSONBody29ReferenceAudioUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29ReferenceAudioUri0 overwrites any union data inside the PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri as the provided PostV1ImageToVideoJSONBody29ReferenceAudioUri0
+func (t *PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) FromPostV1ImageToVideoJSONBody29ReferenceAudioUri0(v PostV1ImageToVideoJSONBody29ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29ReferenceAudioUri0 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri, using the provided PostV1ImageToVideoJSONBody29ReferenceAudioUri0
+func (t *PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) MergePostV1ImageToVideoJSONBody29ReferenceAudioUri0(v PostV1ImageToVideoJSONBody29ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29ReferenceAudioUri1 returns the union data inside the PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri as a PostV1ImageToVideoJSONBody29ReferenceAudioUri1
+func (t PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) AsPostV1ImageToVideoJSONBody29ReferenceAudioUri1() (PostV1ImageToVideoJSONBody29ReferenceAudioUri1, error) {
+	var body PostV1ImageToVideoJSONBody29ReferenceAudioUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29ReferenceAudioUri1 overwrites any union data inside the PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri as the provided PostV1ImageToVideoJSONBody29ReferenceAudioUri1
+func (t *PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) FromPostV1ImageToVideoJSONBody29ReferenceAudioUri1(v PostV1ImageToVideoJSONBody29ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29ReferenceAudioUri1 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri, using the provided PostV1ImageToVideoJSONBody29ReferenceAudioUri1
+func (t *PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) MergePostV1ImageToVideoJSONBody29ReferenceAudioUri1(v PostV1ImageToVideoJSONBody29ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideoJSONBody29ReferenceAudioUri2 returns the union data inside the PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri as a PostV1ImageToVideoJSONBody29ReferenceAudioUri2
+func (t PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) AsPostV1ImageToVideoJSONBody29ReferenceAudioUri2() (PostV1ImageToVideoJSONBody29ReferenceAudioUri2, error) {
+	var body PostV1ImageToVideoJSONBody29ReferenceAudioUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideoJSONBody29ReferenceAudioUri2 overwrites any union data inside the PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri as the provided PostV1ImageToVideoJSONBody29ReferenceAudioUri2
+func (t *PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) FromPostV1ImageToVideoJSONBody29ReferenceAudioUri2(v PostV1ImageToVideoJSONBody29ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideoJSONBody29ReferenceAudioUri2 performs a merge with any union data inside the PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri, using the provided PostV1ImageToVideoJSONBody29ReferenceAudioUri2
+func (t *PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) MergePostV1ImageToVideoJSONBody29ReferenceAudioUri2(v PostV1ImageToVideoJSONBody29ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1ImageToVideoJSONBody_29_ReferenceAudio_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsPostV1ImageToVideo400JSONResponseBodyIssuesPath0 returns the union data inside the PostV1ImageToVideo400JSONResponseBody_Issues_Path_Item as a PostV1ImageToVideo400JSONResponseBodyIssuesPath0
 func (t PostV1ImageToVideo400JSONResponseBody_Issues_Path_Item) AsPostV1ImageToVideo400JSONResponseBodyIssuesPath0() (PostV1ImageToVideo400JSONResponseBodyIssuesPath0, error) {
 	var body PostV1ImageToVideo400JSONResponseBodyIssuesPath0
@@ -60463,6 +63090,32 @@ func (t *PostV1ImageToVideo400JSONResponseBody_Reason) FromPostV1ImageToVideo400
 
 // MergePostV1ImageToVideo400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1ImageToVideo400JSONResponseBody_Reason, using the provided PostV1ImageToVideo400JSONResponseBodyReason28
 func (t *PostV1ImageToVideo400JSONResponseBody_Reason) MergePostV1ImageToVideo400JSONResponseBodyReason28(v PostV1ImageToVideo400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageToVideo400JSONResponseBodyReason29 returns the union data inside the PostV1ImageToVideo400JSONResponseBody_Reason as a PostV1ImageToVideo400JSONResponseBodyReason29
+func (t PostV1ImageToVideo400JSONResponseBody_Reason) AsPostV1ImageToVideo400JSONResponseBodyReason29() (PostV1ImageToVideo400JSONResponseBodyReason29, error) {
+	var body PostV1ImageToVideo400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageToVideo400JSONResponseBodyReason29 overwrites any union data inside the PostV1ImageToVideo400JSONResponseBody_Reason as the provided PostV1ImageToVideo400JSONResponseBodyReason29
+func (t *PostV1ImageToVideo400JSONResponseBody_Reason) FromPostV1ImageToVideo400JSONResponseBodyReason29(v PostV1ImageToVideo400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageToVideo400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1ImageToVideo400JSONResponseBody_Reason, using the provided PostV1ImageToVideo400JSONResponseBodyReason29
+func (t *PostV1ImageToVideo400JSONResponseBody_Reason) MergePostV1ImageToVideo400JSONResponseBodyReason29(v PostV1ImageToVideo400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -61413,6 +64066,32 @@ func (t *PostV1ImageUpscale400JSONResponseBody_Reason) FromPostV1ImageUpscale400
 
 // MergePostV1ImageUpscale400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1ImageUpscale400JSONResponseBody_Reason, using the provided PostV1ImageUpscale400JSONResponseBodyReason28
 func (t *PostV1ImageUpscale400JSONResponseBody_Reason) MergePostV1ImageUpscale400JSONResponseBodyReason28(v PostV1ImageUpscale400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1ImageUpscale400JSONResponseBodyReason29 returns the union data inside the PostV1ImageUpscale400JSONResponseBody_Reason as a PostV1ImageUpscale400JSONResponseBodyReason29
+func (t PostV1ImageUpscale400JSONResponseBody_Reason) AsPostV1ImageUpscale400JSONResponseBodyReason29() (PostV1ImageUpscale400JSONResponseBodyReason29, error) {
+	var body PostV1ImageUpscale400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1ImageUpscale400JSONResponseBodyReason29 overwrites any union data inside the PostV1ImageUpscale400JSONResponseBody_Reason as the provided PostV1ImageUpscale400JSONResponseBodyReason29
+func (t *PostV1ImageUpscale400JSONResponseBody_Reason) FromPostV1ImageUpscale400JSONResponseBodyReason29(v PostV1ImageUpscale400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1ImageUpscale400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1ImageUpscale400JSONResponseBody_Reason, using the provided PostV1ImageUpscale400JSONResponseBodyReason29
+func (t *PostV1ImageUpscale400JSONResponseBody_Reason) MergePostV1ImageUpscale400JSONResponseBodyReason29(v PostV1ImageUpscale400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -63513,6 +66192,32 @@ func (t *PostV1RecipesAdLocalization400JSONResponseBody_Reason) MergePostV1Recip
 	return err
 }
 
+// AsPostV1RecipesAdLocalization400JSONResponseBodyReason29 returns the union data inside the PostV1RecipesAdLocalization400JSONResponseBody_Reason as a PostV1RecipesAdLocalization400JSONResponseBodyReason29
+func (t PostV1RecipesAdLocalization400JSONResponseBody_Reason) AsPostV1RecipesAdLocalization400JSONResponseBodyReason29() (PostV1RecipesAdLocalization400JSONResponseBodyReason29, error) {
+	var body PostV1RecipesAdLocalization400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesAdLocalization400JSONResponseBodyReason29 overwrites any union data inside the PostV1RecipesAdLocalization400JSONResponseBody_Reason as the provided PostV1RecipesAdLocalization400JSONResponseBodyReason29
+func (t *PostV1RecipesAdLocalization400JSONResponseBody_Reason) FromPostV1RecipesAdLocalization400JSONResponseBodyReason29(v PostV1RecipesAdLocalization400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesAdLocalization400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1RecipesAdLocalization400JSONResponseBody_Reason, using the provided PostV1RecipesAdLocalization400JSONResponseBodyReason29
+func (t *PostV1RecipesAdLocalization400JSONResponseBody_Reason) MergePostV1RecipesAdLocalization400JSONResponseBodyReason29(v PostV1RecipesAdLocalization400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1RecipesAdLocalization400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -64417,6 +67122,32 @@ func (t *PostV1RecipesMarketingStockImage400JSONResponseBody_Reason) FromPostV1R
 
 // MergePostV1RecipesMarketingStockImage400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1RecipesMarketingStockImage400JSONResponseBody_Reason, using the provided PostV1RecipesMarketingStockImage400JSONResponseBodyReason28
 func (t *PostV1RecipesMarketingStockImage400JSONResponseBody_Reason) MergePostV1RecipesMarketingStockImage400JSONResponseBodyReason28(v PostV1RecipesMarketingStockImage400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1RecipesMarketingStockImage400JSONResponseBodyReason29 returns the union data inside the PostV1RecipesMarketingStockImage400JSONResponseBody_Reason as a PostV1RecipesMarketingStockImage400JSONResponseBodyReason29
+func (t PostV1RecipesMarketingStockImage400JSONResponseBody_Reason) AsPostV1RecipesMarketingStockImage400JSONResponseBodyReason29() (PostV1RecipesMarketingStockImage400JSONResponseBodyReason29, error) {
+	var body PostV1RecipesMarketingStockImage400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesMarketingStockImage400JSONResponseBodyReason29 overwrites any union data inside the PostV1RecipesMarketingStockImage400JSONResponseBody_Reason as the provided PostV1RecipesMarketingStockImage400JSONResponseBodyReason29
+func (t *PostV1RecipesMarketingStockImage400JSONResponseBody_Reason) FromPostV1RecipesMarketingStockImage400JSONResponseBodyReason29(v PostV1RecipesMarketingStockImage400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesMarketingStockImage400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1RecipesMarketingStockImage400JSONResponseBody_Reason, using the provided PostV1RecipesMarketingStockImage400JSONResponseBodyReason29
+func (t *PostV1RecipesMarketingStockImage400JSONResponseBody_Reason) MergePostV1RecipesMarketingStockImage400JSONResponseBodyReason29(v PostV1RecipesMarketingStockImage400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -65491,6 +68222,32 @@ func (t *PostV1RecipesMultiShotVideo400JSONResponseBody_Reason) MergePostV1Recip
 	return err
 }
 
+// AsPostV1RecipesMultiShotVideo400JSONResponseBodyReason29 returns the union data inside the PostV1RecipesMultiShotVideo400JSONResponseBody_Reason as a PostV1RecipesMultiShotVideo400JSONResponseBodyReason29
+func (t PostV1RecipesMultiShotVideo400JSONResponseBody_Reason) AsPostV1RecipesMultiShotVideo400JSONResponseBodyReason29() (PostV1RecipesMultiShotVideo400JSONResponseBodyReason29, error) {
+	var body PostV1RecipesMultiShotVideo400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesMultiShotVideo400JSONResponseBodyReason29 overwrites any union data inside the PostV1RecipesMultiShotVideo400JSONResponseBody_Reason as the provided PostV1RecipesMultiShotVideo400JSONResponseBodyReason29
+func (t *PostV1RecipesMultiShotVideo400JSONResponseBody_Reason) FromPostV1RecipesMultiShotVideo400JSONResponseBodyReason29(v PostV1RecipesMultiShotVideo400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesMultiShotVideo400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1RecipesMultiShotVideo400JSONResponseBody_Reason, using the provided PostV1RecipesMultiShotVideo400JSONResponseBodyReason29
+func (t *PostV1RecipesMultiShotVideo400JSONResponseBody_Reason) MergePostV1RecipesMultiShotVideo400JSONResponseBodyReason29(v PostV1RecipesMultiShotVideo400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1RecipesMultiShotVideo400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -66493,6 +69250,32 @@ func (t *PostV1RecipesProductAd400JSONResponseBody_Reason) MergePostV1RecipesPro
 	return err
 }
 
+// AsPostV1RecipesProductAd400JSONResponseBodyReason29 returns the union data inside the PostV1RecipesProductAd400JSONResponseBody_Reason as a PostV1RecipesProductAd400JSONResponseBodyReason29
+func (t PostV1RecipesProductAd400JSONResponseBody_Reason) AsPostV1RecipesProductAd400JSONResponseBodyReason29() (PostV1RecipesProductAd400JSONResponseBodyReason29, error) {
+	var body PostV1RecipesProductAd400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesProductAd400JSONResponseBodyReason29 overwrites any union data inside the PostV1RecipesProductAd400JSONResponseBody_Reason as the provided PostV1RecipesProductAd400JSONResponseBodyReason29
+func (t *PostV1RecipesProductAd400JSONResponseBody_Reason) FromPostV1RecipesProductAd400JSONResponseBodyReason29(v PostV1RecipesProductAd400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesProductAd400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1RecipesProductAd400JSONResponseBody_Reason, using the provided PostV1RecipesProductAd400JSONResponseBodyReason29
+func (t *PostV1RecipesProductAd400JSONResponseBody_Reason) MergePostV1RecipesProductAd400JSONResponseBodyReason29(v PostV1RecipesProductAd400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1RecipesProductAd400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -67397,6 +70180,32 @@ func (t *PostV1RecipesProductCampaignImage400JSONResponseBody_Reason) FromPostV1
 
 // MergePostV1RecipesProductCampaignImage400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1RecipesProductCampaignImage400JSONResponseBody_Reason, using the provided PostV1RecipesProductCampaignImage400JSONResponseBodyReason28
 func (t *PostV1RecipesProductCampaignImage400JSONResponseBody_Reason) MergePostV1RecipesProductCampaignImage400JSONResponseBodyReason28(v PostV1RecipesProductCampaignImage400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1RecipesProductCampaignImage400JSONResponseBodyReason29 returns the union data inside the PostV1RecipesProductCampaignImage400JSONResponseBody_Reason as a PostV1RecipesProductCampaignImage400JSONResponseBodyReason29
+func (t PostV1RecipesProductCampaignImage400JSONResponseBody_Reason) AsPostV1RecipesProductCampaignImage400JSONResponseBodyReason29() (PostV1RecipesProductCampaignImage400JSONResponseBodyReason29, error) {
+	var body PostV1RecipesProductCampaignImage400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesProductCampaignImage400JSONResponseBodyReason29 overwrites any union data inside the PostV1RecipesProductCampaignImage400JSONResponseBody_Reason as the provided PostV1RecipesProductCampaignImage400JSONResponseBodyReason29
+func (t *PostV1RecipesProductCampaignImage400JSONResponseBody_Reason) FromPostV1RecipesProductCampaignImage400JSONResponseBodyReason29(v PostV1RecipesProductCampaignImage400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesProductCampaignImage400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1RecipesProductCampaignImage400JSONResponseBody_Reason, using the provided PostV1RecipesProductCampaignImage400JSONResponseBodyReason29
+func (t *PostV1RecipesProductCampaignImage400JSONResponseBody_Reason) MergePostV1RecipesProductCampaignImage400JSONResponseBodyReason29(v PostV1RecipesProductCampaignImage400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -68497,6 +71306,32 @@ func (t *PostV1RecipesProductSwap400JSONResponseBody_Reason) MergePostV1RecipesP
 	return err
 }
 
+// AsPostV1RecipesProductSwap400JSONResponseBodyReason29 returns the union data inside the PostV1RecipesProductSwap400JSONResponseBody_Reason as a PostV1RecipesProductSwap400JSONResponseBodyReason29
+func (t PostV1RecipesProductSwap400JSONResponseBody_Reason) AsPostV1RecipesProductSwap400JSONResponseBodyReason29() (PostV1RecipesProductSwap400JSONResponseBodyReason29, error) {
+	var body PostV1RecipesProductSwap400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesProductSwap400JSONResponseBodyReason29 overwrites any union data inside the PostV1RecipesProductSwap400JSONResponseBody_Reason as the provided PostV1RecipesProductSwap400JSONResponseBodyReason29
+func (t *PostV1RecipesProductSwap400JSONResponseBody_Reason) FromPostV1RecipesProductSwap400JSONResponseBodyReason29(v PostV1RecipesProductSwap400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesProductSwap400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1RecipesProductSwap400JSONResponseBody_Reason, using the provided PostV1RecipesProductSwap400JSONResponseBodyReason29
+func (t *PostV1RecipesProductSwap400JSONResponseBody_Reason) MergePostV1RecipesProductSwap400JSONResponseBodyReason29(v PostV1RecipesProductSwap400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1RecipesProductSwap400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -69489,6 +72324,32 @@ func (t *PostV1RecipesProductUgc400JSONResponseBody_Reason) FromPostV1RecipesPro
 
 // MergePostV1RecipesProductUgc400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1RecipesProductUgc400JSONResponseBody_Reason, using the provided PostV1RecipesProductUgc400JSONResponseBodyReason28
 func (t *PostV1RecipesProductUgc400JSONResponseBody_Reason) MergePostV1RecipesProductUgc400JSONResponseBodyReason28(v PostV1RecipesProductUgc400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1RecipesProductUgc400JSONResponseBodyReason29 returns the union data inside the PostV1RecipesProductUgc400JSONResponseBody_Reason as a PostV1RecipesProductUgc400JSONResponseBodyReason29
+func (t PostV1RecipesProductUgc400JSONResponseBody_Reason) AsPostV1RecipesProductUgc400JSONResponseBodyReason29() (PostV1RecipesProductUgc400JSONResponseBodyReason29, error) {
+	var body PostV1RecipesProductUgc400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1RecipesProductUgc400JSONResponseBodyReason29 overwrites any union data inside the PostV1RecipesProductUgc400JSONResponseBody_Reason as the provided PostV1RecipesProductUgc400JSONResponseBodyReason29
+func (t *PostV1RecipesProductUgc400JSONResponseBody_Reason) FromPostV1RecipesProductUgc400JSONResponseBodyReason29(v PostV1RecipesProductUgc400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1RecipesProductUgc400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1RecipesProductUgc400JSONResponseBody_Reason, using the provided PostV1RecipesProductUgc400JSONResponseBodyReason29
+func (t *PostV1RecipesProductUgc400JSONResponseBody_Reason) MergePostV1RecipesProductUgc400JSONResponseBodyReason29(v PostV1RecipesProductUgc400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -70579,6 +73440,32 @@ func (t *PostV1SoundEffect400JSONResponseBody_Reason) FromPostV1SoundEffect400JS
 
 // MergePostV1SoundEffect400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1SoundEffect400JSONResponseBody_Reason, using the provided PostV1SoundEffect400JSONResponseBodyReason28
 func (t *PostV1SoundEffect400JSONResponseBody_Reason) MergePostV1SoundEffect400JSONResponseBodyReason28(v PostV1SoundEffect400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1SoundEffect400JSONResponseBodyReason29 returns the union data inside the PostV1SoundEffect400JSONResponseBody_Reason as a PostV1SoundEffect400JSONResponseBodyReason29
+func (t PostV1SoundEffect400JSONResponseBody_Reason) AsPostV1SoundEffect400JSONResponseBodyReason29() (PostV1SoundEffect400JSONResponseBodyReason29, error) {
+	var body PostV1SoundEffect400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1SoundEffect400JSONResponseBodyReason29 overwrites any union data inside the PostV1SoundEffect400JSONResponseBody_Reason as the provided PostV1SoundEffect400JSONResponseBodyReason29
+func (t *PostV1SoundEffect400JSONResponseBody_Reason) FromPostV1SoundEffect400JSONResponseBodyReason29(v PostV1SoundEffect400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1SoundEffect400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1SoundEffect400JSONResponseBody_Reason, using the provided PostV1SoundEffect400JSONResponseBodyReason29
+func (t *PostV1SoundEffect400JSONResponseBody_Reason) MergePostV1SoundEffect400JSONResponseBodyReason29(v PostV1SoundEffect400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -71725,6 +74612,32 @@ func (t *PostV1SpeechToSpeech400JSONResponseBody_Reason) MergePostV1SpeechToSpee
 	return err
 }
 
+// AsPostV1SpeechToSpeech400JSONResponseBodyReason29 returns the union data inside the PostV1SpeechToSpeech400JSONResponseBody_Reason as a PostV1SpeechToSpeech400JSONResponseBodyReason29
+func (t PostV1SpeechToSpeech400JSONResponseBody_Reason) AsPostV1SpeechToSpeech400JSONResponseBodyReason29() (PostV1SpeechToSpeech400JSONResponseBodyReason29, error) {
+	var body PostV1SpeechToSpeech400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1SpeechToSpeech400JSONResponseBodyReason29 overwrites any union data inside the PostV1SpeechToSpeech400JSONResponseBody_Reason as the provided PostV1SpeechToSpeech400JSONResponseBodyReason29
+func (t *PostV1SpeechToSpeech400JSONResponseBody_Reason) FromPostV1SpeechToSpeech400JSONResponseBodyReason29(v PostV1SpeechToSpeech400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1SpeechToSpeech400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1SpeechToSpeech400JSONResponseBody_Reason, using the provided PostV1SpeechToSpeech400JSONResponseBodyReason29
+func (t *PostV1SpeechToSpeech400JSONResponseBody_Reason) MergePostV1SpeechToSpeech400JSONResponseBodyReason29(v PostV1SpeechToSpeech400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1SpeechToSpeech400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -72541,6 +75454,84 @@ func (t *PostV1TextToImageJSONBody) FromPostV1TextToImageJSONBody24(v PostV1Text
 
 // MergePostV1TextToImageJSONBody24 performs a merge with any union data inside the PostV1TextToImageJSONBody, using the provided PostV1TextToImageJSONBody24
 func (t *PostV1TextToImageJSONBody) MergePostV1TextToImageJSONBody24(v PostV1TextToImageJSONBody24) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody25 returns the union data inside the PostV1TextToImageJSONBody as a PostV1TextToImageJSONBody25
+func (t PostV1TextToImageJSONBody) AsPostV1TextToImageJSONBody25() (PostV1TextToImageJSONBody25, error) {
+	var body PostV1TextToImageJSONBody25
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody25 overwrites any union data inside the PostV1TextToImageJSONBody as the provided PostV1TextToImageJSONBody25
+func (t *PostV1TextToImageJSONBody) FromPostV1TextToImageJSONBody25(v PostV1TextToImageJSONBody25) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody25 performs a merge with any union data inside the PostV1TextToImageJSONBody, using the provided PostV1TextToImageJSONBody25
+func (t *PostV1TextToImageJSONBody) MergePostV1TextToImageJSONBody25(v PostV1TextToImageJSONBody25) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody26 returns the union data inside the PostV1TextToImageJSONBody as a PostV1TextToImageJSONBody26
+func (t PostV1TextToImageJSONBody) AsPostV1TextToImageJSONBody26() (PostV1TextToImageJSONBody26, error) {
+	var body PostV1TextToImageJSONBody26
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody26 overwrites any union data inside the PostV1TextToImageJSONBody as the provided PostV1TextToImageJSONBody26
+func (t *PostV1TextToImageJSONBody) FromPostV1TextToImageJSONBody26(v PostV1TextToImageJSONBody26) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody26 performs a merge with any union data inside the PostV1TextToImageJSONBody, using the provided PostV1TextToImageJSONBody26
+func (t *PostV1TextToImageJSONBody) MergePostV1TextToImageJSONBody26(v PostV1TextToImageJSONBody26) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody27 returns the union data inside the PostV1TextToImageJSONBody as a PostV1TextToImageJSONBody27
+func (t PostV1TextToImageJSONBody) AsPostV1TextToImageJSONBody27() (PostV1TextToImageJSONBody27, error) {
+	var body PostV1TextToImageJSONBody27
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody27 overwrites any union data inside the PostV1TextToImageJSONBody as the provided PostV1TextToImageJSONBody27
+func (t *PostV1TextToImageJSONBody) FromPostV1TextToImageJSONBody27(v PostV1TextToImageJSONBody27) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody27 performs a merge with any union data inside the PostV1TextToImageJSONBody, using the provided PostV1TextToImageJSONBody27
+func (t *PostV1TextToImageJSONBody) MergePostV1TextToImageJSONBody27(v PostV1TextToImageJSONBody27) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -74735,6 +77726,270 @@ func (t *PostV1TextToImageJSONBody_24_ReferenceImages_Uri) UnmarshalJSON(b []byt
 	return err
 }
 
+// AsPostV1TextToImageJSONBody25ReferenceImagesUri0 returns the union data inside the PostV1TextToImageJSONBody_25_ReferenceImages_Uri as a PostV1TextToImageJSONBody25ReferenceImagesUri0
+func (t PostV1TextToImageJSONBody_25_ReferenceImages_Uri) AsPostV1TextToImageJSONBody25ReferenceImagesUri0() (PostV1TextToImageJSONBody25ReferenceImagesUri0, error) {
+	var body PostV1TextToImageJSONBody25ReferenceImagesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody25ReferenceImagesUri0 overwrites any union data inside the PostV1TextToImageJSONBody_25_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody25ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_25_ReferenceImages_Uri) FromPostV1TextToImageJSONBody25ReferenceImagesUri0(v PostV1TextToImageJSONBody25ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody25ReferenceImagesUri0 performs a merge with any union data inside the PostV1TextToImageJSONBody_25_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody25ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_25_ReferenceImages_Uri) MergePostV1TextToImageJSONBody25ReferenceImagesUri0(v PostV1TextToImageJSONBody25ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody25ReferenceImagesUri1 returns the union data inside the PostV1TextToImageJSONBody_25_ReferenceImages_Uri as a PostV1TextToImageJSONBody25ReferenceImagesUri1
+func (t PostV1TextToImageJSONBody_25_ReferenceImages_Uri) AsPostV1TextToImageJSONBody25ReferenceImagesUri1() (PostV1TextToImageJSONBody25ReferenceImagesUri1, error) {
+	var body PostV1TextToImageJSONBody25ReferenceImagesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody25ReferenceImagesUri1 overwrites any union data inside the PostV1TextToImageJSONBody_25_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody25ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_25_ReferenceImages_Uri) FromPostV1TextToImageJSONBody25ReferenceImagesUri1(v PostV1TextToImageJSONBody25ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody25ReferenceImagesUri1 performs a merge with any union data inside the PostV1TextToImageJSONBody_25_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody25ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_25_ReferenceImages_Uri) MergePostV1TextToImageJSONBody25ReferenceImagesUri1(v PostV1TextToImageJSONBody25ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody25ReferenceImagesUri2 returns the union data inside the PostV1TextToImageJSONBody_25_ReferenceImages_Uri as a PostV1TextToImageJSONBody25ReferenceImagesUri2
+func (t PostV1TextToImageJSONBody_25_ReferenceImages_Uri) AsPostV1TextToImageJSONBody25ReferenceImagesUri2() (PostV1TextToImageJSONBody25ReferenceImagesUri2, error) {
+	var body PostV1TextToImageJSONBody25ReferenceImagesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody25ReferenceImagesUri2 overwrites any union data inside the PostV1TextToImageJSONBody_25_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody25ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_25_ReferenceImages_Uri) FromPostV1TextToImageJSONBody25ReferenceImagesUri2(v PostV1TextToImageJSONBody25ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody25ReferenceImagesUri2 performs a merge with any union data inside the PostV1TextToImageJSONBody_25_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody25ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_25_ReferenceImages_Uri) MergePostV1TextToImageJSONBody25ReferenceImagesUri2(v PostV1TextToImageJSONBody25ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToImageJSONBody_25_ReferenceImages_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToImageJSONBody_25_ReferenceImages_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToImageJSONBody26ReferenceImagesUri0 returns the union data inside the PostV1TextToImageJSONBody_26_ReferenceImages_Uri as a PostV1TextToImageJSONBody26ReferenceImagesUri0
+func (t PostV1TextToImageJSONBody_26_ReferenceImages_Uri) AsPostV1TextToImageJSONBody26ReferenceImagesUri0() (PostV1TextToImageJSONBody26ReferenceImagesUri0, error) {
+	var body PostV1TextToImageJSONBody26ReferenceImagesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody26ReferenceImagesUri0 overwrites any union data inside the PostV1TextToImageJSONBody_26_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody26ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_26_ReferenceImages_Uri) FromPostV1TextToImageJSONBody26ReferenceImagesUri0(v PostV1TextToImageJSONBody26ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody26ReferenceImagesUri0 performs a merge with any union data inside the PostV1TextToImageJSONBody_26_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody26ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_26_ReferenceImages_Uri) MergePostV1TextToImageJSONBody26ReferenceImagesUri0(v PostV1TextToImageJSONBody26ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody26ReferenceImagesUri1 returns the union data inside the PostV1TextToImageJSONBody_26_ReferenceImages_Uri as a PostV1TextToImageJSONBody26ReferenceImagesUri1
+func (t PostV1TextToImageJSONBody_26_ReferenceImages_Uri) AsPostV1TextToImageJSONBody26ReferenceImagesUri1() (PostV1TextToImageJSONBody26ReferenceImagesUri1, error) {
+	var body PostV1TextToImageJSONBody26ReferenceImagesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody26ReferenceImagesUri1 overwrites any union data inside the PostV1TextToImageJSONBody_26_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody26ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_26_ReferenceImages_Uri) FromPostV1TextToImageJSONBody26ReferenceImagesUri1(v PostV1TextToImageJSONBody26ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody26ReferenceImagesUri1 performs a merge with any union data inside the PostV1TextToImageJSONBody_26_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody26ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_26_ReferenceImages_Uri) MergePostV1TextToImageJSONBody26ReferenceImagesUri1(v PostV1TextToImageJSONBody26ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody26ReferenceImagesUri2 returns the union data inside the PostV1TextToImageJSONBody_26_ReferenceImages_Uri as a PostV1TextToImageJSONBody26ReferenceImagesUri2
+func (t PostV1TextToImageJSONBody_26_ReferenceImages_Uri) AsPostV1TextToImageJSONBody26ReferenceImagesUri2() (PostV1TextToImageJSONBody26ReferenceImagesUri2, error) {
+	var body PostV1TextToImageJSONBody26ReferenceImagesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody26ReferenceImagesUri2 overwrites any union data inside the PostV1TextToImageJSONBody_26_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody26ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_26_ReferenceImages_Uri) FromPostV1TextToImageJSONBody26ReferenceImagesUri2(v PostV1TextToImageJSONBody26ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody26ReferenceImagesUri2 performs a merge with any union data inside the PostV1TextToImageJSONBody_26_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody26ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_26_ReferenceImages_Uri) MergePostV1TextToImageJSONBody26ReferenceImagesUri2(v PostV1TextToImageJSONBody26ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToImageJSONBody_26_ReferenceImages_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToImageJSONBody_26_ReferenceImages_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToImageJSONBody27ReferenceImagesUri0 returns the union data inside the PostV1TextToImageJSONBody_27_ReferenceImages_Uri as a PostV1TextToImageJSONBody27ReferenceImagesUri0
+func (t PostV1TextToImageJSONBody_27_ReferenceImages_Uri) AsPostV1TextToImageJSONBody27ReferenceImagesUri0() (PostV1TextToImageJSONBody27ReferenceImagesUri0, error) {
+	var body PostV1TextToImageJSONBody27ReferenceImagesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody27ReferenceImagesUri0 overwrites any union data inside the PostV1TextToImageJSONBody_27_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody27ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_27_ReferenceImages_Uri) FromPostV1TextToImageJSONBody27ReferenceImagesUri0(v PostV1TextToImageJSONBody27ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody27ReferenceImagesUri0 performs a merge with any union data inside the PostV1TextToImageJSONBody_27_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody27ReferenceImagesUri0
+func (t *PostV1TextToImageJSONBody_27_ReferenceImages_Uri) MergePostV1TextToImageJSONBody27ReferenceImagesUri0(v PostV1TextToImageJSONBody27ReferenceImagesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody27ReferenceImagesUri1 returns the union data inside the PostV1TextToImageJSONBody_27_ReferenceImages_Uri as a PostV1TextToImageJSONBody27ReferenceImagesUri1
+func (t PostV1TextToImageJSONBody_27_ReferenceImages_Uri) AsPostV1TextToImageJSONBody27ReferenceImagesUri1() (PostV1TextToImageJSONBody27ReferenceImagesUri1, error) {
+	var body PostV1TextToImageJSONBody27ReferenceImagesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody27ReferenceImagesUri1 overwrites any union data inside the PostV1TextToImageJSONBody_27_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody27ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_27_ReferenceImages_Uri) FromPostV1TextToImageJSONBody27ReferenceImagesUri1(v PostV1TextToImageJSONBody27ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody27ReferenceImagesUri1 performs a merge with any union data inside the PostV1TextToImageJSONBody_27_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody27ReferenceImagesUri1
+func (t *PostV1TextToImageJSONBody_27_ReferenceImages_Uri) MergePostV1TextToImageJSONBody27ReferenceImagesUri1(v PostV1TextToImageJSONBody27ReferenceImagesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImageJSONBody27ReferenceImagesUri2 returns the union data inside the PostV1TextToImageJSONBody_27_ReferenceImages_Uri as a PostV1TextToImageJSONBody27ReferenceImagesUri2
+func (t PostV1TextToImageJSONBody_27_ReferenceImages_Uri) AsPostV1TextToImageJSONBody27ReferenceImagesUri2() (PostV1TextToImageJSONBody27ReferenceImagesUri2, error) {
+	var body PostV1TextToImageJSONBody27ReferenceImagesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImageJSONBody27ReferenceImagesUri2 overwrites any union data inside the PostV1TextToImageJSONBody_27_ReferenceImages_Uri as the provided PostV1TextToImageJSONBody27ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_27_ReferenceImages_Uri) FromPostV1TextToImageJSONBody27ReferenceImagesUri2(v PostV1TextToImageJSONBody27ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImageJSONBody27ReferenceImagesUri2 performs a merge with any union data inside the PostV1TextToImageJSONBody_27_ReferenceImages_Uri, using the provided PostV1TextToImageJSONBody27ReferenceImagesUri2
+func (t *PostV1TextToImageJSONBody_27_ReferenceImages_Uri) MergePostV1TextToImageJSONBody27ReferenceImagesUri2(v PostV1TextToImageJSONBody27ReferenceImagesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToImageJSONBody_27_ReferenceImages_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToImageJSONBody_27_ReferenceImages_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsPostV1TextToImage400JSONResponseBodyIssuesPath0 returns the union data inside the PostV1TextToImage400JSONResponseBody_Issues_Path_Item as a PostV1TextToImage400JSONResponseBodyIssuesPath0
 func (t PostV1TextToImage400JSONResponseBody_Issues_Path_Item) AsPostV1TextToImage400JSONResponseBodyIssuesPath0() (PostV1TextToImage400JSONResponseBodyIssuesPath0, error) {
 	var body PostV1TextToImage400JSONResponseBodyIssuesPath0
@@ -75541,6 +78796,32 @@ func (t *PostV1TextToImage400JSONResponseBody_Reason) FromPostV1TextToImage400JS
 
 // MergePostV1TextToImage400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1TextToImage400JSONResponseBody_Reason, using the provided PostV1TextToImage400JSONResponseBodyReason28
 func (t *PostV1TextToImage400JSONResponseBody_Reason) MergePostV1TextToImage400JSONResponseBodyReason28(v PostV1TextToImage400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToImage400JSONResponseBodyReason29 returns the union data inside the PostV1TextToImage400JSONResponseBody_Reason as a PostV1TextToImage400JSONResponseBodyReason29
+func (t PostV1TextToImage400JSONResponseBody_Reason) AsPostV1TextToImage400JSONResponseBodyReason29() (PostV1TextToImage400JSONResponseBodyReason29, error) {
+	var body PostV1TextToImage400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToImage400JSONResponseBodyReason29 overwrites any union data inside the PostV1TextToImage400JSONResponseBody_Reason as the provided PostV1TextToImage400JSONResponseBodyReason29
+func (t *PostV1TextToImage400JSONResponseBody_Reason) FromPostV1TextToImage400JSONResponseBodyReason29(v PostV1TextToImage400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToImage400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1TextToImage400JSONResponseBody_Reason, using the provided PostV1TextToImage400JSONResponseBodyReason29
+func (t *PostV1TextToImage400JSONResponseBody_Reason) MergePostV1TextToImage400JSONResponseBodyReason29(v PostV1TextToImage400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -76403,6 +79684,32 @@ func (t *PostV1TextToMusic400JSONResponseBody_Reason) FromPostV1TextToMusic400JS
 
 // MergePostV1TextToMusic400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1TextToMusic400JSONResponseBody_Reason, using the provided PostV1TextToMusic400JSONResponseBodyReason28
 func (t *PostV1TextToMusic400JSONResponseBody_Reason) MergePostV1TextToMusic400JSONResponseBodyReason28(v PostV1TextToMusic400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToMusic400JSONResponseBodyReason29 returns the union data inside the PostV1TextToMusic400JSONResponseBody_Reason as a PostV1TextToMusic400JSONResponseBodyReason29
+func (t PostV1TextToMusic400JSONResponseBody_Reason) AsPostV1TextToMusic400JSONResponseBodyReason29() (PostV1TextToMusic400JSONResponseBodyReason29, error) {
+	var body PostV1TextToMusic400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToMusic400JSONResponseBodyReason29 overwrites any union data inside the PostV1TextToMusic400JSONResponseBody_Reason as the provided PostV1TextToMusic400JSONResponseBodyReason29
+func (t *PostV1TextToMusic400JSONResponseBody_Reason) FromPostV1TextToMusic400JSONResponseBodyReason29(v PostV1TextToMusic400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToMusic400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1TextToMusic400JSONResponseBody_Reason, using the provided PostV1TextToMusic400JSONResponseBodyReason29
+func (t *PostV1TextToMusic400JSONResponseBody_Reason) MergePostV1TextToMusic400JSONResponseBodyReason29(v PostV1TextToMusic400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -77679,6 +80986,32 @@ func (t *PostV1TextToSpeech400JSONResponseBody_Reason) MergePostV1TextToSpeech40
 	return err
 }
 
+// AsPostV1TextToSpeech400JSONResponseBodyReason29 returns the union data inside the PostV1TextToSpeech400JSONResponseBody_Reason as a PostV1TextToSpeech400JSONResponseBodyReason29
+func (t PostV1TextToSpeech400JSONResponseBody_Reason) AsPostV1TextToSpeech400JSONResponseBodyReason29() (PostV1TextToSpeech400JSONResponseBodyReason29, error) {
+	var body PostV1TextToSpeech400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToSpeech400JSONResponseBodyReason29 overwrites any union data inside the PostV1TextToSpeech400JSONResponseBody_Reason as the provided PostV1TextToSpeech400JSONResponseBodyReason29
+func (t *PostV1TextToSpeech400JSONResponseBody_Reason) FromPostV1TextToSpeech400JSONResponseBodyReason29(v PostV1TextToSpeech400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToSpeech400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1TextToSpeech400JSONResponseBody_Reason, using the provided PostV1TextToSpeech400JSONResponseBodyReason29
+func (t *PostV1TextToSpeech400JSONResponseBody_Reason) MergePostV1TextToSpeech400JSONResponseBodyReason29(v PostV1TextToSpeech400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1TextToSpeech400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -78407,6 +81740,32 @@ func (t *PostV1TextToVideoJSONBody) FromPostV1TextToVideoJSONBody27(v PostV1Text
 
 // MergePostV1TextToVideoJSONBody27 performs a merge with any union data inside the PostV1TextToVideoJSONBody, using the provided PostV1TextToVideoJSONBody27
 func (t *PostV1TextToVideoJSONBody) MergePostV1TextToVideoJSONBody27(v PostV1TextToVideoJSONBody27) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28 returns the union data inside the PostV1TextToVideoJSONBody as a PostV1TextToVideoJSONBody28
+func (t PostV1TextToVideoJSONBody) AsPostV1TextToVideoJSONBody28() (PostV1TextToVideoJSONBody28, error) {
+	var body PostV1TextToVideoJSONBody28
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28 overwrites any union data inside the PostV1TextToVideoJSONBody as the provided PostV1TextToVideoJSONBody28
+func (t *PostV1TextToVideoJSONBody) FromPostV1TextToVideoJSONBody28(v PostV1TextToVideoJSONBody28) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28 performs a merge with any union data inside the PostV1TextToVideoJSONBody, using the provided PostV1TextToVideoJSONBody28
+func (t *PostV1TextToVideoJSONBody) MergePostV1TextToVideoJSONBody28(v PostV1TextToVideoJSONBody28) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -81967,6 +85326,332 @@ func (t *PostV1TextToVideoJSONBody_27_References_Uri) UnmarshalJSON(b []byte) er
 	return err
 }
 
+// AsPostV1TextToVideoJSONBody28Duration0 returns the union data inside the PostV1TextToVideoJSONBody_28_Duration as a PostV1TextToVideoJSONBody28Duration0
+func (t PostV1TextToVideoJSONBody_28_Duration) AsPostV1TextToVideoJSONBody28Duration0() (PostV1TextToVideoJSONBody28Duration0, error) {
+	var body PostV1TextToVideoJSONBody28Duration0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28Duration0 overwrites any union data inside the PostV1TextToVideoJSONBody_28_Duration as the provided PostV1TextToVideoJSONBody28Duration0
+func (t *PostV1TextToVideoJSONBody_28_Duration) FromPostV1TextToVideoJSONBody28Duration0(v PostV1TextToVideoJSONBody28Duration0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28Duration0 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_Duration, using the provided PostV1TextToVideoJSONBody28Duration0
+func (t *PostV1TextToVideoJSONBody_28_Duration) MergePostV1TextToVideoJSONBody28Duration0(v PostV1TextToVideoJSONBody28Duration0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28Duration1 returns the union data inside the PostV1TextToVideoJSONBody_28_Duration as a PostV1TextToVideoJSONBody28Duration1
+func (t PostV1TextToVideoJSONBody_28_Duration) AsPostV1TextToVideoJSONBody28Duration1() (PostV1TextToVideoJSONBody28Duration1, error) {
+	var body PostV1TextToVideoJSONBody28Duration1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28Duration1 overwrites any union data inside the PostV1TextToVideoJSONBody_28_Duration as the provided PostV1TextToVideoJSONBody28Duration1
+func (t *PostV1TextToVideoJSONBody_28_Duration) FromPostV1TextToVideoJSONBody28Duration1(v PostV1TextToVideoJSONBody28Duration1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28Duration1 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_Duration, using the provided PostV1TextToVideoJSONBody28Duration1
+func (t *PostV1TextToVideoJSONBody_28_Duration) MergePostV1TextToVideoJSONBody28Duration1(v PostV1TextToVideoJSONBody28Duration1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToVideoJSONBody_28_Duration) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToVideoJSONBody_28_Duration) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28ReferenceAudioUri0 returns the union data inside the PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri as a PostV1TextToVideoJSONBody28ReferenceAudioUri0
+func (t PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) AsPostV1TextToVideoJSONBody28ReferenceAudioUri0() (PostV1TextToVideoJSONBody28ReferenceAudioUri0, error) {
+	var body PostV1TextToVideoJSONBody28ReferenceAudioUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28ReferenceAudioUri0 overwrites any union data inside the PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri as the provided PostV1TextToVideoJSONBody28ReferenceAudioUri0
+func (t *PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) FromPostV1TextToVideoJSONBody28ReferenceAudioUri0(v PostV1TextToVideoJSONBody28ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28ReferenceAudioUri0 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri, using the provided PostV1TextToVideoJSONBody28ReferenceAudioUri0
+func (t *PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) MergePostV1TextToVideoJSONBody28ReferenceAudioUri0(v PostV1TextToVideoJSONBody28ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28ReferenceAudioUri1 returns the union data inside the PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri as a PostV1TextToVideoJSONBody28ReferenceAudioUri1
+func (t PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) AsPostV1TextToVideoJSONBody28ReferenceAudioUri1() (PostV1TextToVideoJSONBody28ReferenceAudioUri1, error) {
+	var body PostV1TextToVideoJSONBody28ReferenceAudioUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28ReferenceAudioUri1 overwrites any union data inside the PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri as the provided PostV1TextToVideoJSONBody28ReferenceAudioUri1
+func (t *PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) FromPostV1TextToVideoJSONBody28ReferenceAudioUri1(v PostV1TextToVideoJSONBody28ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28ReferenceAudioUri1 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri, using the provided PostV1TextToVideoJSONBody28ReferenceAudioUri1
+func (t *PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) MergePostV1TextToVideoJSONBody28ReferenceAudioUri1(v PostV1TextToVideoJSONBody28ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28ReferenceAudioUri2 returns the union data inside the PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri as a PostV1TextToVideoJSONBody28ReferenceAudioUri2
+func (t PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) AsPostV1TextToVideoJSONBody28ReferenceAudioUri2() (PostV1TextToVideoJSONBody28ReferenceAudioUri2, error) {
+	var body PostV1TextToVideoJSONBody28ReferenceAudioUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28ReferenceAudioUri2 overwrites any union data inside the PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri as the provided PostV1TextToVideoJSONBody28ReferenceAudioUri2
+func (t *PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) FromPostV1TextToVideoJSONBody28ReferenceAudioUri2(v PostV1TextToVideoJSONBody28ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28ReferenceAudioUri2 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri, using the provided PostV1TextToVideoJSONBody28ReferenceAudioUri2
+func (t *PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) MergePostV1TextToVideoJSONBody28ReferenceAudioUri2(v PostV1TextToVideoJSONBody28ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToVideoJSONBody_28_ReferenceAudio_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28ReferenceVideosUri0 returns the union data inside the PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri as a PostV1TextToVideoJSONBody28ReferenceVideosUri0
+func (t PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) AsPostV1TextToVideoJSONBody28ReferenceVideosUri0() (PostV1TextToVideoJSONBody28ReferenceVideosUri0, error) {
+	var body PostV1TextToVideoJSONBody28ReferenceVideosUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28ReferenceVideosUri0 overwrites any union data inside the PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri as the provided PostV1TextToVideoJSONBody28ReferenceVideosUri0
+func (t *PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) FromPostV1TextToVideoJSONBody28ReferenceVideosUri0(v PostV1TextToVideoJSONBody28ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28ReferenceVideosUri0 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri, using the provided PostV1TextToVideoJSONBody28ReferenceVideosUri0
+func (t *PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) MergePostV1TextToVideoJSONBody28ReferenceVideosUri0(v PostV1TextToVideoJSONBody28ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28ReferenceVideosUri1 returns the union data inside the PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri as a PostV1TextToVideoJSONBody28ReferenceVideosUri1
+func (t PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) AsPostV1TextToVideoJSONBody28ReferenceVideosUri1() (PostV1TextToVideoJSONBody28ReferenceVideosUri1, error) {
+	var body PostV1TextToVideoJSONBody28ReferenceVideosUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28ReferenceVideosUri1 overwrites any union data inside the PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri as the provided PostV1TextToVideoJSONBody28ReferenceVideosUri1
+func (t *PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) FromPostV1TextToVideoJSONBody28ReferenceVideosUri1(v PostV1TextToVideoJSONBody28ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28ReferenceVideosUri1 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri, using the provided PostV1TextToVideoJSONBody28ReferenceVideosUri1
+func (t *PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) MergePostV1TextToVideoJSONBody28ReferenceVideosUri1(v PostV1TextToVideoJSONBody28ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28ReferenceVideosUri2 returns the union data inside the PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri as a PostV1TextToVideoJSONBody28ReferenceVideosUri2
+func (t PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) AsPostV1TextToVideoJSONBody28ReferenceVideosUri2() (PostV1TextToVideoJSONBody28ReferenceVideosUri2, error) {
+	var body PostV1TextToVideoJSONBody28ReferenceVideosUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28ReferenceVideosUri2 overwrites any union data inside the PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri as the provided PostV1TextToVideoJSONBody28ReferenceVideosUri2
+func (t *PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) FromPostV1TextToVideoJSONBody28ReferenceVideosUri2(v PostV1TextToVideoJSONBody28ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28ReferenceVideosUri2 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri, using the provided PostV1TextToVideoJSONBody28ReferenceVideosUri2
+func (t *PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) MergePostV1TextToVideoJSONBody28ReferenceVideosUri2(v PostV1TextToVideoJSONBody28ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToVideoJSONBody_28_ReferenceVideos_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28ReferencesUri0 returns the union data inside the PostV1TextToVideoJSONBody_28_References_Uri as a PostV1TextToVideoJSONBody28ReferencesUri0
+func (t PostV1TextToVideoJSONBody_28_References_Uri) AsPostV1TextToVideoJSONBody28ReferencesUri0() (PostV1TextToVideoJSONBody28ReferencesUri0, error) {
+	var body PostV1TextToVideoJSONBody28ReferencesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28ReferencesUri0 overwrites any union data inside the PostV1TextToVideoJSONBody_28_References_Uri as the provided PostV1TextToVideoJSONBody28ReferencesUri0
+func (t *PostV1TextToVideoJSONBody_28_References_Uri) FromPostV1TextToVideoJSONBody28ReferencesUri0(v PostV1TextToVideoJSONBody28ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28ReferencesUri0 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_References_Uri, using the provided PostV1TextToVideoJSONBody28ReferencesUri0
+func (t *PostV1TextToVideoJSONBody_28_References_Uri) MergePostV1TextToVideoJSONBody28ReferencesUri0(v PostV1TextToVideoJSONBody28ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28ReferencesUri1 returns the union data inside the PostV1TextToVideoJSONBody_28_References_Uri as a PostV1TextToVideoJSONBody28ReferencesUri1
+func (t PostV1TextToVideoJSONBody_28_References_Uri) AsPostV1TextToVideoJSONBody28ReferencesUri1() (PostV1TextToVideoJSONBody28ReferencesUri1, error) {
+	var body PostV1TextToVideoJSONBody28ReferencesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28ReferencesUri1 overwrites any union data inside the PostV1TextToVideoJSONBody_28_References_Uri as the provided PostV1TextToVideoJSONBody28ReferencesUri1
+func (t *PostV1TextToVideoJSONBody_28_References_Uri) FromPostV1TextToVideoJSONBody28ReferencesUri1(v PostV1TextToVideoJSONBody28ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28ReferencesUri1 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_References_Uri, using the provided PostV1TextToVideoJSONBody28ReferencesUri1
+func (t *PostV1TextToVideoJSONBody_28_References_Uri) MergePostV1TextToVideoJSONBody28ReferencesUri1(v PostV1TextToVideoJSONBody28ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideoJSONBody28ReferencesUri2 returns the union data inside the PostV1TextToVideoJSONBody_28_References_Uri as a PostV1TextToVideoJSONBody28ReferencesUri2
+func (t PostV1TextToVideoJSONBody_28_References_Uri) AsPostV1TextToVideoJSONBody28ReferencesUri2() (PostV1TextToVideoJSONBody28ReferencesUri2, error) {
+	var body PostV1TextToVideoJSONBody28ReferencesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideoJSONBody28ReferencesUri2 overwrites any union data inside the PostV1TextToVideoJSONBody_28_References_Uri as the provided PostV1TextToVideoJSONBody28ReferencesUri2
+func (t *PostV1TextToVideoJSONBody_28_References_Uri) FromPostV1TextToVideoJSONBody28ReferencesUri2(v PostV1TextToVideoJSONBody28ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideoJSONBody28ReferencesUri2 performs a merge with any union data inside the PostV1TextToVideoJSONBody_28_References_Uri, using the provided PostV1TextToVideoJSONBody28ReferencesUri2
+func (t *PostV1TextToVideoJSONBody_28_References_Uri) MergePostV1TextToVideoJSONBody28ReferencesUri2(v PostV1TextToVideoJSONBody28ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1TextToVideoJSONBody_28_References_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1TextToVideoJSONBody_28_References_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsPostV1TextToVideo400JSONResponseBodyIssuesPath0 returns the union data inside the PostV1TextToVideo400JSONResponseBody_Issues_Path_Item as a PostV1TextToVideo400JSONResponseBodyIssuesPath0
 func (t PostV1TextToVideo400JSONResponseBody_Issues_Path_Item) AsPostV1TextToVideo400JSONResponseBodyIssuesPath0() (PostV1TextToVideo400JSONResponseBodyIssuesPath0, error) {
 	var body PostV1TextToVideo400JSONResponseBodyIssuesPath0
@@ -82773,6 +86458,32 @@ func (t *PostV1TextToVideo400JSONResponseBody_Reason) FromPostV1TextToVideo400JS
 
 // MergePostV1TextToVideo400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1TextToVideo400JSONResponseBody_Reason, using the provided PostV1TextToVideo400JSONResponseBodyReason28
 func (t *PostV1TextToVideo400JSONResponseBody_Reason) MergePostV1TextToVideo400JSONResponseBodyReason28(v PostV1TextToVideo400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1TextToVideo400JSONResponseBodyReason29 returns the union data inside the PostV1TextToVideo400JSONResponseBody_Reason as a PostV1TextToVideo400JSONResponseBodyReason29
+func (t PostV1TextToVideo400JSONResponseBody_Reason) AsPostV1TextToVideo400JSONResponseBodyReason29() (PostV1TextToVideo400JSONResponseBodyReason29, error) {
+	var body PostV1TextToVideo400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1TextToVideo400JSONResponseBodyReason29 overwrites any union data inside the PostV1TextToVideo400JSONResponseBody_Reason as the provided PostV1TextToVideo400JSONResponseBodyReason29
+func (t *PostV1TextToVideo400JSONResponseBody_Reason) FromPostV1TextToVideo400JSONResponseBodyReason29(v PostV1TextToVideo400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1TextToVideo400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1TextToVideo400JSONResponseBody_Reason, using the provided PostV1TextToVideo400JSONResponseBodyReason29
+func (t *PostV1TextToVideo400JSONResponseBody_Reason) MergePostV1TextToVideo400JSONResponseBodyReason29(v PostV1TextToVideo400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -83733,6 +87444,32 @@ func (t *PostV1VideoToAudio400JSONResponseBody_Reason) MergePostV1VideoToAudio40
 	return err
 }
 
+// AsPostV1VideoToAudio400JSONResponseBodyReason29 returns the union data inside the PostV1VideoToAudio400JSONResponseBody_Reason as a PostV1VideoToAudio400JSONResponseBodyReason29
+func (t PostV1VideoToAudio400JSONResponseBody_Reason) AsPostV1VideoToAudio400JSONResponseBodyReason29() (PostV1VideoToAudio400JSONResponseBodyReason29, error) {
+	var body PostV1VideoToAudio400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToAudio400JSONResponseBodyReason29 overwrites any union data inside the PostV1VideoToAudio400JSONResponseBody_Reason as the provided PostV1VideoToAudio400JSONResponseBodyReason29
+func (t *PostV1VideoToAudio400JSONResponseBody_Reason) FromPostV1VideoToAudio400JSONResponseBodyReason29(v PostV1VideoToAudio400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToAudio400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1VideoToAudio400JSONResponseBody_Reason, using the provided PostV1VideoToAudio400JSONResponseBodyReason29
+func (t *PostV1VideoToAudio400JSONResponseBody_Reason) MergePostV1VideoToAudio400JSONResponseBodyReason29(v PostV1VideoToAudio400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1VideoToAudio400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -84683,6 +88420,32 @@ func (t *PostV1VideoToHdr400JSONResponseBody_Reason) MergePostV1VideoToHdr400JSO
 	return err
 }
 
+// AsPostV1VideoToHdr400JSONResponseBodyReason29 returns the union data inside the PostV1VideoToHdr400JSONResponseBody_Reason as a PostV1VideoToHdr400JSONResponseBodyReason29
+func (t PostV1VideoToHdr400JSONResponseBody_Reason) AsPostV1VideoToHdr400JSONResponseBodyReason29() (PostV1VideoToHdr400JSONResponseBodyReason29, error) {
+	var body PostV1VideoToHdr400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToHdr400JSONResponseBodyReason29 overwrites any union data inside the PostV1VideoToHdr400JSONResponseBody_Reason as the provided PostV1VideoToHdr400JSONResponseBodyReason29
+func (t *PostV1VideoToHdr400JSONResponseBody_Reason) FromPostV1VideoToHdr400JSONResponseBodyReason29(v PostV1VideoToHdr400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToHdr400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1VideoToHdr400JSONResponseBody_Reason, using the provided PostV1VideoToHdr400JSONResponseBodyReason29
+func (t *PostV1VideoToHdr400JSONResponseBody_Reason) MergePostV1VideoToHdr400JSONResponseBodyReason29(v PostV1VideoToHdr400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1VideoToHdr400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -85099,6 +88862,32 @@ func (t *PostV1VideoToVideoJSONBody) FromPostV1VideoToVideoJSONBody15(v PostV1Vi
 
 // MergePostV1VideoToVideoJSONBody15 performs a merge with any union data inside the PostV1VideoToVideoJSONBody, using the provided PostV1VideoToVideoJSONBody15
 func (t *PostV1VideoToVideoJSONBody) MergePostV1VideoToVideoJSONBody15(v PostV1VideoToVideoJSONBody15) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16 returns the union data inside the PostV1VideoToVideoJSONBody as a PostV1VideoToVideoJSONBody16
+func (t PostV1VideoToVideoJSONBody) AsPostV1VideoToVideoJSONBody16() (PostV1VideoToVideoJSONBody16, error) {
+	var body PostV1VideoToVideoJSONBody16
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16 overwrites any union data inside the PostV1VideoToVideoJSONBody as the provided PostV1VideoToVideoJSONBody16
+func (t *PostV1VideoToVideoJSONBody) FromPostV1VideoToVideoJSONBody16(v PostV1VideoToVideoJSONBody16) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16 performs a merge with any union data inside the PostV1VideoToVideoJSONBody, using the provided PostV1VideoToVideoJSONBody16
+func (t *PostV1VideoToVideoJSONBody) MergePostV1VideoToVideoJSONBody16(v PostV1VideoToVideoJSONBody16) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -90377,6 +94166,420 @@ func (t *PostV1VideoToVideoJSONBody_15_References_Uri) UnmarshalJSON(b []byte) e
 	return err
 }
 
+// AsPostV1VideoToVideoJSONBody16Duration0 returns the union data inside the PostV1VideoToVideoJSONBody_16_Duration as a PostV1VideoToVideoJSONBody16Duration0
+func (t PostV1VideoToVideoJSONBody_16_Duration) AsPostV1VideoToVideoJSONBody16Duration0() (PostV1VideoToVideoJSONBody16Duration0, error) {
+	var body PostV1VideoToVideoJSONBody16Duration0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16Duration0 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_Duration as the provided PostV1VideoToVideoJSONBody16Duration0
+func (t *PostV1VideoToVideoJSONBody_16_Duration) FromPostV1VideoToVideoJSONBody16Duration0(v PostV1VideoToVideoJSONBody16Duration0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16Duration0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_Duration, using the provided PostV1VideoToVideoJSONBody16Duration0
+func (t *PostV1VideoToVideoJSONBody_16_Duration) MergePostV1VideoToVideoJSONBody16Duration0(v PostV1VideoToVideoJSONBody16Duration0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16Duration1 returns the union data inside the PostV1VideoToVideoJSONBody_16_Duration as a PostV1VideoToVideoJSONBody16Duration1
+func (t PostV1VideoToVideoJSONBody_16_Duration) AsPostV1VideoToVideoJSONBody16Duration1() (PostV1VideoToVideoJSONBody16Duration1, error) {
+	var body PostV1VideoToVideoJSONBody16Duration1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16Duration1 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_Duration as the provided PostV1VideoToVideoJSONBody16Duration1
+func (t *PostV1VideoToVideoJSONBody_16_Duration) FromPostV1VideoToVideoJSONBody16Duration1(v PostV1VideoToVideoJSONBody16Duration1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16Duration1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_Duration, using the provided PostV1VideoToVideoJSONBody16Duration1
+func (t *PostV1VideoToVideoJSONBody_16_Duration) MergePostV1VideoToVideoJSONBody16Duration1(v PostV1VideoToVideoJSONBody16Duration1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_16_Duration) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_16_Duration) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16PromptVideo0 returns the union data inside the PostV1VideoToVideoJSONBody_16_PromptVideo as a PostV1VideoToVideoJSONBody16PromptVideo0
+func (t PostV1VideoToVideoJSONBody_16_PromptVideo) AsPostV1VideoToVideoJSONBody16PromptVideo0() (PostV1VideoToVideoJSONBody16PromptVideo0, error) {
+	var body PostV1VideoToVideoJSONBody16PromptVideo0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16PromptVideo0 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_PromptVideo as the provided PostV1VideoToVideoJSONBody16PromptVideo0
+func (t *PostV1VideoToVideoJSONBody_16_PromptVideo) FromPostV1VideoToVideoJSONBody16PromptVideo0(v PostV1VideoToVideoJSONBody16PromptVideo0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16PromptVideo0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_PromptVideo, using the provided PostV1VideoToVideoJSONBody16PromptVideo0
+func (t *PostV1VideoToVideoJSONBody_16_PromptVideo) MergePostV1VideoToVideoJSONBody16PromptVideo0(v PostV1VideoToVideoJSONBody16PromptVideo0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16PromptVideo1 returns the union data inside the PostV1VideoToVideoJSONBody_16_PromptVideo as a PostV1VideoToVideoJSONBody16PromptVideo1
+func (t PostV1VideoToVideoJSONBody_16_PromptVideo) AsPostV1VideoToVideoJSONBody16PromptVideo1() (PostV1VideoToVideoJSONBody16PromptVideo1, error) {
+	var body PostV1VideoToVideoJSONBody16PromptVideo1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16PromptVideo1 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_PromptVideo as the provided PostV1VideoToVideoJSONBody16PromptVideo1
+func (t *PostV1VideoToVideoJSONBody_16_PromptVideo) FromPostV1VideoToVideoJSONBody16PromptVideo1(v PostV1VideoToVideoJSONBody16PromptVideo1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16PromptVideo1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_PromptVideo, using the provided PostV1VideoToVideoJSONBody16PromptVideo1
+func (t *PostV1VideoToVideoJSONBody_16_PromptVideo) MergePostV1VideoToVideoJSONBody16PromptVideo1(v PostV1VideoToVideoJSONBody16PromptVideo1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16PromptVideo2 returns the union data inside the PostV1VideoToVideoJSONBody_16_PromptVideo as a PostV1VideoToVideoJSONBody16PromptVideo2
+func (t PostV1VideoToVideoJSONBody_16_PromptVideo) AsPostV1VideoToVideoJSONBody16PromptVideo2() (PostV1VideoToVideoJSONBody16PromptVideo2, error) {
+	var body PostV1VideoToVideoJSONBody16PromptVideo2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16PromptVideo2 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_PromptVideo as the provided PostV1VideoToVideoJSONBody16PromptVideo2
+func (t *PostV1VideoToVideoJSONBody_16_PromptVideo) FromPostV1VideoToVideoJSONBody16PromptVideo2(v PostV1VideoToVideoJSONBody16PromptVideo2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16PromptVideo2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_PromptVideo, using the provided PostV1VideoToVideoJSONBody16PromptVideo2
+func (t *PostV1VideoToVideoJSONBody_16_PromptVideo) MergePostV1VideoToVideoJSONBody16PromptVideo2(v PostV1VideoToVideoJSONBody16PromptVideo2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_16_PromptVideo) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_16_PromptVideo) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16ReferenceAudioUri0 returns the union data inside the PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri as a PostV1VideoToVideoJSONBody16ReferenceAudioUri0
+func (t PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) AsPostV1VideoToVideoJSONBody16ReferenceAudioUri0() (PostV1VideoToVideoJSONBody16ReferenceAudioUri0, error) {
+	var body PostV1VideoToVideoJSONBody16ReferenceAudioUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16ReferenceAudioUri0 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri as the provided PostV1VideoToVideoJSONBody16ReferenceAudioUri0
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) FromPostV1VideoToVideoJSONBody16ReferenceAudioUri0(v PostV1VideoToVideoJSONBody16ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16ReferenceAudioUri0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri, using the provided PostV1VideoToVideoJSONBody16ReferenceAudioUri0
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) MergePostV1VideoToVideoJSONBody16ReferenceAudioUri0(v PostV1VideoToVideoJSONBody16ReferenceAudioUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16ReferenceAudioUri1 returns the union data inside the PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri as a PostV1VideoToVideoJSONBody16ReferenceAudioUri1
+func (t PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) AsPostV1VideoToVideoJSONBody16ReferenceAudioUri1() (PostV1VideoToVideoJSONBody16ReferenceAudioUri1, error) {
+	var body PostV1VideoToVideoJSONBody16ReferenceAudioUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16ReferenceAudioUri1 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri as the provided PostV1VideoToVideoJSONBody16ReferenceAudioUri1
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) FromPostV1VideoToVideoJSONBody16ReferenceAudioUri1(v PostV1VideoToVideoJSONBody16ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16ReferenceAudioUri1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri, using the provided PostV1VideoToVideoJSONBody16ReferenceAudioUri1
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) MergePostV1VideoToVideoJSONBody16ReferenceAudioUri1(v PostV1VideoToVideoJSONBody16ReferenceAudioUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16ReferenceAudioUri2 returns the union data inside the PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri as a PostV1VideoToVideoJSONBody16ReferenceAudioUri2
+func (t PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) AsPostV1VideoToVideoJSONBody16ReferenceAudioUri2() (PostV1VideoToVideoJSONBody16ReferenceAudioUri2, error) {
+	var body PostV1VideoToVideoJSONBody16ReferenceAudioUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16ReferenceAudioUri2 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri as the provided PostV1VideoToVideoJSONBody16ReferenceAudioUri2
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) FromPostV1VideoToVideoJSONBody16ReferenceAudioUri2(v PostV1VideoToVideoJSONBody16ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16ReferenceAudioUri2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri, using the provided PostV1VideoToVideoJSONBody16ReferenceAudioUri2
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) MergePostV1VideoToVideoJSONBody16ReferenceAudioUri2(v PostV1VideoToVideoJSONBody16ReferenceAudioUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceAudio_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16ReferenceVideosUri0 returns the union data inside the PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri as a PostV1VideoToVideoJSONBody16ReferenceVideosUri0
+func (t PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) AsPostV1VideoToVideoJSONBody16ReferenceVideosUri0() (PostV1VideoToVideoJSONBody16ReferenceVideosUri0, error) {
+	var body PostV1VideoToVideoJSONBody16ReferenceVideosUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16ReferenceVideosUri0 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri as the provided PostV1VideoToVideoJSONBody16ReferenceVideosUri0
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) FromPostV1VideoToVideoJSONBody16ReferenceVideosUri0(v PostV1VideoToVideoJSONBody16ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16ReferenceVideosUri0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri, using the provided PostV1VideoToVideoJSONBody16ReferenceVideosUri0
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) MergePostV1VideoToVideoJSONBody16ReferenceVideosUri0(v PostV1VideoToVideoJSONBody16ReferenceVideosUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16ReferenceVideosUri1 returns the union data inside the PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri as a PostV1VideoToVideoJSONBody16ReferenceVideosUri1
+func (t PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) AsPostV1VideoToVideoJSONBody16ReferenceVideosUri1() (PostV1VideoToVideoJSONBody16ReferenceVideosUri1, error) {
+	var body PostV1VideoToVideoJSONBody16ReferenceVideosUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16ReferenceVideosUri1 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri as the provided PostV1VideoToVideoJSONBody16ReferenceVideosUri1
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) FromPostV1VideoToVideoJSONBody16ReferenceVideosUri1(v PostV1VideoToVideoJSONBody16ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16ReferenceVideosUri1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri, using the provided PostV1VideoToVideoJSONBody16ReferenceVideosUri1
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) MergePostV1VideoToVideoJSONBody16ReferenceVideosUri1(v PostV1VideoToVideoJSONBody16ReferenceVideosUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16ReferenceVideosUri2 returns the union data inside the PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri as a PostV1VideoToVideoJSONBody16ReferenceVideosUri2
+func (t PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) AsPostV1VideoToVideoJSONBody16ReferenceVideosUri2() (PostV1VideoToVideoJSONBody16ReferenceVideosUri2, error) {
+	var body PostV1VideoToVideoJSONBody16ReferenceVideosUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16ReferenceVideosUri2 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri as the provided PostV1VideoToVideoJSONBody16ReferenceVideosUri2
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) FromPostV1VideoToVideoJSONBody16ReferenceVideosUri2(v PostV1VideoToVideoJSONBody16ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16ReferenceVideosUri2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri, using the provided PostV1VideoToVideoJSONBody16ReferenceVideosUri2
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) MergePostV1VideoToVideoJSONBody16ReferenceVideosUri2(v PostV1VideoToVideoJSONBody16ReferenceVideosUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_16_ReferenceVideos_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16ReferencesUri0 returns the union data inside the PostV1VideoToVideoJSONBody_16_References_Uri as a PostV1VideoToVideoJSONBody16ReferencesUri0
+func (t PostV1VideoToVideoJSONBody_16_References_Uri) AsPostV1VideoToVideoJSONBody16ReferencesUri0() (PostV1VideoToVideoJSONBody16ReferencesUri0, error) {
+	var body PostV1VideoToVideoJSONBody16ReferencesUri0
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16ReferencesUri0 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_References_Uri as the provided PostV1VideoToVideoJSONBody16ReferencesUri0
+func (t *PostV1VideoToVideoJSONBody_16_References_Uri) FromPostV1VideoToVideoJSONBody16ReferencesUri0(v PostV1VideoToVideoJSONBody16ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16ReferencesUri0 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_References_Uri, using the provided PostV1VideoToVideoJSONBody16ReferencesUri0
+func (t *PostV1VideoToVideoJSONBody_16_References_Uri) MergePostV1VideoToVideoJSONBody16ReferencesUri0(v PostV1VideoToVideoJSONBody16ReferencesUri0) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16ReferencesUri1 returns the union data inside the PostV1VideoToVideoJSONBody_16_References_Uri as a PostV1VideoToVideoJSONBody16ReferencesUri1
+func (t PostV1VideoToVideoJSONBody_16_References_Uri) AsPostV1VideoToVideoJSONBody16ReferencesUri1() (PostV1VideoToVideoJSONBody16ReferencesUri1, error) {
+	var body PostV1VideoToVideoJSONBody16ReferencesUri1
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16ReferencesUri1 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_References_Uri as the provided PostV1VideoToVideoJSONBody16ReferencesUri1
+func (t *PostV1VideoToVideoJSONBody_16_References_Uri) FromPostV1VideoToVideoJSONBody16ReferencesUri1(v PostV1VideoToVideoJSONBody16ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16ReferencesUri1 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_References_Uri, using the provided PostV1VideoToVideoJSONBody16ReferencesUri1
+func (t *PostV1VideoToVideoJSONBody_16_References_Uri) MergePostV1VideoToVideoJSONBody16ReferencesUri1(v PostV1VideoToVideoJSONBody16ReferencesUri1) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideoJSONBody16ReferencesUri2 returns the union data inside the PostV1VideoToVideoJSONBody_16_References_Uri as a PostV1VideoToVideoJSONBody16ReferencesUri2
+func (t PostV1VideoToVideoJSONBody_16_References_Uri) AsPostV1VideoToVideoJSONBody16ReferencesUri2() (PostV1VideoToVideoJSONBody16ReferencesUri2, error) {
+	var body PostV1VideoToVideoJSONBody16ReferencesUri2
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideoJSONBody16ReferencesUri2 overwrites any union data inside the PostV1VideoToVideoJSONBody_16_References_Uri as the provided PostV1VideoToVideoJSONBody16ReferencesUri2
+func (t *PostV1VideoToVideoJSONBody_16_References_Uri) FromPostV1VideoToVideoJSONBody16ReferencesUri2(v PostV1VideoToVideoJSONBody16ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideoJSONBody16ReferencesUri2 performs a merge with any union data inside the PostV1VideoToVideoJSONBody_16_References_Uri, using the provided PostV1VideoToVideoJSONBody16ReferencesUri2
+func (t *PostV1VideoToVideoJSONBody_16_References_Uri) MergePostV1VideoToVideoJSONBody16ReferencesUri2(v PostV1VideoToVideoJSONBody16ReferencesUri2) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+func (t PostV1VideoToVideoJSONBody_16_References_Uri) MarshalJSON() ([]byte, error) {
+	b, err := t.union.MarshalJSON()
+	return b, err
+}
+
+func (t *PostV1VideoToVideoJSONBody_16_References_Uri) UnmarshalJSON(b []byte) error {
+	err := t.union.UnmarshalJSON(b)
+	return err
+}
+
 // AsPostV1VideoToVideo400JSONResponseBodyIssuesPath0 returns the union data inside the PostV1VideoToVideo400JSONResponseBody_Issues_Path_Item as a PostV1VideoToVideo400JSONResponseBodyIssuesPath0
 func (t PostV1VideoToVideo400JSONResponseBody_Issues_Path_Item) AsPostV1VideoToVideo400JSONResponseBodyIssuesPath0() (PostV1VideoToVideo400JSONResponseBodyIssuesPath0, error) {
 	var body PostV1VideoToVideo400JSONResponseBodyIssuesPath0
@@ -91183,6 +95386,32 @@ func (t *PostV1VideoToVideo400JSONResponseBody_Reason) FromPostV1VideoToVideo400
 
 // MergePostV1VideoToVideo400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1VideoToVideo400JSONResponseBody_Reason, using the provided PostV1VideoToVideo400JSONResponseBodyReason28
 func (t *PostV1VideoToVideo400JSONResponseBody_Reason) MergePostV1VideoToVideo400JSONResponseBodyReason28(v PostV1VideoToVideo400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VideoToVideo400JSONResponseBodyReason29 returns the union data inside the PostV1VideoToVideo400JSONResponseBody_Reason as a PostV1VideoToVideo400JSONResponseBodyReason29
+func (t PostV1VideoToVideo400JSONResponseBody_Reason) AsPostV1VideoToVideo400JSONResponseBodyReason29() (PostV1VideoToVideo400JSONResponseBodyReason29, error) {
+	var body PostV1VideoToVideo400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoToVideo400JSONResponseBodyReason29 overwrites any union data inside the PostV1VideoToVideo400JSONResponseBody_Reason as the provided PostV1VideoToVideo400JSONResponseBodyReason29
+func (t *PostV1VideoToVideo400JSONResponseBody_Reason) FromPostV1VideoToVideo400JSONResponseBodyReason29(v PostV1VideoToVideo400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoToVideo400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1VideoToVideo400JSONResponseBody_Reason, using the provided PostV1VideoToVideo400JSONResponseBodyReason29
+func (t *PostV1VideoToVideo400JSONResponseBody_Reason) MergePostV1VideoToVideo400JSONResponseBodyReason29(v PostV1VideoToVideo400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
@@ -92257,6 +96486,32 @@ func (t *PostV1VideoUpscale400JSONResponseBody_Reason) MergePostV1VideoUpscale40
 	return err
 }
 
+// AsPostV1VideoUpscale400JSONResponseBodyReason29 returns the union data inside the PostV1VideoUpscale400JSONResponseBody_Reason as a PostV1VideoUpscale400JSONResponseBodyReason29
+func (t PostV1VideoUpscale400JSONResponseBody_Reason) AsPostV1VideoUpscale400JSONResponseBodyReason29() (PostV1VideoUpscale400JSONResponseBodyReason29, error) {
+	var body PostV1VideoUpscale400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VideoUpscale400JSONResponseBodyReason29 overwrites any union data inside the PostV1VideoUpscale400JSONResponseBody_Reason as the provided PostV1VideoUpscale400JSONResponseBodyReason29
+func (t *PostV1VideoUpscale400JSONResponseBody_Reason) FromPostV1VideoUpscale400JSONResponseBodyReason29(v PostV1VideoUpscale400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VideoUpscale400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1VideoUpscale400JSONResponseBody_Reason, using the provided PostV1VideoUpscale400JSONResponseBodyReason29
+func (t *PostV1VideoUpscale400JSONResponseBody_Reason) MergePostV1VideoUpscale400JSONResponseBodyReason29(v PostV1VideoUpscale400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1VideoUpscale400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -93207,6 +97462,32 @@ func (t *PostV1VoiceDubbing400JSONResponseBody_Reason) MergePostV1VoiceDubbing40
 	return err
 }
 
+// AsPostV1VoiceDubbing400JSONResponseBodyReason29 returns the union data inside the PostV1VoiceDubbing400JSONResponseBody_Reason as a PostV1VoiceDubbing400JSONResponseBodyReason29
+func (t PostV1VoiceDubbing400JSONResponseBody_Reason) AsPostV1VoiceDubbing400JSONResponseBodyReason29() (PostV1VoiceDubbing400JSONResponseBodyReason29, error) {
+	var body PostV1VoiceDubbing400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VoiceDubbing400JSONResponseBodyReason29 overwrites any union data inside the PostV1VoiceDubbing400JSONResponseBody_Reason as the provided PostV1VoiceDubbing400JSONResponseBodyReason29
+func (t *PostV1VoiceDubbing400JSONResponseBody_Reason) FromPostV1VoiceDubbing400JSONResponseBodyReason29(v PostV1VoiceDubbing400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VoiceDubbing400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1VoiceDubbing400JSONResponseBody_Reason, using the provided PostV1VoiceDubbing400JSONResponseBodyReason29
+func (t *PostV1VoiceDubbing400JSONResponseBody_Reason) MergePostV1VoiceDubbing400JSONResponseBodyReason29(v PostV1VoiceDubbing400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
 func (t PostV1VoiceDubbing400JSONResponseBody_Reason) MarshalJSON() ([]byte, error) {
 	b, err := t.union.MarshalJSON()
 	return b, err
@@ -94147,6 +98428,32 @@ func (t *PostV1VoiceIsolation400JSONResponseBody_Reason) FromPostV1VoiceIsolatio
 
 // MergePostV1VoiceIsolation400JSONResponseBodyReason28 performs a merge with any union data inside the PostV1VoiceIsolation400JSONResponseBody_Reason, using the provided PostV1VoiceIsolation400JSONResponseBodyReason28
 func (t *PostV1VoiceIsolation400JSONResponseBody_Reason) MergePostV1VoiceIsolation400JSONResponseBodyReason28(v PostV1VoiceIsolation400JSONResponseBodyReason28) error {
+	b, err := json.Marshal(v)
+	if err != nil {
+		return err
+	}
+
+	merged, err := runtime.JSONMerge(t.union, b)
+	t.union = merged
+	return err
+}
+
+// AsPostV1VoiceIsolation400JSONResponseBodyReason29 returns the union data inside the PostV1VoiceIsolation400JSONResponseBody_Reason as a PostV1VoiceIsolation400JSONResponseBodyReason29
+func (t PostV1VoiceIsolation400JSONResponseBody_Reason) AsPostV1VoiceIsolation400JSONResponseBodyReason29() (PostV1VoiceIsolation400JSONResponseBodyReason29, error) {
+	var body PostV1VoiceIsolation400JSONResponseBodyReason29
+	err := json.Unmarshal(t.union, &body)
+	return body, err
+}
+
+// FromPostV1VoiceIsolation400JSONResponseBodyReason29 overwrites any union data inside the PostV1VoiceIsolation400JSONResponseBody_Reason as the provided PostV1VoiceIsolation400JSONResponseBodyReason29
+func (t *PostV1VoiceIsolation400JSONResponseBody_Reason) FromPostV1VoiceIsolation400JSONResponseBodyReason29(v PostV1VoiceIsolation400JSONResponseBodyReason29) error {
+	b, err := json.Marshal(v)
+	t.union = b
+	return err
+}
+
+// MergePostV1VoiceIsolation400JSONResponseBodyReason29 performs a merge with any union data inside the PostV1VoiceIsolation400JSONResponseBody_Reason, using the provided PostV1VoiceIsolation400JSONResponseBodyReason29
+func (t *PostV1VoiceIsolation400JSONResponseBody_Reason) MergePostV1VoiceIsolation400JSONResponseBodyReason29(v PostV1VoiceIsolation400JSONResponseBodyReason29) error {
 	b, err := json.Marshal(v)
 	if err != nil {
 		return err
