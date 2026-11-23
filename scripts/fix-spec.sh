@@ -7,6 +7,10 @@
 # mapped". Dropping the discriminator keeps the oneOf as a union type with
 # the usual As/From/Merge helpers; the caller switches on the field itself.
 #
+# An empty additionalProperties schema ({}) allows any value, which
+# oapi-codegen decodes into interface{}. Typing those values as
+# json.RawMessage keeps the wire format and leaves decoding to the caller.
+#
 # Every operation also takes the same required X-Runway-Version header, a
 # single constant value. Left in, it would add a params struct to every call,
 # so it is dropped from the operations and set once in a request editor.
@@ -21,6 +25,7 @@ readonly SPEC_DIR
 readonly SPEC_IN="${SPEC_DIR}/openapi.json"
 readonly SPEC_OUT="${SPEC_DIR}/openapi.fixed.json"
 readonly VERSION_PARAM_REF="#/components/parameters/X-Runway-Version"
+readonly RAW_VALUE='{"x-go-type":"json.RawMessage","x-go-type-import":{"path":"encoding/json"}}'
 readonly DROP_VERSION_PARAM="(.paths[][] | objects | select(has(\"parameters\")) | .parameters) |= map(select(.[\"\$ref\"] != \"${VERSION_PARAM_REF}\")) | del(.components.parameters[\"X-Runway-Version\"])"
 
 on_error() {
@@ -46,7 +51,7 @@ log() {
 }
 
 main() {
-	local tmp count
+	local tmp count raw_count
 	tmp="$(mktemp "${SPEC_DIR}/.openapi.fixed.XXXXXX")"
 	# shellcheck disable=SC2064 # expand tmp now, the local is gone when EXIT fires
 	trap "rm -f -- '${tmp}'" EXIT
@@ -55,12 +60,15 @@ main() {
 	# schema property that happens to be called "discriminator".
 	local filter='type == "object" and (.discriminator | type == "object" and has("propertyName"))'
 	count="$(jq "[.. | select(${filter})] | length" "$SPEC_IN")"
-	jq "walk(if ${filter} then del(.discriminator) else . end) | ${DROP_VERSION_PARAM}" \
+	local raw_filter='type == "object" and .additionalProperties == {}'
+	raw_count="$(jq "[.. | select(${raw_filter})] | length" "$SPEC_IN")"
+	jq "walk(if ${filter} then del(.discriminator) else . end) | walk(if ${raw_filter} then .additionalProperties = ${RAW_VALUE} else . end) | ${DROP_VERSION_PARAM}" \
 		"$SPEC_IN" >"$tmp"
 
 	chmod 0644 "$tmp"
 	mv -- "$tmp" "$SPEC_OUT"
 	log INFO "dropped discriminators count=${count} out=${SPEC_OUT##*/}"
+	log INFO "typed open additionalProperties as json.RawMessage count=${raw_count}"
 }
 
 main "$@"

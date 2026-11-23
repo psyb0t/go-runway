@@ -27954,7 +27954,7 @@ type GetV1AvatarConversationsId200JSONResponseBody0 struct {
 		// ToolCalls Tool invocations made during this assistant turn. Only present on assistant entries.
 		ToolCalls *[]struct {
 			// Arguments The arguments passed to the tool.
-			Arguments map[string]interface{} `json:"arguments"`
+			Arguments map[string]json.RawMessage `json:"arguments"`
 
 			// Id Optional identifier linking this call to its result.
 			Id *string `json:"id,omitempty"`
@@ -28019,7 +28019,7 @@ type GetV1AvatarConversationsId200JSONResponseBody0ToolsType string
 type GetV1AvatarConversationsId200JSONResponseBody0TranscriptRole string
 
 // GetV1AvatarConversationsId200JSONResponseBody0TranscriptToolResultsResult0 defines parameters for GetV1AvatarConversationsId.
-type GetV1AvatarConversationsId200JSONResponseBody0TranscriptToolResultsResult0 map[string]interface{}
+type GetV1AvatarConversationsId200JSONResponseBody0TranscriptToolResultsResult0 map[string]json.RawMessage
 
 // GetV1AvatarConversationsId200JSONResponseBody0TranscriptToolResultsResult1 defines parameters for GetV1AvatarConversationsId.
 type GetV1AvatarConversationsId200JSONResponseBody0TranscriptToolResultsResult1 = string
@@ -28087,7 +28087,7 @@ type GetV1AvatarConversationsId200JSONResponseBody1 struct {
 		// ToolCalls Tool invocations made during this assistant turn. Only present on assistant entries.
 		ToolCalls *[]struct {
 			// Arguments The arguments passed to the tool.
-			Arguments map[string]interface{} `json:"arguments"`
+			Arguments map[string]json.RawMessage `json:"arguments"`
 
 			// Id Optional identifier linking this call to its result.
 			Id *string `json:"id,omitempty"`
@@ -28152,7 +28152,7 @@ type GetV1AvatarConversationsId200JSONResponseBody1ToolsType string
 type GetV1AvatarConversationsId200JSONResponseBody1TranscriptRole string
 
 // GetV1AvatarConversationsId200JSONResponseBody1TranscriptToolResultsResult0 defines parameters for GetV1AvatarConversationsId.
-type GetV1AvatarConversationsId200JSONResponseBody1TranscriptToolResultsResult0 map[string]interface{}
+type GetV1AvatarConversationsId200JSONResponseBody1TranscriptToolResultsResult0 map[string]json.RawMessage
 
 // GetV1AvatarConversationsId200JSONResponseBody1TranscriptToolResultsResult1 defines parameters for GetV1AvatarConversationsId.
 type GetV1AvatarConversationsId200JSONResponseBody1TranscriptToolResultsResult1 = string
@@ -28226,7 +28226,7 @@ type GetV1AvatarConversationsId200JSONResponseBody2 struct {
 		// ToolCalls Tool invocations made during this assistant turn. Only present on assistant entries.
 		ToolCalls *[]struct {
 			// Arguments The arguments passed to the tool.
-			Arguments map[string]interface{} `json:"arguments"`
+			Arguments map[string]json.RawMessage `json:"arguments"`
 
 			// Id Optional identifier linking this call to its result.
 			Id *string `json:"id,omitempty"`
@@ -28291,7 +28291,7 @@ type GetV1AvatarConversationsId200JSONResponseBody2ToolsType string
 type GetV1AvatarConversationsId200JSONResponseBody2TranscriptRole string
 
 // GetV1AvatarConversationsId200JSONResponseBody2TranscriptToolResultsResult0 defines parameters for GetV1AvatarConversationsId.
-type GetV1AvatarConversationsId200JSONResponseBody2TranscriptToolResultsResult0 map[string]interface{}
+type GetV1AvatarConversationsId200JSONResponseBody2TranscriptToolResultsResult0 map[string]json.RawMessage
 
 // GetV1AvatarConversationsId200JSONResponseBody2TranscriptToolResultsResult1 defines parameters for GetV1AvatarConversationsId.
 type GetV1AvatarConversationsId200JSONResponseBody2TranscriptToolResultsResult1 = string
@@ -29729,7 +29729,7 @@ type PostV1CharacterPerformance400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1CharacterPerformance400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                           `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                       `json:"-"`
 }
 
 // PostV1CharacterPerformance400JSONResponseBodyReason0 defines parameters for PostV1CharacterPerformance.
@@ -30144,7 +30144,7 @@ type PostV1GenerateAudio400JSONResponseBody1 struct {
 	Error string `json:"error"`
 
 	// Issues Field-level validation issues, when available.
-	Issues *[]map[string]interface{} `json:"issues,omitempty"`
+	Issues *[]map[string]json.RawMessage `json:"issues,omitempty"`
 }
 
 // PostV1GenerateAudio400JSONResponseBody defines parameters for PostV1GenerateAudio.
@@ -30388,7 +30388,7 @@ type PostV1GenerateImage400JSONResponseBody1 struct {
 	Error string `json:"error"`
 
 	// Issues Field-level validation issues, when available.
-	Issues *[]map[string]interface{} `json:"issues,omitempty"`
+	Issues *[]map[string]json.RawMessage `json:"issues,omitempty"`
 }
 
 // PostV1GenerateImage400JSONResponseBody defines parameters for PostV1GenerateImage.
@@ -30750,7 +30750,7 @@ type PostV1GenerateVideo400JSONResponseBody1 struct {
 	Error string `json:"error"`
 
 	// Issues Field-level validation issues, when available.
-	Issues *[]map[string]interface{} `json:"issues,omitempty"`
+	Issues *[]map[string]json.RawMessage `json:"issues,omitempty"`
 }
 
 // PostV1GenerateVideo400JSONResponseBody defines parameters for PostV1GenerateVideo.
@@ -30825,7 +30825,7 @@ type PostV1ImageToVector400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1ImageToVector400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                    `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                `json:"-"`
 }
 
 // PostV1ImageToVector400JSONResponseBodyReason0 defines parameters for PostV1ImageToVector.
@@ -33803,7 +33803,7 @@ type PostV1ImageToVideo400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1ImageToVideo400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                   `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                               `json:"-"`
 }
 
 // PostV1ImageToVideo400JSONResponseBodyReason0 defines parameters for PostV1ImageToVideo.
@@ -33980,7 +33980,7 @@ type PostV1ImageUpscale400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1ImageUpscale400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                   `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                               `json:"-"`
 }
 
 // PostV1ImageUpscale400JSONResponseBodyReason0 defines parameters for PostV1ImageUpscale.
@@ -34830,7 +34830,7 @@ type PostV1RecipesAdLocalization400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1RecipesAdLocalization400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                            `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                        `json:"-"`
 }
 
 // PostV1RecipesAdLocalization400JSONResponseBodyReason0 defines parameters for PostV1RecipesAdLocalization.
@@ -34998,7 +34998,7 @@ type PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                                 `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                             `json:"-"`
 }
 
 // PostV1RecipesMarketingStockImage400JSONResponseBodyReason0 defines parameters for PostV1RecipesMarketingStockImage.
@@ -35242,7 +35242,7 @@ type PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                            `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                        `json:"-"`
 }
 
 // PostV1RecipesMultiShotVideo400JSONResponseBodyReason0 defines parameters for PostV1RecipesMultiShotVideo.
@@ -35436,7 +35436,7 @@ type PostV1RecipesProductAd400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1RecipesProductAd400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                       `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                   `json:"-"`
 }
 
 // PostV1RecipesProductAd400JSONResponseBodyReason0 defines parameters for PostV1RecipesProductAd.
@@ -35595,7 +35595,7 @@ type PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                                  `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                              `json:"-"`
 }
 
 // PostV1RecipesProductCampaignImage400JSONResponseBodyReason0 defines parameters for PostV1RecipesProductCampaignImage.
@@ -35809,7 +35809,7 @@ type PostV1RecipesProductSwap400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1RecipesProductSwap400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                         `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                     `json:"-"`
 }
 
 // PostV1RecipesProductSwap400JSONResponseBodyReason0 defines parameters for PostV1RecipesProductSwap.
@@ -36003,7 +36003,7 @@ type PostV1RecipesProductUgc400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1RecipesProductUgc400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                        `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                    `json:"-"`
 }
 
 // PostV1RecipesProductUgc400JSONResponseBodyReason0 defines parameters for PostV1RecipesProductUgc.
@@ -36433,7 +36433,7 @@ type PostV1SoundEffect400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1SoundEffect400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                  `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                              `json:"-"`
 }
 
 // PostV1SoundEffect400JSONResponseBodyReason0 defines parameters for PostV1SoundEffect.
@@ -36653,7 +36653,7 @@ type PostV1SpeechToSpeech400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1SpeechToSpeech400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                     `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                 `json:"-"`
 }
 
 // PostV1SpeechToSpeech400JSONResponseBodyReason0 defines parameters for PostV1SpeechToSpeech.
@@ -38317,7 +38317,7 @@ type PostV1TextToImage400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1TextToImage400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                  `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                              `json:"-"`
 }
 
 // PostV1TextToImage400JSONResponseBodyReason0 defines parameters for PostV1TextToImage.
@@ -38465,7 +38465,7 @@ type PostV1TextToMusic400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1TextToMusic400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                  `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                              `json:"-"`
 }
 
 // PostV1TextToMusic400JSONResponseBodyReason0 defines parameters for PostV1TextToMusic.
@@ -38880,7 +38880,7 @@ type PostV1TextToSpeech400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1TextToSpeech400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                   `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                               `json:"-"`
 }
 
 // PostV1TextToSpeech400JSONResponseBodyReason0 defines parameters for PostV1TextToSpeech.
@@ -40790,7 +40790,7 @@ type PostV1TextToVideo400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1TextToVideo400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                  `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                              `json:"-"`
 }
 
 // PostV1TextToVideo400JSONResponseBodyReason0 defines parameters for PostV1TextToVideo.
@@ -40981,7 +40981,7 @@ type PostV1VideoToAudio400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1VideoToAudio400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                   `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                               `json:"-"`
 }
 
 // PostV1VideoToAudio400JSONResponseBodyReason0 defines parameters for PostV1VideoToAudio.
@@ -41150,7 +41150,7 @@ type PostV1VideoToHdr400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1VideoToHdr400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                 `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                             `json:"-"`
 }
 
 // PostV1VideoToHdr400JSONResponseBodyReason0 defines parameters for PostV1VideoToHdr.
@@ -43038,7 +43038,7 @@ type PostV1VideoToVideo400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1VideoToVideo400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                   `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                               `json:"-"`
 }
 
 // PostV1VideoToVideo400JSONResponseBodyReason0 defines parameters for PostV1VideoToVideo.
@@ -43249,7 +43249,7 @@ type PostV1VideoUpscale400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1VideoUpscale400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                   `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                               `json:"-"`
 }
 
 // PostV1VideoUpscale400JSONResponseBodyReason0 defines parameters for PostV1VideoUpscale.
@@ -43420,7 +43420,7 @@ type PostV1VoiceDubbing400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1VoiceDubbing400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                   `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                               `json:"-"`
 }
 
 // PostV1VoiceDubbing400JSONResponseBodyReason0 defines parameters for PostV1VoiceDubbing.
@@ -43576,7 +43576,7 @@ type PostV1VoiceIsolation400JSONResponseBody_Issues_Item struct {
 
 	// Path The path to the invalid field in the request body or query.
 	Path                 []PostV1VoiceIsolation400JSONResponseBody_Issues_Path_Item `json:"path"`
-	AdditionalProperties map[string]interface{}                                     `json:"-"`
+	AdditionalProperties map[string]json.RawMessage                                 `json:"-"`
 }
 
 // PostV1VoiceIsolation400JSONResponseBodyReason0 defines parameters for PostV1VoiceIsolation.
@@ -44356,7 +44356,7 @@ type PostV1WorkflowsIdJSONRequestBody PostV1WorkflowsIdJSONBody
 
 // Getter for additional properties for PostV1CharacterPerformance400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1CharacterPerformance400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1CharacterPerformance400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -44364,9 +44364,9 @@ func (a PostV1CharacterPerformance400JSONResponseBody_Issues_Item) Get(fieldName
 }
 
 // Setter for additional properties for PostV1CharacterPerformance400JSONResponseBody_Issues_Item
-func (a *PostV1CharacterPerformance400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1CharacterPerformance400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -44404,9 +44404,9 @@ func (a *PostV1CharacterPerformance400JSONResponseBody_Issues_Item) UnmarshalJSO
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -44450,7 +44450,7 @@ func (a PostV1CharacterPerformance400JSONResponseBody_Issues_Item) MarshalJSON()
 
 // Getter for additional properties for PostV1ImageToVector400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1ImageToVector400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1ImageToVector400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -44458,9 +44458,9 @@ func (a PostV1ImageToVector400JSONResponseBody_Issues_Item) Get(fieldName string
 }
 
 // Setter for additional properties for PostV1ImageToVector400JSONResponseBody_Issues_Item
-func (a *PostV1ImageToVector400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1ImageToVector400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -44498,9 +44498,9 @@ func (a *PostV1ImageToVector400JSONResponseBody_Issues_Item) UnmarshalJSON(b []b
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -44544,7 +44544,7 @@ func (a PostV1ImageToVector400JSONResponseBody_Issues_Item) MarshalJSON() ([]byt
 
 // Getter for additional properties for PostV1ImageToVideo400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1ImageToVideo400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1ImageToVideo400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -44552,9 +44552,9 @@ func (a PostV1ImageToVideo400JSONResponseBody_Issues_Item) Get(fieldName string)
 }
 
 // Setter for additional properties for PostV1ImageToVideo400JSONResponseBody_Issues_Item
-func (a *PostV1ImageToVideo400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1ImageToVideo400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -44592,9 +44592,9 @@ func (a *PostV1ImageToVideo400JSONResponseBody_Issues_Item) UnmarshalJSON(b []by
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -44638,7 +44638,7 @@ func (a PostV1ImageToVideo400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte
 
 // Getter for additional properties for PostV1ImageUpscale400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1ImageUpscale400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1ImageUpscale400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -44646,9 +44646,9 @@ func (a PostV1ImageUpscale400JSONResponseBody_Issues_Item) Get(fieldName string)
 }
 
 // Setter for additional properties for PostV1ImageUpscale400JSONResponseBody_Issues_Item
-func (a *PostV1ImageUpscale400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1ImageUpscale400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -44686,9 +44686,9 @@ func (a *PostV1ImageUpscale400JSONResponseBody_Issues_Item) UnmarshalJSON(b []by
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -44732,7 +44732,7 @@ func (a PostV1ImageUpscale400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte
 
 // Getter for additional properties for PostV1RecipesAdLocalization400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1RecipesAdLocalization400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1RecipesAdLocalization400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -44740,9 +44740,9 @@ func (a PostV1RecipesAdLocalization400JSONResponseBody_Issues_Item) Get(fieldNam
 }
 
 // Setter for additional properties for PostV1RecipesAdLocalization400JSONResponseBody_Issues_Item
-func (a *PostV1RecipesAdLocalization400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1RecipesAdLocalization400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -44780,9 +44780,9 @@ func (a *PostV1RecipesAdLocalization400JSONResponseBody_Issues_Item) UnmarshalJS
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -44826,7 +44826,7 @@ func (a PostV1RecipesAdLocalization400JSONResponseBody_Issues_Item) MarshalJSON(
 
 // Getter for additional properties for PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -44834,9 +44834,9 @@ func (a PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Item) Get(fie
 }
 
 // Setter for additional properties for PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Item
-func (a *PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -44874,9 +44874,9 @@ func (a *PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Item) Unmars
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -44920,7 +44920,7 @@ func (a PostV1RecipesMarketingStockImage400JSONResponseBody_Issues_Item) Marshal
 
 // Getter for additional properties for PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -44928,9 +44928,9 @@ func (a PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Item) Get(fieldNam
 }
 
 // Setter for additional properties for PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Item
-func (a *PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -44968,9 +44968,9 @@ func (a *PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Item) UnmarshalJS
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45014,7 +45014,7 @@ func (a PostV1RecipesMultiShotVideo400JSONResponseBody_Issues_Item) MarshalJSON(
 
 // Getter for additional properties for PostV1RecipesProductAd400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1RecipesProductAd400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1RecipesProductAd400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45022,9 +45022,9 @@ func (a PostV1RecipesProductAd400JSONResponseBody_Issues_Item) Get(fieldName str
 }
 
 // Setter for additional properties for PostV1RecipesProductAd400JSONResponseBody_Issues_Item
-func (a *PostV1RecipesProductAd400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1RecipesProductAd400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -45062,9 +45062,9 @@ func (a *PostV1RecipesProductAd400JSONResponseBody_Issues_Item) UnmarshalJSON(b 
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45108,7 +45108,7 @@ func (a PostV1RecipesProductAd400JSONResponseBody_Issues_Item) MarshalJSON() ([]
 
 // Getter for additional properties for PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45116,9 +45116,9 @@ func (a PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Item) Get(fi
 }
 
 // Setter for additional properties for PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Item
-func (a *PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -45156,9 +45156,9 @@ func (a *PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Item) Unmar
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45202,7 +45202,7 @@ func (a PostV1RecipesProductCampaignImage400JSONResponseBody_Issues_Item) Marsha
 
 // Getter for additional properties for PostV1RecipesProductSwap400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1RecipesProductSwap400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1RecipesProductSwap400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45210,9 +45210,9 @@ func (a PostV1RecipesProductSwap400JSONResponseBody_Issues_Item) Get(fieldName s
 }
 
 // Setter for additional properties for PostV1RecipesProductSwap400JSONResponseBody_Issues_Item
-func (a *PostV1RecipesProductSwap400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1RecipesProductSwap400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -45250,9 +45250,9 @@ func (a *PostV1RecipesProductSwap400JSONResponseBody_Issues_Item) UnmarshalJSON(
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45296,7 +45296,7 @@ func (a PostV1RecipesProductSwap400JSONResponseBody_Issues_Item) MarshalJSON() (
 
 // Getter for additional properties for PostV1RecipesProductUgc400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1RecipesProductUgc400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1RecipesProductUgc400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45304,9 +45304,9 @@ func (a PostV1RecipesProductUgc400JSONResponseBody_Issues_Item) Get(fieldName st
 }
 
 // Setter for additional properties for PostV1RecipesProductUgc400JSONResponseBody_Issues_Item
-func (a *PostV1RecipesProductUgc400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1RecipesProductUgc400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -45344,9 +45344,9 @@ func (a *PostV1RecipesProductUgc400JSONResponseBody_Issues_Item) UnmarshalJSON(b
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45390,7 +45390,7 @@ func (a PostV1RecipesProductUgc400JSONResponseBody_Issues_Item) MarshalJSON() ([
 
 // Getter for additional properties for PostV1SoundEffect400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1SoundEffect400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1SoundEffect400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45398,9 +45398,9 @@ func (a PostV1SoundEffect400JSONResponseBody_Issues_Item) Get(fieldName string) 
 }
 
 // Setter for additional properties for PostV1SoundEffect400JSONResponseBody_Issues_Item
-func (a *PostV1SoundEffect400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1SoundEffect400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -45438,9 +45438,9 @@ func (a *PostV1SoundEffect400JSONResponseBody_Issues_Item) UnmarshalJSON(b []byt
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45484,7 +45484,7 @@ func (a PostV1SoundEffect400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte,
 
 // Getter for additional properties for PostV1SpeechToSpeech400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1SpeechToSpeech400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1SpeechToSpeech400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45492,9 +45492,9 @@ func (a PostV1SpeechToSpeech400JSONResponseBody_Issues_Item) Get(fieldName strin
 }
 
 // Setter for additional properties for PostV1SpeechToSpeech400JSONResponseBody_Issues_Item
-func (a *PostV1SpeechToSpeech400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1SpeechToSpeech400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -45532,9 +45532,9 @@ func (a *PostV1SpeechToSpeech400JSONResponseBody_Issues_Item) UnmarshalJSON(b []
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45578,7 +45578,7 @@ func (a PostV1SpeechToSpeech400JSONResponseBody_Issues_Item) MarshalJSON() ([]by
 
 // Getter for additional properties for PostV1TextToImage400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1TextToImage400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1TextToImage400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45586,9 +45586,9 @@ func (a PostV1TextToImage400JSONResponseBody_Issues_Item) Get(fieldName string) 
 }
 
 // Setter for additional properties for PostV1TextToImage400JSONResponseBody_Issues_Item
-func (a *PostV1TextToImage400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1TextToImage400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -45626,9 +45626,9 @@ func (a *PostV1TextToImage400JSONResponseBody_Issues_Item) UnmarshalJSON(b []byt
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45672,7 +45672,7 @@ func (a PostV1TextToImage400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte,
 
 // Getter for additional properties for PostV1TextToMusic400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1TextToMusic400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1TextToMusic400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45680,9 +45680,9 @@ func (a PostV1TextToMusic400JSONResponseBody_Issues_Item) Get(fieldName string) 
 }
 
 // Setter for additional properties for PostV1TextToMusic400JSONResponseBody_Issues_Item
-func (a *PostV1TextToMusic400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1TextToMusic400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -45720,9 +45720,9 @@ func (a *PostV1TextToMusic400JSONResponseBody_Issues_Item) UnmarshalJSON(b []byt
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45766,7 +45766,7 @@ func (a PostV1TextToMusic400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte,
 
 // Getter for additional properties for PostV1TextToSpeech400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1TextToSpeech400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1TextToSpeech400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45774,9 +45774,9 @@ func (a PostV1TextToSpeech400JSONResponseBody_Issues_Item) Get(fieldName string)
 }
 
 // Setter for additional properties for PostV1TextToSpeech400JSONResponseBody_Issues_Item
-func (a *PostV1TextToSpeech400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1TextToSpeech400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -45814,9 +45814,9 @@ func (a *PostV1TextToSpeech400JSONResponseBody_Issues_Item) UnmarshalJSON(b []by
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45860,7 +45860,7 @@ func (a PostV1TextToSpeech400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte
 
 // Getter for additional properties for PostV1TextToVideo400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1TextToVideo400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1TextToVideo400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45868,9 +45868,9 @@ func (a PostV1TextToVideo400JSONResponseBody_Issues_Item) Get(fieldName string) 
 }
 
 // Setter for additional properties for PostV1TextToVideo400JSONResponseBody_Issues_Item
-func (a *PostV1TextToVideo400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1TextToVideo400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -45908,9 +45908,9 @@ func (a *PostV1TextToVideo400JSONResponseBody_Issues_Item) UnmarshalJSON(b []byt
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -45954,7 +45954,7 @@ func (a PostV1TextToVideo400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte,
 
 // Getter for additional properties for PostV1VideoToAudio400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1VideoToAudio400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1VideoToAudio400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -45962,9 +45962,9 @@ func (a PostV1VideoToAudio400JSONResponseBody_Issues_Item) Get(fieldName string)
 }
 
 // Setter for additional properties for PostV1VideoToAudio400JSONResponseBody_Issues_Item
-func (a *PostV1VideoToAudio400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1VideoToAudio400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -46002,9 +46002,9 @@ func (a *PostV1VideoToAudio400JSONResponseBody_Issues_Item) UnmarshalJSON(b []by
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -46048,7 +46048,7 @@ func (a PostV1VideoToAudio400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte
 
 // Getter for additional properties for PostV1VideoToHdr400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1VideoToHdr400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1VideoToHdr400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -46056,9 +46056,9 @@ func (a PostV1VideoToHdr400JSONResponseBody_Issues_Item) Get(fieldName string) (
 }
 
 // Setter for additional properties for PostV1VideoToHdr400JSONResponseBody_Issues_Item
-func (a *PostV1VideoToHdr400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1VideoToHdr400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -46096,9 +46096,9 @@ func (a *PostV1VideoToHdr400JSONResponseBody_Issues_Item) UnmarshalJSON(b []byte
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -46142,7 +46142,7 @@ func (a PostV1VideoToHdr400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte, 
 
 // Getter for additional properties for PostV1VideoToVideo400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1VideoToVideo400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1VideoToVideo400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -46150,9 +46150,9 @@ func (a PostV1VideoToVideo400JSONResponseBody_Issues_Item) Get(fieldName string)
 }
 
 // Setter for additional properties for PostV1VideoToVideo400JSONResponseBody_Issues_Item
-func (a *PostV1VideoToVideo400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1VideoToVideo400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -46190,9 +46190,9 @@ func (a *PostV1VideoToVideo400JSONResponseBody_Issues_Item) UnmarshalJSON(b []by
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -46236,7 +46236,7 @@ func (a PostV1VideoToVideo400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte
 
 // Getter for additional properties for PostV1VideoUpscale400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1VideoUpscale400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1VideoUpscale400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -46244,9 +46244,9 @@ func (a PostV1VideoUpscale400JSONResponseBody_Issues_Item) Get(fieldName string)
 }
 
 // Setter for additional properties for PostV1VideoUpscale400JSONResponseBody_Issues_Item
-func (a *PostV1VideoUpscale400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1VideoUpscale400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -46284,9 +46284,9 @@ func (a *PostV1VideoUpscale400JSONResponseBody_Issues_Item) UnmarshalJSON(b []by
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -46330,7 +46330,7 @@ func (a PostV1VideoUpscale400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte
 
 // Getter for additional properties for PostV1VoiceDubbing400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1VoiceDubbing400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1VoiceDubbing400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -46338,9 +46338,9 @@ func (a PostV1VoiceDubbing400JSONResponseBody_Issues_Item) Get(fieldName string)
 }
 
 // Setter for additional properties for PostV1VoiceDubbing400JSONResponseBody_Issues_Item
-func (a *PostV1VoiceDubbing400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1VoiceDubbing400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -46378,9 +46378,9 @@ func (a *PostV1VoiceDubbing400JSONResponseBody_Issues_Item) UnmarshalJSON(b []by
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)
@@ -46424,7 +46424,7 @@ func (a PostV1VoiceDubbing400JSONResponseBody_Issues_Item) MarshalJSON() ([]byte
 
 // Getter for additional properties for PostV1VoiceIsolation400JSONResponseBody_Issues_Item. Returns the specified
 // element and whether it was found
-func (a PostV1VoiceIsolation400JSONResponseBody_Issues_Item) Get(fieldName string) (value interface{}, found bool) {
+func (a PostV1VoiceIsolation400JSONResponseBody_Issues_Item) Get(fieldName string) (value json.RawMessage, found bool) {
 	if a.AdditionalProperties != nil {
 		value, found = a.AdditionalProperties[fieldName]
 	}
@@ -46432,9 +46432,9 @@ func (a PostV1VoiceIsolation400JSONResponseBody_Issues_Item) Get(fieldName strin
 }
 
 // Setter for additional properties for PostV1VoiceIsolation400JSONResponseBody_Issues_Item
-func (a *PostV1VoiceIsolation400JSONResponseBody_Issues_Item) Set(fieldName string, value interface{}) {
+func (a *PostV1VoiceIsolation400JSONResponseBody_Issues_Item) Set(fieldName string, value json.RawMessage) {
 	if a.AdditionalProperties == nil {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 	}
 	a.AdditionalProperties[fieldName] = value
 }
@@ -46472,9 +46472,9 @@ func (a *PostV1VoiceIsolation400JSONResponseBody_Issues_Item) UnmarshalJSON(b []
 	}
 
 	if len(object) != 0 {
-		a.AdditionalProperties = make(map[string]interface{})
+		a.AdditionalProperties = make(map[string]json.RawMessage)
 		for fieldName, fieldBuf := range object {
-			var fieldVal interface{}
+			var fieldVal json.RawMessage
 			err := json.Unmarshal(fieldBuf, &fieldVal)
 			if err != nil {
 				return fmt.Errorf("error unmarshaling field %s: %w", fieldName, err)

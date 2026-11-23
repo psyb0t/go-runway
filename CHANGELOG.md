@@ -2,6 +2,15 @@
 
 All notable changes per release. Versions follow [semver](https://semver.org).
 
+## v0.8.0, 2026-11-23
+
+- Open-ended JSON values in generated types are now `json.RawMessage` instead of `interface{}`. Callers decode the raw bytes themselves.
+- Changed `Issues` on `PostV1GenerateAudio400JSONResponseBody1`, `PostV1GenerateImage400JSONResponseBody1` and `PostV1GenerateVideo400JSONResponseBody1` from `*[]map[string]interface{}` to `*[]map[string]json.RawMessage`.
+- Changed `AdditionalProperties` on each `Post*400JSONResponseBody_Issues_Item` type, for example `PostV1ImageToVideo400JSONResponseBody_Issues_Item`, to `map[string]json.RawMessage`.
+- Changed `Get` and `Set` on those issue item types: `Get` now returns `json.RawMessage` and `Set` takes a `json.RawMessage` value.
+- Changed `Transcript` tool call `Arguments` and the `GetV1AvatarConversationsId200JSONResponseBody0TranscriptToolResultsResult0` type (and the `Body1` and `Body2` variants) to `map[string]json.RawMessage`.
+- `scripts/fix-spec.sh` now maps empty `additionalProperties` schemas to `json.RawMessage` to clear 23 semgrep findings. The wire format is unchanged.
+
 ## v0.7.0, 2026-11-21
 
 - Breaking: about 25 request methods on `Client` and `ClientWithResponses` now take a `*PostV1...Params` argument after the context, for the new optional `X-Runway-Tags` header. Examples: `PostV1TextToImage`, `PostV1TextToImageWithBody`, `PostV1TextToImageWithResponse`, `PostV1TextToImageWithBodyWithResponse`, `PostV1GenerateVideo`, `PostV1VoiceDubbing`. Pass `nil` to keep the old behavior.
